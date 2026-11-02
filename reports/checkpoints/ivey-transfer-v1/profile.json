@@ -1,0 +1,49 @@
+{
+  "by_board_length": {
+    "0": {
+      "count": 250,
+      "max_us": 33.75,
+      "median_us": 26.708,
+      "over_1ms_count": 0,
+      "p95_us": 28.0,
+      "p99_us": 29.833
+    },
+    "3": {
+      "count": 250,
+      "max_us": 75.333,
+      "median_us": 55.167,
+      "over_1ms_count": 0,
+      "p95_us": 58.917,
+      "p99_us": 61.459
+    },
+    "4": {
+      "count": 250,
+      "max_us": 66.542,
+      "median_us": 56.667,
+      "over_1ms_count": 0,
+      "p95_us": 59.959,
+      "p99_us": 62.792
+    },
+    "5": {
+      "count": 250,
+      "max_us": 94.833,
+      "median_us": 55.291,
+      "over_1ms_count": 0,
+      "p95_us": 59.041,
+      "p99_us": 89.834
+    }
+  },
+  "caveat": "Warm local Python calls on synthetic observations; excludes SDK overhead and does not certify the event sandbox.",
+  "checkpoint": "ivey-transfer-v1",
+  "count": 1000,
+  "invalid_actions": 0,
+  "latency": {
+    "count": 1000,
+    "max_us": 94.833,
+    "median_us": 54.75,
+    "over_1ms_count": 0,
+    "p95_us": 58.75,
+    "p99_us": 65.5
+  },
+  "seed": 8128
+}

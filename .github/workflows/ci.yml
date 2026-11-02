@@ -22,5 +22,14 @@ jobs:
         run: python -m unittest discover -s tests -v
       - name: Verify admitted decisions and source hashes
         run: python scripts/acquisition_admissions.py
+      - name: Verify saved bot source-group result
+        run: python scripts/verify_saved_bot.py
+      - name: Smoke-test installed saved bot outside the checkout
+        run: |
+          python -m pip wheel --no-deps --wheel-dir .work/ci-wheels .
+          python -m venv .work/ci-runtime
+          .work/ci-runtime/bin/python -m pip install .work/ci-wheels/*.whl
+          cd /tmp
+          "$GITHUB_WORKSPACE/.work/ci-runtime/bin/pokerbot-saved" decide < "$GITHUB_WORKSPACE/examples/decision.json"
       - name: Verify publication checksums
         run: sha256sum -c data/acquisition_resume/2026-11-02/publication/publication.sha256

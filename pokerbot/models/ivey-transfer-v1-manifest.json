@@ -1,0 +1,36 @@
+{
+  "bundled_files_sha256": {
+    "PLURIBUS_LICENSE.txt": "fd8a94019f50ff8cd84e674acd790427882a99b32435c85e43b8e1d5b37626d1",
+    "ivey-transfer-v1.json": "f481865825b0954da13e074511e8b37e4abef0593ff2629063f79a3c0bb15e5e",
+    "preflop-equity-v1.json": "44684582cbe9400741a7cf1a0857877f94aadb30de54db7d1d20b140ce2a7ef0"
+  },
+  "checkpoint": "ivey-transfer-v1",
+  "evaluation": {
+    "action_agreement": 0.7887788778877888,
+    "action_agreement_count": 478,
+    "exact_action_and_size_agreement": 0.7095709570957096,
+    "exact_action_and_size_agreement_count": 430,
+    "illegal_prediction_count": 0,
+    "macro_source_group_action_agreement": 0.6916450243656126,
+    "sample_count": 606
+  },
+  "evaluation_method": "whole-source-group leave-one-group-out postflop fitting; fixed independently trained external preflop prior",
+  "evaluation_status": "inspected development data; not a fresh population test",
+  "external_training": {
+    "decisions": 15169,
+    "expert_name": "Pluribus",
+    "ivey_rows_in_external_fitting": 0,
+    "repo_commit": "e47fbd5816372360bade4de5d712346fe1bb70f6",
+    "source_jsonl_sha256": "624417f1523f93b81cd36fe0bb068766e35ddf9c05eb7a4d20101d5458e09823"
+  },
+  "ivey_corpus_record_hash_set_sha256": "314a3731dd0f2a55b616fca302e06ceaaa19bda9fd0456ecbbc03ecc9a235e32",
+  "ivey_hands": 393,
+  "ivey_source_groups": 18,
+  "schema": "saved-pokerbot-checkpoint-v1",
+  "status": "saved_at_user_request_improvement_paused",
+  "target_90_percent_reached": false,
+  "training_recipe": {
+    "alpha": 4.0,
+    "postflop_regularization": 3.0
+  }
+}
