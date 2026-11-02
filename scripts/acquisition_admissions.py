@@ -13,6 +13,23 @@ sys.path.insert(0, str(ROOT))
 from pokerbot.corpus import _digest, load_split, validate_rows
 
 
+def _provenance_path(root: Path, value: str) -> Path:
+    """Relocate immutable legacy capture paths into this source checkout."""
+    path = Path(value)
+    if path.is_absolute():
+        # Early admission files retain their collector's absolute Mac paths.
+        # Their bytes/hashes stay immutable; only the lookup is relocated.
+        if path.parts.count("data") != 1:
+            raise ValueError(f"unsupported absolute provenance path: {value}")
+        path = Path(*path.parts[path.parts.index("data"):])
+    if ".." in path.parts:
+        raise ValueError(f"provenance path escapes checkout: {value}")
+    resolved = (root / path).resolve()
+    if not resolved.is_relative_to(root.resolve()):
+        raise ValueError(f"provenance path escapes checkout: {value}")
+    return resolved
+
+
 def verify(root: Path = ROOT) -> dict:
     baseline = root / "data/corpus_splits/development-after-prospective-v1.json"
     records = load_split(baseline)["records"]
@@ -55,7 +72,7 @@ def verify(root: Path = ROOT) -> dict:
                 hash_field = field[:-5] + "_sha256"
                 if hash_field not in row:
                     continue
-                referenced = root / value
+                referenced = _provenance_path(root, value)
                 if value not in checked_files:
                     checked_files[value] = hashlib.sha256(referenced.read_bytes()).hexdigest()
                 digest = checked_files[value]

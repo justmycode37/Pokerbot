@@ -62,6 +62,11 @@ source reference validates. The verifier reports that discrepancy explicitly
 and supplies a freshly computed hash of all 606 retained record hashes; the
 publication checksum manifest additionally pins the complete batch files.
 
+Legacy absolute capture paths are resolved relative to this checkout's
+`data/` directory, preserving the immutable admission records. Verification
+rejects paths outside the checkout. A regression check verifies that the
+complete admitted ledger never reads source bytes from another directory.
+
 The CI workflow runs the full unittest suite, the admission verifier, and the
 publication checksum check on Python 3.11 with read-only repository
 permissions. Local verification uses Python 3.12 and the pinned PokerKit

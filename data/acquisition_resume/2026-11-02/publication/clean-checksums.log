@@ -99,6 +99,7 @@ data/acquisition_resume/2026-11-01/triton_2023_2024/raw/tournaments/a1bfa8e1-545
 data/acquisition_resume/2026-11-01/triton_2023_2024/raw/tournaments/ffaf6e11-1af0-4c17-aa4e-677465973d3d/GetTournamentWithEpisodes.json: OK
 data/acquisition_resume/2026-11-01/triton_2023_2024/raw/tournaments/ffaf6e11-1af0-4c17-aa4e-677465973d3d/GetTournamentWithEpisodes.request.json: OK
 data/acquisition_resume/2026-11-01/triton_2025/raw/3bc7093a-05a7-41d1-82b4-b76f7a84107e/hands/0fe69d0d-c62f-4a47-baac-7770b44b9bdb.json: OK
+data/acquisition_resume/2026-11-01/triton_2025/raw/3bc7093a-05a7-41d1-82b4-b76f7a84107e/hands/0fe69d0d-c62f-4a47-baac-7770b44b9bdb.request.json: OK
 data/acquisition_resume/2026-11-01/triton_2025/raw/3bc7093a-05a7-41d1-82b4-b76f7a84107e/hands/238da98b-1804-492f-9518-64cb73388dfd.json: OK
 data/acquisition_resume/2026-11-01/triton_2025/raw/3bc7093a-05a7-41d1-82b4-b76f7a84107e/hands/238da98b-1804-492f-9518-64cb73388dfd.request.json: OK
 data/acquisition_resume/2026-11-01/triton_2025/raw/3bc7093a-05a7-41d1-82b4-b76f7a84107e/hands/7233ae8e-33b6-4786-a574-8623b63c849b.json: OK
@@ -1085,6 +1086,7 @@ data/acquisition_resume/2026-11-02/integration-001.json: OK
 data/acquisition_resume/2026-11-02/pot_review/REVIEW-CHECKPOINT.md: OK
 data/acquisition_resume/2026-11-02/pot_review/ante-diagnostic-review.json: OK
 data/acquisition_resume/2026-11-02/publication/admission-verification.json: OK
+data/acquisition_resume/2026-11-02/publication/ci-portability-fix.md: OK
 data/acquisition_resume/2026-11-02/publication/clean-checksums.log: OK
 data/acquisition_resume/2026-11-02/publication/clean-ledger.log: OK
 data/acquisition_resume/2026-11-02/publication/clean-unittest.log: OK
@@ -1416,6 +1418,7 @@ scripts/stitch_wpt_windows.py: OK
 scripts/train_hybrid.py: OK
 scripts/train_imitation.py: OK
 scripts/verify_triton_semantics.py: OK
+tests/test_acquisition_admissions.py: OK
 tests/test_acquisition_converted_forum.py: OK
 tests/test_acquisition_forum_convert.py: OK
 tests/test_acquisition_pot_eligibility.py: OK

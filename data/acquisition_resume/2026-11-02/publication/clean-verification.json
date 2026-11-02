@@ -5,19 +5,20 @@
     {
       "check": "unittest",
       "exit_code": 0,
-      "seconds": 3.637
+      "seconds": 4.893
     },
     {
       "check": "ledger",
       "exit_code": 0,
-      "seconds": 0.208
+      "seconds": 0.425
     },
     {
       "check": "checksums",
       "exit_code": 0,
-      "seconds": 0.213
+      "seconds": 0.276
     }
   ],
-  "unit_tests": 186,
-  "admitted_decisions": 606
+  "unit_tests": 188,
+  "admitted_decisions": 606,
+  "isolation": "Only the PR index was copied; unrelated shared-workspace files were excluded."
 }

@@ -95,6 +95,7 @@ data/acquisition_resume/2026-11-01/triton_2023_2024/raw/tournaments/a1bfa8e1-545
 data/acquisition_resume/2026-11-01/triton_2023_2024/raw/tournaments/ffaf6e11-1af0-4c17-aa4e-677465973d3d/GetTournamentWithEpisodes.json
 data/acquisition_resume/2026-11-01/triton_2023_2024/raw/tournaments/ffaf6e11-1af0-4c17-aa4e-677465973d3d/GetTournamentWithEpisodes.request.json
 data/acquisition_resume/2026-11-01/triton_2025/raw/3bc7093a-05a7-41d1-82b4-b76f7a84107e/hands/0fe69d0d-c62f-4a47-baac-7770b44b9bdb.json
+data/acquisition_resume/2026-11-01/triton_2025/raw/3bc7093a-05a7-41d1-82b4-b76f7a84107e/hands/0fe69d0d-c62f-4a47-baac-7770b44b9bdb.request.json
 data/acquisition_resume/2026-11-01/triton_2025/raw/3bc7093a-05a7-41d1-82b4-b76f7a84107e/hands/238da98b-1804-492f-9518-64cb73388dfd.json
 data/acquisition_resume/2026-11-01/triton_2025/raw/3bc7093a-05a7-41d1-82b4-b76f7a84107e/hands/238da98b-1804-492f-9518-64cb73388dfd.request.json
 data/acquisition_resume/2026-11-01/triton_2025/raw/3bc7093a-05a7-41d1-82b4-b76f7a84107e/hands/7233ae8e-33b6-4786-a574-8623b63c849b.json

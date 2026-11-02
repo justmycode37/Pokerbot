@@ -1,3 +1,5 @@
+test_legacy_absolute_capture_is_relocated_into_checkout (test_acquisition_admissions.AdmissionPortabilityTests.test_legacy_absolute_capture_is_relocated_into_checkout) ... ok
+test_real_ledger_never_reads_outside_its_checkout (test_acquisition_admissions.AdmissionPortabilityTests.test_real_ledger_never_reads_outside_its_checkout) ... ok
 test_all_in_runout_and_unknown_cards_remain_excluded_with_reasons (test_acquisition_converted_forum.ConvertedForumAcquisitionTests.test_all_in_runout_and_unknown_cards_remain_excluded_with_reasons) ... ok
 test_full_fact_identity_deduplicates_copy_without_using_record_id (test_acquisition_converted_forum.ConvertedForumAcquisitionTests.test_full_fact_identity_deduplicates_copy_without_using_record_id) ... ok
 test_new_2012_source_image_cards_alias_and_pending_terminal_accounting (test_acquisition_converted_forum.ConvertedForumAcquisitionTests.test_new_2012_source_image_cards_alias_and_pending_terminal_accounting) ... ok
@@ -186,6 +188,6 @@ test_export_replays_both_windows_and_counts_the_seam_once (test_wpt_windows.WptW
 test_overlapping_or_unordered_windows_cannot_be_counted_twice (test_wpt_windows.WptWindowTests.test_overlapping_or_unordered_windows_cannot_be_counted_twice) ... ok
 
 ----------------------------------------------------------------------
-Ran 186 tests in 3.496s
+Ran 188 tests in 4.675s
 
 OK
