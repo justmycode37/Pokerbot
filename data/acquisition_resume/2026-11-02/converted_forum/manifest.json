@@ -1,0 +1,49 @@
+{
+  "converter_version": 1,
+  "counts": {
+    "conflicting_full_fact_groups_excluded": 0,
+    "converted_histories_attempted": 26,
+    "converted_histories_rejected_or_partial": 27,
+    "converted_histories_strictly_replayed": 11,
+    "forum_2009_2011_converted_rows": 10,
+    "forum_2009_2011_known_card_complete": 7,
+    "forum_2009_2011_not_attempted": 3,
+    "forum_2009_2011_registered_known_card_hero_action_events": 26,
+    "forum_2012_plus_2026_11_01_converted_rows": 12,
+    "forum_2012_plus_2026_11_01_known_card_complete": 6,
+    "forum_2012_plus_2026_11_01_not_attempted": 6,
+    "forum_2012_plus_2026_11_02_converted_rows": 2,
+    "forum_2012_plus_2026_11_02_known_card_complete": 1,
+    "forum_2012_plus_2026_11_02_not_attempted": 1,
+    "forum_2012_plus_2026_11_02_registered_known_card_hero_action_events": 5,
+    "full_fact_duplicate_converted_copies_removed": 0,
+    "full_fact_duplicates_of_original_ids_excluded": 0,
+    "newly_admitted_decisions": 0,
+    "original_converted_known_card_complete_after_conflict_filter": 12,
+    "original_converted_rows": 14,
+    "original_fulltilt_ids_fingerprint_failures": 2,
+    "original_fulltilt_ids_fingerprinted": 55,
+    "original_fulltilt_ids_seen": 57,
+    "original_known_card_complete": 12,
+    "original_not_attempted": 2,
+    "pending_review_decisions": 52,
+    "pending_review_hands": 11
+  },
+  "input_hashes": {
+    "data/acquisition_resume/2026-11-01/forum_2012_plus/identity-basis.json": "8443b14316e03f8e8a39da8fd91657b72b687290417b10a24fd5d70688cd6e2e",
+    "data/acquisition_resume/2026-11-01/forum_2012_plus/rawrecords.jsonl": "d46f675130605cfb0d1cf88529d9a7caf8d9753119588c98f2b70575bbf14eb0",
+    "data/acquisition_resume/2026-11-02/forum-batch-registration-001.json": "fe225ffead498633f11ed5d8cd2aed42b249a06fb40538657010eee7585a9430",
+    "data/acquisition_resume/2026-11-02/forum_2009_2011/records.jsonl": "56d38be218115370c85832478a3121a2905318f2b0c6bf673e654eb82b265ac8",
+    "data/acquisition_resume/2026-11-02/forum_2012_plus/rawrecords.jsonl": "cb8272a63b7a2e9f07609773cc61bb7e750556977d5b7ae9c68b1932e25d7c55",
+    "data/acquisition_sprint_1h/identity-evidence.json": "68aab3ead8ca72ee2639f5fee614f49698b48f3105eb47e0cd7092ca92fcf9f8",
+    "data/acquisition_sprint_1h/online_forum/records.jsonl": "0e938458832c506a04b1bceb19ef3c11c2117758448649e9d5e88dca28def4a1"
+  },
+  "normalized_phh_directory": "normalized_phh",
+  "replay_engine": {
+    "name": "PokerKit Full Tilt action semantics + pokerbot.ivey strict PHH replay",
+    "pokerkit_version": "0.7.7"
+  },
+  "review_candidates": "review_candidates.json",
+  "schema_version": 1,
+  "status": "pending_independent_source_and_conversion_review_no_admissions"
+}

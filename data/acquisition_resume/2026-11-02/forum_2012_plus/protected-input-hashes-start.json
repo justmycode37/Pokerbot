@@ -1,0 +1,325 @@
+{
+  "pokerbot": {
+    "file_entries": 46,
+    "manifest_sha256": "f4c0694913acf6d16a40649ef50668a2d500829ad0015ba0874982333be13fe8",
+    "entries": [
+      {
+        "path": "pokerbot/__init__.py",
+        "sha256": "c8ea42864e04f67b0c47c7056843be108982f39b75b4d57aa22d663307d0e827",
+        "bytes": 90
+      },
+      {
+        "path": "pokerbot/__main__.py",
+        "sha256": "81350a26c216f08156d696579061bceb30d9c0fb7e5ac0828510954b0cc06217",
+        "bytes": 7592
+      },
+      {
+        "path": "pokerbot/__pycache__/__init__.cpython-312.pyc",
+        "sha256": "ae55d0a2b76b8da9e56b1b04ed4990cdeb07d3f84c81d0b2bb8801db19bdf397",
+        "bytes": 278
+      },
+      {
+        "path": "pokerbot/__pycache__/__main__.cpython-312.pyc",
+        "sha256": "e7878d330998046b68db0805d4d81bc9ba9943a311d552e91e5c04c863b710b2",
+        "bytes": 11653
+      },
+      {
+        "path": "pokerbot/__pycache__/benchmarks.cpython-312.pyc",
+        "sha256": "0c05a5f590a7ce8a2d950d1ca3abe2526dc188f10169f321f8c03943026292aa",
+        "bytes": 4872
+      },
+      {
+        "path": "pokerbot/__pycache__/candidate_evaluation.cpython-312.pyc",
+        "sha256": "0e85188105be4e5431ca536e2752ee43cb3a0b5e37f4d9defed2989accad916b",
+        "bytes": 9409
+      },
+      {
+        "path": "pokerbot/__pycache__/cards.cpython-312.pyc",
+        "sha256": "d07cf8da7cbc4236514288d35e342894a20c92067ae935f6eaee25477b862eb7",
+        "bytes": 13039
+      },
+      {
+        "path": "pokerbot/__pycache__/corpus.cpython-312.pyc",
+        "sha256": "6b53fc720da68f5768bedba297d9f4531a86e7da5d0eb48fc183daa808e8e2b7",
+        "bytes": 10034
+      },
+      {
+        "path": "pokerbot/__pycache__/equity.cpython-312.pyc",
+        "sha256": "c5843225bed79e6e72a0b22815d9978a7183fed13e13fd153d452263103ac7a6",
+        "bytes": 9095
+      },
+      {
+        "path": "pokerbot/__pycache__/evaluation_baselines.cpython-312.pyc",
+        "sha256": "b232e77e391eb5a495d7dc45ab8ad78588f21381d268a0ff8846ff9ac2564d7f",
+        "bytes": 2205
+      },
+      {
+        "path": "pokerbot/__pycache__/fast.cpython-312.pyc",
+        "sha256": "3b21848ac5f9e26d12e96ccb45c51c79f8ab807cd368cf7627492763615682e0",
+        "bytes": 28473
+      },
+      {
+        "path": "pokerbot/__pycache__/grid_policy.cpython-312.pyc",
+        "sha256": "cc08a8d8cea8f5fdcaed383cb703efc1d8932e12e35cce19ddad9116f609eb7b",
+        "bytes": 4287
+      },
+      {
+        "path": "pokerbot/__pycache__/hybrid.cpython-312.pyc",
+        "sha256": "cd928b0e9f372e6a11b33778e168657482cb810f99d0398b7cd6b623e4641159",
+        "bytes": 23878
+      },
+      {
+        "path": "pokerbot/__pycache__/imitation.cpython-312.pyc",
+        "sha256": "26976ff9c4d7862306642f9be4b95f24c6dff1ba34fe9b36b125c24dbf5f322b",
+        "bytes": 29389
+      },
+      {
+        "path": "pokerbot/__pycache__/ivey.cpython-312.pyc",
+        "sha256": "102ca13deb5d30da2079b7e4d364bf9b4abdc0761cc62748489c298951353893",
+        "bytes": 21907
+      },
+      {
+        "path": "pokerbot/__pycache__/preflop.cpython-312.pyc",
+        "sha256": "00f62011829ae4d666652ded8cba7d1fc360f77d8ab503ba90d47911caa9ca8a",
+        "bytes": 4006
+      },
+      {
+        "path": "pokerbot/__pycache__/prospective.cpython-312.pyc",
+        "sha256": "b94658419514938c098746a7cd32c89281c44d15fc88e6cdb58bb07e42a479df",
+        "bytes": 6473
+      },
+      {
+        "path": "pokerbot/__pycache__/public_reports.cpython-312.pyc",
+        "sha256": "2b9009a30d021bd04bb873a7c2274144375e07eca6644c164c913579d1a172ac",
+        "bytes": 6822
+      },
+      {
+        "path": "pokerbot/__pycache__/review.cpython-312.pyc",
+        "sha256": "055fdcacd851bd6c6941a0d8563c573f31dd79999e331c48a758e57cf0d920c5",
+        "bytes": 10720
+      },
+      {
+        "path": "pokerbot/__pycache__/scenarios.cpython-312.pyc",
+        "sha256": "de2271f4c46691bd0c5682e0b50c909f4ff0bdd9859476d7ac4ecb4d04c6f2ff",
+        "bytes": 2412
+      },
+      {
+        "path": "pokerbot/__pycache__/simulation.cpython-312.pyc",
+        "sha256": "0bd68f6212816254f2a14dc2cd013b7483742ff15397b81dbc84c850b04a8691",
+        "bytes": 27369
+      },
+      {
+        "path": "pokerbot/__pycache__/sizing.cpython-312.pyc",
+        "sha256": "fe563e1f9ab88c191007fadb8ade7485c8473097ae1ad2c41fca38f994b5eca3",
+        "bytes": 8447
+      },
+      {
+        "path": "pokerbot/__pycache__/state.cpython-312.pyc",
+        "sha256": "edf9a1d2cc2bc90cfe1a0780d5c82fb16ed1e59c3081c1df8f3fee9994cae84c",
+        "bytes": 7950
+      },
+      {
+        "path": "pokerbot/__pycache__/strategy.cpython-312.pyc",
+        "sha256": "63912df48981fd5d90c9e917510744eba64a21e69135b828807dfa6b7ec1fe74",
+        "bytes": 4325
+      },
+      {
+        "path": "pokerbot/__pycache__/texture.cpython-312.pyc",
+        "sha256": "0f04eb9f91c4aea977f08c7c8069141c92bea5f65b721e67b9bfa91f06e09b75",
+        "bytes": 14911
+      },
+      {
+        "path": "pokerbot/benchmarks.py",
+        "sha256": "e2c4a80ad802a56eaaec4b65035512ee0409aff53d3f2c4ec64f6469d73bf299",
+        "bytes": 3714
+      },
+      {
+        "path": "pokerbot/candidate_evaluation.py",
+        "sha256": "cfba713cac0ae0fe67f7c30f3b22caebed05daeb2c8d15012ffa148fb87ac1ad",
+        "bytes": 6597
+      },
+      {
+        "path": "pokerbot/cards.py",
+        "sha256": "89a27b217402dd3bccda1d75ac16be52d477484e7e4115896ea135e6ff0efc12",
+        "bytes": 8886
+      },
+      {
+        "path": "pokerbot/corpus.py",
+        "sha256": "03fa2acd3719937910edcdd3cb0e1297e6b45669c948f7b1e4bbc3cc92a8ca5c",
+        "bytes": 6480
+      },
+      {
+        "path": "pokerbot/equity.py",
+        "sha256": "58f088d74ade4805d85b675c58fa9d8078d038a3304f342c7554415cbc701f60",
+        "bytes": 5397
+      },
+      {
+        "path": "pokerbot/evaluation_baselines.py",
+        "sha256": "61a15a2e3ec66b12ae1e700e71f32ca5afdaca5a6837c89981c9712d05e56067",
+        "bytes": 1029
+      },
+      {
+        "path": "pokerbot/fast.py",
+        "sha256": "7b2d960d0462090c7fa5fdaf8825cfa7d40a6dfe2360619725f4644f2c87e1e5",
+        "bytes": 24732
+      },
+      {
+        "path": "pokerbot/grid_policy.py",
+        "sha256": "fd9d1557db55060110e43528f44307e1e5c1bbc61056d4fbf693e1320c521a44",
+        "bytes": 3446
+      },
+      {
+        "path": "pokerbot/hybrid.py",
+        "sha256": "43453c98006c8ea0a9d03051dd920f9df4b162b89f3167a1d8b406335d82ec02",
+        "bytes": 16531
+      },
+      {
+        "path": "pokerbot/imitation.py",
+        "sha256": "f9e6688483f2c58323cfc91a4e0f0feb32a715dd3827f996526e3813526169d9",
+        "bytes": 22081
+      },
+      {
+        "path": "pokerbot/ivey.py",
+        "sha256": "e4b7d2c410477b295de955f59b28374fb125ab7434454648baa86dcecc7734c0",
+        "bytes": 15683
+      },
+      {
+        "path": "pokerbot/preflop.py",
+        "sha256": "44d30850911498b65a8b952a6d56ce8713fce408204b837e9c288b3fc81b6821",
+        "bytes": 2442
+      },
+      {
+        "path": "pokerbot/prospective.py",
+        "sha256": "07c906d18840548efc11ad6311316ffeaf3cd45ebb8352e96ab0f865067a6a49",
+        "bytes": 4179
+      },
+      {
+        "path": "pokerbot/public_reports.py",
+        "sha256": "d6b01e4b4dbba36488796a45de4cd95bd646f91a11b33a0ec9aed6c7c5956d68",
+        "bytes": 5347
+      },
+      {
+        "path": "pokerbot/review.py",
+        "sha256": "a59fbb3827825f2b65e844f86087a0b6a3c8df35dbea45d141f3f6d5fbafac6f",
+        "bytes": 8037
+      },
+      {
+        "path": "pokerbot/scenarios.py",
+        "sha256": "bbae06f78b221a32274ea705be76a5c25c241dcd0afab1a76dda124ffc1c1ee9",
+        "bytes": 1381
+      },
+      {
+        "path": "pokerbot/simulation.py",
+        "sha256": "80f0ea85dade54141ce814af76a7a271875389615e00793fa7202e51a4cf7b97",
+        "bytes": 21946
+      },
+      {
+        "path": "pokerbot/sizing.py",
+        "sha256": "5b7a54ce36095e5d31818e921e7fc449bd516d18b63368919cc779091ad0b6bf",
+        "bytes": 6083
+      },
+      {
+        "path": "pokerbot/state.py",
+        "sha256": "ef9461ff2de04ddf402305c2a857a7c4849a8bb9d6d2e31fa2eb18c7d21d62d8",
+        "bytes": 5113
+      },
+      {
+        "path": "pokerbot/strategy.py",
+        "sha256": "ec87e0ebf9a9f8a0a446f9c2fd49065f350ff8456bde73956cc07fb757e35730",
+        "bytes": 3338
+      },
+      {
+        "path": "pokerbot/texture.py",
+        "sha256": "ec9cce35a3a0f94829cb543921eccb715ae18ad77b64dd009ccfc8c4f19981f8",
+        "bytes": 11592
+      }
+    ]
+  },
+  "data/models": {
+    "file_entries": 12,
+    "manifest_sha256": "b9e1680282a01dbd132c70185f5714d497c152912edc6b765922d6245ee832bb",
+    "entries": [
+      {
+        "path": "data/models/candidate-lock-v2.json",
+        "sha256": "118c2d9b389096ef5027aab803fd0cd2eee343b897ee338f9e43a35b0a8c16b7",
+        "bytes": 2217
+      },
+      {
+        "path": "data/models/candidate-v2-source-manifest.json",
+        "sha256": "e7603cb6d78c46064418c09cab041ed9538660a7609d0bbb85e1e87815bdbbfa",
+        "bytes": 2936
+      },
+      {
+        "path": "data/models/candidate-v2-source.zip",
+        "sha256": "b13c425ac3c8164c4c799742b0b009876e4f301bb7c4d5cc2653c0dbf2715bfe",
+        "bytes": 101902
+      },
+      {
+        "path": "data/models/grid-candidate-lock-v1.json",
+        "sha256": "cc4e52d437aeb75af94139ff8e4b550e511de7fa2f45f4e1d5d46e0788cb5f46",
+        "bytes": 2561
+      },
+      {
+        "path": "data/models/hybrid-v1-source-manifest.json",
+        "sha256": "cc86f7bbd943e3b723437220c49811456546f803514959a17e6ac116549009f8",
+        "bytes": 2530
+      },
+      {
+        "path": "data/models/hybrid-v1-source.zip",
+        "sha256": "c3f48326143d4b9406b314e3fdc5c65fc4eae6b15ce28211f31aa5edce1f1242",
+        "bytes": 96533
+      },
+      {
+        "path": "data/models/hybrid-v1.json",
+        "sha256": "7c2a536e3a19783873f786b866a65998b8d31672ac3e150d385341d6fc113313",
+        "bytes": 15443
+      },
+      {
+        "path": "data/models/hybrid-v2.json",
+        "sha256": "a8650a0efacab9a28b8eb7aedef1d8b78c1e9a918f1c90b9e24dbe6bf07a61b6",
+        "bytes": 16135
+      },
+      {
+        "path": "data/models/ivey-imitation-v1.json",
+        "sha256": "dc850beb8c9afe80e4acef156a290a951cf509f80beacf418e3442e5cf774f23",
+        "bytes": 4567
+      },
+      {
+        "path": "data/models/locked-candidate-v1.zip",
+        "sha256": "d1431f1b3cf0f2ef6b64ceb4031ae1c8f3113dc96c5b62a936ccf1c4260df5a8",
+        "bytes": 42420
+      },
+      {
+        "path": "data/models/prospective-code-lock-v1.json",
+        "sha256": "ad009110e329a7f9f672aceb978c3d19696adb5daac74749a1b537d8f7420455",
+        "bytes": 1336
+      },
+      {
+        "path": "data/models/prospective-evaluation-lock-v1.json",
+        "sha256": "a0d6b0d25f2c7f07100ca4ed017d82419bbfa67a1f471458de8756b757fbc113",
+        "bytes": 658
+      }
+    ]
+  },
+  "data/corpus_splits": {
+    "file_entries": 3,
+    "manifest_sha256": "2b4339e17e13f1f60fe9a7cf8d805e6907fd4898dd6e24c7c90cd394e67200b3",
+    "entries": [
+      {
+        "path": "data/corpus_splits/development-after-prospective-v1.json",
+        "sha256": "d172e7310677b051b8dea0163fb14b06b81ad9b5847c73d735f1e2ec66c1a483",
+        "bytes": 221446
+      },
+      {
+        "path": "data/corpus_splits/development-baseline.json",
+        "sha256": "1e80fced108bc936cffc30b378f87ad73d3de874caa260d6d12246772c22c373",
+        "bytes": 43433
+      },
+      {
+        "path": "data/corpus_splits/public-reports-v1.json",
+        "sha256": "782aea11d6301c1d906d19e4519905210ab1455e031c260a805723a504512e9e",
+        "bytes": 75578
+      }
+    ]
+  }
+}

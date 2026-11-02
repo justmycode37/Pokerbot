@@ -1,0 +1,438 @@
+{
+  "schema_version": 1,
+  "source": "https://www.cardplayer.com/poker-tools/hand-matchups/1921",
+  "publication_date": "2015-02-09",
+  "hero": "Phil Ivey",
+  "hand_id": "cardplayer-1921-ivey-polk",
+  "source_facts": {
+    "hero_starting_stack": 2909000,
+    "opponent_starting_stack": 2570000,
+    "small_blind": 12000,
+    "big_blind": 24000,
+    "ante_per_player": 3000,
+    "players_dealt": 4
+  },
+  "derivation_notes": [
+    "Other seats' preflop folds are inferred from the reported heads-up continuation; no extra calls are reported.",
+    "The 3,000 ante is per player, as described by the report's pre-big-blind-ante tournament convention.",
+    "Raise bounds use the minimum full raise and hero's street bet plus remaining stack; excess is returnable.",
+    "Table-wide payouts and other starting stacks are unknown and are not provided to the policy."
+  ],
+  "decisions": [
+    {
+      "state": {
+        "hole_cards": [
+          "Tc",
+          "9d"
+        ],
+        "board": [],
+        "pot": 103000,
+        "to_call": 31000,
+        "stack": 2882000,
+        "current_bet": 24000,
+        "min_raise_to": 86000,
+        "max_raise_to": 2906000,
+        "big_blind": 24000,
+        "position": "BB",
+        "table_size": 4,
+        "players_active": 2,
+        "players_to_act": 0,
+        "street": "preflop",
+        "legal_actions": [
+          "fold",
+          "call",
+          "raise"
+        ],
+        "history": [
+          {
+            "street": "preflop",
+            "player": "UTG",
+            "action": "fold",
+            "position": "UTG"
+          },
+          {
+            "street": "preflop",
+            "player": "Polk",
+            "action": "raise",
+            "amount": 55000,
+            "added": 55000,
+            "position": "BTN"
+          },
+          {
+            "street": "preflop",
+            "player": "SB",
+            "action": "fold",
+            "position": "SB"
+          }
+        ],
+        "player_id": "Ivey",
+        "hand_id": "cardplayer-1921-ivey-polk",
+        "seed": 4500
+      },
+      "expected": {
+        "action": "call"
+      },
+      "source": "https://www.cardplayer.com/poker-tools/hand-matchups/1921",
+      "hand_id": "cardplayer-1921-ivey-polk",
+      "format": "tournament_nlhe"
+    },
+    {
+      "state": {
+        "hole_cards": [
+          "Tc",
+          "9d"
+        ],
+        "board": [
+          "Th",
+          "3s",
+          "2d"
+        ],
+        "pot": 134000,
+        "to_call": 0,
+        "stack": 2851000,
+        "current_bet": 0,
+        "min_raise_to": 24000,
+        "max_raise_to": 2851000,
+        "big_blind": 24000,
+        "position": "BB",
+        "table_size": 4,
+        "players_active": 2,
+        "players_to_act": 1,
+        "street": "flop",
+        "legal_actions": [
+          "check",
+          "raise"
+        ],
+        "history": [
+          {
+            "street": "preflop",
+            "player": "UTG",
+            "action": "fold",
+            "position": "UTG"
+          },
+          {
+            "street": "preflop",
+            "player": "Polk",
+            "action": "raise",
+            "amount": 55000,
+            "added": 55000,
+            "position": "BTN"
+          },
+          {
+            "street": "preflop",
+            "player": "SB",
+            "action": "fold",
+            "position": "SB"
+          },
+          {
+            "street": "preflop",
+            "player": "Ivey",
+            "position": "BB",
+            "action": "call",
+            "amount": 55000,
+            "added": 31000
+          }
+        ],
+        "player_id": "Ivey",
+        "hand_id": "cardplayer-1921-ivey-polk",
+        "seed": 4501
+      },
+      "expected": {
+        "action": "check"
+      },
+      "source": "https://www.cardplayer.com/poker-tools/hand-matchups/1921",
+      "hand_id": "cardplayer-1921-ivey-polk",
+      "format": "tournament_nlhe"
+    },
+    {
+      "state": {
+        "hole_cards": [
+          "Tc",
+          "9d"
+        ],
+        "board": [
+          "Th",
+          "3s",
+          "2d",
+          "2h"
+        ],
+        "pot": 134000,
+        "to_call": 0,
+        "stack": 2851000,
+        "current_bet": 0,
+        "min_raise_to": 24000,
+        "max_raise_to": 2851000,
+        "big_blind": 24000,
+        "position": "BB",
+        "table_size": 4,
+        "players_active": 2,
+        "players_to_act": 1,
+        "street": "turn",
+        "legal_actions": [
+          "check",
+          "raise"
+        ],
+        "history": [
+          {
+            "street": "preflop",
+            "player": "UTG",
+            "action": "fold",
+            "position": "UTG"
+          },
+          {
+            "street": "preflop",
+            "player": "Polk",
+            "action": "raise",
+            "amount": 55000,
+            "added": 55000,
+            "position": "BTN"
+          },
+          {
+            "street": "preflop",
+            "player": "SB",
+            "action": "fold",
+            "position": "SB"
+          },
+          {
+            "street": "preflop",
+            "player": "Ivey",
+            "position": "BB",
+            "action": "call",
+            "amount": 55000,
+            "added": 31000
+          },
+          {
+            "street": "flop",
+            "player": "Ivey",
+            "action": "check",
+            "added": 0
+          },
+          {
+            "street": "flop",
+            "player": "Polk",
+            "action": "check",
+            "added": 0
+          }
+        ],
+        "player_id": "Ivey",
+        "hand_id": "cardplayer-1921-ivey-polk",
+        "seed": 4502
+      },
+      "expected": {
+        "action": "raise",
+        "amount": 75000
+      },
+      "source": "https://www.cardplayer.com/poker-tools/hand-matchups/1921",
+      "hand_id": "cardplayer-1921-ivey-polk",
+      "format": "tournament_nlhe"
+    },
+    {
+      "state": {
+        "hole_cards": [
+          "Tc",
+          "9d"
+        ],
+        "board": [
+          "Th",
+          "3s",
+          "2d",
+          "2h",
+          "6c"
+        ],
+        "pot": 284000,
+        "to_call": 0,
+        "stack": 2776000,
+        "current_bet": 0,
+        "min_raise_to": 24000,
+        "max_raise_to": 2776000,
+        "big_blind": 24000,
+        "position": "BB",
+        "table_size": 4,
+        "players_active": 2,
+        "players_to_act": 1,
+        "street": "river",
+        "legal_actions": [
+          "check",
+          "raise"
+        ],
+        "history": [
+          {
+            "street": "preflop",
+            "player": "UTG",
+            "action": "fold",
+            "position": "UTG"
+          },
+          {
+            "street": "preflop",
+            "player": "Polk",
+            "action": "raise",
+            "amount": 55000,
+            "added": 55000,
+            "position": "BTN"
+          },
+          {
+            "street": "preflop",
+            "player": "SB",
+            "action": "fold",
+            "position": "SB"
+          },
+          {
+            "street": "preflop",
+            "player": "Ivey",
+            "position": "BB",
+            "action": "call",
+            "amount": 55000,
+            "added": 31000
+          },
+          {
+            "street": "flop",
+            "player": "Ivey",
+            "action": "check",
+            "added": 0
+          },
+          {
+            "street": "flop",
+            "player": "Polk",
+            "action": "check",
+            "added": 0
+          },
+          {
+            "street": "turn",
+            "player": "Ivey",
+            "action": "raise",
+            "amount": 75000,
+            "added": 75000
+          },
+          {
+            "street": "turn",
+            "player": "Polk",
+            "action": "call",
+            "amount": 75000,
+            "added": 75000
+          }
+        ],
+        "player_id": "Ivey",
+        "hand_id": "cardplayer-1921-ivey-polk",
+        "seed": 4503
+      },
+      "expected": {
+        "action": "raise",
+        "amount": 200000
+      },
+      "source": "https://www.cardplayer.com/poker-tools/hand-matchups/1921",
+      "hand_id": "cardplayer-1921-ivey-polk",
+      "format": "tournament_nlhe"
+    },
+    {
+      "state": {
+        "hole_cards": [
+          "Tc",
+          "9d"
+        ],
+        "board": [
+          "Th",
+          "3s",
+          "2d",
+          "2h",
+          "6c"
+        ],
+        "pot": 1064000,
+        "to_call": 380000,
+        "stack": 2576000,
+        "current_bet": 200000,
+        "min_raise_to": 960000,
+        "max_raise_to": 2776000,
+        "big_blind": 24000,
+        "position": "BB",
+        "table_size": 4,
+        "players_active": 2,
+        "players_to_act": 0,
+        "street": "river",
+        "legal_actions": [
+          "fold",
+          "call",
+          "raise"
+        ],
+        "history": [
+          {
+            "street": "preflop",
+            "player": "UTG",
+            "action": "fold",
+            "position": "UTG"
+          },
+          {
+            "street": "preflop",
+            "player": "Polk",
+            "action": "raise",
+            "amount": 55000,
+            "added": 55000,
+            "position": "BTN"
+          },
+          {
+            "street": "preflop",
+            "player": "SB",
+            "action": "fold",
+            "position": "SB"
+          },
+          {
+            "street": "preflop",
+            "player": "Ivey",
+            "position": "BB",
+            "action": "call",
+            "amount": 55000,
+            "added": 31000
+          },
+          {
+            "street": "flop",
+            "player": "Ivey",
+            "action": "check",
+            "added": 0
+          },
+          {
+            "street": "flop",
+            "player": "Polk",
+            "action": "check",
+            "added": 0
+          },
+          {
+            "street": "turn",
+            "player": "Ivey",
+            "action": "raise",
+            "amount": 75000,
+            "added": 75000
+          },
+          {
+            "street": "turn",
+            "player": "Polk",
+            "action": "call",
+            "amount": 75000,
+            "added": 75000
+          },
+          {
+            "street": "river",
+            "player": "Ivey",
+            "action": "raise",
+            "amount": 200000,
+            "added": 200000
+          },
+          {
+            "street": "river",
+            "player": "Polk",
+            "action": "raise",
+            "amount": 580000,
+            "added": 580000
+          }
+        ],
+        "player_id": "Ivey",
+        "hand_id": "cardplayer-1921-ivey-polk",
+        "seed": 4504
+      },
+      "expected": {
+        "action": "call"
+      },
+      "source": "https://www.cardplayer.com/poker-tools/hand-matchups/1921",
+      "hand_id": "cardplayer-1921-ivey-polk",
+      "format": "tournament_nlhe"
+    }
+  ]
+}

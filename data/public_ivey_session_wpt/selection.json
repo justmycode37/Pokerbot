@@ -1,0 +1,92 @@
+{
+  "selection_method": "Chronologically select the first continuous actual Ivey match after the recap. The prior 12:18–24:18 window was only recap/highlights and is excluded. The first table/preflop frame of the first match is source time 00:43:24; reserve exactly the next 12:00 (00:43:24–00:55:24) before detailed hand transcription. No decision is selected by action or outcome.",
+  "metadata": {
+    "id": "daR3q3KKQ0o",
+    "title": "Phil Ivey vs Patrik Antonius - WPT Heads Up Championship - 🏆 Finals 🏆",
+    "channel": "World Poker Tour",
+    "channel_id": "UCEUGxpG2rkyJlCvr46PBr6g",
+    "upload_date": "20210622",
+    "duration": 11131,
+    "availability": "public",
+    "webpage_url": "https://www.youtube.com/watch?v=daR3q3KKQ0o",
+    "description": "Watch 32 of the top poker players, influencers and celebrities, battle in the WPT Heads up Championship on Poker King. Matches today feature Phil Ivey vs Anthony Zinno, Doug Polk vs  Patrik Antonius and many more!"
+  },
+  "chronological_windows": [
+    {
+      "start_seconds": 0,
+      "end_seconds": 738,
+      "disposition": "excluded_non_play_countdown",
+      "evidence": "Public chronological storyboard shows countdown from 12:18."
+    },
+    {
+      "start_seconds": 738,
+      "end_seconds": 1997,
+      "disposition": "excluded_recap_highlights",
+      "evidence": "The source segment begins with highlights/recaps (including Ivey vs Chris Kruk); it is not the advertised finals match."
+    },
+    {
+      "start_seconds": 1997,
+      "end_seconds": 2604,
+      "disposition": "excluded_interviews_and_match_introduction",
+      "evidence": "Chronological storyboard and source frames show interviews/recap and finals introduction before the first table hand."
+    },
+    {
+      "start_seconds": 2604,
+      "end_seconds": 3324,
+      "disposition": "reserved_for_chronological_review",
+      "rule": "Exactly the first 12 minutes from the first dealt hand at 00:43:24. Log every hand, all Ivey decisions, missing cards, cuts, and interruptions in source order."
+    },
+    {
+      "start_seconds": 3324,
+      "end_seconds": 11131,
+      "disposition": "not_reviewed_in_this_bounded_batch",
+      "evidence": "Outside the first-hand 12-minute review window."
+    }
+  ],
+  "first_extraction": {
+    "start_seconds": 2550,
+    "end_seconds": 3510,
+    "reason": "Temporary 16-minute source interval for match-boundary verification and review of the reserved first 12 minutes; 2:30 before and 3:06 after the reserved window are context only."
+  },
+  "verified_match": {
+    "event": "WPT Heads Up Championship finals, first of five matches",
+    "players": [
+      "Phil Ivey",
+      "Patrik Antonius"
+    ],
+    "variant": "No-limit Texas Hold’em (broadcast shows two private cards per player, five-card community board, and variable bet sizing)",
+    "opening_blinds": {
+      "small_blind": 400,
+      "big_blind": 800
+    },
+    "starting_stacks": {
+      "Phil Ivey": 100000,
+      "Patrik Antonius": 100000
+    },
+    "starting_stack_basis": "The official WPT Day 1 structure update explicitly states a 100,000-chip match start and identifies the final as best-of-five; the official Day 2 update corroborates the amount and 400/800 opening level. At 00:43:24 the first-game scoreboard is 0–0 and the broadcast shows Ivey at 99.2K after posting 800, Antonius at 99.6K after posting 400, and pot 1,200. Adding back those visible posts yields exact 100,000 starting stacks; the rounded K displays are corroborative only.",
+    "official_structure_sources": [
+      {
+        "url": "https://www.worldpokertour.com/live-update/welcome-to-day-1-of-the-wpt-heads-up-poker-championship",
+        "supports": "100,000 match-start stack, 400/800 opening blinds, levels every seven hands, best-of-three ordinary matches and best-of-five final."
+      },
+      {
+        "url": "https://www.worldpokertour.com/live-update/day-2-of-the-wpt-heads-up-championship-awaits-special-events-wpt-heads-up-poker-championship-presented-by-poker-king-season-2021-2022-2",
+        "supports": "100,000 start, 400/800 first level, levels every seven hands."
+      }
+    ],
+    "ante_and_straddle": "Official structure pages do not specify either. Within the reviewed first game, each hand’s settled opening-pot overlay equals the displayed small plus big blind; see forced_bets_at_opening in records.json. This supports zero ante and no straddle for these reviewed hands only.",
+    "blind_progression_note": "Official WPT says levels increase every seven hands. The broadcast overlay remains 400/800 through review context H11 and shows 500/1,000 from H12; unresolved against the literal seven-hand count. Per-hand blind values follow the broadcast overlay."
+  },
+  "boundary_note": "The first 12-minute window was fixed at 00:43:24 from the first-match table/preflop frame. An overview montage used to locate the boundary exposed sparse frames outside the reserved window; no records are admitted from those frames and no hand was selected by action/outcome. Detailed transcription is strictly chronological within the frozen interval.",
+  "reviewed_batch": {
+    "records_file": "data/public_ivey_session_wpt/records.json",
+    "hand_contexts": 20,
+    "hands_with_ivey_decisions": 18,
+    "ivey_decisions": 42,
+    "completed_contexts_inside_window": 19,
+    "boundary_truncated_contexts": 1,
+    "redacted_predecision_images": 42,
+    "phh_action_prefixes": 20,
+    "cross_corpus_duplicate_check": "Not performed in this ownership scope; compare duplicate_guard_key and hand_context_fingerprint_sha256 at parent merge."
+  }
+}

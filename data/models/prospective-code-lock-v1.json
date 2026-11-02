@@ -1,0 +1,19 @@
+{
+  "inspected_manifest_path": "data/corpus_splits/public-reports-v1.json",
+  "inspected_manifest_sha256": "782aea11d6301c1d906d19e4519905210ab1455e031c260a805723a504512e9e",
+  "model_path": "data/models/ivey-imitation-v1.json",
+  "model_sha256": "dc850beb8c9afe80e4acef156a290a951cf509f80beacf418e3442e5cf774f23",
+  "rule": "No fitting or candidate changes after inspecting prospective labels; reject reused groups and hands.",
+  "runtime_fingerprints": {
+    "data/preflop_equity.json": "44684582cbe9400741a7cf1a0857877f94aadb30de54db7d1d20b140ce2a7ef0",
+    "pokerbot/cards.py": "89a27b217402dd3bccda1d75ac16be52d477484e7e4115896ea135e6ff0efc12",
+    "pokerbot/corpus.py": "03fa2acd3719937910edcdd3cb0e1297e6b45669c948f7b1e4bbc3cc92a8ca5c",
+    "pokerbot/fast.py": "7b2d960d0462090c7fa5fdaf8825cfa7d40a6dfe2360619725f4644f2c87e1e5",
+    "pokerbot/imitation.py": "f9e6688483f2c58323cfc91a4e0f0feb32a715dd3827f996526e3813526169d9",
+    "pokerbot/ivey.py": "e4b7d2c410477b295de955f59b28374fb125ab7434454648baa86dcecc7734c0",
+    "pokerbot/preflop.py": "44d30850911498b65a8b952a6d56ce8713fce408204b837e9c288b3fc81b6821",
+    "pokerbot/state.py": "ef9461ff2de04ddf402305c2a857a7c4849a8bb9d6d2e31fa2eb18c7d21d62d8",
+    "pokerbot/texture.py": "ec9cce35a3a0f94829cb543921eccb715ae18ad77b64dd009ccfc8c4f19981f8"
+  },
+  "schema_version": 1
+}

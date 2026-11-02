@@ -1,0 +1,12 @@
+variant = "NT"
+ante_trimming_status = false
+antes = [0, 0]
+blinds_or_straddles = [500, 1000]
+min_bet = 1000
+starting_stacks = [121893.50, 742178.00]
+actions = ["d dh p1 8h7h", "d dh p2 ????", "p2 cbr 3000", "p1 cbr 9000", "p2 cc", "d db 7s4cAh", "p1 cbr 14000", "p2 cbr 37600", "p1 cc", "d db Kh", "p1 cc", "p2 cc", "d db 9s", "p1 cc", "p2 cbr 695578", "p1 cc", "p1 sm 8h7h", "p2 sm Qc8c"]
+seats = [1, 2]
+players = ["Phil Ivey", "Isildur1"]
+currency_symbol = "$"
+hand = "converted-forum:facts:04b7246006258bd1016f86338a416bba10845ddb00d048aad3e1667f0c0ff21f"
+venue = "Full Tilt Poker"

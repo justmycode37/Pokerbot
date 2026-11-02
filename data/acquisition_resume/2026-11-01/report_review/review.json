@@ -1,0 +1,915 @@
+{
+  "candidate_copy": "data/acquisition_resume/2026-11-01/report_review/replay_validated_candidates.json",
+  "counts": {
+    "development_after_prospective_baseline": {
+      "dataset_hash": "3cbb867908ec7c603d8f0cb33e7843f34234ddd5f30e251729007c6b7ec1d420",
+      "decisions": 45,
+      "distinct_groups": 8,
+      "distinct_hands": 12,
+      "split_hash": "d35341894333fa8e632d507a0169d04b1f7ecdcf1477f568e54dec29eea62a85"
+    },
+    "recomputed_from_hands_json": {
+      "candidate_hands": 28,
+      "decision_states": 91,
+      "exact_decision_candidates": 12,
+      "hands_with_two_hero_cards": 28,
+      "partial_decisions": 79
+    },
+    "review_outcomes": {
+      "duplicate_prior_source_review_not_new": 1,
+      "eligible_recommendation_pending_admission": 9,
+      "known_hero_cards_among_12_exact_candidate_rows": 12,
+      "partial_source_stack_conflict_extra_row": 1,
+      "partial_table_count_ambiguous": 2,
+      "source_inaccessible": 0,
+      "strict_replay_rows": 12,
+      "unique_pending_known_card_decisions": 9,
+      "unique_pending_known_card_hands": 3
+    },
+    "stale_progress_json_counts": {
+      "candidate_hands": 22,
+      "decision_states": 72,
+      "exact_decision_candidates": 12,
+      "excluded_leads": 0,
+      "partial_decisions": 60
+    }
+  },
+  "duplicate_and_alias_review": {
+    "baseline_candidates_checked": [
+      "Baseline includes a distinct Card Player 1921 hand; no candidate URL or canonical hand ID matches any exact candidate row.",
+      "No exact candidate canonical hand appears in the 45-row baseline."
+    ],
+    "baseline_exact_hand_duplicates": [],
+    "cardplayer_path_normalization": "Normalize cardplayer.com/(poker-tools/)?hand-matchups/{numeric_id} as one Card Player matchup identity. Candidate 1923 is the same source already in the excluded-candidate audit; no other exact candidate aliases were found in saved report records.",
+    "other_saved_report_corpora": [
+      {
+        "dedup_action": "Treat as prior source review, not a new hand. Keep PokerNews candidate separate and do not merge.",
+        "existing_reference": "data/public_ivey_reports/decision-evidence.json excluded_candidates: same Card Player /poker-tools/hand-matchups/1923 source, left unmerged from PokerNews alternate.",
+        "source_id": "cp1923"
+      },
+      {
+        "dedup_action": "No accepted hand row exists; re-review only exact early prefixes.",
+        "existing_reference": "data/public_ivey_reports_batch2/selection-method.json screened_exclusions and post_lock_outcomes: same PDF, previously marked incomplete.",
+        "source_id": "cp37_14"
+      }
+    ],
+    "session_caution": "No split changes made. Candidate 1923 is identified as 2015 Aussie Millions $250K Challenge, but saved baseline CP1921 metadata does not verify event/session; no same-event grouping is asserted from page adjacency or publication date alone."
+  },
+  "file_sha256": {
+    "baseline.json": "d172e7310677b051b8dea0163fb14b06b81ad9b5847c73d735f1e2ec66c1a483",
+    "build_report_bulk.py": "5563c06121e91f458b6444a88a975a812a3be774398c2d3a943d77a5dd24afbb",
+    "hands.json": "26475d81d0142fd391c6a2fc55b1af9b1634796ac88c13c0fe038db13a26a981",
+    "import_report_batch2.py": "1bdae07712871e41918430c0d3790229f589ea1f21a695565bdea845154eea2f",
+    "public-report-normalization.md": "e985bcc6ab66e2726d42393cdcb918cadf58dd10bd45c5e56a8081b6155acb2f",
+    "public_reports.py": "d6b01e4b4dbba36488796a45de4cd95bd646f91a11b33a0ec9aed6c7c5956d68"
+  },
+  "hand_level_outcomes": [
+    {
+      "event_identity": "not named in report excerpt; heads-up final table explicit",
+      "exact_candidate_decisions": [
+        1
+      ],
+      "hand_id": "cardplayer-1547",
+      "known_hero_cards": [
+        "Ah",
+        "Qd"
+      ],
+      "review_outcome": "eligible_recommendation_pending_admission",
+      "row_notes": [
+        "Replay passes after repairing the raw all-in encoding: Antonius had a 550,000 starting stack, but after the 5,000 ante his live street all-in target is 545,000. Hero call is 485,000 into a 615,000 pot. Raw opponent stack 515,000 is before the shove; at Ivey's decision it is 0."
+      ],
+      "source_id": "cp1547"
+    },
+    {
+      "event_identity": "2015 Aussie Millions $250,000 Challenge, heads-up final table",
+      "exact_candidate_decisions": [
+        1
+      ],
+      "hand_id": "cardplayer-1923",
+      "known_hero_cards": [
+        "Kc",
+        "Qc"
+      ],
+      "review_outcome": "duplicate_prior_source_review_not_new",
+      "row_notes": [
+        "Replay passes. Same Card Player URL and matchup were already recorded in the earlier excluded-candidate audit; it refused to merge this source with a PokerNews hand because that report has incompatible cards, board and actions. Not present as an admitted baseline row. Opponent remaining stack should be 1,195,000 after ante and 100,000 street contribution, not 1,200,000. Ivey's all-in street target derives to 4,945,000 from 4,950,000 start less 5,000 ante.",
+        "Baseline has a distinct Card Player 1921 hand, but saved normalized metadata does not verify that hand's event/session; no same-event assertion is made."
+      ],
+      "source_id": "cp1923"
+    },
+    {
+      "exact_candidate_decisions": [
+        1,
+        2
+      ],
+      "hand_id": "cardplayer-2442",
+      "known_hero_cards": [
+        "Kd",
+        "Td"
+      ],
+      "review_outcome": "partial_table_count_ambiguous",
+      "row_notes": [
+        "Replay passes only under the seven-seat table model. Source says seven players remained, not explicitly that this table had seven seats or was a seven-player final table. Per instruction, table size remains unknown. Raw to_call=0 is wrong: the button faces the posted 40,000 big blind; raise-to 80,000 is legal.",
+        "Replay passes only under the seven-seat table model. After Ivey's raise and the implied BB fold, engine state has 1,330,000 pot, 655,000 stack and effective to_call=655,000 (uncapped amount 1,090,000; 435,000 excess is returned if called). Raw to_call=1,090,000 exceeds hero stack."
+      ],
+      "source_id": "cp2442"
+    },
+    {
+      "exact_candidate_decisions": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "hand_id": "cardplayer-mag-35-14",
+      "known_hero_cards": [
+        "Qc",
+        "9c"
+      ],
+      "review_outcome": "eligible_recommendation_pending_admission",
+      "row_notes": [
+        "Replay passes. Explicit five-handed table and BBA support a 90,000 pot after Rast's 40,000 open; Ivey's call to 40,000 is legal. Source HJ is preserved; engine maps the first-to-act seat to UTG in five-seat ordering.",
+        "Replay passes after correcting pot_before_action from 130,000 to 170,000; Rast's 40,000 turn bet is already in pot when Ivey acts. Ivey has 1,120,000 and a 40,000 call; call is legal.",
+        "Replay passes after correcting pot_before_action from 210,000 to 275,000; Rast's 65,000 river bet is already in pot when Ivey acts. Ivey raises to 200,000; engine legal interval is 130,000-1,080,000."
+      ],
+      "source_id": "cp35_14"
+    },
+    {
+      "exact_candidate_decisions": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "hand_id": "cardplayer-mag-37-14",
+      "known_hero_cards": [
+        "Qs",
+        "Ts"
+      ],
+      "review_outcome": "four_early_rows_eligible_recommendation_pending_admission; river_all_in_partial",
+      "row_notes": [
+        "Replay passes. Four players remain, BBA and stacks are exact. Before Ivey completes, pot is 750,000, to_call=150,000 and stack=13,450,000; call is legal.",
+        "Source is accessible, but river tail is not exact: 7,800,000 start less 300,000 BB, 300,000 BBA, 400,000 flop call and 1,200,000 turn call leaves 5,600,000 before river; after a 3,500,000 bet 2,100,000 remains, while report says call for 2,400,000 and commentary says 5,900,000 remained before betting. No exact river state retained."
+      ],
+      "source_id": "cp37_14"
+    }
+  ],
+  "limitations": [
+    "Other 23 hands and their 79 partial rows were outside source lookup/replay scope.",
+    "Source fact hashes cover concise factual extracts, not publisher bytes.",
+    "No examples admitted, scored, used for policy calls, trained on, split-frozen, committed or published."
+  ],
+  "objective": "Independent source review of exact candidates in the saved report_bulk packet; no admission, scoring, policy comparison, training, split freezing, commit or publication.",
+  "post_hand_facts_excluded_from_observation": {
+    "cardplayer-1547": {
+      "full_board": [
+        "6s",
+        "5s",
+        "3c",
+        "Qc",
+        "8d"
+      ],
+      "observation_use": "excluded",
+      "opponent_revealed_cards": {
+        "Patrik Antonius": [
+          "Ks",
+          "3d"
+        ]
+      },
+      "reported_result": "Ivey called and won; Antonius was runner-up."
+    },
+    "cardplayer-1923": {
+      "full_board": [
+        "Ks",
+        "Ts",
+        "Tc",
+        "8h",
+        "9h"
+      ],
+      "observation_use": "excluded",
+      "opponent_revealed_cards": {
+        "Mike McDonald": [
+          "As",
+          "Qh"
+        ]
+      },
+      "reported_result": "Ivey won the hand/event."
+    },
+    "cardplayer-2442": {
+      "full_board": [],
+      "observation_use": "excluded",
+      "opponent_revealed_cards": {
+        "Sam Trickett": [
+          "Ad",
+          "4s"
+        ]
+      },
+      "reported_result": "Ivey folded to the 1,170,000 total shove."
+    },
+    "cardplayer-mag-35-14": {
+      "full_board": [
+        "Kc",
+        "5d",
+        "4h",
+        "5c",
+        "7c"
+      ],
+      "observation_use": "excluded",
+      "opponent_revealed_cards": {
+        "Brian Rast": "K-J suited; exact suits not stated"
+      },
+      "reported_result": "Rast folded to Ivey's 200,000 river raise."
+    },
+    "cardplayer-mag-37-14": {
+      "full_board": [
+        "Td",
+        "4d",
+        "2s",
+        "7s",
+        "Js"
+      ],
+      "observation_use": "excluded",
+      "opponent_revealed_cards": {
+        "Mikalai Vaskaboinikau": [
+          "As",
+          "8s"
+        ]
+      },
+      "reported_result": "Source says Vaskaboinikau called for 2,400,000 and won; call amount conflicts with arithmetic."
+    }
+  },
+  "replay_validation": {
+    "aux_stack_probe_result": "Hero replay rows for 7-seat, 5-seat and 4-seat hands were identical at 1,000,000 / 10,000,000 / 1,000,000,000 auxiliary-stack probes; each auxiliary seat still covered its forced post before folding.",
+    "aux_stack_probe_results_file": "data/acquisition_resume/2026-11-01/report_review/aux_stack_invariance.json",
+    "caveat": "Replay establishes legality and arithmetic conditional on seat model; it does not establish source facts such as ambiguous table size.",
+    "details": "Each hand was replayed only through its last relevant candidate action; no later board, opponent cards or outcome used in policy observations. Complete chronological prefixes include logically required folds. Auxiliary stacks are not source facts.",
+    "engine": "existing pokerbot.ivey.load_decisions PHH importer, read-only; no source/shared code changed",
+    "pokerkit_version": "0.7.7",
+    "replay_files": [
+      "data/acquisition_resume/2026-11-01/report_review/replays/cp1547.phh",
+      "data/acquisition_resume/2026-11-01/report_review/replays/cp1923.phh",
+      "data/acquisition_resume/2026-11-01/report_review/replays/cp2442.phh",
+      "data/acquisition_resume/2026-11-01/report_review/replays/cp35_14.phh",
+      "data/acquisition_resume/2026-11-01/report_review/replays/cp37_14.phh"
+    ],
+    "results_file": "data/acquisition_resume/2026-11-01/report_review/replays/replay_results.json"
+  },
+  "row_reviews": [
+    {
+      "canonical_hand_id": "cardplayer-hand-matchup-1547-ivey-antonius",
+      "decision_ordinal": 1,
+      "engine_expected": {
+        "action": "call"
+      },
+      "engine_replay_status": "passed_under_recorded_seat_model",
+      "engine_state_check": {
+        "board": [],
+        "current_bet": 60000,
+        "legal_actions": [
+          "fold",
+          "call"
+        ],
+        "max_raise_to": 0,
+        "min_raise_to": 0,
+        "players_active": 2,
+        "position": "BB",
+        "pot": 615000,
+        "stack": 3385000,
+        "table_size": 2,
+        "to_call": 485000
+      },
+      "hand_id": "cardplayer-1547",
+      "notes": "Replay passes after repairing the raw all-in encoding: Antonius had a 550,000 starting stack, but after the 5,000 ante his live street all-in target is 545,000. Hero call is 485,000 into a 615,000 pot. Raw opponent stack 515,000 is before the shove; at Ivey's decision it is 0.",
+      "review_outcome": "eligible_recommendation_pending_admission",
+      "source_access_status": "accessible_and_verified",
+      "source_action_sequence": 2,
+      "source_completeness": "exact_candidate_pending_independent_review",
+      "source_id": "cp1547",
+      "source_label": {
+        "action": "call_to",
+        "actor": "Phil Ivey",
+        "amount_chips": 550000
+      }
+    },
+    {
+      "canonical_hand_id": "aussie-millions-2015-250k-ivey-mcdonald-cp1923",
+      "decision_ordinal": 1,
+      "engine_expected": {
+        "action": "raise",
+        "amount": 4945000
+      },
+      "engine_replay_status": "passed_under_recorded_seat_model",
+      "engine_state_check": {
+        "board": [],
+        "current_bet": 50000,
+        "legal_actions": [
+          "fold",
+          "call",
+          "raise"
+        ],
+        "max_raise_to": 4945000,
+        "min_raise_to": 150000,
+        "players_active": 2,
+        "position": "BB",
+        "pot": 160000,
+        "stack": 4895000,
+        "table_size": 2,
+        "to_call": 50000
+      },
+      "hand_id": "cardplayer-1923",
+      "notes": "Replay passes. Same Card Player URL and matchup were already recorded in the earlier excluded-candidate audit; it refused to merge this source with a PokerNews hand because that report has incompatible cards, board and actions. Not present as an admitted baseline row. Opponent remaining stack should be 1,195,000 after ante and 100,000 street contribution, not 1,200,000. Ivey's all-in street target derives to 4,945,000 from 4,950,000 start less 5,000 ante.",
+      "review_outcome": "duplicate_source_reviewed_not_new",
+      "source_access_status": "accessible_and_verified",
+      "source_action_sequence": 2,
+      "source_completeness": "exact_candidate_pending_independent_review",
+      "source_id": "cp1923",
+      "source_label": {
+        "action": "all_in",
+        "actor": "Phil Ivey",
+        "amount_chips": null
+      }
+    },
+    {
+      "canonical_hand_id": "cardplayer-hand-matchup-2442-ivey-trickett",
+      "decision_ordinal": 1,
+      "engine_expected": {
+        "action": "raise",
+        "amount": 80000
+      },
+      "engine_replay_status": "passed_under_recorded_seat_model",
+      "engine_state_check": {
+        "board": [],
+        "current_bet": 0,
+        "legal_actions": [
+          "fold",
+          "call",
+          "raise"
+        ],
+        "max_raise_to": 735000,
+        "min_raise_to": 80000,
+        "players_active": 3,
+        "position": "BTN",
+        "pot": 100000,
+        "stack": 735000,
+        "table_size": 7,
+        "to_call": 40000
+      },
+      "hand_id": "cardplayer-2442",
+      "notes": "Replay passes only under the seven-seat table model. Source says seven players remained, not explicitly that this table had seven seats or was a seven-player final table. Per instruction, table size remains unknown. Raw to_call=0 is wrong: the button faces the posted 40,000 big blind; raise-to 80,000 is legal.",
+      "review_outcome": "partial_table_count_ambiguous",
+      "source_access_status": "accessible_and_verified",
+      "source_action_sequence": 1,
+      "source_completeness": "exact_candidate_pending_independent_review",
+      "source_id": "cp2442",
+      "source_label": {
+        "action": "raise_to",
+        "actor": "Phil Ivey",
+        "amount_chips": 80000
+      }
+    },
+    {
+      "canonical_hand_id": "cardplayer-hand-matchup-2442-ivey-trickett",
+      "decision_ordinal": 2,
+      "engine_expected": {
+        "action": "fold"
+      },
+      "engine_replay_status": "passed_under_recorded_seat_model",
+      "engine_state_check": {
+        "board": [],
+        "current_bet": 80000,
+        "legal_actions": [
+          "fold",
+          "call"
+        ],
+        "max_raise_to": 0,
+        "min_raise_to": 0,
+        "players_active": 2,
+        "position": "BTN",
+        "pot": 1330000,
+        "stack": 655000,
+        "table_size": 7,
+        "to_call": 655000
+      },
+      "hand_id": "cardplayer-2442",
+      "notes": "Replay passes only under the seven-seat table model. After Ivey's raise and the implied BB fold, engine state has 1,330,000 pot, 655,000 stack and effective to_call=655,000 (uncapped amount 1,090,000; 435,000 excess is returned if called). Raw to_call=1,090,000 exceeds hero stack.",
+      "review_outcome": "partial_table_count_ambiguous",
+      "source_access_status": "accessible_and_verified",
+      "source_action_sequence": 3,
+      "source_completeness": "exact_candidate_pending_independent_review",
+      "source_id": "cp2442",
+      "source_label": {
+        "action": "fold",
+        "actor": "Phil Ivey",
+        "amount_chips": null
+      }
+    },
+    {
+      "canonical_hand_id": "triton-madrid-2022-50k-nlhe-ivey-rast-cp35-14",
+      "decision_ordinal": 1,
+      "engine_expected": {
+        "action": "call"
+      },
+      "engine_replay_status": "passed_under_recorded_seat_model",
+      "engine_state_check": {
+        "board": [],
+        "current_bet": 0,
+        "legal_actions": [
+          "fold",
+          "call",
+          "raise"
+        ],
+        "max_raise_to": 1160000,
+        "min_raise_to": 60000,
+        "players_active": 4,
+        "position": "BTN",
+        "pot": 90000,
+        "stack": 1160000,
+        "table_size": 5,
+        "to_call": 40000
+      },
+      "hand_id": "cardplayer-mag-35-14",
+      "notes": "Replay passes. Explicit five-handed table and BBA support a 90,000 pot after Rast's 40,000 open; Ivey's call to 40,000 is legal. Source HJ is preserved; engine maps the first-to-act seat to UTG in five-seat ordering.",
+      "review_outcome": "eligible_recommendation_pending_admission",
+      "source_access_status": "accessible_and_verified",
+      "source_action_sequence": 2,
+      "source_completeness": "exact_candidate_pending_independent_review",
+      "source_id": "cp35_14",
+      "source_label": {
+        "action": "call_to",
+        "actor": "Phil Ivey",
+        "amount_chips": 40000
+      }
+    },
+    {
+      "canonical_hand_id": "triton-madrid-2022-50k-nlhe-ivey-rast-cp35-14",
+      "decision_ordinal": 2,
+      "engine_expected": {
+        "action": "check"
+      },
+      "engine_replay_status": "passed_under_recorded_seat_model",
+      "engine_state_check": {
+        "board": [
+          "Kc",
+          "5d",
+          "4h"
+        ],
+        "current_bet": 0,
+        "legal_actions": [
+          "check",
+          "raise"
+        ],
+        "max_raise_to": 1120000,
+        "min_raise_to": 20000,
+        "players_active": 2,
+        "position": "BTN",
+        "pot": 130000,
+        "stack": 1120000,
+        "table_size": 5,
+        "to_call": 0
+      },
+      "hand_id": "cardplayer-mag-35-14",
+      "notes": "Replay passes. Pot 130,000 after preflop call and flop checks; check is legal. Cards are Q-9 suited; exact clubs are derived from draw description and board.",
+      "review_outcome": "eligible_recommendation_pending_admission",
+      "source_access_status": "accessible_and_verified",
+      "source_action_sequence": 4,
+      "source_completeness": "exact_candidate_pending_independent_review",
+      "source_id": "cp35_14",
+      "source_label": {
+        "action": "check",
+        "actor": "Phil Ivey",
+        "amount_chips": null
+      }
+    },
+    {
+      "canonical_hand_id": "triton-madrid-2022-50k-nlhe-ivey-rast-cp35-14",
+      "decision_ordinal": 3,
+      "engine_expected": {
+        "action": "call"
+      },
+      "engine_replay_status": "passed_under_recorded_seat_model",
+      "engine_state_check": {
+        "board": [
+          "Kc",
+          "5d",
+          "4h",
+          "5c"
+        ],
+        "current_bet": 0,
+        "legal_actions": [
+          "fold",
+          "call",
+          "raise"
+        ],
+        "max_raise_to": 1120000,
+        "min_raise_to": 80000,
+        "players_active": 2,
+        "position": "BTN",
+        "pot": 170000,
+        "stack": 1120000,
+        "table_size": 5,
+        "to_call": 40000
+      },
+      "hand_id": "cardplayer-mag-35-14",
+      "notes": "Replay passes after correcting pot_before_action from 130,000 to 170,000; Rast's 40,000 turn bet is already in pot when Ivey acts. Ivey has 1,120,000 and a 40,000 call; call is legal.",
+      "review_outcome": "eligible_recommendation_pending_admission",
+      "source_access_status": "accessible_and_verified",
+      "source_action_sequence": 6,
+      "source_completeness": "exact_candidate_pending_independent_review",
+      "source_id": "cp35_14",
+      "source_label": {
+        "action": "call_to",
+        "actor": "Phil Ivey",
+        "amount_chips": 40000
+      }
+    },
+    {
+      "canonical_hand_id": "triton-madrid-2022-50k-nlhe-ivey-rast-cp35-14",
+      "decision_ordinal": 4,
+      "engine_expected": {
+        "action": "raise",
+        "amount": 200000
+      },
+      "engine_replay_status": "passed_under_recorded_seat_model",
+      "engine_state_check": {
+        "board": [
+          "Kc",
+          "5d",
+          "4h",
+          "5c",
+          "7c"
+        ],
+        "current_bet": 0,
+        "legal_actions": [
+          "fold",
+          "call",
+          "raise"
+        ],
+        "max_raise_to": 1080000,
+        "min_raise_to": 130000,
+        "players_active": 2,
+        "position": "BTN",
+        "pot": 275000,
+        "stack": 1080000,
+        "table_size": 5,
+        "to_call": 65000
+      },
+      "hand_id": "cardplayer-mag-35-14",
+      "notes": "Replay passes after correcting pot_before_action from 210,000 to 275,000; Rast's 65,000 river bet is already in pot when Ivey acts. Ivey raises to 200,000; engine legal interval is 130,000-1,080,000.",
+      "review_outcome": "eligible_recommendation_pending_admission",
+      "source_access_status": "accessible_and_verified",
+      "source_action_sequence": 8,
+      "source_completeness": "exact_candidate_pending_independent_review",
+      "source_id": "cp35_14",
+      "source_label": {
+        "action": "raise_to",
+        "actor": "Phil Ivey",
+        "amount_chips": 200000
+      }
+    },
+    {
+      "canonical_hand_id": "triton-montenegro-2024-125k-nlhe-ivey-vaskaboinikau-cp37-14",
+      "decision_ordinal": 1,
+      "engine_expected": {
+        "action": "call"
+      },
+      "engine_replay_status": "passed_under_recorded_seat_model",
+      "engine_state_check": {
+        "board": [],
+        "current_bet": 150000,
+        "legal_actions": [
+          "fold",
+          "call",
+          "raise"
+        ],
+        "max_raise_to": 13600000,
+        "min_raise_to": 600000,
+        "players_active": 2,
+        "position": "SB",
+        "pot": 750000,
+        "stack": 13450000,
+        "table_size": 4,
+        "to_call": 150000
+      },
+      "hand_id": "cardplayer-mag-37-14",
+      "notes": "Replay passes. Four players remain, BBA and stacks are exact. Before Ivey completes, pot is 750,000, to_call=150,000 and stack=13,450,000; call is legal.",
+      "review_outcome": "eligible_recommendation_pending_admission",
+      "source_access_status": "accessible_and_verified",
+      "source_action_sequence": 1,
+      "source_completeness": "exact_candidate_pending_independent_review",
+      "source_id": "cp37_14",
+      "source_label": {
+        "action": "call_to",
+        "actor": "Phil Ivey",
+        "amount_chips": 300000
+      }
+    },
+    {
+      "canonical_hand_id": "triton-montenegro-2024-125k-nlhe-ivey-vaskaboinikau-cp37-14",
+      "decision_ordinal": 2,
+      "engine_expected": {
+        "action": "raise",
+        "amount": 400000
+      },
+      "engine_replay_status": "passed_under_recorded_seat_model",
+      "engine_state_check": {
+        "board": [
+          "Td",
+          "4d",
+          "2s"
+        ],
+        "current_bet": 0,
+        "legal_actions": [
+          "check",
+          "raise"
+        ],
+        "max_raise_to": 13300000,
+        "min_raise_to": 300000,
+        "players_active": 2,
+        "position": "SB",
+        "pot": 900000,
+        "stack": 13300000,
+        "table_size": 4,
+        "to_call": 0
+      },
+      "hand_id": "cardplayer-mag-37-14",
+      "notes": "Replay passes. After preflop call/check, flop pot is 900,000; Ivey's 400,000 opening bet is legal (PokerKit encodes an opening bet as raise/cbr).",
+      "review_outcome": "eligible_recommendation_pending_admission",
+      "source_access_status": "accessible_and_verified",
+      "source_action_sequence": 3,
+      "source_completeness": "exact_candidate_pending_independent_review",
+      "source_id": "cp37_14",
+      "source_label": {
+        "action": "bet",
+        "actor": "Phil Ivey",
+        "amount_chips": 400000
+      }
+    },
+    {
+      "canonical_hand_id": "triton-montenegro-2024-125k-nlhe-ivey-vaskaboinikau-cp37-14",
+      "decision_ordinal": 3,
+      "engine_expected": {
+        "action": "raise",
+        "amount": 1200000
+      },
+      "engine_replay_status": "passed_under_recorded_seat_model",
+      "engine_state_check": {
+        "board": [
+          "Td",
+          "4d",
+          "2s",
+          "7s"
+        ],
+        "current_bet": 0,
+        "legal_actions": [
+          "check",
+          "raise"
+        ],
+        "max_raise_to": 12900000,
+        "min_raise_to": 300000,
+        "players_active": 2,
+        "position": "SB",
+        "pot": 1700000,
+        "stack": 12900000,
+        "table_size": 4,
+        "to_call": 0
+      },
+      "hand_id": "cardplayer-mag-37-14",
+      "notes": "Replay passes. After flop bet/call and turn card the pot is 1,700,000; Ivey's 1,200,000 bet is legal.",
+      "review_outcome": "eligible_recommendation_pending_admission",
+      "source_access_status": "accessible_and_verified",
+      "source_action_sequence": 5,
+      "source_completeness": "exact_candidate_pending_independent_review",
+      "source_id": "cp37_14",
+      "source_label": {
+        "action": "bet",
+        "actor": "Phil Ivey",
+        "amount_chips": 1200000
+      }
+    },
+    {
+      "canonical_hand_id": "triton-montenegro-2024-125k-nlhe-ivey-vaskaboinikau-cp37-14",
+      "decision_ordinal": 4,
+      "engine_expected": {
+        "action": "check"
+      },
+      "engine_replay_status": "passed_under_recorded_seat_model",
+      "engine_state_check": {
+        "board": [
+          "Td",
+          "4d",
+          "2s",
+          "7s",
+          "Js"
+        ],
+        "current_bet": 0,
+        "legal_actions": [
+          "check",
+          "raise"
+        ],
+        "max_raise_to": 11700000,
+        "min_raise_to": 300000,
+        "players_active": 2,
+        "position": "SB",
+        "pot": 4100000,
+        "stack": 11700000,
+        "table_size": 4,
+        "to_call": 0
+      },
+      "hand_id": "cardplayer-mag-37-14",
+      "notes": "Replay passes. After turn bet/call and river card the pot is 4,100,000; Ivey's check is legal. The conflicting all-in/call occurs after this observation.",
+      "review_outcome": "eligible_recommendation_pending_admission",
+      "source_access_status": "accessible_and_verified",
+      "source_action_sequence": 7,
+      "source_completeness": "exact_candidate_pending_independent_review",
+      "source_id": "cp37_14",
+      "source_label": {
+        "action": "check",
+        "actor": "Phil Ivey",
+        "amount_chips": null
+      }
+    },
+    {
+      "canonical_hand_id": "triton-montenegro-2024-125k-nlhe-ivey-vaskaboinikau-cp37-14",
+      "decision_ordinal": 5,
+      "engine_replay_status": "not replayed past exact prefix because source call amount conflicts with stacks",
+      "hand_id": "cardplayer-mag-37-14",
+      "notes": "Source is accessible, but river tail is not exact: 7,800,000 start less 300,000 BB, 300,000 BBA, 400,000 flop call and 1,200,000 turn call leaves 5,600,000 before river; after a 3,500,000 bet 2,100,000 remains, while report says call for 2,400,000 and commentary says 5,900,000 remained before betting. No exact river state retained.",
+      "review_outcome": "partial_source_stack_conflict",
+      "source_access_status": "accessible_and_verified",
+      "source_action_sequence": 9,
+      "source_completeness": "partial",
+      "source_id": "cp37_14",
+      "source_label": {
+        "action": "all_in",
+        "actor": "Phil Ivey",
+        "amount_chips": null
+      }
+    }
+  ],
+  "scope": {
+    "input_path": "data/acquisition_sprint_1h/report_bulk/hands.json",
+    "input_schema": {
+      "decision_keys": [
+        "decision_ordinal",
+        "source_action_sequence",
+        "label_observation",
+        "state_observation",
+        "completeness",
+        "missing_or_conflicting_fields",
+        "opponent_reveal_excluded_from_state"
+      ],
+      "hand_keys": [
+        "hand_id",
+        "canonical_hand_id",
+        "session_id",
+        "event",
+        "variant",
+        "variant_basis",
+        "source_id",
+        "hero_cards",
+        "hero_cards_availability",
+        "starting_stacks",
+        "positions",
+        "blinds",
+        "ante",
+        "board",
+        "opponent_reveals",
+        "unknown_fields",
+        "dedup_identity",
+        "source_url",
+        "source_fact_sha256",
+        "observed_action_log",
+        "decision_count",
+        "decisions",
+        "independent_review_status"
+      ],
+      "root_keys": [
+        "schema_version",
+        "dataset",
+        "selection_method",
+        "protocol",
+        "counts",
+        "limitations",
+        "sources",
+        "hands",
+        "validation"
+      ],
+      "separation": "label_observation is separate from state_observation; opponent_reveal_excluded_from_state is separate."
+    },
+    "input_sha256": "26475d81d0142fd391c6a2fc55b1af9b1634796ac88c13c0fe038db13a26a981",
+    "read_files": [
+      "AGENTS.md",
+      "docs/public-report-normalization.md",
+      "scripts/import_report_batch2.py",
+      "pokerbot/public_reports.py",
+      "data/corpus_splits/development-after-prospective-v1.json",
+      "data/acquisition_sprint_1h/report_bulk/build_report_bulk.py"
+    ],
+    "source_lookup_scope": "Only five hands containing the 12 exact-state candidates were externally checked."
+  },
+  "sources": [
+    {
+      "access_status": "accessible_and_independently_checked",
+      "factual_extract": "Heads-up final-table hand. Blinds 30,000/60,000, ante 5,000 per player. Ivey in the big blind had A♥Q♦ and 3,450,000; Patrik Antonius on the button had K♠3♦ and 550,000. Antonius shoved all-in; Ivey called. Board 6♠5♠3♣Q♣8♦.",
+      "factual_extract_sha256": "70aa6e8f1e0ceaaea425a65433608245bb21d3563f3ac0c1fffd7cd65bdc7d61",
+      "hash_scope": "SHA-256 of UTF-8 bytes of the exact concise factual_extract string copied from hands.json sources[source_id].fact_summary; not publisher bytes, page HTML, or PDF bytes.",
+      "published_as_recorded": "2012-02-14",
+      "publisher": "Card Player",
+      "source_hash_matches_input": true,
+      "source_id": "cp1547",
+      "type": "hand matchup report",
+      "url": "https://www.cardplayer.com/hand-matchups/1547",
+      "verification": {
+        "locator": "Stack/card lines 106-119; outcome lines 121-127",
+        "method": "direct HTML open",
+        "verified_claims": [
+          "Heads-up final table; 30,000/60,000 blinds, 5,000 ante; Antonius button shove and Ivey call.",
+          "Stacks are 3,450,000 for Ivey and 550,000 for Antonius; cards shown are A♥ Q♦ for Ivey and K♠ 3♦ for Antonius."
+        ]
+      }
+    },
+    {
+      "access_status": "accessible_and_independently_checked",
+      "factual_extract": "2015 Aussie Millions $250,000 Challenge final-table heads-up. Blinds 25,000/50,000, ante 5,000 each. Ivey in the big blind had K♣Q♣ and 4,950,000; Mike McDonald on the button had A♠Q♥ and 1,300,000. McDonald raised to 100,000; Ivey shoved; McDonald called. Board K♠T♠T♣8♥9♥.",
+      "factual_extract_sha256": "6253f42f270301ed39a11a7fd40740c742419aa111f2a94d0586fc0c80284fca",
+      "hash_scope": "SHA-256 of UTF-8 bytes of the exact concise factual_extract string copied from hands.json sources[source_id].fact_summary; not publisher bytes, page HTML, or PDF bytes.",
+      "published_as_recorded": "2015-02-09",
+      "publisher": "Card Player",
+      "source_hash_matches_input": true,
+      "source_id": "cp1923",
+      "type": "hand matchup report",
+      "url": "https://www.cardplayer.com/poker-tools/hand-matchups/1923",
+      "verification": {
+        "locator": "Stack/card lines 81-85; outcome lines 87-94",
+        "method": "direct HTML open",
+        "verified_claims": [
+          "2015 Aussie Millions $250,000 Challenge, heads-up final table; 25,000/50,000 blinds and 5,000 ante.",
+          "Ivey starts 4,950,000 with K♣ Q♣; McDonald starts 1,300,000 with A♠ Q♥; button raises to 100,000, Ivey shoves and McDonald calls."
+        ]
+      }
+    },
+    {
+      "access_status": "accessible_and_independently_checked",
+      "factual_extract": "Seven players remained; blinds 20,000/40,000 with a 40,000 big-blind ante. Ivey on the button had K♦T♦ and 735,000; Sam Trickett in the small blind had A♦4♠ and 1,170,000. Ivey raised to 80,000; Trickett shoved for 1,170,000 total; Ivey folded. No community cards.",
+      "factual_extract_sha256": "b2e02841ce393fb871288588592040d5e6cc9fb69d07f557ade39e3db071d22e",
+      "hash_scope": "SHA-256 of UTF-8 bytes of the exact concise factual_extract string copied from hands.json sources[source_id].fact_summary; not publisher bytes, page HTML, or PDF bytes.",
+      "published_as_recorded": "2020-03-18",
+      "publisher": "Card Player",
+      "source_hash_matches_input": true,
+      "source_id": "cp2442",
+      "type": "hand matchup report",
+      "url": "https://www.cardplayer.com/poker-tools/hand-matchups/2442",
+      "verification": {
+        "locator": "Stack/card lines 143-157; outcome lines 159-162",
+        "method": "direct HTML open",
+        "verified_claims": [
+          "Seven players remained; blinds 20,000/40,000 with a 40,000 big-blind ante.",
+          "Ivey has K♦ T♦ and 735,000 on the button; Trickett has A♦ 4♠ and 1,170,000 in the small blind; raise to 80,000, all-in for 1,170,000 total, fold."
+        ]
+      }
+    },
+    {
+      "access_status": "accessible_and_independently_checked",
+      "factual_extract": "2022 Triton Series Madrid €50,000 No-Limit Hold'em Seven-Max. Five-handed table, 23 players remaining. Blinds 10,000/20,000 with 20,000 big-blind ante. Brian Rast (hijack, 510,000, K-J suited) raised to 40,000; Phil Ivey (button, 1,160,000, Q-9 suited) called. Board K♣5♦4♥5♣7♣. Both checked flop; Rast bet 40,000 turn and Ivey called; Rast bet 65,000 river and Ivey raised to 200,000; Rast folded. Ivey's exact suits Q♣9♣ are derived from the report's turn flush-draw/rivers-completing-draw description plus board.",
+      "factual_extract_sha256": "002be4395a82a09049ed777356d77b4f84a348d3747e3bdc911aae3ee12a3ebb",
+      "hash_scope": "SHA-256 of UTF-8 bytes of the exact concise factual_extract string copied from hands.json sources[source_id].fact_summary; not publisher bytes, page HTML, or PDF bytes.",
+      "published_as_recorded": "2022-07 (issue date inferred from issue context; exact date not stated in report excerpt)",
+      "publisher": "Card Player Magazine",
+      "source_hash_matches_input": true,
+      "source_id": "cp35_14",
+      "type": "Tournament Hand Matchup in magazine PDF",
+      "url": "https://media.cardplayer.com/assets/magazines/000/066/492/pdf/35_14_web.pdf",
+      "verification": {
+        "locator": "Vol. 35, No. 14, printed page 39",
+        "method": "direct PDF plus indexed full text",
+        "verified_claims": [
+          "2022 Triton Madrid €50,000 NLHE Seven-Max; five-handed table, 23 remain, 10,000/20,000 blinds and 20,000 big-blind ante.",
+          "Rast (hijack, 510,000) opens to 40,000; Ivey (button, 1,160,000) calls with Q-9 suited; full board and actions through Ivey's 200,000 river raise and Rast folding are reported.",
+          "Exact clubs are derived from Q-9 suited, the turn flush-draw description and board; prose does not directly transcribe the suits."
+        ]
+      }
+    },
+    {
+      "access_status": "accessible_and_independently_checked",
+      "factual_extract": "2024 Triton Poker Super High Roller Series Montenegro $125,000 NLHE Main Event. Four players remained. Blinds 150,000/300,000, 300,000 big-blind ante. Phil Ivey in small blind held Q♠T♠ and started with 13,600,000; Mikalai Vaskaboinikau in big blind held A♠8♠ and started with 7,800,000. Ivey limped to 300,000; Vaskaboinikau checked; Ivey bet/called 400,000 flop, bet/called 1,200,000 turn, checked river, then shoved all-in over a 3,500,000 bet. Report says Vaskaboinikau called for 2,400,000; that conflicts with his 7,800,000 start stack minus posted big blind/ante and previously reported calls/bet, which yields 2,100,000 remaining after the river bet.",
+      "factual_extract_sha256": "7febbfd29955a63ce9b69116dc3047daafe55457b8d96846a774001ceac498ba",
+      "hash_scope": "SHA-256 of UTF-8 bytes of the exact concise factual_extract string copied from hands.json sources[source_id].fact_summary; not publisher bytes, page HTML, or PDF bytes.",
+      "published_as_recorded": "2024 (exact issue date not stated in report excerpt)",
+      "publisher": "Card Player Magazine",
+      "source_hash_matches_input": true,
+      "source_id": "cp37_14",
+      "type": "Tournament Hand Matchup in magazine PDF",
+      "url": "https://media.cardplayer.com/assets/magazines/000/066/544/pdf/37_14_web.pdf",
+      "verification": {
+        "locator": "Vol. 37, No. 14, printed page 48; PDF lines 1924-1952",
+        "method": "direct PDF indexed extraction/find",
+        "verified_claims": [
+          "2024 Triton Montenegro $125,000 NLHE Main Event; four remain; blinds 150,000/300,000 with 300,000 big-blind ante.",
+          "Graphic gives Ivey 13,600,000 and Q♠ T♠ against Vaskaboinikau 7,800,000 and A♠ 8♠; preflop, flop and turn actions are reported.",
+          "River story says Ivey checked, Vaskaboinikau bet 3,500,000 and Ivey shoved; the reported 2,400,000 call conflicts with stack arithmetic."
+        ]
+      }
+    }
+  ],
+  "stale_progress_finding": "progress.json remains at 22 / 72 / 12 / 60; hands.json independently has 28 / 91 / 12 / 79."
+}

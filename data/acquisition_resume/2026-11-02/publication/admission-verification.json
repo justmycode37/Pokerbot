@@ -1,0 +1,23 @@
+{
+  "admission_batches": {
+    "batch-001.json": 30,
+    "batch-002.json": 5,
+    "batch-003.json": 526
+  },
+  "admitted_decisions": 606,
+  "current_record_hash_set_sha256": "314a3731dd0f2a55b616fca302e06ceaaa19bda9fd0456ecbbc03ecc9a235e32",
+  "fresh_holdouts_created": 0,
+  "frozen_baseline_decisions": 45,
+  "legacy_aggregate_hash_mismatches": [
+    {
+      "batch": "batch-001.json",
+      "recorded": "0fb1783be6d45081a820a97ba1a1c4df98a5034c5422a956ce552cb191cb6c96",
+      "verified_batch_record_hashes": "e9683690d8b9c58a766c062062bbb0e95f8981e9546469b02c03e5cfdd4d1252"
+    }
+  ],
+  "source_groups": 18,
+  "unique_hands": 393,
+  "use": "inspected_development_data",
+  "verified_protected_files": 35,
+  "verified_provenance_files": 816
+}

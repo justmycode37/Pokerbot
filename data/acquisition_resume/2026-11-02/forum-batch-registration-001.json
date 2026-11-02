@@ -1,0 +1,57 @@
+{
+  "batches": [
+    {
+      "counts": {
+        "captured_rows": 10,
+        "duplicate_known_fulltilt_ids_skipped": 0,
+        "duplicate_known_hand_ids_across_readonly_partitions_skipped": 0,
+        "duplicate_source_copy_or_locator_skipped": 0,
+        "excluded_cap_format_complete_histories_inspected": 12,
+        "excluded_cap_format_partial_excerpts_inspected": 1,
+        "excluded_non_nlhe_or_unclear_format_hits": 5,
+        "excluded_total_format_filtered_histories_or_excerpts": 18,
+        "hero_action_events_known_card_source_rows": 26,
+        "hero_action_events_unknown_card_histories": 14,
+        "known_hero_cards_complete_nlhe": 7,
+        "partial_or_incomplete": 0,
+        "records_without_fulltilt_game_time": 10,
+        "records_without_visible_fulltilt_id_pending_global_identity_review": 10,
+        "unknown_hero_cards_complete_nlhe": 3
+      },
+      "new_admissions": 0,
+      "path": "data/acquisition_resume/2026-11-02/forum_2009_2011/records.jsonl",
+      "records": 10,
+      "sha256": "56d38be218115370c85832478a3121a2905318f2b0c6bf673e654eb82b265ac8",
+      "status": "source_records_pending_identity_conversion_and_review"
+    },
+    {
+      "counts": {
+        "admissions": 0,
+        "captured_rows": 2,
+        "complete_known_hero_cards": 1,
+        "complete_unknown_hero_cards": 1,
+        "converted_histories_without_visible_fulltilt_id": 2,
+        "duplicate_fulltilt_ids_skipped": 0,
+        "duplicate_source_action_board_signatures_against_prior_rows": 0,
+        "duplicate_source_locators_skipped": 0,
+        "fresh_heldout_rows": 0,
+        "incomplete_or_partial_rows": 0,
+        "known_card_hero_action_events": 5,
+        "partial_known_hero_cards": 0,
+        "partial_unknown_hero_cards": 0,
+        "pending_cross_source_identity_review": 2,
+        "source_action_events_including_forced_bets": 23,
+        "unique_canonical_fulltilt_ids": 0,
+        "unique_new_source_locators": 2,
+        "unknown_card_hero_action_events": 1
+      },
+      "new_admissions": 0,
+      "path": "data/acquisition_resume/2026-11-02/forum_2012_plus/rawrecords.jsonl",
+      "records": 2,
+      "sha256": "cb8272a63b7a2e9f07609773cc61bb7e750556977d5b7ae9c68b1932e25d7c55",
+      "status": "source_records_pending_identity_conversion_and_review"
+    }
+  ],
+  "new_admissions": 0,
+  "usable_decisions": 80
+}

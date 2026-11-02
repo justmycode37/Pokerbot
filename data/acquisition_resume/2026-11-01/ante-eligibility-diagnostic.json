@@ -1,0 +1,648 @@
+{
+  "all_checked_rows": [
+    {
+      "ante_total": 150000,
+      "batch": "2026",
+      "expected_from_live_tiers_plus_dead_antes": 675000,
+      "old_contestable_pot": 675000,
+      "pot": 675000,
+      "source_decision_id": "triton:020feecc-0093-4fb8-a809-9be768f821b8:action:5",
+      "source_prefix_pot": 675000
+    },
+    {
+      "ante_total": 150000,
+      "batch": "2026",
+      "expected_from_live_tiers_plus_dead_antes": 675000,
+      "old_contestable_pot": 675000,
+      "pot": 675000,
+      "source_decision_id": "triton:0c7a6c41-d678-49a2-958b-8fdac0f40823:action:6",
+      "source_prefix_pot": 675000
+    },
+    {
+      "ante_total": 200000,
+      "batch": "2026",
+      "expected_from_live_tiers_plus_dead_antes": 900000,
+      "old_contestable_pot": 900000,
+      "pot": 900000,
+      "source_decision_id": "triton:1888c825-a7f9-4619-b387-2c2c50cf154e:action:5",
+      "source_prefix_pot": 900000
+    },
+    {
+      "ante_total": 200000,
+      "batch": "2026",
+      "expected_from_live_tiers_plus_dead_antes": 2500000,
+      "old_contestable_pot": 2500000,
+      "pot": 2500000,
+      "source_decision_id": "triton:194065fa-88a2-4af7-88f7-a6b42fd8d457:action:7",
+      "source_prefix_pot": 2500000
+    },
+    {
+      "ante_total": 150000,
+      "batch": "2026",
+      "expected_from_live_tiers_plus_dead_antes": 675000,
+      "old_contestable_pot": 675000,
+      "pot": 675000,
+      "source_decision_id": "triton:19677185-f68d-4f6a-8fb5-e9d873c1982a:action:8",
+      "source_prefix_pot": 675000
+    },
+    {
+      "ante_total": 250000,
+      "batch": "2026",
+      "expected_from_live_tiers_plus_dead_antes": 625000,
+      "old_contestable_pot": 375000,
+      "pot": 625000,
+      "source_decision_id": "triton:23899063-1648-48ae-ba75-e19736f62607:action:5",
+      "source_prefix_pot": 625000
+    },
+    {
+      "ante_total": 200000,
+      "batch": "2026",
+      "expected_from_live_tiers_plus_dead_antes": 500000,
+      "old_contestable_pot": 300000,
+      "pot": 500000,
+      "source_decision_id": "triton:26564730-167d-4edc-957d-884a19fa2fe3:action:3",
+      "source_prefix_pot": 500000
+    },
+    {
+      "ante_total": 250000,
+      "batch": "2026",
+      "expected_from_live_tiers_plus_dead_antes": 1125000,
+      "old_contestable_pot": 1125000,
+      "pot": 1125000,
+      "source_decision_id": "triton:2b3dd943-0396-4bd1-a9ff-a98c397f400d:action:5",
+      "source_prefix_pot": 1125000
+    },
+    {
+      "ante_total": 150000,
+      "batch": "2026",
+      "expected_from_live_tiers_plus_dead_antes": 675000,
+      "old_contestable_pot": 675000,
+      "pot": 675000,
+      "source_decision_id": "triton:2d41c50f-b038-4e92-8b2c-43ca82cec126:action:8",
+      "source_prefix_pot": 675000
+    },
+    {
+      "ante_total": 250000,
+      "batch": "2026",
+      "expected_from_live_tiers_plus_dead_antes": 625000,
+      "old_contestable_pot": 375000,
+      "pot": 625000,
+      "source_decision_id": "triton:3202f078-1b51-4de2-9e20-72a58e05a8a4:action:6",
+      "source_prefix_pot": 625000
+    },
+    {
+      "ante_total": 250000,
+      "batch": "2026",
+      "expected_from_live_tiers_plus_dead_antes": 2525000,
+      "old_contestable_pot": 2525000,
+      "pot": 2525000,
+      "source_decision_id": "triton:3202f078-1b51-4de2-9e20-72a58e05a8a4:action:10",
+      "source_prefix_pot": 2525000
+    },
+    {
+      "ante_total": 200000,
+      "batch": "2026",
+      "expected_from_live_tiers_plus_dead_antes": 2875000,
+      "old_contestable_pot": 2875000,
+      "pot": 3000000,
+      "source_decision_id": "triton:38f21d2a-7d7b-4c51-90f1-09d60b7978bd:action:8",
+      "source_prefix_pot": 3000000
+    },
+    {
+      "ante_total": 150000,
+      "batch": "2026",
+      "expected_from_live_tiers_plus_dead_antes": 1375000,
+      "old_contestable_pot": 1375000,
+      "pot": 1375000,
+      "source_decision_id": "triton:3b25dfbe-68f9-4bb1-81a4-02eb39f1996c:action:9",
+      "source_prefix_pot": 1375000
+    },
+    {
+      "ante_total": 200000,
+      "batch": "2026",
+      "expected_from_live_tiers_plus_dead_antes": 900000,
+      "old_contestable_pot": 900000,
+      "pot": 900000,
+      "source_decision_id": "triton:3e6bda8b-d9fe-48f4-b8d7-2bd856ced62a:action:7",
+      "source_prefix_pot": 900000
+    },
+    {
+      "ante_total": 250000,
+      "batch": "2026",
+      "expected_from_live_tiers_plus_dead_antes": 625000,
+      "old_contestable_pot": 375000,
+      "pot": 625000,
+      "source_decision_id": "triton:46b26eec-7ee5-494b-9dd5-885db8c5318b:action:3",
+      "source_prefix_pot": 625000
+    },
+    {
+      "ante_total": 150000,
+      "batch": "2026",
+      "expected_from_live_tiers_plus_dead_antes": 375000,
+      "old_contestable_pot": 225000,
+      "pot": 375000,
+      "source_decision_id": "triton:47e1dbd2-ebd2-484e-b15c-3a5d281b7260:action:4",
+      "source_prefix_pot": 375000
+    },
+    {
+      "ante_total": 250000,
+      "batch": "2026",
+      "expected_from_live_tiers_plus_dead_antes": 625000,
+      "old_contestable_pot": 375000,
+      "pot": 625000,
+      "source_decision_id": "triton:4b7834c2-7399-4f17-b608-f1a6ec2c0709:action:3",
+      "source_prefix_pot": 625000
+    },
+    {
+      "ante_total": 200000,
+      "batch": "2026",
+      "expected_from_live_tiers_plus_dead_antes": 900000,
+      "old_contestable_pot": 900000,
+      "pot": 900000,
+      "source_decision_id": "triton:55b7ab72-8ca3-4e11-a8c9-5cfaa319da3b:action:4",
+      "source_prefix_pot": 900000
+    },
+    {
+      "ante_total": 150000,
+      "batch": "2026",
+      "expected_from_live_tiers_plus_dead_antes": 375000,
+      "old_contestable_pot": 225000,
+      "pot": 375000,
+      "source_decision_id": "triton:5646b6a0-ac9f-4924-921d-23e57364de3f:action:6",
+      "source_prefix_pot": 375000
+    },
+    {
+      "ante_total": 250000,
+      "batch": "2026",
+      "expected_from_live_tiers_plus_dead_antes": 1025000,
+      "old_contestable_pot": 925000,
+      "pot": 1025000,
+      "source_decision_id": "triton:5ab29a77-01a3-474c-b142-55a44b1c9f86:action:8",
+      "source_prefix_pot": 1025000
+    },
+    {
+      "ante_total": 200000,
+      "batch": "2026",
+      "expected_from_live_tiers_plus_dead_antes": 500000,
+      "old_contestable_pot": 300000,
+      "pot": 500000,
+      "source_decision_id": "triton:5b7014d8-d730-4290-83d2-f49ff318c4b9:action:4",
+      "source_prefix_pot": 500000
+    },
+    {
+      "ante_total": 150000,
+      "batch": "2026",
+      "expected_from_live_tiers_plus_dead_antes": 750000,
+      "old_contestable_pot": 750000,
+      "pot": 750000,
+      "source_decision_id": "triton:65a33886-e2fd-47a5-9a96-cb7081b909cb:action:10",
+      "source_prefix_pot": 750000
+    },
+    {
+      "ante_total": 150000,
+      "batch": "2026",
+      "expected_from_live_tiers_plus_dead_antes": 1300000,
+      "old_contestable_pot": 1300000,
+      "pot": 1300000,
+      "source_decision_id": "triton:65a33886-e2fd-47a5-9a96-cb7081b909cb:action:12",
+      "source_prefix_pot": 1300000
+    },
+    {
+      "ante_total": 250000,
+      "batch": "2026",
+      "expected_from_live_tiers_plus_dead_antes": 2025000,
+      "old_contestable_pot": 2025000,
+      "pot": 2025000,
+      "source_decision_id": "triton:6d4f5371-4ec3-4740-b8e9-ce85ec984568:action:7",
+      "source_prefix_pot": 2025000
+    },
+    {
+      "ante_total": 200000,
+      "batch": "2026",
+      "expected_from_live_tiers_plus_dead_antes": 900000,
+      "old_contestable_pot": 900000,
+      "pot": 900000,
+      "source_decision_id": "triton:6eee3266-3a22-46a2-9cc6-9e25562d6b41:action:7",
+      "source_prefix_pot": 900000
+    },
+    {
+      "ante_total": 200000,
+      "batch": "2026",
+      "expected_from_live_tiers_plus_dead_antes": 2500000,
+      "old_contestable_pot": 2500000,
+      "pot": 2500000,
+      "source_decision_id": "triton:7e16ed4d-bf85-4779-8897-8b6f7f16fd6c:action:9",
+      "source_prefix_pot": 2500000
+    },
+    {
+      "ante_total": 250000,
+      "batch": "2026",
+      "expected_from_live_tiers_plus_dead_antes": 625000,
+      "old_contestable_pot": 375000,
+      "pot": 625000,
+      "source_decision_id": "triton:7e7c09d2-911c-40dc-a856-29e356881f98:action:4",
+      "source_prefix_pot": 625000
+    },
+    {
+      "ante_total": 200000,
+      "batch": "2026",
+      "expected_from_live_tiers_plus_dead_antes": 500000,
+      "old_contestable_pot": 300000,
+      "pot": 500000,
+      "source_decision_id": "triton:80813dde-3d2d-4000-bf4b-621775703e44:action:6",
+      "source_prefix_pot": 500000
+    },
+    {
+      "ante_total": 250000,
+      "batch": "2026",
+      "expected_from_live_tiers_plus_dead_antes": 1125000,
+      "old_contestable_pot": 1125000,
+      "pot": 1125000,
+      "source_decision_id": "triton:8937199d-3e30-47e4-8a17-fc68871765b2:action:8",
+      "source_prefix_pot": 1125000
+    },
+    {
+      "ante_total": 200000,
+      "batch": "2026",
+      "expected_from_live_tiers_plus_dead_antes": 900000,
+      "old_contestable_pot": 900000,
+      "pot": 900000,
+      "source_decision_id": "triton:90b7a627-e97b-493a-b9af-9eef0d19cbed:action:6",
+      "source_prefix_pot": 900000
+    },
+    {
+      "ante_total": 250000,
+      "batch": "2026",
+      "expected_from_live_tiers_plus_dead_antes": 3550000,
+      "old_contestable_pot": 3800000,
+      "pot": 7650000,
+      "source_decision_id": "triton:9dd266da-35c6-4a6e-992e-7703b663951d:action:9",
+      "source_prefix_pot": 7650000
+    },
+    {
+      "ante_total": 150000,
+      "batch": "2026",
+      "expected_from_live_tiers_plus_dead_antes": 375000,
+      "old_contestable_pot": 225000,
+      "pot": 375000,
+      "source_decision_id": "triton:9e27b1d3-fb94-4807-acf6-2f1b1f88e20c:action:3",
+      "source_prefix_pot": 375000
+    },
+    {
+      "ante_total": 150000,
+      "batch": "2026",
+      "expected_from_live_tiers_plus_dead_antes": 375000,
+      "old_contestable_pot": 225000,
+      "pot": 375000,
+      "source_decision_id": "triton:9e8f436e-7969-457d-8eb9-52c671018ada:action:3",
+      "source_prefix_pot": 375000
+    },
+    {
+      "ante_total": 125000,
+      "batch": "2026",
+      "expected_from_live_tiers_plus_dead_antes": 300000,
+      "old_contestable_pot": 175000,
+      "pot": 300000,
+      "source_decision_id": "triton:9eb09c11-8af6-4dad-a4a6-f81f373eb9ca:action:7",
+      "source_prefix_pot": 300000
+    },
+    {
+      "ante_total": 200000,
+      "batch": "2026",
+      "expected_from_live_tiers_plus_dead_antes": 500000,
+      "old_contestable_pot": 300000,
+      "pot": 500000,
+      "source_decision_id": "triton:a28ed451-3515-4197-bc58-04c89fce7197:action:3",
+      "source_prefix_pot": 500000
+    },
+    {
+      "ante_total": 250000,
+      "batch": "2026",
+      "expected_from_live_tiers_plus_dead_antes": 625000,
+      "old_contestable_pot": 375000,
+      "pot": 625000,
+      "source_decision_id": "triton:a3bf889c-bee5-4dbb-aa00-527b4114c7f6:action:4",
+      "source_prefix_pot": 625000
+    },
+    {
+      "ante_total": 125000,
+      "batch": "2026",
+      "expected_from_live_tiers_plus_dead_antes": 600000,
+      "old_contestable_pot": 600000,
+      "pot": 600000,
+      "source_decision_id": "triton:aad946a3-d7ee-4da9-9fde-5b5f9081b6d6:action:8",
+      "source_prefix_pot": 600000
+    },
+    {
+      "ante_total": 250000,
+      "batch": "2026",
+      "expected_from_live_tiers_plus_dead_antes": 1800000,
+      "old_contestable_pot": 1800000,
+      "pot": 1800000,
+      "source_decision_id": "triton:b11de5bc-6a30-4107-925f-58554c0b5656:action:6",
+      "source_prefix_pot": 1800000
+    },
+    {
+      "ante_total": 250000,
+      "batch": "2026",
+      "expected_from_live_tiers_plus_dead_antes": 1625000,
+      "old_contestable_pot": 1625000,
+      "pot": 1625000,
+      "source_decision_id": "triton:b89656ad-fc16-4af6-941b-7ecd0c08e150:action:9",
+      "source_prefix_pot": 1625000
+    },
+    {
+      "ante_total": 200000,
+      "batch": "2026",
+      "expected_from_live_tiers_plus_dead_antes": 2475000,
+      "old_contestable_pot": 2675000,
+      "pot": 8450000,
+      "source_decision_id": "triton:c3bb5083-4b04-47e2-ac6b-a146a3a9f704:action:9",
+      "source_prefix_pot": 8450000
+    },
+    {
+      "ante_total": 150000,
+      "batch": "2026",
+      "expected_from_live_tiers_plus_dead_antes": 1425000,
+      "old_contestable_pot": 1425000,
+      "pot": 1425000,
+      "source_decision_id": "triton:cb750e7c-d4be-4e02-b2af-41fededa2223:action:5",
+      "source_prefix_pot": 1425000
+    },
+    {
+      "ante_total": 250000,
+      "batch": "2026",
+      "expected_from_live_tiers_plus_dead_antes": 1125000,
+      "old_contestable_pot": 1125000,
+      "pot": 1125000,
+      "source_decision_id": "triton:d097dc51-edf7-4b4e-9eff-722e1e2fd107:action:6",
+      "source_prefix_pot": 1125000
+    },
+    {
+      "ante_total": 150000,
+      "batch": "2026",
+      "expected_from_live_tiers_plus_dead_antes": 1400000,
+      "old_contestable_pot": 1400000,
+      "pot": 1400000,
+      "source_decision_id": "triton:d4bcf748-a02a-48db-8dd4-106ff429f363:action:10",
+      "source_prefix_pot": 1400000
+    },
+    {
+      "ante_total": 150000,
+      "batch": "2026",
+      "expected_from_live_tiers_plus_dead_antes": 700000,
+      "old_contestable_pot": 700000,
+      "pot": 700000,
+      "source_decision_id": "triton:d6052f03-208b-4483-a422-71ebb8ad413f:action:9",
+      "source_prefix_pot": 700000
+    },
+    {
+      "ante_total": 150000,
+      "batch": "2026",
+      "expected_from_live_tiers_plus_dead_antes": 375000,
+      "old_contestable_pot": 225000,
+      "pot": 375000,
+      "source_decision_id": "triton:dc29202b-88a6-437d-9546-0968babfc2c7:action:4",
+      "source_prefix_pot": 375000
+    },
+    {
+      "ante_total": 250000,
+      "batch": "2026",
+      "expected_from_live_tiers_plus_dead_antes": 2025000,
+      "old_contestable_pot": 2025000,
+      "pot": 2025000,
+      "source_decision_id": "triton:e5ec5962-e892-4379-89e8-453be7197265:action:7",
+      "source_prefix_pot": 2025000
+    },
+    {
+      "ante_total": 200000,
+      "batch": "2026",
+      "expected_from_live_tiers_plus_dead_antes": 1700000,
+      "old_contestable_pot": 1700000,
+      "pot": 1700000,
+      "source_decision_id": "triton:e7d1ee74-a5cf-44e6-8c34-242e22b79ff1:action:8",
+      "source_prefix_pot": 1700000
+    },
+    {
+      "ante_total": 100000,
+      "batch": "2025",
+      "expected_from_live_tiers_plus_dead_antes": 450000,
+      "old_contestable_pot": 450000,
+      "pot": 450000,
+      "source_decision_id": "triton:0fe69d0d-c62f-4a47-baac-7770b44b9bdb:action:7",
+      "source_prefix_pot": 450000
+    },
+    {
+      "ante_total": 150000,
+      "batch": "2025",
+      "expected_from_live_tiers_plus_dead_antes": 375000,
+      "old_contestable_pot": 225000,
+      "pot": 375000,
+      "source_decision_id": "triton:238da98b-1804-492f-9518-64cb73388dfd:action:3",
+      "source_prefix_pot": 375000
+    },
+    {
+      "ante_total": 150000,
+      "batch": "2025",
+      "expected_from_live_tiers_plus_dead_antes": 375000,
+      "old_contestable_pot": 225000,
+      "pot": 375000,
+      "source_decision_id": "triton:7233ae8e-33b6-4786-a574-8623b63c849b:action:4",
+      "source_prefix_pot": 375000
+    }
+  ],
+  "checked": 50,
+  "mismatches": 21,
+  "rows_needing_correction": [
+    {
+      "ante_total": 250000,
+      "batch": "2026",
+      "expected_from_live_tiers_plus_dead_antes": 625000,
+      "old_contestable_pot": 375000,
+      "pot": 625000,
+      "source_decision_id": "triton:23899063-1648-48ae-ba75-e19736f62607:action:5",
+      "source_prefix_pot": 625000
+    },
+    {
+      "ante_total": 200000,
+      "batch": "2026",
+      "expected_from_live_tiers_plus_dead_antes": 500000,
+      "old_contestable_pot": 300000,
+      "pot": 500000,
+      "source_decision_id": "triton:26564730-167d-4edc-957d-884a19fa2fe3:action:3",
+      "source_prefix_pot": 500000
+    },
+    {
+      "ante_total": 250000,
+      "batch": "2026",
+      "expected_from_live_tiers_plus_dead_antes": 625000,
+      "old_contestable_pot": 375000,
+      "pot": 625000,
+      "source_decision_id": "triton:3202f078-1b51-4de2-9e20-72a58e05a8a4:action:6",
+      "source_prefix_pot": 625000
+    },
+    {
+      "ante_total": 250000,
+      "batch": "2026",
+      "expected_from_live_tiers_plus_dead_antes": 625000,
+      "old_contestable_pot": 375000,
+      "pot": 625000,
+      "source_decision_id": "triton:46b26eec-7ee5-494b-9dd5-885db8c5318b:action:3",
+      "source_prefix_pot": 625000
+    },
+    {
+      "ante_total": 150000,
+      "batch": "2026",
+      "expected_from_live_tiers_plus_dead_antes": 375000,
+      "old_contestable_pot": 225000,
+      "pot": 375000,
+      "source_decision_id": "triton:47e1dbd2-ebd2-484e-b15c-3a5d281b7260:action:4",
+      "source_prefix_pot": 375000
+    },
+    {
+      "ante_total": 250000,
+      "batch": "2026",
+      "expected_from_live_tiers_plus_dead_antes": 625000,
+      "old_contestable_pot": 375000,
+      "pot": 625000,
+      "source_decision_id": "triton:4b7834c2-7399-4f17-b608-f1a6ec2c0709:action:3",
+      "source_prefix_pot": 625000
+    },
+    {
+      "ante_total": 150000,
+      "batch": "2026",
+      "expected_from_live_tiers_plus_dead_antes": 375000,
+      "old_contestable_pot": 225000,
+      "pot": 375000,
+      "source_decision_id": "triton:5646b6a0-ac9f-4924-921d-23e57364de3f:action:6",
+      "source_prefix_pot": 375000
+    },
+    {
+      "ante_total": 250000,
+      "batch": "2026",
+      "expected_from_live_tiers_plus_dead_antes": 1025000,
+      "old_contestable_pot": 925000,
+      "pot": 1025000,
+      "source_decision_id": "triton:5ab29a77-01a3-474c-b142-55a44b1c9f86:action:8",
+      "source_prefix_pot": 1025000
+    },
+    {
+      "ante_total": 200000,
+      "batch": "2026",
+      "expected_from_live_tiers_plus_dead_antes": 500000,
+      "old_contestable_pot": 300000,
+      "pot": 500000,
+      "source_decision_id": "triton:5b7014d8-d730-4290-83d2-f49ff318c4b9:action:4",
+      "source_prefix_pot": 500000
+    },
+    {
+      "ante_total": 250000,
+      "batch": "2026",
+      "expected_from_live_tiers_plus_dead_antes": 625000,
+      "old_contestable_pot": 375000,
+      "pot": 625000,
+      "source_decision_id": "triton:7e7c09d2-911c-40dc-a856-29e356881f98:action:4",
+      "source_prefix_pot": 625000
+    },
+    {
+      "ante_total": 200000,
+      "batch": "2026",
+      "expected_from_live_tiers_plus_dead_antes": 500000,
+      "old_contestable_pot": 300000,
+      "pot": 500000,
+      "source_decision_id": "triton:80813dde-3d2d-4000-bf4b-621775703e44:action:6",
+      "source_prefix_pot": 500000
+    },
+    {
+      "ante_total": 250000,
+      "batch": "2026",
+      "expected_from_live_tiers_plus_dead_antes": 3550000,
+      "old_contestable_pot": 3800000,
+      "pot": 7650000,
+      "source_decision_id": "triton:9dd266da-35c6-4a6e-992e-7703b663951d:action:9",
+      "source_prefix_pot": 7650000
+    },
+    {
+      "ante_total": 150000,
+      "batch": "2026",
+      "expected_from_live_tiers_plus_dead_antes": 375000,
+      "old_contestable_pot": 225000,
+      "pot": 375000,
+      "source_decision_id": "triton:9e27b1d3-fb94-4807-acf6-2f1b1f88e20c:action:3",
+      "source_prefix_pot": 375000
+    },
+    {
+      "ante_total": 150000,
+      "batch": "2026",
+      "expected_from_live_tiers_plus_dead_antes": 375000,
+      "old_contestable_pot": 225000,
+      "pot": 375000,
+      "source_decision_id": "triton:9e8f436e-7969-457d-8eb9-52c671018ada:action:3",
+      "source_prefix_pot": 375000
+    },
+    {
+      "ante_total": 125000,
+      "batch": "2026",
+      "expected_from_live_tiers_plus_dead_antes": 300000,
+      "old_contestable_pot": 175000,
+      "pot": 300000,
+      "source_decision_id": "triton:9eb09c11-8af6-4dad-a4a6-f81f373eb9ca:action:7",
+      "source_prefix_pot": 300000
+    },
+    {
+      "ante_total": 200000,
+      "batch": "2026",
+      "expected_from_live_tiers_plus_dead_antes": 500000,
+      "old_contestable_pot": 300000,
+      "pot": 500000,
+      "source_decision_id": "triton:a28ed451-3515-4197-bc58-04c89fce7197:action:3",
+      "source_prefix_pot": 500000
+    },
+    {
+      "ante_total": 250000,
+      "batch": "2026",
+      "expected_from_live_tiers_plus_dead_antes": 625000,
+      "old_contestable_pot": 375000,
+      "pot": 625000,
+      "source_decision_id": "triton:a3bf889c-bee5-4dbb-aa00-527b4114c7f6:action:4",
+      "source_prefix_pot": 625000
+    },
+    {
+      "ante_total": 200000,
+      "batch": "2026",
+      "expected_from_live_tiers_plus_dead_antes": 2475000,
+      "old_contestable_pot": 2675000,
+      "pot": 8450000,
+      "source_decision_id": "triton:c3bb5083-4b04-47e2-ac6b-a146a3a9f704:action:9",
+      "source_prefix_pot": 8450000
+    },
+    {
+      "ante_total": 150000,
+      "batch": "2026",
+      "expected_from_live_tiers_plus_dead_antes": 375000,
+      "old_contestable_pot": 225000,
+      "pot": 375000,
+      "source_decision_id": "triton:dc29202b-88a6-437d-9546-0968babfc2c7:action:4",
+      "source_prefix_pot": 375000
+    },
+    {
+      "ante_total": 150000,
+      "batch": "2025",
+      "expected_from_live_tiers_plus_dead_antes": 375000,
+      "old_contestable_pot": 225000,
+      "pot": 375000,
+      "source_decision_id": "triton:238da98b-1804-492f-9518-64cb73388dfd:action:3",
+      "source_prefix_pot": 375000
+    },
+    {
+      "ante_total": 150000,
+      "batch": "2025",
+      "expected_from_live_tiers_plus_dead_antes": 375000,
+      "old_contestable_pot": 225000,
+      "pot": 375000,
+      "source_decision_id": "triton:7233ae8e-33b6-4786-a574-8623b63c849b:action:4",
+      "source_prefix_pot": 375000
+    }
+  ],
+  "status": "parent_source_prefix_diagnostic_not_admissions"
+}

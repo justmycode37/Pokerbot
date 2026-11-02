@@ -1,0 +1,1088 @@
+{
+  "schema_version": 1,
+  "protocol_reference": "../../docs/state-protocol.md",
+  "collection_policy": {
+    "source_policy": "Official public video streams and public attribution only; no accounts, cookies, or access workarounds.",
+    "decision_policy": "Transcribe every usable Ivey decision in each selected single-hand source, including decisions with incomplete state. Store the hero-visible predecision state separately from the observed action label.",
+    "frame_policy": "Retain at most one sparse predecision still for each reconstructable decision. Redact opponent hole cards, all equity graphics, and unrevealed future cards. No full videos are retained.",
+    "precision_policy": "Only exact displayed or source-supported values are numeric in protocol fields. Rounded or missing values remain null and are documented separately.",
+    "scoring_policy": "Count only confirmed standard no-limit hold'em. Keep game-type-uncertain and nonstandard variants unscored.",
+    "strategy_independence": "No bot strategy files or bot outputs were consulted."
+  },
+  "summary": {
+    "selected_source_videos": 4,
+    "confirmed_standard_nlhe_videos": 3,
+    "variant_or_betting_structure_uncertain_videos": 1,
+    "labeled_ivey_decisions": 18,
+    "retained_predecision_frames": 16,
+    "complete_protocol_observations": 0,
+    "complete_phh_replays": 0,
+    "full_video_files_retained": 0,
+    "excluded_locked_candidates_after_review": 1,
+    "retained_pot_detail_crops": 2
+  },
+  "sources": [
+    {
+      "video_id": "Aw_KVPxe7d0",
+      "url": "https://www.youtube.com/watch?v=Aw_KVPxe7d0",
+      "channel": "PokerGO",
+      "channel_id": "UCOPw3R-TUUNqgN2bQyidW2w",
+      "title": "Phil Ivey Making Phil Ivey Reads | Super High Roller Cash Game | PokerGO",
+      "upload_date": "2018-05-03",
+      "duration_seconds": 299,
+      "game_classification": {
+        "variant": "no-limit hold'em",
+        "format": "cash",
+        "standard_nlhe_scoring": "eligible",
+        "support": [
+          "PokerGO title identifies Super High Roller Cash Game.",
+          "PokerNews reports the 2015 Super High Roller Cash Game as NLHE with $400/$800 blinds and $200 ante."
+        ],
+        "support_urls": [
+          "https://www.pokernews.com/news/2015/06/super-high-roller-cash-game-1-22103.htm",
+          "https://www.pokergo.com/videos/im_62218"
+        ],
+        "blinds": {
+          "small_blind": 400,
+          "big_blind": 800,
+          "ante": 200,
+          "precision": "event-level reported values"
+        }
+      },
+      "hand_report_url": "https://www.pokernews.com/tours/super-high-roller-bowl/2015-super-high-roller-series/cash-game/post.241843.htm",
+      "hand_context": {
+        "hero_cards": [
+          "Ks",
+          "9s"
+        ],
+        "board": [
+          "7s",
+          "8h",
+          "Ts",
+          "Kh"
+        ],
+        "board_status": "turn only; Ivey folds before a river is dealt",
+        "raw_position": "hijack",
+        "protocol_position": null,
+        "position_note": "Hijack is reported by PokerNews but is outside the local Observation position enum."
+      },
+      "reported_rounded_values": {
+        "hero_stack": {
+          "display_text": "about $850K",
+          "exact_value": null,
+          "precision": "rounded broadcast display"
+        }
+      },
+      "decisions": [
+        {
+          "decision_id": "01",
+          "video_timestamp_seconds": 20,
+          "predecision_frame": "frames/Aw_KVPxe7d0_d01_t020s.png",
+          "street": "preflop",
+          "hero_visible_state": {
+            "hole_cards": [
+              "Ks",
+              "9s"
+            ],
+            "board": [],
+            "pot": 7600,
+            "to_call": 2500,
+            "stack": null,
+            "current_bet": 0,
+            "min_raise_to": null,
+            "max_raise_to": null,
+            "big_blind": 800,
+            "position": null,
+            "players_active": null,
+            "players_to_act": null,
+            "legal_actions": [
+              "fold",
+              "call",
+              "raise"
+            ]
+          },
+          "hero_visible_state_complete_for_protocol": false,
+          "state_field_notes": [
+            "The retained frame displays a $7,600 pot. Exact stack and complete forced-bet/position context remain unavailable."
+          ],
+          "preceding_public_action_context": "Bright opens to $2,500; Ivey calls.",
+          "observed_action": {
+            "action": "call",
+            "displayed_amount_chips": 2500,
+            "amount_semantics": "chips_added_to_match",
+            "amount_precision": "exact_display"
+          },
+          "evidence_tier": "video_snapshot_with_rounded_or_missing_context"
+        },
+        {
+          "decision_id": "02",
+          "video_timestamp_seconds": 55,
+          "predecision_frame": "frames/Aw_KVPxe7d0_d02_t055s.png",
+          "street": "preflop",
+          "hero_visible_state": {
+            "hole_cards": [
+              "Ks",
+              "9s"
+            ],
+            "board": [],
+            "pot": 27200,
+            "to_call": 12500,
+            "stack": null,
+            "current_bet": 2500,
+            "min_raise_to": null,
+            "max_raise_to": null,
+            "big_blind": 800,
+            "position": null,
+            "players_active": null,
+            "players_to_act": null,
+            "legal_actions": [
+              "fold",
+              "call",
+              "raise"
+            ]
+          },
+          "hero_visible_state_complete_for_protocol": false,
+          "state_field_notes": [
+            "The retained frame displays a $27,200 pot. Exact stack and complete forced-bet/position context remain unavailable."
+          ],
+          "preceding_public_action_context": "After Ivey\u2019s earlier $2,500 call, Tilly raises to $15,000; Ivey calls the additional $12,500.",
+          "observed_action": {
+            "action": "call",
+            "displayed_amount_chips": 12500,
+            "amount_semantics": "chips_added_to_match",
+            "amount_precision": "exact_display"
+          },
+          "evidence_tier": "video_snapshot_with_rounded_or_missing_context"
+        },
+        {
+          "decision_id": "03",
+          "video_timestamp_seconds": 100,
+          "predecision_frame": "frames/Aw_KVPxe7d0_d03_t100s.png",
+          "street": "flop",
+          "hero_visible_state": {
+            "hole_cards": [
+              "Ks",
+              "9s"
+            ],
+            "board": [
+              "7s",
+              "8h",
+              "Ts"
+            ],
+            "pot": 82200,
+            "to_call": 30000,
+            "stack": null,
+            "current_bet": 0,
+            "min_raise_to": null,
+            "max_raise_to": null,
+            "big_blind": 800,
+            "position": null,
+            "players_active": 3,
+            "players_to_act": 1,
+            "legal_actions": [
+              "fold",
+              "call",
+              "raise"
+            ]
+          },
+          "hero_visible_state_complete_for_protocol": false,
+          "state_field_notes": [
+            "Pot $82,200 and Tilly\u2019s $30,000 wager are visible on the broadcast HUD."
+          ],
+          "preceding_public_action_context": "On 7\u2660 8\u2665 10\u2660, Tilly bets $30,000 before Ivey acts; Esfandiari remains to act behind him.",
+          "observed_action": {
+            "action": "call",
+            "displayed_amount_chips": 30000,
+            "amount_semantics": "chips_added_to_match",
+            "amount_precision": "exact_display"
+          },
+          "evidence_tier": "video_snapshot_with_rounded_or_missing_context"
+        },
+        {
+          "decision_id": "04",
+          "video_timestamp_seconds": 150,
+          "predecision_frame": "frames/Aw_KVPxe7d0_d04_t150s.png",
+          "street": "flop",
+          "hero_visible_state": {
+            "hole_cards": [
+              "Ks",
+              "9s"
+            ],
+            "board": [
+              "7s",
+              "8h",
+              "Ts"
+            ],
+            "pot": 212200,
+            "to_call": 70000,
+            "stack": null,
+            "current_bet": 30000,
+            "min_raise_to": null,
+            "max_raise_to": null,
+            "big_blind": 800,
+            "position": null,
+            "players_active": 2,
+            "players_to_act": 0,
+            "legal_actions": [
+              "fold",
+              "call",
+              "raise"
+            ]
+          },
+          "hero_visible_state_complete_for_protocol": false,
+          "state_field_notes": [
+            "Pot $212,200, raise to $100,000, and Ivey\u2019s earlier $30,000 contribution are visible or established by the public action sequence."
+          ],
+          "preceding_public_action_context": "After Tilly bets $30,000 and Ivey calls, Esfandiari raises to $100,000; Tilly folds and Ivey faces $70,000 more.",
+          "observed_action": {
+            "action": "call",
+            "displayed_amount_chips": 70000,
+            "amount_semantics": "chips_added_to_match",
+            "amount_precision": "exact_display"
+          },
+          "evidence_tier": "video_snapshot_with_rounded_or_missing_context"
+        },
+        {
+          "decision_id": "05",
+          "video_timestamp_seconds": 190,
+          "predecision_frame": "frames/Aw_KVPxe7d0_d05_t190s.png",
+          "street": "turn",
+          "hero_visible_state": {
+            "hole_cards": [
+              "Ks",
+              "9s"
+            ],
+            "board": [
+              "7s",
+              "8h",
+              "Ts",
+              "Kh"
+            ],
+            "pot": 282200,
+            "to_call": 0,
+            "stack": null,
+            "current_bet": 0,
+            "min_raise_to": null,
+            "max_raise_to": null,
+            "big_blind": 800,
+            "position": null,
+            "players_active": 2,
+            "players_to_act": 1,
+            "legal_actions": [
+              "check",
+              "raise"
+            ]
+          },
+          "hero_visible_state_complete_for_protocol": false,
+          "state_field_notes": [
+            "Pot and board are visible; exact remaining stack is not."
+          ],
+          "preceding_public_action_context": "On the K\u2665 turn, the pot is $282,200 before Ivey checks.",
+          "observed_action": {
+            "action": "check",
+            "displayed_amount_chips": null,
+            "amount_semantics": "not_applicable",
+            "amount_precision": "exact_display"
+          },
+          "evidence_tier": "video_snapshot_with_rounded_or_missing_context"
+        },
+        {
+          "decision_id": "06",
+          "video_timestamp_seconds": 220,
+          "predecision_frame": "frames/Aw_KVPxe7d0_d06_t220s.png",
+          "street": "turn",
+          "hero_visible_state": {
+            "hole_cards": [
+              "Ks",
+              "9s"
+            ],
+            "board": [
+              "7s",
+              "8h",
+              "Ts",
+              "Kh"
+            ],
+            "pot": 436200,
+            "to_call": 154000,
+            "stack": null,
+            "current_bet": 0,
+            "min_raise_to": null,
+            "max_raise_to": null,
+            "big_blind": 800,
+            "position": null,
+            "players_active": 2,
+            "players_to_act": 0,
+            "legal_actions": [
+              "fold",
+              "call",
+              "raise"
+            ]
+          },
+          "hero_visible_state_complete_for_protocol": false,
+          "state_field_notes": [
+            "Pot and wager are visible; remaining stack is shown only as a rounded amount, so it is not copied into stack."
+          ],
+          "preceding_public_action_context": "Esfandiari bets $154,000 on the turn; the displayed pot before Ivey\u2019s fold is $436,200.",
+          "observed_action": {
+            "action": "fold",
+            "displayed_amount_chips": null,
+            "amount_semantics": "not_applicable",
+            "amount_precision": "exact_display"
+          },
+          "evidence_tier": "video_snapshot_with_rounded_or_missing_context"
+        }
+      ]
+    },
+    {
+      "video_id": "g1nesioHo_c",
+      "url": "https://www.youtube.com/watch?v=g1nesioHo_c",
+      "channel": "PokerGO",
+      "channel_id": "UCOPw3R-TUUNqgN2bQyidW2w",
+      "title": "Phil Hellmuth Gets Himself in Trouble vs Phil Ivey!",
+      "upload_date": "2023-08-15",
+      "duration_seconds": 298,
+      "game_classification": {
+        "variant": "hold'em; no-limit structure not independently confirmed for this hand",
+        "format": "cash-game Poker After Dark segment",
+        "standard_nlhe_scoring": "unscored_variant_uncertain",
+        "support": [
+          "PokerGO metadata identifies a Poker After Dark clash; PGT describes the segment as a cash-game showdown. The available hand-specific sources do not establish the betting structure."
+        ],
+        "support_urls": [
+          "https://www.pgt.com/news/blowup-alert-hellmuth-traps-ivey-with-the-worst-hand",
+          "https://www.pokernews.com/news/2017/03/watch-pokerstars-top-5-poker-table-nightmares-27273.htm"
+        ],
+        "blinds": {
+          "small_blind": null,
+          "big_blind": null,
+          "ante": null,
+          "precision": "not established"
+        }
+      },
+      "reported_rounded_values": {},
+      "hand_context": {
+        "hero_cards": [
+          "8c",
+          "6c"
+        ],
+        "board": [
+          "Tc",
+          "9h",
+          "7h",
+          "2d"
+        ],
+        "board_status": "Board known before Ivey\u2019s final decision; later river card omitted.",
+        "raw_position": null,
+        "protocol_position": null,
+        "position_note": "Not established in the reviewed clip."
+      },
+      "decisions": [
+        {
+          "decision_id": "01",
+          "video_timestamp_seconds": 0,
+          "predecision_frame": null,
+          "street": "preflop",
+          "hero_visible_state": {
+            "hole_cards": [
+              "8c",
+              "6c"
+            ],
+            "board": [],
+            "pot": null,
+            "to_call": null,
+            "stack": null,
+            "current_bet": null,
+            "min_raise_to": null,
+            "max_raise_to": null,
+            "big_blind": null,
+            "position": null,
+            "players_active": null,
+            "players_to_act": null,
+            "legal_actions": null
+          },
+          "hero_visible_state_complete_for_protocol": false,
+          "state_field_notes": [
+            "No predecision still is retained because the clip starts during/after this action.",
+            "Ivey\u2019s own cards are identified from the later public reveal; the state is incomplete and no pot, stack, blind, position, or prior action is inferred."
+          ],
+          "preceding_public_action_context": "The clip opens as Ivey\u2019s preflop raise to $2,500 is already in progress; the frame does not show a predecision state.",
+          "observed_action": {
+            "action": "raise",
+            "displayed_amount_chips": 2500,
+            "amount_semantics": "broadcast_street_total_target",
+            "amount_precision": "exact_display"
+          },
+          "evidence_tier": "video_snapshot_with_rounded_or_missing_context"
+        },
+        {
+          "decision_id": "02",
+          "video_timestamp_seconds": 38,
+          "predecision_frame": "frames/g1nesioHo_c_d02_t038s.png",
+          "street": "flop",
+          "hero_visible_state": {
+            "hole_cards": [
+              "8c",
+              "6c"
+            ],
+            "board": [
+              "Tc",
+              "9h",
+              "7h"
+            ],
+            "pot": 10200,
+            "to_call": 0,
+            "stack": null,
+            "current_bet": 0,
+            "min_raise_to": null,
+            "max_raise_to": null,
+            "big_blind": null,
+            "position": null,
+            "players_active": null,
+            "players_to_act": null,
+            "legal_actions": [
+              "check",
+              "raise"
+            ]
+          },
+          "hero_visible_state_complete_for_protocol": false,
+          "state_field_notes": [
+            "Pot $10,300 and board are visible; blind level, exact stack, and position are not established.",
+            "No live wager is open when check/raise are available; to_call is therefore zero.",
+            "Pot value rechecked in a fresh pot-only source crop; remaining stacks and complete chip accounting remain unavailable."
+          ],
+          "preceding_public_action_context": "On the 10\u2663 9\u2665 7\u2665 flop, Ivey bets $8,000.",
+          "observed_action": {
+            "action": "bet",
+            "displayed_amount_chips": 8000,
+            "amount_semantics": "chips_added_on_unopened_street",
+            "amount_precision": "exact_display"
+          },
+          "evidence_tier": "video_snapshot_with_rounded_or_missing_context",
+          "pot_evidence": {
+            "frame": "frames/g1nesioHo_c_pot_t038s.png",
+            "source_window_seconds": [
+              30,
+              42
+            ],
+            "extraction_offset_seconds": 8,
+            "timestamp_precision": "Nominal source38/78seconds; section extraction may align to a nearby keyframe.",
+            "observed_pot": 10200,
+            "crop_policy": "Only the pot HUD is retained; no player cards or equity."
+          }
+        },
+        {
+          "decision_id": "03",
+          "video_timestamp_seconds": 78,
+          "predecision_frame": "frames/g1nesioHo_c_d03_t078s.png",
+          "street": "turn",
+          "hero_visible_state": {
+            "hole_cards": [
+              "8c",
+              "6c"
+            ],
+            "board": [
+              "Tc",
+              "9h",
+              "7h",
+              "2d"
+            ],
+            "pot": 28300,
+            "to_call": 0,
+            "stack": null,
+            "current_bet": 0,
+            "min_raise_to": null,
+            "max_raise_to": null,
+            "big_blind": null,
+            "position": null,
+            "players_active": null,
+            "players_to_act": null,
+            "legal_actions": [
+              "check",
+              "raise"
+            ]
+          },
+          "hero_visible_state_complete_for_protocol": false,
+          "state_field_notes": [
+            "Pot $28,300 and board are visible; exact stack, position, blind level, and number of players who remain in the hand are unavailable.",
+            "No live wager is open when check/raise are available; to_call is therefore zero.",
+            "Pot value rechecked in a fresh pot-only source crop; remaining stacks and complete chip accounting remain unavailable."
+          ],
+          "preceding_public_action_context": "After the 2\u2666 turn, Ivey bets $23,000.",
+          "observed_action": {
+            "action": "bet",
+            "displayed_amount_chips": 23000,
+            "amount_semantics": "chips_added_on_unopened_street",
+            "amount_precision": "exact_display"
+          },
+          "evidence_tier": "video_snapshot_with_rounded_or_missing_context",
+          "pot_evidence": {
+            "frame": "frames/g1nesioHo_c_pot_t078s.png",
+            "source_window_seconds": [
+              70,
+              82
+            ],
+            "extraction_offset_seconds": 8,
+            "timestamp_precision": "Nominal source38/78seconds; section extraction may align to a nearby keyframe.",
+            "observed_pot": 28300,
+            "crop_policy": "Only the pot HUD is retained; no player cards or equity."
+          }
+        },
+        {
+          "decision_id": "04",
+          "video_timestamp_seconds": 123,
+          "predecision_frame": "frames/g1nesioHo_c_d04_t123s.png",
+          "street": "turn",
+          "hero_visible_state": {
+            "hole_cards": [
+              "8c",
+              "6c"
+            ],
+            "board": [
+              "Tc",
+              "9h",
+              "7h",
+              "2d"
+            ],
+            "pot": 130200,
+            "to_call": null,
+            "stack": null,
+            "current_bet": 23000,
+            "min_raise_to": null,
+            "max_raise_to": null,
+            "big_blind": null,
+            "position": null,
+            "players_active": null,
+            "players_to_act": null,
+            "legal_actions": null,
+            "contestable_pot": null
+          },
+          "hero_visible_state_complete_for_protocol": false,
+          "state_field_notes": [
+            "The $57,300 call amount is the difference from Ivey\u2019s $23,000 bet to Hellmuth\u2019s $80,300 total.",
+            "Exact remaining stack and legal raise ceiling are not shown; legal_actions is left null.",
+            "The predecision still masks Hellmuth\u2019s cards and both players\u2019 equity graphics.",
+            "28,300+23,000+80,300=131,600 differs from the later displayed130,200. No rake, uncalled excess or missing action is assumed to repair the1,400 gap. The nominal57,300 difference is not an exact capped call amount."
+          ],
+          "preceding_public_action_context": "Hellmuth moves all-in to $80,300 after Ivey\u2019s $23,000 turn bet; the displayed pot is $130,200 before Ivey\u2019s decision.",
+          "observed_action": {
+            "action": "call",
+            "displayed_amount_chips": null,
+            "amount_semantics": "Call confirmed; exact additional payment unresolved.",
+            "amount_precision": "unknown_capped_amount"
+          },
+          "evidence_tier": "video_snapshot_with_rounded_or_missing_context",
+          "nominal_additional_call_before_stack_cap": {
+            "value": 57300,
+            "quality": "derived_target_difference_only",
+            "basis": "80,300 street target minus23,000 already bet; exact capped payment cannot be confirmed without Ivey remaining stack."
+          }
+        }
+      ]
+    },
+    {
+      "video_id": "5TX7WuLl7IQ",
+      "url": "https://www.youtube.com/watch?v=5TX7WuLl7IQ",
+      "channel": "PokerGO",
+      "channel_id": "UCOPw3R-TUUNqgN2bQyidW2w",
+      "title": "Phil Ivey vs Doyle Brunson Cash Game Clash!",
+      "upload_date": "2020-11-30",
+      "duration_seconds": 187,
+      "game_classification": {
+        "variant": "no-limit hold'em",
+        "format": "cash",
+        "standard_nlhe_scoring": "eligible",
+        "support": [
+          "PokerGO describes a Super High Roller cash-game hand; the PokerNews event report identifies the 2015 Super High Roller Cash Game as NLHE."
+        ],
+        "support_urls": [
+          "https://www.pokernews.com/news/2015/06/super-high-roller-cash-game-1-22103.htm",
+          "https://www.pokergo.com/videos/im_62218"
+        ],
+        "blinds": {
+          "small_blind": 400,
+          "big_blind": 800,
+          "ante": 200,
+          "precision": "event-level reported values"
+        }
+      },
+      "hand_context": {
+        "hero_cards": [
+          "Kc",
+          "Tc"
+        ],
+        "board": [
+          "Jc",
+          "4h",
+          "Qc",
+          "5c",
+          "Kh"
+        ],
+        "board_status": "river board in source clip",
+        "raw_position": null,
+        "protocol_position": null,
+        "position_note": "Player seat positions are not established."
+      },
+      "reported_rounded_values": {
+        "hero_stack": {
+          "display_text": "about $932K",
+          "exact_value": null,
+          "precision": "rounded K-style broadcast display"
+        },
+        "opponent_stack": {
+          "display_text": "about $744K",
+          "exact_value": null,
+          "precision": "rounded K-style broadcast display"
+        }
+      },
+      "decisions": [
+        {
+          "decision_id": "01",
+          "video_timestamp_seconds": 20,
+          "predecision_frame": "frames/5TX7WuLl7IQ_d01_t020s.png",
+          "street": "preflop",
+          "hero_visible_state": {
+            "hole_cards": [
+              "Kc",
+              "Tc"
+            ],
+            "board": [],
+            "pot": 6300,
+            "to_call": null,
+            "stack": null,
+            "current_bet": null,
+            "min_raise_to": null,
+            "max_raise_to": null,
+            "big_blind": 800,
+            "position": null,
+            "players_active": null,
+            "players_to_act": null,
+            "legal_actions": [
+              "fold",
+              "call",
+              "raise"
+            ]
+          },
+          "hero_visible_state_complete_for_protocol": false,
+          "state_field_notes": [
+            "Pot $6,300 and event-level big blind are visible/supported; exact hero position, street contribution, to_call arithmetic, and stack are unavailable."
+          ],
+          "preceding_public_action_context": "Doyle opens to $3,500 before Ivey calls.",
+          "observed_action": {
+            "action": "call",
+            "displayed_amount_chips": 3500,
+            "amount_semantics": "chips_added_to_match",
+            "amount_precision": "exact_display"
+          },
+          "evidence_tier": "video_snapshot_with_rounded_or_missing_context"
+        },
+        {
+          "decision_id": "02",
+          "video_timestamp_seconds": 50,
+          "predecision_frame": "frames/5TX7WuLl7IQ_d02_t050s.png",
+          "street": "flop",
+          "hero_visible_state": {
+            "hole_cards": [
+              "Kc",
+              "Tc"
+            ],
+            "board": [
+              "Jc",
+              "4h",
+              "Qc"
+            ],
+            "pot": 16800,
+            "to_call": 7000,
+            "stack": null,
+            "current_bet": 0,
+            "min_raise_to": null,
+            "max_raise_to": null,
+            "big_blind": 800,
+            "position": null,
+            "players_active": null,
+            "players_to_act": null,
+            "legal_actions": [
+              "fold",
+              "call",
+              "raise"
+            ]
+          },
+          "hero_visible_state_complete_for_protocol": false,
+          "state_field_notes": [
+            "Pot and action are visible; the exact hero stack and position are missing."
+          ],
+          "preceding_public_action_context": "Doyle bets $7,000 on J\u2663 4\u2665 Q\u2663; Ivey raises to $20,000.",
+          "observed_action": {
+            "action": "raise",
+            "displayed_amount_chips": 20000,
+            "amount_semantics": "street_total_target",
+            "amount_precision": "exact_display"
+          },
+          "evidence_tier": "video_snapshot_with_rounded_or_missing_context"
+        },
+        {
+          "decision_id": "03",
+          "video_timestamp_seconds": 90,
+          "predecision_frame": "frames/5TX7WuLl7IQ_d03_t090s.png",
+          "street": "turn",
+          "hero_visible_state": {
+            "hole_cards": [
+              "Kc",
+              "Tc"
+            ],
+            "board": [
+              "Jc",
+              "4h",
+              "Qc",
+              "5c"
+            ],
+            "pot": 49800,
+            "to_call": 0,
+            "stack": null,
+            "current_bet": 0,
+            "min_raise_to": null,
+            "max_raise_to": null,
+            "big_blind": 800,
+            "position": null,
+            "players_active": null,
+            "players_to_act": null,
+            "legal_actions": [
+              "check",
+              "raise"
+            ]
+          },
+          "hero_visible_state_complete_for_protocol": false,
+          "state_field_notes": [
+            "Pot and board are visible; exact stack and seat position remain unavailable."
+          ],
+          "preceding_public_action_context": "After the 5\u2663 turn, Doyle checks and Ivey bets $30,000.",
+          "observed_action": {
+            "action": "bet",
+            "displayed_amount_chips": 30000,
+            "amount_semantics": "chips_added_on_unopened_street",
+            "amount_precision": "exact_display"
+          },
+          "evidence_tier": "video_snapshot_with_rounded_or_missing_context"
+        },
+        {
+          "decision_id": "04",
+          "video_timestamp_seconds": 130,
+          "predecision_frame": null,
+          "street": "river",
+          "hero_visible_state": {
+            "hole_cards": [
+              "Kc",
+              "Tc"
+            ],
+            "board": [
+              "Jc",
+              "4h",
+              "Qc",
+              "5c",
+              "Kh"
+            ],
+            "pot": 109800,
+            "to_call": 0,
+            "stack": null,
+            "current_bet": 0,
+            "min_raise_to": null,
+            "max_raise_to": null,
+            "big_blind": 800,
+            "position": null,
+            "players_active": null,
+            "players_to_act": null,
+            "legal_actions": [
+              "check",
+              "raise"
+            ]
+          },
+          "hero_visible_state_complete_for_protocol": false,
+          "state_field_notes": [
+            "Pot and board are visible. The clip later displays rounded stacks; exact stack at this decision is unavailable."
+          ],
+          "preceding_public_action_context": "After the K\u2665 river, Doyle checks and Ivey bets $80,000.",
+          "observed_action": {
+            "action": "bet",
+            "displayed_amount_chips": 80000,
+            "amount_semantics": "chips_added_on_unopened_street",
+            "amount_precision": "exact_display"
+          },
+          "evidence_tier": "video_snapshot_with_rounded_or_missing_context",
+          "withdrawn_frame": "frames/5TX7WuLl7IQ_d04_t130s.png",
+          "frame_exclusion_reason": "Independent review found an unmasked opponent-dependent100%equity graphic. Frame withdrawn; no blinded still is claimed for this decision."
+        }
+      ]
+    },
+    {
+      "video_id": "KjreElAgfRk",
+      "url": "https://www.youtube.com/watch?v=KjreElAgfRk",
+      "channel": "Triton Poker",
+      "channel_id": "UCpcv404DxfhGYhXgyB9Aoeg",
+      "title": "Can Phil Ivey find the right move with his tournament life at risk?",
+      "upload_date": "2022-09-11",
+      "duration_seconds": 577,
+      "game_classification": {
+        "variant": "no-limit hold'em",
+        "format": "tournament",
+        "event": "$200K Coin Rivet Invitational",
+        "standard_nlhe_scoring": "eligible",
+        "support": [
+          "Official Triton metadata identifies the event and #NLH; the hand-specific report corroborates the betting and blind/ante level."
+        ],
+        "support_urls": [
+          "https://highstakesdb.com/news/live-poker-news/phil-ivey-s-a-bluff-catcher-in-huge-pot-vs-christoph-vogelsang-in-200k-coin-rivet-invitational",
+          "https://jonathanlittlepoker.com/2022/09/"
+        ],
+        "blinds": {
+          "small_blind": 3000,
+          "big_blind": 6000,
+          "ante": 6000,
+          "ante_type": "big-blind ante",
+          "precision": "broadcast/event-reported"
+        }
+      },
+      "hand_context": {
+        "hero_cards": [
+          "Td",
+          "6d"
+        ],
+        "board": [
+          "Tc",
+          "8c",
+          "3d",
+          "8h",
+          "Kh"
+        ],
+        "board_status": "river board in source clip",
+        "raw_position": "BTN",
+        "protocol_position": "BTN",
+        "position_note": "Button is visible in the broadcast HUD."
+      },
+      "reported_rounded_values": {
+        "hero_stack": [
+          {
+            "at_decision": "preflop",
+            "display_text": "205K",
+            "exact_value": null,
+            "precision": "rounded K-style broadcast display"
+          },
+          {
+            "at_decision": "flop",
+            "display_text": "192K",
+            "exact_value": null,
+            "precision": "rounded K-style broadcast display"
+          },
+          {
+            "at_decision": "turn",
+            "display_text": "176K",
+            "exact_value": null,
+            "precision": "rounded K-style broadcast display"
+          },
+          {
+            "at_decision": "river",
+            "display_text": "121K",
+            "exact_value": null,
+            "precision": "rounded K-style broadcast display"
+          }
+        ]
+      },
+      "decisions": [
+        {
+          "decision_id": "01",
+          "video_timestamp_seconds": 25,
+          "predecision_frame": "frames/KjreElAgfRk_d01_t025s.png",
+          "street": "preflop",
+          "hero_visible_state": {
+            "hole_cards": [
+              "Td",
+              "6d"
+            ],
+            "board": [],
+            "pot": 15000,
+            "to_call": 6000,
+            "stack": null,
+            "current_bet": 0,
+            "min_raise_to": 12000,
+            "max_raise_to": null,
+            "big_blind": 6000,
+            "position": "BTN",
+            "players_active": 3,
+            "players_to_act": 2,
+            "legal_actions": [
+              "fold",
+              "call",
+              "raise"
+            ]
+          },
+          "hero_visible_state_complete_for_protocol": false,
+          "state_field_notes": [
+            "The $13K raise target and blind level are shown. The K-style stack display is rounded, so stack and max_raise_to are null.",
+            "Small blind is not needed for the protocol big_blind field."
+          ],
+          "preceding_public_action_context": "At 3K/6K with a 6K big-blind ante, action folds to Ivey on the button; the displayed pot is 15K before his open.",
+          "observed_action": {
+            "action": "raise",
+            "displayed_amount_chips": 13000,
+            "amount_semantics": "street_total_target",
+            "amount_precision": "exact_display"
+          },
+          "evidence_tier": "video_snapshot_with_rounded_or_missing_context"
+        },
+        {
+          "decision_id": "02",
+          "video_timestamp_seconds": 120,
+          "predecision_frame": "frames/KjreElAgfRk_d02_t120s.png",
+          "street": "flop",
+          "hero_visible_state": {
+            "hole_cards": [
+              "Td",
+              "6d"
+            ],
+            "board": [
+              "Tc",
+              "8c",
+              "3d"
+            ],
+            "pot": 45000,
+            "to_call": 0,
+            "stack": null,
+            "current_bet": 0,
+            "min_raise_to": null,
+            "max_raise_to": null,
+            "big_blind": 6000,
+            "position": "BTN",
+            "players_active": 3,
+            "players_to_act": 0,
+            "legal_actions": [
+              "check",
+              "raise"
+            ]
+          },
+          "hero_visible_state_complete_for_protocol": false,
+          "state_field_notes": [
+            "Pot, board, button, and big blind are displayed/reported. Hero stack is shown only as rounded 192K.",
+            "Both blinds already checked; no opponent remains pending before Ivey makes a new bet."
+          ],
+          "preceding_public_action_context": "Both blinds call preflop; on the 10\u2663 8\u2663 3\u2666 flop, action checks to Ivey and the pot is 45K.",
+          "observed_action": {
+            "action": "bet",
+            "displayed_amount_chips": 16000,
+            "amount_semantics": "chips_added_on_unopened_street",
+            "amount_precision": "exact_display"
+          },
+          "evidence_tier": "video_snapshot_with_rounded_or_missing_context"
+        },
+        {
+          "decision_id": "03",
+          "video_timestamp_seconds": 270,
+          "predecision_frame": "frames/KjreElAgfRk_d03_t270s.png",
+          "street": "turn",
+          "hero_visible_state": {
+            "hole_cards": [
+              "Td",
+              "6d"
+            ],
+            "board": [
+              "Tc",
+              "8c",
+              "3d",
+              "8h"
+            ],
+            "pot": 148000,
+            "to_call": 55000,
+            "stack": null,
+            "current_bet": 0,
+            "min_raise_to": null,
+            "max_raise_to": null,
+            "big_blind": 6000,
+            "position": "BTN",
+            "players_active": 3,
+            "players_to_act": 1,
+            "legal_actions": [
+              "fold",
+              "call",
+              "raise"
+            ]
+          },
+          "hero_visible_state_complete_for_protocol": false,
+          "state_field_notes": [
+            "The pre-action pot includes Vogelsang\u2019s wager as displayed ($148K). Hero stack display is rounded 176K; exact stack and max_raise_to are unavailable."
+          ],
+          "preceding_public_action_context": "On the 8\u2665 turn, Heath checks and Vogelsang bets $55,000; Ivey faces the bet with Heath still behind.",
+          "observed_action": {
+            "action": "call",
+            "displayed_amount_chips": 55000,
+            "amount_semantics": "chips_added_to_match",
+            "amount_precision": "exact_display"
+          },
+          "evidence_tier": "video_snapshot_with_rounded_or_missing_context"
+        },
+        {
+          "decision_id": "04",
+          "video_timestamp_seconds": 345,
+          "predecision_frame": "frames/KjreElAgfRk_d04_t345s.png",
+          "street": "river",
+          "hero_visible_state": {
+            "hole_cards": [
+              "Td",
+              "6d"
+            ],
+            "board": [
+              "Tc",
+              "8c",
+              "3d",
+              "8h",
+              "Kh"
+            ],
+            "pot": 453000,
+            "to_call": null,
+            "stack": null,
+            "current_bet": 0,
+            "min_raise_to": null,
+            "max_raise_to": null,
+            "big_blind": 6000,
+            "position": "BTN",
+            "players_active": 2,
+            "players_to_act": 0,
+            "legal_actions": [
+              "fold",
+              "call"
+            ]
+          },
+          "hero_visible_state_complete_for_protocol": false,
+          "state_field_notes": [
+            "The $453K pot HUD includes the river wager. Ivey\u2019s displayed 121K is rounded; exact stack/to_call and the contestable pot after uncalled excess are unavailable.",
+            "Opponent cards and both players\u2019 equity graphics are masked in the retained frame."
+          ],
+          "preceding_public_action_context": "Vogelsang bets $250,000 on the K\u2665 river; Ivey faces the bet with a displayed remaining stack of 121K.",
+          "observed_action": {
+            "action": "call",
+            "displayed_amount_chips": 121000,
+            "amount_semantics": "all_in_call_rounded_stack_display",
+            "amount_precision": "rounded_stack_display"
+          },
+          "evidence_tier": "video_snapshot_with_rounded_or_missing_context"
+        }
+      ]
+    }
+  ],
+  "excluded_after_lock": [
+    {
+      "video_id": "jdiDizWlIz0",
+      "url": "https://www.youtube.com/watch?v=jdiDizWlIz0",
+      "channel": "Triton Poker",
+      "title": "Phil Ivey\u2019s INSANE All-In with Queens Gets Interrupted by a KING?! Triton Poker Mayhem",
+      "selection_basis": "Metadata identified an Ivey Queens all-in hand in the official cash-game stream; it was locked before download/review as the next candidate in the fixed query sequence.",
+      "exclusion_reason": "Playback review showed the 20-minute video intercuts multiple unrelated hands. Excluded under the predeclared single-hand rule; no convenient segment was selected."
+    }
+  ],
+  "review_corrections": {
+    "date": "2026-10-31",
+    "status": "partial_only_no_exact_admission",
+    "notes": [
+      "Two visible Aw preflop pots restored.",
+      "Three action-order corrections applied across the two batches.",
+      "One equity-exposing river still removed rather than used as a blinded observation.",
+      "Hellmuth flop pot corrected to10,200 from a fresh source crop; turn28,300 confirmed. The later1,400 ledger discrepancy remains unresolved and capped call/contestable pot stay unknown."
+    ]
+  }
+}

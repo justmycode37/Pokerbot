@@ -1,0 +1,582 @@
+{
+  "schema_version": "1.0",
+  "dataset": "public_ivey_nlhe_decision_evidence",
+  "scope": "Attributable public Phil Ivey no-limit hold'em reports acquired for machine-readable decision-state examples.",
+  "protocol_reference": "docs/state-protocol.md",
+  "encoding_rules": {
+    "observations_contain_hero_private_cards_only": true,
+    "observations_contain_only_board_cards_visible_at_decision": true,
+    "future_actions_and_expected_actions_are_excluded_from_observations": true,
+    "expected_action_is_stored_outside_observation": true,
+    "raise_amount_semantics": "Every raise target is the total amount committed on that street, not the additional chips added.",
+    "quality_statuses": ["observed", "derived", "unknown"]
+  },
+  "source_registry": [
+    {
+      "source_id": "cardplayer_quoss_1806",
+      "publisher": "CardPlayer",
+      "original_title": "Poker Hand Matchup: Phil Ivey vs. Fabian Quoss",
+      "direct_url": "https://www.cardplayer.com/hand-matchups/1806",
+      "publication_date": {"value": "2014-02-26", "quality": "observed"}
+    },
+    {
+      "source_id": "pokernews_quoss_2014",
+      "publisher": "PokerNews",
+      "original_title": "2014 Aussie Millions $250K Challenge live chip report",
+      "direct_url": "https://www.pokernews.com/tours/aussie-millions/2014-aussie-millions/250k-challenge/chips.77749.htm",
+      "publication_date": {"value": null, "quality": "unknown", "note": "Live update page gives the hand/event date; a separate publication timestamp was not located."}
+    },
+    {
+      "source_id": "cardplayer_haxton_1808",
+      "publisher": "CardPlayer",
+      "original_title": "Poker Hand Matchup: Phil Ivey vs. Isaac Haxton",
+      "direct_url": "https://www.cardplayer.com/hand-matchups/1808",
+      "publication_date": {"value": "2014-02-26", "quality": "observed"}
+    },
+    {
+      "source_id": "pokernews_haxton_2014",
+      "publisher": "PokerNews",
+      "original_title": "2014 Aussie Millions $250,000 Challenge live report, final hand",
+      "direct_url": "https://www.pokernews.com/tours/aussie-millions/2014-aussie-millions/250k-challenge/post.225799.htm",
+      "publication_date": {"value": "2014-02-10", "quality": "observed", "note": "The live report page is dated Feb. 10, 2014."}
+    },
+    {
+      "source_id": "cardplayer_sochi_2441",
+      "publisher": "CardPlayer",
+      "original_title": "A Hand Matchup from the 2020 MILLIONS Sochi $25,000 No-Limit Hold'em",
+      "direct_url": "https://www.cardplayer.com/poker-tools/hand-matchups/2441",
+      "publication_date": {"value": "2020-03-18", "quality": "observed"}
+    },
+    {
+      "source_id": "pokernews_sochi_festival_context",
+      "publisher": "PokerNews",
+      "original_title": "Sam Trickett Tops SHRS Sochi; Ivey Finishes Seventh in Event #2",
+      "direct_url": "https://www.pokernews.com/news/2020/03/sam-trickett-shrs-sochi-36762.htm",
+      "publication_date": {"value": "2020-03-10", "quality": "observed", "note": "Used only to record the series/event context, not the hand action."}
+    },
+    {
+      "source_id": "cardplayer_bonomo_2276",
+      "publisher": "CardPlayer",
+      "original_title": "Poker Hand Matchup: Phil Ivey vs. Justin Bonomo",
+      "direct_url": "https://www.cardplayer.com/poker-tools/hand-matchups/2276",
+      "publication_date": {"value": "2018-08-08", "quality": "observed"}
+    },
+    {
+      "source_id": "pokernews_bonomo_doubleup_2018",
+      "publisher": "PokerNews",
+      "original_title": "Top Five Hands of the $1 Million Big One for One Drop",
+      "direct_url": "https://www.pokernews.com/tours/wsop/2018-wsop/news/top-five-hands-1-million-big-one-for-one-drop-30543.htm",
+      "publication_date": {"value": "2018-07-19", "quality": "observed"}
+    },
+    {
+      "source_id": "pokergo_day2_context_2018",
+      "publisher": "PokerGO Tour",
+      "original_title": "Phil Ivey Headlines Day 2 of Big One For One Drop on PokerGO",
+      "direct_url": "https://www.pgt.com/news/phil-ivey-headlines-day-2-of-big-one-for-one-drop-on-pokergo",
+      "publication_date": {"value": "2018-07-16", "quality": "observed", "note": "Event context only; it does not identify the exact hand date."}
+    },
+    {
+      "source_id": "pokerstars_youtube_aussie_2014",
+      "publisher": "PokerStars Global (YouTube channel)",
+      "original_title": "Episode 3 ♠️ Aussie Millions 2014 Poker Tournament ♠️ $250K Challenge ♠️ PokerStars Global",
+      "direct_url": "https://www.youtube.com/watch?v=kNrn0OibLi8",
+      "publication_date": {"value": null, "quality": "unknown", "note": "Date not confirmed from public search metadata."}
+    }
+  ],
+  "hands": [
+    {
+      "hand_id": "ivey_quoss_2014_aussie_millions_250k",
+      "source_ids": ["cardplayer_quoss_1806", "pokernews_quoss_2014"],
+      "game": "No-Limit Texas Hold'em",
+      "event": "2014 Aussie Millions $250K Challenge",
+      "event_date": {"value": "2014-02-10", "quality": "observed", "basis": "PokerNews live report date."},
+      "players": {
+        "hero": {"source_name": "Phil Ivey", "role": "Phil Ivey", "position_at_decision": "SB", "hand_start_stack": 2720000, "hole_cards": ["Kd", "Qh"]},
+        "opponents": [
+          {"source_name": "Fabian Quoss", "position": "BTN", "hand_start_stack": 1420000, "hole_cards": ["8s", "8d"]},
+          {"source_name": "Big blind player", "position": "BB", "hand_start_stack": null, "hole_cards": null}
+        ]
+      },
+      "blinds_and_antes": {"small_blind": 40000, "big_blind": 80000, "ante": 10000, "ante_unit": "per player", "table_size": 5},
+      "board_by_street": {"flop": ["7d", "5c", "5s"], "turn": "Ah", "river": "Kh"},
+      "actions": [
+        {"street": "preflop", "player": "Fabian Quoss", "action": "raise", "amount": 175000, "amount_semantics": "total street target", "amount_quality": "observed", "added": 175000, "added_quality": "observed"},
+        {"street": "preflop", "player": "Phil Ivey", "action": "raise", "amount": 530000, "amount_semantics": "total street target", "amount_quality": "observed", "added": 490000, "added_quality": "derived", "note": "Ivey had already posted the 40,000 small blind."},
+        {"street": "preflop", "player": "Fabian Quoss", "action": "raise_all_in", "amount": 1410000, "amount_semantics": "total street target", "amount_quality": "derived", "added": 1235000, "added_quality": "derived", "note": "PokerNews reports 880,000 more than Ivey's 530,000 raise; total target is 1,410,000. This also equals Quoss's 1,420,000 start stack less the 10,000 ante."},
+        {"street": "preflop", "player": "Phil Ivey", "action": "call", "amount": 1410000, "amount_semantics": "total street target", "amount_quality": "derived", "added": 880000, "added_quality": "derived", "note": "Call target matches Quoss's derived all-in target."}
+      ],
+      "snapshots": [
+        {
+          "decision_id": "ivey_quoss_preflop_3bet",
+          "observation": {
+            "hole_cards": ["Kd", "Qh"],
+            "board": [],
+            "pot": 345000,
+            "to_call": 135000,
+            "stack": 2670000,
+            "current_bet": 40000,
+            "min_raise_to": 270000,
+            "max_raise_to": 2710000,
+            "big_blind": 80000,
+            "position": "SB",
+            "players_active": 3,
+            "players_to_act": 1,
+            "legal_actions": ["fold", "call", "raise"],
+            "street": "preflop",
+            "history": [
+              {"street": "preflop", "player": "Fabian Quoss", "action": "raise", "amount": 175000, "added": 175000}
+            ]
+          },
+          "expected_action": {"action": "raise", "raise_to": 530000, "amount_semantics": "total street target", "quality": "observed"},
+          "field_quality": {
+            "hole_cards": {"status": "observed", "basis": "CardPlayer matchup."},
+            "board": {"status": "observed", "basis": "No community cards had been dealt."},
+            "pot": {"status": "derived", "basis": "Five 10,000 antes + 40,000 SB + 80,000 BB + Quoss's 175,000 raise = 345,000."},
+            "to_call": {"status": "derived", "basis": "175,000 current target less Ivey's 40,000 SB."},
+            "stack": {"status": "derived", "basis": "Ivey's reported 2,720,000 hand-start stack less 10,000 ante and 40,000 SB."},
+            "current_bet": {"status": "observed", "basis": "Ivey is the 40,000 small blind."},
+            "min_raise_to": {"status": "derived", "basis": "Last raise increment is 95,000 (175,000 minus 80,000); next legal target is 175,000 + 95,000."},
+            "max_raise_to": {"status": "derived", "basis": "Current 40,000 bet plus 2,670,000 remaining stack."},
+            "big_blind": {"status": "observed", "basis": "Both sources report blinds 40,000/80,000."},
+            "position": {"status": "observed", "basis": "Both sources place Ivey in the small blind."},
+            "players_active": {"status": "derived", "basis": "Ivey, Quoss, and the pending big blind remain; the action is five-handed and Quoss is on the button."},
+            "players_to_act": {"status": "derived", "basis": "Only the big blind remains to act after Ivey."},
+            "legal_actions": {"status": "derived", "basis": "Preflop facing a raise under the local decision protocol."},
+            "street": {"status": "observed", "basis": "Preflop action is reported."},
+            "history": {"status": "observed", "basis": "Quoss's raise to 175,000 is reported."}
+          }
+        }
+      ],
+      "fact_quality": {
+        "event_date": "observed",
+        "hero_hand_start_stack": "observed",
+        "hero_hole_cards": "observed",
+        "opponent_hole_cards": "observed",
+        "opponent_start_stacks": "observed",
+        "blinds": "observed",
+        "antes": "observed",
+        "positions": "observed",
+        "board": "observed",
+        "Quoss_all_in_total_target": "derived",
+        "big_blind_player_stack": "unknown",
+        "exact_hand_timestamp": "unknown"
+      }
+    },
+    {
+      "hand_id": "ivey_haxton_2014_aussie_millions_250k_final",
+      "source_ids": ["cardplayer_haxton_1808", "pokernews_haxton_2014"],
+      "game": "No-Limit Texas Hold'em",
+      "event": "2014 Aussie Millions $250,000 Challenge",
+      "event_date": {"value": "2014-02-10", "quality": "observed", "basis": "PokerNews final-hand live report."},
+      "players": {
+        "hero": {"source_name": "Phil Ivey", "role": "Phil Ivey", "position_at_decision": "BTN", "hand_start_stack": 9300000, "hole_cards": ["Ah", "6c"]},
+        "opponents": [
+          {"source_name": "Isaac Haxton", "position": "BB", "hand_start_stack": 2200000, "hole_cards": ["8s", "7d"]}
+        ]
+      },
+      "blinds_and_antes": {"small_blind": 80000, "big_blind": 160000, "ante": 20000, "ante_unit": "per player", "table_size": 2},
+      "board_by_street": {"flop": ["Ad", "Kh", "9c"], "turn": "7s", "river": "3s"},
+      "actions": [
+        {"street": "preflop", "player": "Phil Ivey", "action": "call", "amount": 160000, "amount_semantics": "total street target", "amount_quality": "observed", "added": 80000, "added_quality": "derived", "note": "Ivey completed from the 80,000 button/small blind."},
+        {"street": "preflop", "player": "Isaac Haxton", "action": "raise_all_in", "amount": 2180000, "amount_semantics": "total street target", "amount_quality": "derived", "added": 2020000, "added_quality": "derived", "note": "Derived from Haxton's reported 2,200,000 start stack less the 20,000 ante; the BB is already 160,000 on the street."},
+        {"street": "preflop", "player": "Phil Ivey", "action": "call", "amount": 2180000, "amount_semantics": "total street target", "amount_quality": "derived", "added": 2100000, "added_quality": "derived", "note": "The source reports the call but not its exact amount."}
+      ],
+      "snapshots": [
+        {
+          "decision_id": "ivey_haxton_preflop_complete",
+          "observation": {
+            "hole_cards": ["Ah", "6c"],
+            "board": [],
+            "pot": 280000,
+            "to_call": 80000,
+            "stack": 9200000,
+            "current_bet": 80000,
+            "min_raise_to": 320000,
+            "max_raise_to": 9280000,
+            "big_blind": 160000,
+            "position": "BTN",
+            "players_active": 2,
+            "players_to_act": 1,
+            "legal_actions": ["fold", "call", "raise"],
+            "street": "preflop"
+          },
+          "expected_action": {"action": "call", "street_target": 160000, "amount_semantics": "total street target", "quality": "observed"},
+          "field_quality": {
+            "hole_cards": {"status": "observed", "basis": "CardPlayer matchup."},
+            "board": {"status": "observed", "basis": "No community cards had been dealt."},
+            "pot": {"status": "derived", "basis": "20,000 ante each + 80,000 SB + 160,000 BB = 280,000."},
+            "to_call": {"status": "derived", "basis": "160,000 BB target less Ivey's 80,000 SB."},
+            "stack": {"status": "derived", "basis": "Ivey's reported 9,300,000 starting stack less 20,000 ante and 80,000 SB."},
+            "current_bet": {"status": "observed", "basis": "Heads-up button is the 80,000 small blind."},
+            "min_raise_to": {"status": "derived", "basis": "Big blind is 160,000; minimum raise target is 320,000."},
+            "max_raise_to": {"status": "derived", "basis": "Current 80,000 bet plus 9,200,000 remaining stack."},
+            "big_blind": {"status": "observed", "basis": "Both reports give blinds 80,000/160,000."},
+            "position": {"status": "observed", "basis": "Both reports identify Ivey as the button; heads-up button is the small blind."},
+            "players_active": {"status": "observed", "basis": "The source reports heads-up play."},
+            "players_to_act": {"status": "derived", "basis": "Haxton in the big blind remains to act after Ivey."},
+            "legal_actions": {"status": "derived", "basis": "Preflop facing the big blind under the local decision protocol."},
+            "street": {"status": "observed", "basis": "Reported preflop action."}
+          }
+        }
+      ],
+      "fact_quality": {
+        "event_date": "observed",
+        "hero_hand_start_stack": "observed",
+        "opponent_hand_start_stack": "observed",
+        "hero_hole_cards": "observed",
+        "opponent_hole_cards": "observed",
+        "blinds": "observed",
+        "antes": "observed",
+        "positions": "observed",
+        "board": "observed",
+        "Haxton_all_in_total_target": "derived",
+        "exact_hand_timestamp": "unknown"
+      }
+    },
+    {
+      "hand_id": "ivey_leow_heath_2020_millions_sochi_25k",
+      "source_ids": ["cardplayer_sochi_2441", "pokernews_sochi_festival_context"],
+      "game": "No-Limit Texas Hold'em",
+      "event": "2020 MILLIONS Sochi $25,000 No-Limit Hold'em",
+      "event_date": {"value": null, "quality": "unknown", "note": "The exact hand date is not stated. PokerNews gives the series window as March 6–15, 2020; CardPlayer published this matchup March 18."},
+      "event_date_range": {"value": ["2020-03-06", "2020-03-15"], "quality": "observed", "basis": "PokerNews series schedule; range does not identify the hand's day."},
+      "players": {
+        "hero": {"source_name": "Phil Ivey", "role": "Phil Ivey", "source_position": "HJ", "protocol_position": "MP", "hand_start_stack": 233000, "hole_cards": ["Ks", "Td"]},
+        "opponents": [
+          {"source_name": "Ivan Leow", "position": "SB", "hand_start_stack": 409000, "hole_cards": ["Qs", "Qh"]},
+          {"source_name": "Ben Heath", "position": "BB", "hand_start_stack": 294000, "hole_cards": ["6d", "2d"]}
+        ]
+      },
+      "blinds_and_antes": {"small_blind": 3000, "big_blind": 6000, "big_blind_ante": 6000, "ante_unit": "big blind ante", "table_size": null},
+      "board_by_street": {"flop": ["As", "Ts", "2s"], "turn": "7s", "river": "2h"},
+      "actions": [
+        {"street": "preflop", "player": "Phil Ivey", "action": "raise", "amount": 13000, "amount_semantics": "total street target", "amount_quality": "observed", "added": 13000, "added_quality": "observed"},
+        {"street": "preflop", "player": "Ivan Leow", "action": "call", "amount": 13000, "amount_semantics": "total street target", "amount_quality": "observed", "added": 10000, "added_quality": "derived", "note": "Leow had posted the 3,000 small blind."},
+        {"street": "preflop", "player": "Ben Heath", "action": "call", "amount": 13000, "amount_semantics": "total street target", "amount_quality": "observed", "added": 7000, "added_quality": "derived", "note": "Heath had 6,000 in the big blind; his 6,000 big-blind ante is separate from the street target."},
+        {"street": "flop", "player": "Ivan Leow", "action": "check", "amount": 0, "amount_semantics": "total street target", "amount_quality": "observed", "added": 0, "added_quality": "observed"},
+        {"street": "flop", "player": "Ben Heath", "action": "check", "amount": 0, "amount_semantics": "total street target", "amount_quality": "observed", "added": 0, "added_quality": "observed"},
+        {"street": "flop", "player": "Phil Ivey", "action": "raise", "amount": 15000, "amount_semantics": "total street target", "amount_quality": "observed", "added": 15000, "added_quality": "observed", "note": "First wager on the flop; encoded as the protocol's raise-to amount."},
+        {"street": "flop", "player": "Ivan Leow", "action": "call", "amount": 15000, "amount_semantics": "total street target", "amount_quality": "observed", "added": 15000, "added_quality": "observed"},
+        {"street": "flop", "player": "Ben Heath", "action": "fold", "amount": 0, "amount_semantics": "total street target", "amount_quality": "observed", "added": 0, "added_quality": "observed"},
+        {"street": "turn", "player": "Ivan Leow", "action": "check", "amount": 0, "amount_semantics": "total street target", "amount_quality": "observed", "added": 0, "added_quality": "observed"},
+        {"street": "turn", "player": "Phil Ivey", "action": "raise", "amount": 45000, "amount_semantics": "total street target", "amount_quality": "observed", "added": 45000, "added_quality": "observed", "note": "First wager on the turn; encoded as the protocol's raise-to amount."},
+        {"street": "turn", "player": "Ivan Leow", "action": "call", "amount": 45000, "amount_semantics": "total street target", "amount_quality": "observed", "added": 45000, "added_quality": "observed"},
+        {"street": "river", "player": "Ivan Leow", "action": "check", "amount": 0, "amount_semantics": "total street target", "amount_quality": "observed", "added": 0, "added_quality": "observed"},
+        {"street": "river", "player": "Phil Ivey", "action": "raise_all_in", "amount": 160000, "amount_semantics": "total street target", "amount_quality": "observed", "added": 160000, "added_quality": "derived", "note": "CardPlayer reports Ivey moved all-in; 160,000 is derived from his 233,000 hand-start stack less the 13,000 preflop, 15,000 flop, and 45,000 turn contributions."},
+        {"street": "river", "player": "Ivan Leow", "action": "fold", "amount": 0, "amount_semantics": "total street target", "amount_quality": "observed", "added": 0, "added_quality": "observed"}
+      ],
+      "snapshots": [
+        {
+          "decision_id": "ivey_leow_heath_flop_bet",
+          "observation": {
+            "hole_cards": ["Ks", "Td"],
+            "board": ["As", "Ts", "2s"],
+            "pot": 45000,
+            "to_call": 0,
+            "stack": 220000,
+            "current_bet": 0,
+            "min_raise_to": 6000,
+            "max_raise_to": 220000,
+            "big_blind": 6000,
+            "position": "MP",
+            "players_active": 3,
+            "players_to_act": 2,
+            "legal_actions": ["check", "raise"],
+            "street": "flop",
+            "history": [
+              {"street": "preflop", "player": "Phil Ivey", "action": "raise", "amount": 13000, "added": 13000},
+              {"street": "preflop", "player": "Ivan Leow", "action": "call", "amount": 13000, "added": 10000},
+              {"street": "preflop", "player": "Ben Heath", "action": "call", "amount": 13000, "added": 7000},
+              {"street": "flop", "player": "Ivan Leow", "action": "check", "amount": 0, "added": 0},
+              {"street": "flop", "player": "Ben Heath", "action": "check", "amount": 0, "added": 0}
+            ]
+          },
+          "expected_action": {"action": "raise", "raise_to": 15000, "amount_semantics": "total street target", "quality": "observed"},
+          "field_quality": {
+            "hole_cards": {"status": "observed", "basis": "CardPlayer matchup."},
+            "board": {"status": "observed", "basis": "Flop listed in CardPlayer matchup."},
+            "pot": {"status": "derived", "basis": "Preflop contributions total 13,000 each for three players plus the 6,000 big-blind ante = 45,000."},
+            "to_call": {"status": "derived", "basis": "No flop wager is outstanding."},
+            "stack": {"status": "derived", "basis": "233,000 hand-start stack less Ivey's 13,000 preflop raise."},
+            "current_bet": {"status": "derived", "basis": "No flop wager is outstanding."},
+            "min_raise_to": {"status": "derived", "basis": "Minimum postflop wager is one big blind, 6,000."},
+            "max_raise_to": {"status": "derived", "basis": "No current flop bet; maximum total wager equals Ivey's remaining 220,000 stack."},
+            "big_blind": {"status": "observed", "basis": "CardPlayer reports blinds 3,000/6,000."},
+            "position": {"status": "derived", "basis": "Source says hijack; mapped to protocol position MP."},
+            "players_active": {"status": "observed", "basis": "Ivey, Leow, and Heath saw the flop."},
+            "players_to_act": {"status": "derived", "basis": "Both Leow and Heath remain live and act after Ivey."},
+            "legal_actions": {"status": "derived", "basis": "No wager is outstanding; protocol encodes a bet as raise."},
+            "street": {"status": "observed", "basis": "Flop action is reported."},
+            "history": {"status": "observed", "basis": "Preflop calls and two checks precede Ivey's decision."}
+          }
+        },
+        {
+          "decision_id": "ivey_leow_turn_bet",
+          "observation": {
+            "hole_cards": ["Ks", "Td"],
+            "board": ["As", "Ts", "2s", "7s"],
+            "pot": 75000,
+            "to_call": 0,
+            "stack": 205000,
+            "current_bet": 0,
+            "min_raise_to": 6000,
+            "max_raise_to": 205000,
+            "big_blind": 6000,
+            "position": "MP",
+            "players_active": 2,
+            "players_to_act": 1,
+            "legal_actions": ["check", "raise"],
+            "street": "turn",
+            "history": [
+              {"street": "preflop", "player": "Phil Ivey", "action": "raise", "amount": 13000, "added": 13000},
+              {"street": "preflop", "player": "Ivan Leow", "action": "call", "amount": 13000, "added": 10000},
+              {"street": "preflop", "player": "Ben Heath", "action": "call", "amount": 13000, "added": 7000},
+              {"street": "flop", "player": "Ivan Leow", "action": "check", "amount": 0, "added": 0},
+              {"street": "flop", "player": "Ben Heath", "action": "check", "amount": 0, "added": 0},
+              {"street": "flop", "player": "Phil Ivey", "action": "raise", "amount": 15000, "added": 15000},
+              {"street": "flop", "player": "Ivan Leow", "action": "call", "amount": 15000, "added": 15000},
+              {"street": "flop", "player": "Ben Heath", "action": "fold", "amount": 0, "added": 0},
+              {"street": "turn", "player": "Ivan Leow", "action": "check", "amount": 0, "added": 0}
+            ]
+          },
+          "expected_action": {"action": "raise", "raise_to": 45000, "amount_semantics": "total street target", "quality": "observed"},
+          "field_quality": {
+            "hole_cards": {"status": "observed", "basis": "CardPlayer matchup."},
+            "board": {"status": "observed", "basis": "Flop and turn listed in CardPlayer matchup."},
+            "pot": {"status": "derived", "basis": "45,000 flop pot + 15,000 Ivey bet + 15,000 Leow call = 75,000."},
+            "to_call": {"status": "derived", "basis": "No turn wager is outstanding."},
+            "stack": {"status": "derived", "basis": "233,000 start stack less 13,000 preflop and 15,000 flop contributions."},
+            "current_bet": {"status": "derived", "basis": "No turn wager is outstanding."},
+            "min_raise_to": {"status": "derived", "basis": "Minimum postflop wager is one big blind, 6,000."},
+            "max_raise_to": {"status": "derived", "basis": "No current turn bet; maximum total wager equals Ivey's remaining 205,000 stack."},
+            "big_blind": {"status": "observed", "basis": "CardPlayer reports blinds 3,000/6,000."},
+            "position": {"status": "derived", "basis": "Source says hijack; mapped to protocol position MP."},
+            "players_active": {"status": "derived", "basis": "Heath folded on the flop; Ivey and Leow remain."},
+            "players_to_act": {"status": "derived", "basis": "Leow is the only other active player and acts after Ivey."},
+            "legal_actions": {"status": "derived", "basis": "No wager is outstanding; protocol encodes a bet as raise."},
+            "street": {"status": "observed", "basis": "Turn action is reported."},
+            "history": {"status": "observed", "basis": "Prior actions through Leow's turn check are reported."}
+          }
+        },
+        {
+          "decision_id": "ivey_leow_river_all_in",
+          "observation": {
+            "hole_cards": ["Ks", "Td"],
+            "board": ["As", "Ts", "2s", "7s", "2h"],
+            "pot": 165000,
+            "to_call": 0,
+            "stack": 160000,
+            "current_bet": 0,
+            "min_raise_to": 6000,
+            "max_raise_to": 160000,
+            "big_blind": 6000,
+            "position": "MP",
+            "players_active": 2,
+            "players_to_act": 1,
+            "legal_actions": ["check", "raise"],
+            "street": "river",
+            "history": [
+              {"street": "preflop", "player": "Phil Ivey", "action": "raise", "amount": 13000, "added": 13000},
+              {"street": "preflop", "player": "Ivan Leow", "action": "call", "amount": 13000, "added": 10000},
+              {"street": "preflop", "player": "Ben Heath", "action": "call", "amount": 13000, "added": 7000},
+              {"street": "flop", "player": "Ivan Leow", "action": "check", "amount": 0, "added": 0},
+              {"street": "flop", "player": "Ben Heath", "action": "check", "amount": 0, "added": 0},
+              {"street": "flop", "player": "Phil Ivey", "action": "raise", "amount": 15000, "added": 15000},
+              {"street": "flop", "player": "Ivan Leow", "action": "call", "amount": 15000, "added": 15000},
+              {"street": "flop", "player": "Ben Heath", "action": "fold", "amount": 0, "added": 0},
+              {"street": "turn", "player": "Ivan Leow", "action": "check", "amount": 0, "added": 0},
+              {"street": "turn", "player": "Phil Ivey", "action": "raise", "amount": 45000, "added": 45000},
+              {"street": "turn", "player": "Ivan Leow", "action": "call", "amount": 45000, "added": 45000},
+              {"street": "river", "player": "Ivan Leow", "action": "check", "amount": 0, "added": 0}
+            ]
+          },
+          "expected_action": {"action": "raise", "raise_to": 160000, "amount_semantics": "total street target", "quality": "derived", "note": "All-in target derived from Ivey's reported 233,000 start stack less 13,000 preflop, 15,000 flop, and 45,000 turn contributions."},
+          "field_quality": {
+            "hole_cards": {"status": "observed", "basis": "CardPlayer matchup."},
+            "board": {"status": "observed", "basis": "Full board listed in CardPlayer matchup."},
+            "pot": {"status": "derived", "basis": "75,000 turn-start pot + 45,000 Ivey bet + 45,000 Leow call = 165,000."},
+            "to_call": {"status": "derived", "basis": "No river wager is outstanding."},
+            "stack": {"status": "derived", "basis": "233,000 start stack less 13,000 preflop, 15,000 flop, and 45,000 turn contributions."},
+            "current_bet": {"status": "derived", "basis": "No river wager is outstanding."},
+            "min_raise_to": {"status": "derived", "basis": "Minimum postflop wager is one big blind, 6,000."},
+            "max_raise_to": {"status": "derived", "basis": "No current river bet; maximum total wager equals Ivey's remaining 160,000 stack."},
+            "big_blind": {"status": "observed", "basis": "CardPlayer reports blinds 3,000/6,000."},
+            "position": {"status": "derived", "basis": "Source says hijack; mapped to protocol position MP."},
+            "players_active": {"status": "derived", "basis": "Heath folded on the flop; Ivey and Leow remain."},
+            "players_to_act": {"status": "derived", "basis": "Leow is the only other active player and acts after Ivey."},
+            "legal_actions": {"status": "derived", "basis": "No wager is outstanding; protocol encodes a bet as raise."},
+            "street": {"status": "observed", "basis": "River action is reported."},
+            "history": {"status": "observed", "basis": "Prior actions through Leow's river check are reported."}
+          }
+        }
+      ],
+      "fact_quality": {
+        "event_date": "unknown_exact_hand_date",
+        "series_date_range": "observed",
+        "hero_hand_start_stack": "observed",
+        "hero_hole_cards": "observed",
+        "opponent_hole_cards": "observed",
+        "blinds_and_big_blind_ante": "observed",
+        "table_size": "unknown",
+        "positions": "observed_source_HJ_derived_protocol_MP",
+        "board": "observed",
+        "river_all_in_target": "derived",
+        "exact_hand_timestamp": "unknown"
+      }
+    },
+    {
+      "hand_id": "ivey_bonomo_2018_big_one_doubleup",
+      "source_ids": ["cardplayer_bonomo_2276", "pokernews_bonomo_doubleup_2018", "pokergo_day2_context_2018"],
+      "game": "No-Limit Texas Hold'em",
+      "event": "2018 WSOP Event #78: The Big One for One Drop - $1,000,000 No-Limit Hold'em",
+      "event_date": {"value": null, "quality": "unknown", "note": "The sources place the hand in the 11-player stage but do not give an exact hand date."},
+      "event_context": {"players_remaining": 11, "table_size": 5, "quality": "observed"},
+      "players": {
+        "hero": {"source_name": "Phil Ivey", "role": "Phil Ivey", "position_at_decision": "CO", "hand_start_stack": 7565000, "hole_cards": ["As", "Ah"]},
+        "opponents": [
+          {"source_name": "Justin Bonomo", "position": "BTN", "hand_start_stack": 33770000, "hole_cards": ["Ac", "Qh"]}
+        ]
+      },
+      "blinds_and_antes": {"small_blind": 100000, "big_blind": 200000, "big_blind_ante": 200000, "ante_unit": "big blind ante", "table_size": 5},
+      "board_by_street": {"flop": ["7d", "3d", "3h"], "turn": "Qc", "river": "9d"},
+      "actions": [
+        {"street": "preflop", "player": "Phil Ivey", "action": "raise", "amount": 500000, "amount_semantics": "total street target", "amount_quality": "observed", "added": 500000, "added_quality": "observed"},
+        {"street": "preflop", "player": "Justin Bonomo", "action": "call", "amount": 500000, "amount_semantics": "total street target", "amount_quality": "observed", "added": 500000, "added_quality": "observed"},
+        {"street": "flop", "player": "Phil Ivey", "action": "raise", "amount": 500000, "amount_semantics": "total street target", "amount_quality": "observed", "added": 500000, "added_quality": "observed"},
+        {"street": "flop", "player": "Justin Bonomo", "action": "call", "amount": 500000, "amount_semantics": "total street target", "amount_quality": "observed", "added": 500000, "added_quality": "observed"},
+        {"street": "turn", "player": "Phil Ivey", "action": "raise", "amount": 1400000, "amount_semantics": "total street target", "amount_quality": "observed", "added": 1400000, "added_quality": "observed"},
+        {"street": "turn", "player": "Justin Bonomo", "action": "call", "amount": 1400000, "amount_semantics": "total street target", "amount_quality": "observed", "added": 1400000, "added_quality": "observed"},
+        {"street": "river", "player": "Phil Ivey", "action": "check", "amount": 0, "amount_semantics": "total street target", "amount_quality": "observed", "added": 0, "added_quality": "observed"},
+        {"street": "river", "player": "Justin Bonomo", "action": "raise_all_in", "amount": null, "amount_semantics": "unknown total street target", "amount_quality": "unknown", "added": null, "added_quality": "unknown"},
+        {"street": "river", "player": "Phil Ivey", "action": "call_all_in", "amount": null, "amount_semantics": "unknown total street target", "amount_quality": "unknown", "added": null, "added_quality": "unknown", "note": "CardPlayer says 5,170,000; PokerNews says the decision was for 5,120,000. Unresolved; no river-call snapshot is included."}
+      ],
+      "source_conflicts": [
+        {
+          "field": "Ivey's remaining river decision stack/call amount",
+          "sources": ["cardplayer_bonomo_2276", "pokernews_bonomo_doubleup_2018"],
+          "reported_values": [5170000, 5120000],
+          "resolution": "Unresolved. The preflop snapshot uses only CardPlayer's reported hand-start stack; later snapshots requiring a reconstructed stack are not admitted."
+        }
+      ],
+      "snapshots": [
+        {
+          "decision_id": "ivey_bonomo_preflop_open",
+          "observation": {
+            "hole_cards": ["As", "Ah"],
+            "board": [],
+            "pot": 500000,
+            "to_call": 200000,
+            "stack": 7565000,
+            "current_bet": 0,
+            "min_raise_to": 400000,
+            "max_raise_to": 7565000,
+            "big_blind": 200000,
+            "position": "CO",
+            "players_active": 5,
+            "players_to_act": 3,
+            "legal_actions": ["fold", "call", "raise"],
+            "street": "preflop"
+          },
+          "expected_action": {"action": "raise", "raise_to": 500000, "amount_semantics": "total street target", "quality": "observed"},
+          "field_quality": {
+            "hole_cards": {"status": "observed", "basis": "CardPlayer and PokerNews report A-s A-h."},
+            "board": {"status": "observed", "basis": "No community cards had been dealt."},
+            "pot": {"status": "derived", "basis": "100,000 SB + 200,000 BB + 200,000 big-blind ante = 500,000."},
+            "to_call": {"status": "derived", "basis": "The big blind is 200,000 and Ivey has not posted a blind."},
+            "stack": {"status": "observed", "basis": "CardPlayer reports Ivey's starting stack as 7,565,000; this value is used only at the hand-start decision."},
+            "current_bet": {"status": "derived", "basis": "Ivey is cutoff and has no forced street contribution."},
+            "min_raise_to": {"status": "derived", "basis": "With the 200,000 big blind already in, the minimum first raise target is 400,000."},
+            "max_raise_to": {"status": "derived", "basis": "Ivey's reported hand-start stack is 7,565,000 and current street contribution is zero."},
+            "big_blind": {"status": "observed", "basis": "Both hand reports give blinds 100,000/200,000."},
+            "position": {"status": "observed", "basis": "Both hand reports place Ivey in the cutoff."},
+            "players_active": {"status": "observed", "basis": "PokerNews reports five-handed action."},
+            "players_to_act": {"status": "derived", "basis": "In a five-handed hand, the button, small blind, and big blind act after the cutoff."},
+            "legal_actions": {"status": "derived", "basis": "Preflop before Ivey's first voluntary action under the local decision protocol."},
+            "street": {"status": "observed", "basis": "Preflop action is reported."}
+          }
+        }
+      ],
+      "fact_quality": {
+        "exact_hand_date": "unknown",
+        "hero_hand_start_stack": "observed_by_CardPlayer",
+        "opponent_hand_start_stack": "observed_by_CardPlayer",
+        "hero_hole_cards": "observed_by_CardPlayer_and_PokerNews",
+        "opponent_hole_cards": "observed_by_CardPlayer_and_PokerNews",
+        "blinds_and_big_blind_ante": "observed",
+        "positions": "observed",
+        "board": "observed",
+        "river_decision_stack": "conflicting_unknown",
+        "exact_river_shove_target": "unknown"
+      }
+    }
+  ],
+  "supplementary_sources": [
+    {
+      "source_id": "pokerstars_youtube_aussie_2014",
+      "associated_event": "2014 Aussie Millions $250K Challenge",
+      "attribution": "Official PokerStars Global YouTube channel, based on public search metadata.",
+      "hand_linkage": "Event-level coverage only. Public metadata did not identify a timestamp for the Quoss or Haxton hand, so no hand facts were extracted from this video.",
+      "facts_used": []
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "candidate": "PokerNews Online Railbird Report, June 3, 2015, three $200/$400 NLHE cash hands featuring RaiseOnce",
+      "source_url": "https://www.pokernews.com/news/2015/06/the-online-railbird-report-you-wont-believe-how-much-phil-i-21882.htm",
+      "source_names": ["Phil Ivey / RaiseOnce", "OtB_RedBaron", "Alex 'Kanu7' Millar"],
+      "reason": "PokerNews credits HighStakesDB for the data and reports cards and action, but the ante structure is unstated. Reported pot sizes are rounded or cannot be independently reconstructed without assuming the ante/pot treatment. Hand 2 also omits the opponent's exact hole cards. No decision snapshot is admitted as verified."
+    },
+    {
+      "candidate": "2014 WSOP Big One for One Drop, Phil Ivey vs. Cary Katz",
+      "source_urls": ["https://www.cardplayer.com/hand-matchups/1857", "https://www.pokernews.com/tours/wsop/2014-wsop/event-57/chips.96350.htm"],
+      "source_names": ["Phil Ivey", "Cary Katz"],
+      "reason": "Public reports provide cards, action and blinds, but not the number of players whose per-player antes entered the pot. The exact pot at an Ivey decision therefore cannot be established."
+    },
+    {
+      "candidate": "2008 WPT L.A. Poker Classic final hand, Phil Ivey vs. Quinn Do",
+      "source_urls": ["https://www.worldpokertour.com/live-update/hand-100-phil-ivey-wins-the-wpt-l-a-poker-classic-1596100-la-poker-classic-level-30-100000-200000", "https://www.cardplayer.com/poker-news/3645-phil-ivey-wins-world-poker-tour-l-a-poker-classic"],
+      "source_names": ["Phil Ivey", "Quinn Do"],
+      "reason": "The WPT page header lists 100,000/200,000 blinds while the reported 160,000 button limp corresponds to another level; the exact ante and Ivey's hand-start stack are also unresolved. No verified snapshot is admitted."
+    },
+    {
+      "candidate": "2015 WSOP Main Event Phil Ivey vs. Phil Hellmuth matchup",
+      "source_url": "https://www.cardplayer.com/hand-matchups/1980",
+      "source_names": ["Phil Ivey", "Phil Hellmuth", "Zarik Megerdichian"],
+      "reason": "The page reports Ivey's starting stack and all-in decision only incompletely for the relevant street; it does not give Ivey's exact remaining stack or exact shove target. The pot also depends on how many antes were posted."
+    },
+    {
+      "candidate": "2006 CardPlayer Phil Ivey hand matchup (page 156)",
+      "source_url": "https://www.cardplayer.com/hand-matchups/156",
+      "source_names": ["Phil Ivey", "opponent not named in matchup text"],
+      "reason": "Blinds and ante are reported, but table size and therefore the total antes in the pot are unknown. The pot at Ivey's decision cannot be reconstructed exactly."
+    },
+    {
+      "candidate": "2014 WSOP Main Event Day 4, PokerNews strategy article with two Ivey hands",
+      "source_url": "https://www.pokernews.com/strategy/phil-ivey-at-the-feature-table-two-hands-from-the-2014-wsop-19533.htm",
+      "source_names": ["Phil Ivey", "Jason Riesenberg", "Jim Duncan", "Robert Gaudio", "Marty Verdegaal", "Nacho Sanchez"],
+      "reason": "The first hand says Ivey began with more than 500,000, which is not enough for an exact maximum raise-to. The second hand does not give Ivey's exact stack; its river bet is described only as enough to set Sanchez all-in."
+    },
+    {
+      "candidate": "2018 WSOP Big One for One Drop, Ivey eliminated by Justin Bonomo",
+      "source_url": "https://www.pokernews.com/tours/wsop/2018-wsop/event-78-the-big-one-for-one-drop-1000000/chips.232842.htm",
+      "source_names": ["Phil Ivey", "Justin Bonomo"],
+      "reason": "The live report gives blinds, ante, positions, cards and runout, but not Ivey's stack before the shove or the shove target. A complete protocol snapshot cannot be formed."
+    },
+    {
+      "candidate": "2015 Aussie Millions heads-up Phil Ivey vs. Mike McDonald hand reports",
+      "source_urls": ["https://www.cardplayer.com/poker-tools/hand-matchups/1923", "https://www.pokernews.com/tours/aussie-millions/2015-aussie-millions/250000-challenge/post.238638.htm"],
+      "source_names": ["Phil Ivey", "Mike McDonald"],
+      "reason": "The CardPlayer matchup and PokerNews live report cannot be confidently matched: they both concern the heads-up event and report Ivey with KcQc, but give incompatible opponent cards, boards, and preflop/action sequences. PokerNews's hand also leaves Ivey's hole cards and exact starting stack unreported. No merge or snapshot is admitted."
+    }
+  ],
+  "counts": {
+    "new_distinct_hands_with_at_least_one_usable_decision": 4,
+    "new_distinct_complete_hands": 3,
+    "partial_hands_with_at_least_one_usable_decision": 1,
+    "usable_decision_snapshots": 6,
+    "new_phh_records": 0,
+    "excluded_candidate_groups": 8,
+    "youtube_sources_catalogued": 1,
+    "youtube_hand_timestamps_verified": 0
+  }
+}

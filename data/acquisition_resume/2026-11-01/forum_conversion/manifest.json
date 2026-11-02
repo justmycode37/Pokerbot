@@ -1,0 +1,1414 @@
+{
+  "baseline_path": "/Users/benajaheger/Documents/museum of failures/Pokerbot/data/corpus_splits/development-after-prospective-v1.json",
+  "baseline_sha256": "d172e7310677b051b8dea0163fb14b06b81ad9b5847c73d735f1e2ec66c1a483",
+  "converter_version": 1,
+  "counts": {
+    "baseline_overlap_decisions_removed": 0,
+    "complete_exact_id_histories_replayed": 54,
+    "complete_exact_id_histories_replayed_without_known_hero_cards": 23,
+    "complete_known_card_exact_id_histories": 31,
+    "complete_known_card_source_records_after_recorded_conflict_exclusion": 43,
+    "conflicting_action_prefix_identities_excluded": 0,
+    "conflicting_payload_identities_excluded": 0,
+    "converted_histories_pending_cross_source_identity_review": 14,
+    "decision_identity_duplicates_removed": 0,
+    "duplicate_exact_hand_aliases_removed": 0,
+    "known_card_converted_histories_pending_identity_review": 12,
+    "newly_admitted_decisions": 0,
+    "partial_source_records": 2,
+    "raw_fulltilt_histories_with_exact_hand_id": 57,
+    "raw_source_records": 71,
+    "replayed_known_card_hands_with_decisions": 31,
+    "source_card_conflict_records": 1,
+    "strict_replay_or_conversion_rejections": 3,
+    "unique_fulltilt_hand_ids": 57,
+    "unique_fulltilt_histories_attempted": 57,
+    "unique_replayable_known_card_decisions": 111,
+    "validated_candidate_decisions_pending_review": 111
+  },
+  "input_records_path": "/Users/benajaheger/Documents/museum of failures/Pokerbot/data/acquisition_sprint_1h/online_forum/records.jsonl",
+  "input_records_sha256": "0e938458832c506a04b1bceb19ef3c11c2117758448649e9d5e88dca28def4a1",
+  "replay_engine": {
+    "name": "PokerKit Full Tilt parser + pokerbot.ivey strict replay",
+    "pokerkit_version": "0.7.7"
+  },
+  "review_candidates": "review_candidates.json",
+  "schema_version": 1,
+  "source_records": [
+    {
+      "canonical_hand_id": "fulltilt:6204248501",
+      "exact_fulltilt_hand_id": "6204248501",
+      "input_record_index": 0,
+      "raw_extract_sha256": "6775e44980d89dea8de976cab0b37d5b6914e886638b4ba59a9a148041e05f63",
+      "source_classification": {
+        "complete_candidate": true,
+        "format_filter": "caption_explicit_No_Limit_Hold'em_no_cap_marker",
+        "hero_actions_present": true,
+        "hero_hole_known": false,
+        "policy_observation_fields_present": false,
+        "raw_prefix_complete": true,
+        "source_evidence_only": true
+      },
+      "source_record_id": "2P2-20080427-6204248501",
+      "source_url": "https://forumserver.twoplustwo.com/29/news-views-gossip/high-stakes-thread-4-27-5-4-200-400-plo-db-jman-chufty-et-al-190011/index4.html",
+      "status": "replayed_no_known_hero_decisions",
+      "structured_hand_id": "6204248501"
+    },
+    {
+      "canonical_hand_id": "fulltilt:6204278652",
+      "exact_fulltilt_hand_id": "6204278652",
+      "input_record_index": 1,
+      "raw_extract_sha256": "95c55f4c82afec110d7c0549d07b889791daf0d47e3bddfbc8502b4d3e8ced8b",
+      "source_classification": {
+        "complete_candidate": true,
+        "format_filter": "caption_explicit_No_Limit_Hold'em_no_cap_marker",
+        "hero_actions_present": true,
+        "hero_hole_known": true,
+        "policy_observation_fields_present": false,
+        "raw_prefix_complete": true,
+        "source_evidence_only": true
+      },
+      "source_record_id": "2P2-20080427-6204278652",
+      "source_url": "https://forumserver.twoplustwo.com/29/news-views-gossip/high-stakes-thread-4-27-5-4-200-400-plo-db-jman-chufty-et-al-190011/index4.html",
+      "status": "replayed_pending_independent_review",
+      "structured_hand_id": "6204278652"
+    },
+    {
+      "canonical_hand_id": "fulltilt:9327821339",
+      "exact_fulltilt_hand_id": "9327821339",
+      "input_record_index": 2,
+      "raw_extract_sha256": "9efb54981c8aaab4030e718384c2796a15358e131df3c9684c517148560a9544",
+      "source_classification": {
+        "complete_candidate": true,
+        "format_filter": "caption_explicit_No_Limit_Hold'em_no_cap_marker",
+        "hero_actions_present": true,
+        "hero_hole_known": true,
+        "policy_observation_fields_present": false,
+        "raw_prefix_complete": true,
+        "source_evidence_only": true
+      },
+      "source_record_id": "2P2-20081205-9327821339",
+      "source_url": "https://forumserver.twoplustwo.com/29/news-views-gossip/december-high-stakes-thread-354943/index16.html",
+      "status": "replayed_pending_independent_review",
+      "structured_hand_id": "9327821339"
+    },
+    {
+      "canonical_hand_id": "fulltilt:5240682032",
+      "exact_fulltilt_hand_id": "5240682032",
+      "input_record_index": 3,
+      "raw_extract_sha256": "2acebc7c3da6673fe88313672f199c0447e6bddd8b3b2c615dab1198fec0d5f1",
+      "source_classification": {
+        "complete_candidate": false,
+        "format_filter": "caption_explicit_No_Limit_Hold'em_no_cap_marker",
+        "hero_actions_present": true,
+        "hero_hole_known": true,
+        "missing_raw_prefix": "Source excerpt omits blind posting and *** HOLE CARDS *** lines; all displayed betting streets and showdown are present.",
+        "policy_observation_fields_present": false,
+        "raw_prefix_complete": false,
+        "source_evidence_only": true
+      },
+      "source_record_id": "WAM-20080213-5240682032",
+      "source_url": "https://wam-poker.com/t/enorme-pot-gagne-par-phil-ivey/24393",
+      "status": "queued_for_replay",
+      "structured_hand_id": "5240682032"
+    },
+    {
+      "canonical_hand_id": "fulltilt:5307064898",
+      "exact_fulltilt_hand_id": "5307064898",
+      "input_record_index": 4,
+      "raw_extract_sha256": "267c6bc9ac66a64588d797836f306eff4be09b11551efee00f1ce6f97a828a9a",
+      "source_classification": {
+        "candidate_eligible": false,
+        "card_consistency": "conflict_in_source: river 6h duplicates Phil Ivey shown 6h; retained verbatim, not repaired",
+        "complete_candidate": true,
+        "format_filter": "caption_explicit_No_Limit_Hold'em_no_cap_marker",
+        "hero_actions_present": true,
+        "hero_hole_known": true,
+        "missing_raw_prefix": null,
+        "policy_observation_fields_present": false,
+        "raw_prefix_complete": true,
+        "source_evidence_only": true
+      },
+      "source_record_id": "PFNU-20080218-5307064898",
+      "source_url": "https://pokerforum.nu/topic/40136-phil-ivey-deathmatch-just-nu/",
+      "status": "queued_for_replay",
+      "structured_hand_id": "5307064898"
+    },
+    {
+      "canonical_hand_id": "fulltilt:6045587947",
+      "exact_fulltilt_hand_id": "6045587947",
+      "input_record_index": 5,
+      "raw_extract_sha256": "d83b5f8af8607e4d985ae92069e12c13edda4d3e5d0ec3e9529c6e2e2141c98c",
+      "source_classification": {
+        "complete_candidate": true,
+        "format_filter": "caption_explicit_No_Limit_Hold'em_no_cap_marker",
+        "hero_actions_present": true,
+        "hero_hole_known": true,
+        "missing_raw_prefix": null,
+        "policy_observation_fields_present": false,
+        "raw_prefix_complete": true,
+        "source_evidence_only": true
+      },
+      "source_record_id": "2P2-20080415-6045587947",
+      "source_url": "https://forumserver.twoplustwo.com/29/news-views-gossip/4-14-18-high-stakes-thread-200-400-plo-179411/index2.html",
+      "status": "replayed_pending_independent_review",
+      "structured_hand_id": "6045587947"
+    },
+    {
+      "canonical_hand_id": "fulltilt:6045617072",
+      "exact_fulltilt_hand_id": "6045617072",
+      "input_record_index": 6,
+      "raw_extract_sha256": "16921ad74ba1181ea4de13c6cff4c1a6885f4bb7e0dbb3ee3bb0ac010fc6f1a7",
+      "source_classification": {
+        "complete_candidate": true,
+        "format_filter": "caption_explicit_No_Limit_Hold'em_no_cap_marker",
+        "hero_actions_present": true,
+        "hero_hole_known": true,
+        "missing_raw_prefix": null,
+        "policy_observation_fields_present": false,
+        "raw_prefix_complete": true,
+        "source_evidence_only": true
+      },
+      "source_record_id": "2P2-20080415-6045617072",
+      "source_url": "https://forumserver.twoplustwo.com/29/news-views-gossip/4-14-18-high-stakes-thread-200-400-plo-179411/index2.html",
+      "status": "replayed_pending_independent_review",
+      "structured_hand_id": "6045617072"
+    },
+    {
+      "canonical_hand_id": "fulltilt:6045809464",
+      "exact_fulltilt_hand_id": "6045809464",
+      "input_record_index": 7,
+      "raw_extract_sha256": "6eb5e7fcdc7d186819f46e21475fab13e518313d3a298a846ab73c0c805366f3",
+      "source_classification": {
+        "complete_candidate": true,
+        "format_filter": "caption_explicit_No_Limit_Hold'em_no_cap_marker",
+        "hero_actions_present": true,
+        "hero_hole_known": false,
+        "missing_raw_prefix": null,
+        "policy_observation_fields_present": false,
+        "raw_prefix_complete": true,
+        "source_evidence_only": true
+      },
+      "source_record_id": "2P2-20080415-6045809464",
+      "source_url": "https://forumserver.twoplustwo.com/29/news-views-gossip/4-14-18-high-stakes-thread-200-400-plo-179411/index2.html",
+      "status": "replayed_no_known_hero_decisions",
+      "structured_hand_id": "6045809464"
+    },
+    {
+      "canonical_hand_id": "fulltilt:6045919170",
+      "exact_fulltilt_hand_id": "6045919170",
+      "input_record_index": 8,
+      "raw_extract_sha256": "bbfe039ed7db3eadee4f49bf408fec426028a4cfa1a25468ce5a2a2ddf404959",
+      "source_classification": {
+        "complete_candidate": true,
+        "format_filter": "caption_explicit_No_Limit_Hold'em_no_cap_marker",
+        "hero_actions_present": true,
+        "hero_hole_known": true,
+        "missing_raw_prefix": null,
+        "policy_observation_fields_present": false,
+        "raw_prefix_complete": true,
+        "source_evidence_only": true
+      },
+      "source_record_id": "2P2-20080415-6045919170",
+      "source_url": "https://forumserver.twoplustwo.com/29/news-views-gossip/4-14-18-high-stakes-thread-200-400-plo-179411/index2.html",
+      "status": "replayed_pending_independent_review",
+      "structured_hand_id": "6045919170"
+    },
+    {
+      "canonical_hand_id": "fulltilt:6046047640",
+      "exact_fulltilt_hand_id": "6046047640",
+      "input_record_index": 9,
+      "raw_extract_sha256": "0367061a61ec9138a757da0b881d5a2a775c9f301a345c1e5d71df19524eaadb",
+      "source_classification": {
+        "complete_candidate": true,
+        "format_filter": "caption_explicit_No_Limit_Hold'em_no_cap_marker",
+        "hero_actions_present": true,
+        "hero_hole_known": true,
+        "missing_raw_prefix": null,
+        "policy_observation_fields_present": false,
+        "raw_prefix_complete": true,
+        "source_evidence_only": true
+      },
+      "source_record_id": "2P2-20080415-6046047640",
+      "source_url": "https://forumserver.twoplustwo.com/29/news-views-gossip/4-14-18-high-stakes-thread-200-400-plo-179411/index2.html",
+      "status": "replayed_pending_independent_review",
+      "structured_hand_id": "6046047640"
+    },
+    {
+      "canonical_hand_id": "fulltilt:6046201127",
+      "exact_fulltilt_hand_id": "6046201127",
+      "input_record_index": 10,
+      "raw_extract_sha256": "1fec8687413baa9a7619b0746f69b5295979aef3ba76c96194c67561f82a7ba2",
+      "source_classification": {
+        "complete_candidate": true,
+        "format_filter": "caption_explicit_No_Limit_Hold'em_no_cap_marker",
+        "hero_actions_present": true,
+        "hero_hole_known": false,
+        "missing_raw_prefix": null,
+        "policy_observation_fields_present": false,
+        "raw_prefix_complete": true,
+        "source_evidence_only": true
+      },
+      "source_record_id": "2P2-20080415-6046201127",
+      "source_url": "https://forumserver.twoplustwo.com/29/news-views-gossip/4-14-18-high-stakes-thread-200-400-plo-179411/index2.html",
+      "status": "replayed_no_known_hero_decisions",
+      "structured_hand_id": "6046201127"
+    },
+    {
+      "canonical_hand_id": "fulltilt:5257388792",
+      "exact_fulltilt_hand_id": "5257388792",
+      "input_record_index": 11,
+      "raw_extract_sha256": "0b57b872585a23cb7d88bbf92a1c8ea78a328117227d679f1697e3c47b596f83",
+      "source_classification": {
+        "complete_candidate": true,
+        "format_filter": "caption_explicit_No_Limit_Hold'em_no_cap_marker",
+        "hero_actions_present": true,
+        "hero_hole_known": true,
+        "policy_observation_fields_present": false,
+        "raw_prefix_complete": true,
+        "source_evidence_only": true
+      },
+      "source_record_id": "2P2-20080214-5257388792",
+      "source_url": "https://forumserver.twoplustwo.com/29/news-views-gossip/2-14-high-stakes-action-thread-ivey-seda-durrr-ziigmund-etc-129937/index5.html",
+      "status": "replayed_pending_independent_review",
+      "structured_hand_id": "5257388792"
+    },
+    {
+      "canonical_hand_id": "fulltilt:5257316013",
+      "exact_fulltilt_hand_id": "5257316013",
+      "input_record_index": 12,
+      "raw_extract_sha256": "511c3b836a798dbdce72d43d940c56e70c5b08a0439fe71826d171c55322fdcf",
+      "source_classification": {
+        "complete_candidate": true,
+        "format_filter": "caption_explicit_No_Limit_Hold'em_no_cap_marker",
+        "hero_actions_present": true,
+        "hero_hole_known": true,
+        "policy_observation_fields_present": false,
+        "raw_prefix_complete": true,
+        "source_evidence_only": true
+      },
+      "source_record_id": "2P2-20080214-5257316013",
+      "source_url": "https://forumserver.twoplustwo.com/29/news-views-gossip/2-14-high-stakes-action-thread-ivey-seda-durrr-ziigmund-etc-129937/index5.html",
+      "status": "replayed_pending_independent_review",
+      "structured_hand_id": "5257316013"
+    },
+    {
+      "canonical_hand_id": "fulltilt:5257559588",
+      "exact_fulltilt_hand_id": "5257559588",
+      "input_record_index": 13,
+      "raw_extract_sha256": "e1a0b0ef296a8674d184fbd8cedd3b283284492c4c9bce40e7f934a6d5c9d9a9",
+      "source_classification": {
+        "complete_candidate": true,
+        "format_filter": "caption_explicit_No_Limit_Hold'em_no_cap_marker",
+        "hero_actions_present": true,
+        "hero_hole_known": true,
+        "policy_observation_fields_present": false,
+        "raw_prefix_complete": true,
+        "source_evidence_only": true
+      },
+      "source_record_id": "2P2-20080214-5257559588",
+      "source_url": "https://forumserver.twoplustwo.com/29/news-views-gossip/2-14-high-stakes-action-thread-ivey-seda-durrr-ziigmund-etc-129937/index5.html",
+      "status": "replayed_pending_independent_review",
+      "structured_hand_id": "5257559588"
+    },
+    {
+      "canonical_hand_id": "fulltilt:5258335691",
+      "exact_fulltilt_hand_id": "5258335691",
+      "input_record_index": 14,
+      "raw_extract_sha256": "e3a951e2f5312e474b336d2333a23a11fc4610081d3adfe857c1ef314c205ed5",
+      "source_classification": {
+        "complete_candidate": true,
+        "format_filter": "caption_explicit_No_Limit_Hold'em_no_cap_marker",
+        "hero_actions_present": true,
+        "hero_hole_known": true,
+        "policy_observation_fields_present": false,
+        "raw_prefix_complete": true,
+        "source_evidence_only": true
+      },
+      "source_record_id": "2P2-20080214-5258335691",
+      "source_url": "https://forumserver.twoplustwo.com/29/news-views-gossip/2-14-high-stakes-action-thread-ivey-seda-durrr-ziigmund-etc-129937/index5.html",
+      "status": "replayed_pending_independent_review",
+      "structured_hand_id": "5258335691"
+    },
+    {
+      "canonical_hand_id": "fulltilt:5258419612",
+      "exact_fulltilt_hand_id": "5258419612",
+      "input_record_index": 15,
+      "raw_extract_sha256": "ba53a9da7615583cd7e3ec8aa7e0443925618cbf7a765592691d395e107fc65a",
+      "source_classification": {
+        "complete_candidate": true,
+        "format_filter": "caption_explicit_No_Limit_Hold'em_no_cap_marker",
+        "hero_actions_present": true,
+        "hero_hole_known": true,
+        "policy_observation_fields_present": false,
+        "raw_prefix_complete": true,
+        "source_evidence_only": true
+      },
+      "source_record_id": "2P2-20080214-5258419612",
+      "source_url": "https://forumserver.twoplustwo.com/29/news-views-gossip/2-14-high-stakes-action-thread-ivey-seda-durrr-ziigmund-etc-129937/index5.html",
+      "status": "replayed_pending_independent_review",
+      "structured_hand_id": "5258419612"
+    },
+    {
+      "canonical_hand_id": "fulltilt:5258600383",
+      "exact_fulltilt_hand_id": "5258600383",
+      "input_record_index": 16,
+      "raw_extract_sha256": "1d0b5de1fd522c85e287e0ed7b2675d861bad7e8cb08e73e3375b78a616ba9fe",
+      "source_classification": {
+        "complete_candidate": true,
+        "format_filter": "caption_explicit_No_Limit_Hold'em_no_cap_marker",
+        "hero_actions_present": true,
+        "hero_hole_known": true,
+        "policy_observation_fields_present": false,
+        "raw_prefix_complete": true,
+        "source_evidence_only": true
+      },
+      "source_record_id": "2P2-20080214-5258600383",
+      "source_url": "https://forumserver.twoplustwo.com/29/news-views-gossip/2-14-high-stakes-action-thread-ivey-seda-durrr-ziigmund-etc-129937/index5.html",
+      "status": "replayed_pending_independent_review",
+      "structured_hand_id": "5258600383"
+    },
+    {
+      "canonical_hand_id": "fulltilt:5261371378",
+      "exact_fulltilt_hand_id": "5261371378",
+      "input_record_index": 17,
+      "raw_extract_sha256": "44f7515af56babe711831e60f104a9179f6f03941b3a62bb9ac49e79e0ed9974",
+      "source_classification": {
+        "complete_candidate": true,
+        "format_filter": "caption_explicit_No_Limit_Hold'em_no_cap_marker",
+        "hero_actions_present": true,
+        "hero_hole_known": false,
+        "policy_observation_fields_present": false,
+        "raw_prefix_complete": true,
+        "source_evidence_only": true
+      },
+      "source_record_id": "2P2-20080215-5261371378",
+      "source_url": "https://forumserver.twoplustwo.com/29/news-views-gossip/2-14-high-stakes-action-thread-ivey-seda-durrr-ziigmund-etc-129937/index9.html",
+      "status": "replayed_no_known_hero_decisions",
+      "structured_hand_id": "5261371378"
+    },
+    {
+      "canonical_hand_id": "fulltilt:5260346477",
+      "exact_fulltilt_hand_id": "5260346477",
+      "input_record_index": 18,
+      "raw_extract_sha256": "c94de8ed40110e8015b163ae514f616ae959aceb3fdb8f959f8c88b414fea68b",
+      "source_classification": {
+        "complete_candidate": true,
+        "format_filter": "caption_explicit_No_Limit_Hold'em_no_cap_marker",
+        "hero_actions_present": true,
+        "hero_hole_known": true,
+        "policy_observation_fields_present": false,
+        "raw_prefix_complete": true,
+        "source_evidence_only": true
+      },
+      "source_record_id": "2P2-20080215-5260346477",
+      "source_url": "https://forumserver.twoplustwo.com/29/news-views-gossip/2-14-high-stakes-action-thread-ivey-seda-durrr-ziigmund-etc-129937/index8.html",
+      "status": "replayed_pending_independent_review",
+      "structured_hand_id": "5260346477"
+    },
+    {
+      "canonical_hand_id": "fulltilt:5260507616",
+      "exact_fulltilt_hand_id": "5260507616",
+      "input_record_index": 19,
+      "raw_extract_sha256": "17cfce6f0904005d80f61a0fc5d5a2c0943d452601ff64afc6ff9e0cf15e2f27",
+      "source_classification": {
+        "complete_candidate": true,
+        "format_filter": "caption_explicit_No_Limit_Hold'em_no_cap_marker",
+        "hero_actions_present": true,
+        "hero_hole_known": true,
+        "policy_observation_fields_present": false,
+        "raw_prefix_complete": true,
+        "source_evidence_only": true
+      },
+      "source_record_id": "2P2-20080215-5260507616",
+      "source_url": "https://forumserver.twoplustwo.com/29/news-views-gossip/2-14-high-stakes-action-thread-ivey-seda-durrr-ziigmund-etc-129937/index8.html",
+      "status": "replayed_pending_independent_review",
+      "structured_hand_id": "5260507616"
+    },
+    {
+      "canonical_hand_id": "fulltilt:5260871551",
+      "exact_fulltilt_hand_id": "5260871551",
+      "input_record_index": 20,
+      "raw_extract_sha256": "f3b6ded16079804637810af9530ab0f2b0d76b1c7f3bf2cb1620ce69e7d9c0af",
+      "source_classification": {
+        "complete_candidate": true,
+        "format_filter": "caption_explicit_No_Limit_Hold'em_no_cap_marker",
+        "hero_actions_present": true,
+        "hero_hole_known": true,
+        "policy_observation_fields_present": false,
+        "raw_prefix_complete": true,
+        "source_evidence_only": true
+      },
+      "source_record_id": "2P2-20080215-5260871551",
+      "source_url": "https://forumserver.twoplustwo.com/29/news-views-gossip/2-14-high-stakes-action-thread-ivey-seda-durrr-ziigmund-etc-129937/index8.html",
+      "status": "replayed_pending_independent_review",
+      "structured_hand_id": "5260871551"
+    },
+    {
+      "canonical_hand_id": "fulltilt:5257208324",
+      "exact_fulltilt_hand_id": "5257208324",
+      "input_record_index": 21,
+      "raw_extract_sha256": "5857f49631e4429ece17bd2fc8b2464740678390379dc24aa6f019409e742f90",
+      "source_classification": {
+        "complete_candidate": true,
+        "format_filter": "caption_explicit_No_Limit_Hold'em_no_cap_marker",
+        "hero_actions_present": true,
+        "hero_hole_known": true,
+        "policy_observation_fields_present": false,
+        "raw_prefix_complete": true,
+        "source_evidence_only": true
+      },
+      "source_record_id": "2P2-5257208324",
+      "source_url": "https://forumserver.twoplustwo.com/29/news-views-gossip/2-14-high-stakes-action-thread-ivey-seda-durrr-ziigmund-etc-129937/index4.html",
+      "status": "replayed_pending_independent_review",
+      "structured_hand_id": "5257208324"
+    },
+    {
+      "canonical_hand_id": "fulltilt:5257258814",
+      "exact_fulltilt_hand_id": "5257258814",
+      "input_record_index": 22,
+      "raw_extract_sha256": "91d279ce0596e0ca28f0795f0daadac155d8fddea9fc6e3e388199de20b71731",
+      "source_classification": {
+        "complete_candidate": true,
+        "format_filter": "caption_explicit_No_Limit_Hold'em_no_cap_marker",
+        "hero_actions_present": true,
+        "hero_hole_known": true,
+        "policy_observation_fields_present": false,
+        "raw_prefix_complete": true,
+        "source_evidence_only": true
+      },
+      "source_record_id": "2P2-5257258814",
+      "source_url": "https://forumserver.twoplustwo.com/29/news-views-gossip/2-14-high-stakes-action-thread-ivey-seda-durrr-ziigmund-etc-129937/index4.html",
+      "status": "replayed_pending_independent_review",
+      "structured_hand_id": "5257258814"
+    },
+    {
+      "canonical_hand_id": "fulltilt:5261000520",
+      "exact_fulltilt_hand_id": "5261000520",
+      "input_record_index": 23,
+      "raw_extract_sha256": "4da5ff45f66d47a34ee3d65a218da53b5711db0542bda052138db263133111d9",
+      "source_classification": {
+        "complete_candidate": true,
+        "format_filter": "caption_explicit_No_Limit_Hold'em_no_cap_marker",
+        "hero_actions_present": true,
+        "hero_hole_known": true,
+        "policy_observation_fields_present": false,
+        "raw_prefix_complete": true,
+        "source_evidence_only": true
+      },
+      "source_record_id": "2P2-5261000520",
+      "source_url": "https://forumserver.twoplustwo.com/29/news-views-gossip/2-14-high-stakes-action-thread-ivey-seda-durrr-ziigmund-etc-129937/index9.html",
+      "status": "replayed_pending_independent_review",
+      "structured_hand_id": "5261000520"
+    },
+    {
+      "canonical_hand_id": "fulltilt:9326680134",
+      "exact_fulltilt_hand_id": "9326680134",
+      "input_record_index": 24,
+      "raw_extract_sha256": "24801994afb45957bd63298542882dabbe5a6e2a07028b8c44e838d71e651bc7",
+      "source_classification": {
+        "complete_candidate": true,
+        "format_filter": "caption_explicit_No_Limit_Hold'em_no_cap_marker",
+        "hero_actions_present": true,
+        "hero_hole_known": true,
+        "policy_observation_fields_present": false,
+        "raw_prefix_complete": true,
+        "source_evidence_only": true
+      },
+      "source_record_id": "2P2-9326680134",
+      "source_url": "https://forumserver.twoplustwo.com/29/news-views-gossip/december-high-stakes-thread-354943/index15.html",
+      "status": "replayed_pending_independent_review",
+      "structured_hand_id": "9326680134"
+    },
+    {
+      "canonical_hand_id": "fulltilt:9326718612",
+      "exact_fulltilt_hand_id": "9326718612",
+      "input_record_index": 25,
+      "raw_extract_sha256": "edd01aaae830d354843682203b7fb2d946627670f5c7899fa9b376152213b7c9",
+      "source_classification": {
+        "complete_candidate": true,
+        "format_filter": "caption_explicit_No_Limit_Hold'em_no_cap_marker",
+        "hero_actions_present": true,
+        "hero_hole_known": true,
+        "policy_observation_fields_present": false,
+        "raw_prefix_complete": true,
+        "source_evidence_only": true
+      },
+      "source_record_id": "2P2-9326718612",
+      "source_url": "https://forumserver.twoplustwo.com/29/news-views-gossip/december-high-stakes-thread-354943/index15.html",
+      "status": "replayed_pending_independent_review",
+      "structured_hand_id": "9326718612"
+    },
+    {
+      "canonical_hand_id": "fulltilt:9326781360",
+      "exact_fulltilt_hand_id": "9326781360",
+      "input_record_index": 26,
+      "raw_extract_sha256": "1103900a9d2b7605f0545cd2e25265e7cf2219763766a08d76319ee14254a7a7",
+      "source_classification": {
+        "complete_candidate": true,
+        "format_filter": "caption_explicit_No_Limit_Hold'em_no_cap_marker",
+        "hero_actions_present": true,
+        "hero_hole_known": false,
+        "policy_observation_fields_present": false,
+        "raw_prefix_complete": true,
+        "source_evidence_only": true
+      },
+      "source_record_id": "2P2-9326781360",
+      "source_url": "https://forumserver.twoplustwo.com/29/news-views-gossip/december-high-stakes-thread-354943/index15.html",
+      "status": "replayed_no_known_hero_decisions",
+      "structured_hand_id": "9326781360"
+    },
+    {
+      "canonical_hand_id": "fulltilt:9326810433",
+      "exact_fulltilt_hand_id": "9326810433",
+      "input_record_index": 27,
+      "raw_extract_sha256": "171508e499a045155cdd0be003927fff111cf6c8d0c52ac8bac543ba0f4a5ba1",
+      "source_classification": {
+        "complete_candidate": true,
+        "format_filter": "caption_explicit_No_Limit_Hold'em_no_cap_marker",
+        "hero_actions_present": true,
+        "hero_hole_known": false,
+        "policy_observation_fields_present": false,
+        "raw_prefix_complete": true,
+        "source_evidence_only": true
+      },
+      "source_record_id": "2P2-9326810433",
+      "source_url": "https://forumserver.twoplustwo.com/29/news-views-gossip/december-high-stakes-thread-354943/index15.html",
+      "status": "replayed_no_known_hero_decisions",
+      "structured_hand_id": "9326810433"
+    },
+    {
+      "canonical_hand_id": "fulltilt:9327333412",
+      "exact_fulltilt_hand_id": "9327333412",
+      "input_record_index": 28,
+      "raw_extract_sha256": "9de5faf98fee441cc73a7cbadecf92ca0258910c5326a0a88d8296a8a4582e76",
+      "source_classification": {
+        "complete_candidate": true,
+        "format_filter": "caption_explicit_No_Limit_Hold'em_no_cap_marker",
+        "hero_actions_present": true,
+        "hero_hole_known": false,
+        "policy_observation_fields_present": false,
+        "raw_prefix_complete": true,
+        "source_evidence_only": true
+      },
+      "source_record_id": "2P2-9327333412",
+      "source_url": "https://forumserver.twoplustwo.com/29/news-views-gossip/december-high-stakes-thread-354943/index15.html",
+      "status": "replayed_no_known_hero_decisions",
+      "structured_hand_id": "9327333412"
+    },
+    {
+      "canonical_hand_id": "fulltilt:9327359467",
+      "exact_fulltilt_hand_id": "9327359467",
+      "input_record_index": 29,
+      "raw_extract_sha256": "f1705c38345c8c81478c70a273446438cc018cf852dbf9c1c5180834a9ac2b8d",
+      "source_classification": {
+        "complete_candidate": true,
+        "format_filter": "caption_explicit_No_Limit_Hold'em_no_cap_marker",
+        "hero_actions_present": true,
+        "hero_hole_known": true,
+        "policy_observation_fields_present": false,
+        "raw_prefix_complete": true,
+        "source_evidence_only": true
+      },
+      "source_record_id": "2P2-9327359467",
+      "source_url": "https://forumserver.twoplustwo.com/29/news-views-gossip/december-high-stakes-thread-354943/index15.html",
+      "status": "replayed_pending_independent_review",
+      "structured_hand_id": "9327359467"
+    },
+    {
+      "canonical_hand_id": "fulltilt:9327369584",
+      "exact_fulltilt_hand_id": "9327369584",
+      "input_record_index": 30,
+      "raw_extract_sha256": "99ee3b3e3fa445586f75a35f170f4ff0f842fe42ef688b0277a2227e44bb3a84",
+      "source_classification": {
+        "complete_candidate": true,
+        "format_filter": "caption_explicit_No_Limit_Hold'em_no_cap_marker",
+        "hero_actions_present": true,
+        "hero_hole_known": true,
+        "policy_observation_fields_present": false,
+        "raw_prefix_complete": true,
+        "source_evidence_only": true
+      },
+      "source_record_id": "2P2-9327369584",
+      "source_url": "https://forumserver.twoplustwo.com/29/news-views-gossip/december-high-stakes-thread-354943/index15.html",
+      "status": "replayed_pending_independent_review",
+      "structured_hand_id": "9327369584"
+    },
+    {
+      "canonical_hand_id": "fulltilt:9327401075",
+      "exact_fulltilt_hand_id": "9327401075",
+      "input_record_index": 31,
+      "raw_extract_sha256": "11bada888bd854c58eef8010be7ecf43edb5f2cf2d681d9137aa720a6d36afcc",
+      "source_classification": {
+        "complete_candidate": true,
+        "format_filter": "caption_explicit_No_Limit_Hold'em_no_cap_marker",
+        "hero_actions_present": true,
+        "hero_hole_known": false,
+        "policy_observation_fields_present": false,
+        "raw_prefix_complete": true,
+        "source_evidence_only": true
+      },
+      "source_record_id": "2P2-9327401075",
+      "source_url": "https://forumserver.twoplustwo.com/29/news-views-gossip/december-high-stakes-thread-354943/index15.html",
+      "status": "replayed_no_known_hero_decisions",
+      "structured_hand_id": "9327401075"
+    },
+    {
+      "canonical_hand_id": "fulltilt:9327416827",
+      "exact_fulltilt_hand_id": "9327416827",
+      "input_record_index": 32,
+      "raw_extract_sha256": "991f79d4802ade1f5e89f487a937102dae3841a47849d9a8744514f5b3c5d7ba",
+      "source_classification": {
+        "complete_candidate": true,
+        "format_filter": "caption_explicit_No_Limit_Hold'em_no_cap_marker",
+        "hero_actions_present": true,
+        "hero_hole_known": true,
+        "policy_observation_fields_present": false,
+        "raw_prefix_complete": true,
+        "source_evidence_only": true
+      },
+      "source_record_id": "2P2-9327416827",
+      "source_url": "https://forumserver.twoplustwo.com/29/news-views-gossip/december-high-stakes-thread-354943/index15.html",
+      "status": "replayed_pending_independent_review",
+      "structured_hand_id": "9327416827"
+    },
+    {
+      "canonical_hand_id": "fulltilt:9326760556",
+      "exact_fulltilt_hand_id": "9326760556",
+      "input_record_index": 33,
+      "raw_extract_sha256": "d89a0c4e006182d3d271e8e03727ca6eba5dffa439add3fa71dadc4c3c86d998",
+      "source_classification": {
+        "complete_candidate": true,
+        "format_filter": "caption_explicit_No_Limit_Hold'em_no_cap_marker",
+        "hero_actions_present": true,
+        "hero_hole_known": true,
+        "policy_observation_fields_present": false,
+        "raw_prefix_complete": true,
+        "source_evidence_only": true
+      },
+      "source_record_id": "2P2-9326760556",
+      "source_url": "https://forumserver.twoplustwo.com/29/news-views-gossip/december-high-stakes-thread-354943/index15.html",
+      "status": "replayed_pending_independent_review",
+      "structured_hand_id": "9326760556"
+    },
+    {
+      "canonical_hand_id": "fulltilt:9327152982",
+      "exact_fulltilt_hand_id": "9327152982",
+      "input_record_index": 34,
+      "raw_extract_sha256": "e31515f34f1b363dca9635559b15f5966d11d9109d3045de3c6204132b883fa6",
+      "source_classification": {
+        "complete_candidate": true,
+        "format_filter": "caption_explicit_No_Limit_Hold'em_no_cap_marker",
+        "hero_actions_present": true,
+        "hero_hole_known": false,
+        "policy_observation_fields_present": false,
+        "raw_prefix_complete": true,
+        "source_evidence_only": true
+      },
+      "source_record_id": "2P2-9327152982",
+      "source_url": "https://forumserver.twoplustwo.com/29/news-views-gossip/december-high-stakes-thread-354943/index15.html",
+      "status": "replayed_no_known_hero_decisions",
+      "structured_hand_id": "9327152982"
+    },
+    {
+      "canonical_hand_id": "fulltilt:9327176460",
+      "exact_fulltilt_hand_id": "9327176460",
+      "input_record_index": 35,
+      "raw_extract_sha256": "a8181d7c55f5e2365bc413b953427dc3d5e37988e45d1a74ea1a8d683ab2395b",
+      "source_classification": {
+        "complete_candidate": true,
+        "format_filter": "caption_explicit_No_Limit_Hold'em_no_cap_marker",
+        "hero_actions_present": true,
+        "hero_hole_known": false,
+        "policy_observation_fields_present": false,
+        "raw_prefix_complete": true,
+        "source_evidence_only": true
+      },
+      "source_record_id": "2P2-9327176460",
+      "source_url": "https://forumserver.twoplustwo.com/29/news-views-gossip/december-high-stakes-thread-354943/index15.html",
+      "status": "replayed_no_known_hero_decisions",
+      "structured_hand_id": "9327176460"
+    },
+    {
+      "canonical_hand_id": "fulltilt:9327195380",
+      "exact_fulltilt_hand_id": "9327195380",
+      "input_record_index": 36,
+      "raw_extract_sha256": "ff9f42a76765eee236dc5ea3e5b08d5fd8b9235cb43323f559b89e7b672e87c6",
+      "source_classification": {
+        "complete_candidate": true,
+        "format_filter": "caption_explicit_No_Limit_Hold'em_no_cap_marker",
+        "hero_actions_present": true,
+        "hero_hole_known": false,
+        "policy_observation_fields_present": false,
+        "raw_prefix_complete": true,
+        "source_evidence_only": true
+      },
+      "source_record_id": "2P2-9327195380",
+      "source_url": "https://forumserver.twoplustwo.com/29/news-views-gossip/december-high-stakes-thread-354943/index15.html",
+      "status": "replayed_no_known_hero_decisions",
+      "structured_hand_id": "9327195380"
+    },
+    {
+      "canonical_hand_id": "fulltilt:9327246827",
+      "exact_fulltilt_hand_id": "9327246827",
+      "input_record_index": 37,
+      "raw_extract_sha256": "894456a7300c2853246e1fea609e47dc2c860ae0032e8380b4c1a11ed8c40707",
+      "source_classification": {
+        "complete_candidate": true,
+        "format_filter": "caption_explicit_No_Limit_Hold'em_no_cap_marker",
+        "hero_actions_present": true,
+        "hero_hole_known": false,
+        "policy_observation_fields_present": false,
+        "raw_prefix_complete": true,
+        "source_evidence_only": true
+      },
+      "source_record_id": "2P2-9327246827",
+      "source_url": "https://forumserver.twoplustwo.com/29/news-views-gossip/december-high-stakes-thread-354943/index15.html",
+      "status": "replayed_no_known_hero_decisions",
+      "structured_hand_id": "9327246827"
+    },
+    {
+      "canonical_hand_id": "fulltilt:9327292808",
+      "exact_fulltilt_hand_id": "9327292808",
+      "input_record_index": 38,
+      "raw_extract_sha256": "2cdf474bf920c9c8d9c059efe56f6f5a4b664f11e116cc7c3591340456196bea",
+      "source_classification": {
+        "complete_candidate": true,
+        "format_filter": "caption_explicit_No_Limit_Hold'em_no_cap_marker",
+        "hero_actions_present": true,
+        "hero_hole_known": true,
+        "policy_observation_fields_present": false,
+        "raw_prefix_complete": true,
+        "source_evidence_only": true
+      },
+      "source_record_id": "2P2-9327292808",
+      "source_url": "https://forumserver.twoplustwo.com/29/news-views-gossip/december-high-stakes-thread-354943/index15.html",
+      "status": "replayed_pending_independent_review",
+      "structured_hand_id": "9327292808"
+    },
+    {
+      "canonical_hand_id": "fulltilt:9327470623",
+      "exact_fulltilt_hand_id": "9327470623",
+      "input_record_index": 39,
+      "raw_extract_sha256": "9d885827178b0f1d56f056a36148aa335b1be85003b3bf69e290be0202fc7300",
+      "source_classification": {
+        "complete_candidate": true,
+        "format_filter": "caption_explicit_No_Limit_Hold'em_no_cap_marker",
+        "hero_actions_present": true,
+        "hero_hole_known": false,
+        "policy_observation_fields_present": false,
+        "raw_prefix_complete": true,
+        "source_evidence_only": true
+      },
+      "source_record_id": "2P2-9327470623",
+      "source_url": "https://forumserver.twoplustwo.com/29/news-views-gossip/december-high-stakes-thread-354943/index15.html",
+      "status": "replayed_no_known_hero_decisions",
+      "structured_hand_id": "9327470623"
+    },
+    {
+      "canonical_hand_id": "fulltilt:9327536158",
+      "exact_fulltilt_hand_id": "9327536158",
+      "input_record_index": 40,
+      "raw_extract_sha256": "7a15f03f28c6583552a6b44eda4025cb4f5e657ca648f3fe43d02f3521a5acac",
+      "source_classification": {
+        "complete_candidate": true,
+        "format_filter": "caption_explicit_No_Limit_Hold'em_no_cap_marker",
+        "hero_actions_present": true,
+        "hero_hole_known": true,
+        "policy_observation_fields_present": false,
+        "raw_prefix_complete": true,
+        "source_evidence_only": true
+      },
+      "source_record_id": "2P2-9327536158",
+      "source_url": "https://forumserver.twoplustwo.com/29/news-views-gossip/december-high-stakes-thread-354943/index16.html",
+      "status": "replayed_pending_independent_review",
+      "structured_hand_id": "9327536158"
+    },
+    {
+      "canonical_hand_id": "fulltilt:9327549599",
+      "exact_fulltilt_hand_id": "9327549599",
+      "input_record_index": 41,
+      "raw_extract_sha256": "c739c6ed5cb5452443c6a2cb5451057db20af6d7a0e751d586ad71ab65f9f92e",
+      "source_classification": {
+        "complete_candidate": true,
+        "format_filter": "caption_explicit_No_Limit_Hold'em_no_cap_marker",
+        "hero_actions_present": true,
+        "hero_hole_known": true,
+        "policy_observation_fields_present": false,
+        "raw_prefix_complete": true,
+        "source_evidence_only": true
+      },
+      "source_record_id": "2P2-9327549599",
+      "source_url": "https://forumserver.twoplustwo.com/29/news-views-gossip/december-high-stakes-thread-354943/index16.html",
+      "status": "replayed_pending_independent_review",
+      "structured_hand_id": "9327549599"
+    },
+    {
+      "canonical_hand_id": "fulltilt:9327628002",
+      "exact_fulltilt_hand_id": "9327628002",
+      "input_record_index": 42,
+      "raw_extract_sha256": "c3ab80c8c98f86e6313f0c4ac8b6a2741a34f566390e35d3a5c08b91b0b7f5ba",
+      "source_classification": {
+        "complete_candidate": true,
+        "format_filter": "caption_explicit_No_Limit_Hold'em_no_cap_marker",
+        "hero_actions_present": true,
+        "hero_hole_known": false,
+        "policy_observation_fields_present": false,
+        "raw_prefix_complete": true,
+        "source_evidence_only": true
+      },
+      "source_record_id": "2P2-9327628002",
+      "source_url": "https://forumserver.twoplustwo.com/29/news-views-gossip/december-high-stakes-thread-354943/index16.html",
+      "status": "replayed_no_known_hero_decisions",
+      "structured_hand_id": "9327628002"
+    },
+    {
+      "canonical_hand_id": "fulltilt:9327662891",
+      "exact_fulltilt_hand_id": "9327662891",
+      "input_record_index": 43,
+      "raw_extract_sha256": "348296f9bbe295210f428342dfaa839c0eb5bceff1b87c790bbd23b0cc644b18",
+      "source_classification": {
+        "complete_candidate": true,
+        "format_filter": "caption_explicit_No_Limit_Hold'em_no_cap_marker",
+        "hero_actions_present": true,
+        "hero_hole_known": true,
+        "policy_observation_fields_present": false,
+        "raw_prefix_complete": true,
+        "source_evidence_only": true
+      },
+      "source_record_id": "2P2-9327662891",
+      "source_url": "https://forumserver.twoplustwo.com/29/news-views-gossip/december-high-stakes-thread-354943/index16.html",
+      "status": "replayed_pending_independent_review",
+      "structured_hand_id": "9327662891"
+    },
+    {
+      "canonical_hand_id": "fulltilt:9327681740",
+      "exact_fulltilt_hand_id": "9327681740",
+      "input_record_index": 44,
+      "raw_extract_sha256": "6ec287219c54ee38529e31de2a86b6262eac145c03b0669e927ba1c771a0074a",
+      "source_classification": {
+        "complete_candidate": true,
+        "format_filter": "caption_explicit_No_Limit_Hold'em_no_cap_marker",
+        "hero_actions_present": true,
+        "hero_hole_known": false,
+        "policy_observation_fields_present": false,
+        "raw_prefix_complete": true,
+        "source_evidence_only": true
+      },
+      "source_record_id": "2P2-9327681740",
+      "source_url": "https://forumserver.twoplustwo.com/29/news-views-gossip/december-high-stakes-thread-354943/index16.html",
+      "status": "replayed_no_known_hero_decisions",
+      "structured_hand_id": "9327681740"
+    },
+    {
+      "canonical_hand_id": "fulltilt:9327804384",
+      "exact_fulltilt_hand_id": "9327804384",
+      "input_record_index": 45,
+      "raw_extract_sha256": "7f38541bfe4fca779185abee7ff781de0740577cf4d2c2e94eac4f2a7b2a43ab",
+      "source_classification": {
+        "complete_candidate": true,
+        "format_filter": "caption_explicit_No_Limit_Hold'em_no_cap_marker",
+        "hero_actions_present": true,
+        "hero_hole_known": false,
+        "policy_observation_fields_present": false,
+        "raw_prefix_complete": true,
+        "source_evidence_only": true
+      },
+      "source_record_id": "2P2-9327804384",
+      "source_url": "https://forumserver.twoplustwo.com/29/news-views-gossip/december-high-stakes-thread-354943/index16.html",
+      "status": "replayed_no_known_hero_decisions",
+      "structured_hand_id": "9327804384"
+    },
+    {
+      "canonical_hand_id": "fulltilt:9327922681",
+      "exact_fulltilt_hand_id": "9327922681",
+      "input_record_index": 46,
+      "raw_extract_sha256": "d40fa156b6ede2312c9ada3dd19249edee8d8fd4ebbe93d77e1cc2d0063a7c3e",
+      "source_classification": {
+        "complete_candidate": true,
+        "format_filter": "caption_explicit_No_Limit_Hold'em_no_cap_marker",
+        "hero_actions_present": true,
+        "hero_hole_known": true,
+        "policy_observation_fields_present": false,
+        "raw_prefix_complete": true,
+        "source_evidence_only": true
+      },
+      "source_record_id": "2P2-9327922681",
+      "source_url": "https://forumserver.twoplustwo.com/29/news-views-gossip/december-high-stakes-thread-354943/index16.html",
+      "status": "replayed_pending_independent_review",
+      "structured_hand_id": "9327922681"
+    },
+    {
+      "canonical_hand_id": "fulltilt:9327997636",
+      "exact_fulltilt_hand_id": "9327997636",
+      "input_record_index": 47,
+      "raw_extract_sha256": "d7d6f9afab5a276173b28fc38e21dfac429582d7363d2308b1b0b77f4ea4ddbf",
+      "source_classification": {
+        "complete_candidate": true,
+        "format_filter": "caption_explicit_No_Limit_Hold'em_no_cap_marker",
+        "hero_actions_present": true,
+        "hero_hole_known": false,
+        "policy_observation_fields_present": false,
+        "raw_prefix_complete": true,
+        "source_evidence_only": true
+      },
+      "source_record_id": "2P2-9327997636",
+      "source_url": "https://forumserver.twoplustwo.com/29/news-views-gossip/december-high-stakes-thread-354943/index16.html",
+      "status": "replayed_no_known_hero_decisions",
+      "structured_hand_id": "9327997636"
+    },
+    {
+      "canonical_hand_id": "fulltilt:9328279858",
+      "exact_fulltilt_hand_id": "9328279858",
+      "input_record_index": 48,
+      "raw_extract_sha256": "44da59332103d6c61d10b2d635cb3755f93078d8c3ce183affa115376baf8940",
+      "source_classification": {
+        "complete_candidate": true,
+        "format_filter": "caption_explicit_No_Limit_Hold'em_no_cap_marker",
+        "hero_actions_present": true,
+        "hero_hole_known": false,
+        "policy_observation_fields_present": false,
+        "raw_prefix_complete": true,
+        "source_evidence_only": true
+      },
+      "source_record_id": "2P2-9328279858",
+      "source_url": "https://forumserver.twoplustwo.com/29/news-views-gossip/december-high-stakes-thread-354943/index16.html",
+      "status": "replayed_no_known_hero_decisions",
+      "structured_hand_id": "9328279858"
+    },
+    {
+      "canonical_hand_id": "fulltilt:9329260263",
+      "exact_fulltilt_hand_id": "9329260263",
+      "input_record_index": 49,
+      "raw_extract_sha256": "5e98c75dbdfa339b37e897eedfdbbc3349ee054fb3b64ebf8ca8d00ff93528e4",
+      "source_classification": {
+        "complete_candidate": true,
+        "format_filter": "caption_explicit_No_Limit_Hold'em_no_cap_marker",
+        "hero_actions_present": true,
+        "hero_hole_known": false,
+        "policy_observation_fields_present": false,
+        "raw_prefix_complete": true,
+        "source_evidence_only": true
+      },
+      "source_record_id": "2P2-9329260263",
+      "source_url": "https://forumserver.twoplustwo.com/29/news-views-gossip/december-high-stakes-thread-354943/index17.html",
+      "status": "replayed_no_known_hero_decisions",
+      "structured_hand_id": "9329260263"
+    },
+    {
+      "canonical_hand_id": "fulltilt:9330222367",
+      "exact_fulltilt_hand_id": "9330222367",
+      "input_record_index": 50,
+      "raw_extract_sha256": "4c753b195f9eb18c8c3cd4dd03af01427b62e9a05c483f63c165fa7695e5298f",
+      "source_classification": {
+        "complete_candidate": false,
+        "format_filter": "caption_explicit_No_Limit_Hold'em_no_cap_marker",
+        "hero_actions_present": false,
+        "hero_hole_known": true,
+        "policy_observation_fields_present": false,
+        "raw_prefix_complete": false,
+        "source_evidence_only": true,
+        "source_marks_log_partial": true
+      },
+      "source_record_id": "2P2-9330222367",
+      "source_url": "https://forumserver.twoplustwo.com/29/news-views-gossip/december-high-stakes-thread-354943/index18.html",
+      "status": "queued_for_replay",
+      "structured_hand_id": "9330222367"
+    },
+    {
+      "exact_fulltilt_hand_id": null,
+      "input_record_index": 51,
+      "raw_extract_sha256": "1ddd33b39a43837b57f7f007b95f16bc34490a6f0416f91c585b1fc5cc724055",
+      "reason": "converted_history_without_exact_fulltilt_hand_id_pending_cross_source_identity_review",
+      "source_classification": {
+        "complete_candidate": true,
+        "format_filter": "converted_No_Limit_Hold'em_no_cap_marker",
+        "hero_actions_present": true,
+        "hero_hole_known": true,
+        "policy_observation_fields_present": false,
+        "raw_prefix_complete": true,
+        "source_evidence_only": true,
+        "visible_fulltilt_hand_id": false
+      },
+      "source_record_id": "2P2-post432-converted",
+      "source_url": "https://forumserver.twoplustwo.com/29/news-views-gossip/december-high-stakes-thread-354943/index18.html",
+      "status": "pending_cross_source_identity_review",
+      "structured_hand_id": null
+    },
+    {
+      "exact_fulltilt_hand_id": null,
+      "input_record_index": 52,
+      "raw_extract_sha256": "3d34365607322b05f6aef3fd674dfdd39544033ede4453fdb6a894e340668329",
+      "reason": "converted_history_without_exact_fulltilt_hand_id_pending_cross_source_identity_review",
+      "source_classification": {
+        "complete_candidate": true,
+        "format_filter": "converted_No_Limit_Hold'em_no_cap_marker",
+        "hero_actions_present": true,
+        "hero_hole_known": true,
+        "policy_observation_fields_present": false,
+        "raw_prefix_complete": true,
+        "source_evidence_only": true,
+        "visible_fulltilt_hand_id": false
+      },
+      "source_record_id": "2P2-post405-converted",
+      "source_url": "https://forumserver.twoplustwo.com/29/news-views-gossip/december-high-stakes-thread-354943/index17.html",
+      "status": "pending_cross_source_identity_review",
+      "structured_hand_id": null
+    },
+    {
+      "exact_fulltilt_hand_id": null,
+      "input_record_index": 53,
+      "raw_extract_sha256": "c353419882990a4f9de16057ef0233b847fceaee10b461d6b4ea60981c2ff348",
+      "reason": "converted_history_without_exact_fulltilt_hand_id_pending_cross_source_identity_review",
+      "source_classification": {
+        "complete_candidate": true,
+        "format_filter": "converted_No_Limit_Hold'em_no_cap_marker",
+        "hero_actions_present": true,
+        "hero_hole_known": true,
+        "policy_observation_fields_present": false,
+        "raw_prefix_complete": true,
+        "source_evidence_only": true,
+        "visible_fulltilt_hand_id": false
+      },
+      "source_record_id": "2P2-post410-converted",
+      "source_url": "https://forumserver.twoplustwo.com/29/news-views-gossip/december-high-stakes-thread-354943/index17.html",
+      "status": "pending_cross_source_identity_review",
+      "structured_hand_id": null
+    },
+    {
+      "exact_fulltilt_hand_id": null,
+      "input_record_index": 54,
+      "raw_extract_sha256": "0ebfb64ab51fc83276bcc29e248694731a20599045ac3e23c8dcf33e0cfc8a63",
+      "reason": "converted_history_without_exact_fulltilt_hand_id_pending_cross_source_identity_review",
+      "source_classification": {
+        "complete_candidate": true,
+        "format_filter": "converted_No_Limit_Hold'em_no_cap_marker",
+        "hero_actions_present": true,
+        "hero_hole_known": true,
+        "policy_observation_fields_present": false,
+        "raw_prefix_complete": true,
+        "source_evidence_only": true,
+        "visible_fulltilt_hand_id": false
+      },
+      "source_record_id": "2P2-post411-converted",
+      "source_url": "https://forumserver.twoplustwo.com/29/news-views-gossip/december-high-stakes-thread-354943/index17.html",
+      "status": "pending_cross_source_identity_review",
+      "structured_hand_id": null
+    },
+    {
+      "exact_fulltilt_hand_id": null,
+      "input_record_index": 55,
+      "raw_extract_sha256": "b1da24e4ea7f210cea84b424b6a269d961395cd9226d394ce0088c39f2f5b209",
+      "reason": "converted_history_without_exact_fulltilt_hand_id_pending_cross_source_identity_review",
+      "source_classification": {
+        "complete_candidate": true,
+        "format_filter": "converted_No_Limit_Hold'em_no_cap_marker",
+        "hero_actions_present": true,
+        "hero_hole_known": false,
+        "policy_observation_fields_present": false,
+        "raw_prefix_complete": true,
+        "source_evidence_only": true,
+        "visible_fulltilt_hand_id": false
+      },
+      "source_record_id": "2P2-post412-converted",
+      "source_url": "https://forumserver.twoplustwo.com/29/news-views-gossip/december-high-stakes-thread-354943/index17.html",
+      "status": "pending_cross_source_identity_review",
+      "structured_hand_id": null
+    },
+    {
+      "exact_fulltilt_hand_id": null,
+      "input_record_index": 56,
+      "raw_extract_sha256": "b4ff7c518fdddf4f0b79ea9771ad47c3b3e8a9aff19deaef65170e2143c44e96",
+      "reason": "converted_history_without_exact_fulltilt_hand_id_pending_cross_source_identity_review",
+      "source_classification": {
+        "complete_candidate": true,
+        "format_filter": "converted_No_Limit_Hold'em_no_cap_marker",
+        "hero_actions_present": true,
+        "hero_hole_known": true,
+        "policy_observation_fields_present": false,
+        "raw_prefix_complete": true,
+        "source_evidence_only": true,
+        "visible_fulltilt_hand_id": false
+      },
+      "source_record_id": "2P2-post416-converted",
+      "source_url": "https://forumserver.twoplustwo.com/29/news-views-gossip/december-high-stakes-thread-354943/index17.html",
+      "status": "pending_cross_source_identity_review",
+      "structured_hand_id": null
+    },
+    {
+      "exact_fulltilt_hand_id": null,
+      "input_record_index": 57,
+      "raw_extract_sha256": "8ff4ae6e98a0769c3f52ad8301a0cad895b129162781cc44f4b402a4052e3b2e",
+      "reason": "converted_history_without_exact_fulltilt_hand_id_pending_cross_source_identity_review",
+      "source_classification": {
+        "complete_candidate": true,
+        "format_filter": "converted_No_Limit_Hold'em_no_cap_marker",
+        "hero_actions_present": true,
+        "hero_hole_known": true,
+        "policy_observation_fields_present": false,
+        "raw_prefix_complete": true,
+        "source_evidence_only": true,
+        "visible_fulltilt_hand_id": false
+      },
+      "source_record_id": "2P2-post422-converted",
+      "source_url": "https://forumserver.twoplustwo.com/29/news-views-gossip/december-high-stakes-thread-354943/index17.html",
+      "status": "pending_cross_source_identity_review",
+      "structured_hand_id": null
+    },
+    {
+      "exact_fulltilt_hand_id": null,
+      "input_record_index": 58,
+      "raw_extract_sha256": "d32002a1e3bcd9b8d20c488dea2945d9d4bf89d0e611ccffe31ebe2a27ec4c5a",
+      "reason": "converted_history_without_exact_fulltilt_hand_id_pending_cross_source_identity_review",
+      "source_classification": {
+        "complete_candidate": true,
+        "format_filter": "converted_No_Limit_Hold'em_no_cap_marker",
+        "hero_actions_present": true,
+        "hero_hole_known": true,
+        "policy_observation_fields_present": false,
+        "raw_prefix_complete": true,
+        "source_evidence_only": true,
+        "visible_fulltilt_hand_id": false
+      },
+      "source_record_id": "2P2-post423-converted",
+      "source_url": "https://forumserver.twoplustwo.com/29/news-views-gossip/december-high-stakes-thread-354943/index17.html",
+      "status": "pending_cross_source_identity_review",
+      "structured_hand_id": null
+    },
+    {
+      "exact_fulltilt_hand_id": null,
+      "input_record_index": 59,
+      "raw_extract_sha256": "2e5e28a2f5d64966dd8d08f21920cc810e314c91c0884a945f9f838b3325af7f",
+      "reason": "converted_history_without_exact_fulltilt_hand_id_pending_cross_source_identity_review",
+      "source_classification": {
+        "complete_candidate": true,
+        "format_filter": "converted_No_Limit_Hold'em_no_cap_marker",
+        "hero_actions_present": true,
+        "hero_hole_known": false,
+        "policy_observation_fields_present": false,
+        "raw_prefix_complete": true,
+        "source_evidence_only": true,
+        "visible_fulltilt_hand_id": false
+      },
+      "source_record_id": "2P2-post424-converted",
+      "source_url": "https://forumserver.twoplustwo.com/29/news-views-gossip/december-high-stakes-thread-354943/index17.html",
+      "status": "pending_cross_source_identity_review",
+      "structured_hand_id": null
+    },
+    {
+      "exact_fulltilt_hand_id": null,
+      "input_record_index": 60,
+      "raw_extract_sha256": "04aa74cf8b983f330bfc730c90cc817ec520adc3aeec783b7103f54135493593",
+      "reason": "converted_history_without_exact_fulltilt_hand_id_pending_cross_source_identity_review",
+      "source_classification": {
+        "complete_candidate": true,
+        "format_filter": "converted_No_Limit_Hold'em_no_cap_marker",
+        "hero_actions_present": true,
+        "hero_hole_known": true,
+        "policy_observation_fields_present": false,
+        "raw_prefix_complete": true,
+        "source_evidence_only": true,
+        "visible_fulltilt_hand_id": false
+      },
+      "source_record_id": "2P2-post425-converted",
+      "source_url": "https://forumserver.twoplustwo.com/29/news-views-gossip/december-high-stakes-thread-354943/index17.html",
+      "status": "pending_cross_source_identity_review",
+      "structured_hand_id": null
+    },
+    {
+      "exact_fulltilt_hand_id": null,
+      "input_record_index": 61,
+      "raw_extract_sha256": "0807f39eff2c23d402928aa18c877eeec1c130fb3c28cb7056538dc2d1e473e3",
+      "reason": "converted_history_without_exact_fulltilt_hand_id_pending_cross_source_identity_review",
+      "source_classification": {
+        "complete_candidate": true,
+        "format_filter": "converted_No_Limit_Hold'em_no_cap_marker",
+        "hero_actions_present": true,
+        "hero_hole_known": true,
+        "policy_observation_fields_present": false,
+        "raw_prefix_complete": true,
+        "source_evidence_only": true,
+        "visible_fulltilt_hand_id": false
+      },
+      "source_record_id": "2P2-post451-converted",
+      "source_url": "https://forumserver.twoplustwo.com/29/news-views-gossip/december-high-stakes-thread-354943/index19.html",
+      "status": "pending_cross_source_identity_review",
+      "structured_hand_id": null
+    },
+    {
+      "exact_fulltilt_hand_id": null,
+      "input_record_index": 62,
+      "raw_extract_sha256": "f745cb5a9da90613dfe786096a2498b4bed55b75292abe2cc88fd342a98ea0db",
+      "reason": "converted_history_without_exact_fulltilt_hand_id_pending_cross_source_identity_review",
+      "source_classification": {
+        "complete_candidate": true,
+        "format_filter": "converted_No_Limit_Hold'em_no_cap_marker",
+        "hero_actions_present": true,
+        "hero_hole_known": true,
+        "policy_observation_fields_present": false,
+        "raw_prefix_complete": true,
+        "source_evidence_only": true,
+        "visible_fulltilt_hand_id": false
+      },
+      "source_record_id": "2P2-post454-converted",
+      "source_url": "https://forumserver.twoplustwo.com/29/news-views-gossip/december-high-stakes-thread-354943/index19.html",
+      "status": "pending_cross_source_identity_review",
+      "structured_hand_id": null
+    },
+    {
+      "exact_fulltilt_hand_id": null,
+      "input_record_index": 63,
+      "raw_extract_sha256": "3fd4056553e9ba7af98e51a02376ea2866750c4a2b2216b103247c6606a81870",
+      "reason": "converted_history_without_exact_fulltilt_hand_id_pending_cross_source_identity_review",
+      "source_classification": {
+        "complete_candidate": true,
+        "format_filter": "converted_No_Limit_Hold'em_no_cap_marker",
+        "hero_actions_present": true,
+        "hero_hole_known": true,
+        "policy_observation_fields_present": false,
+        "raw_prefix_complete": true,
+        "source_evidence_only": true,
+        "visible_fulltilt_hand_id": false
+      },
+      "source_record_id": "2P2-post464-converted",
+      "source_url": "https://forumserver.twoplustwo.com/29/news-views-gossip/december-high-stakes-thread-354943/index19.html",
+      "status": "pending_cross_source_identity_review",
+      "structured_hand_id": null
+    },
+    {
+      "canonical_hand_id": "fulltilt:5228844526",
+      "exact_fulltilt_hand_id": "5228844526",
+      "input_record_index": 64,
+      "raw_extract_sha256": "b31906a278b27f1f4a7efcd7bd2286769e351efb7d63bb66f552f9cedd1e77ee",
+      "source_classification": {
+        "complete_candidate": true,
+        "format_filter": "caption_explicit_No_Limit_Hold'em_no_cap_marker",
+        "hero_actions_present": true,
+        "hero_hole_known": false,
+        "policy_observation_fields_present": false,
+        "raw_prefix_complete": true,
+        "source_evidence_only": true
+      },
+      "source_record_id": "2P2-20080212-5228844526",
+      "source_url": "https://forumserver.twoplustwo.com/29/news-views-gossip/2-12-high-stakes-railbirding-thread-durrrr-ivey-urin-etc-128476/",
+      "status": "replayed_no_known_hero_decisions",
+      "structured_hand_id": "5228844526"
+    },
+    {
+      "canonical_hand_id": "fulltilt:5229587057",
+      "exact_fulltilt_hand_id": "5229587057",
+      "input_record_index": 65,
+      "raw_extract_sha256": "9570356b39b0a3351ca264f6c3a84cd880b12b25e7f4b103500469bf55533939",
+      "source_classification": {
+        "complete_candidate": true,
+        "format_filter": "caption_explicit_No_Limit_Hold'em_no_cap_marker",
+        "hero_actions_present": true,
+        "hero_hole_known": false,
+        "policy_observation_fields_present": false,
+        "raw_prefix_complete": true,
+        "source_evidence_only": true
+      },
+      "source_record_id": "2P2-20080212-5229587057",
+      "source_url": "https://forumserver.twoplustwo.com/29/news-views-gossip/2-12-high-stakes-railbirding-thread-durrrr-ivey-urin-etc-128476/",
+      "status": "replayed_no_known_hero_decisions",
+      "structured_hand_id": "5229587057"
+    },
+    {
+      "canonical_hand_id": "fulltilt:5229856787",
+      "exact_fulltilt_hand_id": "5229856787",
+      "input_record_index": 66,
+      "raw_extract_sha256": "32d94adebebc03116ac959f1e95ba5b5491937dd8f132b72fbb745a5a38bcfc7",
+      "source_classification": {
+        "complete_candidate": true,
+        "format_filter": "caption_explicit_No_Limit_Hold'em_no_cap_marker",
+        "hero_actions_present": true,
+        "hero_hole_known": true,
+        "policy_observation_fields_present": false,
+        "raw_prefix_complete": true,
+        "source_evidence_only": true
+      },
+      "source_record_id": "2P2-20080212-5229856787",
+      "source_url": "https://forumserver.twoplustwo.com/29/news-views-gossip/2-12-high-stakes-railbirding-thread-durrrr-ivey-urin-etc-128476/",
+      "status": "replayed_pending_independent_review",
+      "structured_hand_id": "5229856787"
+    },
+    {
+      "canonical_hand_id": "fulltilt:5229878446",
+      "exact_fulltilt_hand_id": "5229878446",
+      "input_record_index": 67,
+      "raw_extract_sha256": "991a3f703002ed7f629ed777b0c367b24ca27dd29d381cb1c1258ae30c80d6da",
+      "source_classification": {
+        "complete_candidate": true,
+        "format_filter": "caption_explicit_No_Limit_Hold'em_no_cap_marker",
+        "hero_actions_present": true,
+        "hero_hole_known": true,
+        "policy_observation_fields_present": false,
+        "raw_prefix_complete": true,
+        "source_evidence_only": true
+      },
+      "source_record_id": "2P2-20080212-5229878446",
+      "source_url": "https://forumserver.twoplustwo.com/29/news-views-gossip/2-12-high-stakes-railbirding-thread-durrrr-ivey-urin-etc-128476/",
+      "status": "replayed_pending_independent_review",
+      "structured_hand_id": "5229878446"
+    },
+    {
+      "canonical_hand_id": "fulltilt:5230180136",
+      "exact_fulltilt_hand_id": "5230180136",
+      "input_record_index": 68,
+      "raw_extract_sha256": "0c6afb75fd5d300417a6862cd9be36e6aece9df0010f0d119266683b47cf22f2",
+      "source_classification": {
+        "complete_candidate": true,
+        "format_filter": "caption_explicit_No_Limit_Hold'em_no_cap_marker",
+        "hero_actions_present": true,
+        "hero_hole_known": false,
+        "policy_observation_fields_present": false,
+        "raw_prefix_complete": true,
+        "source_evidence_only": true
+      },
+      "source_record_id": "2P2-20080212-5230180136",
+      "source_url": "https://forumserver.twoplustwo.com/29/news-views-gossip/2-12-high-stakes-railbirding-thread-durrrr-ivey-urin-etc-128476/index2.html",
+      "status": "replayed_no_known_hero_decisions",
+      "structured_hand_id": "5230180136"
+    },
+    {
+      "canonical_hand_id": "fulltilt:5230198015",
+      "exact_fulltilt_hand_id": "5230198015",
+      "input_record_index": 69,
+      "raw_extract_sha256": "37f1a7a14aa22a91c99223992d40ab239afab1fc78a4c57a57a791deacd3f34f",
+      "source_classification": {
+        "complete_candidate": true,
+        "format_filter": "caption_explicit_No_Limit_Hold'em_no_cap_marker",
+        "hero_actions_present": true,
+        "hero_hole_known": false,
+        "policy_observation_fields_present": false,
+        "raw_prefix_complete": true,
+        "source_evidence_only": true
+      },
+      "source_record_id": "2P2-20080212-5230198015",
+      "source_url": "https://forumserver.twoplustwo.com/29/news-views-gossip/2-12-high-stakes-railbirding-thread-durrrr-ivey-urin-etc-128476/index2.html",
+      "status": "replayed_no_known_hero_decisions",
+      "structured_hand_id": "5230198015"
+    },
+    {
+      "exact_fulltilt_hand_id": null,
+      "input_record_index": 70,
+      "raw_extract_sha256": "90fe6c87721ecec89dbf459d4acefe93c8829673c9bf11c6b0065b85a734fd8d",
+      "reason": "converted_history_without_exact_fulltilt_hand_id_pending_cross_source_identity_review",
+      "source_classification": {
+        "complete_candidate": true,
+        "format_filter": "converted_No_Limit_Hold'em_no_cap_marker",
+        "hero_actions_present": true,
+        "hero_hole_known": true,
+        "policy_observation_fields_present": false,
+        "raw_prefix_complete": true,
+        "source_evidence_only": true,
+        "visible_fulltilt_hand_id": false
+      },
+      "source_record_id": "2P2-post1-converted-20080212",
+      "source_url": "https://forumserver.twoplustwo.com/29/news-views-gossip/2-12-high-stakes-railbirding-thread-durrrr-ivey-urin-etc-128476/",
+      "status": "pending_cross_source_identity_review",
+      "structured_hand_id": null
+    }
+  ],
+  "source_records_snapshot": "source_records.jsonl"
+}

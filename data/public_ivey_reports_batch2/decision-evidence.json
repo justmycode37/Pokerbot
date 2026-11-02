@@ -1,0 +1,4347 @@
+{
+  "schema_version": "1.0",
+  "dataset": "public_ivey_nlhe_decision_evidence_batch2",
+  "scope": "New attributable public Phil Ivey no-limit hold'em hands from the source-only candidate pass documented in selection-method.json.",
+  "protocol_reference": "docs/state-protocol.md",
+  "selection_method_reference": "data/public_ivey_reports_batch2/selection-method.json",
+  "encoding_rules": {
+    "observations_contain_hero_private_cards_only": true,
+    "observations_contain_only_board_cards_visible_at_decision": true,
+    "future_actions_and_expected_actions_are_excluded_from_state": true,
+    "expected_action_is_stored_outside_state": true,
+    "raise_amount_semantics": "The amount on a raise is the total street target, not chips added. Reported bets map to protocol raise-to actions.",
+    "quality_statuses": [
+      "observed",
+      "derived",
+      "unknown"
+    ],
+    "opponent_cards_remain_in_raw_facts_only": true
+  },
+  "source_registry": [
+    {
+      "source_id": "cardplayer_wsop_2022_issue_35_16",
+      "publisher": "CardPlayer",
+      "original_title": "Card Player, Volume 35, Issue 16",
+      "direct_url": "https://media.cardplayer.com/assets/magazines/000/066/494/pdf/35_16_web.pdf",
+      "publication_date": {
+        "value": "2022-07-27",
+        "quality": "observed"
+      },
+      "role": "Primary factual source for four Ivey hands in this issue.",
+      "access": "Public PDF; no account or paywall used."
+    },
+    {
+      "source_id": "pokernews_wsop_2022_event_42",
+      "publisher": "PokerNews",
+      "original_title": "Event #42: $100,000 High Roller No-Limit Hold'em | 2022 World Series of Poker",
+      "direct_url": "https://www.pokernews.com/tours/wsop/2022-wsop/event-42-100000-high-roller/",
+      "publication_date": {
+        "value": null,
+        "quality": "unknown",
+        "note": "Event live-report page; separate page publication date not established."
+      },
+      "role": "Original WSOP event report for date and hand cross-checks.",
+      "access": "Public page; no account or paywall used."
+    },
+    {
+      "source_id": "pokernews_wsop_2022_event_42_highlights",
+      "publisher": "PokerNews",
+      "original_title": "Event #42: $100,000 High Roller No-Limit Hold'em, hand highlights",
+      "direct_url": "https://www.pokernews.com/tours/wsop/2022-wsop/event-42-100000-high-roller/?highlights=1",
+      "publication_date": {
+        "value": null,
+        "quality": "unknown"
+      },
+      "role": "Cross-check for the final Ivey-Ponakovs hand.",
+      "access": "Public page; no account or paywall used."
+    },
+    {
+      "source_id": "cardplayer_punsri_2851",
+      "publisher": "CardPlayer",
+      "original_title": "Poker Hand Matchup: Punnat Punsri vs. Phil Ivey",
+      "direct_url": "https://www.cardplayer.com/poker-tools/hand-matchups/2851",
+      "publication_date": {
+        "value": "2024-03-25",
+        "quality": "observed"
+      },
+      "role": "Primary matchup source for the Punsri-Ivey hand.",
+      "access": "Public page; no account or paywall used."
+    },
+    {
+      "source_id": "pokernews_punsri_2024",
+      "publisher": "PokerNews",
+      "original_title": "Triton Poker: Ivey's Aces Cracked on Final Table; Punsri Runs Hot for $2M Payout",
+      "direct_url": "https://www.pokernews.com/news/2024/03/50k-triton-poker-jeju-45587.htm",
+      "publication_date": {
+        "value": "2024-03-12",
+        "quality": "observed",
+        "note": "Page states published 2024-03-12 and last updated 2024-03-13."
+      },
+      "role": "Original event report for event/date cross-check.",
+      "access": "Public page; no account or paywall used."
+    }
+  ],
+  "sessions": [
+    {
+      "session_id": "wsop_2022_event42_day2_2022-06-20",
+      "event": "2022 WSOP Event #42: $100,000 High Roller No-Limit Hold'em",
+      "session_date": {
+        "value": "2022-06-20",
+        "quality": "observed",
+        "basis": "PokerNews Event #42 Day 2 report."
+      },
+      "exact_hand_times": {
+        "value": null,
+        "quality": "unknown"
+      }
+    },
+    {
+      "session_id": "triton_jeju_2024_event8_2024-03-12",
+      "event": "2024 Triton Jeju Event #8: $50,000 NLH 7-Handed",
+      "session_date": {
+        "value": "2024-03-12",
+        "quality": "observed",
+        "basis": "PokerNews final-table report date."
+      },
+      "exact_hand_times": {
+        "value": null,
+        "quality": "unknown"
+      }
+    }
+  ],
+  "hands": [
+    {
+      "hand_id": "ivey_heath_2022_wsop_event42",
+      "session_id": "wsop_2022_event42_day2_2022-06-20",
+      "source_ids": [
+        "cardplayer_wsop_2022_issue_35_16",
+        "pokernews_wsop_2022_event_42"
+      ],
+      "game": "No-Limit Texas Hold'em",
+      "event": "2022 WSOP Event #42: $100,000 High Roller",
+      "event_date": {
+        "value": "2022-06-20",
+        "quality": "observed",
+        "basis": "PokerNews Event #42 Day 2 report."
+      },
+      "exact_hand_timestamp": {
+        "value": null,
+        "quality": "unknown"
+      },
+      "players": {
+        "hero": {
+          "source_name": "Phil Ivey",
+          "position_at_decision": "BTN",
+          "hand_start_stack": 8425000,
+          "hole_cards": [
+            "Kc",
+            "9c"
+          ]
+        },
+        "opponents": [
+          {
+            "source_name": "Ben Heath",
+            "position": "BB",
+            "hand_start_stack": 15125000,
+            "hole_cards": [
+              "As",
+              "Ah"
+            ]
+          },
+          {
+            "source_name": null,
+            "position": "SB",
+            "hand_start_stack": null,
+            "hole_cards": null
+          }
+        ]
+      },
+      "blinds_and_antes": {
+        "small_blind": 125000,
+        "big_blind": 250000,
+        "big_blind_ante": 250000,
+        "ante_unit": "big blind ante",
+        "table_size": null
+      },
+      "board_by_street": {
+        "flop": [
+          "Tc",
+          "6s",
+          "2c"
+        ],
+        "turn": "4c",
+        "river": "4s"
+      },
+      "pre_action_context": [
+        {
+          "street": "preflop",
+          "summary": "Ivey is identified as the button opener; earlier-position folds are implied but their count and identities are not reported.",
+          "summary_quality": "observed",
+          "unreported_detail_quality": "unknown"
+        }
+      ],
+      "actions": [
+        {
+          "street": "preflop",
+          "player": "Phil Ivey",
+          "player_quality": "observed",
+          "action": "raise",
+          "amount": 550000,
+          "amount_semantics": "total street target; zero for check/fold",
+          "amount_quality": "observed",
+          "added": 550000,
+          "added_quality": "observed"
+        },
+        {
+          "street": "preflop",
+          "player": "Unidentified small blind",
+          "player_quality": "derived",
+          "action": "fold",
+          "amount": 0,
+          "amount_semantics": "total street target; zero for check/fold",
+          "amount_quality": "derived",
+          "added": 0,
+          "added_quality": "derived",
+          "note": "Position and fold are reported; player name is not reported."
+        },
+        {
+          "street": "preflop",
+          "player": "Ben Heath",
+          "player_quality": "observed",
+          "action": "raise",
+          "amount": 1850000,
+          "amount_semantics": "total street target; zero for check/fold",
+          "amount_quality": "observed",
+          "added": 1350000,
+          "added_quality": "derived",
+          "note": "Added amount is raise target less Heath's posted big blind."
+        },
+        {
+          "street": "preflop",
+          "player": "Phil Ivey",
+          "player_quality": "observed",
+          "action": "call",
+          "amount": 1850000,
+          "amount_semantics": "total street target; zero for check/fold",
+          "amount_quality": "derived",
+          "added": 1300000,
+          "added_quality": "derived",
+          "note": "Call target matches Heath's raise; added amount is target less Ivey's 550,000 open."
+        },
+        {
+          "street": "flop",
+          "player": "Ben Heath",
+          "player_quality": "observed",
+          "action": "bet",
+          "amount": 1250000,
+          "amount_semantics": "total street target; zero for check/fold",
+          "amount_quality": "observed",
+          "added": 1250000,
+          "added_quality": "derived"
+        },
+        {
+          "street": "flop",
+          "player": "Phil Ivey",
+          "player_quality": "observed",
+          "action": "raise",
+          "amount": 6575000,
+          "amount_semantics": "total street target; zero for check/fold",
+          "amount_quality": "derived",
+          "added": 6575000,
+          "added_quality": "derived",
+          "note": "CardPlayer rounds the shove to 6.58 million; exact target is Ivey's 8,425,000 start stack less 1,850,000 preflop contribution."
+        },
+        {
+          "street": "flop",
+          "player": "Ben Heath",
+          "player_quality": "observed",
+          "action": "call",
+          "amount": 6575000,
+          "amount_semantics": "total street target; zero for check/fold",
+          "amount_quality": "derived",
+          "added": 5325000,
+          "added_quality": "derived",
+          "note": "Call target matches Ivey's derived all-in target; amount added is target less Heath's flop bet."
+        }
+      ],
+      "sequence_coverage_note": "All reported actions from Ivey's button open onward are included. Earlier-position folds before Ivey are implied but not enumerated; no count or identities were inferred.",
+      "fact_quality": {
+        "players.hero.source_name": "observed",
+        "players.hero.position_at_decision": "observed",
+        "players.hero.hand_start_stack": "observed",
+        "players.hero.hole_cards[0]": "observed",
+        "players.hero.hole_cards[1]": "observed",
+        "players.opponents[0].source_name": "observed",
+        "players.opponents[0].position": "observed",
+        "players.opponents[0].hand_start_stack": "observed",
+        "players.opponents[0].hole_cards[0]": "observed",
+        "players.opponents[0].hole_cards[1]": "observed",
+        "players.opponents[1].source_name": "unknown",
+        "players.opponents[1].position": "observed",
+        "players.opponents[1].hand_start_stack": "unknown",
+        "players.opponents[1].hole_cards": "unknown",
+        "blinds_and_antes.small_blind": "observed",
+        "blinds_and_antes.big_blind": "observed",
+        "blinds_and_antes.big_blind_ante": "observed",
+        "blinds_and_antes.ante_unit": "observed",
+        "blinds_and_antes.table_size": "unknown",
+        "board_by_street.flop[0]": "observed",
+        "board_by_street.flop[1]": "observed",
+        "board_by_street.flop[2]": "observed",
+        "board_by_street.turn": "observed",
+        "board_by_street.river": "observed",
+        "event_date": "observed",
+        "exact_hand_timestamp": "unknown",
+        "game": "observed",
+        "event": "observed",
+        "pre_action_context": "observed"
+      }
+    },
+    {
+      "hand_id": "ivey_ponakovs_2022_wsop_event42_bluffcatch",
+      "session_id": "wsop_2022_event42_day2_2022-06-20",
+      "source_ids": [
+        "cardplayer_wsop_2022_issue_35_16",
+        "pokernews_wsop_2022_event_42"
+      ],
+      "game": "No-Limit Texas Hold'em",
+      "event": "2022 WSOP Event #42: $100,000 High Roller",
+      "event_date": {
+        "value": "2022-06-20",
+        "quality": "observed",
+        "basis": "PokerNews Event #42 Day 2 report."
+      },
+      "exact_hand_timestamp": {
+        "value": null,
+        "quality": "unknown"
+      },
+      "players": {
+        "hero": {
+          "source_name": "Phil Ivey",
+          "position_at_decision": "BTN/SB",
+          "hand_start_stack": 18875000,
+          "hole_cards": [
+            "Qc",
+            "9d"
+          ]
+        },
+        "opponents": [
+          {
+            "source_name": "Aleksejs Ponakovs",
+            "position": "BB",
+            "hand_start_stack": 18325000,
+            "hole_cards": [
+              "Ac",
+              "4h"
+            ]
+          }
+        ]
+      },
+      "blinds_and_antes": {
+        "small_blind": 150000,
+        "big_blind": 300000,
+        "big_blind_ante": 300000,
+        "ante_unit": "big blind ante",
+        "table_size": null
+      },
+      "board_by_street": {
+        "flop": [
+          "9h",
+          "6c",
+          "2h"
+        ],
+        "turn": "7h",
+        "river": "2s"
+      },
+      "pre_action_context": [],
+      "actions": [
+        {
+          "street": "preflop",
+          "player": "Phil Ivey",
+          "player_quality": "observed",
+          "action": "raise",
+          "amount": 700000,
+          "amount_semantics": "total street target; zero for check/fold",
+          "amount_quality": "observed",
+          "added": 550000,
+          "added_quality": "derived",
+          "note": "Added amount is target less Ivey's posted small blind."
+        },
+        {
+          "street": "preflop",
+          "player": "Aleksejs Ponakovs",
+          "player_quality": "observed",
+          "action": "call",
+          "amount": 700000,
+          "amount_semantics": "total street target; zero for check/fold",
+          "amount_quality": "observed",
+          "added": 400000,
+          "added_quality": "derived",
+          "note": "Added amount is target less Ponakovs's posted big blind."
+        },
+        {
+          "street": "flop",
+          "player": "Aleksejs Ponakovs",
+          "player_quality": "observed",
+          "action": "check",
+          "amount": 0,
+          "amount_semantics": "total street target; zero for check/fold",
+          "amount_quality": "observed",
+          "added": 0,
+          "added_quality": "derived"
+        },
+        {
+          "street": "flop",
+          "player": "Phil Ivey",
+          "player_quality": "observed",
+          "action": "bet",
+          "amount": 500000,
+          "amount_semantics": "total street target; zero for check/fold",
+          "amount_quality": "observed",
+          "added": 500000,
+          "added_quality": "derived"
+        },
+        {
+          "street": "flop",
+          "player": "Aleksejs Ponakovs",
+          "player_quality": "observed",
+          "action": "raise",
+          "amount": 1600000,
+          "amount_semantics": "total street target; zero for check/fold",
+          "amount_quality": "observed",
+          "added": 1600000,
+          "added_quality": "derived",
+          "note": "Check-raise to 1,600,000."
+        },
+        {
+          "street": "flop",
+          "player": "Phil Ivey",
+          "player_quality": "observed",
+          "action": "call",
+          "amount": 1600000,
+          "amount_semantics": "total street target; zero for check/fold",
+          "amount_quality": "derived",
+          "added": 1100000,
+          "added_quality": "derived",
+          "note": "Target less Ivey's 500,000 bet."
+        },
+        {
+          "street": "turn",
+          "player": "Aleksejs Ponakovs",
+          "player_quality": "observed",
+          "action": "check",
+          "amount": 0,
+          "amount_semantics": "total street target; zero for check/fold",
+          "amount_quality": "observed",
+          "added": 0,
+          "added_quality": "derived"
+        },
+        {
+          "street": "turn",
+          "player": "Phil Ivey",
+          "player_quality": "observed",
+          "action": "check",
+          "amount": 0,
+          "amount_semantics": "total street target; zero for check/fold",
+          "amount_quality": "observed",
+          "added": 0,
+          "added_quality": "derived"
+        },
+        {
+          "street": "river",
+          "player": "Aleksejs Ponakovs",
+          "player_quality": "observed",
+          "action": "bet",
+          "amount": 2750000,
+          "amount_semantics": "total street target; zero for check/fold",
+          "amount_quality": "observed",
+          "added": 2750000,
+          "added_quality": "derived"
+        },
+        {
+          "street": "river",
+          "player": "Phil Ivey",
+          "player_quality": "observed",
+          "action": "call",
+          "amount": 2750000,
+          "amount_semantics": "total street target; zero for check/fold",
+          "amount_quality": "observed",
+          "added": 2750000,
+          "added_quality": "derived"
+        }
+      ],
+      "sequence_coverage_note": "Heads-up action is reported from the first preflop action through the river.",
+      "fact_quality": {
+        "players.hero.source_name": "observed",
+        "players.hero.position_at_decision": "observed",
+        "players.hero.hand_start_stack": "observed",
+        "players.hero.hole_cards[0]": "observed",
+        "players.hero.hole_cards[1]": "observed",
+        "players.opponents[0].source_name": "observed",
+        "players.opponents[0].position": "observed",
+        "players.opponents[0].hand_start_stack": "observed",
+        "players.opponents[0].hole_cards[0]": "observed",
+        "players.opponents[0].hole_cards[1]": "observed",
+        "blinds_and_antes.small_blind": "observed",
+        "blinds_and_antes.big_blind": "observed",
+        "blinds_and_antes.big_blind_ante": "observed",
+        "blinds_and_antes.ante_unit": "observed",
+        "blinds_and_antes.table_size": "unknown",
+        "board_by_street.flop[0]": "observed",
+        "board_by_street.flop[1]": "observed",
+        "board_by_street.flop[2]": "observed",
+        "board_by_street.turn": "observed",
+        "board_by_street.river": "observed",
+        "event_date": "observed",
+        "exact_hand_timestamp": "unknown",
+        "game": "observed",
+        "event": "observed",
+        "pre_action_context": "observed"
+      }
+    },
+    {
+      "hand_id": "ivey_ponakovs_2022_wsop_event42_t9s_fold",
+      "session_id": "wsop_2022_event42_day2_2022-06-20",
+      "source_ids": [
+        "cardplayer_wsop_2022_issue_35_16",
+        "pokernews_wsop_2022_event_42"
+      ],
+      "game": "No-Limit Texas Hold'em",
+      "event": "2022 WSOP Event #42: $100,000 High Roller",
+      "event_date": {
+        "value": "2022-06-20",
+        "quality": "observed",
+        "basis": "PokerNews Event #42 Day 2 report."
+      },
+      "exact_hand_timestamp": {
+        "value": null,
+        "quality": "unknown"
+      },
+      "players": {
+        "hero": {
+          "source_name": "Phil Ivey",
+          "position_at_decision": "BB",
+          "hand_start_stack": 24225000,
+          "hole_cards": [
+            "Ts",
+            "9s"
+          ]
+        },
+        "opponents": [
+          {
+            "source_name": "Aleksejs Ponakovs",
+            "position": "BTN/SB",
+            "hand_start_stack": 12975000,
+            "hole_cards": [
+              "7s",
+              "4d"
+            ]
+          }
+        ]
+      },
+      "blinds_and_antes": {
+        "small_blind": 150000,
+        "big_blind": 300000,
+        "big_blind_ante": 300000,
+        "ante_unit": "big blind ante",
+        "table_size": null
+      },
+      "board_by_street": {
+        "flop": [
+          "Kh",
+          "Jh",
+          "7c"
+        ],
+        "turn": "4h",
+        "river": "Jd"
+      },
+      "pre_action_context": [],
+      "actions": [
+        {
+          "street": "preflop",
+          "player": "Aleksejs Ponakovs",
+          "player_quality": "observed",
+          "action": "raise",
+          "amount": 700000,
+          "amount_semantics": "total street target; zero for check/fold",
+          "amount_quality": "observed",
+          "added": 550000,
+          "added_quality": "derived",
+          "note": "Added amount is target less Ponakovs's posted small blind."
+        },
+        {
+          "street": "preflop",
+          "player": "Phil Ivey",
+          "player_quality": "observed",
+          "action": "call",
+          "amount": 700000,
+          "amount_semantics": "total street target; zero for check/fold",
+          "amount_quality": "observed",
+          "added": 400000,
+          "added_quality": "derived",
+          "note": "Added amount is target less Ivey's posted big blind."
+        },
+        {
+          "street": "flop",
+          "player": "Phil Ivey",
+          "player_quality": "observed",
+          "action": "check",
+          "amount": 0,
+          "amount_semantics": "total street target; zero for check/fold",
+          "amount_quality": "observed",
+          "added": 0,
+          "added_quality": "derived"
+        },
+        {
+          "street": "flop",
+          "player": "Aleksejs Ponakovs",
+          "player_quality": "observed",
+          "action": "check",
+          "amount": 0,
+          "amount_semantics": "total street target; zero for check/fold",
+          "amount_quality": "observed",
+          "added": 0,
+          "added_quality": "derived"
+        },
+        {
+          "street": "turn",
+          "player": "Phil Ivey",
+          "player_quality": "observed",
+          "action": "bet",
+          "amount": 900000,
+          "amount_semantics": "total street target; zero for check/fold",
+          "amount_quality": "observed",
+          "added": 900000,
+          "added_quality": "derived"
+        },
+        {
+          "street": "turn",
+          "player": "Aleksejs Ponakovs",
+          "player_quality": "observed",
+          "action": "call",
+          "amount": 900000,
+          "amount_semantics": "total street target; zero for check/fold",
+          "amount_quality": "observed",
+          "added": 900000,
+          "added_quality": "derived"
+        },
+        {
+          "street": "river",
+          "player": "Phil Ivey",
+          "player_quality": "observed",
+          "action": "bet",
+          "amount": 2000000,
+          "amount_semantics": "total street target; zero for check/fold",
+          "amount_quality": "observed",
+          "added": 2000000,
+          "added_quality": "derived"
+        },
+        {
+          "street": "river",
+          "player": "Aleksejs Ponakovs",
+          "player_quality": "observed",
+          "action": "raise",
+          "amount": 11375000,
+          "amount_semantics": "total street target; zero for check/fold",
+          "amount_quality": "derived",
+          "added": 11375000,
+          "added_quality": "derived",
+          "note": "PokerNews reports 11.4 million, rounded; exact target is the 12,975,000 start stack less 700,000 preflop and 900,000 turn contributions."
+        },
+        {
+          "street": "river",
+          "player": "Phil Ivey",
+          "player_quality": "observed",
+          "action": "fold",
+          "amount": 0,
+          "amount_semantics": "total street target; zero for check/fold",
+          "amount_quality": "observed",
+          "added": 0,
+          "added_quality": "derived"
+        }
+      ],
+      "sequence_coverage_note": "Heads-up action is reported from Ponakovs's preflop raise through Ivey's river fold.",
+      "fact_quality": {
+        "players.hero.source_name": "observed",
+        "players.hero.position_at_decision": "observed",
+        "players.hero.hand_start_stack": "observed",
+        "players.hero.hole_cards[0]": "observed",
+        "players.hero.hole_cards[1]": "observed",
+        "players.opponents[0].source_name": "observed",
+        "players.opponents[0].position": "observed",
+        "players.opponents[0].hand_start_stack": "observed",
+        "players.opponents[0].hole_cards[0]": "observed",
+        "players.opponents[0].hole_cards[1]": "observed",
+        "blinds_and_antes.small_blind": "observed",
+        "blinds_and_antes.big_blind": "observed",
+        "blinds_and_antes.big_blind_ante": "observed",
+        "blinds_and_antes.ante_unit": "observed",
+        "blinds_and_antes.table_size": "unknown",
+        "board_by_street.flop[0]": "observed",
+        "board_by_street.flop[1]": "observed",
+        "board_by_street.flop[2]": "observed",
+        "board_by_street.turn": "observed",
+        "board_by_street.river": "observed",
+        "event_date": "observed",
+        "exact_hand_timestamp": "unknown",
+        "game": "observed",
+        "event": "observed",
+        "pre_action_context": "observed"
+      }
+    },
+    {
+      "hand_id": "ivey_ponakovs_2022_wsop_event42_final_hand",
+      "session_id": "wsop_2022_event42_day2_2022-06-20",
+      "source_ids": [
+        "cardplayer_wsop_2022_issue_35_16",
+        "pokernews_wsop_2022_event_42",
+        "pokernews_wsop_2022_event_42_highlights"
+      ],
+      "game": "No-Limit Texas Hold'em",
+      "event": "2022 WSOP Event #42: $100,000 High Roller",
+      "event_date": {
+        "value": "2022-06-20",
+        "quality": "observed",
+        "basis": "PokerNews Event #42 Day 2 report."
+      },
+      "exact_hand_timestamp": {
+        "value": null,
+        "quality": "unknown"
+      },
+      "players": {
+        "hero": {
+          "source_name": "Phil Ivey",
+          "position_at_decision": "BB",
+          "hand_start_stack": 14225000,
+          "hole_cards": [
+            "8d",
+            "6s"
+          ]
+        },
+        "opponents": [
+          {
+            "source_name": "Aleksejs Ponakovs",
+            "position": "BTN/SB",
+            "hand_start_stack": 22975000,
+            "hole_cards": [
+              "Ad",
+              "9s"
+            ]
+          }
+        ]
+      },
+      "blinds_and_antes": {
+        "small_blind": 200000,
+        "big_blind": 400000,
+        "big_blind_ante": 400000,
+        "ante_unit": "big blind ante",
+        "table_size": null
+      },
+      "board_by_street": {
+        "flop": [
+          "Jh",
+          "7s",
+          "3h"
+        ],
+        "turn": "9c",
+        "river": "8h"
+      },
+      "pre_action_context": [],
+      "actions": [
+        {
+          "street": "preflop",
+          "player": "Aleksejs Ponakovs",
+          "player_quality": "observed",
+          "action": "raise",
+          "amount": 800000,
+          "amount_semantics": "total street target; zero for check/fold",
+          "amount_quality": "observed",
+          "added": 600000,
+          "added_quality": "derived",
+          "note": "Added amount is target less Ponakovs's posted small blind."
+        },
+        {
+          "street": "preflop",
+          "player": "Phil Ivey",
+          "player_quality": "observed",
+          "action": "raise",
+          "amount": 2800000,
+          "amount_semantics": "total street target; zero for check/fold",
+          "amount_quality": "observed",
+          "added": 2400000,
+          "added_quality": "derived",
+          "note": "Added amount is target less Ivey's posted big blind."
+        },
+        {
+          "street": "preflop",
+          "player": "Aleksejs Ponakovs",
+          "player_quality": "observed",
+          "action": "call",
+          "amount": 2800000,
+          "amount_semantics": "total street target; zero for check/fold",
+          "amount_quality": "derived",
+          "added": 2000000,
+          "added_quality": "derived",
+          "note": "Call target matches Ivey's reported 2,800,000 raise."
+        },
+        {
+          "street": "flop",
+          "player": "Phil Ivey",
+          "player_quality": "observed",
+          "action": "check",
+          "amount": 0,
+          "amount_semantics": "total street target; zero for check/fold",
+          "amount_quality": "observed",
+          "added": 0,
+          "added_quality": "derived"
+        },
+        {
+          "street": "flop",
+          "player": "Aleksejs Ponakovs",
+          "player_quality": "observed",
+          "action": "check",
+          "amount": 0,
+          "amount_semantics": "total street target; zero for check/fold",
+          "amount_quality": "observed",
+          "added": 0,
+          "added_quality": "derived"
+        },
+        {
+          "street": "turn",
+          "player": "Phil Ivey",
+          "player_quality": "observed",
+          "action": "check",
+          "amount": 0,
+          "amount_semantics": "total street target; zero for check/fold",
+          "amount_quality": "observed",
+          "added": 0,
+          "added_quality": "derived"
+        },
+        {
+          "street": "turn",
+          "player": "Aleksejs Ponakovs",
+          "player_quality": "observed",
+          "action": "bet",
+          "amount": 3000000,
+          "amount_semantics": "total street target; zero for check/fold",
+          "amount_quality": "observed",
+          "added": 3000000,
+          "added_quality": "derived"
+        },
+        {
+          "street": "turn",
+          "player": "Phil Ivey",
+          "player_quality": "observed",
+          "action": "raise",
+          "amount": 11025000,
+          "amount_semantics": "total street target; zero for check/fold",
+          "amount_quality": "derived",
+          "added": 11025000,
+          "added_quality": "derived",
+          "note": "Sources round the shove to 11.03 million/about 11.0 million; exact target is Ivey's 14,225,000 start stack less 3,200,000 preflop including the BBA."
+        },
+        {
+          "street": "turn",
+          "player": "Aleksejs Ponakovs",
+          "player_quality": "observed",
+          "action": "call",
+          "amount": 11025000,
+          "amount_semantics": "total street target; zero for check/fold",
+          "amount_quality": "derived",
+          "added": 8025000,
+          "added_quality": "derived",
+          "note": "Call target matches Ivey's exact all-in; amount added is target less Ponakovs's turn bet."
+        }
+      ],
+      "sequence_coverage_note": "Heads-up action is reported through the turn all-in and call. The river is retained only in raw facts, not in any decision state.",
+      "fact_quality": {
+        "players.hero.source_name": "observed",
+        "players.hero.position_at_decision": "observed",
+        "players.hero.hand_start_stack": "observed",
+        "players.hero.hole_cards[0]": "observed",
+        "players.hero.hole_cards[1]": "observed",
+        "players.opponents[0].source_name": "observed",
+        "players.opponents[0].position": "observed",
+        "players.opponents[0].hand_start_stack": "observed",
+        "players.opponents[0].hole_cards[0]": "observed",
+        "players.opponents[0].hole_cards[1]": "observed",
+        "blinds_and_antes.small_blind": "observed",
+        "blinds_and_antes.big_blind": "observed",
+        "blinds_and_antes.big_blind_ante": "observed",
+        "blinds_and_antes.ante_unit": "observed",
+        "blinds_and_antes.table_size": "unknown",
+        "board_by_street.flop[0]": "observed",
+        "board_by_street.flop[1]": "observed",
+        "board_by_street.flop[2]": "observed",
+        "board_by_street.turn": "observed",
+        "board_by_street.river": "observed",
+        "event_date": "observed",
+        "exact_hand_timestamp": "unknown",
+        "game": "observed",
+        "event": "observed",
+        "pre_action_context": "observed"
+      }
+    },
+    {
+      "hand_id": "ivey_punsri_2024_triton_jeju_event8",
+      "session_id": "triton_jeju_2024_event8_2024-03-12",
+      "source_ids": [
+        "cardplayer_punsri_2851",
+        "pokernews_punsri_2024"
+      ],
+      "game": "No-Limit Texas Hold'em",
+      "event": "2024 Triton Jeju Event #8: $50,000 NLH 7-Handed",
+      "event_date": {
+        "value": "2024-03-12",
+        "quality": "observed",
+        "basis": "PokerNews report date."
+      },
+      "exact_hand_timestamp": {
+        "value": null,
+        "quality": "unknown"
+      },
+      "players": {
+        "hero": {
+          "source_name": "Phil Ivey",
+          "position_at_decision": "BB",
+          "hand_start_stack": 7200000,
+          "hole_cards": [
+            "Kh",
+            "Jc"
+          ]
+        },
+        "opponents": [
+          {
+            "source_name": "Punnat Punsri",
+            "position": "SB",
+            "hand_start_stack": 5700000,
+            "hole_cards": [
+              "Th",
+              "3h"
+            ]
+          }
+        ]
+      },
+      "blinds_and_antes": {
+        "small_blind": 100000,
+        "big_blind": 200000,
+        "big_blind_ante": 200000,
+        "ante_unit": "big blind ante",
+        "players_remaining": 7,
+        "table_size": null
+      },
+      "board_by_street": {
+        "flop": [
+          "Ad",
+          "Qh",
+          "Ts"
+        ],
+        "turn": "Jh",
+        "river": "9h"
+      },
+      "pre_action_context": [
+        {
+          "street": "preflop",
+          "summary": "The source reports that action folded to Punsri in the small blind; exact folded-player identities and count are not reported.",
+          "summary_quality": "observed",
+          "unreported_detail_quality": "unknown"
+        }
+      ],
+      "actions": [
+        {
+          "street": "preflop",
+          "player": "Punnat Punsri",
+          "player_quality": "observed",
+          "action": "raise",
+          "amount": 675000,
+          "amount_semantics": "total street target; zero for check/fold",
+          "amount_quality": "observed",
+          "added": 575000,
+          "added_quality": "derived",
+          "note": "Added amount is target less Punsri's posted small blind."
+        },
+        {
+          "street": "preflop",
+          "player": "Phil Ivey",
+          "player_quality": "observed",
+          "action": "call",
+          "amount": 675000,
+          "amount_semantics": "total street target; zero for check/fold",
+          "amount_quality": "observed",
+          "added": 475000,
+          "added_quality": "derived",
+          "note": "Added amount is target less Ivey's posted big blind."
+        },
+        {
+          "street": "flop",
+          "player": "Punnat Punsri",
+          "player_quality": "observed",
+          "action": "check",
+          "amount": 0,
+          "amount_semantics": "total street target; zero for check/fold",
+          "amount_quality": "observed",
+          "added": 0,
+          "added_quality": "derived"
+        },
+        {
+          "street": "flop",
+          "player": "Phil Ivey",
+          "player_quality": "observed",
+          "action": "bet",
+          "amount": 400000,
+          "amount_semantics": "total street target; zero for check/fold",
+          "amount_quality": "observed",
+          "added": 400000,
+          "added_quality": "derived"
+        },
+        {
+          "street": "flop",
+          "player": "Punnat Punsri",
+          "player_quality": "observed",
+          "action": "call",
+          "amount": 400000,
+          "amount_semantics": "total street target; zero for check/fold",
+          "amount_quality": "observed",
+          "added": 400000,
+          "added_quality": "derived"
+        },
+        {
+          "street": "turn",
+          "player": "Punnat Punsri",
+          "player_quality": "observed",
+          "action": "check",
+          "amount": 0,
+          "amount_semantics": "total street target; zero for check/fold",
+          "amount_quality": "observed",
+          "added": 0,
+          "added_quality": "derived"
+        },
+        {
+          "street": "turn",
+          "player": "Phil Ivey",
+          "player_quality": "observed",
+          "action": "check",
+          "amount": 0,
+          "amount_semantics": "total street target; zero for check/fold",
+          "amount_quality": "observed",
+          "added": 0,
+          "added_quality": "derived"
+        },
+        {
+          "street": "river",
+          "player": "Punnat Punsri",
+          "player_quality": "observed",
+          "action": "check",
+          "amount": 0,
+          "amount_semantics": "total street target; zero for check/fold",
+          "amount_quality": "observed",
+          "added": 0,
+          "added_quality": "derived"
+        },
+        {
+          "street": "river",
+          "player": "Phil Ivey",
+          "player_quality": "observed",
+          "action": "bet",
+          "amount": 800000,
+          "amount_semantics": "total street target; zero for check/fold",
+          "amount_quality": "observed",
+          "added": 800000,
+          "added_quality": "derived"
+        },
+        {
+          "street": "river",
+          "player": "Punnat Punsri",
+          "player_quality": "observed",
+          "action": "raise",
+          "amount": 3400000,
+          "amount_semantics": "total street target; zero for check/fold",
+          "amount_quality": "observed",
+          "added": 3400000,
+          "added_quality": "derived",
+          "note": "Check-raise to 3,400,000."
+        },
+        {
+          "street": "river",
+          "player": "Phil Ivey",
+          "player_quality": "observed",
+          "action": "call",
+          "amount": 3400000,
+          "amount_semantics": "total street target; zero for check/fold",
+          "amount_quality": "derived",
+          "added": 2600000,
+          "added_quality": "derived",
+          "note": "Target less Ivey's prior 800,000 river bet."
+        }
+      ],
+      "sequence_coverage_note": "Source says action folded to Punsri; precise folded-player count/identities are unreported. All reported action from Punsri's raise onward is included.",
+      "fact_quality": {
+        "players.hero.source_name": "observed",
+        "players.hero.position_at_decision": "observed",
+        "players.hero.hand_start_stack": "observed",
+        "players.hero.hole_cards[0]": "observed",
+        "players.hero.hole_cards[1]": "observed",
+        "players.opponents[0].source_name": "observed",
+        "players.opponents[0].position": "observed",
+        "players.opponents[0].hand_start_stack": "observed",
+        "players.opponents[0].hole_cards[0]": "observed",
+        "players.opponents[0].hole_cards[1]": "observed",
+        "blinds_and_antes.small_blind": "observed",
+        "blinds_and_antes.big_blind": "observed",
+        "blinds_and_antes.big_blind_ante": "observed",
+        "blinds_and_antes.ante_unit": "observed",
+        "blinds_and_antes.players_remaining": "observed",
+        "blinds_and_antes.table_size": "unknown",
+        "board_by_street.flop[0]": "observed",
+        "board_by_street.flop[1]": "observed",
+        "board_by_street.flop[2]": "observed",
+        "board_by_street.turn": "observed",
+        "board_by_street.river": "observed",
+        "event_date": "observed",
+        "exact_hand_timestamp": "unknown",
+        "game": "observed",
+        "event": "observed",
+        "pre_action_context": "observed"
+      }
+    }
+  ],
+  "snapshots": [
+    {
+      "snapshot_id": "ivey_heath_preflop_open",
+      "state": {
+        "hole_cards": [
+          "Kc",
+          "9c"
+        ],
+        "board": [],
+        "pot": 625000,
+        "to_call": 250000,
+        "stack": 8425000,
+        "current_bet": 0,
+        "min_raise_to": 500000,
+        "max_raise_to": 8425000,
+        "big_blind": 250000,
+        "position": "BTN",
+        "players_active": 3,
+        "players_to_act": 2,
+        "legal_actions": [
+          "fold",
+          "call",
+          "raise"
+        ],
+        "street": "preflop",
+        "player_id": "Phil Ivey",
+        "history": []
+      },
+      "expected": {
+        "action": "raise",
+        "quality": "observed",
+        "amount": 550000,
+        "amount_semantics": "total street target",
+        "amount_quality": "observed"
+      },
+      "source": [
+        "cardplayer_wsop_2022_issue_35_16",
+        "pokernews_wsop_2022_event_42"
+      ],
+      "hand_id": "ivey_heath_2022_wsop_event42",
+      "session_id": "wsop_2022_event42_day2_2022-06-20",
+      "field_quality": {
+        "hole_cards": {
+          "status": "observed",
+          "basis": "CardPlayer hand matchup/issue; cross-checked with PokerNews where listed. Opponent cards remain outside the state."
+        },
+        "board": {
+          "status": "observed",
+          "basis": "Only community cards dealt by this decision, as reported in the source."
+        },
+        "pot": {
+          "status": "derived",
+          "basis": "250,000 BBA + 125,000 SB + 250,000 BB."
+        },
+        "to_call": {
+          "status": "derived",
+          "basis": "Opponent's current total street target less Ivey's current street contribution, capped by Ivey's known remaining stack."
+        },
+        "stack": {
+          "status": "derived",
+          "basis": "Hand-start stack less Ivey's forced postings and prior contributions in the public action sequence."
+        },
+        "current_bet": {
+          "status": "derived",
+          "basis": "Ivey's total contribution on this street from forced posting and prior action."
+        },
+        "min_raise_to": {
+          "status": "derived",
+          "basis": "Last full raise increment and current bet; short all-in is represented at the maximum when no full raise fits."
+        },
+        "max_raise_to": {
+          "status": "derived",
+          "basis": "Current street contribution plus remaining stack; zero when the only opponent is all-in and no raise is available."
+        },
+        "big_blind": {
+          "status": "observed",
+          "basis": "Reported blind level."
+        },
+        "position": {
+          "status": "observed",
+          "basis": "Reported position for Phil Ivey."
+        },
+        "players_active": {
+          "status": "derived",
+          "basis": "Players still contesting this hand after reported folds; excludes unknown table size."
+        },
+        "players_to_act": {
+          "status": "derived",
+          "basis": "Action order at this decision. A checked player is not pending again until a new bet is made."
+        },
+        "legal_actions": {
+          "status": "derived",
+          "basis": "Current betting state; bets are encoded as raise-to actions in the local protocol."
+        },
+        "street": {
+          "status": "observed",
+          "basis": "Reported street and board sequence."
+        },
+        "player_id": {
+          "status": "observed",
+          "basis": "Phil Ivey identified as hero in the source."
+        },
+        "history": {
+          "status": "observed",
+          "basis": "All reported action from the first available action through the action immediately before Ivey; unreported earlier folds are disclosed in the raw hand context."
+        },
+        "expected.amount": {
+          "status": "observed",
+          "basis": "Reported raise target."
+        },
+        "expected.action": {
+          "status": "observed",
+          "basis": "Source-reported Ivey action; source bets map to protocol raise-to actions."
+        }
+      }
+    },
+    {
+      "snapshot_id": "ivey_heath_preflop_vs_3bet",
+      "state": {
+        "hole_cards": [
+          "Kc",
+          "9c"
+        ],
+        "board": [],
+        "pot": 2775000,
+        "to_call": 1300000,
+        "stack": 7875000,
+        "current_bet": 550000,
+        "min_raise_to": 3150000,
+        "max_raise_to": 8425000,
+        "big_blind": 250000,
+        "position": "BTN",
+        "players_active": 2,
+        "players_to_act": 0,
+        "legal_actions": [
+          "fold",
+          "call",
+          "raise"
+        ],
+        "street": "preflop",
+        "player_id": "Phil Ivey",
+        "history": [
+          {
+            "street": "preflop",
+            "player": "Phil Ivey",
+            "action": "raise",
+            "amount": 550000,
+            "added": 550000
+          },
+          {
+            "street": "preflop",
+            "player": "Unidentified small blind",
+            "action": "fold",
+            "amount": 0,
+            "added": 0
+          },
+          {
+            "street": "preflop",
+            "player": "Ben Heath",
+            "action": "raise",
+            "amount": 1850000,
+            "added": 1350000
+          }
+        ]
+      },
+      "expected": {
+        "action": "call",
+        "quality": "observed"
+      },
+      "source": [
+        "cardplayer_wsop_2022_issue_35_16",
+        "pokernews_wsop_2022_event_42"
+      ],
+      "hand_id": "ivey_heath_2022_wsop_event42",
+      "session_id": "wsop_2022_event42_day2_2022-06-20",
+      "field_quality": {
+        "hole_cards": {
+          "status": "observed",
+          "basis": "CardPlayer hand matchup/issue; cross-checked with PokerNews where listed. Opponent cards remain outside the state."
+        },
+        "board": {
+          "status": "observed",
+          "basis": "Only community cards dealt by this decision, as reported in the source."
+        },
+        "pot": {
+          "status": "derived",
+          "basis": "250,000 BBA + posted blinds + 550,000 Ivey raise + Heath's 1,350,000 addition."
+        },
+        "to_call": {
+          "status": "derived",
+          "basis": "Opponent's current total street target less Ivey's current street contribution, capped by Ivey's known remaining stack."
+        },
+        "stack": {
+          "status": "derived",
+          "basis": "Hand-start stack less Ivey's forced postings and prior contributions in the public action sequence."
+        },
+        "current_bet": {
+          "status": "derived",
+          "basis": "Ivey's total contribution on this street from forced posting and prior action."
+        },
+        "min_raise_to": {
+          "status": "derived",
+          "basis": "Last full raise increment and current bet; short all-in is represented at the maximum when no full raise fits."
+        },
+        "max_raise_to": {
+          "status": "derived",
+          "basis": "Current street contribution plus remaining stack; zero when the only opponent is all-in and no raise is available."
+        },
+        "big_blind": {
+          "status": "observed",
+          "basis": "Reported blind level."
+        },
+        "position": {
+          "status": "observed",
+          "basis": "Reported position for Phil Ivey."
+        },
+        "players_active": {
+          "status": "derived",
+          "basis": "Players still contesting this hand after reported folds; excludes unknown table size."
+        },
+        "players_to_act": {
+          "status": "derived",
+          "basis": "Action order at this decision. A checked player is not pending again until a new bet is made."
+        },
+        "legal_actions": {
+          "status": "derived",
+          "basis": "Current betting state; bets are encoded as raise-to actions in the local protocol."
+        },
+        "street": {
+          "status": "observed",
+          "basis": "Reported street and board sequence."
+        },
+        "player_id": {
+          "status": "observed",
+          "basis": "Phil Ivey identified as hero in the source."
+        },
+        "history": {
+          "status": "observed",
+          "basis": "All reported action from the first available action through the action immediately before Ivey; unreported earlier folds are disclosed in the raw hand context."
+        },
+        "expected.action": {
+          "status": "observed",
+          "basis": "Source-reported Ivey action; source bets map to protocol raise-to actions."
+        }
+      }
+    },
+    {
+      "snapshot_id": "ivey_heath_flop_shove",
+      "state": {
+        "hole_cards": [
+          "Kc",
+          "9c"
+        ],
+        "board": [
+          "Tc",
+          "6s",
+          "2c"
+        ],
+        "pot": 5325000,
+        "to_call": 1250000,
+        "stack": 6575000,
+        "current_bet": 0,
+        "min_raise_to": 2500000,
+        "max_raise_to": 6575000,
+        "big_blind": 250000,
+        "position": "BTN",
+        "players_active": 2,
+        "players_to_act": 0,
+        "legal_actions": [
+          "fold",
+          "call",
+          "raise"
+        ],
+        "street": "flop",
+        "player_id": "Phil Ivey",
+        "history": [
+          {
+            "street": "preflop",
+            "player": "Phil Ivey",
+            "action": "raise",
+            "amount": 550000,
+            "added": 550000
+          },
+          {
+            "street": "preflop",
+            "player": "Unidentified small blind",
+            "action": "fold",
+            "amount": 0,
+            "added": 0
+          },
+          {
+            "street": "preflop",
+            "player": "Ben Heath",
+            "action": "raise",
+            "amount": 1850000,
+            "added": 1350000
+          },
+          {
+            "street": "preflop",
+            "player": "Phil Ivey",
+            "action": "call",
+            "amount": 1850000,
+            "added": 1300000
+          },
+          {
+            "street": "flop",
+            "player": "Ben Heath",
+            "action": "raise",
+            "amount": 1250000,
+            "added": 1250000
+          }
+        ]
+      },
+      "expected": {
+        "action": "raise",
+        "quality": "observed",
+        "amount": 6575000,
+        "amount_semantics": "total street target",
+        "amount_quality": "derived"
+      },
+      "source": [
+        "cardplayer_wsop_2022_issue_35_16",
+        "pokernews_wsop_2022_event_42"
+      ],
+      "hand_id": "ivey_heath_2022_wsop_event42",
+      "session_id": "wsop_2022_event42_day2_2022-06-20",
+      "field_quality": {
+        "hole_cards": {
+          "status": "observed",
+          "basis": "CardPlayer hand matchup/issue; cross-checked with PokerNews where listed. Opponent cards remain outside the state."
+        },
+        "board": {
+          "status": "observed",
+          "basis": "Only community cards dealt by this decision, as reported in the source."
+        },
+        "pot": {
+          "status": "derived",
+          "basis": "4,075,000 preflop pot + Heath's 1,250,000 flop bet."
+        },
+        "to_call": {
+          "status": "derived",
+          "basis": "Opponent's current total street target less Ivey's current street contribution, capped by Ivey's known remaining stack."
+        },
+        "stack": {
+          "status": "derived",
+          "basis": "Hand-start stack less Ivey's forced postings and prior contributions in the public action sequence."
+        },
+        "current_bet": {
+          "status": "derived",
+          "basis": "Ivey's total contribution on this street from forced posting and prior action."
+        },
+        "min_raise_to": {
+          "status": "derived",
+          "basis": "Last full raise increment and current bet; short all-in is represented at the maximum when no full raise fits."
+        },
+        "max_raise_to": {
+          "status": "derived",
+          "basis": "Current street contribution plus remaining stack; zero when the only opponent is all-in and no raise is available."
+        },
+        "big_blind": {
+          "status": "observed",
+          "basis": "Reported blind level."
+        },
+        "position": {
+          "status": "observed",
+          "basis": "Reported position for Phil Ivey."
+        },
+        "players_active": {
+          "status": "derived",
+          "basis": "Players still contesting this hand after reported folds; excludes unknown table size."
+        },
+        "players_to_act": {
+          "status": "derived",
+          "basis": "Action order at this decision. A checked player is not pending again until a new bet is made."
+        },
+        "legal_actions": {
+          "status": "derived",
+          "basis": "Current betting state; bets are encoded as raise-to actions in the local protocol."
+        },
+        "street": {
+          "status": "observed",
+          "basis": "Reported street and board sequence."
+        },
+        "player_id": {
+          "status": "observed",
+          "basis": "Phil Ivey identified as hero in the source."
+        },
+        "history": {
+          "status": "observed",
+          "basis": "All reported action from the first available action through the action immediately before Ivey; unreported earlier folds are disclosed in the raw hand context."
+        },
+        "expected.amount": {
+          "status": "derived",
+          "basis": "CardPlayer rounds the shove to 6.58 million; exact target is Ivey's 8,425,000 start stack less 1,850,000 preflop contribution."
+        },
+        "expected.action": {
+          "status": "observed",
+          "basis": "Source-reported Ivey action; source bets map to protocol raise-to actions."
+        }
+      }
+    },
+    {
+      "snapshot_id": "ivey_ponakovs_bluffcatch_preflop",
+      "state": {
+        "hole_cards": [
+          "Qc",
+          "9d"
+        ],
+        "board": [],
+        "pot": 750000,
+        "to_call": 150000,
+        "stack": 18725000,
+        "current_bet": 150000,
+        "min_raise_to": 600000,
+        "max_raise_to": 18875000,
+        "big_blind": 300000,
+        "position": "BTN",
+        "players_active": 2,
+        "players_to_act": 1,
+        "legal_actions": [
+          "fold",
+          "call",
+          "raise"
+        ],
+        "street": "preflop",
+        "player_id": "Phil Ivey",
+        "history": []
+      },
+      "expected": {
+        "action": "raise",
+        "quality": "observed",
+        "amount": 700000,
+        "amount_semantics": "total street target",
+        "amount_quality": "observed"
+      },
+      "source": [
+        "cardplayer_wsop_2022_issue_35_16",
+        "pokernews_wsop_2022_event_42"
+      ],
+      "hand_id": "ivey_ponakovs_2022_wsop_event42_bluffcatch",
+      "session_id": "wsop_2022_event42_day2_2022-06-20",
+      "field_quality": {
+        "hole_cards": {
+          "status": "observed",
+          "basis": "CardPlayer hand matchup/issue; cross-checked with PokerNews where listed. Opponent cards remain outside the state."
+        },
+        "board": {
+          "status": "observed",
+          "basis": "Only community cards dealt by this decision, as reported in the source."
+        },
+        "pot": {
+          "status": "derived",
+          "basis": "300,000 BBA + 150,000 SB + 300,000 BB."
+        },
+        "to_call": {
+          "status": "derived",
+          "basis": "Opponent's current total street target less Ivey's current street contribution, capped by Ivey's known remaining stack."
+        },
+        "stack": {
+          "status": "derived",
+          "basis": "Hand-start stack less Ivey's forced postings and prior contributions in the public action sequence."
+        },
+        "current_bet": {
+          "status": "derived",
+          "basis": "Ivey's total contribution on this street from forced posting and prior action."
+        },
+        "min_raise_to": {
+          "status": "derived",
+          "basis": "Last full raise increment and current bet; short all-in is represented at the maximum when no full raise fits."
+        },
+        "max_raise_to": {
+          "status": "derived",
+          "basis": "Current street contribution plus remaining stack; zero when the only opponent is all-in and no raise is available."
+        },
+        "big_blind": {
+          "status": "observed",
+          "basis": "Reported blind level."
+        },
+        "position": {
+          "status": "observed",
+          "basis": "Reported position for Phil Ivey."
+        },
+        "players_active": {
+          "status": "derived",
+          "basis": "Players still contesting this hand after reported folds; excludes unknown table size."
+        },
+        "players_to_act": {
+          "status": "derived",
+          "basis": "Action order at this decision. A checked player is not pending again until a new bet is made."
+        },
+        "legal_actions": {
+          "status": "derived",
+          "basis": "Current betting state; bets are encoded as raise-to actions in the local protocol."
+        },
+        "street": {
+          "status": "observed",
+          "basis": "Reported street and board sequence."
+        },
+        "player_id": {
+          "status": "observed",
+          "basis": "Phil Ivey identified as hero in the source."
+        },
+        "history": {
+          "status": "observed",
+          "basis": "All reported action from the first available action through the action immediately before Ivey; unreported earlier folds are disclosed in the raw hand context."
+        },
+        "expected.amount": {
+          "status": "observed",
+          "basis": "Added amount is target less Ivey's posted small blind."
+        },
+        "expected.action": {
+          "status": "observed",
+          "basis": "Source-reported Ivey action; source bets map to protocol raise-to actions."
+        }
+      }
+    },
+    {
+      "snapshot_id": "ivey_ponakovs_bluffcatch_flop_bet",
+      "state": {
+        "hole_cards": [
+          "Qc",
+          "9d"
+        ],
+        "board": [
+          "9h",
+          "6c",
+          "2h"
+        ],
+        "pot": 1700000,
+        "to_call": 0,
+        "stack": 18175000,
+        "current_bet": 0,
+        "min_raise_to": 300000,
+        "max_raise_to": 18175000,
+        "big_blind": 300000,
+        "position": "BTN",
+        "players_active": 2,
+        "players_to_act": 0,
+        "legal_actions": [
+          "check",
+          "raise"
+        ],
+        "street": "flop",
+        "player_id": "Phil Ivey",
+        "history": [
+          {
+            "street": "preflop",
+            "player": "Phil Ivey",
+            "action": "raise",
+            "amount": 700000,
+            "added": 550000
+          },
+          {
+            "street": "preflop",
+            "player": "Aleksejs Ponakovs",
+            "action": "call",
+            "amount": 700000,
+            "added": 400000
+          },
+          {
+            "street": "flop",
+            "player": "Aleksejs Ponakovs",
+            "action": "check",
+            "amount": 0,
+            "added": 0
+          }
+        ]
+      },
+      "expected": {
+        "action": "raise",
+        "quality": "derived",
+        "source_action": "bet",
+        "amount": 500000,
+        "amount_semantics": "total street target",
+        "amount_quality": "observed"
+      },
+      "source": [
+        "cardplayer_wsop_2022_issue_35_16",
+        "pokernews_wsop_2022_event_42"
+      ],
+      "hand_id": "ivey_ponakovs_2022_wsop_event42_bluffcatch",
+      "session_id": "wsop_2022_event42_day2_2022-06-20",
+      "field_quality": {
+        "hole_cards": {
+          "status": "observed",
+          "basis": "CardPlayer hand matchup/issue; cross-checked with PokerNews where listed. Opponent cards remain outside the state."
+        },
+        "board": {
+          "status": "observed",
+          "basis": "Only community cards dealt by this decision, as reported in the source."
+        },
+        "pot": {
+          "status": "derived",
+          "basis": "750,000 forced chips + 550,000 Ivey addition + 400,000 Ponakovs call."
+        },
+        "to_call": {
+          "status": "derived",
+          "basis": "Opponent's current total street target less Ivey's current street contribution, capped by Ivey's known remaining stack."
+        },
+        "stack": {
+          "status": "derived",
+          "basis": "Hand-start stack less Ivey's forced postings and prior contributions in the public action sequence."
+        },
+        "current_bet": {
+          "status": "derived",
+          "basis": "Ivey's total contribution on this street from forced posting and prior action."
+        },
+        "min_raise_to": {
+          "status": "derived",
+          "basis": "Last full raise increment and current bet; short all-in is represented at the maximum when no full raise fits."
+        },
+        "max_raise_to": {
+          "status": "derived",
+          "basis": "Current street contribution plus remaining stack; zero when the only opponent is all-in and no raise is available."
+        },
+        "big_blind": {
+          "status": "observed",
+          "basis": "Reported blind level."
+        },
+        "position": {
+          "status": "observed",
+          "basis": "Reported position for Phil Ivey."
+        },
+        "players_active": {
+          "status": "derived",
+          "basis": "Players still contesting this hand after reported folds; excludes unknown table size."
+        },
+        "players_to_act": {
+          "status": "derived",
+          "basis": "Action order at this decision. A checked player is not pending again until a new bet is made."
+        },
+        "legal_actions": {
+          "status": "derived",
+          "basis": "Current betting state; bets are encoded as raise-to actions in the local protocol."
+        },
+        "street": {
+          "status": "observed",
+          "basis": "Reported street and board sequence."
+        },
+        "player_id": {
+          "status": "observed",
+          "basis": "Phil Ivey identified as hero in the source."
+        },
+        "history": {
+          "status": "observed",
+          "basis": "All reported action from the first available action through the action immediately before Ivey; unreported earlier folds are disclosed in the raw hand context."
+        },
+        "expected.amount": {
+          "status": "observed",
+          "basis": "Reported raise target."
+        },
+        "expected.action": {
+          "status": "derived",
+          "basis": "Source-reported Ivey action; source bets map to protocol raise-to actions."
+        }
+      }
+    },
+    {
+      "snapshot_id": "ivey_ponakovs_bluffcatch_flop_vs_raise",
+      "state": {
+        "hole_cards": [
+          "Qc",
+          "9d"
+        ],
+        "board": [
+          "9h",
+          "6c",
+          "2h"
+        ],
+        "pot": 3800000,
+        "to_call": 1100000,
+        "stack": 17675000,
+        "current_bet": 500000,
+        "min_raise_to": 2700000,
+        "max_raise_to": 18175000,
+        "big_blind": 300000,
+        "position": "BTN",
+        "players_active": 2,
+        "players_to_act": 0,
+        "legal_actions": [
+          "fold",
+          "call",
+          "raise"
+        ],
+        "street": "flop",
+        "player_id": "Phil Ivey",
+        "history": [
+          {
+            "street": "preflop",
+            "player": "Phil Ivey",
+            "action": "raise",
+            "amount": 700000,
+            "added": 550000
+          },
+          {
+            "street": "preflop",
+            "player": "Aleksejs Ponakovs",
+            "action": "call",
+            "amount": 700000,
+            "added": 400000
+          },
+          {
+            "street": "flop",
+            "player": "Aleksejs Ponakovs",
+            "action": "check",
+            "amount": 0,
+            "added": 0
+          },
+          {
+            "street": "flop",
+            "player": "Phil Ivey",
+            "action": "raise",
+            "amount": 500000,
+            "added": 500000
+          },
+          {
+            "street": "flop",
+            "player": "Aleksejs Ponakovs",
+            "action": "raise",
+            "amount": 1600000,
+            "added": 1600000
+          }
+        ]
+      },
+      "expected": {
+        "action": "call",
+        "quality": "observed"
+      },
+      "source": [
+        "cardplayer_wsop_2022_issue_35_16",
+        "pokernews_wsop_2022_event_42"
+      ],
+      "hand_id": "ivey_ponakovs_2022_wsop_event42_bluffcatch",
+      "session_id": "wsop_2022_event42_day2_2022-06-20",
+      "field_quality": {
+        "hole_cards": {
+          "status": "observed",
+          "basis": "CardPlayer hand matchup/issue; cross-checked with PokerNews where listed. Opponent cards remain outside the state."
+        },
+        "board": {
+          "status": "observed",
+          "basis": "Only community cards dealt by this decision, as reported in the source."
+        },
+        "pot": {
+          "status": "derived",
+          "basis": "1,700,000 flop pot + Ivey's 500,000 bet + Ponakovs's 1,600,000 check-raise."
+        },
+        "to_call": {
+          "status": "derived",
+          "basis": "Opponent's current total street target less Ivey's current street contribution, capped by Ivey's known remaining stack."
+        },
+        "stack": {
+          "status": "derived",
+          "basis": "Hand-start stack less Ivey's forced postings and prior contributions in the public action sequence."
+        },
+        "current_bet": {
+          "status": "derived",
+          "basis": "Ivey's total contribution on this street from forced posting and prior action."
+        },
+        "min_raise_to": {
+          "status": "derived",
+          "basis": "Last full raise increment and current bet; short all-in is represented at the maximum when no full raise fits."
+        },
+        "max_raise_to": {
+          "status": "derived",
+          "basis": "Current street contribution plus remaining stack; zero when the only opponent is all-in and no raise is available."
+        },
+        "big_blind": {
+          "status": "observed",
+          "basis": "Reported blind level."
+        },
+        "position": {
+          "status": "observed",
+          "basis": "Reported position for Phil Ivey."
+        },
+        "players_active": {
+          "status": "derived",
+          "basis": "Players still contesting this hand after reported folds; excludes unknown table size."
+        },
+        "players_to_act": {
+          "status": "derived",
+          "basis": "Action order at this decision. A checked player is not pending again until a new bet is made."
+        },
+        "legal_actions": {
+          "status": "derived",
+          "basis": "Current betting state; bets are encoded as raise-to actions in the local protocol."
+        },
+        "street": {
+          "status": "observed",
+          "basis": "Reported street and board sequence."
+        },
+        "player_id": {
+          "status": "observed",
+          "basis": "Phil Ivey identified as hero in the source."
+        },
+        "history": {
+          "status": "observed",
+          "basis": "All reported action from the first available action through the action immediately before Ivey; unreported earlier folds are disclosed in the raw hand context."
+        },
+        "expected.action": {
+          "status": "observed",
+          "basis": "Source-reported Ivey action; source bets map to protocol raise-to actions."
+        }
+      }
+    },
+    {
+      "snapshot_id": "ivey_ponakovs_bluffcatch_turn_check",
+      "state": {
+        "hole_cards": [
+          "Qc",
+          "9d"
+        ],
+        "board": [
+          "9h",
+          "6c",
+          "2h",
+          "7h"
+        ],
+        "pot": 4900000,
+        "to_call": 0,
+        "stack": 16575000,
+        "current_bet": 0,
+        "min_raise_to": 300000,
+        "max_raise_to": 16575000,
+        "big_blind": 300000,
+        "position": "BTN",
+        "players_active": 2,
+        "players_to_act": 0,
+        "legal_actions": [
+          "check",
+          "raise"
+        ],
+        "street": "turn",
+        "player_id": "Phil Ivey",
+        "history": [
+          {
+            "street": "preflop",
+            "player": "Phil Ivey",
+            "action": "raise",
+            "amount": 700000,
+            "added": 550000
+          },
+          {
+            "street": "preflop",
+            "player": "Aleksejs Ponakovs",
+            "action": "call",
+            "amount": 700000,
+            "added": 400000
+          },
+          {
+            "street": "flop",
+            "player": "Aleksejs Ponakovs",
+            "action": "check",
+            "amount": 0,
+            "added": 0
+          },
+          {
+            "street": "flop",
+            "player": "Phil Ivey",
+            "action": "raise",
+            "amount": 500000,
+            "added": 500000
+          },
+          {
+            "street": "flop",
+            "player": "Aleksejs Ponakovs",
+            "action": "raise",
+            "amount": 1600000,
+            "added": 1600000
+          },
+          {
+            "street": "flop",
+            "player": "Phil Ivey",
+            "action": "call",
+            "amount": 1600000,
+            "added": 1100000
+          },
+          {
+            "street": "turn",
+            "player": "Aleksejs Ponakovs",
+            "action": "check",
+            "amount": 0,
+            "added": 0
+          }
+        ]
+      },
+      "expected": {
+        "action": "check",
+        "quality": "observed"
+      },
+      "source": [
+        "cardplayer_wsop_2022_issue_35_16",
+        "pokernews_wsop_2022_event_42"
+      ],
+      "hand_id": "ivey_ponakovs_2022_wsop_event42_bluffcatch",
+      "session_id": "wsop_2022_event42_day2_2022-06-20",
+      "field_quality": {
+        "hole_cards": {
+          "status": "observed",
+          "basis": "CardPlayer hand matchup/issue; cross-checked with PokerNews where listed. Opponent cards remain outside the state."
+        },
+        "board": {
+          "status": "observed",
+          "basis": "Only community cards dealt by this decision, as reported in the source."
+        },
+        "pot": {
+          "status": "derived",
+          "basis": "4,900,000 pot after preflop and flop contributions."
+        },
+        "to_call": {
+          "status": "derived",
+          "basis": "Opponent's current total street target less Ivey's current street contribution, capped by Ivey's known remaining stack."
+        },
+        "stack": {
+          "status": "derived",
+          "basis": "Hand-start stack less Ivey's forced postings and prior contributions in the public action sequence."
+        },
+        "current_bet": {
+          "status": "derived",
+          "basis": "Ivey's total contribution on this street from forced posting and prior action."
+        },
+        "min_raise_to": {
+          "status": "derived",
+          "basis": "Last full raise increment and current bet; short all-in is represented at the maximum when no full raise fits."
+        },
+        "max_raise_to": {
+          "status": "derived",
+          "basis": "Current street contribution plus remaining stack; zero when the only opponent is all-in and no raise is available."
+        },
+        "big_blind": {
+          "status": "observed",
+          "basis": "Reported blind level."
+        },
+        "position": {
+          "status": "observed",
+          "basis": "Reported position for Phil Ivey."
+        },
+        "players_active": {
+          "status": "derived",
+          "basis": "Players still contesting this hand after reported folds; excludes unknown table size."
+        },
+        "players_to_act": {
+          "status": "derived",
+          "basis": "Action order at this decision. A checked player is not pending again until a new bet is made."
+        },
+        "legal_actions": {
+          "status": "derived",
+          "basis": "Current betting state; bets are encoded as raise-to actions in the local protocol."
+        },
+        "street": {
+          "status": "observed",
+          "basis": "Reported street and board sequence."
+        },
+        "player_id": {
+          "status": "observed",
+          "basis": "Phil Ivey identified as hero in the source."
+        },
+        "history": {
+          "status": "observed",
+          "basis": "All reported action from the first available action through the action immediately before Ivey; unreported earlier folds are disclosed in the raw hand context."
+        },
+        "expected.action": {
+          "status": "observed",
+          "basis": "Source-reported Ivey action; source bets map to protocol raise-to actions."
+        }
+      }
+    },
+    {
+      "snapshot_id": "ivey_ponakovs_bluffcatch_river_call",
+      "state": {
+        "hole_cards": [
+          "Qc",
+          "9d"
+        ],
+        "board": [
+          "9h",
+          "6c",
+          "2h",
+          "7h",
+          "2s"
+        ],
+        "pot": 7650000,
+        "to_call": 2750000,
+        "stack": 16575000,
+        "current_bet": 0,
+        "min_raise_to": 5500000,
+        "max_raise_to": 16575000,
+        "big_blind": 300000,
+        "position": "BTN",
+        "players_active": 2,
+        "players_to_act": 0,
+        "legal_actions": [
+          "fold",
+          "call",
+          "raise"
+        ],
+        "street": "river",
+        "player_id": "Phil Ivey",
+        "history": [
+          {
+            "street": "preflop",
+            "player": "Phil Ivey",
+            "action": "raise",
+            "amount": 700000,
+            "added": 550000
+          },
+          {
+            "street": "preflop",
+            "player": "Aleksejs Ponakovs",
+            "action": "call",
+            "amount": 700000,
+            "added": 400000
+          },
+          {
+            "street": "flop",
+            "player": "Aleksejs Ponakovs",
+            "action": "check",
+            "amount": 0,
+            "added": 0
+          },
+          {
+            "street": "flop",
+            "player": "Phil Ivey",
+            "action": "raise",
+            "amount": 500000,
+            "added": 500000
+          },
+          {
+            "street": "flop",
+            "player": "Aleksejs Ponakovs",
+            "action": "raise",
+            "amount": 1600000,
+            "added": 1600000
+          },
+          {
+            "street": "flop",
+            "player": "Phil Ivey",
+            "action": "call",
+            "amount": 1600000,
+            "added": 1100000
+          },
+          {
+            "street": "turn",
+            "player": "Aleksejs Ponakovs",
+            "action": "check",
+            "amount": 0,
+            "added": 0
+          },
+          {
+            "street": "turn",
+            "player": "Phil Ivey",
+            "action": "check",
+            "amount": 0,
+            "added": 0
+          },
+          {
+            "street": "river",
+            "player": "Aleksejs Ponakovs",
+            "action": "raise",
+            "amount": 2750000,
+            "added": 2750000
+          }
+        ]
+      },
+      "expected": {
+        "action": "call",
+        "quality": "observed"
+      },
+      "source": [
+        "cardplayer_wsop_2022_issue_35_16",
+        "pokernews_wsop_2022_event_42"
+      ],
+      "hand_id": "ivey_ponakovs_2022_wsop_event42_bluffcatch",
+      "session_id": "wsop_2022_event42_day2_2022-06-20",
+      "field_quality": {
+        "hole_cards": {
+          "status": "observed",
+          "basis": "CardPlayer hand matchup/issue; cross-checked with PokerNews where listed. Opponent cards remain outside the state."
+        },
+        "board": {
+          "status": "observed",
+          "basis": "Only community cards dealt by this decision, as reported in the source."
+        },
+        "pot": {
+          "status": "derived",
+          "basis": "4,900,000 pot + Ponakovs's 2,750,000 river bet."
+        },
+        "to_call": {
+          "status": "derived",
+          "basis": "Opponent's current total street target less Ivey's current street contribution, capped by Ivey's known remaining stack."
+        },
+        "stack": {
+          "status": "derived",
+          "basis": "Hand-start stack less Ivey's forced postings and prior contributions in the public action sequence."
+        },
+        "current_bet": {
+          "status": "derived",
+          "basis": "Ivey's total contribution on this street from forced posting and prior action."
+        },
+        "min_raise_to": {
+          "status": "derived",
+          "basis": "Last full raise increment and current bet; short all-in is represented at the maximum when no full raise fits."
+        },
+        "max_raise_to": {
+          "status": "derived",
+          "basis": "Current street contribution plus remaining stack; zero when the only opponent is all-in and no raise is available."
+        },
+        "big_blind": {
+          "status": "observed",
+          "basis": "Reported blind level."
+        },
+        "position": {
+          "status": "observed",
+          "basis": "Reported position for Phil Ivey."
+        },
+        "players_active": {
+          "status": "derived",
+          "basis": "Players still contesting this hand after reported folds; excludes unknown table size."
+        },
+        "players_to_act": {
+          "status": "derived",
+          "basis": "Action order at this decision. A checked player is not pending again until a new bet is made."
+        },
+        "legal_actions": {
+          "status": "derived",
+          "basis": "Current betting state; bets are encoded as raise-to actions in the local protocol."
+        },
+        "street": {
+          "status": "observed",
+          "basis": "Reported street and board sequence."
+        },
+        "player_id": {
+          "status": "observed",
+          "basis": "Phil Ivey identified as hero in the source."
+        },
+        "history": {
+          "status": "observed",
+          "basis": "All reported action from the first available action through the action immediately before Ivey; unreported earlier folds are disclosed in the raw hand context."
+        },
+        "expected.action": {
+          "status": "observed",
+          "basis": "Source-reported Ivey action; source bets map to protocol raise-to actions."
+        }
+      }
+    },
+    {
+      "snapshot_id": "ivey_ponakovs_t9s_preflop_call",
+      "state": {
+        "hole_cards": [
+          "Ts",
+          "9s"
+        ],
+        "board": [],
+        "pot": 1300000,
+        "to_call": 400000,
+        "stack": 23625000,
+        "current_bet": 300000,
+        "min_raise_to": 1100000,
+        "max_raise_to": 23925000,
+        "big_blind": 300000,
+        "position": "BB",
+        "players_active": 2,
+        "players_to_act": 0,
+        "legal_actions": [
+          "fold",
+          "call",
+          "raise"
+        ],
+        "street": "preflop",
+        "player_id": "Phil Ivey",
+        "history": [
+          {
+            "street": "preflop",
+            "player": "Aleksejs Ponakovs",
+            "action": "raise",
+            "amount": 700000,
+            "added": 550000
+          }
+        ]
+      },
+      "expected": {
+        "action": "call",
+        "quality": "observed"
+      },
+      "source": [
+        "cardplayer_wsop_2022_issue_35_16",
+        "pokernews_wsop_2022_event_42"
+      ],
+      "hand_id": "ivey_ponakovs_2022_wsop_event42_t9s_fold",
+      "session_id": "wsop_2022_event42_day2_2022-06-20",
+      "field_quality": {
+        "hole_cards": {
+          "status": "observed",
+          "basis": "CardPlayer hand matchup/issue; cross-checked with PokerNews where listed. Opponent cards remain outside the state."
+        },
+        "board": {
+          "status": "observed",
+          "basis": "Only community cards dealt by this decision, as reported in the source."
+        },
+        "pot": {
+          "status": "derived",
+          "basis": "750,000 forced chips + Ponakovs's 550,000 raise addition."
+        },
+        "to_call": {
+          "status": "derived",
+          "basis": "Opponent's current total street target less Ivey's current street contribution, capped by Ivey's known remaining stack."
+        },
+        "stack": {
+          "status": "derived",
+          "basis": "Hand-start stack less Ivey's forced postings and prior contributions in the public action sequence."
+        },
+        "current_bet": {
+          "status": "derived",
+          "basis": "Ivey's total contribution on this street from forced posting and prior action."
+        },
+        "min_raise_to": {
+          "status": "derived",
+          "basis": "Last full raise increment and current bet; short all-in is represented at the maximum when no full raise fits."
+        },
+        "max_raise_to": {
+          "status": "derived",
+          "basis": "Current street contribution plus remaining stack; zero when the only opponent is all-in and no raise is available."
+        },
+        "big_blind": {
+          "status": "observed",
+          "basis": "Reported blind level."
+        },
+        "position": {
+          "status": "observed",
+          "basis": "Reported position for Phil Ivey."
+        },
+        "players_active": {
+          "status": "derived",
+          "basis": "Players still contesting this hand after reported folds; excludes unknown table size."
+        },
+        "players_to_act": {
+          "status": "derived",
+          "basis": "Action order at this decision. A checked player is not pending again until a new bet is made."
+        },
+        "legal_actions": {
+          "status": "derived",
+          "basis": "Current betting state; bets are encoded as raise-to actions in the local protocol."
+        },
+        "street": {
+          "status": "observed",
+          "basis": "Reported street and board sequence."
+        },
+        "player_id": {
+          "status": "observed",
+          "basis": "Phil Ivey identified as hero in the source."
+        },
+        "history": {
+          "status": "observed",
+          "basis": "All reported action from the first available action through the action immediately before Ivey; unreported earlier folds are disclosed in the raw hand context."
+        },
+        "expected.action": {
+          "status": "observed",
+          "basis": "Source-reported Ivey action; source bets map to protocol raise-to actions."
+        }
+      }
+    },
+    {
+      "snapshot_id": "ivey_ponakovs_t9s_flop_check",
+      "state": {
+        "hole_cards": [
+          "Ts",
+          "9s"
+        ],
+        "board": [
+          "Kh",
+          "Jh",
+          "7c"
+        ],
+        "pot": 1700000,
+        "to_call": 0,
+        "stack": 23225000,
+        "current_bet": 0,
+        "min_raise_to": 300000,
+        "max_raise_to": 23225000,
+        "big_blind": 300000,
+        "position": "BB",
+        "players_active": 2,
+        "players_to_act": 1,
+        "legal_actions": [
+          "check",
+          "raise"
+        ],
+        "street": "flop",
+        "player_id": "Phil Ivey",
+        "history": [
+          {
+            "street": "preflop",
+            "player": "Aleksejs Ponakovs",
+            "action": "raise",
+            "amount": 700000,
+            "added": 550000
+          },
+          {
+            "street": "preflop",
+            "player": "Phil Ivey",
+            "action": "call",
+            "amount": 700000,
+            "added": 400000
+          }
+        ]
+      },
+      "expected": {
+        "action": "check",
+        "quality": "observed"
+      },
+      "source": [
+        "cardplayer_wsop_2022_issue_35_16",
+        "pokernews_wsop_2022_event_42"
+      ],
+      "hand_id": "ivey_ponakovs_2022_wsop_event42_t9s_fold",
+      "session_id": "wsop_2022_event42_day2_2022-06-20",
+      "field_quality": {
+        "hole_cards": {
+          "status": "observed",
+          "basis": "CardPlayer hand matchup/issue; cross-checked with PokerNews where listed. Opponent cards remain outside the state."
+        },
+        "board": {
+          "status": "observed",
+          "basis": "Only community cards dealt by this decision, as reported in the source."
+        },
+        "pot": {
+          "status": "derived",
+          "basis": "1,000,000 forced chips + 700,000 contributed by each player."
+        },
+        "to_call": {
+          "status": "derived",
+          "basis": "Opponent's current total street target less Ivey's current street contribution, capped by Ivey's known remaining stack."
+        },
+        "stack": {
+          "status": "derived",
+          "basis": "Hand-start stack less Ivey's forced postings and prior contributions in the public action sequence."
+        },
+        "current_bet": {
+          "status": "derived",
+          "basis": "Ivey's total contribution on this street from forced posting and prior action."
+        },
+        "min_raise_to": {
+          "status": "derived",
+          "basis": "Last full raise increment and current bet; short all-in is represented at the maximum when no full raise fits."
+        },
+        "max_raise_to": {
+          "status": "derived",
+          "basis": "Current street contribution plus remaining stack; zero when the only opponent is all-in and no raise is available."
+        },
+        "big_blind": {
+          "status": "observed",
+          "basis": "Reported blind level."
+        },
+        "position": {
+          "status": "observed",
+          "basis": "Reported position for Phil Ivey."
+        },
+        "players_active": {
+          "status": "derived",
+          "basis": "Players still contesting this hand after reported folds; excludes unknown table size."
+        },
+        "players_to_act": {
+          "status": "derived",
+          "basis": "Action order at this decision. A checked player is not pending again until a new bet is made."
+        },
+        "legal_actions": {
+          "status": "derived",
+          "basis": "Current betting state; bets are encoded as raise-to actions in the local protocol."
+        },
+        "street": {
+          "status": "observed",
+          "basis": "Reported street and board sequence."
+        },
+        "player_id": {
+          "status": "observed",
+          "basis": "Phil Ivey identified as hero in the source."
+        },
+        "history": {
+          "status": "observed",
+          "basis": "All reported action from the first available action through the action immediately before Ivey; unreported earlier folds are disclosed in the raw hand context."
+        },
+        "expected.action": {
+          "status": "observed",
+          "basis": "Source-reported Ivey action; source bets map to protocol raise-to actions."
+        }
+      }
+    },
+    {
+      "snapshot_id": "ivey_ponakovs_t9s_turn_bet",
+      "state": {
+        "hole_cards": [
+          "Ts",
+          "9s"
+        ],
+        "board": [
+          "Kh",
+          "Jh",
+          "7c",
+          "4h"
+        ],
+        "pot": 1700000,
+        "to_call": 0,
+        "stack": 23225000,
+        "current_bet": 0,
+        "min_raise_to": 300000,
+        "max_raise_to": 23225000,
+        "big_blind": 300000,
+        "position": "BB",
+        "players_active": 2,
+        "players_to_act": 1,
+        "legal_actions": [
+          "check",
+          "raise"
+        ],
+        "street": "turn",
+        "player_id": "Phil Ivey",
+        "history": [
+          {
+            "street": "preflop",
+            "player": "Aleksejs Ponakovs",
+            "action": "raise",
+            "amount": 700000,
+            "added": 550000
+          },
+          {
+            "street": "preflop",
+            "player": "Phil Ivey",
+            "action": "call",
+            "amount": 700000,
+            "added": 400000
+          },
+          {
+            "street": "flop",
+            "player": "Phil Ivey",
+            "action": "check",
+            "amount": 0,
+            "added": 0
+          },
+          {
+            "street": "flop",
+            "player": "Aleksejs Ponakovs",
+            "action": "check",
+            "amount": 0,
+            "added": 0
+          }
+        ]
+      },
+      "expected": {
+        "action": "raise",
+        "quality": "derived",
+        "source_action": "bet",
+        "amount": 900000,
+        "amount_semantics": "total street target",
+        "amount_quality": "observed"
+      },
+      "source": [
+        "cardplayer_wsop_2022_issue_35_16",
+        "pokernews_wsop_2022_event_42"
+      ],
+      "hand_id": "ivey_ponakovs_2022_wsop_event42_t9s_fold",
+      "session_id": "wsop_2022_event42_day2_2022-06-20",
+      "field_quality": {
+        "hole_cards": {
+          "status": "observed",
+          "basis": "CardPlayer hand matchup/issue; cross-checked with PokerNews where listed. Opponent cards remain outside the state."
+        },
+        "board": {
+          "status": "observed",
+          "basis": "Only community cards dealt by this decision, as reported in the source."
+        },
+        "pot": {
+          "status": "derived",
+          "basis": "1,700,000 pot carried forward after a check-check flop."
+        },
+        "to_call": {
+          "status": "derived",
+          "basis": "Opponent's current total street target less Ivey's current street contribution, capped by Ivey's known remaining stack."
+        },
+        "stack": {
+          "status": "derived",
+          "basis": "Hand-start stack less Ivey's forced postings and prior contributions in the public action sequence."
+        },
+        "current_bet": {
+          "status": "derived",
+          "basis": "Ivey's total contribution on this street from forced posting and prior action."
+        },
+        "min_raise_to": {
+          "status": "derived",
+          "basis": "Last full raise increment and current bet; short all-in is represented at the maximum when no full raise fits."
+        },
+        "max_raise_to": {
+          "status": "derived",
+          "basis": "Current street contribution plus remaining stack; zero when the only opponent is all-in and no raise is available."
+        },
+        "big_blind": {
+          "status": "observed",
+          "basis": "Reported blind level."
+        },
+        "position": {
+          "status": "observed",
+          "basis": "Reported position for Phil Ivey."
+        },
+        "players_active": {
+          "status": "derived",
+          "basis": "Players still contesting this hand after reported folds; excludes unknown table size."
+        },
+        "players_to_act": {
+          "status": "derived",
+          "basis": "Action order at this decision. A checked player is not pending again until a new bet is made."
+        },
+        "legal_actions": {
+          "status": "derived",
+          "basis": "Current betting state; bets are encoded as raise-to actions in the local protocol."
+        },
+        "street": {
+          "status": "observed",
+          "basis": "Reported street and board sequence."
+        },
+        "player_id": {
+          "status": "observed",
+          "basis": "Phil Ivey identified as hero in the source."
+        },
+        "history": {
+          "status": "observed",
+          "basis": "All reported action from the first available action through the action immediately before Ivey; unreported earlier folds are disclosed in the raw hand context."
+        },
+        "expected.amount": {
+          "status": "observed",
+          "basis": "Reported raise target."
+        },
+        "expected.action": {
+          "status": "derived",
+          "basis": "Source-reported Ivey action; source bets map to protocol raise-to actions."
+        }
+      }
+    },
+    {
+      "snapshot_id": "ivey_ponakovs_t9s_river_bet",
+      "state": {
+        "hole_cards": [
+          "Ts",
+          "9s"
+        ],
+        "board": [
+          "Kh",
+          "Jh",
+          "7c",
+          "4h",
+          "Jd"
+        ],
+        "pot": 3500000,
+        "to_call": 0,
+        "stack": 22325000,
+        "current_bet": 0,
+        "min_raise_to": 300000,
+        "max_raise_to": 22325000,
+        "big_blind": 300000,
+        "position": "BB",
+        "players_active": 2,
+        "players_to_act": 1,
+        "legal_actions": [
+          "check",
+          "raise"
+        ],
+        "street": "river",
+        "player_id": "Phil Ivey",
+        "history": [
+          {
+            "street": "preflop",
+            "player": "Aleksejs Ponakovs",
+            "action": "raise",
+            "amount": 700000,
+            "added": 550000
+          },
+          {
+            "street": "preflop",
+            "player": "Phil Ivey",
+            "action": "call",
+            "amount": 700000,
+            "added": 400000
+          },
+          {
+            "street": "flop",
+            "player": "Phil Ivey",
+            "action": "check",
+            "amount": 0,
+            "added": 0
+          },
+          {
+            "street": "flop",
+            "player": "Aleksejs Ponakovs",
+            "action": "check",
+            "amount": 0,
+            "added": 0
+          },
+          {
+            "street": "turn",
+            "player": "Phil Ivey",
+            "action": "raise",
+            "amount": 900000,
+            "added": 900000
+          },
+          {
+            "street": "turn",
+            "player": "Aleksejs Ponakovs",
+            "action": "call",
+            "amount": 900000,
+            "added": 900000
+          }
+        ]
+      },
+      "expected": {
+        "action": "raise",
+        "quality": "derived",
+        "source_action": "bet",
+        "amount": 2000000,
+        "amount_semantics": "total street target",
+        "amount_quality": "observed"
+      },
+      "source": [
+        "cardplayer_wsop_2022_issue_35_16",
+        "pokernews_wsop_2022_event_42"
+      ],
+      "hand_id": "ivey_ponakovs_2022_wsop_event42_t9s_fold",
+      "session_id": "wsop_2022_event42_day2_2022-06-20",
+      "field_quality": {
+        "hole_cards": {
+          "status": "observed",
+          "basis": "CardPlayer hand matchup/issue; cross-checked with PokerNews where listed. Opponent cards remain outside the state."
+        },
+        "board": {
+          "status": "observed",
+          "basis": "Only community cards dealt by this decision, as reported in the source."
+        },
+        "pot": {
+          "status": "derived",
+          "basis": "1,700,000 preflop pot + 900,000 turn bet from each player."
+        },
+        "to_call": {
+          "status": "derived",
+          "basis": "Opponent's current total street target less Ivey's current street contribution, capped by Ivey's known remaining stack."
+        },
+        "stack": {
+          "status": "derived",
+          "basis": "Hand-start stack less Ivey's forced postings and prior contributions in the public action sequence."
+        },
+        "current_bet": {
+          "status": "derived",
+          "basis": "Ivey's total contribution on this street from forced posting and prior action."
+        },
+        "min_raise_to": {
+          "status": "derived",
+          "basis": "Last full raise increment and current bet; short all-in is represented at the maximum when no full raise fits."
+        },
+        "max_raise_to": {
+          "status": "derived",
+          "basis": "Current street contribution plus remaining stack; zero when the only opponent is all-in and no raise is available."
+        },
+        "big_blind": {
+          "status": "observed",
+          "basis": "Reported blind level."
+        },
+        "position": {
+          "status": "observed",
+          "basis": "Reported position for Phil Ivey."
+        },
+        "players_active": {
+          "status": "derived",
+          "basis": "Players still contesting this hand after reported folds; excludes unknown table size."
+        },
+        "players_to_act": {
+          "status": "derived",
+          "basis": "Action order at this decision. A checked player is not pending again until a new bet is made."
+        },
+        "legal_actions": {
+          "status": "derived",
+          "basis": "Current betting state; bets are encoded as raise-to actions in the local protocol."
+        },
+        "street": {
+          "status": "observed",
+          "basis": "Reported street and board sequence."
+        },
+        "player_id": {
+          "status": "observed",
+          "basis": "Phil Ivey identified as hero in the source."
+        },
+        "history": {
+          "status": "observed",
+          "basis": "All reported action from the first available action through the action immediately before Ivey; unreported earlier folds are disclosed in the raw hand context."
+        },
+        "expected.amount": {
+          "status": "observed",
+          "basis": "Reported raise target."
+        },
+        "expected.action": {
+          "status": "derived",
+          "basis": "Source-reported Ivey action; source bets map to protocol raise-to actions."
+        }
+      }
+    },
+    {
+      "snapshot_id": "ivey_ponakovs_t9s_river_vs_allin",
+      "state": {
+        "hole_cards": [
+          "Ts",
+          "9s"
+        ],
+        "board": [
+          "Kh",
+          "Jh",
+          "7c",
+          "4h",
+          "Jd"
+        ],
+        "pot": 16875000,
+        "to_call": 9375000,
+        "stack": 20325000,
+        "current_bet": 2000000,
+        "min_raise_to": 0,
+        "max_raise_to": 0,
+        "big_blind": 300000,
+        "position": "BB",
+        "players_active": 2,
+        "players_to_act": 0,
+        "legal_actions": [
+          "fold",
+          "call"
+        ],
+        "street": "river",
+        "player_id": "Phil Ivey",
+        "history": [
+          {
+            "street": "preflop",
+            "player": "Aleksejs Ponakovs",
+            "action": "raise",
+            "amount": 700000,
+            "added": 550000
+          },
+          {
+            "street": "preflop",
+            "player": "Phil Ivey",
+            "action": "call",
+            "amount": 700000,
+            "added": 400000
+          },
+          {
+            "street": "flop",
+            "player": "Phil Ivey",
+            "action": "check",
+            "amount": 0,
+            "added": 0
+          },
+          {
+            "street": "flop",
+            "player": "Aleksejs Ponakovs",
+            "action": "check",
+            "amount": 0,
+            "added": 0
+          },
+          {
+            "street": "turn",
+            "player": "Phil Ivey",
+            "action": "raise",
+            "amount": 900000,
+            "added": 900000
+          },
+          {
+            "street": "turn",
+            "player": "Aleksejs Ponakovs",
+            "action": "call",
+            "amount": 900000,
+            "added": 900000
+          },
+          {
+            "street": "river",
+            "player": "Phil Ivey",
+            "action": "raise",
+            "amount": 2000000,
+            "added": 2000000
+          },
+          {
+            "street": "river",
+            "player": "Aleksejs Ponakovs",
+            "action": "raise",
+            "amount": 11375000,
+            "added": 11375000
+          }
+        ]
+      },
+      "expected": {
+        "action": "fold",
+        "quality": "observed"
+      },
+      "source": [
+        "cardplayer_wsop_2022_issue_35_16",
+        "pokernews_wsop_2022_event_42"
+      ],
+      "hand_id": "ivey_ponakovs_2022_wsop_event42_t9s_fold",
+      "session_id": "wsop_2022_event42_day2_2022-06-20",
+      "field_quality": {
+        "hole_cards": {
+          "status": "observed",
+          "basis": "CardPlayer hand matchup/issue; cross-checked with PokerNews where listed. Opponent cards remain outside the state."
+        },
+        "board": {
+          "status": "observed",
+          "basis": "Only community cards dealt by this decision, as reported in the source."
+        },
+        "pot": {
+          "status": "derived",
+          "basis": "3,500,000 prior pot + Ivey's 2,000,000 bet + Ponakovs's derived 11,375,000 all-in."
+        },
+        "to_call": {
+          "status": "derived",
+          "basis": "Opponent's current total street target less Ivey's current street contribution, capped by Ivey's known remaining stack."
+        },
+        "stack": {
+          "status": "derived",
+          "basis": "Hand-start stack less Ivey's forced postings and prior contributions in the public action sequence."
+        },
+        "current_bet": {
+          "status": "derived",
+          "basis": "Ivey's total contribution on this street from forced posting and prior action."
+        },
+        "min_raise_to": {
+          "status": "derived",
+          "basis": "Last full raise increment and current bet; short all-in is represented at the maximum when no full raise fits."
+        },
+        "max_raise_to": {
+          "status": "derived",
+          "basis": "Current street contribution plus remaining stack; zero when the only opponent is all-in and no raise is available."
+        },
+        "big_blind": {
+          "status": "observed",
+          "basis": "Reported blind level."
+        },
+        "position": {
+          "status": "observed",
+          "basis": "Reported position for Phil Ivey."
+        },
+        "players_active": {
+          "status": "derived",
+          "basis": "Players still contesting this hand after reported folds; excludes unknown table size."
+        },
+        "players_to_act": {
+          "status": "derived",
+          "basis": "Action order at this decision. A checked player is not pending again until a new bet is made."
+        },
+        "legal_actions": {
+          "status": "derived",
+          "basis": "Current betting state; bets are encoded as raise-to actions in the local protocol."
+        },
+        "street": {
+          "status": "observed",
+          "basis": "Reported street and board sequence."
+        },
+        "player_id": {
+          "status": "observed",
+          "basis": "Phil Ivey identified as hero in the source."
+        },
+        "history": {
+          "status": "observed",
+          "basis": "All reported action from the first available action through the action immediately before Ivey; unreported earlier folds are disclosed in the raw hand context."
+        },
+        "expected.action": {
+          "status": "observed",
+          "basis": "Source-reported Ivey action; source bets map to protocol raise-to actions."
+        }
+      }
+    },
+    {
+      "snapshot_id": "ivey_ponakovs_final_preflop_3bet",
+      "state": {
+        "hole_cards": [
+          "8d",
+          "6s"
+        ],
+        "board": [],
+        "pot": 1600000,
+        "to_call": 400000,
+        "stack": 13425000,
+        "current_bet": 400000,
+        "min_raise_to": 1200000,
+        "max_raise_to": 13825000,
+        "big_blind": 400000,
+        "position": "BB",
+        "players_active": 2,
+        "players_to_act": 0,
+        "legal_actions": [
+          "fold",
+          "call",
+          "raise"
+        ],
+        "street": "preflop",
+        "player_id": "Phil Ivey",
+        "history": [
+          {
+            "street": "preflop",
+            "player": "Aleksejs Ponakovs",
+            "action": "raise",
+            "amount": 800000,
+            "added": 600000
+          }
+        ]
+      },
+      "expected": {
+        "action": "raise",
+        "quality": "observed",
+        "amount": 2800000,
+        "amount_semantics": "total street target",
+        "amount_quality": "observed"
+      },
+      "source": [
+        "cardplayer_wsop_2022_issue_35_16",
+        "pokernews_wsop_2022_event_42",
+        "pokernews_wsop_2022_event_42_highlights"
+      ],
+      "hand_id": "ivey_ponakovs_2022_wsop_event42_final_hand",
+      "session_id": "wsop_2022_event42_day2_2022-06-20",
+      "field_quality": {
+        "hole_cards": {
+          "status": "observed",
+          "basis": "CardPlayer hand matchup/issue; cross-checked with PokerNews where listed. Opponent cards remain outside the state."
+        },
+        "board": {
+          "status": "observed",
+          "basis": "Only community cards dealt by this decision, as reported in the source."
+        },
+        "pot": {
+          "status": "derived",
+          "basis": "800,000 forced chips + Ponakovs's 600,000 raise addition."
+        },
+        "to_call": {
+          "status": "derived",
+          "basis": "Opponent's current total street target less Ivey's current street contribution, capped by Ivey's known remaining stack."
+        },
+        "stack": {
+          "status": "derived",
+          "basis": "Hand-start stack less Ivey's forced postings and prior contributions in the public action sequence."
+        },
+        "current_bet": {
+          "status": "derived",
+          "basis": "Ivey's total contribution on this street from forced posting and prior action."
+        },
+        "min_raise_to": {
+          "status": "derived",
+          "basis": "Last full raise increment and current bet; short all-in is represented at the maximum when no full raise fits."
+        },
+        "max_raise_to": {
+          "status": "derived",
+          "basis": "Current street contribution plus remaining stack; zero when the only opponent is all-in and no raise is available."
+        },
+        "big_blind": {
+          "status": "observed",
+          "basis": "Reported blind level."
+        },
+        "position": {
+          "status": "observed",
+          "basis": "Reported position for Phil Ivey."
+        },
+        "players_active": {
+          "status": "derived",
+          "basis": "Players still contesting this hand after reported folds; excludes unknown table size."
+        },
+        "players_to_act": {
+          "status": "derived",
+          "basis": "Action order at this decision. A checked player is not pending again until a new bet is made."
+        },
+        "legal_actions": {
+          "status": "derived",
+          "basis": "Current betting state; bets are encoded as raise-to actions in the local protocol."
+        },
+        "street": {
+          "status": "observed",
+          "basis": "Reported street and board sequence."
+        },
+        "player_id": {
+          "status": "observed",
+          "basis": "Phil Ivey identified as hero in the source."
+        },
+        "history": {
+          "status": "observed",
+          "basis": "All reported action from the first available action through the action immediately before Ivey; unreported earlier folds are disclosed in the raw hand context."
+        },
+        "expected.amount": {
+          "status": "observed",
+          "basis": "Added amount is target less Ivey's posted big blind."
+        },
+        "expected.action": {
+          "status": "observed",
+          "basis": "Source-reported Ivey action; source bets map to protocol raise-to actions."
+        }
+      }
+    },
+    {
+      "snapshot_id": "ivey_ponakovs_final_flop_check",
+      "state": {
+        "hole_cards": [
+          "8d",
+          "6s"
+        ],
+        "board": [
+          "Jh",
+          "7s",
+          "3h"
+        ],
+        "pot": 6000000,
+        "to_call": 0,
+        "stack": 11025000,
+        "current_bet": 0,
+        "min_raise_to": 400000,
+        "max_raise_to": 11025000,
+        "big_blind": 400000,
+        "position": "BB",
+        "players_active": 2,
+        "players_to_act": 1,
+        "legal_actions": [
+          "check",
+          "raise"
+        ],
+        "street": "flop",
+        "player_id": "Phil Ivey",
+        "history": [
+          {
+            "street": "preflop",
+            "player": "Aleksejs Ponakovs",
+            "action": "raise",
+            "amount": 800000,
+            "added": 600000
+          },
+          {
+            "street": "preflop",
+            "player": "Phil Ivey",
+            "action": "raise",
+            "amount": 2800000,
+            "added": 2400000
+          },
+          {
+            "street": "preflop",
+            "player": "Aleksejs Ponakovs",
+            "action": "call",
+            "amount": 2800000,
+            "added": 2000000
+          }
+        ]
+      },
+      "expected": {
+        "action": "check",
+        "quality": "observed"
+      },
+      "source": [
+        "cardplayer_wsop_2022_issue_35_16",
+        "pokernews_wsop_2022_event_42",
+        "pokernews_wsop_2022_event_42_highlights"
+      ],
+      "hand_id": "ivey_ponakovs_2022_wsop_event42_final_hand",
+      "session_id": "wsop_2022_event42_day2_2022-06-20",
+      "field_quality": {
+        "hole_cards": {
+          "status": "observed",
+          "basis": "CardPlayer hand matchup/issue; cross-checked with PokerNews where listed. Opponent cards remain outside the state."
+        },
+        "board": {
+          "status": "observed",
+          "basis": "Only community cards dealt by this decision, as reported in the source."
+        },
+        "pot": {
+          "status": "derived",
+          "basis": "1,600,000 pre-action pot + Ivey's 2,400,000 addition + Ponakovs's 2,000,000 call."
+        },
+        "to_call": {
+          "status": "derived",
+          "basis": "Opponent's current total street target less Ivey's current street contribution, capped by Ivey's known remaining stack."
+        },
+        "stack": {
+          "status": "derived",
+          "basis": "Hand-start stack less Ivey's forced postings and prior contributions in the public action sequence."
+        },
+        "current_bet": {
+          "status": "derived",
+          "basis": "Ivey's total contribution on this street from forced posting and prior action."
+        },
+        "min_raise_to": {
+          "status": "derived",
+          "basis": "Last full raise increment and current bet; short all-in is represented at the maximum when no full raise fits."
+        },
+        "max_raise_to": {
+          "status": "derived",
+          "basis": "Current street contribution plus remaining stack; zero when the only opponent is all-in and no raise is available."
+        },
+        "big_blind": {
+          "status": "observed",
+          "basis": "Reported blind level."
+        },
+        "position": {
+          "status": "observed",
+          "basis": "Reported position for Phil Ivey."
+        },
+        "players_active": {
+          "status": "derived",
+          "basis": "Players still contesting this hand after reported folds; excludes unknown table size."
+        },
+        "players_to_act": {
+          "status": "derived",
+          "basis": "Action order at this decision. A checked player is not pending again until a new bet is made."
+        },
+        "legal_actions": {
+          "status": "derived",
+          "basis": "Current betting state; bets are encoded as raise-to actions in the local protocol."
+        },
+        "street": {
+          "status": "observed",
+          "basis": "Reported street and board sequence."
+        },
+        "player_id": {
+          "status": "observed",
+          "basis": "Phil Ivey identified as hero in the source."
+        },
+        "history": {
+          "status": "observed",
+          "basis": "All reported action from the first available action through the action immediately before Ivey; unreported earlier folds are disclosed in the raw hand context."
+        },
+        "expected.action": {
+          "status": "observed",
+          "basis": "Source-reported Ivey action; source bets map to protocol raise-to actions."
+        }
+      }
+    },
+    {
+      "snapshot_id": "ivey_ponakovs_final_turn_check",
+      "state": {
+        "hole_cards": [
+          "8d",
+          "6s"
+        ],
+        "board": [
+          "Jh",
+          "7s",
+          "3h",
+          "9c"
+        ],
+        "pot": 6000000,
+        "to_call": 0,
+        "stack": 11025000,
+        "current_bet": 0,
+        "min_raise_to": 400000,
+        "max_raise_to": 11025000,
+        "big_blind": 400000,
+        "position": "BB",
+        "players_active": 2,
+        "players_to_act": 1,
+        "legal_actions": [
+          "check",
+          "raise"
+        ],
+        "street": "turn",
+        "player_id": "Phil Ivey",
+        "history": [
+          {
+            "street": "preflop",
+            "player": "Aleksejs Ponakovs",
+            "action": "raise",
+            "amount": 800000,
+            "added": 600000
+          },
+          {
+            "street": "preflop",
+            "player": "Phil Ivey",
+            "action": "raise",
+            "amount": 2800000,
+            "added": 2400000
+          },
+          {
+            "street": "preflop",
+            "player": "Aleksejs Ponakovs",
+            "action": "call",
+            "amount": 2800000,
+            "added": 2000000
+          },
+          {
+            "street": "flop",
+            "player": "Phil Ivey",
+            "action": "check",
+            "amount": 0,
+            "added": 0
+          },
+          {
+            "street": "flop",
+            "player": "Aleksejs Ponakovs",
+            "action": "check",
+            "amount": 0,
+            "added": 0
+          }
+        ]
+      },
+      "expected": {
+        "action": "check",
+        "quality": "observed"
+      },
+      "source": [
+        "cardplayer_wsop_2022_issue_35_16",
+        "pokernews_wsop_2022_event_42",
+        "pokernews_wsop_2022_event_42_highlights"
+      ],
+      "hand_id": "ivey_ponakovs_2022_wsop_event42_final_hand",
+      "session_id": "wsop_2022_event42_day2_2022-06-20",
+      "field_quality": {
+        "hole_cards": {
+          "status": "observed",
+          "basis": "CardPlayer hand matchup/issue; cross-checked with PokerNews where listed. Opponent cards remain outside the state."
+        },
+        "board": {
+          "status": "observed",
+          "basis": "Only community cards dealt by this decision, as reported in the source."
+        },
+        "pot": {
+          "status": "derived",
+          "basis": "6,000,000 pot carried forward after the flop check-check."
+        },
+        "to_call": {
+          "status": "derived",
+          "basis": "Opponent's current total street target less Ivey's current street contribution, capped by Ivey's known remaining stack."
+        },
+        "stack": {
+          "status": "derived",
+          "basis": "Hand-start stack less Ivey's forced postings and prior contributions in the public action sequence."
+        },
+        "current_bet": {
+          "status": "derived",
+          "basis": "Ivey's total contribution on this street from forced posting and prior action."
+        },
+        "min_raise_to": {
+          "status": "derived",
+          "basis": "Last full raise increment and current bet; short all-in is represented at the maximum when no full raise fits."
+        },
+        "max_raise_to": {
+          "status": "derived",
+          "basis": "Current street contribution plus remaining stack; zero when the only opponent is all-in and no raise is available."
+        },
+        "big_blind": {
+          "status": "observed",
+          "basis": "Reported blind level."
+        },
+        "position": {
+          "status": "observed",
+          "basis": "Reported position for Phil Ivey."
+        },
+        "players_active": {
+          "status": "derived",
+          "basis": "Players still contesting this hand after reported folds; excludes unknown table size."
+        },
+        "players_to_act": {
+          "status": "derived",
+          "basis": "Action order at this decision. A checked player is not pending again until a new bet is made."
+        },
+        "legal_actions": {
+          "status": "derived",
+          "basis": "Current betting state; bets are encoded as raise-to actions in the local protocol."
+        },
+        "street": {
+          "status": "observed",
+          "basis": "Reported street and board sequence."
+        },
+        "player_id": {
+          "status": "observed",
+          "basis": "Phil Ivey identified as hero in the source."
+        },
+        "history": {
+          "status": "observed",
+          "basis": "All reported action from the first available action through the action immediately before Ivey; unreported earlier folds are disclosed in the raw hand context."
+        },
+        "expected.action": {
+          "status": "observed",
+          "basis": "Source-reported Ivey action; source bets map to protocol raise-to actions."
+        }
+      }
+    },
+    {
+      "snapshot_id": "ivey_ponakovs_final_turn_vs_bet",
+      "state": {
+        "hole_cards": [
+          "8d",
+          "6s"
+        ],
+        "board": [
+          "Jh",
+          "7s",
+          "3h",
+          "9c"
+        ],
+        "pot": 9000000,
+        "to_call": 3000000,
+        "stack": 11025000,
+        "current_bet": 0,
+        "min_raise_to": 6000000,
+        "max_raise_to": 11025000,
+        "big_blind": 400000,
+        "position": "BB",
+        "players_active": 2,
+        "players_to_act": 0,
+        "legal_actions": [
+          "fold",
+          "call",
+          "raise"
+        ],
+        "street": "turn",
+        "player_id": "Phil Ivey",
+        "history": [
+          {
+            "street": "preflop",
+            "player": "Aleksejs Ponakovs",
+            "action": "raise",
+            "amount": 800000,
+            "added": 600000
+          },
+          {
+            "street": "preflop",
+            "player": "Phil Ivey",
+            "action": "raise",
+            "amount": 2800000,
+            "added": 2400000
+          },
+          {
+            "street": "preflop",
+            "player": "Aleksejs Ponakovs",
+            "action": "call",
+            "amount": 2800000,
+            "added": 2000000
+          },
+          {
+            "street": "flop",
+            "player": "Phil Ivey",
+            "action": "check",
+            "amount": 0,
+            "added": 0
+          },
+          {
+            "street": "flop",
+            "player": "Aleksejs Ponakovs",
+            "action": "check",
+            "amount": 0,
+            "added": 0
+          },
+          {
+            "street": "turn",
+            "player": "Phil Ivey",
+            "action": "check",
+            "amount": 0,
+            "added": 0
+          },
+          {
+            "street": "turn",
+            "player": "Aleksejs Ponakovs",
+            "action": "raise",
+            "amount": 3000000,
+            "added": 3000000
+          }
+        ]
+      },
+      "expected": {
+        "action": "raise",
+        "quality": "observed",
+        "amount": 11025000,
+        "amount_semantics": "total street target",
+        "amount_quality": "derived"
+      },
+      "source": [
+        "cardplayer_wsop_2022_issue_35_16",
+        "pokernews_wsop_2022_event_42",
+        "pokernews_wsop_2022_event_42_highlights"
+      ],
+      "hand_id": "ivey_ponakovs_2022_wsop_event42_final_hand",
+      "session_id": "wsop_2022_event42_day2_2022-06-20",
+      "field_quality": {
+        "hole_cards": {
+          "status": "observed",
+          "basis": "CardPlayer hand matchup/issue; cross-checked with PokerNews where listed. Opponent cards remain outside the state."
+        },
+        "board": {
+          "status": "observed",
+          "basis": "Only community cards dealt by this decision, as reported in the source."
+        },
+        "pot": {
+          "status": "derived",
+          "basis": "6,000,000 pot + Ponakovs's 3,000,000 turn bet."
+        },
+        "to_call": {
+          "status": "derived",
+          "basis": "Opponent's current total street target less Ivey's current street contribution, capped by Ivey's known remaining stack."
+        },
+        "stack": {
+          "status": "derived",
+          "basis": "Hand-start stack less Ivey's forced postings and prior contributions in the public action sequence."
+        },
+        "current_bet": {
+          "status": "derived",
+          "basis": "Ivey's total contribution on this street from forced posting and prior action."
+        },
+        "min_raise_to": {
+          "status": "derived",
+          "basis": "Last full raise increment and current bet; short all-in is represented at the maximum when no full raise fits."
+        },
+        "max_raise_to": {
+          "status": "derived",
+          "basis": "Current street contribution plus remaining stack; zero when the only opponent is all-in and no raise is available."
+        },
+        "big_blind": {
+          "status": "observed",
+          "basis": "Reported blind level."
+        },
+        "position": {
+          "status": "observed",
+          "basis": "Reported position for Phil Ivey."
+        },
+        "players_active": {
+          "status": "derived",
+          "basis": "Players still contesting this hand after reported folds; excludes unknown table size."
+        },
+        "players_to_act": {
+          "status": "derived",
+          "basis": "Action order at this decision. A checked player is not pending again until a new bet is made."
+        },
+        "legal_actions": {
+          "status": "derived",
+          "basis": "Current betting state; bets are encoded as raise-to actions in the local protocol."
+        },
+        "street": {
+          "status": "observed",
+          "basis": "Reported street and board sequence."
+        },
+        "player_id": {
+          "status": "observed",
+          "basis": "Phil Ivey identified as hero in the source."
+        },
+        "history": {
+          "status": "observed",
+          "basis": "All reported action from the first available action through the action immediately before Ivey; unreported earlier folds are disclosed in the raw hand context."
+        },
+        "expected.amount": {
+          "status": "derived",
+          "basis": "Sources round the shove to 11.03 million/about 11.0 million; exact target is Ivey's 14,225,000 start stack less 3,200,000 preflop including the BBA."
+        },
+        "expected.action": {
+          "status": "observed",
+          "basis": "Source-reported Ivey action; source bets map to protocol raise-to actions."
+        }
+      }
+    },
+    {
+      "snapshot_id": "ivey_punsri_preflop_call",
+      "state": {
+        "hole_cards": [
+          "Kh",
+          "Jc"
+        ],
+        "board": [],
+        "pot": 1075000,
+        "to_call": 475000,
+        "stack": 6800000,
+        "current_bet": 200000,
+        "min_raise_to": 1150000,
+        "max_raise_to": 7000000,
+        "big_blind": 200000,
+        "position": "BB",
+        "players_active": 2,
+        "players_to_act": 0,
+        "legal_actions": [
+          "fold",
+          "call",
+          "raise"
+        ],
+        "street": "preflop",
+        "player_id": "Phil Ivey",
+        "history": [
+          {
+            "street": "preflop",
+            "player": "Punnat Punsri",
+            "action": "raise",
+            "amount": 675000,
+            "added": 575000
+          }
+        ]
+      },
+      "expected": {
+        "action": "call",
+        "quality": "observed"
+      },
+      "source": [
+        "cardplayer_punsri_2851",
+        "pokernews_punsri_2024"
+      ],
+      "hand_id": "ivey_punsri_2024_triton_jeju_event8",
+      "session_id": "triton_jeju_2024_event8_2024-03-12",
+      "field_quality": {
+        "hole_cards": {
+          "status": "observed",
+          "basis": "CardPlayer hand matchup/issue; cross-checked with PokerNews where listed. Opponent cards remain outside the state."
+        },
+        "board": {
+          "status": "observed",
+          "basis": "Only community cards dealt by this decision, as reported in the source."
+        },
+        "pot": {
+          "status": "derived",
+          "basis": "200,000 BBA + 100,000 SB + 200,000 BB + Punsri's 575,000 raise addition."
+        },
+        "to_call": {
+          "status": "derived",
+          "basis": "Opponent's current total street target less Ivey's current street contribution, capped by Ivey's known remaining stack."
+        },
+        "stack": {
+          "status": "derived",
+          "basis": "Hand-start stack less Ivey's forced postings and prior contributions in the public action sequence."
+        },
+        "current_bet": {
+          "status": "derived",
+          "basis": "Ivey's total contribution on this street from forced posting and prior action."
+        },
+        "min_raise_to": {
+          "status": "derived",
+          "basis": "Last full raise increment and current bet; short all-in is represented at the maximum when no full raise fits."
+        },
+        "max_raise_to": {
+          "status": "derived",
+          "basis": "Current street contribution plus remaining stack; zero when the only opponent is all-in and no raise is available."
+        },
+        "big_blind": {
+          "status": "observed",
+          "basis": "Reported blind level."
+        },
+        "position": {
+          "status": "observed",
+          "basis": "Reported position for Phil Ivey."
+        },
+        "players_active": {
+          "status": "derived",
+          "basis": "Players still contesting this hand after reported folds; excludes unknown table size."
+        },
+        "players_to_act": {
+          "status": "derived",
+          "basis": "Action order at this decision. A checked player is not pending again until a new bet is made."
+        },
+        "legal_actions": {
+          "status": "derived",
+          "basis": "Current betting state; bets are encoded as raise-to actions in the local protocol."
+        },
+        "street": {
+          "status": "observed",
+          "basis": "Reported street and board sequence."
+        },
+        "player_id": {
+          "status": "observed",
+          "basis": "Phil Ivey identified as hero in the source."
+        },
+        "history": {
+          "status": "observed",
+          "basis": "All reported action from the first available action through the action immediately before Ivey; unreported earlier folds are disclosed in the raw hand context."
+        },
+        "expected.action": {
+          "status": "observed",
+          "basis": "Source-reported Ivey action; source bets map to protocol raise-to actions."
+        }
+      }
+    },
+    {
+      "snapshot_id": "ivey_punsri_flop_bet",
+      "state": {
+        "hole_cards": [
+          "Kh",
+          "Jc"
+        ],
+        "board": [
+          "Ad",
+          "Qh",
+          "Ts"
+        ],
+        "pot": 1550000,
+        "to_call": 0,
+        "stack": 6325000,
+        "current_bet": 0,
+        "min_raise_to": 200000,
+        "max_raise_to": 6325000,
+        "big_blind": 200000,
+        "position": "BB",
+        "players_active": 2,
+        "players_to_act": 0,
+        "legal_actions": [
+          "check",
+          "raise"
+        ],
+        "street": "flop",
+        "player_id": "Phil Ivey",
+        "history": [
+          {
+            "street": "preflop",
+            "player": "Punnat Punsri",
+            "action": "raise",
+            "amount": 675000,
+            "added": 575000
+          },
+          {
+            "street": "preflop",
+            "player": "Phil Ivey",
+            "action": "call",
+            "amount": 675000,
+            "added": 475000
+          },
+          {
+            "street": "flop",
+            "player": "Punnat Punsri",
+            "action": "check",
+            "amount": 0,
+            "added": 0
+          }
+        ]
+      },
+      "expected": {
+        "action": "raise",
+        "quality": "derived",
+        "source_action": "bet",
+        "amount": 400000,
+        "amount_semantics": "total street target",
+        "amount_quality": "observed"
+      },
+      "source": [
+        "cardplayer_punsri_2851",
+        "pokernews_punsri_2024"
+      ],
+      "hand_id": "ivey_punsri_2024_triton_jeju_event8",
+      "session_id": "triton_jeju_2024_event8_2024-03-12",
+      "field_quality": {
+        "hole_cards": {
+          "status": "observed",
+          "basis": "CardPlayer hand matchup/issue; cross-checked with PokerNews where listed. Opponent cards remain outside the state."
+        },
+        "board": {
+          "status": "observed",
+          "basis": "Only community cards dealt by this decision, as reported in the source."
+        },
+        "pot": {
+          "status": "derived",
+          "basis": "500,000 forced chips + 575,000 Punsri addition + 475,000 Ivey call."
+        },
+        "to_call": {
+          "status": "derived",
+          "basis": "Opponent's current total street target less Ivey's current street contribution, capped by Ivey's known remaining stack."
+        },
+        "stack": {
+          "status": "derived",
+          "basis": "Hand-start stack less Ivey's forced postings and prior contributions in the public action sequence."
+        },
+        "current_bet": {
+          "status": "derived",
+          "basis": "Ivey's total contribution on this street from forced posting and prior action."
+        },
+        "min_raise_to": {
+          "status": "derived",
+          "basis": "Last full raise increment and current bet; short all-in is represented at the maximum when no full raise fits."
+        },
+        "max_raise_to": {
+          "status": "derived",
+          "basis": "Current street contribution plus remaining stack; zero when the only opponent is all-in and no raise is available."
+        },
+        "big_blind": {
+          "status": "observed",
+          "basis": "Reported blind level."
+        },
+        "position": {
+          "status": "observed",
+          "basis": "Reported position for Phil Ivey."
+        },
+        "players_active": {
+          "status": "derived",
+          "basis": "Players still contesting this hand after reported folds; excludes unknown table size."
+        },
+        "players_to_act": {
+          "status": "derived",
+          "basis": "Action order at this decision. A checked player is not pending again until a new bet is made."
+        },
+        "legal_actions": {
+          "status": "derived",
+          "basis": "Current betting state; bets are encoded as raise-to actions in the local protocol."
+        },
+        "street": {
+          "status": "observed",
+          "basis": "Reported street and board sequence."
+        },
+        "player_id": {
+          "status": "observed",
+          "basis": "Phil Ivey identified as hero in the source."
+        },
+        "history": {
+          "status": "observed",
+          "basis": "All reported action from the first available action through the action immediately before Ivey; unreported earlier folds are disclosed in the raw hand context."
+        },
+        "expected.amount": {
+          "status": "observed",
+          "basis": "Reported raise target."
+        },
+        "expected.action": {
+          "status": "derived",
+          "basis": "Source-reported Ivey action; source bets map to protocol raise-to actions."
+        }
+      }
+    },
+    {
+      "snapshot_id": "ivey_punsri_turn_check",
+      "state": {
+        "hole_cards": [
+          "Kh",
+          "Jc"
+        ],
+        "board": [
+          "Ad",
+          "Qh",
+          "Ts",
+          "Jh"
+        ],
+        "pot": 2350000,
+        "to_call": 0,
+        "stack": 5925000,
+        "current_bet": 0,
+        "min_raise_to": 200000,
+        "max_raise_to": 5925000,
+        "big_blind": 200000,
+        "position": "BB",
+        "players_active": 2,
+        "players_to_act": 0,
+        "legal_actions": [
+          "check",
+          "raise"
+        ],
+        "street": "turn",
+        "player_id": "Phil Ivey",
+        "history": [
+          {
+            "street": "preflop",
+            "player": "Punnat Punsri",
+            "action": "raise",
+            "amount": 675000,
+            "added": 575000
+          },
+          {
+            "street": "preflop",
+            "player": "Phil Ivey",
+            "action": "call",
+            "amount": 675000,
+            "added": 475000
+          },
+          {
+            "street": "flop",
+            "player": "Punnat Punsri",
+            "action": "check",
+            "amount": 0,
+            "added": 0
+          },
+          {
+            "street": "flop",
+            "player": "Phil Ivey",
+            "action": "raise",
+            "amount": 400000,
+            "added": 400000
+          },
+          {
+            "street": "flop",
+            "player": "Punnat Punsri",
+            "action": "call",
+            "amount": 400000,
+            "added": 400000
+          },
+          {
+            "street": "turn",
+            "player": "Punnat Punsri",
+            "action": "check",
+            "amount": 0,
+            "added": 0
+          }
+        ]
+      },
+      "expected": {
+        "action": "check",
+        "quality": "observed"
+      },
+      "source": [
+        "cardplayer_punsri_2851",
+        "pokernews_punsri_2024"
+      ],
+      "hand_id": "ivey_punsri_2024_triton_jeju_event8",
+      "session_id": "triton_jeju_2024_event8_2024-03-12",
+      "field_quality": {
+        "hole_cards": {
+          "status": "observed",
+          "basis": "CardPlayer hand matchup/issue; cross-checked with PokerNews where listed. Opponent cards remain outside the state."
+        },
+        "board": {
+          "status": "observed",
+          "basis": "Only community cards dealt by this decision, as reported in the source."
+        },
+        "pot": {
+          "status": "derived",
+          "basis": "1,550,000 flop pot + 400,000 bet from each player."
+        },
+        "to_call": {
+          "status": "derived",
+          "basis": "Opponent's current total street target less Ivey's current street contribution, capped by Ivey's known remaining stack."
+        },
+        "stack": {
+          "status": "derived",
+          "basis": "Hand-start stack less Ivey's forced postings and prior contributions in the public action sequence."
+        },
+        "current_bet": {
+          "status": "derived",
+          "basis": "Ivey's total contribution on this street from forced posting and prior action."
+        },
+        "min_raise_to": {
+          "status": "derived",
+          "basis": "Last full raise increment and current bet; short all-in is represented at the maximum when no full raise fits."
+        },
+        "max_raise_to": {
+          "status": "derived",
+          "basis": "Current street contribution plus remaining stack; zero when the only opponent is all-in and no raise is available."
+        },
+        "big_blind": {
+          "status": "observed",
+          "basis": "Reported blind level."
+        },
+        "position": {
+          "status": "observed",
+          "basis": "Reported position for Phil Ivey."
+        },
+        "players_active": {
+          "status": "derived",
+          "basis": "Players still contesting this hand after reported folds; excludes unknown table size."
+        },
+        "players_to_act": {
+          "status": "derived",
+          "basis": "Action order at this decision. A checked player is not pending again until a new bet is made."
+        },
+        "legal_actions": {
+          "status": "derived",
+          "basis": "Current betting state; bets are encoded as raise-to actions in the local protocol."
+        },
+        "street": {
+          "status": "observed",
+          "basis": "Reported street and board sequence."
+        },
+        "player_id": {
+          "status": "observed",
+          "basis": "Phil Ivey identified as hero in the source."
+        },
+        "history": {
+          "status": "observed",
+          "basis": "All reported action from the first available action through the action immediately before Ivey; unreported earlier folds are disclosed in the raw hand context."
+        },
+        "expected.action": {
+          "status": "observed",
+          "basis": "Source-reported Ivey action; source bets map to protocol raise-to actions."
+        }
+      }
+    },
+    {
+      "snapshot_id": "ivey_punsri_river_bet",
+      "state": {
+        "hole_cards": [
+          "Kh",
+          "Jc"
+        ],
+        "board": [
+          "Ad",
+          "Qh",
+          "Ts",
+          "Jh",
+          "9h"
+        ],
+        "pot": 2350000,
+        "to_call": 0,
+        "stack": 5925000,
+        "current_bet": 0,
+        "min_raise_to": 200000,
+        "max_raise_to": 5925000,
+        "big_blind": 200000,
+        "position": "BB",
+        "players_active": 2,
+        "players_to_act": 0,
+        "legal_actions": [
+          "check",
+          "raise"
+        ],
+        "street": "river",
+        "player_id": "Phil Ivey",
+        "history": [
+          {
+            "street": "preflop",
+            "player": "Punnat Punsri",
+            "action": "raise",
+            "amount": 675000,
+            "added": 575000
+          },
+          {
+            "street": "preflop",
+            "player": "Phil Ivey",
+            "action": "call",
+            "amount": 675000,
+            "added": 475000
+          },
+          {
+            "street": "flop",
+            "player": "Punnat Punsri",
+            "action": "check",
+            "amount": 0,
+            "added": 0
+          },
+          {
+            "street": "flop",
+            "player": "Phil Ivey",
+            "action": "raise",
+            "amount": 400000,
+            "added": 400000
+          },
+          {
+            "street": "flop",
+            "player": "Punnat Punsri",
+            "action": "call",
+            "amount": 400000,
+            "added": 400000
+          },
+          {
+            "street": "turn",
+            "player": "Punnat Punsri",
+            "action": "check",
+            "amount": 0,
+            "added": 0
+          },
+          {
+            "street": "turn",
+            "player": "Phil Ivey",
+            "action": "check",
+            "amount": 0,
+            "added": 0
+          },
+          {
+            "street": "river",
+            "player": "Punnat Punsri",
+            "action": "check",
+            "amount": 0,
+            "added": 0
+          }
+        ]
+      },
+      "expected": {
+        "action": "raise",
+        "quality": "derived",
+        "source_action": "bet",
+        "amount": 800000,
+        "amount_semantics": "total street target",
+        "amount_quality": "observed"
+      },
+      "source": [
+        "cardplayer_punsri_2851",
+        "pokernews_punsri_2024"
+      ],
+      "hand_id": "ivey_punsri_2024_triton_jeju_event8",
+      "session_id": "triton_jeju_2024_event8_2024-03-12",
+      "field_quality": {
+        "hole_cards": {
+          "status": "observed",
+          "basis": "CardPlayer hand matchup/issue; cross-checked with PokerNews where listed. Opponent cards remain outside the state."
+        },
+        "board": {
+          "status": "observed",
+          "basis": "Only community cards dealt by this decision, as reported in the source."
+        },
+        "pot": {
+          "status": "derived",
+          "basis": "2,350,000 pot after turn check-check."
+        },
+        "to_call": {
+          "status": "derived",
+          "basis": "Opponent's current total street target less Ivey's current street contribution, capped by Ivey's known remaining stack."
+        },
+        "stack": {
+          "status": "derived",
+          "basis": "Hand-start stack less Ivey's forced postings and prior contributions in the public action sequence."
+        },
+        "current_bet": {
+          "status": "derived",
+          "basis": "Ivey's total contribution on this street from forced posting and prior action."
+        },
+        "min_raise_to": {
+          "status": "derived",
+          "basis": "Last full raise increment and current bet; short all-in is represented at the maximum when no full raise fits."
+        },
+        "max_raise_to": {
+          "status": "derived",
+          "basis": "Current street contribution plus remaining stack; zero when the only opponent is all-in and no raise is available."
+        },
+        "big_blind": {
+          "status": "observed",
+          "basis": "Reported blind level."
+        },
+        "position": {
+          "status": "observed",
+          "basis": "Reported position for Phil Ivey."
+        },
+        "players_active": {
+          "status": "derived",
+          "basis": "Players still contesting this hand after reported folds; excludes unknown table size."
+        },
+        "players_to_act": {
+          "status": "derived",
+          "basis": "Action order at this decision. A checked player is not pending again until a new bet is made."
+        },
+        "legal_actions": {
+          "status": "derived",
+          "basis": "Current betting state; bets are encoded as raise-to actions in the local protocol."
+        },
+        "street": {
+          "status": "observed",
+          "basis": "Reported street and board sequence."
+        },
+        "player_id": {
+          "status": "observed",
+          "basis": "Phil Ivey identified as hero in the source."
+        },
+        "history": {
+          "status": "observed",
+          "basis": "All reported action from the first available action through the action immediately before Ivey; unreported earlier folds are disclosed in the raw hand context."
+        },
+        "expected.amount": {
+          "status": "observed",
+          "basis": "Reported raise target."
+        },
+        "expected.action": {
+          "status": "derived",
+          "basis": "Source-reported Ivey action; source bets map to protocol raise-to actions."
+        }
+      }
+    },
+    {
+      "snapshot_id": "ivey_punsri_river_vs_checkraise",
+      "state": {
+        "hole_cards": [
+          "Kh",
+          "Jc"
+        ],
+        "board": [
+          "Ad",
+          "Qh",
+          "Ts",
+          "Jh",
+          "9h"
+        ],
+        "pot": 6550000,
+        "to_call": 2600000,
+        "stack": 5125000,
+        "current_bet": 800000,
+        "min_raise_to": 5925000,
+        "max_raise_to": 5925000,
+        "big_blind": 200000,
+        "position": "BB",
+        "players_active": 2,
+        "players_to_act": 0,
+        "legal_actions": [
+          "fold",
+          "call",
+          "raise"
+        ],
+        "street": "river",
+        "player_id": "Phil Ivey",
+        "history": [
+          {
+            "street": "preflop",
+            "player": "Punnat Punsri",
+            "action": "raise",
+            "amount": 675000,
+            "added": 575000
+          },
+          {
+            "street": "preflop",
+            "player": "Phil Ivey",
+            "action": "call",
+            "amount": 675000,
+            "added": 475000
+          },
+          {
+            "street": "flop",
+            "player": "Punnat Punsri",
+            "action": "check",
+            "amount": 0,
+            "added": 0
+          },
+          {
+            "street": "flop",
+            "player": "Phil Ivey",
+            "action": "raise",
+            "amount": 400000,
+            "added": 400000
+          },
+          {
+            "street": "flop",
+            "player": "Punnat Punsri",
+            "action": "call",
+            "amount": 400000,
+            "added": 400000
+          },
+          {
+            "street": "turn",
+            "player": "Punnat Punsri",
+            "action": "check",
+            "amount": 0,
+            "added": 0
+          },
+          {
+            "street": "turn",
+            "player": "Phil Ivey",
+            "action": "check",
+            "amount": 0,
+            "added": 0
+          },
+          {
+            "street": "river",
+            "player": "Punnat Punsri",
+            "action": "check",
+            "amount": 0,
+            "added": 0
+          },
+          {
+            "street": "river",
+            "player": "Phil Ivey",
+            "action": "raise",
+            "amount": 800000,
+            "added": 800000
+          },
+          {
+            "street": "river",
+            "player": "Punnat Punsri",
+            "action": "raise",
+            "amount": 3400000,
+            "added": 3400000
+          }
+        ]
+      },
+      "expected": {
+        "action": "call",
+        "quality": "observed"
+      },
+      "source": [
+        "cardplayer_punsri_2851",
+        "pokernews_punsri_2024"
+      ],
+      "hand_id": "ivey_punsri_2024_triton_jeju_event8",
+      "session_id": "triton_jeju_2024_event8_2024-03-12",
+      "field_quality": {
+        "hole_cards": {
+          "status": "observed",
+          "basis": "CardPlayer hand matchup/issue; cross-checked with PokerNews where listed. Opponent cards remain outside the state."
+        },
+        "board": {
+          "status": "observed",
+          "basis": "Only community cards dealt by this decision, as reported in the source."
+        },
+        "pot": {
+          "status": "derived",
+          "basis": "2,350,000 pot + Ivey's 800,000 bet + Punsri's 3,400,000 check-raise."
+        },
+        "to_call": {
+          "status": "derived",
+          "basis": "Opponent's current total street target less Ivey's current street contribution, capped by Ivey's known remaining stack."
+        },
+        "stack": {
+          "status": "derived",
+          "basis": "Hand-start stack less Ivey's forced postings and prior contributions in the public action sequence."
+        },
+        "current_bet": {
+          "status": "derived",
+          "basis": "Ivey's total contribution on this street from forced posting and prior action."
+        },
+        "min_raise_to": {
+          "status": "derived",
+          "basis": "Last full raise increment and current bet; short all-in is represented at the maximum when no full raise fits."
+        },
+        "max_raise_to": {
+          "status": "derived",
+          "basis": "Current street contribution plus remaining stack; zero when the only opponent is all-in and no raise is available."
+        },
+        "big_blind": {
+          "status": "observed",
+          "basis": "Reported blind level."
+        },
+        "position": {
+          "status": "observed",
+          "basis": "Reported position for Phil Ivey."
+        },
+        "players_active": {
+          "status": "derived",
+          "basis": "Players still contesting this hand after reported folds; excludes unknown table size."
+        },
+        "players_to_act": {
+          "status": "derived",
+          "basis": "Action order at this decision. A checked player is not pending again until a new bet is made."
+        },
+        "legal_actions": {
+          "status": "derived",
+          "basis": "Current betting state; bets are encoded as raise-to actions in the local protocol."
+        },
+        "street": {
+          "status": "observed",
+          "basis": "Reported street and board sequence."
+        },
+        "player_id": {
+          "status": "observed",
+          "basis": "Phil Ivey identified as hero in the source."
+        },
+        "history": {
+          "status": "observed",
+          "basis": "All reported action from the first available action through the action immediately before Ivey; unreported earlier folds are disclosed in the raw hand context."
+        },
+        "expected.action": {
+          "status": "observed",
+          "basis": "Source-reported Ivey action; source bets map to protocol raise-to actions."
+        }
+      }
+    }
+  ],
+  "counts": {
+    "new_distinct_complete_hands": 5,
+    "hands_with_partial_decisions": 0,
+    "usable_decision_snapshots": 22,
+    "session_count": 2,
+    "source_locked_candidate_slots": 10,
+    "candidate_slots_with_evidence": 2,
+    "wsop_hands_from_cardplayer_issue": 4,
+    "triton_hands_from_cardplayer_matchup": 1
+  },
+  "limitations": [
+    "Public-source hands are a convenience sample biased toward matchup pages, final-table reports, and memorable action; they cannot estimate representative Ivey decision agreement or establish a 99% result.",
+    "Exact hand timestamps and some table-size/fold-count details are not reported and remain unknown.",
+    "Rounded shove reports are not stored as exact observations; exact targets are derived only where hand-start stacks and contributions reconcile."
+  ]
+}

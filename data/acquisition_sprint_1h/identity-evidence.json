@@ -1,0 +1,14 @@
+{
+  "alias": "Polarizing",
+  "room": "Full Tilt Poker",
+  "reported_identity": "Phil Ivey",
+  "source_url": "https://www.cardplayer.com/poker-news/14617-phil-ivey-returns-to-full-tilt-poker-cash-games",
+  "published_on": "2012-12-12",
+  "publisher_evidence": "Card Player reports receiving an operator email linking Ivey to this screen name.",
+  "limitations": [
+    "Underlying operator email is not reproduced; this is publisher-reported attribution.",
+    "Identity alone does not establish hero cards, NLHE format or complete betting state.",
+    "Source-reviewed normalization is required before alias records enter the importer."
+  ],
+  "admission_status": "identity_lead_pending_source_review"
+}

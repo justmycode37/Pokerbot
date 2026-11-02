@@ -1,0 +1,150 @@
+{
+  "all_inspected_development_only": true,
+  "code_hash_drift": {
+    "conversion_output_mtime_local": "2026-11-02 10:20:37 Europe/Zurich",
+    "converter_sha256_at_end": "c50a17e08cb2d76848aace6b241a6f347bf1d4f272930a092cfb916991d88268",
+    "converter_sha256_at_start_and_conversion": "aeba51655c1927a47b2b9bd7f404a94a15a7299abde52f9ce9d8ba0cb483a7ca",
+    "detected": true,
+    "note": "Root converter and pot helper changed after this parity-zero conversion output was written. This review did not modify root code. The converter output remains tied to its captured start SHA; helper values used for row review were independently reconstructed and cross-checked against engine observations and direct source-prefix ledgers.",
+    "observed_file_mtime_local": "2026-11-02 10:25:24 Europe/Zurich",
+    "pot_helper_sha256_at_end": "fffa3df98fe5997d72d7f910c27d0a73536a06d5c82ea4426c7b2ecd28cc88cb",
+    "pot_helper_sha256_at_start": "3bf5bb521dfca1e4ed16871f19d50fef125cdded6c2ebd3ae253ab805dda6556",
+    "pot_helper_sha256_used_for_independent_rows": "fffa3df98fe5997d72d7f910c27d0a73536a06d5c82ea4426c7b2ecd28cc88cb"
+  },
+  "converter_counts": {
+    "2018": {
+      "conflicting_hand_uuids_excluded": 0,
+      "duplicate_hand_payloads_removed": 0,
+      "hands_rejected": 41,
+      "hands_replayed": 0,
+      "hands_with_ivey_decisions": 0,
+      "hands_with_ivey_known_cards": 0,
+      "hands_with_ivey_unknown_cards": 0,
+      "ivey_decisions_seen": 0,
+      "known_card_ivey_decisions": 0,
+      "newly_admitted_decisions": 0,
+      "raw_hand_records_found": 41,
+      "source_files_rejected": 0,
+      "source_files_seen": 41,
+      "unique_hand_uuids": 41,
+      "unknown_card_ivey_decisions": 0,
+      "validated_candidate_decisions": 0
+    },
+    "2024": {
+      "conflicting_hand_uuids_excluded": 0,
+      "duplicate_hand_payloads_removed": 0,
+      "hands_rejected": 35,
+      "hands_replayed": 152,
+      "hands_with_ivey_decisions": 152,
+      "hands_with_ivey_known_cards": 152,
+      "hands_with_ivey_unknown_cards": 0,
+      "ivey_decisions_seen": 241,
+      "known_card_ivey_decisions": 241,
+      "newly_admitted_decisions": 0,
+      "raw_hand_records_found": 234,
+      "source_files_rejected": 0,
+      "source_files_seen": 234,
+      "unique_hand_uuids": 234,
+      "unknown_card_ivey_decisions": 0,
+      "validated_candidate_decisions": 241
+    }
+  },
+  "converter_rejection_reasons_2024": {
+    "The amount 6000 is below the minimum allowed 8000.": 1,
+    "action_precedes_public_board_reveal": 27,
+    "board_timestamp_conflicts_with_source_order": 1,
+    "explicit_small_and_big_blind_actors_required": 2,
+    "invalid_hero_hole_cards": 2,
+    "terminal_pot_contributions_mismatch_action_payments": 1,
+    "unsupported_or_missing_runout_count": 1
+  },
+  "counts": {
+    "admissions_created": 0,
+    "candidate_decisions_2018": 0,
+    "candidate_hands_2018_capacity_blocked": 41,
+    "contestable_pot_recomputed": 82,
+    "converted_2024_decisions": 241,
+    "engine_pot_to_call_matches": 241,
+    "helper_ante_live_tier_checks_pass": 241,
+    "independent_review_failures": 0,
+    "independently_passed_decisions": 241,
+    "owned_hero_action_locators": 340,
+    "owned_known_two_card_hands": 225,
+    "owned_raw_hand_records": 275,
+    "unique_candidate_hands": 152,
+    "unmatched_top_pot_sidecases": 2
+  },
+  "global_dedup": {
+    "admitted_input_hashes": {
+      "data/acquisition_resume/2026-11-01/admissions/batch-001.json": "3d2e387b997fab022c9a4a1a75d84e8dfe6d1c8606644cb353c217288dc5e0ac",
+      "data/acquisition_resume/2026-11-01/admissions/batch-002.json": "0bcc76745a35e0f8bb846abff97cdcb750f47aefef3c07d9cceb7587b9171efe",
+      "data/corpus_splits/development-after-prospective-v1.json": "d172e7310677b051b8dea0163fb14b06b81ad9b5847c73d735f1e2ec66c1a483"
+    },
+    "admitted_total": 80,
+    "candidate_identities": 241,
+    "candidate_identity_forms_checked": 482,
+    "duplicates_with_admitted": 0,
+    "duplicates_with_other_triton": 0,
+    "raw_uuid_overlaps_with_other_triton": 0,
+    "report_path": "global-dedup.json"
+  },
+  "input_hashes": {
+    "converter_output_2018_sha256": "39659dc93aaf090903684c5698a91bcfb385510ffe92504757ecf4d0a3d73352",
+    "converter_output_2024_sha256": "89f8f27771fee52f1c28f423d185e135b119c843c2d1119d3c72634fa67b744c",
+    "converter_sha256_at_start": "aeba51655c1927a47b2b9bd7f404a94a15a7299abde52f9ce9d8ba0cb483a7ca",
+    "current_code_sha256": {
+      "scripts/acquisition_import.py": "553aafcaeb549d7ee06e245c6f2880d5df1fae3f7b9325d4f00ff9351dca19ea",
+      "scripts/acquisition_pot_eligibility.py": "fffa3df98fe5997d72d7f910c27d0a73536a06d5c82ea4426c7b2ecd28cc88cb",
+      "scripts/acquisition_triton_convert.py": "c50a17e08cb2d76848aace6b241a6f347bf1d4f272930a092cfb916991d88268"
+    },
+    "pot_helper_sha256_at_start": "3bf5bb521dfca1e4ed16871f19d50fef125cdded6c2ebd3ae253ab805dda6556",
+    "source_hand_audit_sha256": "c961a37358c9987f243a5f577a76e8f412ea278578dcc5a13e5b944e9c8e7b29",
+    "source_manifest_sha256": "a8b51e190f16feb411b6b2eb54614f4641d7834f345693ae4d07dedf74414a22"
+  },
+  "notes": [
+    "No source/API fetch, policy call, training, score evaluation, admissions, or split changes.",
+    "Converter rejected hands are left out; no raw fields were changed.",
+    "Corrected contestable_pot values were revalidated with pokerbot.corpus.validate_rows to refresh decision_id and record_hash.",
+    "Terminal pot and end-stack data were used only by independent accounting validation and are absent from candidate states."
+  ],
+  "protected_path_integrity": {
+    "baseline_path": "data/acquisition_resume/2026-11-02/cash_review_1/protected-baseline.json",
+    "paths": {
+      "data/corpus_splits": {
+        "added": [],
+        "all_hashes_match": true,
+        "baseline_bytes": 340457,
+        "baseline_files": 3,
+        "bytes": 340457,
+        "changed": [],
+        "files": 3,
+        "missing": []
+      },
+      "data/models": {
+        "added": [],
+        "all_hashes_match": true,
+        "baseline_bytes": 289238,
+        "baseline_files": 12,
+        "bytes": 289238,
+        "changed": [],
+        "files": 12,
+        "missing": []
+      },
+      "pokerbot": {
+        "added": [],
+        "all_hashes_match": true,
+        "baseline_bytes": 453670,
+        "baseline_files": 46,
+        "bytes": 453670,
+        "changed": [],
+        "files": 46,
+        "missing": []
+      }
+    },
+    "verified_against_baseline": true
+  },
+  "review": "triton_cash_review_0",
+  "reviewed_at_utc": "2026-11-02T09:32:55.549385+00:00",
+  "schema_version": 1,
+  "status": "reviewed_development_only"
+}

@@ -1,0 +1,170 @@
+{
+  "algorithm": "smoothed-cart-with-leaf-median-raise-size",
+  "classes": [
+    "raise",
+    "call",
+    "check",
+    "fold"
+  ],
+  "feature_names": [
+    "street_preflop",
+    "street_flop",
+    "street_turn",
+    "street_river",
+    "position_UTG",
+    "position_MP",
+    "position_CO",
+    "position_BTN",
+    "position_SB",
+    "position_BB",
+    "hole_high_rank",
+    "hole_low_rank",
+    "hole_pair",
+    "hole_suited",
+    "hole_rank_gap",
+    "hole_has_ace",
+    "board_size",
+    "board_high_rank",
+    "board_low_rank",
+    "board_paired",
+    "board_distinct_ranks",
+    "board_max_suit_count",
+    "known_max_suit_count",
+    "made_hand_category",
+    "hole_ranks_on_board",
+    "hole_overcards_to_board",
+    "board_run_density",
+    "pot_odds",
+    "call_fraction_of_stack",
+    "stack_to_pot_log",
+    "stack_in_big_blinds_log",
+    "pot_in_big_blinds_log",
+    "current_bet_fraction_of_pot",
+    "min_raise_increment_fraction_of_pot",
+    "max_raise_increment_fraction_of_pot",
+    "players_active_fraction",
+    "players_to_act_fraction",
+    "table_size_fraction",
+    "legal_fold",
+    "legal_check",
+    "legal_call",
+    "legal_raise",
+    "history_current_action_count",
+    "history_current_raise_count",
+    "history_current_call_count",
+    "history_current_fold_count",
+    "history_preflop_raise_count",
+    "history_raise_added_fraction_of_pot"
+  ],
+  "feature_version": "imitation-features-v1",
+  "limits": [
+    "A small selected source corpus is exploratory and cannot establish population agreement.",
+    "Public action history and card strength features do not include private opponent ranges or live reads.",
+    "Decision rows from one hand remain correlated even when source groups stay in one partition."
+  ],
+  "metadata": {
+    "class_smoothing": "Laplace alpha over classes present in the fitting rows",
+    "dataset_hash": "8b015f65bca1b04e21c9346f9e4d84e0011628a3d1619f404bb0285676b790a4",
+    "development_included_explicitly": true,
+    "manifest_hash": "70850be45ed4be996eb6d359886ce4e80bbdd59feacbbb62880da9be7f9a791e",
+    "max_depth": 4,
+    "min_leaf": 2,
+    "partitions_used": [
+      "train",
+      "development"
+    ],
+    "raise_size_target": "median (raise_to - current_bet - to_call) / (contestable_pot + to_call)",
+    "split_hash": "8e2fc69aa0a6dcbdbcece7409391b04c9d94e02b7b5d35a7c06ed51e9d90c0fc",
+    "training_decisions": 20,
+    "training_group_count": 5
+  },
+  "raise_ratio_median": 0.7070707070707071,
+  "schema_version": 1,
+  "smoothing": 1.0,
+  "tree": {
+    "feature": "players_to_act_fraction",
+    "left": {
+      "feature": "known_max_suit_count",
+      "left": {
+        "action_counts": {
+          "call": 6,
+          "check": 0,
+          "fold": 0,
+          "raise": 0
+        },
+        "leaf": true,
+        "raise_ratio_median": null,
+        "sample_count": 6
+      },
+      "right": {
+        "action_counts": {
+          "call": 0,
+          "check": 0,
+          "fold": 1,
+          "raise": 1
+        },
+        "leaf": true,
+        "raise_ratio_median": 1.427227638105011,
+        "sample_count": 2
+      },
+      "threshold": 0.3571428571428571
+    },
+    "right": {
+      "feature": "street_flop",
+      "left": {
+        "feature": "stack_in_big_blinds_log",
+        "left": {
+          "feature": "hole_low_rank",
+          "left": {
+            "action_counts": {
+              "call": 1,
+              "check": 1,
+              "fold": 0,
+              "raise": 0
+            },
+            "leaf": true,
+            "raise_ratio_median": null,
+            "sample_count": 2
+          },
+          "right": {
+            "action_counts": {
+              "call": 0,
+              "check": 0,
+              "fold": 0,
+              "raise": 2
+            },
+            "leaf": true,
+            "raise_ratio_median": 0.5840773809523809,
+            "sample_count": 2
+          },
+          "threshold": 0.6428571428571428
+        },
+        "right": {
+          "action_counts": {
+            "call": 0,
+            "check": 0,
+            "fold": 0,
+            "raise": 5
+          },
+          "leaf": true,
+          "raise_ratio_median": 0.704225352112676,
+          "sample_count": 5
+        },
+        "threshold": 0.29906033318612685
+      },
+      "right": {
+        "action_counts": {
+          "call": 0,
+          "check": 2,
+          "fold": 0,
+          "raise": 1
+        },
+        "leaf": true,
+        "raise_ratio_median": 0.7070707070707071,
+        "sample_count": 3
+      },
+      "threshold": 0.5
+    },
+    "threshold": 0.07142857142857142
+  }
+}

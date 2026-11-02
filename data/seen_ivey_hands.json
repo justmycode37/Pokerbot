@@ -1,0 +1,8 @@
+{
+  "development_hand_ids": [
+    "cardplayer-1921-ivey-polk",
+    "dwan-ivey-2009",
+    "pokergo-YfjDfPk7e1E"
+  ],
+  "reason": "These hands were inspected in strategy/replay reviews before an imitation training holdout was created. They cannot be presented as unseen evaluation data."
+}

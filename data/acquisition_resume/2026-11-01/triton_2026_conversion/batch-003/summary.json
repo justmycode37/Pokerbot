@@ -1,0 +1,34 @@
+{
+  "all_candidates_match_unique_collector_action_locations": true,
+  "baseline_admitted_decisions": 45,
+  "baseline_hand_id_overlap": [],
+  "converter_sha256": "45ef6929dbf03a2110c68f33edbdccfa850560c3ef9b62d782ddc281c16ee7f1",
+  "counts": {
+    "conflicting_hand_uuids_excluded": 0,
+    "duplicate_hand_payloads_removed": 0,
+    "hands_rejected": 33,
+    "hands_replayed": 45,
+    "hands_with_ivey_decisions": 45,
+    "ivey_decisions_seen": 47,
+    "newly_admitted_decisions": 0,
+    "raw_hand_records_found": 121,
+    "source_files_rejected": 0,
+    "source_files_seen": 121,
+    "unique_hand_uuids": 121,
+    "validated_candidate_decisions": 47
+  },
+  "newly_admitted_decisions": 0,
+  "output": "data/acquisition_resume/2026-11-01/triton_2026_conversion/batch-003/candidates-with-provenance.json",
+  "output_sha256": "c184bb48389ee01f82e132b92078d64a602a795cd44e40307857ef58f7d0022e",
+  "prior_sample_decision_overlap": [],
+  "rejection_reasons": {
+    "The amount 25000 is below the minimum allowed 200000.": 1,
+    "action_precedes_public_board_reveal": 1,
+    "model_observation_player_count_exceeds_eight": 31
+  },
+  "source_manifest": "data/acquisition_resume/2026-11-01/triton_2026/manifest.json",
+  "source_manifest_sha256": "9c2b6b984c3a45c4ae38b2133f695f0d9c5b06d17fa191185d9eabe2b091e2cf",
+  "status": "pending_independent_batch_review",
+  "test_result": "152 tests passed; see ../full-unittest-after-archive-fixes.log",
+  "unique_candidate_hands": 45
+}

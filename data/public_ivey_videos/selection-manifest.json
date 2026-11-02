@@ -1,0 +1,135 @@
+{
+  "protocol_version": 1,
+  "research_stage": "first_batch_review_complete",
+  "selection_method": {
+    "discovery": "Public YouTube search through yt-dlp ytsearch results, with separate fixed queries for PokerGO, PokerStars, Triton Poker, and World Poker Tour. Video metadata only was inspected before selection; no streams were opened or downloaded before the candidate list was locked.",
+    "ordered_queries": [
+      "ytsearch20:Phil Ivey poker PokerGO",
+      "ytsearch15:Phil Ivey PokerStars poker hand",
+      "ytsearch15:Phil Ivey Triton Poker hand",
+      "ytsearch10:Phil Ivey WPT poker hand",
+      "ytsearch20:Phil Ivey Triton NLH poker (supplementary query, added after first three clips were reviewed)"
+    ],
+    "eligibility": [
+      "Uploader must be the official channel for one of the four named operators, checked by channel name and stable channel ID.",
+      "Public video metadata and stream must be available without an account, cookies, or access workaround.",
+      "The title and description must identify one specific hand or one pot featuring Ivey, rather than a compilation, broad session, or complete match.",
+      "Standard no-limit hold'em must be supported by the video/event metadata; explicit Short Deck and Shark Cage sources are excluded from standard NLHE scoring.",
+      "Skip the already reconstructed PokerGO video YfjDfPk7e1E and the two historical records already in the project."
+    ],
+    "ordering": "Within each fixed query, candidates were considered in search-result order. The first three PokerGO videos meeting metadata-only criteria were locked as the initial hand batch before review. To expand the requested first batch, the next eligible single-hand official-source result in the remaining fixed query order was then locked as a fourth source before its review. Do not replace a source because the observed action or outcome is inconvenient."
+  },
+  "locked_initial_batch": [
+    {
+      "video_id": "Aw_KVPxe7d0",
+      "url": "https://www.youtube.com/watch?v=Aw_KVPxe7d0",
+      "title": "Phil Ivey Making Phil Ivey Reads | Super High Roller Cash Game | PokerGO",
+      "channel": "PokerGO",
+      "channel_id": "UCOPw3R-TUUNqgN2bQyidW2w",
+      "upload_date": "2018-05-03",
+      "duration_seconds": 299,
+      "availability_at_selection": "public",
+      "metadata_selection_basis": "Description identifies one nearly $500,000 pot after Antonio Esfandiari flops a strong hand; the PokerGO source is official."
+    },
+    {
+      "video_id": "g1nesioHo_c",
+      "url": "https://www.youtube.com/watch?v=g1nesioHo_c",
+      "title": "Phil Hellmuth Gets Himself in Trouble vs Phil Ivey!",
+      "channel": "PokerGO",
+      "channel_id": "UCOPw3R-TUUNqgN2bQyidW2w",
+      "upload_date": "2023-08-15",
+      "duration_seconds": 298,
+      "availability_at_selection": "public",
+      "metadata_selection_basis": "Description identifies a single big-pot clash between Phil Hellmuth and Phil Ivey on Poker After Dark; the PokerGO source is official."
+    },
+    {
+      "video_id": "5TX7WuLl7IQ",
+      "url": "https://www.youtube.com/watch?v=5TX7WuLl7IQ",
+      "title": "Phil Ivey vs Doyle Brunson Cash Game Clash!",
+      "channel": "PokerGO",
+      "channel_id": "UCOPw3R-TUUNqgN2bQyidW2w",
+      "upload_date": "2020-11-30",
+      "duration_seconds": 187,
+      "availability_at_selection": "public",
+      "metadata_selection_basis": "Description explicitly says this hand is a single large-pot clash in Super High Roller Cash Game; the PokerGO source is official."
+    }
+  ],
+  "locked_expansions_before_review": [
+    {
+      "video_id": "jdiDizWlIz0",
+      "url": "https://www.youtube.com/watch?v=jdiDizWlIz0",
+      "title": "Phil Ivey\u2019s INSANE All-In with Queens Gets Interrupted by a KING?! Triton Poker Mayhem",
+      "channel": "Triton Poker",
+      "channel_id": "UCpcv404DxfhGYhXgyB9Aoeg",
+      "upload_date": "2025-07-11",
+      "duration_seconds": 1212,
+      "availability_at_selection": "public",
+      "metadata_selection_basis": "The next eligible official Triton result in the fixed hand-specific query order after excluding the explicitly Short Deck result and a nonofficial uploader; the public description identifies a single Ivey all-in hand at the Triton Cash Game Invitational in Montenegro. Added to broaden the first batch because the first three sources exposed limited exact state fields. Selected before downloading or reviewing this video.",
+      "review_status": "excluded_after_review",
+      "review_reason": "Playback review showed a multi-hand edit intercutting unrelated hands; excluded under the predeclared hand-specific rule without selecting a convenient segment."
+    },
+    {
+      "video_id": "KjreElAgfRk",
+      "url": "https://www.youtube.com/watch?v=KjreElAgfRk",
+      "title": "Can Phil Ivey find the right move with his tournament life at risk?",
+      "channel": "Triton Poker",
+      "channel_id": "UCpcv404DxfhGYhXgyB9Aoeg",
+      "upload_date": "2022-09-11",
+      "duration_seconds": 577,
+      "availability_at_selection": "public",
+      "metadata_selection_basis": "Next official single-hand result in the supplementary Triton NLH metadata query after the next candidate (jdiDizWlIz0) was found on review to be a multi-hand edit; the description identifies one tournament hand and includes #NLH. Selected and locked before downloading or reviewing the video.",
+      "review_status": "selected_after_review",
+      "review_summary": "Official Triton metadata and hand-specific public reports support one $200K Coin Rivet Invitational NLH tournament hand with four Ivey decision labels. Exact stack remains rounded, so the hand produces no complete protocol Observation or PHH."
+    }
+  ],
+  "metadata_screened_candidates": [
+    {
+      "video_id": "YfjDfPk7e1E",
+      "channel": "PokerGO",
+      "status": "excluded",
+      "reason": "Already reconstructed and must not be duplicated."
+    },
+    {
+      "video_id": "0Sxl63GSLJ0",
+      "channel": "Triton Poker",
+      "channel_id": "UCpcv404DxfhGYhXgyB9Aoeg",
+      "status": "excluded",
+      "reason": "Official and public, but its published description identifies a \u20ac100K Short Deck Main Event, which is outside standard NLHE scoring."
+    },
+    {
+      "video_id": "fcegeGil86M",
+      "channel": "PokerStars",
+      "channel_id": "UCGWkDcYbDKP9r--ym28YwAQ",
+      "status": "excluded",
+      "reason": "Official and public, but the published description identifies Shark Cage hands with nonstandard game rules; do not score as standard NLHE."
+    },
+    {
+      "video_id": "SIfMqu_IkaA",
+      "channel": "PokerStars",
+      "channel_id": "UCGWkDcYbDKP9r--ym28YwAQ",
+      "status": "excluded",
+      "reason": "Official and public, but metadata identifies a multi-hand best-moments compilation rather than a single selected hand."
+    },
+    {
+      "video_id": "daR3q3KKQ0o",
+      "channel": "World Poker Tour",
+      "channel_id": "UCEUGxpG2rkyJlCvr46PBr6g",
+      "status": "excluded",
+      "reason": "Official and public, but this is an 11,131-second complete heads-up match broadcast, not a specific hand clip; outside this first hand-specific batch."
+    }
+  ],
+  "review_status": "complete",
+  "review_summary": {
+    "selected_source_videos": 4,
+    "confirmed_standard_nlhe_videos": 3,
+    "unscored_betting_structure_uncertain_videos": 1,
+    "labeled_ivey_decisions": 18,
+    "retained_sparse_predecision_frames": 16,
+    "complete_protocol_observations": 0,
+    "complete_phh_replays": 0,
+    "excluded_locked_candidates_after_review": 1,
+    "exclusion_policy": "The sole post-lock exclusion was because the selected video intercuts unrelated hands, not because of its action or result.",
+    "withdrawn_equity_exposing_frames": 1,
+    "retained_pot_detail_crops": 2
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "python": "3.12.10 (v3.12.10:0cc81280367, Apr  8 2025, 08:46:59) [Clang 13.0.0 (clang-1300.0.29.30)]",
+  "checks": [
+    {
+      "check": "unittest",
+      "exit_code": 0,
+      "seconds": 4.893
+    },
+    {
+      "check": "ledger",
+      "exit_code": 0,
+      "seconds": 0.425
+    },
+    {
+      "check": "checksums",
+      "exit_code": 0,
+      "seconds": 0.276
+    }
+  ],
+  "unit_tests": 188,
+  "admitted_decisions": 606,
+  "isolation": "Only the PR index was copied; unrelated shared-workspace files were excluded."
+}

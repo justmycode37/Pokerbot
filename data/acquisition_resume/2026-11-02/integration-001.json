@@ -1,0 +1,67 @@
+{
+  "integratedConverterSha": "c50a17e08cb2d76848aace6b241a6f347bf1d4f272930a092cfb916991d88268",
+  "integratedHelperSha": "fffa3df98fe5997d72d7f910c27d0a73536a06d5c82ea4426c7b2ecd28cc88cb",
+  "fullSuiteTestsPassed": 181,
+  "usableDecisions": 80,
+  "pendingAnteCorrectedRows": 21,
+  "reviewTasks": [
+    {
+      "title": "Recheck 21 ante-corrected source decisions",
+      "taskId": "node:delegated-task:command%3Amcp%3A60afab40-5c66-457d-bb73-7047e79210a0%3Adelegate-task%3Ae78adab8-2a6b-4f40-83cc-d28fdefc587c",
+      "childThreadId": "thread:delegated-task:command%3Amcp%3A60afab40-5c66-457d-bb73-7047e79210a0%3Adelegate-task%3Ae78adab8-2a6b-4f40-83cc-d28fdefc587c",
+      "link": "<t3-thread://v2/d24ed819-cb7a-48e8-bf3c-a5bad185a206/thread:delegated-task:command%3Amcp%3A60afab40-5c66-457d-bb73-7047e79210a0%3Adelegate-task%3Ae78adab8-2a6b-4f40-83cc-d28fdefc587c>",
+      "childRunId": "run:thread:thread%3Adelegated-task%3Acommand%253Amcp%253A60afab40-5c66-457d-bb73-7047e79210a0%253Adelegate-task%253Ae78adab8-2a6b-4f40-83cc-d28fdefc587c:ordinal:1",
+      "childNodeId": "node:delegated-task:command%3Amcp%3A60afab40-5c66-457d-bb73-7047e79210a0%3Adelegate-task%3Ae78adab8-2a6b-4f40-83cc-d28fdefc587c",
+      "status": "running",
+      "workState": "working",
+      "hasPendingChildRuns": false,
+      "latestTerminalRunId": null,
+      "latestTerminalStatus": null,
+      "latestTerminalSummary": null,
+      "latestTerminalResultContextTransferId": null,
+      "providerInstanceId": "codex",
+      "model": "gpt-6-luna",
+      "options": [
+        {
+          "id": "reasoningEffort",
+          "value": "max"
+        }
+      ],
+      "summary": null,
+      "resultContextTransferId": null,
+      "hasPendingQuestion": false,
+      "pendingApproval": null,
+      "waitTimedOut": false,
+      "next": "Completion wakes this thread, so end your turn. Do not wait on it or poll it."
+    },
+    {
+      "title": "Refresh historical decisions after converter fixes",
+      "taskId": "node:delegated-task:command%3Amcp%3A60afab40-5c66-457d-bb73-7047e79210a0%3Adelegate-task%3A8af64e2e-5d51-4be7-ab66-1d6dffa78e4d",
+      "childThreadId": "thread:delegated-task:command%3Amcp%3A60afab40-5c66-457d-bb73-7047e79210a0%3Adelegate-task%3A8af64e2e-5d51-4be7-ab66-1d6dffa78e4d",
+      "link": "<t3-thread://v2/d24ed819-cb7a-48e8-bf3c-a5bad185a206/thread:delegated-task:command%3Amcp%3A60afab40-5c66-457d-bb73-7047e79210a0%3Adelegate-task%3A8af64e2e-5d51-4be7-ab66-1d6dffa78e4d>",
+      "childRunId": "run:thread:thread%3Adelegated-task%3Acommand%253Amcp%253A60afab40-5c66-457d-bb73-7047e79210a0%253Adelegate-task%253A8af64e2e-5d51-4be7-ab66-1d6dffa78e4d:ordinal:1",
+      "childNodeId": "node:delegated-task:command%3Amcp%3A60afab40-5c66-457d-bb73-7047e79210a0%3Adelegate-task%3A8af64e2e-5d51-4be7-ab66-1d6dffa78e4d",
+      "status": "running",
+      "workState": "working",
+      "hasPendingChildRuns": false,
+      "latestTerminalRunId": null,
+      "latestTerminalStatus": null,
+      "latestTerminalSummary": null,
+      "latestTerminalResultContextTransferId": null,
+      "providerInstanceId": "codex",
+      "model": "gpt-6-luna",
+      "options": [
+        {
+          "id": "reasoningEffort",
+          "value": "max"
+        }
+      ],
+      "summary": null,
+      "resultContextTransferId": null,
+      "hasPendingQuestion": false,
+      "pendingApproval": null,
+      "waitTimedOut": false,
+      "next": "Completion wakes this thread, so end your turn. Do not wait on it or poll it."
+    }
+  ]
+}

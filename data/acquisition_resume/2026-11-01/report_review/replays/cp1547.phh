@@ -1,0 +1,9 @@
+variant = "NT"
+ante_trimming_status = false
+antes = [5000, 5000]
+blinds_or_straddles = [30000, 60000]
+min_bet = 60000
+starting_stacks = [3450000, 550000]
+players = ["Phil Ivey", "Patrik Antonius"]
+hand = "cp1547"
+actions = ["d dh p1 AhQd", "d dh p2 ????", "p2 cbr 545000", "p1 cc"]

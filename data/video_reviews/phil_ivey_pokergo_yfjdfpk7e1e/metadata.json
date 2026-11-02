@@ -1,0 +1,24 @@
+{
+  "video_id": "YfjDfPk7e1E",
+  "title": "The Most Confusing Hand Phil Ivey EVER Played!",
+  "channel": "PokerGO",
+  "channel_id": "UCOPw3R-TUUNqgN2bQyidW2w",
+  "channel_url": "https://www.youtube.com/channel/UCOPw3R-TUUNqgN2bQyidW2w",
+  "watch_url": "https://www.youtube.com/watch?v=YfjDfPk7e1E",
+  "duration_seconds": 154,
+  "duration_display": "2:34",
+  "availability_reported_by_ytdlp": "public",
+  "channel_verified_in_video_search_result": true,
+  "public_extraction": {
+    "tool": "yt-dlp 2026.10.26",
+    "used_cookies_or_account": false,
+    "downloaded_for_inspection": true,
+    "selected_streams": "format 136 (720p H.264 video) + format 140 (AAC audio), muxed with ffmpeg",
+    "temporary_video_retained_in_repository": false,
+    "automatic_english_captions_listed": true,
+    "captions_downloaded_or_used": false,
+    "retained_frames": 7,
+    "opponent_hole_cards_and_equity_redacted_from_retained_frames": true
+  },
+  "extraction_note": "The first best[height<=720] format request returned 'Requested format is not available'. yt-dlp -F showed separate video/audio streams; selecting 136+140 succeeded. yt-dlp warned that no supported JavaScript runtime was available and that some formats may be missing. No account, cookies, proxy, paywall, or restriction workaround was used."
+}

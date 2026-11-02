@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sequoia-pokerbot-lab"
+version = "0.1.0"
+description = "An auditable no-limit Hold'em bot and human-decision comparison lab"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+evaluation = ["pokerkit==0.7.7"]
+
+[project.scripts]
+pokerbot = "pokerbot.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["pokerbot*"]

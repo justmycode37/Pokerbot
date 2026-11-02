@@ -1,0 +1,7 @@
+{
+  "operationName": "GetTournamentWithEpisodes",
+  "query": "\n    query GetTournamentWithEpisodes($tournamentId: String!) {\n  tournament(tournamentId: $tournamentId) {\n    uuid\n    name\n    eventNo\n    tournamentStatus\n    noOfBullets\n    isSatellite\n    flight\n    noOfEntries\n    games {\n      uuid\n      participants {\n        uuid\n      }\n    }\n    visibleSections {\n      showSeatingChart\n      showChipCount\n      showPayouts\n      showStructure\n      showLiveStream\n    }\n    days {\n      uuid\n      name\n    }\n    payouts {\n      participant {\n        uuid\n        user {\n          uuid\n          nickname\n          countryCode\n          photo {\n            uuid\n            cdnPath\n          }\n        }\n      }\n      currency\n      uuid\n      position\n      winAmount\n      bountyAmount\n    }\n    winnerPhoto {\n      uuid\n      cdnPath\n    }\n    episodes {\n      episodeId\n      videoUrl\n      dayId\n      videoLengthInMs\n      title\n      description\n      published\n      episodeNo\n      poster {\n        uuid\n        cdnPath\n      }\n    }\n    festival {\n      uuid\n      type\n      currency\n      activeTournamentId\n      activeGameId\n      liveStreamUrl\n      liveStreamTwitchLiveId\n      liveStreamYoutubeLiveId\n      liveStreamEnabled\n    }\n  }\n}\n    ",
+  "variables": {
+    "tournamentId": "922cd083-522c-4162-aab3-0c0e752c4d59"
+  }
+}

@@ -1,0 +1,12 @@
+variant = "NT"
+ante_trimming_status = false
+antes = [0, 0]
+blinds_or_straddles = [300, 600]
+min_bet = 600
+starting_stacks = [60000, 62399.5]
+actions = ["d dh p1 ????", "d dh p2 KhQd", "p2 cbr 1800", "p1 cbr 6000", "p2 cc", "d db 6hQh5c", "p1 cc", "p2 cc", "d db Th", "p1 cbr 9000", "p2 cc", "d db 2s", "p1 cbr 13600", "p2 cc", "p1 sm Qc9c", "p2 sm KhQd"]
+seats = [1, 2]
+players = ["Denoking", "Phil Ivey"]
+currency_symbol = "$"
+hand = "converted-forum:facts:20816c0db35e409f334c0e20df305342d6d5272408ecb90082371a7e8f5c45e7"
+venue = "Full Tilt Poker"

@@ -1,0 +1,8 @@
+{
+  "operationName": "GetEpisode",
+  "query": "\n    query GetEpisode($episodeId: String!, $participatedUsersSize: Int!) {\n  episode(episodeId: $episodeId) {\n    episodeId\n    title\n    description\n    videoUrl\n    videoLengthInMs\n    dayId\n    episodeNo\n    indexedSegments {\n      offsetInSeconds\n      lengthInSeconds\n      handOffsets {\n        handId\n        startTimestamp\n        episodeOffsetInSeconds\n        handLengthInSeconds\n      }\n    }\n    festival {\n      uuid\n      name\n    }\n    tournament {\n      uuid\n      name\n      days {\n        uuid\n        name\n      }\n      episodes {\n        episodeId\n        dayId\n      }\n    }\n    participatedUsers(size: $participatedUsersSize) {\n      uuid\n      nickname\n      photo {\n        uuid\n        cdnPath\n      }\n      countryCode\n    }\n  }\n}\n    ",
+  "variables": {
+    "episodeId": "66f18158-fcdc-4e95-9f81-b4adb8c4699e",
+    "participatedUsersSize": 20
+  }
+}
