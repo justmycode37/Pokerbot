@@ -1,0 +1,58 @@
+{
+  "updated_at_utc": "2026-11-02T09:24:13Z",
+  "status": "passed_for_bounded_research_batch",
+  "checks": {
+    "jsonl_parses": true,
+    "converter_read_gate_accepts_records": true,
+    "no_exact_fulltilt_ids_visible": true,
+    "raw_extract_hashes_match": true,
+    "identity_basis_matches_primary_acquisition_evidence": true,
+    "source_locator_ids_unique_in_batch": true,
+    "source_locator_collisions_against_83_readonly_prior_rows": 0,
+    "action_board_signature_matches_against_prior_rows": 0,
+    "protected_paths_byte_hash_manifests_unchanged": true,
+    "observations_or_admissions_created": false,
+    "converter_replay_run": false,
+    "shown_card_sets_have_no_duplicates": true,
+    "source_action_keys_unique_within_hand": true
+  },
+  "counts": {
+    "captured_rows": 2,
+    "exact_fulltilt_id_rows": 0,
+    "converted_idless_rows": 2,
+    "complete_known_hero_cards": 1,
+    "complete_unknown_hero_cards": 1,
+    "incomplete_rows": 0,
+    "pending_cross_source_identity_review": 2,
+    "duplicate_fulltilt_ids_skipped": 0,
+    "duplicate_source_locators_skipped": 0,
+    "prior_action_board_signature_duplicates": 0,
+    "known_card_hero_action_events": 5,
+    "unknown_card_hero_action_events": 1,
+    "converter_record_count": 2,
+    "converter_new_admissions": 0,
+    "action_events_including_forced_bets": 23
+  },
+  "converter_behavior_note": "acquisition_forum_convert._read_records accepted the JSONL; _exact_fulltilt_id returned no IDs. The converter classifies ID-less converted histories as pending cross-source identity review; no replay or output was run for this partial research batch.",
+  "protected_paths": {
+    "pokerbot": {
+      "file_entries": 46,
+      "manifest_sha256": "f4c0694913acf6d16a40649ef50668a2d500829ad0015ba0874982333be13fe8",
+      "unchanged": true
+    },
+    "data/models": {
+      "file_entries": 12,
+      "manifest_sha256": "b9e1680282a01dbd132c70185f5714d497c152912edc6b765922d6245ee832bb",
+      "unchanged": true
+    },
+    "data/corpus_splits": {
+      "file_entries": 3,
+      "manifest_sha256": "2b4339e17e13f1f60fe9a7cf8d805e6907fd4898dd6e24c7c90cd394e67200b3",
+      "unchanged": true
+    }
+  },
+  "limitations": [
+    "The comparison covers the 83 locally available prior acquisition records, not a comprehensive archive-wide search.",
+    "No source capture in this batch contains a visible canonical Full Tilt game ID."
+  ]
+}

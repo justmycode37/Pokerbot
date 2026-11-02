@@ -1,0 +1,21 @@
+{
+  "admissions": 0,
+  "candidate_decisions": 221,
+  "converter_path": "scripts/acquisition_triton_convert.py",
+  "converter_sha256_at_end": "c50a17e08cb2d76848aace6b241a6f347bf1d4f272930a092cfb916991d88268",
+  "converter_sha256_at_start": "aeba51655c1927a47b2b9bd7f404a94a15a7299abde52f9ce9d8ba0cb483a7ca",
+  "git_head_at_start": "117fbef99c4e08c2ecffc7007b55ecb93e91df5a",
+  "owned_hand_ids": 289,
+  "protected_after_sha256": "da15f229e462563689e90d15f0905ae404ccdbdfdffc1fbd196483d1a378596a",
+  "protected_path_hashes": "verified byte-for-byte unchanged; see protected-after.json",
+  "protected_paths_byte_for_byte_preserved": true,
+  "review_errors": 0,
+  "review_status": "complete_with_2018_capacity_blocker_for_parent",
+  "schema_version": 1,
+  "scope": "Odd UUID-int parity hand IDs only; read-only source and code; no admissions.",
+  "source_audit_sha256": "c961a37358c9987f243a5f577a76e8f412ea278578dcc5a13e5b944e9c8e7b29",
+  "source_episode_manifest_sha256": "a8b51e190f16feb411b6b2eb54614f4641d7834f345693ae4d07dedf74414a22",
+  "started_at_utc": "2026-11-02T09:17:46+00:00",
+  "status": "review_complete",
+  "summary_sha256": "89c6c1f39595488d2147caadf038a5009d73031b7289d95b70f820ed5c7e378c"
+}

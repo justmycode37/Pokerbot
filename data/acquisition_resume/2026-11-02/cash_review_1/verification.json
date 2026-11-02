@@ -1,0 +1,23 @@
+{
+  "converter": {
+    "candidate_decisions": 221,
+    "rejected_2018_hands": 36,
+    "rejected_2024_hands": 44,
+    "source_sha256_at_start_and_conversion": "aeba51655c1927a47b2b9bd7f404a94a15a7299abde52f9ce9d8ba0cb483a7ca",
+    "status": "completed"
+  },
+  "focused_helper_tests": {
+    "command": "PYTHONDONTWRITEBYTECODE=1 .venv/bin/python tests/test_acquisition_pot_eligibility.py",
+    "output": "Ran 10 tests in 0.026s; OK",
+    "runner": "unittest",
+    "status": "passed",
+    "tests_run": 10
+  },
+  "independent_source_review": {
+    "candidate_rows": 221,
+    "errors": 0,
+    "helper_engine_pot_to_call_matches": 221,
+    "helper_independent_eligible_pot_matches": 221,
+    "status": "passed"
+  }
+}

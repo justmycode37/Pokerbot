@@ -1,0 +1,164 @@
+{
+  "converter_sha256": "01a6cfcc551e85c9b90c19120d5df8a8a9e8e0ea07943204e39e55b257c22e24",
+  "created_utc": "2026-11-02 review start",
+  "prior_checkpoint_sha256": "df0052deda26231a810a7f2565f26208e92983cadef67bf9d6a3fb1c84ae8783",
+  "protected_baseline": {
+    "data/corpus_splits": {
+      "bytes": 340457,
+      "files": 3,
+      "tree_sha256": "e00526b08f283d1e4ee142442002681a524c99e399665f555d0bc6086f03a546"
+    },
+    "data/models": {
+      "bytes": 289238,
+      "files": 12,
+      "tree_sha256": "a8d9b90355d9ecbcc77711b2cb53d6432194be73971875f1f922410622ebff92"
+    },
+    "pokerbot": {
+      "bytes": 453670,
+      "files": 46,
+      "tree_sha256": "11450e381ff9195ee1f061f422046562e98d2c5b9b4223c5a9d8aa381e7fdd5c"
+    }
+  },
+  "protected_post_review": {
+    "data/corpus_splits": {
+      "bytes": 340457,
+      "canonical_file_inventory_sha256": "4b4f0da7074d3462b27f33e5763d63320c3b33495baacf37ff3237be151ee732",
+      "files": 3,
+      "files_sha256": {
+        "development-after-prospective-v1.json": "d172e7310677b051b8dea0163fb14b06b81ad9b5847c73d735f1e2ec66c1a483",
+        "development-baseline.json": "1e80fced108bc936cffc30b378f87ad73d3de874caa260d6d12246772c22c373",
+        "public-reports-v1.json": "782aea11d6301c1d906d19e4519905210ab1455e031c260a805723a504512e9e"
+      },
+      "matches_contemporaneous_protected_file_hash_manifest": true,
+      "matches_initial_file_count_and_bytes": true
+    },
+    "data/models": {
+      "bytes": 289238,
+      "canonical_file_inventory_sha256": "136ccd04f567c0e900b3aa369888011e6c124f0fe21294e8d3832eb6aa2dc0b6",
+      "files": 12,
+      "files_sha256": {
+        "candidate-lock-v2.json": "118c2d9b389096ef5027aab803fd0cd2eee343b897ee338f9e43a35b0a8c16b7",
+        "candidate-v2-source-manifest.json": "e7603cb6d78c46064418c09cab041ed9538660a7609d0bbb85e1e87815bdbbfa",
+        "candidate-v2-source.zip": "b13c425ac3c8164c4c799742b0b009876e4f301bb7c4d5cc2653c0dbf2715bfe",
+        "grid-candidate-lock-v1.json": "cc4e52d437aeb75af94139ff8e4b550e511de7fa2f45f4e1d5d46e0788cb5f46",
+        "hybrid-v1-source-manifest.json": "cc86f7bbd943e3b723437220c49811456546f803514959a17e6ac116549009f8",
+        "hybrid-v1-source.zip": "c3f48326143d4b9406b314e3fdc5c65fc4eae6b15ce28211f31aa5edce1f1242",
+        "hybrid-v1.json": "7c2a536e3a19783873f786b866a65998b8d31672ac3e150d385341d6fc113313",
+        "hybrid-v2.json": "a8650a0efacab9a28b8eb7aedef1d8b78c1e9a918f1c90b9e24dbe6bf07a61b6",
+        "ivey-imitation-v1.json": "dc850beb8c9afe80e4acef156a290a951cf509f80beacf418e3442e5cf774f23",
+        "locked-candidate-v1.zip": "d1431f1b3cf0f2ef6b64ceb4031ae1c8f3113dc96c5b62a936ccf1c4260df5a8",
+        "prospective-code-lock-v1.json": "ad009110e329a7f9f672aceb978c3d19696adb5daac74749a1b537d8f7420455",
+        "prospective-evaluation-lock-v1.json": "a0d6b0d25f2c7f07100ca4ed017d82419bbfa67a1f471458de8756b757fbc113"
+      },
+      "matches_contemporaneous_protected_file_hash_manifest": true,
+      "matches_initial_file_count_and_bytes": true
+    },
+    "pokerbot": {
+      "bytes": 453670,
+      "canonical_file_inventory_sha256": "e5a7ca8eb7330e98ae1d65430d3aa439b6f5bf81bc26fd4a6a3ac6ed59bb3a11",
+      "files": 46,
+      "files_sha256": {
+        "__init__.py": "c8ea42864e04f67b0c47c7056843be108982f39b75b4d57aa22d663307d0e827",
+        "__main__.py": "81350a26c216f08156d696579061bceb30d9c0fb7e5ac0828510954b0cc06217",
+        "__pycache__/__init__.cpython-312.pyc": "ae55d0a2b76b8da9e56b1b04ed4990cdeb07d3f84c81d0b2bb8801db19bdf397",
+        "__pycache__/__main__.cpython-312.pyc": "e7878d330998046b68db0805d4d81bc9ba9943a311d552e91e5c04c863b710b2",
+        "__pycache__/benchmarks.cpython-312.pyc": "0c05a5f590a7ce8a2d950d1ca3abe2526dc188f10169f321f8c03943026292aa",
+        "__pycache__/candidate_evaluation.cpython-312.pyc": "0e85188105be4e5431ca536e2752ee43cb3a0b5e37f4d9defed2989accad916b",
+        "__pycache__/cards.cpython-312.pyc": "d07cf8da7cbc4236514288d35e342894a20c92067ae935f6eaee25477b862eb7",
+        "__pycache__/corpus.cpython-312.pyc": "6b53fc720da68f5768bedba297d9f4531a86e7da5d0eb48fc183daa808e8e2b7",
+        "__pycache__/equity.cpython-312.pyc": "c5843225bed79e6e72a0b22815d9978a7183fed13e13fd153d452263103ac7a6",
+        "__pycache__/evaluation_baselines.cpython-312.pyc": "b232e77e391eb5a495d7dc45ab8ad78588f21381d268a0ff8846ff9ac2564d7f",
+        "__pycache__/fast.cpython-312.pyc": "3b21848ac5f9e26d12e96ccb45c51c79f8ab807cd368cf7627492763615682e0",
+        "__pycache__/grid_policy.cpython-312.pyc": "cc08a8d8cea8f5fdcaed383cb703efc1d8932e12e35cce19ddad9116f609eb7b",
+        "__pycache__/hybrid.cpython-312.pyc": "cd928b0e9f372e6a11b33778e168657482cb810f99d0398b7cd6b623e4641159",
+        "__pycache__/imitation.cpython-312.pyc": "26976ff9c4d7862306642f9be4b95f24c6dff1ba34fe9b36b125c24dbf5f322b",
+        "__pycache__/ivey.cpython-312.pyc": "102ca13deb5d30da2079b7e4d364bf9b4abdc0761cc62748489c298951353893",
+        "__pycache__/preflop.cpython-312.pyc": "00f62011829ae4d666652ded8cba7d1fc360f77d8ab503ba90d47911caa9ca8a",
+        "__pycache__/prospective.cpython-312.pyc": "b94658419514938c098746a7cd32c89281c44d15fc88e6cdb58bb07e42a479df",
+        "__pycache__/public_reports.cpython-312.pyc": "2b9009a30d021bd04bb873a7c2274144375e07eca6644c164c913579d1a172ac",
+        "__pycache__/review.cpython-312.pyc": "055fdcacd851bd6c6941a0d8563c573f31dd79999e331c48a758e57cf0d920c5",
+        "__pycache__/scenarios.cpython-312.pyc": "de2271f4c46691bd0c5682e0b50c909f4ff0bdd9859476d7ac4ecb4d04c6f2ff",
+        "__pycache__/simulation.cpython-312.pyc": "0bd68f6212816254f2a14dc2cd013b7483742ff15397b81dbc84c850b04a8691",
+        "__pycache__/sizing.cpython-312.pyc": "fe563e1f9ab88c191007fadb8ade7485c8473097ae1ad2c41fca38f994b5eca3",
+        "__pycache__/state.cpython-312.pyc": "edf9a1d2cc2bc90cfe1a0780d5c82fb16ed1e59c3081c1df8f3fee9994cae84c",
+        "__pycache__/strategy.cpython-312.pyc": "63912df48981fd5d90c9e917510744eba64a21e69135b828807dfa6b7ec1fe74",
+        "__pycache__/texture.cpython-312.pyc": "0f04eb9f91c4aea977f08c7c8069141c92bea5f65b721e67b9bfa91f06e09b75",
+        "benchmarks.py": "e2c4a80ad802a56eaaec4b65035512ee0409aff53d3f2c4ec64f6469d73bf299",
+        "candidate_evaluation.py": "cfba713cac0ae0fe67f7c30f3b22caebed05daeb2c8d15012ffa148fb87ac1ad",
+        "cards.py": "89a27b217402dd3bccda1d75ac16be52d477484e7e4115896ea135e6ff0efc12",
+        "corpus.py": "03fa2acd3719937910edcdd3cb0e1297e6b45669c948f7b1e4bbc3cc92a8ca5c",
+        "equity.py": "58f088d74ade4805d85b675c58fa9d8078d038a3304f342c7554415cbc701f60",
+        "evaluation_baselines.py": "61a15a2e3ec66b12ae1e700e71f32ca5afdaca5a6837c89981c9712d05e56067",
+        "fast.py": "7b2d960d0462090c7fa5fdaf8825cfa7d40a6dfe2360619725f4644f2c87e1e5",
+        "grid_policy.py": "fd9d1557db55060110e43528f44307e1e5c1bbc61056d4fbf693e1320c521a44",
+        "hybrid.py": "43453c98006c8ea0a9d03051dd920f9df4b162b89f3167a1d8b406335d82ec02",
+        "imitation.py": "f9e6688483f2c58323cfc91a4e0f0feb32a715dd3827f996526e3813526169d9",
+        "ivey.py": "e4b7d2c410477b295de955f59b28374fb125ab7434454648baa86dcecc7734c0",
+        "preflop.py": "44d30850911498b65a8b952a6d56ce8713fce408204b837e9c288b3fc81b6821",
+        "prospective.py": "07c906d18840548efc11ad6311316ffeaf3cd45ebb8352e96ab0f865067a6a49",
+        "public_reports.py": "d6b01e4b4dbba36488796a45de4cd95bd646f91a11b33a0ec9aed6c7c5956d68",
+        "review.py": "a59fbb3827825f2b65e844f86087a0b6a3c8df35dbea45d141f3f6d5fbafac6f",
+        "scenarios.py": "bbae06f78b221a32274ea705be76a5c25c241dcd0afab1a76dda124ffc1c1ee9",
+        "simulation.py": "80f0ea85dade54141ce814af76a7a271875389615e00793fa7202e51a4cf7b97",
+        "sizing.py": "5b7a54ce36095e5d31818e921e7fc449bd516d18b63368919cc779091ad0b6bf",
+        "state.py": "ef9461ff2de04ddf402305c2a857a7c4849a8bb9d6d2e31fa2eb18c7d21d62d8",
+        "strategy.py": "ec87e0ebf9a9f8a0a446f9c2fd49065f350ff8456bde73956cc07fb757e35730",
+        "texture.py": "ec9cce35a3a0f94829cb543921eccb715ae18ad77b64dd009ccfc8c4f19981f8"
+      },
+      "matches_contemporaneous_protected_file_hash_manifest": true,
+      "matches_initial_file_count_and_bytes": true
+    }
+  },
+  "protected_result": {
+    "comparison_manifest": "data/acquisition_resume/2026-11-02/cash_review_1/protected-baseline.json",
+    "comparison_note": "Per-file path and SHA-256 maps match the contemporaneous protected manifest; file counts and byte totals also match the early checkpoint.",
+    "unchanged_byte_for_byte": true,
+    "writes_by_this_review": "review folder only"
+  },
+  "review_artifacts": {
+    "external_award_followup.json": {
+      "bytes": 6703,
+      "sha256": "a3213fdb223cc080f1c110603b3e90672655e983760e06dbf2e6c28f188d918a"
+    },
+    "review.md": {
+      "bytes": 6728,
+      "sha256": "ea9c07742b2d8f0c5573fcae4e7dd4bf36f8f08874c95a31dcc8ae503f7ad6a4"
+    },
+    "review_audit.py": {
+      "bytes": 37625,
+      "sha256": "bce62aaecaa0c3b6ef95feb64449ad4f49394b36a941c9f2a8b575f467d2d8de"
+    },
+    "source_review.json": {
+      "bytes": 295643,
+      "sha256": "8331c7355414acc31ba82cffc7afc1ed48ef708e097a936046fe0d6d24c4bd54"
+    }
+  },
+  "review_result": {
+    "admissions_by_review": 0,
+    "all_source_and_row_checks_pass": true,
+    "audited_exact_id_hands": 32,
+    "candidate_decisions": 111,
+    "candidate_decisions_with_award_gap_but_supported_prefix": 11,
+    "candidate_hands_with_decisions": 31,
+    "decision_recommendations_from_saved_extract": {
+      "eligible_for_parent_review": 100,
+      "prefix_supported_award_reconciliation_pending": 11
+    },
+    "fresh_heldout_labels": 0,
+    "hand_with_unknown_hero_cards_and_no_candidate_decisions": "5228844526",
+    "no_policy_calls_or_score_evaluations": true,
+    "original_page_awards_manually_reconciled": 4,
+    "result": "complete_bounded_source_review; parent integration remains separate"
+  },
+  "review_scope": "independent source and conversion audit; no admissions",
+  "source_jsonl": {
+    "byte_identical": true,
+    "bytes": 170059,
+    "path": "data/acquisition_sprint_1h/online_forum/records.jsonl",
+    "sha256": "0e938458832c506a04b1bceb19ef3c11c2117758448649e9d5e88dca28def4a1",
+    "snapshot_bytes": 170059,
+    "snapshot_path": "data/acquisition_resume/2026-11-01/forum_conversion/source_records.jsonl",
+    "snapshot_sha256": "0e938458832c506a04b1bceb19ef3c11c2117758448649e9d5e88dca28def4a1"
+  },
+  "status": "completed"
+}

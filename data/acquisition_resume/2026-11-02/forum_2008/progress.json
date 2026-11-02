@@ -1,0 +1,140 @@
+{
+  "batch": "forum_2008_public_history_batch_002",
+  "status": "bounded_checkpoint_complete",
+  "scope": "Source-year <= 2008 public forum history evidence only; no admissions, observations, or policy labels. Exact Full Tilt game ID and source-post locator cross-checks against read-only prior capture required.",
+  "updated_at_utc": "2026-11-02T09:34:53.799132Z",
+  "checkpoint_reason": "Bounded 2008 forum acquisition checkpoint complete: all source candidates from the Nov 1 forum_2008 lead list have been either captured, identified as duplicates, or marked non-Ivey; prioritized December page 15 was fully overlapping and Ivey Deathmatch page 9 yielded two new histories. No broader 2008 forum sweep is claimed.",
+  "baseline_readonly_inputs_sha256": {
+    "data/acquisition_sprint_1h/online_forum/records.jsonl": "0e938458832c506a04b1bceb19ef3c11c2117758448649e9d5e88dca28def4a1",
+    "data/acquisition_resume/2026-11-01/forum_2008/progress.json": "7bbef8329593db081317a21ef1c6ed04b7389d997bd01439079b7edf691eb5b4"
+  },
+  "protected_tree_baseline_sha256": {
+    "pokerbot": {
+      "files": 46,
+      "tree_sha256": "a01043c545a87e36e968564d6874a5bd58c3bec0c815cc5cb475750f7dcba33d"
+    },
+    "data/models": {
+      "files": 12,
+      "tree_sha256": "4482fcd9438229fffaabb557ca093b351720aac8aea62100e7692cbc9300f359"
+    },
+    "data/corpus_splits": {
+      "files": 3,
+      "tree_sha256": "99c85caef72a1b03ed751290229dbe4ca08b08503083eb54170636855432d7c0"
+    }
+  },
+  "counts": {
+    "captured_new_rows": 16,
+    "knowncard_complete": 14,
+    "knowncard_complete_exact_fulltilt_id": 5,
+    "knowncard_complete_idless_converted_pending_identity_review": 9,
+    "unknowncard_complete": 2,
+    "partial_or_incomplete": 0,
+    "dedup_skipped": 34,
+    "excluded_format_or_date": 0,
+    "dedup_count_scope": "34 quantified duplicate occurrences skipped in the current bounded scan: December page 15 = 16; February Ivey Deathmatch pages 4, 5, 8, and 9 = 14; December page 1 = 1; October page 63 = 1; October page 70 = 2. The inherited Nov 1 December page 14 overlap note is qualitative and excluded from this numeric count.",
+    "exact_hand_datetime_missing": 9
+  },
+  "sources_visited": [
+    {
+      "publisher": "TwoPlusTwo",
+      "url": "https://forumserver.twoplustwo.com/29/news-views-gossip/december-high-stakes-thread-354943/index15.html",
+      "result": "Public indexed reader inspected. All 16 distinct visible Full Tilt NLHE Ivey hand IDs on this locator already exist in read-only 71-row corpus; all 16 skipped; no new records."
+    },
+    {
+      "publisher": "TwoPlusTwo",
+      "url": "https://forumserver.twoplustwo.com/29/news-views-gossip/2-14-high-stakes-action-thread-ivey-seda-durrr-ziigmund-etc-129937/index9.html",
+      "result": "Page 9 inspected via public indexed reader. Raw Full Tilt hand #5261119136 at post #206 captured as complete, known-card NLHE. Converted hand at post #207 captured as complete, known-card NLHE with no exact Full Tilt ID and pending cross-source identity review. The converted post #201 copy was skipped as an action/stack duplicate of raw hand #5260871551 in the existing page 8 capture. Existing raw IDs #5261000520 and #5261371378 were skipped."
+    },
+    {
+      "publisher": "TwoPlusTwo",
+      "url": "https://forumserver.twoplustwo.com/29/news-views-gossip/2-14-high-stakes-action-thread-ivey-seda-durrr-ziigmund-etc-129937/index4.html",
+      "result": "Available indexed results and source corpus cross-reference show the two complete Ivey histories on this locator are already captured; no new rows."
+    },
+    {
+      "publisher": "TwoPlusTwo",
+      "url": "https://forumserver.twoplustwo.com/29/news-views-gossip/2-14-high-stakes-action-thread-ivey-seda-durrr-ziigmund-etc-129937/index5.html",
+      "result": "Six complete Ivey NLHE IDs visible in the indexed page are already captured; skipped by Full Tilt ID."
+    },
+    {
+      "publisher": "TwoPlusTwo",
+      "url": "https://forumserver.twoplustwo.com/29/news-views-gossip/2-14-high-stakes-action-thread-ivey-seda-durrr-ziigmund-etc-129937/index6.html",
+      "result": "Indexed search result scan: visible Ivey histories are Pot Limit Omaha; excluded by game format."
+    },
+    {
+      "publisher": "TwoPlusTwo",
+      "url": "https://forumserver.twoplustwo.com/29/news-views-gossip/2-14-high-stakes-action-thread-ivey-seda-durrr-ziigmund-etc-129937/index7.html",
+      "result": "Indexed search result scan: visible Ivey histories are Pot Limit Omaha; excluded by game format."
+    },
+    {
+      "publisher": "TwoPlusTwo",
+      "url": "https://forumserver.twoplustwo.com/29/news-views-gossip/2-14-high-stakes-action-thread-ivey-seda-durrr-ziigmund-etc-129937/index8.html",
+      "result": "Three complete Ivey NLHE IDs on this locator already exist in read-only corpus; skipped."
+    },
+    {
+      "publisher": "TwoPlusTwo",
+      "url": "https://forumserver.twoplustwo.com/29/news-views-gossip/december-high-stakes-thread-354943/",
+      "result": "Page 1 fully opened. Complete converted posts #4, #7, #9, #10, #12 captured with Ivey cards shown. Post #6 omitted as a duplicate of #7 and lacks independent complete hand identification; post commentary is excluded from bounded extracts."
+    },
+    {
+      "publisher": "TwoPlusTwo",
+      "url": "https://forumserver.twoplustwo.com/29/news-views-gossip/december-high-stakes-thread-354943/index13.html",
+      "result": "Prior Nov 1 indexed scan found no Ivey histories."
+    },
+    {
+      "publisher": "TwoPlusTwo",
+      "url": "https://forumserver.twoplustwo.com/29/news-views-gossip/december-high-stakes-thread-354943/index14.html",
+      "result": "Prior Nov 1 scan found raw NLHE IDs already represented in the read-only 71-row input; skipped."
+    },
+    {
+      "publisher": "TwoPlusTwo",
+      "url": "https://forumserver.twoplustwo.com/29/news-views-gossip/high-stakes-thread-june-216583/index12.html",
+      "result": "Complete raw hand #6779792105 captured as 2P2-20080611-6779792105."
+    },
+    {
+      "publisher": "TwoPlusTwo",
+      "url": "https://forumserver.twoplustwo.com/29/news-views-gossip/october-high-stakes-thread-311582/index63.html",
+      "result": "Raw #8623579007 and converted posts #1553, #1554, #1556 captured. Post #1557 duplicate of #1556 skipped."
+    },
+    {
+      "publisher": "TwoPlusTwo",
+      "url": "https://forumserver.twoplustwo.com/29/news-views-gossip/october-high-stakes-thread-311582/index68.html",
+      "result": "Raw #8663430189 captured; complete hand with Ivey cards shown. Split-pot summary flagged as potential converter mismatch."
+    },
+    {
+      "publisher": "TwoPlusTwo",
+      "url": "https://forumserver.twoplustwo.com/29/news-views-gossip/october-high-stakes-thread-311582/index70.html",
+      "result": "Raw #8663858555 and #8664092218 captured. #8663430189 duplicate skipped; converted post #1746 duplicates raw #8664092218 and was skipped."
+    },
+    {
+      "publisher": "TwoPlusTwo",
+      "url": "https://forumserver.twoplustwo.com/29/news-views-gossip/october-high-stakes-thread-311582/index9.html",
+      "result": "Complete raw hand #8362785235 captured; Ivey folded preflop and cards remain unknown."
+    }
+  ],
+  "limitations": [
+    "Nine complete known-card converted histories have no Full Tilt IDs; all remain pending global identity review and are not counted as confirmed unique decisions.",
+    "Two complete raw histories leave Ivey cards unknown and are not included in known-card coverage.",
+    "The 2+2 October #8663430189 source summary uses a split main/side pot format; current converter pot matching may reject it pending review.",
+    "The December page 15 candidates and most examined Ivey Deathmatch pages overlap existing source records; overlapping IDs and source-action copies were skipped.",
+    "No decisions, admissions, policy calls, or score evaluations were produced.",
+    "Nine converted post records have no exact hand timestamp; their visible forum post timestamps are preserved separately, and hand_datetime_et remains null."
+  ],
+  "records_file": "records.jsonl",
+  "records_file_sha256": "3c5134dbcbe88a6610e671c299cddb16e1bf15d5cd52962e26f37ad6daad0ca3",
+  "coverage_bounds": {
+    "forum_pages_fully_opened_and_inspected_this_turn": [
+      "December 2008 thread page 15",
+      "2/14 High Stakes Action thread page 9",
+      "June 2008 High Stakes thread page 12",
+      "October 2008 High Stakes thread pages 9, 63, 68, 70",
+      "December 2008 thread page 1"
+    ],
+    "indexed_search_only_pages_checked": [
+      "2/14 High Stakes Action thread pages 4, 5, 6, 7, 8"
+    ],
+    "not_systematically_scanned": "All other 2008 TwoPlusTwo threads, days, and pages; counts bound only the listed pages and inherited Nov 1 leads.",
+    "source_year_filter": "2008 only"
+  },
+  "no_observations_or_admissions": true,
+  "dedup_count_scope": "34 quantified duplicate occurrences skipped in the current bounded scan: December page 15 = 16; February Ivey Deathmatch pages 4, 5, 8, and 9 = 14; December page 1 = 1; October page 63 = 1; October page 70 = 2. The inherited Nov 1 December page 14 overlap note is qualitative and excluded from this numeric count."
+}

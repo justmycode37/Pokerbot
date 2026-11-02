@@ -1,0 +1,29 @@
+{
+  "files": {
+    "data/corpus_splits/development-after-prospective-v1.json": "d172e7310677b051b8dea0163fb14b06b81ad9b5847c73d735f1e2ec66c1a483",
+    "data/corpus_splits/public-reports-v1.json": "782aea11d6301c1d906d19e4519905210ab1455e031c260a805723a504512e9e",
+    "data/models/hybrid-v1.json": "7c2a536e3a19783873f786b866a65998b8d31672ac3e150d385341d6fc113313",
+    "data/preflop_equity.json": "44684582cbe9400741a7cf1a0857877f94aadb30de54db7d1d20b140ce2a7ef0",
+    "docs/hybrid-model.md": "3609101c83a980dd20221112c7b0024d677c9b496a2036268fa4b4fb5899c76a",
+    "pokerbot/candidate_evaluation.py": "084eaab0516864d6a6c91452fe14d4c25ded07ecfd5c99a0f66904520c9bb47e",
+    "pokerbot/cards.py": "89a27b217402dd3bccda1d75ac16be52d477484e7e4115896ea135e6ff0efc12",
+    "pokerbot/corpus.py": "03fa2acd3719937910edcdd3cb0e1297e6b45669c948f7b1e4bbc3cc92a8ca5c",
+    "pokerbot/evaluation_baselines.py": "61a15a2e3ec66b12ae1e700e71f32ca5afdaca5a6837c89981c9712d05e56067",
+    "pokerbot/fast.py": "7b2d960d0462090c7fa5fdaf8825cfa7d40a6dfe2360619725f4644f2c87e1e5",
+    "pokerbot/hybrid.py": "3dcb6fe3b5952d0fae6f3f8033244307309d4abf0a823d00bf8a09b80134d10d",
+    "pokerbot/imitation.py": "f9e6688483f2c58323cfc91a4e0f0feb32a715dd3827f996526e3813526169d9",
+    "pokerbot/ivey.py": "e4b7d2c410477b295de955f59b28374fb125ab7434454648baa86dcecc7734c0",
+    "pokerbot/preflop.py": "44d30850911498b65a8b952a6d56ce8713fce408204b837e9c288b3fc81b6821",
+    "pokerbot/prospective.py": "07c906d18840548efc11ad6311316ffeaf3cd45ebb8352e96ab0f865067a6a49",
+    "pokerbot/sizing.py": "5b7a54ce36095e5d31818e921e7fc449bd516d18b63368919cc779091ad0b6bf",
+    "pokerbot/state.py": "ef9461ff2de04ddf402305c2a857a7c4849a8bb9d6d2e31fa2eb18c7d21d62d8",
+    "pokerbot/texture.py": "ec9cce35a3a0f94829cb543921eccb715ae18ad77b64dd009ccfc8c4f19981f8",
+    "pyproject.toml": "9d003f49bcc5df5a351f08cc2f1c8def6ddf38983b8ff231c7ab5f95efbdac96",
+    "reports/hybrid-development-v1.json": "2360cf1af7813a9c80bc10f9c61361f8f3f92f3e5cdf5e5f52daf62c6fe50bcb",
+    "scripts/compare_candidates.py": "12fff25a7c30157552526ceec8af9745226c886ba98483923d5d646084678e0e",
+    "scripts/train_hybrid.py": "92265d178c82d4901bf92c64efd844a0dbfb0e0b24f5e83f2e51a2f23af74b44",
+    "tests/test_hybrid.py": "bc5d3c2c4040266805e7115c9fca99472aac5c756a5c9b6b0cebf90ba32510e5"
+  },
+  "purpose": "Preserve the original negative hybrid experiment before any review fixes. No fresh source data included.",
+  "archive_sha256": "c3f48326143d4b9406b314e3fdc5c65fc4eae6b15ce28211f31aa5edce1f1242"
+}

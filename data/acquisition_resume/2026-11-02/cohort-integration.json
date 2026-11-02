@@ -1,0 +1,39 @@
+{
+  "converter_sha256": "c50a17e08cb2d76848aace6b241a6f347bf1d4f272930a092cfb916991d88268",
+  "counts": {
+    "admitted_decisions": 606,
+    "new_decisions": 526,
+    "remaining_to_1000": 394,
+    "source_groups": 18,
+    "unique_hands": 393
+  },
+  "created_at_utc": "2026-11-02T09:58:45.468520+00:00",
+  "fresh_holdouts_created": 0,
+  "frozen_split_changes": 0,
+  "lanes": {
+    "ante_correction": 21,
+    "cash_review_0": 241,
+    "cash_review_1": 221,
+    "historical_review": 43
+  },
+  "limitations": [
+    "Source archives are sparse; no complete chronology claim.",
+    "All admitted examples are inspected development data.",
+    "Five unoccupied-dealer historical candidates remain held.",
+    "Four Montenegro report aliases remain uncounted.",
+    "The 221 previously pending cash aliases are admitted once."
+  ],
+  "new_batch": "data/acquisition_resume/2026-11-01/admissions/batch-003.json",
+  "policy_calls": 0,
+  "pot_helper_sha256": "fffa3df98fe5997d72d7f910c27d0a73536a06d5c82ea4426c7b2ecd28cc88cb",
+  "prior_batches": [
+    "data/acquisition_resume/2026-11-01/admissions/batch-001.json",
+    "data/acquisition_resume/2026-11-01/admissions/batch-002.json"
+  ],
+  "protected_files_verified": 35,
+  "schema_version": 1,
+  "score_runs": 0,
+  "status": "parent_replay_and_source_identity_checks_passed",
+  "training_runs": 0,
+  "unique_hand_replays": 351
+}

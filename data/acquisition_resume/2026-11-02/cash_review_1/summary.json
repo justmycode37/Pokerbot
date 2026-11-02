@@ -1,0 +1,298 @@
+{
+  "candidate_review_errors": 0,
+  "conversion_counts": {
+    "conflicting_hand_uuids_excluded": 0,
+    "duplicate_hand_payloads_removed": 0,
+    "hands_rejected": 80,
+    "hands_replayed": 152,
+    "hands_with_ivey_decisions": 152,
+    "hands_with_ivey_known_cards": 152,
+    "hands_with_ivey_unknown_cards": 0,
+    "ivey_decisions_seen": 221,
+    "known_card_ivey_decisions": 221,
+    "newly_admitted_decisions": 0,
+    "raw_hand_records_found": 289,
+    "source_files_rejected": 0,
+    "source_files_seen": 289,
+    "unique_hand_uuids": 289,
+    "unknown_card_ivey_decisions": 0,
+    "validated_candidate_decisions": 221
+  },
+  "conversion_output_created_at_utc": [
+    "2026-11-02T09:19:32.371177+00:00",
+    "2026-11-02T09:19:32.544102+00:00",
+    "2026-11-02T09:19:32.721708+00:00",
+    "2026-11-02T09:19:32.875168+00:00",
+    "2026-11-02T09:19:33.052217+00:00"
+  ],
+  "converter_file_mtime_utc_at_review_end": "2026-11-02T09:25:24+00:00",
+  "converter_sha256_at_review_end": "c50a17e08cb2d76848aace6b241a6f347bf1d4f272930a092cfb916991d88268",
+  "converter_sha256_at_start": "aeba51655c1927a47b2b9bd7f404a94a15a7299abde52f9ce9d8ba0cb483a7ca",
+  "converter_sha256_during_conversion": "aeba51655c1927a47b2b9bd7f404a94a15a7299abde52f9ce9d8ba0cb483a7ca",
+  "event_cash_session_groups": [
+    {
+      "converter_hands_rejected": 4,
+      "converter_hands_replayed": 43,
+      "converter_known_card_decisions": 72,
+      "episode_ids": [
+        "6172b981-a32f-4d30-9c06-ed9fbe78f327",
+        "82523973-1a2e-407a-b0a0-9cb28db82904"
+      ],
+      "event_name": "Cash Game Invitational I",
+      "event_uuid": "3b640596-d479-47c0-8c84-5609c3aab6bb",
+      "festival_uuid": "ccbde116-b26b-492e-8b81-30aef2575d8f",
+      "owned_known_card_hero_decisions": 81,
+      "owned_partial_or_unknown_hero_decisions": 0,
+      "owned_source_hands": 59,
+      "pending_candidate_decisions": 72
+    },
+    {
+      "converter_hands_rejected": 19,
+      "converter_hands_replayed": 28,
+      "converter_known_card_decisions": 28,
+      "episode_ids": [
+        "605a16ab-7e17-484d-a992-03419475bad8",
+        "6d740e6e-a315-4d22-828c-94a4d16c0def"
+      ],
+      "event_name": "Cash Game Invitational I",
+      "event_uuid": "4b71a126-d789-47ed-bda7-df80bf11a748",
+      "festival_uuid": "ccbde116-b26b-492e-8b81-30aef2575d8f",
+      "owned_known_card_hero_decisions": 56,
+      "owned_partial_or_unknown_hero_decisions": 1,
+      "owned_source_hands": 59,
+      "pending_candidate_decisions": 28
+    },
+    {
+      "converter_hands_rejected": 8,
+      "converter_hands_replayed": 38,
+      "converter_known_card_decisions": 61,
+      "episode_ids": [
+        "5973d3bc-faa0-4f32-ac0b-61cff855a4a7",
+        "da1f0235-222e-4a6d-a029-374261cc92a0"
+      ],
+      "event_name": "Cash Game Invitational I",
+      "event_uuid": "96fe21fe-7332-4715-8c70-77868b43b406",
+      "festival_uuid": "ccbde116-b26b-492e-8b81-30aef2575d8f",
+      "owned_known_card_hero_decisions": 68,
+      "owned_partial_or_unknown_hero_decisions": 1,
+      "owned_source_hands": 53,
+      "pending_candidate_decisions": 61
+    },
+    {
+      "converter_hands_rejected": 9,
+      "converter_hands_replayed": 2,
+      "converter_known_card_decisions": 2,
+      "episode_ids": [
+        "49e14e14-4d02-4273-aab6-e60c3447c368"
+      ],
+      "event_name": "Cash Game Invitational I",
+      "event_uuid": "d2dcc050-205e-447d-8301-1d62e71ec9e2",
+      "festival_uuid": "ccbde116-b26b-492e-8b81-30aef2575d8f",
+      "owned_known_card_hero_decisions": 21,
+      "owned_partial_or_unknown_hero_decisions": 0,
+      "owned_source_hands": 29,
+      "pending_candidate_decisions": 2
+    },
+    {
+      "converter_hands_rejected": 4,
+      "converter_hands_replayed": 41,
+      "converter_known_card_decisions": 58,
+      "episode_ids": [
+        "639b82fa-9155-4ce1-afd3-d92788d6507c",
+        "a3c8db19-c45c-4d18-962c-ee495c04d36d"
+      ],
+      "event_name": "Cash Game Invitational I",
+      "event_uuid": "d4d80c6d-bf09-4264-a9ed-52a1a09413a1",
+      "festival_uuid": "ccbde116-b26b-492e-8b81-30aef2575d8f",
+      "owned_known_card_hero_decisions": 63,
+      "owned_partial_or_unknown_hero_decisions": 1,
+      "owned_source_hands": 53,
+      "pending_candidate_decisions": 58
+    },
+    {
+      "converter_hands_rejected": 36,
+      "converter_hands_replayed": 0,
+      "converter_known_card_decisions": 0,
+      "episode_ids": [
+        "2d70c052-420c-4f02-90ef-b8289750d1b6",
+        "aacbb931-6fec-4db9-9057-c6f133a73cd5",
+        "b753a588-1326-4fd4-af41-c594f53ff526",
+        "c7678e76-fe34-414d-a229-17b861cf860f",
+        "d80ae957-6be0-43e5-88e5-0b334ea9c59e"
+      ],
+      "event_name": "\u20ac1 Million NLH Cash Game",
+      "event_uuid": "0a2c1d65-36fb-4633-a2a3-8279bee5af41",
+      "festival_uuid": "d20c031a-a8d8-4106-a0c1-a3b31301a0b1",
+      "owned_known_card_hero_decisions": 55,
+      "owned_partial_or_unknown_hero_decisions": 0,
+      "owned_source_hands": 36,
+      "pending_candidate_decisions": 0
+    }
+  ],
+  "focused_helper_tests": {
+    "command": "PYTHONDONTWRITEBYTECODE=1 .venv/bin/python tests/test_acquisition_pot_eligibility.py",
+    "output": "Ran 10 tests in 0.026s; OK",
+    "runner": "unittest",
+    "status": "passed",
+    "tests_run": 10
+  },
+  "git_head_at_start": "117fbef99c4e08c2ecffc7007b55ecb93e91df5a",
+  "global_dedup": {
+    "admitted_baseline_rows": 80,
+    "alternate_raw_uuid_alias_count": 0,
+    "candidate_raw_hand_uuid_reuse_count_in_saved_other_data": 152,
+    "exact_source_decision_overlaps_with_80": 0,
+    "other_saved_triton_decision_overlap_count_excluding_cash_reuse": 0,
+    "raw_hand_uuid_overlaps_with_80": 0,
+    "reused_nov1_cash_decision_overlap_count": 221,
+    "reused_nov1_pending_candidate_overlap_count": 221,
+    "reused_nov2_cash_review_0_overlap_count": 0
+  },
+  "other_parity_hands": 275,
+  "outputs": {
+    "data/acquisition_resume/2026-11-02/cash_review_1/candidates.json": {
+      "bytes": 2309918,
+      "sha256": "1f34576b89b6b4d6eabade241ed1f758ad479501fcbc131f68b51ccc9fe2b39d"
+    },
+    "data/acquisition_resume/2026-11-02/cash_review_1/conversion-summary.json": {
+      "bytes": 6237,
+      "sha256": "b0198de6c146323d2867f9d4dad212da37171ae7e36e45c0606084ce4096a2bc"
+    },
+    "data/acquisition_resume/2026-11-02/cash_review_1/converter_outputs/2018_0a2c1d65.json": {
+      "bytes": 38714,
+      "sha256": "656522a86974249208befb43dde944dad134162a1054dd05f6a772f290c615be"
+    },
+    "data/acquisition_resume/2026-11-02/cash_review_1/converter_outputs/2024_3b640596.json": {
+      "bytes": 848655,
+      "sha256": "cf0979c1ba560634abdc07f7392c537326c02d92e424696959c6f34252d7e841"
+    },
+    "data/acquisition_resume/2026-11-02/cash_review_1/converter_outputs/2024_4b71a126.json": {
+      "bytes": 359504,
+      "sha256": "90db4925df6e50d5860d2d58e8d895827b2dcdb97f2e2905548c925219218061"
+    },
+    "data/acquisition_resume/2026-11-02/cash_review_1/converter_outputs/2024_96fe21fe.json": {
+      "bytes": 727292,
+      "sha256": "35a28e6411382ffac637c61d462f0a05f1d77f9a114896dcb609865e70aa81b6"
+    },
+    "data/acquisition_resume/2026-11-02/cash_review_1/converter_outputs/2024_d2dcc050.json": {
+      "bytes": 53937,
+      "sha256": "8e10cd5e2e4381c77e565e88ee5f07df7efa1c9be4ba7fa4c0532ab718fceb73"
+    },
+    "data/acquisition_resume/2026-11-02/cash_review_1/converter_outputs/2024_d4d80c6d.json": {
+      "bytes": 689421,
+      "sha256": "ee7f32d4090a61f39f2a6d3c94e2a81c73ca7b00187e81a66b96b3f18a6eafb1"
+    },
+    "data/acquisition_resume/2026-11-02/cash_review_1/per-row-review.json": {
+      "bytes": 1737647,
+      "sha256": "dd3dfa78e983fbc93a45454304822f4768dd80c21bae6b830763d28c66405d02"
+    },
+    "data/acquisition_resume/2026-11-02/cash_review_1/protected-after.json": {
+      "bytes": 7344,
+      "sha256": "da15f229e462563689e90d15f0905ae404ccdbdfdffc1fbd196483d1a378596a"
+    },
+    "data/acquisition_resume/2026-11-02/cash_review_1/review.md": {
+      "bytes": 4585,
+      "sha256": "c73bb0d9f63c0a573ee6711902751d8f4c0aa8ea5c70fe1124c86c1bc7962289"
+    },
+    "data/acquisition_resume/2026-11-02/cash_review_1/run_review.py": {
+      "bytes": 69503,
+      "sha256": "2f190c1f2591980b51fe1fea928b34b883c62ce891cd4d8b44c6ddabba559096"
+    },
+    "data/acquisition_resume/2026-11-02/cash_review_1/sidecases/eligible-pot-corrections.json": {
+      "bytes": 184078,
+      "sha256": "b7f2612a566be26a4115ae5c7476732e84a3e6764324d4ca80fb0b7f4a073139"
+    },
+    "data/acquisition_resume/2026-11-02/cash_review_1/sidecases/global-dedup-and-aliases.json": {
+      "bytes": 168561,
+      "sha256": "90518ff1494b2d82f6e5eb5131e1d07b78d0ac22c2f465748ef8e679a2bdba0c"
+    },
+    "data/acquisition_resume/2026-11-02/cash_review_1/sourceblockers/2018-seat-capacity.json": {
+      "bytes": 45034,
+      "sha256": "158d50b47a8d36c373dc18ed33192876fc2efa02f6b4370d7ef45ab1e1a8383d"
+    },
+    "data/acquisition_resume/2026-11-02/cash_review_1/sourceblockers/2024-rejections.json": {
+      "bytes": 10648,
+      "sha256": "d16f1d78acac21b36f74dba1fd399c83c728d6908d36e69bf413491e87cc66ee"
+    },
+    "data/acquisition_resume/2026-11-02/cash_review_1/sourceblockers/unknown-or-partial-hero-cards.json": {
+      "bytes": 1509,
+      "sha256": "23a5d98540d7a7275b51de6f25b6fa4c41a243a6aefdf3d97968f5f0778b9c6d"
+    },
+    "data/acquisition_resume/2026-11-02/cash_review_1/verification.json": {
+      "bytes": 711,
+      "sha256": "8522ef83a2b597ece70b30b686f4885e20c16c9a4b1451b93e018ef34e78a60e"
+    }
+  },
+  "owned_decisions_admitted": 0,
+  "owned_known_card_hero_decisions": 344,
+  "owned_partial_or_unknown_hero_decisions": 3,
+  "owned_pending_candidate_decisions": 221,
+  "owned_source_hands": 289,
+  "pot_correction": {
+    "delta_distribution": {
+      "2000": 23,
+      "3000": 44,
+      "5000": 12
+    },
+    "engine_pot_and_to_call_matched": 221,
+    "independent_eligibility_matches_helper": 221,
+    "rows_corrected": 79
+  },
+  "protected_path_hashes_after": {
+    "data/corpus_splits": {
+      "bytes": 340457,
+      "files": 3,
+      "matches_baseline": true,
+      "tree_sha256": "70b55b69df9038acf18331e54857cd6e601ca37b448ed30fdf8542a5e0ddbf8d"
+    },
+    "data/models": {
+      "bytes": 289238,
+      "files": 12,
+      "matches_baseline": true,
+      "tree_sha256": "b55e017db919bad642b1cfb17ecae2b77697dcb809bbf490dfbdc1426615ee57"
+    },
+    "pokerbot": {
+      "bytes": 453670,
+      "files": 46,
+      "matches_baseline": true,
+      "tree_sha256": "b252ef749e31473231e79511ec9d4c19c6042c8dc34e9a32f6324fba409009e0"
+    }
+  },
+  "protected_paths_byte_for_byte_preserved": true,
+  "review_check_counts": {
+    "GetHand_requests_verified": 221,
+    "board_cutoff_verified": 221,
+    "candidate_decisions": 221,
+    "corrected_rows_revalidated": 221,
+    "current_label_and_legal_bounds_verified": 221,
+    "engine_pot_and_to_call_match_helper": 221,
+    "episode_alias_rows_verified": 221,
+    "forced_post_order_records": 221,
+    "future_private_terminal_and_current_label_out_of_state": 221,
+    "global_admitted_decision_dedup_checked": 221,
+    "global_other_triton_source_dedup_checked": 221,
+    "history_actor_and_prefix_verified": 221,
+    "independent_eligible_pot_matches_helper": 221,
+    "known_hero_cards_verified": 221,
+    "raw_prefixes_rebuilt": 221,
+    "raw_response_hashes_verified": 221,
+    "seat_blind_button_straddle_order_verified": 221,
+    "stacks_current_bet_actor_and_position_verified": 221,
+    "terminal_accounting_validation_only_pass": 221
+  },
+  "review_status": "complete_with_2018_capacity_blocker_for_parent",
+  "reviewed_candidate_hands": 152,
+  "reviewed_candidate_rows": 221,
+  "schema_version": 1,
+  "seat_case_2018": {
+    "actual_players_gt_8": 11,
+    "hands": 36,
+    "noOfSeats_8": 36,
+    "sb_bb_dealer_and_forced_order_pass_mod9": 36,
+    "seat_9_present": 36,
+    "seat_labels_unique_1_to_9": 36
+  },
+  "source_audit_sha256": "c961a37358c9987f243a5f577a76e8f412ea278578dcc5a13e5b944e9c8e7b29",
+  "source_episode_manifest_sha256": "a8b51e190f16feb411b6b2eb54614f4641d7834f345693ae4d07dedf74414a22",
+  "source_hand_records_all": 564
+}

@@ -1,0 +1,361 @@
+{
+  "candidate": {
+    "candidate_observation": {
+      "actual_players": 7,
+      "board": [],
+      "contestable_pot": 1125000,
+      "current_action_in_observation": false,
+      "future_board_or_actions_in_observation": false,
+      "hero_cards": [
+        "9h",
+        "9c"
+      ],
+      "legal_actions": [
+        "call",
+        "fold",
+        "raise"
+      ],
+      "max_raise_to": 3300000,
+      "min_raise_to": 750000,
+      "opponent_hole_cards_in_observation": false,
+      "physical_capacity": 9,
+      "player_id": "p5",
+      "position": "CO",
+      "pot": 1125000,
+      "prior_history": [
+        {
+          "action": "fold",
+          "added": 0,
+          "amount": 0,
+          "player": "p2",
+          "position": "UTG",
+          "street": "preflop"
+        },
+        {
+          "action": "fold",
+          "added": 0,
+          "amount": 0,
+          "player": "p3",
+          "position": "MP",
+          "street": "preflop"
+        },
+        {
+          "action": "raise",
+          "added": 500000,
+          "amount": 500000,
+          "player": "p4",
+          "position": "MP",
+          "street": "preflop"
+        }
+      ],
+      "stack": 3300000,
+      "street": "preflop",
+      "terminal_payouts_or_outcome_in_observation": false,
+      "to_call": 500000
+    },
+    "converter_flat_action_index": 6,
+    "converter_source_decision_id": "triton:485c77c7-8ff8-4a55-922c-09b8883819dc:action:6",
+    "pot_and_eligibility_reconstruction": {
+      "committed_chips_by_seat_before_decision": [
+        {
+          "amount": 125000,
+          "basis": "small blind",
+          "seat": 5
+        },
+        {
+          "amount": 500000,
+          "basis": "250000 ante + 250000 big blind",
+          "seat": 6
+        },
+        {
+          "amount": 500000,
+          "basis": "preflop raise",
+          "seat": 1
+        }
+      ],
+      "contestable_pot_observed": 1125000,
+      "eligibility_reconciliation": true,
+      "folded_before_decision_seats": [
+        7,
+        8
+      ],
+      "ivey_call_price": 500000,
+      "ivey_current_street_commitment": 0,
+      "live_opponent_can_cover_call": true,
+      "opener_remaining_stack_after_500000_raise": 7150000,
+      "reconstructed_committed_pot": 1125000,
+      "source_actions_before_decision": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "source_current_wager": 500000,
+      "terminal_settlement_fields_used_in_candidate_state": false
+    },
+    "raw_source_hand_uuid": "485c77c7-8ff8-4a55-922c-09b8883819dc",
+    "round_index": 0,
+    "round_local_action_index": 6,
+    "round_name": "pre_flop",
+    "row_review_checklist": {
+      "duplicate_conflict_or_alias_in_this_input": false,
+      "end_balances_reconcile": true,
+      "incremental_all_in_converted_to_total_raise_target": true,
+      "known_ivey_cards": true,
+      "pot_eligibility_state_replayed_from_live_engine": true,
+      "pre_action_cutoff_excludes_future_board": true,
+      "small_blind_big_blind_and_ante_match_raw_forced_actions": true,
+      "target_inside_min_max_legal_raise_bounds": true,
+      "texas_nlhe_variant_and_single_runout": true
+    },
+    "seat_and_forced_action_audit": {
+      "actor_order_match": true,
+      "ante_total_added": 250000,
+      "big_blind_seat": 6,
+      "dealer_seat": 4,
+      "declared_blind_level": {
+        "ante": 250000,
+        "bigBlind": 250000,
+        "minChip": 25000,
+        "smallBlind": 125000
+      },
+      "ivey_ordered_player_id": "p5",
+      "ivey_source_seat": 2,
+      "ordered_actual_seats_clockwise_from_small_blind": [
+        5,
+        6,
+        7,
+        8,
+        1,
+        2,
+        4
+      ],
+      "small_blind_seat": 5,
+      "source_forced_actions": [
+        {
+          "action_index": 0,
+          "amount_added": 250000,
+          "round_index": 0,
+          "seat": 6,
+          "type": "ante"
+        },
+        {
+          "action_index": 1,
+          "amount_added": 125000,
+          "round_index": 0,
+          "seat": 5,
+          "type": "small_blind"
+        },
+        {
+          "action_index": 2,
+          "amount_added": 250000,
+          "round_index": 0,
+          "seat": 6,
+          "type": "big_blind"
+        }
+      ]
+    },
+    "source_action": {
+      "actor_is_ivey": true,
+      "actor_uuid": "3970ce21-3d14-4bdc-97ca-98df8220d040",
+      "derived_total_street_target": 3300000,
+      "label_in_candidate": {
+        "action": "raise",
+        "amount": 3300000
+      },
+      "prior_live_street_commitment": 0,
+      "raw_incremental_chips_added": 3300000,
+      "type": "all_in"
+    },
+    "source_action_count_in_hand": 11,
+    "source_provenance": {
+      "admission_status": "pending_independent_source_and_conversion_review",
+      "candidate_source_field": "https://prod-public-serverless.triton-poker.com/graphql?sourceHandId=485c77c7-8ff8-4a55-922c-09b8883819dc",
+      "converter_canonical_hand_sha256": "b50ffa921e738f17d8e20c03f3d5d0fe1ad4db8a52472ba87ac9ab5b4e91b3c4",
+      "evidence_tier": "acquired_history_pending_independent_source_review",
+      "raw_response_file_sha256": "a7c1565790c9ce6b61797644e7a8412644c6362a32a0c459c6dacba3285a6a5a",
+      "raw_response_path": "data/acquisition_sprint_1h/triton_public/sample-final-table.json",
+      "request_file_sha256": "60ea4a6a06ea5a8426ad7bedafb42243a62a6547fb2dcdd2abd7c7f47922d0e5",
+      "request_operation_name": "GetGameWithHands",
+      "request_path": "data/acquisition_sprint_1h/triton_public/sample-final-table-request.json",
+      "request_query_sha256": "c6348502c6e0995e605b803d461c57f6e8947d4596f8c96790f4f8f1ac98a7dc",
+      "request_variables": {
+        "gameId": "e98edb12-2105-4a9f-abd7-2e0bab1056ed",
+        "handsSize": 100
+      },
+      "session_id_from_saved_game_wrapper": "triton:tournament:ae031be0-c964-4a4a-8e68-d7e177574f1a"
+    },
+    "stable_source_decision_key": "triton:485c77c7-8ff8-4a55-922c-09b8883819dc:round:0:action:6",
+    "terminal_accounting": {
+      "all_19_sample_hands_pass_terminal_accounting_and_prefix_price_checks": true,
+      "audit_file": "data/acquisition_resume/2026-11-01/converter_review/sample-semantics-audit.json",
+      "source_ending_stack": 0,
+      "source_starting_stack": 3300000,
+      "terminal_semantics_audit_pass": true
+    }
+  },
+  "conversion_run_counts": {
+    "baseline_corpus_modified": false,
+    "historical_2023": {
+      "conflicting_hand_uuids_excluded": 0,
+      "duplicate_hand_payloads_removed": 0,
+      "hands_rejected": 0,
+      "hands_replayed": 3,
+      "hands_with_ivey_decisions": 0,
+      "ivey_decisions_seen": 2,
+      "newly_admitted_decisions": 0,
+      "raw_hand_records_found": 3,
+      "source_files_rejected": 0,
+      "source_files_seen": 3,
+      "unique_hand_uuids": 3,
+      "validated_candidate_decisions": 0
+    },
+    "new_admissions_across_both_runs": 0,
+    "sample": {
+      "conflicting_hand_uuids_excluded": 0,
+      "duplicate_hand_payloads_removed": 0,
+      "hands_rejected": 0,
+      "hands_replayed": 7,
+      "hands_with_ivey_decisions": 1,
+      "ivey_decisions_seen": 7,
+      "newly_admitted_decisions": 0,
+      "raw_hand_records_found": 19,
+      "source_files_rejected": 0,
+      "source_files_seen": 1,
+      "unique_hand_uuids": 19,
+      "validated_candidate_decisions": 1
+    }
+  },
+  "fresh_holdout": false,
+  "inspected_examples": {
+    "historical_2023": {
+      "context_episode": "04163006-dee0-4abe-82b8-a5807d40ff2e",
+      "converter_counts": {
+        "conflicting_hand_uuids_excluded": 0,
+        "duplicate_hand_payloads_removed": 0,
+        "hands_rejected": 0,
+        "hands_replayed": 3,
+        "hands_with_ivey_decisions": 0,
+        "ivey_decisions_seen": 2,
+        "newly_admitted_decisions": 0,
+        "raw_hand_records_found": 3,
+        "source_files_rejected": 0,
+        "source_files_seen": 3,
+        "unique_hand_uuids": 3,
+        "validated_candidate_decisions": 0
+      },
+      "episode_request_path": "data/acquisition_sprint_1h/triton_public/sample-nlh-episode-request.json",
+      "episode_request_sha256": "7183f6a6a1ca199c5253c64eebf1c1122a7a000b85fe8352db03cbc3155277f7",
+      "episode_response_path": "data/acquisition_sprint_1h/triton_public/sample-nlh-episode.json",
+      "episode_response_sha256": "8d915626f92d8eaee686517796b9b872aeb9d1db8849f4015075278c7c6d78f7",
+      "festival": "2023 Triton London",
+      "fresh_holdout": false,
+      "hands": [
+        {
+          "candidate_decisions": 0,
+          "episode_id": "04163006-dee0-4abe-82b8-a5807d40ff2e",
+          "exclusion": "Ivey only posted ante and big blind; forced bets are not decisions.",
+          "hand_uuid": "2a190cba-2362-446e-9eb6-ab6385d2f633",
+          "ivey_cards_known": false,
+          "ivey_deliberate_actions": 0,
+          "order_no": 381,
+          "request_sha256": "e117d28a90a89b2aa85cb464ad856944a6c7cc70e1daadf9f8275eb48198156f",
+          "response_sha256": "921518be5551b87e910d4e44eeb0c15171ebf33c61f4f61deb7e555a17b796b0"
+        },
+        {
+          "candidate_decisions": 0,
+          "episode_id": "04163006-dee0-4abe-82b8-a5807d40ff2e",
+          "exclusion": "Ivey all-in at round 0 action 4, but his cards are empty.",
+          "hand_uuid": "32c3cc8a-fb62-43e3-ad25-64c2c2dc0bd0",
+          "ivey_cards_known": false,
+          "ivey_deliberate_actions": 1,
+          "order_no": 382,
+          "request_sha256": "62f3eba9a3babae9a30d6e5e049ae97947e218ddcd8f6d006a8a399e544315a2",
+          "response_sha256": "df2180fd147f120fa317cbdeb1a17c0a1bbaeac1d14a3d4a29bc53181e093ee4"
+        },
+        {
+          "candidate_decisions": 0,
+          "episode_id": "04163006-dee0-4abe-82b8-a5807d40ff2e",
+          "exclusion": "Ivey folds at round 0 action 3; empty hero cards remain unknown despite opponents having exposed cards.",
+          "hand_uuid": "4aad6843-ada3-4809-9c78-1eb08532066e",
+          "ivey_cards_known": false,
+          "ivey_deliberate_actions": 1,
+          "order_no": 383,
+          "request_sha256": "bf28f76c87297b08491f031c4aba2698e87d49bcdc5593b4c8e17f7afbfe66c2",
+          "response_sha256": "e0f133e9947f959c2d7e48fd624e1df2f746bb34ea9ac8f39d2b9c2f3c669f60"
+        }
+      ],
+      "inspected": true,
+      "semantics_all_checks_pass": true,
+      "tournament": "$40k NLH Mystery Bounty",
+      "tournament_uuid": "03448587-25f1-4c11-933e-7edfe4a265fe"
+    },
+    "sample_final_table": {
+      "all_ivey_hand_uuids": [
+        "485c77c7-8ff8-4a55-922c-09b8883819dc",
+        "4631363b-02c2-4143-b2b0-254fbd48f0d4",
+        "30326820-675f-4df3-8610-542ea0ecd651",
+        "f25668ac-6b57-48a4-8cee-8692b1bca17b",
+        "e277446b-a3dd-47e1-8ac6-437fc89640e1",
+        "2c5abb8d-bffc-469f-bd7b-b6bf9e577992",
+        "f498daf4-2e22-4f29-b4b4-9a775b5d4a55"
+      ],
+      "fresh_holdout": false,
+      "inspected": true,
+      "known_card_ivey_decisions": 1,
+      "path": "data/acquisition_sprint_1h/triton_public/sample-final-table.json",
+      "raw_hand_count": 19,
+      "unknown_card_ivey_hands": 6
+    }
+  },
+  "limitations": [
+    "No live Triton API request or frontend fetch was performed; facts were checked against unmodified local GraphQL responses and request files.",
+    "No policy was called, trained, or scored; no corpus or split file was opened for writing.",
+    "2023 session grouping used the tournament UUID found in the saved episode response; episodeId was retained only as provenance."
+  ],
+  "material_findings": [
+    {
+      "code_locations": [
+        "scripts/acquisition_triton_convert.py:273-288",
+        "scripts/acquisition_triton_convert.py:297-320",
+        "scripts/acquisition_triton_convert.py:519-523",
+        "pokerbot/simulation.py:67-72"
+      ],
+      "reproduction": "_prepare always puts the explicit SB at ordered_ids[0] and BB at ordered_ids[1]; for two players _positions says index 0 is BB and index 1 is BTN. A local PokerKit state probe created with blinds [SB, BB] and two unknown hole cards reports bets [BB, SB] and first actor index 1. Mapped to ordered_ids [SB, BB], that index is the source BB, while a real heads-up preflop source first action is by the SB/button. The converter will misassign blind stacks/positions and reject that first action as engine_action_order_mismatch (or produce wrong postflop actor mapping).",
+      "reproduction_file": "data/acquisition_resume/2026-11-01/converter_review/heads-up-order-probe.py",
+      "reviewed_source_example": "No Ivey heads-up source hand is present in sample-final-table or the three inspected 2023 hands (each has three players), so impact was not demonstrated on a saved Ivey candidate.",
+      "row_specific_impact": "Does not affect the seven-handed candidate reviewed above.",
+      "severity": "high",
+      "title": "Heads-up seat ordering conflicts with PokerKit\u2019s heads-up blind order"
+    },
+    {
+      "code_locations": [
+        "scripts/acquisition_triton_convert.py:493-501",
+        "scripts/acquisition_triton_convert.py:591-593",
+        "scripts/acquisition_triton_convert.py:665-674"
+      ],
+      "reproduction": "The loop drops round_index/action_index and increments one flat counter across all rounds. A postflop action therefore receives a hand-global number rather than its source round-local action index; output omits round_index. This conflicts with the requested raw UUID + original round/action index identity and makes row-to-source traceability less direct.",
+      "reviewed_source_example": "All emitted/inspected Ivey actions in the reviewed sample are preflop; sample candidate round 0 action 6 happens to equal flattened index 6. The 2023 examples are also preflop hero actions and emit no rows, so no current candidate is mislabeled by this issue.",
+      "severity": "medium",
+      "title": "Source action identity stores a flattened ordinal, not the original round/action pair"
+    },
+    {
+      "code_locations": [
+        "scripts/acquisition_triton_convert.py:89-109",
+        "scripts/acquisition_triton_convert.py:465-489",
+        "scripts/acquisition_triton_convert.py:580-595",
+        "scripts/acquisition_triton_convert.py:724-744"
+      ],
+      "reproduction": "Per-row source_payload_sha256 hashes canonicalized hand JSON, not the raw saved response bytes. The raw response hash is only in source_reports and must be joined by source path from hand_reports. GetHand episodeId/query variables are in separate request files and are not ingested into rows. For the sample, raw response SHA is a7c156... while row hand SHA is b50ffa...; the actual request query/variables are absent from the row.",
+      "reviewed_source_example": "The review artifact preserves response/request hashes and variables separately; the candidate content itself is accurate. This is a reproducibility/provenance gap, not a label or state mismatch.",
+      "severity": "medium",
+      "title": "Raw response provenance is split across report levels and episode request context is not retained per row"
+    }
+  ],
+  "new_admissions": 0,
+  "recommendation": "This single seven-handed source row is individually eligible to remain a pending exact-decision candidate. Its source hand, hero cards, pre-action state, label, raise bounds, and terminal accounting agree. Do not count this duplicate review output as an additional usable decision; no admission was performed.",
+  "review_status": "row_specific_recommendation_pending_corpus_owner_admission",
+  "schema_version": 1
+}

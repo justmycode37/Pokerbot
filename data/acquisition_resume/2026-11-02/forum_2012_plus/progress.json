@@ -1,0 +1,114 @@
+{
+  "dataset_version": "forum_2012_plus_research_v2",
+  "updated_at_utc": "2026-11-02T09:24:13Z",
+  "status": "bounded_checkpoint_complete",
+  "scope": {
+    "source_years": "2012 through Full Tilt closure",
+    "room": "Full Tilt Poker",
+    "alias_literal": "Polarizing",
+    "format": "No Limit Holdem only",
+    "source_type": "public historical forum/community logs",
+    "admission_status": "research_only_no_admission"
+  },
+  "output": "rawrecords.jsonl",
+  "identity_basis_file": "identity-basis.json",
+  "upstream_readonly_inputs": {
+    "data/acquisition_sprint_1h/online_forum/records.jsonl": "0e938458832c506a04b1bceb19ef3c11c2117758448649e9d5e88dca28def4a1",
+    "data/acquisition_resume/2026-11-01/forum_2012_plus/rawrecords.jsonl": "d46f675130605cfb0d1cf88529d9a7caf8d9753119588c98f2b70575bbf14eb0",
+    "data/acquisition_sprint_1h/identity-evidence.json": "68aab3ead8ca72ee2639f5fee614f49698b48f3105eb47e0cd7092ca92fcf9f8",
+    "scripts/acquisition_forum_convert.py": "01a6cfcc551e85c9b90c19120d5df8a8a9e8e0ea07943204e39e55b257c22e24"
+  },
+  "existing_readonly_inputs": {
+    "original_sprint_records": 71,
+    "nov1_forum_2012_plus_records": 12,
+    "prior_rows_compared_for_locator_and_action_board_signature": 83
+  },
+  "counts": {
+    "captured_rows": 2,
+    "unique_new_source_locators": 2,
+    "unique_canonical_fulltilt_ids": 0,
+    "converted_histories_without_visible_fulltilt_id": 2,
+    "complete_known_hero_cards": 1,
+    "complete_unknown_hero_cards": 1,
+    "partial_known_hero_cards": 0,
+    "partial_unknown_hero_cards": 0,
+    "incomplete_or_partial_rows": 0,
+    "pending_cross_source_identity_review": 2,
+    "duplicate_fulltilt_ids_skipped": 0,
+    "duplicate_source_locators_skipped": 0,
+    "duplicate_source_action_board_signatures_against_prior_rows": 0,
+    "known_card_hero_action_events": 5,
+    "unknown_card_hero_action_events": 1,
+    "admissions": 0,
+    "fresh_heldout_rows": 0,
+    "source_action_events_including_forced_bets": 23
+  },
+  "canonical_key_policy": "FullTilt hand ID when visible; fallback (publisher, thread ID, post number, within-post ordinal) for converted rows with no visible Full Tilt ID. Source action keys retain original source locator plus round and within-street action index. No episode-level deduplication.",
+  "sources_visited": [
+    {
+      "publisher": "TwoPlusTwo",
+      "url": "https://forumserver.twoplustwo.com/29/news-views-gossip/september-2013-high-stakes-thread-1367645/index73.html",
+      "thread": "September 2013 High Stakes Thread",
+      "selection": "Inspected posts #1802-1819. Captured complete explicit $600 NL Holdem histories at posts #1808 and #1811. #1808 directly shows Polarizing 9h9c at showdown. #1811 records Polarizing folding preflop; action actor is mapped from the source positions/action order; cards remain unknown."
+    },
+    {
+      "publisher": "TwoPlusTwo",
+      "url": "https://forumserver.twoplustwo.com/29/news-views-gossip/august-2013-high-stakes-thread-1357962/",
+      "thread": "August 2013 High Stakes Thread",
+      "selection": "Inspected bounded first-page posts #19-#24; qualifying explicit-NL histories shown were not Polarizing/Ivey. No Ivey hand captured."
+    },
+    {
+      "publisher": "TwoPlusTwo",
+      "url": "https://forumserver.twoplustwo.com/29/news-views-gossip/april-2014-high-stakes-thread-1431421/index25.html",
+      "thread": "April 2014 High Stakes Thread",
+      "selection": "Prior posts #24/#25 and #623 identified in Nov 1 records; skipped. Post #623 ante history remains flagged in upstream."
+    },
+    {
+      "publisher": "TwoPlusTwo",
+      "url": "https://forumserver.twoplustwo.com/29/news-views-gossip/december-2014-high-stakes-thread-1492814/index17.html",
+      "thread": "December 2014 High Stakes Thread",
+      "selection": "Prior posts #424/#425 skipped; nearby alias histories inspected are Omaha PL and excluded."
+    },
+    {
+      "publisher": "TwoPlusTwo",
+      "url": "https://forumserver.twoplustwo.com/29/news-views-gossip/february-2015-high-stakes-thread-1507887/index50.html",
+      "thread": "February 2015 High Stakes Thread",
+      "selection": "Bounded page inspected. Polarizing Holdem entry at #1250 had no explicit NL marker and bet increments consistent with fixed-limit; excluded under unclear-limit rule. Page 48 entries that mention Polarizing are Omaha PL, excluded."
+    },
+    {
+      "publisher": "TwoPlusTwo",
+      "url": "https://forumserver.twoplustwo.com/29/news-views-gossip/may-2015-high-stakes-thread-1529184/index144.html",
+      "thread": "May 2015 High Stakes Thread",
+      "selection": "Prior posts #3580-3583/#3590/#3595 skipped; #3576 table hand has no Ivey action."
+    },
+    {
+      "publisher": "TwoPlusTwo",
+      "url": "https://forumserver.twoplustwo.com/29/news-views-gossip/may-2013-high-stakes-thread-1327432/index49.html",
+      "thread": "May 2013 High Stakes Thread",
+      "selection": "Polarizing hand found in public index was $500/$1000 cap PLO; excluded."
+    },
+    {
+      "publisher": "TwoPlusTwo",
+      "url": "https://forumserver.twoplustwo.com/29/news-views-gossip/july-2013-high-stakes-thread-1347612/index125.html",
+      "thread": "July 2013 High Stakes Thread",
+      "selection": "Inspected alias hand was fixed-limit Omaha Hi/Lo; excluded."
+    }
+  ],
+  "record_source_capture_hashes": {
+    "2p2:1367645:post:1808:hand:1": "f1cc1368f5b9d3b0acc66d5884f6a0c0f17543c663ffcb82c8d73d62840e055e",
+    "2p2:1367645:post:1811:hand:1": "1b1e0c8dbb707a9121479bdac3d6b914e68262eaee4fe5b046d7e25229743a73"
+  },
+  "record_file_sha256": "cb8272a63b7a2e9f07609773cc61bb7e750556977d5b7ae9c68b1932e25d7c55",
+  "identity_basis_file_sha256": "8443b14316e03f8e8a39da8fd91657b72b687290417b10a24fd5d70688cd6e2e",
+  "validation_file": "validation.json",
+  "validation_file_sha256": "ded5e2c7c97bd917b82ae715897e510bada72d53eaf1d8f27109dd78f857ff70",
+  "status_note": "Two converted, no-ID source histories are saved for independent review. Both are complete at source-history level; one has known Ivey cards and one has unknown cards. Both are pending global identity review and neither is admitted or treated as heldout.",
+  "coverage_bounds": [
+    "This is a bounded public-index search, not comprehensive coverage of every 2012-2016 Full Tilt community post. Targeted searches and inspected pages covered examples from 2013-2015; no new qualifying 2012 or 2016 log with a visible Full Tilt game ID was located.",
+    "No exact Full Tilt game ID was visible in the two new captures. Search results did not expose original Full Tilt hand text or canonical game numbers.",
+    "Converted facts are preserved as a distinct record type and cannot count as globally unique until source-action identity review resolves no-ID copies.",
+    "Direct publisher commentary was omitted; no login, private message, paywall, or access control was used.",
+    "No observations or admissions were created; new records are research-only and development-only, with zero fresh heldout rows.",
+    "Protected trees were byte-hash checked before/after: pokerbot/, data/models/, data/corpus_splits/."
+  ]
+}

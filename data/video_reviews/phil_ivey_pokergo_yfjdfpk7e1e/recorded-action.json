@@ -1,0 +1,13 @@
+{
+  "action": "fold",
+  "source": "https://www.youtube.com/watch?v=YfjDfPk7e1E&t=135s",
+  "frozen_decision_offset_seconds": 125,
+  "observed_action_offset_seconds": 135,
+  "evidence": "Public PokerGO clip inspected by the video research agent; observation and action label are stored separately.",
+  "limitations": [
+    "Hero's 6.0M decision overlay is rounded.",
+    "Some preceding folds are omitted from the short clip.",
+    "Opponent opening position and tournament payouts were not reconstructed.",
+    "Opponent cards and equity overlays are excluded from the observation and rationale."
+  ]
+}

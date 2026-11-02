@@ -1,0 +1,1026 @@
+{
+  "schema_version": 2,
+  "status": "review_corrected_partial_only",
+  "records": [
+    {
+      "source": "https://www.youtube.com/watch?v=Aw_KVPxe7d0",
+      "video_id": "Aw_KVPxe7d0",
+      "decision_id": "01",
+      "raw_file": "data/public_ivey_videos/hand-reviews.json",
+      "raw_state": {
+        "hole_cards": [
+          "Ks",
+          "9s"
+        ],
+        "board": [],
+        "pot": 7600,
+        "to_call": 2500,
+        "stack": null,
+        "current_bet": 0,
+        "min_raise_to": null,
+        "max_raise_to": null,
+        "big_blind": 800,
+        "position": null,
+        "players_active": null,
+        "players_to_act": null,
+        "legal_actions": [
+          "fold",
+          "call",
+          "raise"
+        ]
+      },
+      "evidence_tier": "video_snapshot_with_rounded_or_missing_context",
+      "exact_benchmark_admitted": false
+    },
+    {
+      "source": "https://www.youtube.com/watch?v=Aw_KVPxe7d0",
+      "video_id": "Aw_KVPxe7d0",
+      "decision_id": "02",
+      "raw_file": "data/public_ivey_videos/hand-reviews.json",
+      "raw_state": {
+        "hole_cards": [
+          "Ks",
+          "9s"
+        ],
+        "board": [],
+        "pot": 27200,
+        "to_call": 12500,
+        "stack": null,
+        "current_bet": 2500,
+        "min_raise_to": null,
+        "max_raise_to": null,
+        "big_blind": 800,
+        "position": null,
+        "players_active": null,
+        "players_to_act": null,
+        "legal_actions": [
+          "fold",
+          "call",
+          "raise"
+        ]
+      },
+      "evidence_tier": "video_snapshot_with_rounded_or_missing_context",
+      "exact_benchmark_admitted": false
+    },
+    {
+      "source": "https://www.youtube.com/watch?v=Aw_KVPxe7d0",
+      "video_id": "Aw_KVPxe7d0",
+      "decision_id": "03",
+      "raw_file": "data/public_ivey_videos/hand-reviews.json",
+      "raw_state": {
+        "hole_cards": [
+          "Ks",
+          "9s"
+        ],
+        "board": [
+          "7s",
+          "8h",
+          "Ts"
+        ],
+        "pot": 82200,
+        "to_call": 30000,
+        "stack": null,
+        "current_bet": 0,
+        "min_raise_to": null,
+        "max_raise_to": null,
+        "big_blind": 800,
+        "position": null,
+        "players_active": 3,
+        "players_to_act": 1,
+        "legal_actions": [
+          "fold",
+          "call",
+          "raise"
+        ]
+      },
+      "evidence_tier": "video_snapshot_with_rounded_or_missing_context",
+      "exact_benchmark_admitted": false
+    },
+    {
+      "source": "https://www.youtube.com/watch?v=Aw_KVPxe7d0",
+      "video_id": "Aw_KVPxe7d0",
+      "decision_id": "04",
+      "raw_file": "data/public_ivey_videos/hand-reviews.json",
+      "raw_state": {
+        "hole_cards": [
+          "Ks",
+          "9s"
+        ],
+        "board": [
+          "7s",
+          "8h",
+          "Ts"
+        ],
+        "pot": 212200,
+        "to_call": 70000,
+        "stack": null,
+        "current_bet": 30000,
+        "min_raise_to": null,
+        "max_raise_to": null,
+        "big_blind": 800,
+        "position": null,
+        "players_active": 2,
+        "players_to_act": 0,
+        "legal_actions": [
+          "fold",
+          "call",
+          "raise"
+        ]
+      },
+      "evidence_tier": "video_snapshot_with_rounded_or_missing_context",
+      "exact_benchmark_admitted": false
+    },
+    {
+      "source": "https://www.youtube.com/watch?v=Aw_KVPxe7d0",
+      "video_id": "Aw_KVPxe7d0",
+      "decision_id": "05",
+      "raw_file": "data/public_ivey_videos/hand-reviews.json",
+      "raw_state": {
+        "hole_cards": [
+          "Ks",
+          "9s"
+        ],
+        "board": [
+          "7s",
+          "8h",
+          "Ts",
+          "Kh"
+        ],
+        "pot": 282200,
+        "to_call": 0,
+        "stack": null,
+        "current_bet": 0,
+        "min_raise_to": null,
+        "max_raise_to": null,
+        "big_blind": 800,
+        "position": null,
+        "players_active": 2,
+        "players_to_act": 1,
+        "legal_actions": [
+          "check",
+          "raise"
+        ]
+      },
+      "evidence_tier": "video_snapshot_with_rounded_or_missing_context",
+      "exact_benchmark_admitted": false
+    },
+    {
+      "source": "https://www.youtube.com/watch?v=Aw_KVPxe7d0",
+      "video_id": "Aw_KVPxe7d0",
+      "decision_id": "06",
+      "raw_file": "data/public_ivey_videos/hand-reviews.json",
+      "raw_state": {
+        "hole_cards": [
+          "Ks",
+          "9s"
+        ],
+        "board": [
+          "7s",
+          "8h",
+          "Ts",
+          "Kh"
+        ],
+        "pot": 436200,
+        "to_call": 154000,
+        "stack": null,
+        "current_bet": 0,
+        "min_raise_to": null,
+        "max_raise_to": null,
+        "big_blind": 800,
+        "position": null,
+        "players_active": 2,
+        "players_to_act": 0,
+        "legal_actions": [
+          "fold",
+          "call",
+          "raise"
+        ]
+      },
+      "evidence_tier": "video_snapshot_with_rounded_or_missing_context",
+      "exact_benchmark_admitted": false
+    },
+    {
+      "source": "https://www.youtube.com/watch?v=g1nesioHo_c",
+      "video_id": "g1nesioHo_c",
+      "decision_id": "01",
+      "raw_file": "data/public_ivey_videos/hand-reviews.json",
+      "raw_state": {
+        "hole_cards": [
+          "8c",
+          "6c"
+        ],
+        "board": [],
+        "pot": null,
+        "to_call": null,
+        "stack": null,
+        "current_bet": null,
+        "min_raise_to": null,
+        "max_raise_to": null,
+        "big_blind": null,
+        "position": null,
+        "players_active": null,
+        "players_to_act": null,
+        "legal_actions": null
+      },
+      "evidence_tier": "video_snapshot_with_rounded_or_missing_context",
+      "exact_benchmark_admitted": false
+    },
+    {
+      "source": "https://www.youtube.com/watch?v=g1nesioHo_c",
+      "video_id": "g1nesioHo_c",
+      "decision_id": "02",
+      "raw_file": "data/public_ivey_videos/hand-reviews.json",
+      "raw_state": {
+        "hole_cards": [
+          "8c",
+          "6c"
+        ],
+        "board": [
+          "Tc",
+          "9h",
+          "7h"
+        ],
+        "pot": 10200,
+        "to_call": 0,
+        "stack": null,
+        "current_bet": 0,
+        "min_raise_to": null,
+        "max_raise_to": null,
+        "big_blind": null,
+        "position": null,
+        "players_active": null,
+        "players_to_act": null,
+        "legal_actions": [
+          "check",
+          "raise"
+        ]
+      },
+      "evidence_tier": "video_snapshot_with_rounded_or_missing_context",
+      "exact_benchmark_admitted": false
+    },
+    {
+      "source": "https://www.youtube.com/watch?v=g1nesioHo_c",
+      "video_id": "g1nesioHo_c",
+      "decision_id": "03",
+      "raw_file": "data/public_ivey_videos/hand-reviews.json",
+      "raw_state": {
+        "hole_cards": [
+          "8c",
+          "6c"
+        ],
+        "board": [
+          "Tc",
+          "9h",
+          "7h",
+          "2d"
+        ],
+        "pot": 28300,
+        "to_call": 0,
+        "stack": null,
+        "current_bet": 0,
+        "min_raise_to": null,
+        "max_raise_to": null,
+        "big_blind": null,
+        "position": null,
+        "players_active": null,
+        "players_to_act": null,
+        "legal_actions": [
+          "check",
+          "raise"
+        ]
+      },
+      "evidence_tier": "video_snapshot_with_rounded_or_missing_context",
+      "exact_benchmark_admitted": false
+    },
+    {
+      "source": "https://www.youtube.com/watch?v=g1nesioHo_c",
+      "video_id": "g1nesioHo_c",
+      "decision_id": "04",
+      "raw_file": "data/public_ivey_videos/hand-reviews.json",
+      "raw_state": {
+        "hole_cards": [
+          "8c",
+          "6c"
+        ],
+        "board": [
+          "Tc",
+          "9h",
+          "7h",
+          "2d"
+        ],
+        "pot": 130200,
+        "to_call": null,
+        "stack": null,
+        "current_bet": 23000,
+        "min_raise_to": null,
+        "max_raise_to": null,
+        "big_blind": null,
+        "position": null,
+        "players_active": null,
+        "players_to_act": null,
+        "legal_actions": null,
+        "contestable_pot": null
+      },
+      "evidence_tier": "video_snapshot_with_rounded_or_missing_context",
+      "exact_benchmark_admitted": false
+    },
+    {
+      "source": "https://www.youtube.com/watch?v=5TX7WuLl7IQ",
+      "video_id": "5TX7WuLl7IQ",
+      "decision_id": "01",
+      "raw_file": "data/public_ivey_videos/hand-reviews.json",
+      "raw_state": {
+        "hole_cards": [
+          "Kc",
+          "Tc"
+        ],
+        "board": [],
+        "pot": 6300,
+        "to_call": null,
+        "stack": null,
+        "current_bet": null,
+        "min_raise_to": null,
+        "max_raise_to": null,
+        "big_blind": 800,
+        "position": null,
+        "players_active": null,
+        "players_to_act": null,
+        "legal_actions": [
+          "fold",
+          "call",
+          "raise"
+        ]
+      },
+      "evidence_tier": "video_snapshot_with_rounded_or_missing_context",
+      "exact_benchmark_admitted": false
+    },
+    {
+      "source": "https://www.youtube.com/watch?v=5TX7WuLl7IQ",
+      "video_id": "5TX7WuLl7IQ",
+      "decision_id": "02",
+      "raw_file": "data/public_ivey_videos/hand-reviews.json",
+      "raw_state": {
+        "hole_cards": [
+          "Kc",
+          "Tc"
+        ],
+        "board": [
+          "Jc",
+          "4h",
+          "Qc"
+        ],
+        "pot": 16800,
+        "to_call": 7000,
+        "stack": null,
+        "current_bet": 0,
+        "min_raise_to": null,
+        "max_raise_to": null,
+        "big_blind": 800,
+        "position": null,
+        "players_active": null,
+        "players_to_act": null,
+        "legal_actions": [
+          "fold",
+          "call",
+          "raise"
+        ]
+      },
+      "evidence_tier": "video_snapshot_with_rounded_or_missing_context",
+      "exact_benchmark_admitted": false
+    },
+    {
+      "source": "https://www.youtube.com/watch?v=5TX7WuLl7IQ",
+      "video_id": "5TX7WuLl7IQ",
+      "decision_id": "03",
+      "raw_file": "data/public_ivey_videos/hand-reviews.json",
+      "raw_state": {
+        "hole_cards": [
+          "Kc",
+          "Tc"
+        ],
+        "board": [
+          "Jc",
+          "4h",
+          "Qc",
+          "5c"
+        ],
+        "pot": 49800,
+        "to_call": 0,
+        "stack": null,
+        "current_bet": 0,
+        "min_raise_to": null,
+        "max_raise_to": null,
+        "big_blind": 800,
+        "position": null,
+        "players_active": null,
+        "players_to_act": null,
+        "legal_actions": [
+          "check",
+          "raise"
+        ]
+      },
+      "evidence_tier": "video_snapshot_with_rounded_or_missing_context",
+      "exact_benchmark_admitted": false
+    },
+    {
+      "source": "https://www.youtube.com/watch?v=5TX7WuLl7IQ",
+      "video_id": "5TX7WuLl7IQ",
+      "decision_id": "04",
+      "raw_file": "data/public_ivey_videos/hand-reviews.json",
+      "raw_state": {
+        "hole_cards": [
+          "Kc",
+          "Tc"
+        ],
+        "board": [
+          "Jc",
+          "4h",
+          "Qc",
+          "5c",
+          "Kh"
+        ],
+        "pot": 109800,
+        "to_call": 0,
+        "stack": null,
+        "current_bet": 0,
+        "min_raise_to": null,
+        "max_raise_to": null,
+        "big_blind": 800,
+        "position": null,
+        "players_active": null,
+        "players_to_act": null,
+        "legal_actions": [
+          "check",
+          "raise"
+        ]
+      },
+      "evidence_tier": "video_snapshot_with_rounded_or_missing_context",
+      "exact_benchmark_admitted": false
+    },
+    {
+      "source": "https://www.youtube.com/watch?v=KjreElAgfRk",
+      "video_id": "KjreElAgfRk",
+      "decision_id": "01",
+      "raw_file": "data/public_ivey_videos/hand-reviews.json",
+      "raw_state": {
+        "hole_cards": [
+          "Td",
+          "6d"
+        ],
+        "board": [],
+        "pot": 15000,
+        "to_call": 6000,
+        "stack": null,
+        "current_bet": 0,
+        "min_raise_to": 12000,
+        "max_raise_to": null,
+        "big_blind": 6000,
+        "position": "BTN",
+        "players_active": 3,
+        "players_to_act": 2,
+        "legal_actions": [
+          "fold",
+          "call",
+          "raise"
+        ]
+      },
+      "evidence_tier": "video_snapshot_with_rounded_or_missing_context",
+      "exact_benchmark_admitted": false
+    },
+    {
+      "source": "https://www.youtube.com/watch?v=KjreElAgfRk",
+      "video_id": "KjreElAgfRk",
+      "decision_id": "02",
+      "raw_file": "data/public_ivey_videos/hand-reviews.json",
+      "raw_state": {
+        "hole_cards": [
+          "Td",
+          "6d"
+        ],
+        "board": [
+          "Tc",
+          "8c",
+          "3d"
+        ],
+        "pot": 45000,
+        "to_call": 0,
+        "stack": null,
+        "current_bet": 0,
+        "min_raise_to": null,
+        "max_raise_to": null,
+        "big_blind": 6000,
+        "position": "BTN",
+        "players_active": 3,
+        "players_to_act": 0,
+        "legal_actions": [
+          "check",
+          "raise"
+        ]
+      },
+      "evidence_tier": "video_snapshot_with_rounded_or_missing_context",
+      "exact_benchmark_admitted": false
+    },
+    {
+      "source": "https://www.youtube.com/watch?v=KjreElAgfRk",
+      "video_id": "KjreElAgfRk",
+      "decision_id": "03",
+      "raw_file": "data/public_ivey_videos/hand-reviews.json",
+      "raw_state": {
+        "hole_cards": [
+          "Td",
+          "6d"
+        ],
+        "board": [
+          "Tc",
+          "8c",
+          "3d",
+          "8h"
+        ],
+        "pot": 148000,
+        "to_call": 55000,
+        "stack": null,
+        "current_bet": 0,
+        "min_raise_to": null,
+        "max_raise_to": null,
+        "big_blind": 6000,
+        "position": "BTN",
+        "players_active": 3,
+        "players_to_act": 1,
+        "legal_actions": [
+          "fold",
+          "call",
+          "raise"
+        ]
+      },
+      "evidence_tier": "video_snapshot_with_rounded_or_missing_context",
+      "exact_benchmark_admitted": false
+    },
+    {
+      "source": "https://www.youtube.com/watch?v=KjreElAgfRk",
+      "video_id": "KjreElAgfRk",
+      "decision_id": "04",
+      "raw_file": "data/public_ivey_videos/hand-reviews.json",
+      "raw_state": {
+        "hole_cards": [
+          "Td",
+          "6d"
+        ],
+        "board": [
+          "Tc",
+          "8c",
+          "3d",
+          "8h",
+          "Kh"
+        ],
+        "pot": 453000,
+        "to_call": null,
+        "stack": null,
+        "current_bet": 0,
+        "min_raise_to": null,
+        "max_raise_to": null,
+        "big_blind": 6000,
+        "position": "BTN",
+        "players_active": 2,
+        "players_to_act": 0,
+        "legal_actions": [
+          "fold",
+          "call"
+        ]
+      },
+      "evidence_tier": "video_snapshot_with_rounded_or_missing_context",
+      "exact_benchmark_admitted": false
+    },
+    {
+      "source": "https://www.youtube.com/watch?v=RC3ddhyKFOo",
+      "video_id": "RC3ddhyKFOo",
+      "decision_id": "0",
+      "raw_file": "data/public_ivey_videos_batch2/observations.jsonl",
+      "hand_id": "batch2-rc3-ivey-booth-williams",
+      "raw_state": {
+        "hole_cards": [
+          "Kh",
+          "Kd"
+        ],
+        "board": [],
+        "street": "preflop",
+        "pot": null,
+        "to_call": 5500,
+        "stack": null,
+        "current_bet": 300,
+        "min_raise_to": 9800,
+        "max_raise_to": null,
+        "big_blind": 600,
+        "position": "SB",
+        "players_active": 3,
+        "players_to_act": 2,
+        "legal_actions": [
+          "fold",
+          "call",
+          "raise"
+        ]
+      },
+      "evidence_tier": "video_snapshot_with_rounded_or_missing_context",
+      "exact_benchmark_admitted": false
+    },
+    {
+      "source": "https://www.youtube.com/watch?v=RC3ddhyKFOo",
+      "video_id": "RC3ddhyKFOo",
+      "decision_id": "1",
+      "raw_file": "data/public_ivey_videos_batch2/observations.jsonl",
+      "hand_id": "batch2-rc3-ivey-booth-williams",
+      "raw_state": {
+        "hole_cards": [
+          "Kh",
+          "Kd"
+        ],
+        "board": [
+          "3d",
+          "7s",
+          "6d"
+        ],
+        "street": "flop",
+        "pot": null,
+        "to_call": 0,
+        "stack": null,
+        "current_bet": 0,
+        "min_raise_to": 600,
+        "max_raise_to": null,
+        "big_blind": 600,
+        "position": "SB",
+        "players_active": 2,
+        "players_to_act": 1,
+        "legal_actions": [
+          "check",
+          "raise"
+        ]
+      },
+      "evidence_tier": "video_snapshot_with_rounded_or_missing_context",
+      "exact_benchmark_admitted": false
+    },
+    {
+      "source": "https://www.youtube.com/watch?v=RC3ddhyKFOo",
+      "video_id": "RC3ddhyKFOo",
+      "decision_id": "2",
+      "raw_file": "data/public_ivey_videos_batch2/observations.jsonl",
+      "hand_id": "batch2-rc3-ivey-booth-williams",
+      "raw_state": {
+        "hole_cards": [
+          "Kh",
+          "Kd"
+        ],
+        "board": [
+          "3d",
+          "7s",
+          "6d"
+        ],
+        "street": "flop",
+        "pot": null,
+        "contestable_pot": null,
+        "to_call": null,
+        "stack": null,
+        "current_bet": 23000,
+        "min_raise_to": 0,
+        "max_raise_to": 0,
+        "big_blind": 600,
+        "position": "SB",
+        "players_active": 2,
+        "players_to_act": 0,
+        "legal_actions": [
+          "fold",
+          "call"
+        ]
+      },
+      "evidence_tier": "video_snapshot_with_rounded_or_missing_context",
+      "exact_benchmark_admitted": false
+    },
+    {
+      "source": "https://www.youtube.com/watch?v=mtCcWNLHMbM",
+      "video_id": "mtCcWNLHMbM",
+      "decision_id": "3",
+      "raw_file": "data/public_ivey_videos_batch2/observations.jsonl",
+      "hand_id": "batch2-mtcc-ivey-kirk",
+      "raw_state": {
+        "hole_cards": [
+          "Qh",
+          "Th"
+        ],
+        "board": [],
+        "street": "preflop",
+        "pot": 8400,
+        "to_call": 4000,
+        "stack": null,
+        "current_bet": 0,
+        "min_raise_to": 6400,
+        "max_raise_to": null,
+        "big_blind": 800,
+        "position": null,
+        "players_active": 3,
+        "players_to_act": 2,
+        "legal_actions": [
+          "fold",
+          "call",
+          "raise"
+        ]
+      },
+      "evidence_tier": "video_snapshot_with_rounded_or_missing_context",
+      "exact_benchmark_admitted": false
+    },
+    {
+      "source": "https://www.youtube.com/watch?v=mtCcWNLHMbM",
+      "video_id": "mtCcWNLHMbM",
+      "decision_id": "4",
+      "raw_file": "data/public_ivey_videos_batch2/observations.jsonl",
+      "hand_id": "batch2-mtcc-ivey-kirk",
+      "raw_state": {
+        "hole_cards": [
+          "Qh",
+          "Th"
+        ],
+        "board": [
+          "6s",
+          "9s",
+          "2d"
+        ],
+        "street": "flop",
+        "pot": 36800,
+        "to_call": 0,
+        "stack": null,
+        "current_bet": 0,
+        "min_raise_to": 800,
+        "max_raise_to": null,
+        "big_blind": 800,
+        "position": null,
+        "players_active": 2,
+        "players_to_act": 0,
+        "legal_actions": [
+          "check",
+          "raise"
+        ]
+      },
+      "evidence_tier": "video_snapshot_with_rounded_or_missing_context",
+      "exact_benchmark_admitted": false
+    },
+    {
+      "source": "https://www.youtube.com/watch?v=mtCcWNLHMbM",
+      "video_id": "mtCcWNLHMbM",
+      "decision_id": "5",
+      "raw_file": "data/public_ivey_videos_batch2/observations.jsonl",
+      "hand_id": "batch2-mtcc-ivey-kirk",
+      "raw_state": {
+        "hole_cards": [
+          "Qh",
+          "Th"
+        ],
+        "board": [
+          "6s",
+          "9s",
+          "2d",
+          "8c"
+        ],
+        "street": "turn",
+        "pot": 86800,
+        "to_call": 0,
+        "stack": null,
+        "current_bet": 0,
+        "min_raise_to": 800,
+        "max_raise_to": null,
+        "big_blind": 800,
+        "position": null,
+        "players_active": 2,
+        "players_to_act": 0,
+        "legal_actions": [
+          "check",
+          "raise"
+        ]
+      },
+      "evidence_tier": "video_snapshot_with_rounded_or_missing_context",
+      "exact_benchmark_admitted": false
+    },
+    {
+      "source": "https://www.youtube.com/watch?v=mtCcWNLHMbM",
+      "video_id": "mtCcWNLHMbM",
+      "decision_id": "6",
+      "raw_file": "data/public_ivey_videos_batch2/observations.jsonl",
+      "hand_id": "batch2-mtcc-ivey-kirk",
+      "raw_state": {
+        "hole_cards": [
+          "Qh",
+          "Th"
+        ],
+        "board": [
+          "6s",
+          "9s",
+          "2d",
+          "8c",
+          "7d"
+        ],
+        "street": "river",
+        "pot": 259900,
+        "contestable_pot": 259900,
+        "to_call": 83100,
+        "stack": null,
+        "current_bet": 0,
+        "min_raise_to": null,
+        "max_raise_to": null,
+        "big_blind": 800,
+        "position": null,
+        "players_active": 2,
+        "players_to_act": 0,
+        "legal_actions": [
+          "fold",
+          "call"
+        ]
+      },
+      "evidence_tier": "video_snapshot_with_rounded_or_missing_context",
+      "exact_benchmark_admitted": false
+    },
+    {
+      "source": "https://www.youtube.com/watch?v=T9uJ0dpROcc",
+      "video_id": "T9uJ0dpROcc",
+      "decision_id": "7",
+      "raw_file": "data/public_ivey_videos_batch2/observations.jsonl",
+      "hand_id": "batch2-t9u-ivey-hellmuth",
+      "raw_state": {
+        "hole_cards": [
+          "Kh",
+          "9h"
+        ],
+        "board": [],
+        "street": "preflop",
+        "pot": 5600,
+        "to_call": 1600,
+        "stack": null,
+        "current_bet": 400,
+        "min_raise_to": 2800,
+        "max_raise_to": null,
+        "big_blind": 800,
+        "position": "SB",
+        "players_active": 4,
+        "players_to_act": null,
+        "legal_actions": [
+          "fold",
+          "call",
+          "raise"
+        ]
+      },
+      "evidence_tier": "video_snapshot_with_rounded_or_missing_context",
+      "exact_benchmark_admitted": false
+    },
+    {
+      "source": "https://www.youtube.com/watch?v=T9uJ0dpROcc",
+      "video_id": "T9uJ0dpROcc",
+      "decision_id": "8",
+      "raw_file": "data/public_ivey_videos_batch2/observations.jsonl",
+      "hand_id": "batch2-t9u-ivey-hellmuth",
+      "raw_state": {
+        "hole_cards": [
+          "Kh",
+          "9h"
+        ],
+        "board": [
+          "6d",
+          "4h",
+          "7h"
+        ],
+        "street": "flop",
+        "pot": 9600,
+        "to_call": 0,
+        "stack": null,
+        "current_bet": 0,
+        "min_raise_to": 800,
+        "max_raise_to": null,
+        "big_blind": 800,
+        "position": "SB",
+        "players_active": 4,
+        "players_to_act": 3,
+        "legal_actions": [
+          "check",
+          "raise"
+        ]
+      },
+      "evidence_tier": "video_snapshot_with_rounded_or_missing_context",
+      "exact_benchmark_admitted": false
+    },
+    {
+      "source": "https://www.youtube.com/watch?v=T9uJ0dpROcc",
+      "video_id": "T9uJ0dpROcc",
+      "decision_id": "9",
+      "raw_file": "data/public_ivey_videos_batch2/observations.jsonl",
+      "hand_id": "batch2-t9u-ivey-hellmuth",
+      "raw_state": {
+        "hole_cards": [
+          "Kh",
+          "9h"
+        ],
+        "board": [
+          "6d",
+          "4h",
+          "7h"
+        ],
+        "street": "flop",
+        "pot": 41600,
+        "to_call": 20000,
+        "stack": null,
+        "current_bet": 6000,
+        "min_raise_to": 46000,
+        "max_raise_to": null,
+        "big_blind": 800,
+        "position": "SB",
+        "players_active": 2,
+        "players_to_act": 0,
+        "legal_actions": [
+          "fold",
+          "call",
+          "raise"
+        ]
+      },
+      "evidence_tier": "video_snapshot_with_rounded_or_missing_context",
+      "exact_benchmark_admitted": false
+    },
+    {
+      "source": "https://www.youtube.com/watch?v=T9uJ0dpROcc",
+      "video_id": "T9uJ0dpROcc",
+      "decision_id": "10",
+      "raw_file": "data/public_ivey_videos_batch2/observations.jsonl",
+      "hand_id": "batch2-t9u-ivey-hellmuth",
+      "raw_state": {
+        "hole_cards": [
+          "Kh",
+          "9h"
+        ],
+        "board": [
+          "6d",
+          "4h",
+          "7h",
+          "Kd"
+        ],
+        "street": "turn",
+        "pot": 61600,
+        "to_call": 0,
+        "stack": null,
+        "current_bet": 0,
+        "min_raise_to": 800,
+        "max_raise_to": null,
+        "big_blind": 800,
+        "position": "SB",
+        "players_active": 2,
+        "players_to_act": 1,
+        "legal_actions": [
+          "check",
+          "raise"
+        ]
+      },
+      "evidence_tier": "video_snapshot_with_rounded_or_missing_context",
+      "exact_benchmark_admitted": false
+    },
+    {
+      "source": "https://www.youtube.com/watch?v=T9uJ0dpROcc",
+      "video_id": "T9uJ0dpROcc",
+      "decision_id": "11",
+      "raw_file": "data/public_ivey_videos_batch2/observations.jsonl",
+      "hand_id": "batch2-t9u-ivey-hellmuth",
+      "raw_state": {
+        "hole_cards": [
+          "Kh",
+          "9h"
+        ],
+        "board": [
+          "6d",
+          "4h",
+          "7h",
+          "Kd"
+        ],
+        "street": "turn",
+        "pot": 143900,
+        "contestable_pot": 143900,
+        "to_call": 82300,
+        "stack": null,
+        "current_bet": 0,
+        "min_raise_to": null,
+        "max_raise_to": null,
+        "big_blind": 800,
+        "position": "SB",
+        "players_active": 2,
+        "players_to_act": 0,
+        "legal_actions": [
+          "fold",
+          "call"
+        ]
+      },
+      "evidence_tier": "video_snapshot_with_rounded_or_missing_context",
+      "exact_benchmark_admitted": false
+    }
+  ],
+  "recorded_decisions": 30,
+  "exact_benchmark_admitted": 0,
+  "exact_scorer_rejections_verified": 30,
+  "raw_source_hashes": {
+    "data/public_ivey_videos/hand-reviews.json": "0b338f44091810e808a9516bac592738d835021b9dd6f6f839d955dc5dc25b00",
+    "data/public_ivey_videos_batch2/observations.jsonl": "ca5e53644c16692ed6a45ca47e662ef7f389a603e7fa96c2c8ff6b14903e8f75",
+    "data/public_ivey_videos/selection-manifest.json": "27a1a7ddec1b4976f6e9eaf549286375555dac105ee7050a3980d6c31b3ab4e5"
+  },
+  "historical_original_capture_snapshots": "data/corpus_admission/source-snapshots/",
+  "review_notes": "docs/partial-video-review-errata.md",
+  "retained_predecision_frames": 28,
+  "additional_pot_detail_crops": 2
+}

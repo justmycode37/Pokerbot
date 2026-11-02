@@ -1,0 +1,806 @@
+{
+  "schema_version": 1,
+  "review_type": "independent_local_source_and_conversion_review",
+  "created_at_utc": "2026-11-01T18:17:10.314019+00:00",
+  "review_status": "inspected_not_fresh_holdout",
+  "source_scope": {
+    "api_calls": 0,
+    "policy_calls": 0,
+    "training": false,
+    "evaluation_scores": false,
+    "admissions_written": 0,
+    "split_changes": 0,
+    "code_or_raw_source_writes": 0
+  },
+  "input_artifacts": {
+    "candidate_records_path": "/Users/benajaheger/Documents/museum of failures/Pokerbot/data/acquisition_resume/2026-11-01/triton_2025_conversion/batch-001/candidates.json",
+    "candidate_records_sha256": "db082f156855695303d4809a7f018dcefa1c45c34717da46e38f0510f4b86035",
+    "hands_manifest_path": "/Users/benajaheger/Documents/museum of failures/Pokerbot/data/acquisition_resume/2026-11-01/triton_2025/hands_manifest.json",
+    "hands_manifest_sha256": "6e5ca192312043c4cb982e80e94593a256358f8b9110c36e6cfa817543705f44",
+    "source_decisions_path": "/Users/benajaheger/Documents/museum of failures/Pokerbot/data/acquisition_resume/2026-11-01/triton_2025/decisions.jsonl",
+    "source_decisions_sha256": "00ac8985f4ad8f612539e8a281137b5622444fe4ebe1906f1bf818bf93f4c318",
+    "converter_semantics_doc_path": "/Users/benajaheger/Documents/museum of failures/Pokerbot/docs/triton-converter-semantics.md",
+    "converter_semantics_doc_sha256": "c4b496b42f110f33a48fe4b5a195bef743c06d00a251107b744ff1dce6f9dc39",
+    "baseline_45_decision_split_path": "/Users/benajaheger/Documents/museum of failures/Pokerbot/data/corpus_splits/development-after-prospective-v1.json",
+    "baseline_45_decision_split_sha256": "d172e7310677b051b8dea0163fb14b06b81ad9b5847c73d735f1e2ec66c1a483"
+  },
+  "baseline_and_dedup": {
+    "baseline_admitted_decisions": 45,
+    "exact_candidate_hand_id_matches_in_baseline": [],
+    "exact_candidate_decision_id_matches_in_baseline": [],
+    "candidate_unique_canonical_hand_action_keys": 3,
+    "candidate_duplicate_hand_action_keys": 0,
+    "episode_alias_note": "Hands 0fe69d0d… and 238da98b… appear in two archived episode segments each; these aliases resolve to one hand UUID and one original action key per hand. 7233ae8e… appears in one episode segment. No episode alias is counted as an extra decision.",
+    "baseline_dedup_result": "No exact candidate hand UUID or candidate decision hash appears in the 45-row baseline split records."
+  },
+  "summary_counts": {
+    "candidate_decisions_reviewed": 3,
+    "recommended_eligible_for_parent_admission_review": 1,
+    "blocked_pending_correction": 2,
+    "hero_hole_card_known_decisions": 3,
+    "hero_hole_card_unknown_decisions": 0,
+    "known_hero_hole_card_values": 6,
+    "unknown_hero_hole_card_values": 0,
+    "public_board_cards_visible_at_decision": 0,
+    "opponent_private_card_values_exposed_to_state": 0,
+    "fresh_holdout_rows": 0,
+    "newly_admitted_decisions": 0
+  },
+  "rows": [
+    {
+      "decision_id": "8ac8c3dbcd32c8a1f5f088cf64f5bb733acab2af7b231b58edb0b8f133e324eb",
+      "canonical_hand_id": "triton:0fe69d0d-c62f-4a47-baac-7770b44b9bdb",
+      "stable_hand_round_action_key": "0fe69d0d-c62f-4a47-baac-7770b44b9bdb:0:7",
+      "source_decision_id": "triton:0fe69d0d-c62f-4a47-baac-7770b44b9bdb:action:7",
+      "source_action_index": 7,
+      "source_round_index": 0,
+      "source_round_name": "pre_flop",
+      "source_action_type": "all_in",
+      "source_incremental_action_amount": 670000,
+      "raw_response_path": "/Users/benajaheger/Documents/museum of failures/Pokerbot/data/acquisition_resume/2026-11-01/triton_2025/raw/3bc7093a-05a7-41d1-82b4-b76f7a84107e/hands/0fe69d0d-c62f-4a47-baac-7770b44b9bdb.json",
+      "raw_response_sha256": "88798266657a2dc6c7238e5dfb8bdc5591f58fb51411c01aae62b0db833d82e1",
+      "canonical_hand_object_sha256": "2fb4042feaa711ceaab0aee1da536653d3b166484e514b1fb359f3430a884880",
+      "manifest_response_sha256": "88798266657a2dc6c7238e5dfb8bdc5591f58fb51411c01aae62b0db833d82e1",
+      "request_path": "/Users/benajaheger/Documents/museum of failures/Pokerbot/data/acquisition_resume/2026-11-01/triton_2025/raw/3bc7093a-05a7-41d1-82b4-b76f7a84107e/hands/0fe69d0d-c62f-4a47-baac-7770b44b9bdb.request.json",
+      "request_file_sha256": "74a4435b9364e29410c833933fd691fad686270bdae4e9235b4fc27154d0e43c",
+      "request_query_sha256": "62ad7be7eda254e2f8a3e79e59c421482ac60156552fe4bf6c4622f4ed4f9a50",
+      "request_operation_name": "GetHand",
+      "graphql_endpoint": "https://prod-public-serverless.triton-poker.com/graphql",
+      "query_variables": {
+        "episodeId": "a6f4a4cc-d665-4268-8805-660d7e569da0",
+        "handId": "0fe69d0d-c62f-4a47-baac-7770b44b9bdb"
+      },
+      "episode_provenance": [
+        {
+          "episode_id": "a6f4a4cc-d665-4268-8805-660d7e569da0",
+          "episode_offset_seconds": 904.0559998886719,
+          "hand_length_seconds": 129.734,
+          "hand_offset_index": 0,
+          "segment_index": 3,
+          "start_timestamp": 1748116284050
+        },
+        {
+          "episode_id": "fbeb374a-3921-4d87-87ee-6371285c11ae",
+          "episode_offset_seconds": 3240.8999449941402,
+          "hand_length_seconds": 129.734,
+          "hand_offset_index": 0,
+          "segment_index": 20,
+          "start_timestamp": 1748116284050
+        }
+      ],
+      "source_prefix_before_decision": [
+        {
+          "round_index": 0,
+          "action_index": 0,
+          "type": "ante",
+          "user_id": "aa0dae59-9aa4-4681-9bd1-305a1acfcf34",
+          "amount": 100000
+        },
+        {
+          "round_index": 0,
+          "action_index": 1,
+          "type": "small_blind",
+          "user_id": "a001dd6d-b7b1-4f67-a6bf-683406c37342",
+          "amount": 50000
+        },
+        {
+          "round_index": 0,
+          "action_index": 2,
+          "type": "big_blind",
+          "user_id": "aa0dae59-9aa4-4681-9bd1-305a1acfcf34",
+          "amount": 100000
+        },
+        {
+          "round_index": 0,
+          "action_index": 3,
+          "type": "fold",
+          "user_id": "9d56c803-1441-404a-a555-99f269f1289c",
+          "amount": null
+        },
+        {
+          "round_index": 0,
+          "action_index": 4,
+          "type": "fold",
+          "user_id": "1846ff55-6026-4bf9-9db7-3cb8fdfd6928",
+          "amount": null
+        },
+        {
+          "round_index": 0,
+          "action_index": 5,
+          "type": "fold",
+          "user_id": "e048caf7-3ff8-44ba-97a9-50f0260a0bce",
+          "amount": null
+        },
+        {
+          "round_index": 0,
+          "action_index": 6,
+          "type": "raise",
+          "user_id": "ca632e80-d671-468d-8a7e-4746f0da612f",
+          "amount": 200000
+        }
+      ],
+      "known_unknown_cards": {
+        "hero_hole_cards_status": "known_complete",
+        "known_hero_hole_card_values": 2,
+        "unknown_hero_hole_card_values": 0,
+        "public_board_cards_at_decision": 0,
+        "opponent_private_card_values_in_emitted_state": 0
+      },
+      "emitted_predecision_state": {
+        "big_blind": 100000,
+        "board": [],
+        "contestable_pot": 450000,
+        "current_bet": 0,
+        "history": [
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p2",
+            "position": "UTG",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p3",
+            "position": "MP",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p4",
+            "position": "MP",
+            "street": "preflop"
+          },
+          {
+            "action": "raise",
+            "added": 200000,
+            "amount": 200000,
+            "player": "p5",
+            "position": "CO",
+            "street": "preflop"
+          }
+        ],
+        "hole_cards": [
+          "Ah",
+          "Qs"
+        ],
+        "legal_actions": [
+          "call",
+          "fold",
+          "raise"
+        ],
+        "max_raise_to": 670000,
+        "min_raise_to": 300000,
+        "player_id": "p6",
+        "players_active": 4,
+        "players_to_act": 2,
+        "position": "BTN",
+        "pot": 450000,
+        "seed": 0,
+        "stack": 670000,
+        "street": "preflop",
+        "table_size": 7,
+        "to_call": 200000
+      },
+      "emitted_label": {
+        "action": "raise",
+        "amount": 670000
+      },
+      "checks": {
+        "hand_uuid_and_user_uuid_match": true,
+        "round_and_original_action_index_match": true,
+        "raw_response_file_hash_matches_manifest": true,
+        "canonical_hand_payload_hash_matches_candidate": true,
+        "request_hand_id_matches_response": true,
+        "request_episode_matches_one_provenance_alias": true,
+        "source_variant_texas": true,
+        "actual_player_count_matches_emitted_table_size": true,
+        "physical_capacity_kept_separate": true,
+        "explicit_blind_actors_and_ante_prefix": "pass",
+        "dealer_seat_positions_and_actor_order": {
+          "result": "pass",
+          "details": "Actual occupied seats were ordered clockwise from the explicit small blind actor, not from physical table capacity."
+        },
+        "prior_public_history_matches_strict_source_prefix": "pass",
+        "incremental_amount_and_all_in_stack_exhaustion": {
+          "result": "pass",
+          "hero_had_zero_prior_live_street_commitment": true,
+          "raw_all_in_equals_remaining_stack": true,
+          "raise_to_target": 670000,
+          "emitted_raise_to": 670000
+        },
+        "pot_total_from_prefix": {
+          "result": "pass",
+          "emitted": 450000,
+          "from_prefix": 450000,
+          "ante": 100000,
+          "live_forced_bets": 150000,
+          "prior_betting_increment": 200000
+        },
+        "contestable_pot": {
+          "result": "pass",
+          "emitted": 450000,
+          "independently_reachable_predecision_pot": 450000,
+          "difference": 0,
+          "reason": "All pot layers are reachable after the 200000 call; no inaccessible side pot or unmatched top layer exists at this decision."
+        },
+        "legal_actions_call_price_and_raise_bounds": "pass",
+        "board_cutoff_and_no_future_or_opponent_private_card_leakage": {
+          "result": "pass",
+          "decision_street": "preflop",
+          "emitted_board": [],
+          "later_board_cards_in_source_not_emitted": 5,
+          "later_actions_in_emitted_history": false,
+          "opponent_private_cards_in_emitted_state": false,
+          "terminal_pots_or_payouts_in_emitted_state": false
+        },
+        "terminal_action_payment_pot_contribution_and_stack_conservation": {
+          "result": "pass",
+          "action_payments": 1590000,
+          "terminal_pot_total": 1590000,
+          "contribution_attribution_matches": true,
+          "every_ending_stack_reconciles": true,
+          "terminal_pot_awards": 1590000,
+          "pot_awards_equal_terminal_total": true,
+          "total_starting_stack_equals_total_ending_stack": true
+        },
+        "null_min_chip_fix_applicability": "not_applicable_minChip_present",
+        "unsorted_flop_reveal_fix_applicability": "not_applicable_preflop_decision",
+        "heads_up_seat_order_bug_applicability": "not_applicable_actual_player_count_above_two"
+      },
+      "eligibility_recommendation": "eligible_for_parent_admission_review",
+      "blocking_reasons": [],
+      "review_status": "inspected_not_fresh_holdout",
+      "admission_status": "not_admitted",
+      "source_seat_and_actor_order": {
+        "dealer_seat_no": 1,
+        "small_blind_actor": {
+          "user_id": "a001dd6d-b7b1-4f67-a6bf-683406c37342",
+          "physical_seat_no": 2
+        },
+        "big_blind_actor": {
+          "user_id": "aa0dae59-9aa4-4681-9bd1-305a1acfcf34",
+          "physical_seat_no": 4
+        },
+        "ante_actor_user_ids": [
+          "aa0dae59-9aa4-4681-9bd1-305a1acfcf34"
+        ],
+        "actual_players_clockwise_from_small_blind": [
+          {
+            "compressed_player_id": "p0",
+            "user_id": "a001dd6d-b7b1-4f67-a6bf-683406c37342",
+            "nickname": "Eelis Parssinen",
+            "physical_seat_no": 2,
+            "derived_position": "SB"
+          },
+          {
+            "compressed_player_id": "p1",
+            "user_id": "aa0dae59-9aa4-4681-9bd1-305a1acfcf34",
+            "nickname": "Wiktor Malinowski",
+            "physical_seat_no": 4,
+            "derived_position": "BB"
+          },
+          {
+            "compressed_player_id": "p2",
+            "user_id": "9d56c803-1441-404a-a555-99f269f1289c",
+            "nickname": "Jason Koon",
+            "physical_seat_no": 5,
+            "derived_position": "UTG"
+          },
+          {
+            "compressed_player_id": "p3",
+            "user_id": "1846ff55-6026-4bf9-9db7-3cb8fdfd6928",
+            "nickname": "Wayne Heung",
+            "physical_seat_no": 6,
+            "derived_position": "MP"
+          },
+          {
+            "compressed_player_id": "p4",
+            "user_id": "e048caf7-3ff8-44ba-97a9-50f0260a0bce",
+            "nickname": "Ben Tollerene",
+            "physical_seat_no": 7,
+            "derived_position": "MP"
+          },
+          {
+            "compressed_player_id": "p5",
+            "user_id": "ca632e80-d671-468d-8a7e-4746f0da612f",
+            "nickname": "Matthias Eibinger",
+            "physical_seat_no": 9,
+            "derived_position": "CO"
+          },
+          {
+            "compressed_player_id": "p6",
+            "user_id": "3970ce21-3d14-4bdc-97ca-98df8220d040",
+            "nickname": "Phil Ivey",
+            "physical_seat_no": 1,
+            "derived_position": "BTN"
+          }
+        ],
+        "hero_user_id": "3970ce21-3d14-4bdc-97ca-98df8220d040",
+        "hero_compressed_player_id": "p6",
+        "hero_emitted_position": "BTN",
+        "derived_position_matches_emitted": true
+      }
+    },
+    {
+      "decision_id": "6c892bf3f25a3bdd095b9932c76ed5ce9b8b69d1d2bb9bca5866eaea34dfc625",
+      "canonical_hand_id": "triton:238da98b-1804-492f-9518-64cb73388dfd",
+      "stable_hand_round_action_key": "238da98b-1804-492f-9518-64cb73388dfd:0:3",
+      "source_decision_id": "triton:238da98b-1804-492f-9518-64cb73388dfd:action:3",
+      "source_action_index": 3,
+      "source_round_index": 0,
+      "source_round_name": "pre_flop",
+      "source_action_type": "all_in",
+      "source_incremental_action_amount": 825000,
+      "raw_response_path": "/Users/benajaheger/Documents/museum of failures/Pokerbot/data/acquisition_resume/2026-11-01/triton_2025/raw/3bc7093a-05a7-41d1-82b4-b76f7a84107e/hands/238da98b-1804-492f-9518-64cb73388dfd.json",
+      "raw_response_sha256": "81278373f9726410c7e672085a1663a3c952792737c02a21193e76b766b63fa8",
+      "canonical_hand_object_sha256": "345c86e446028badb2f2092d9c2095cc12efac32a30ec2e18339baf7e75bb273",
+      "manifest_response_sha256": "81278373f9726410c7e672085a1663a3c952792737c02a21193e76b766b63fa8",
+      "request_path": "/Users/benajaheger/Documents/museum of failures/Pokerbot/data/acquisition_resume/2026-11-01/triton_2025/raw/3bc7093a-05a7-41d1-82b4-b76f7a84107e/hands/238da98b-1804-492f-9518-64cb73388dfd.request.json",
+      "request_file_sha256": "ecae8ef47f4d920130e62b1305e15a4f134abfcf938036721a1d188cb8cc93f3",
+      "request_query_sha256": "62ad7be7eda254e2f8a3e79e59c421482ac60156552fe4bf6c4622f4ed4f9a50",
+      "request_operation_name": "GetHand",
+      "graphql_endpoint": "https://prod-public-serverless.triton-poker.com/graphql",
+      "query_variables": {
+        "episodeId": "a6f4a4cc-d665-4268-8805-660d7e569da0",
+        "handId": "238da98b-1804-492f-9518-64cb73388dfd"
+      },
+      "episode_provenance": [
+        {
+          "episode_id": "a6f4a4cc-d665-4268-8805-660d7e569da0",
+          "episode_offset_seconds": 1903.4759997636718,
+          "hand_length_seconds": 126.425,
+          "hand_offset_index": 0,
+          "segment_index": 8,
+          "start_timestamp": 1748122495470
+        },
+        {
+          "episode_id": "fbeb374a-3921-4d87-87ee-6371285c11ae",
+          "episode_offset_seconds": 8431.9199450625,
+          "hand_length_seconds": 126.425,
+          "hand_offset_index": 0,
+          "segment_index": 59,
+          "start_timestamp": 1748122495470
+        }
+      ],
+      "source_prefix_before_decision": [
+        {
+          "round_index": 0,
+          "action_index": 0,
+          "type": "ante",
+          "user_id": "e048caf7-3ff8-44ba-97a9-50f0260a0bce",
+          "amount": 150000
+        },
+        {
+          "round_index": 0,
+          "action_index": 1,
+          "type": "small_blind",
+          "user_id": "1846ff55-6026-4bf9-9db7-3cb8fdfd6928",
+          "amount": 75000
+        },
+        {
+          "round_index": 0,
+          "action_index": 2,
+          "type": "big_blind",
+          "user_id": "e048caf7-3ff8-44ba-97a9-50f0260a0bce",
+          "amount": 150000
+        }
+      ],
+      "known_unknown_cards": {
+        "hero_hole_cards_status": "known_complete",
+        "known_hero_hole_card_values": 2,
+        "unknown_hero_hole_card_values": 0,
+        "public_board_cards_at_decision": 0,
+        "opponent_private_card_values_in_emitted_state": 0
+      },
+      "emitted_predecision_state": {
+        "big_blind": 150000,
+        "board": [],
+        "contestable_pot": 225000,
+        "current_bet": 0,
+        "history": [],
+        "hole_cards": [
+          "As",
+          "5c"
+        ],
+        "legal_actions": [
+          "call",
+          "fold",
+          "raise"
+        ],
+        "max_raise_to": 825000,
+        "min_raise_to": 300000,
+        "player_id": "p2",
+        "players_active": 4,
+        "players_to_act": 3,
+        "position": "UTG",
+        "pot": 375000,
+        "seed": 0,
+        "stack": 825000,
+        "street": "preflop",
+        "table_size": 4,
+        "to_call": 150000
+      },
+      "emitted_label": {
+        "action": "raise",
+        "amount": 825000
+      },
+      "checks": {
+        "hand_uuid_and_user_uuid_match": true,
+        "round_and_original_action_index_match": true,
+        "raw_response_file_hash_matches_manifest": true,
+        "canonical_hand_payload_hash_matches_candidate": true,
+        "request_hand_id_matches_response": true,
+        "request_episode_matches_one_provenance_alias": true,
+        "source_variant_texas": true,
+        "actual_player_count_matches_emitted_table_size": true,
+        "physical_capacity_kept_separate": true,
+        "explicit_blind_actors_and_ante_prefix": "pass",
+        "dealer_seat_positions_and_actor_order": {
+          "result": "pass",
+          "details": "Actual occupied seats were ordered clockwise from the explicit small blind actor, not from physical table capacity."
+        },
+        "prior_public_history_matches_strict_source_prefix": "pass",
+        "incremental_amount_and_all_in_stack_exhaustion": {
+          "result": "pass",
+          "hero_had_zero_prior_live_street_commitment": true,
+          "raw_all_in_equals_remaining_stack": true,
+          "raise_to_target": 825000,
+          "emitted_raise_to": 825000
+        },
+        "pot_total_from_prefix": {
+          "result": "pass",
+          "emitted": 375000,
+          "from_prefix": 375000,
+          "ante": 150000,
+          "live_forced_bets": 225000,
+          "prior_betting_increment": 0
+        },
+        "contestable_pot": {
+          "result": "block",
+          "emitted": 225000,
+          "independently_reachable_predecision_pot": 375000,
+          "difference": 150000,
+          "reason": "contestable_pot omits 150000 big blind ante; dead ante is in the pot and is winnable after the 150000 call."
+        },
+        "legal_actions_call_price_and_raise_bounds": "pass",
+        "board_cutoff_and_no_future_or_opponent_private_card_leakage": {
+          "result": "pass",
+          "decision_street": "preflop",
+          "emitted_board": [],
+          "later_board_cards_in_source_not_emitted": 5,
+          "later_actions_in_emitted_history": false,
+          "opponent_private_cards_in_emitted_state": false,
+          "terminal_pots_or_payouts_in_emitted_state": false
+        },
+        "terminal_action_payment_pot_contribution_and_stack_conservation": {
+          "result": "pass",
+          "action_payments": 2025000,
+          "terminal_pot_total": 2025000,
+          "contribution_attribution_matches": true,
+          "every_ending_stack_reconciles": true,
+          "terminal_pot_awards": 2025000,
+          "pot_awards_equal_terminal_total": true,
+          "total_starting_stack_equals_total_ending_stack": true
+        },
+        "null_min_chip_fix_applicability": "not_applicable_minChip_present",
+        "unsorted_flop_reveal_fix_applicability": "not_applicable_preflop_decision",
+        "heads_up_seat_order_bug_applicability": "not_applicable_actual_player_count_above_two"
+      },
+      "eligibility_recommendation": "blocked_pending_contestable_pot_correction_and_independent_rereview",
+      "blocking_reasons": [
+        "contestable_pot omits 150000 big blind ante; dead ante is in the pot and is winnable after the 150000 call."
+      ],
+      "review_status": "inspected_not_fresh_holdout",
+      "admission_status": "not_admitted",
+      "source_seat_and_actor_order": {
+        "dealer_seat_no": 5,
+        "small_blind_actor": {
+          "user_id": "1846ff55-6026-4bf9-9db7-3cb8fdfd6928",
+          "physical_seat_no": 6
+        },
+        "big_blind_actor": {
+          "user_id": "e048caf7-3ff8-44ba-97a9-50f0260a0bce",
+          "physical_seat_no": 7
+        },
+        "ante_actor_user_ids": [
+          "e048caf7-3ff8-44ba-97a9-50f0260a0bce"
+        ],
+        "actual_players_clockwise_from_small_blind": [
+          {
+            "compressed_player_id": "p0",
+            "user_id": "1846ff55-6026-4bf9-9db7-3cb8fdfd6928",
+            "nickname": "Wayne Heung",
+            "physical_seat_no": 6,
+            "derived_position": "SB"
+          },
+          {
+            "compressed_player_id": "p1",
+            "user_id": "e048caf7-3ff8-44ba-97a9-50f0260a0bce",
+            "nickname": "Ben Tollerene",
+            "physical_seat_no": 7,
+            "derived_position": "BB"
+          },
+          {
+            "compressed_player_id": "p2",
+            "user_id": "3970ce21-3d14-4bdc-97ca-98df8220d040",
+            "nickname": "Phil Ivey",
+            "physical_seat_no": 1,
+            "derived_position": "UTG"
+          },
+          {
+            "compressed_player_id": "p3",
+            "user_id": "9d56c803-1441-404a-a555-99f269f1289c",
+            "nickname": "Jason Koon",
+            "physical_seat_no": 5,
+            "derived_position": "BTN"
+          }
+        ],
+        "hero_user_id": "3970ce21-3d14-4bdc-97ca-98df8220d040",
+        "hero_compressed_player_id": "p2",
+        "hero_emitted_position": "UTG",
+        "derived_position_matches_emitted": true
+      }
+    },
+    {
+      "decision_id": "3605bb4cafea62ce9d3143ca410ec750003db8d40185cfd6434c0cb897c021d3",
+      "canonical_hand_id": "triton:7233ae8e-33b6-4786-a574-8623b63c849b",
+      "stable_hand_round_action_key": "7233ae8e-33b6-4786-a574-8623b63c849b:0:4",
+      "source_decision_id": "triton:7233ae8e-33b6-4786-a574-8623b63c849b:action:4",
+      "source_action_index": 4,
+      "source_round_index": 0,
+      "source_round_name": "pre_flop",
+      "source_action_type": "all_in",
+      "source_incremental_action_amount": 525000,
+      "raw_response_path": "/Users/benajaheger/Documents/museum of failures/Pokerbot/data/acquisition_resume/2026-11-01/triton_2025/raw/3bc7093a-05a7-41d1-82b4-b76f7a84107e/hands/7233ae8e-33b6-4786-a574-8623b63c849b.json",
+      "raw_response_sha256": "720534fb3e7afe11d8177f1e891dcdbe6fd7d9f779b495587f37899772cccf77",
+      "canonical_hand_object_sha256": "6c4ae77be8002c8f39a021e686fff35e192d48daf49a58a26c06b70e6b9406c6",
+      "manifest_response_sha256": "720534fb3e7afe11d8177f1e891dcdbe6fd7d9f779b495587f37899772cccf77",
+      "request_path": "/Users/benajaheger/Documents/museum of failures/Pokerbot/data/acquisition_resume/2026-11-01/triton_2025/raw/3bc7093a-05a7-41d1-82b4-b76f7a84107e/hands/7233ae8e-33b6-4786-a574-8623b63c849b.request.json",
+      "request_file_sha256": "2f1ebf06eeed5c9a17e2060e942db86179d5c63ab6ab9cd05f6bac293c454da8",
+      "request_query_sha256": "62ad7be7eda254e2f8a3e79e59c421482ac60156552fe4bf6c4622f4ed4f9a50",
+      "request_operation_name": "GetHand",
+      "graphql_endpoint": "https://prod-public-serverless.triton-poker.com/graphql",
+      "query_variables": {
+        "episodeId": "fbeb374a-3921-4d87-87ee-6371285c11ae",
+        "handId": "7233ae8e-33b6-4786-a574-8623b63c849b"
+      },
+      "episode_provenance": [
+        {
+          "episode_id": "fbeb374a-3921-4d87-87ee-6371285c11ae",
+          "episode_offset_seconds": 7161.60694506836,
+          "hand_length_seconds": 161.034,
+          "hand_offset_index": 0,
+          "segment_index": 50,
+          "start_timestamp": 1748121183757
+        }
+      ],
+      "source_prefix_before_decision": [
+        {
+          "round_index": 0,
+          "action_index": 0,
+          "type": "ante",
+          "user_id": "e048caf7-3ff8-44ba-97a9-50f0260a0bce",
+          "amount": 150000
+        },
+        {
+          "round_index": 0,
+          "action_index": 1,
+          "type": "small_blind",
+          "user_id": "1846ff55-6026-4bf9-9db7-3cb8fdfd6928",
+          "amount": 75000
+        },
+        {
+          "round_index": 0,
+          "action_index": 2,
+          "type": "big_blind",
+          "user_id": "e048caf7-3ff8-44ba-97a9-50f0260a0bce",
+          "amount": 150000
+        },
+        {
+          "round_index": 0,
+          "action_index": 3,
+          "type": "fold",
+          "user_id": "ca632e80-d671-468d-8a7e-4746f0da612f",
+          "amount": null
+        }
+      ],
+      "known_unknown_cards": {
+        "hero_hole_cards_status": "known_complete",
+        "known_hero_hole_card_values": 2,
+        "unknown_hero_hole_card_values": 0,
+        "public_board_cards_at_decision": 0,
+        "opponent_private_card_values_in_emitted_state": 0
+      },
+      "emitted_predecision_state": {
+        "big_blind": 150000,
+        "board": [],
+        "contestable_pot": 225000,
+        "current_bet": 0,
+        "history": [
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p2",
+            "position": "UTG",
+            "street": "preflop"
+          }
+        ],
+        "hole_cards": [
+          "Ac",
+          "6c"
+        ],
+        "legal_actions": [
+          "call",
+          "fold",
+          "raise"
+        ],
+        "max_raise_to": 525000,
+        "min_raise_to": 300000,
+        "player_id": "p3",
+        "players_active": 4,
+        "players_to_act": 3,
+        "position": "CO",
+        "pot": 375000,
+        "seed": 0,
+        "stack": 525000,
+        "street": "preflop",
+        "table_size": 5,
+        "to_call": 150000
+      },
+      "emitted_label": {
+        "action": "raise",
+        "amount": 525000
+      },
+      "checks": {
+        "hand_uuid_and_user_uuid_match": true,
+        "round_and_original_action_index_match": true,
+        "raw_response_file_hash_matches_manifest": true,
+        "canonical_hand_payload_hash_matches_candidate": true,
+        "request_hand_id_matches_response": true,
+        "request_episode_matches_one_provenance_alias": true,
+        "source_variant_texas": true,
+        "actual_player_count_matches_emitted_table_size": true,
+        "physical_capacity_kept_separate": true,
+        "explicit_blind_actors_and_ante_prefix": "pass",
+        "dealer_seat_positions_and_actor_order": {
+          "result": "pass",
+          "details": "Actual occupied seats were ordered clockwise from the explicit small blind actor, not from physical table capacity."
+        },
+        "prior_public_history_matches_strict_source_prefix": "pass",
+        "incremental_amount_and_all_in_stack_exhaustion": {
+          "result": "pass",
+          "hero_had_zero_prior_live_street_commitment": true,
+          "raw_all_in_equals_remaining_stack": true,
+          "raise_to_target": 525000,
+          "emitted_raise_to": 525000
+        },
+        "pot_total_from_prefix": {
+          "result": "pass",
+          "emitted": 375000,
+          "from_prefix": 375000,
+          "ante": 150000,
+          "live_forced_bets": 225000,
+          "prior_betting_increment": 0
+        },
+        "contestable_pot": {
+          "result": "block",
+          "emitted": 225000,
+          "independently_reachable_predecision_pot": 375000,
+          "difference": 150000,
+          "reason": "contestable_pot omits 150000 big blind ante; dead ante is in the pot and is winnable after the 150000 call."
+        },
+        "legal_actions_call_price_and_raise_bounds": "pass",
+        "board_cutoff_and_no_future_or_opponent_private_card_leakage": {
+          "result": "pass",
+          "decision_street": "preflop",
+          "emitted_board": [],
+          "later_board_cards_in_source_not_emitted": 5,
+          "later_actions_in_emitted_history": false,
+          "opponent_private_cards_in_emitted_state": false,
+          "terminal_pots_or_payouts_in_emitted_state": false
+        },
+        "terminal_action_payment_pot_contribution_and_stack_conservation": {
+          "result": "pass",
+          "action_payments": 9150000,
+          "terminal_pot_total": 9150000,
+          "contribution_attribution_matches": true,
+          "every_ending_stack_reconciles": true,
+          "terminal_pot_awards": 9150000,
+          "pot_awards_equal_terminal_total": true,
+          "total_starting_stack_equals_total_ending_stack": true
+        },
+        "null_min_chip_fix_applicability": "not_applicable_minChip_present",
+        "unsorted_flop_reveal_fix_applicability": "not_applicable_preflop_decision",
+        "heads_up_seat_order_bug_applicability": "not_applicable_actual_player_count_above_two"
+      },
+      "eligibility_recommendation": "blocked_pending_contestable_pot_correction_and_independent_rereview",
+      "blocking_reasons": [
+        "contestable_pot omits 150000 big blind ante; dead ante is in the pot and is winnable after the 150000 call."
+      ],
+      "review_status": "inspected_not_fresh_holdout",
+      "admission_status": "not_admitted",
+      "source_seat_and_actor_order": {
+        "dealer_seat_no": 5,
+        "small_blind_actor": {
+          "user_id": "1846ff55-6026-4bf9-9db7-3cb8fdfd6928",
+          "physical_seat_no": 6
+        },
+        "big_blind_actor": {
+          "user_id": "e048caf7-3ff8-44ba-97a9-50f0260a0bce",
+          "physical_seat_no": 7
+        },
+        "ante_actor_user_ids": [
+          "e048caf7-3ff8-44ba-97a9-50f0260a0bce"
+        ],
+        "actual_players_clockwise_from_small_blind": [
+          {
+            "compressed_player_id": "p0",
+            "user_id": "1846ff55-6026-4bf9-9db7-3cb8fdfd6928",
+            "nickname": "Wayne Heung",
+            "physical_seat_no": 6,
+            "derived_position": "SB"
+          },
+          {
+            "compressed_player_id": "p1",
+            "user_id": "e048caf7-3ff8-44ba-97a9-50f0260a0bce",
+            "nickname": "Ben Tollerene",
+            "physical_seat_no": 7,
+            "derived_position": "BB"
+          },
+          {
+            "compressed_player_id": "p2",
+            "user_id": "ca632e80-d671-468d-8a7e-4746f0da612f",
+            "nickname": "Matthias Eibinger",
+            "physical_seat_no": 9,
+            "derived_position": "UTG"
+          },
+          {
+            "compressed_player_id": "p3",
+            "user_id": "3970ce21-3d14-4bdc-97ca-98df8220d040",
+            "nickname": "Phil Ivey",
+            "physical_seat_no": 1,
+            "derived_position": "CO"
+          },
+          {
+            "compressed_player_id": "p4",
+            "user_id": "9d56c803-1441-404a-a555-99f269f1289c",
+            "nickname": "Jason Koon",
+            "physical_seat_no": 5,
+            "derived_position": "BTN"
+          }
+        ],
+        "hero_user_id": "3970ce21-3d14-4bdc-97ca-98df8220d040",
+        "hero_compressed_player_id": "p3",
+        "hero_emitted_position": "CO",
+        "derived_position_matches_emitted": true
+      }
+    }
+  ]
+}

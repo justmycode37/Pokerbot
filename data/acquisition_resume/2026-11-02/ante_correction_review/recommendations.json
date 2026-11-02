@@ -1,0 +1,104 @@
+{
+  "admissions_created": 0,
+  "candidate_count_reviewed": 21,
+  "current_admitted_count_unchanged": 80,
+  "eligible_for_parent_development_only_admission_review": [
+    "triton:238da98b-1804-492f-9518-64cb73388dfd:action:3",
+    "triton:7233ae8e-33b6-4786-a574-8623b63c849b:action:4",
+    "triton:23899063-1648-48ae-ba75-e19736f62607:action:5",
+    "triton:26564730-167d-4edc-957d-884a19fa2fe3:action:3",
+    "triton:3202f078-1b51-4de2-9e20-72a58e05a8a4:action:6",
+    "triton:46b26eec-7ee5-494b-9dd5-885db8c5318b:action:3",
+    "triton:47e1dbd2-ebd2-484e-b15c-3a5d281b7260:action:4",
+    "triton:4b7834c2-7399-4f17-b608-f1a6ec2c0709:action:3",
+    "triton:5646b6a0-ac9f-4924-921d-23e57364de3f:action:6",
+    "triton:5ab29a77-01a3-474c-b142-55a44b1c9f86:action:8",
+    "triton:5b7014d8-d730-4290-83d2-f49ff318c4b9:action:4",
+    "triton:7e7c09d2-911c-40dc-a856-29e356881f98:action:4",
+    "triton:80813dde-3d2d-4000-bf4b-621775703e44:action:6",
+    "triton:9dd266da-35c6-4a6e-992e-7703b663951d:action:9",
+    "triton:9e27b1d3-fb94-4807-acf6-2f1b1f88e20c:action:3",
+    "triton:9e8f436e-7969-457d-8eb9-52c671018ada:action:3",
+    "triton:9eb09c11-8af6-4dad-a4a6-f81f373eb9ca:action:7",
+    "triton:a28ed451-3515-4197-bc58-04c89fce7197:action:3",
+    "triton:a3bf889c-bee5-4dbb-aa00-527b4114c7f6:action:4",
+    "triton:c3bb5083-4b04-47e2-ac6b-a146a3a9f704:action:9",
+    "triton:dc29202b-88a6-437d-9546-0968babfc2c7:action:4"
+  ],
+  "eligible_recommendation_count": 21,
+  "fresh_holdout_candidates": [],
+  "held_for_correction_or_source_review": [],
+  "held_recommendation_count": 0,
+  "policy_calls": 0,
+  "recommendation_rule": "Rows passing every independent source, state, prefix-accounting, predecessor, and dedup check may be considered by the parent for a separate development-only admission step. This review performs no admission and makes no count change. A failed or ambiguous check remains held.",
+  "schema_version": 1,
+  "scope_and_hashes": {
+    "all_rows_previously_held_source_ids": true,
+    "candidate_admitted_decision_id_overlaps": [],
+    "candidate_admitted_source_key_overlap_count": 0,
+    "candidate_admitted_source_key_overlaps": [],
+    "candidate_admitted_stable_source_key_overlaps": [],
+    "candidate_hands_already_represented_by_distinct_admitted_actions": [
+      {
+        "hand_id": "triton:3202f078-1b51-4de2-9e20-72a58e05a8a4",
+        "prior_source_decision_ids": [
+          "triton:3202f078-1b51-4de2-9e20-72a58e05a8a4:action:10"
+        ],
+        "source_decision_id": "triton:3202f078-1b51-4de2-9e20-72a58e05a8a4:action:6"
+      }
+    ],
+    "candidate_ids_are_subset_of_regenerated_source_outputs": true,
+    "candidate_ids_exactly_match_diagnostic_rows_needing_correction": true,
+    "candidate_input": "data/acquisition_resume/2026-11-02/ante_correction/candidates.json",
+    "candidate_input_sha256": "a229398d9b9df7e25abafd7cc0f5633a08068e6c7ec86a86fbaf43080a1b896a",
+    "candidate_records": 21,
+    "candidate_rows_not_admitted": true,
+    "converter_sha256_from_input": "c50a17e08cb2d76848aace6b241a6f347bf1d4f272930a092cfb916991d88268",
+    "current_admitted_decisions_from_user_checkpoint": 80,
+    "diagnostic_rows_needing_correction": 21,
+    "diagnostic_source_decisions_checked": 50,
+    "diagnostic_unaffected_decision_count_not_copied": 29,
+    "frozen_admitted_decisions_from_user_checkpoint": 45,
+    "frozen_baseline_manifest_sha256": "d172e7310677b051b8dea0163fb14b06b81ad9b5847c73d735f1e2ec66c1a483",
+    "frozen_files_unchanged_claim_from_input_not_rechecked": true,
+    "full_suite_pass_count_from_input_not_rerun": 181,
+    "pot_helper_sha256_from_input": "fffa3df98fe5997d72d7f910c27d0a73536a06d5c82ea4426c7b2ecd28cc88cb",
+    "prior_admission_counts_by_source": {
+      "batch-001.json": 30,
+      "batch-002.json": 5,
+      "frozen-baseline.json": 45
+    },
+    "prior_admitted_decisions": 80,
+    "regenerated_output_only_rows_are_already_admitted": true,
+    "regenerated_output_only_source_decisions_excluded_from_review": [
+      "triton:3202f078-1b51-4de2-9e20-72a58e05a8a4:action:10"
+    ],
+    "regenerated_source_output_decision_count": 22,
+    "regenerated_source_output_hash_checks": [
+      {
+        "actual_sha256": "26f0d40c253b79f9548bfe7c44340d40e53b6e4ff7cf9cb06f8901da6ebac2ca",
+        "hash_matches": true,
+        "path": "data/acquisition_resume/2026-11-02/ante_correction/event-01-converter.json",
+        "record_count": 2,
+        "recorded_sha256": "26f0d40c253b79f9548bfe7c44340d40e53b6e4ff7cf9cb06f8901da6ebac2ca",
+        "session_id": "triton:tournament:3bc7093a-05a7-41d1-82b4-b76f7a84107e"
+      },
+      {
+        "actual_sha256": "f16068cfe84c278d030fb411cf3b692dc0dbae6408d9118f6bd684389a9460f2",
+        "hash_matches": true,
+        "path": "data/acquisition_resume/2026-11-02/ante_correction/event-02-converter.json",
+        "record_count": 20,
+        "recorded_sha256": "f16068cfe84c278d030fb411cf3b692dc0dbae6408d9118f6bd684389a9460f2",
+        "session_id": "triton:tournament:ae031be0-c964-4a4a-8e68-d7e177574f1a"
+      }
+    ],
+    "review_code_sha256": "ed05df9a880cfd3fe0e65df2b156539024d2a168ed0821975188fb32ba5b770a",
+    "unique_hands": 21,
+    "unique_source_decisions": 21,
+    "unique_stable_source_keys": 21
+  },
+  "score_runs": 0,
+  "splits_edited": 0,
+  "status": "fresh_independent_review_complete_development_only",
+  "training_runs": 0
+}

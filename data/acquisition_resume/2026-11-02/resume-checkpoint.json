@@ -1,0 +1,13 @@
+{
+  "base_commit": "117fbef99c4e08c2ecffc7007b55ecb93e91df5a",
+  "groups": 12,
+  "new_admitted_decisions": 35,
+  "origin": "https://github.com/justmycode37/Pokerbot.git",
+  "pr_authorization": "User requested a PR and merge to main after a verified checkpoint.",
+  "prior_checkpoint": "data/acquisition_resume/2026-11-01/takeover-checkpoint.json",
+  "protected_files_changed": [],
+  "protected_files_checked": 35,
+  "publication_branch": "codex/reviewed-acquisition-checkpoint",
+  "unique_hands": 43,
+  "usable_decisions": 80
+}

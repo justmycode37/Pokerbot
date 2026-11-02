@@ -1,0 +1,201 @@
+{
+  "dataset_version": "forum_2009_2011_ivey_public_sources_v1",
+  "updated_at_utc": "2026-11-02T09:25:54Z",
+  "status": "in_progress",
+  "scope": "Phil Ivey Full Tilt public hand histories posted 2009-2011; public historical forum/community sources only; development evidence, not holdout or policy observations.",
+  "records_file": "records.jsonl",
+  "checkpoint": "Acquisition checkpoint: ten complete converted NLHE hand-history excerpts captured from three public TwoPlusTwo monthly high-stakes thread pages in 2009. All rows lack visible Full Tilt hand IDs and game-time timestamps; stable source post locators are pending global identity review. No admissions, observations, policy calls, or corpus changes.",
+  "counts": {
+    "captured_rows": 10,
+    "known_hero_cards_complete_nlhe": 7,
+    "unknown_hero_cards_complete_nlhe": 3,
+    "partial_or_incomplete": 0,
+    "duplicate_known_fulltilt_ids_skipped": 0,
+    "duplicate_source_copy_or_locator_skipped": 0,
+    "duplicate_known_hand_ids_across_readonly_partitions_skipped": 0,
+    "records_without_visible_fulltilt_id_pending_global_identity_review": 10,
+    "records_without_fulltilt_game_time": 10,
+    "hero_action_events_known_card_source_rows": 26,
+    "hero_action_events_unknown_card_histories": 14,
+    "excluded_non_nlhe_or_unclear_format_hits": 5,
+    "excluded_cap_format_complete_histories_inspected": 12,
+    "excluded_cap_format_partial_excerpts_inspected": 1,
+    "excluded_total_format_filtered_histories_or_excerpts": 18
+  },
+  "source_pages": [
+    {
+      "publisher": "TwoPlusTwo",
+      "url": "https://forumserver.twoplustwo.com/29/news-views-gossip/september-high-stakes-thread-574011/index71.html",
+      "thread": "September High Stakes Thread",
+      "page": 71,
+      "source_dates": "2009-09-29",
+      "captured_complete_converted_nlhe_histories": 6,
+      "known_hero_cards": 4,
+      "unknown_hero_cards": 2
+    },
+    {
+      "publisher": "TwoPlusTwo",
+      "url": "https://forumserver.twoplustwo.com/29/news-views-gossip/october-high-stakes-thread-597341/index16.html",
+      "thread": "October High Stakes Thread",
+      "page": 16,
+      "source_dates": "2009-10-08",
+      "captured_complete_converted_nlhe_histories": 3,
+      "known_hero_cards": 2,
+      "unknown_hero_cards": 1
+    },
+    {
+      "publisher": "TwoPlusTwo",
+      "url": "https://forumserver.twoplustwo.com/29/news-views-gossip/november-high-stakes-thread-622007/index833.html",
+      "thread": "November High Stakes Thread",
+      "page": 833,
+      "source_dates": "2009-11-23",
+      "captured_complete_converted_nlhe_histories": 1,
+      "known_hero_cards": 1,
+      "unknown_hero_cards": 0
+    }
+  ],
+  "other_pages_reviewed": [
+    {
+      "publisher": "TwoPlusTwo",
+      "url": "https://forumserver.twoplustwo.com/29/news-views-gossip/january-high-stakes-thread-672171/index6.html",
+      "thread": "January High Stakes Thread",
+      "page": 6,
+      "source_year": 2010,
+      "result": "No eligible Ivey-attributed NLHE hand was present in the inspected page; the displayed raw NLHE game was Cole South versus Gus Hansen."
+    },
+    {
+      "publisher": "TwoPlusTwo",
+      "url": "https://forumserver.twoplustwo.com/29/news-views-gossip/february-high-stakes-thread-970767/index276.html",
+      "thread": "February High Stakes Thread",
+      "page": 276,
+      "source_year": 2011,
+      "result": "A raw Ivey hand (Full Tilt game #28380188303) was excluded because the source header identifies Limit Hold’em, not No Limit Hold’em."
+    },
+    {
+      "publisher": "TwoPlusTwo",
+      "url": "https://forumserver.twoplustwo.com/29/news-views-gossip/november-high-stakes-thread-622007/index13.html",
+      "thread": "November High Stakes Thread",
+      "page": 13,
+      "source_year": 2009,
+      "result": "Inspected twelve complete converted NLHE histories explicitly marked $30,000 Cap and one visible partial Cap excerpt; all were excluded because capped NLHE is unsupported."
+    },
+    {
+      "publisher": "TwoPlusTwo",
+      "url": "https://forumserver.twoplustwo.com/29/news-views-gossip/october-2010-high-stakes-thread-888374/index24.html",
+      "thread": "October 2010 High Stakes Thread",
+      "page": 24,
+      "source_year": 2010,
+      "result": "Inspected public page contained no Ivey-attributed hand history; Ivey appeared only in an unrelated quote about FullFlush."
+    }
+  ],
+  "excluded_non_nlhe_or_unclear_sources": [
+    {
+      "locator": "2p2:597341:post:378:hand:1",
+      "visible_fulltilt_hand_id": "15190981986",
+      "reason": "Limit Stud Hi/Lo; explicitly excluded by format."
+    },
+    {
+      "locator": "2p2:597341:post:393:hand:1",
+      "visible_fulltilt_hand_id": null,
+      "reason": "Pot Limit Omaha; explicitly excluded by format."
+    },
+    {
+      "locator": "2p2:597341:post:398:hand:1",
+      "visible_fulltilt_hand_id": null,
+      "reason": "Pot Limit Omaha; explicitly excluded by format."
+    },
+    {
+      "locator": "2p2:622007:post:20814:hand:1",
+      "visible_fulltilt_hand_id": "16234307950",
+      "reason": "Pot Limit Omaha; explicitly excluded by format."
+    },
+    {
+      "locator": "2p2:970767:page:276:game:28380188303",
+      "visible_fulltilt_hand_id": "28380188303",
+      "reason": "Limit Hold’em; explicitly excluded by format."
+    }
+  ],
+  "coverage_bounds": {
+    "years_with_captured_rows": [
+      2009
+    ],
+    "captured_months": [
+      "2009-09",
+      "2009-10",
+      "2009-11"
+    ],
+    "captured_pages_count": 3,
+    "additional_pages_reviewed_count": 4,
+    "bounded_capture_pages": "September 2009 page 71, October 2009 page 16, November 2009 page 833. A 2010 January page and a 2011 February page were also inspected; the former had no eligible Ivey NLHE hand and the latter exposed only a Limit Hold’em Ivey hand. A November 2009 page 13 with capped NLHE histories was reviewed and excluded; it did not add captures. An October 2010 page 24 was also inspected and contained no eligible Ivey hand history.",
+    "population_claim": "None. This is a bounded search-selected set of indexed public posts and is not representative of the source population.",
+    "2010_2011_coverage": "Targeted searches and inspected January/October 2010 and February 2011 pages yielded no eligible uncapped Ivey-attributed NLHE history: a 2010 January page had no Ivey log; the October page had no Ivey hand history; and the 2011 raw Ivey hand was Limit Hold’em. Coverage is not exhaustive."
+  },
+  "identity_and_dedup": {
+    "row_identity_basis": "source hand locator is 2p2 thread ID + post number + hand ordinal. Original round/action keys use that source hand locator plus street and in-street action index. episode_id is provenance only.",
+    "all_fulltilt_ids_visible": false,
+    "all_source_hand_locators_unique_within_batch": true,
+    "no_locator_collision_with_readonly_71_plus_nov1_forum2012_records": true,
+    "no_exact_raw_extract_hash_collision_with_readonly_71_plus_nov1_forum2012_records": true,
+    "global_identity_review": "pending for all ten no-ID converted histories."
+  },
+  "validation": {
+    "jsonl_records_parse": true,
+    "unique_source_hand_locators": 10,
+    "unique_source_action_keys": 89,
+    "all_raw_extract_sha256_verified": true,
+    "all_source_suit_translations_explicitly_scoped": true,
+    "no_duplicate_visible_cards_in_hero_board_and_opponent_showdowns": true,
+    "unknown_hero_cards_preserved_as_unknown": true,
+    "no_admissions_or_policy_observations_created": true,
+    "no_files_written_outside_assigned_partition": true
+  },
+  "hashes": {
+    "records.jsonl_sha256": "56d38be218115370c85832478a3121a2905318f2b0c6bf673e654eb82b265ac8",
+    "raw_extract_sha256_by_record": {
+      "2P2-2009-post1754-converted": "dd8a8ed0d78fa65ba79a1060f5eeb025125e3620627e9c9eb0467bffb1933e5b",
+      "2P2-2009-post1759-converted": "85b0bd13efeee894463ba6c8b808d5442190e2e307a914c17003f295fae0330d",
+      "2P2-2009-post1760-converted": "92be07366f078e921d86a1658da76a0031366cd2016a59563be220d98549793b",
+      "2P2-2009-post1761-converted": "af93552562954c03c7f5256041b275186bbbe184a67074fb410d026e34b222c9",
+      "2P2-2009-post1771-converted": "5404c854aa4e68c43e872dc87d4105f76217e8eb456c7190d93d6d766201aeac",
+      "2P2-2009-post1773-converted": "97940274983106cfbb3bec22cd0dc58bbd2350123d6e3bfffa9ed3c15266bf9c",
+      "2P2-2009-post20808-converted": "32e0a88a95fa04b03921b7e40dfe2421b84e73b7855ac1a9550fbd678ecb7de9",
+      "2P2-2009-post386-converted": "0ad907acf576d622d2b5b3863f51aea04419dd934383bddacec9e5b1b046f38f",
+      "2P2-2009-post391-converted": "33708951a4c5ffbf952d18eb5a46060b81f85a105824334f8a57c5a0da6e5095",
+      "2P2-2009-post397-converted": "4abf8c36e98fb2350423a43670216ddd04a4b330d326df006111f32f084d85d8"
+    }
+  },
+  "selection_note": "Search-selected bounded public monthly high-stakes pages only; not population representative. Rows are source evidence, not admissions, observations, or fresh heldout examples.",
+  "limitations": [
+    "No authentication, paywall bypass, login, or private messages were used; page content was viewed through public indexed results/rendering.",
+    "All ten captured histories are TwoPlusTwo converted excerpts, not original Full Tilt log-format text. Every row lacks visible Full Tilt game ID, numeric seat number, and game-time timestamp.",
+    "Stable thread/post/hand locators are used for the no-ID converted histories; all remain pending global identity review.",
+    "Source post display times have no stated timezone and are not substituted for game-time timestamps.",
+    "Blind amounts are recorded from listed stakes and converter role labels; each row carries that basis. They were not copied from original Full Tilt blind-post lines.",
+    "Card suit symbols were represented with standard codes from the rendered page labels and that normalization is included in each extract hash scope.",
+    "No admissions, observations, policy calls, fresh heldout claims, or corpus changes were made."
+  ],
+  "last_checkpoint_reason": "Ten complete converted uncapped NLHE histories from three 2009 monthly high-stakes pages were preserved. Twelve complete and one partial capped NLHE excerpts, plus five PLO/Limit-format histories, were excluded. All captured rows have source/action identities and per-extract hashes.",
+  "excluded_capped_nlhe_sources": {
+    "source_page": "https://forumserver.twoplustwo.com/29/news-views-gossip/november-high-stakes-thread-622007/index13.html",
+    "complete_cap_history_count": 12,
+    "partial_cap_excerpt_count": 1,
+    "complete_visible_game_ids": [
+      "351399",
+      "351403",
+      "351409",
+      "351442",
+      "351443"
+    ],
+    "remaining_complete_visible_post_locators": [
+      "2p2:622007:post:316:hand:1",
+      "2p2:622007:post:317:hand:1",
+      "2p2:622007:post:318:hand:1",
+      "2p2:622007:post:319:hand:1",
+      "2p2:622007:post:320:hand:1",
+      "2p2:622007:post:321:hand:1",
+      "2p2:622007:post:322:hand:1"
+    ],
+    "partial_cap_post_locator": "2p2:622007:post:325:hand:1",
+    "reason": "Source header explicitly identifies $30,000 Cap No Limit Hold’em; capped format is unsupported."
+  }
+}

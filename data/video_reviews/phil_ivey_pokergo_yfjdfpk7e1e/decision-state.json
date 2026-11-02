@@ -1,0 +1,31 @@
+{
+  "hole_cards": ["Ks", "4d"],
+  "board": ["Qd", "4s", "2c", "4c", "3c"],
+  "pot": 2620000,
+  "contestable_pot": 2620000,
+  "to_call": 1210000,
+  "stack": 6000000,
+  "current_bet": 0,
+  "min_raise_to": 0,
+  "max_raise_to": 0,
+  "big_blind": 100000,
+  "position": "BB",
+  "players_active": 2,
+  "players_to_act": 0,
+  "table_size": 6,
+  "street": "river",
+  "legal_actions": ["fold", "call"],
+  "player_id": "Ivey",
+  "history": [
+    {"street": "preflop", "player": "Viera", "action": "raise", "amount": 200000, "added": 200000},
+    {"street": "preflop", "player": "Ivey", "action": "call", "amount": 200000, "added": 100000},
+    {"street": "flop", "player": "Ivey", "action": "check", "amount": 0, "added": 0},
+    {"street": "flop", "player": "Viera", "action": "bet", "amount": 130000, "added": 130000},
+    {"street": "flop", "player": "Ivey", "action": "call", "amount": 130000, "added": 130000},
+    {"street": "turn", "player": "Ivey", "action": "bet", "amount": 300000, "added": 300000},
+    {"street": "turn", "player": "Viera", "action": "call", "amount": 300000, "added": 300000},
+    {"street": "river", "player": "Ivey", "action": "check", "amount": 0, "added": 0},
+    {"street": "river", "player": "Viera", "action": "all-in", "amount": 1210000, "added": 1210000}
+  ],
+  "seed": 42
+}

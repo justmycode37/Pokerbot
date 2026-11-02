@@ -1,0 +1,2588 @@
+{
+  "counts": {
+    "development": {
+      "decisions": 15,
+      "groups": 3
+    },
+    "evaluation": {
+      "decisions": 3,
+      "groups": 1
+    },
+    "train": {
+      "decisions": 5,
+      "groups": 2
+    }
+  },
+  "dataset_hash": "8b015f65bca1b04e21c9346f9e4d84e0011628a3d1619f404bb0285676b790a4",
+  "evaluation_fraction": 0.25,
+  "limitations": [
+    "Source aliases need manual cross-source reconciliation before freezing",
+    "Missing session identity falls back to whole-hand grouping",
+    "Public selections do not establish representative population coverage",
+    "Inspecting an evaluation result for policy tuning consumes that holdout"
+  ],
+  "records": [
+    {
+      "chip_ticks_per_currency_unit": 1,
+      "decision_id": "9a91c9caea54b9dbfa368dd3b8d62bdf43b171fc226ca598a49c709509536a8c",
+      "evidence_tier": "machine_readable_source",
+      "expected": {
+        "action": "raise",
+        "amount": 23000
+      },
+      "format": "cash_nlhe",
+      "group_id": "hand:dwan-ivey-2009",
+      "hand_id": "dwan-ivey-2009",
+      "partition": "development",
+      "record_hash": "bbde67027c7f23509a71d5a5df62468bd9251431b235196199f7c72e4fa32418",
+      "source": "https://github.com/uoftcprg/phh-dataset/blob/main/data/dwan-ivey-2009.phh",
+      "state": {
+        "big_blind": 2000,
+        "board": [],
+        "contestable_pot": 11500,
+        "current_bet": 1000,
+        "history": [
+          {
+            "action": "raise",
+            "added": 7000,
+            "amount": 7000,
+            "player": "p2",
+            "position": "BTN",
+            "street": "preflop"
+          }
+        ],
+        "hole_cards": [
+          "Ac",
+          "2d"
+        ],
+        "legal_actions": [
+          "call",
+          "fold",
+          "raise"
+        ],
+        "max_raise_to": 1125100,
+        "min_raise_to": 12000,
+        "player_id": "p0",
+        "players_active": 3,
+        "players_to_act": 1,
+        "position": "SB",
+        "pot": 11500,
+        "seed": 0,
+        "stack": 1124100,
+        "street": "preflop",
+        "table_size": 3,
+        "to_call": 6000
+      }
+    },
+    {
+      "chip_ticks_per_currency_unit": 1,
+      "decision_id": "631a435b1269a9c333229f55bcf118908d443394bd6505ab556113c754555d85",
+      "evidence_tier": "machine_readable_source",
+      "expected": {
+        "action": "raise",
+        "amount": 35000
+      },
+      "format": "cash_nlhe",
+      "group_id": "hand:dwan-ivey-2009",
+      "hand_id": "dwan-ivey-2009",
+      "partition": "development",
+      "record_hash": "34310853584e96b02f401ad2b8fad80be8b08d4750423f6f294ecf9ed4680720",
+      "source": "https://github.com/uoftcprg/phh-dataset/blob/main/data/dwan-ivey-2009.phh",
+      "state": {
+        "big_blind": 2000,
+        "board": [
+          "Jc",
+          "3d",
+          "5c"
+        ],
+        "contestable_pot": 49500,
+        "current_bet": 0,
+        "history": [
+          {
+            "action": "raise",
+            "added": 7000,
+            "amount": 7000,
+            "player": "p2",
+            "position": "BTN",
+            "street": "preflop"
+          },
+          {
+            "action": "raise",
+            "added": 22000,
+            "amount": 23000,
+            "player": "p0",
+            "position": "SB",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 2000,
+            "player": "p1",
+            "position": "BB",
+            "street": "preflop"
+          },
+          {
+            "action": "call",
+            "added": 16000,
+            "amount": 23000,
+            "player": "p2",
+            "position": "BTN",
+            "street": "preflop"
+          }
+        ],
+        "hole_cards": [
+          "Ac",
+          "2d"
+        ],
+        "legal_actions": [
+          "check",
+          "raise"
+        ],
+        "max_raise_to": 1102100,
+        "min_raise_to": 2000,
+        "player_id": "p0",
+        "players_active": 2,
+        "players_to_act": 1,
+        "position": "SB",
+        "pot": 49500,
+        "seed": 0,
+        "stack": 1102100,
+        "street": "flop",
+        "table_size": 3,
+        "to_call": 0
+      }
+    },
+    {
+      "chip_ticks_per_currency_unit": 1,
+      "decision_id": "d791608e28ef9238ec175f6199c0c28465b4f5b71cd4e26a6780a1056b95a785",
+      "evidence_tier": "machine_readable_source",
+      "expected": {
+        "action": "raise",
+        "amount": 90000
+      },
+      "format": "cash_nlhe",
+      "group_id": "hand:dwan-ivey-2009",
+      "hand_id": "dwan-ivey-2009",
+      "partition": "development",
+      "record_hash": "b60686b4db566d811dc8e978cddae6b0902e79c346eeb6fdaf1085aa0fd1fcf1",
+      "source": "https://github.com/uoftcprg/phh-dataset/blob/main/data/dwan-ivey-2009.phh",
+      "state": {
+        "big_blind": 2000,
+        "board": [
+          "Jc",
+          "3d",
+          "5c",
+          "4h"
+        ],
+        "contestable_pot": 119500,
+        "current_bet": 0,
+        "history": [
+          {
+            "action": "raise",
+            "added": 7000,
+            "amount": 7000,
+            "player": "p2",
+            "position": "BTN",
+            "street": "preflop"
+          },
+          {
+            "action": "raise",
+            "added": 22000,
+            "amount": 23000,
+            "player": "p0",
+            "position": "SB",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 2000,
+            "player": "p1",
+            "position": "BB",
+            "street": "preflop"
+          },
+          {
+            "action": "call",
+            "added": 16000,
+            "amount": 23000,
+            "player": "p2",
+            "position": "BTN",
+            "street": "preflop"
+          },
+          {
+            "action": "raise",
+            "added": 35000,
+            "amount": 35000,
+            "player": "p0",
+            "position": "SB",
+            "street": "flop"
+          },
+          {
+            "action": "call",
+            "added": 35000,
+            "amount": 35000,
+            "player": "p2",
+            "position": "BTN",
+            "street": "flop"
+          }
+        ],
+        "hole_cards": [
+          "Ac",
+          "2d"
+        ],
+        "legal_actions": [
+          "check",
+          "raise"
+        ],
+        "max_raise_to": 1067100,
+        "min_raise_to": 2000,
+        "player_id": "p0",
+        "players_active": 2,
+        "players_to_act": 1,
+        "position": "SB",
+        "pot": 119500,
+        "seed": 0,
+        "stack": 1067100,
+        "street": "turn",
+        "table_size": 3,
+        "to_call": 0
+      }
+    },
+    {
+      "chip_ticks_per_currency_unit": 1,
+      "decision_id": "5d9730392c957b5f5fa20f0a62c13adf43b7c565177160887ba5bdeec7cccd06",
+      "evidence_tier": "machine_readable_source",
+      "expected": {
+        "action": "raise",
+        "amount": 1067100
+      },
+      "format": "cash_nlhe",
+      "group_id": "hand:dwan-ivey-2009",
+      "hand_id": "dwan-ivey-2009",
+      "partition": "development",
+      "record_hash": "4d3d2853780d05e76788cfee4462f934ffd1c6a0322597d47da598e6a6eab0d0",
+      "source": "https://github.com/uoftcprg/phh-dataset/blob/main/data/dwan-ivey-2009.phh",
+      "state": {
+        "big_blind": 2000,
+        "board": [
+          "Jc",
+          "3d",
+          "5c",
+          "4h"
+        ],
+        "contestable_pot": 442100,
+        "current_bet": 90000,
+        "history": [
+          {
+            "action": "raise",
+            "added": 7000,
+            "amount": 7000,
+            "player": "p2",
+            "position": "BTN",
+            "street": "preflop"
+          },
+          {
+            "action": "raise",
+            "added": 22000,
+            "amount": 23000,
+            "player": "p0",
+            "position": "SB",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 2000,
+            "player": "p1",
+            "position": "BB",
+            "street": "preflop"
+          },
+          {
+            "action": "call",
+            "added": 16000,
+            "amount": 23000,
+            "player": "p2",
+            "position": "BTN",
+            "street": "preflop"
+          },
+          {
+            "action": "raise",
+            "added": 35000,
+            "amount": 35000,
+            "player": "p0",
+            "position": "SB",
+            "street": "flop"
+          },
+          {
+            "action": "call",
+            "added": 35000,
+            "amount": 35000,
+            "player": "p2",
+            "position": "BTN",
+            "street": "flop"
+          },
+          {
+            "action": "raise",
+            "added": 90000,
+            "amount": 90000,
+            "player": "p0",
+            "position": "SB",
+            "street": "turn"
+          },
+          {
+            "action": "raise",
+            "added": 232600,
+            "amount": 232600,
+            "player": "p2",
+            "position": "BTN",
+            "street": "turn"
+          }
+        ],
+        "hole_cards": [
+          "Ac",
+          "2d"
+        ],
+        "legal_actions": [
+          "call",
+          "fold",
+          "raise"
+        ],
+        "max_raise_to": 1067100,
+        "min_raise_to": 375200,
+        "player_id": "p0",
+        "players_active": 2,
+        "players_to_act": 0,
+        "position": "SB",
+        "pot": 442100,
+        "seed": 0,
+        "stack": 977100,
+        "street": "turn",
+        "table_size": 3,
+        "to_call": 142600
+      }
+    },
+    {
+      "decision_id": "57b8411cf0b7a251fb09cc1db0707ebff5340ca9121c515121615454a668d75f",
+      "derivation_notes": [
+        "Other seats' preflop folds are inferred from the reported heads-up continuation; no extra calls are reported.",
+        "The 3,000 ante is per player, as described by the report's pre-big-blind-ante tournament convention.",
+        "Raise bounds use the minimum full raise and hero's street bet plus remaining stack; excess is returnable.",
+        "Table-wide payouts and other starting stacks are unknown and are not provided to the policy."
+      ],
+      "evidence_tier": "reported_hand_with_disclosed_assumptions",
+      "expected": {
+        "action": "call"
+      },
+      "format": "tournament_nlhe",
+      "group_id": "hand:cardplayer-1921-ivey-polk",
+      "hand_id": "cardplayer-1921-ivey-polk",
+      "partition": "development",
+      "record_hash": "192aaf397788a2a017b5ff0ba20dfb397661f2aeac148f17f4aba7f5b55477d1",
+      "source": "https://www.cardplayer.com/poker-tools/hand-matchups/1921",
+      "state": {
+        "big_blind": 24000,
+        "board": [],
+        "contestable_pot": 103000,
+        "current_bet": 24000,
+        "history": [
+          {
+            "action": "fold",
+            "player": "UTG",
+            "position": "UTG",
+            "street": "preflop"
+          },
+          {
+            "action": "raise",
+            "added": 55000,
+            "amount": 55000,
+            "player": "Polk",
+            "position": "BTN",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "player": "SB",
+            "position": "SB",
+            "street": "preflop"
+          }
+        ],
+        "hole_cards": [
+          "Tc",
+          "9d"
+        ],
+        "legal_actions": [
+          "call",
+          "fold",
+          "raise"
+        ],
+        "max_raise_to": 2906000,
+        "min_raise_to": 86000,
+        "player_id": "Ivey",
+        "players_active": 2,
+        "players_to_act": 0,
+        "position": "BB",
+        "pot": 103000,
+        "seed": 4500,
+        "stack": 2882000,
+        "street": "preflop",
+        "table_size": 4,
+        "to_call": 31000
+      }
+    },
+    {
+      "decision_id": "1bf317e4bc367e47f00e64f98b4afc08dc4bd03fae6018d7bcae8f628c33cbfe",
+      "derivation_notes": [
+        "Other seats' preflop folds are inferred from the reported heads-up continuation; no extra calls are reported.",
+        "The 3,000 ante is per player, as described by the report's pre-big-blind-ante tournament convention.",
+        "Raise bounds use the minimum full raise and hero's street bet plus remaining stack; excess is returnable.",
+        "Table-wide payouts and other starting stacks are unknown and are not provided to the policy."
+      ],
+      "evidence_tier": "reported_hand_with_disclosed_assumptions",
+      "expected": {
+        "action": "check"
+      },
+      "format": "tournament_nlhe",
+      "group_id": "hand:cardplayer-1921-ivey-polk",
+      "hand_id": "cardplayer-1921-ivey-polk",
+      "partition": "development",
+      "record_hash": "ceab183dfaa82dc8397d3768fdc929e4326707a87227f2e04953151cdfdfa072",
+      "source": "https://www.cardplayer.com/poker-tools/hand-matchups/1921",
+      "state": {
+        "big_blind": 24000,
+        "board": [
+          "Th",
+          "3s",
+          "2d"
+        ],
+        "contestable_pot": 134000,
+        "current_bet": 0,
+        "history": [
+          {
+            "action": "fold",
+            "player": "UTG",
+            "position": "UTG",
+            "street": "preflop"
+          },
+          {
+            "action": "raise",
+            "added": 55000,
+            "amount": 55000,
+            "player": "Polk",
+            "position": "BTN",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "player": "SB",
+            "position": "SB",
+            "street": "preflop"
+          },
+          {
+            "action": "call",
+            "added": 31000,
+            "amount": 55000,
+            "player": "Ivey",
+            "position": "BB",
+            "street": "preflop"
+          }
+        ],
+        "hole_cards": [
+          "Tc",
+          "9d"
+        ],
+        "legal_actions": [
+          "check",
+          "raise"
+        ],
+        "max_raise_to": 2851000,
+        "min_raise_to": 24000,
+        "player_id": "Ivey",
+        "players_active": 2,
+        "players_to_act": 1,
+        "position": "BB",
+        "pot": 134000,
+        "seed": 4501,
+        "stack": 2851000,
+        "street": "flop",
+        "table_size": 4,
+        "to_call": 0
+      }
+    },
+    {
+      "decision_id": "2111e733a7b40b4d39fbf69ceb2a254f8bd669fb36d0e56c5692ec4537b2c970",
+      "derivation_notes": [
+        "Other seats' preflop folds are inferred from the reported heads-up continuation; no extra calls are reported.",
+        "The 3,000 ante is per player, as described by the report's pre-big-blind-ante tournament convention.",
+        "Raise bounds use the minimum full raise and hero's street bet plus remaining stack; excess is returnable.",
+        "Table-wide payouts and other starting stacks are unknown and are not provided to the policy."
+      ],
+      "evidence_tier": "reported_hand_with_disclosed_assumptions",
+      "expected": {
+        "action": "raise",
+        "amount": 75000
+      },
+      "format": "tournament_nlhe",
+      "group_id": "hand:cardplayer-1921-ivey-polk",
+      "hand_id": "cardplayer-1921-ivey-polk",
+      "partition": "development",
+      "record_hash": "3960bb9c36941217323861f6981058ec2244a27bb588ab5614be8004adc5b51e",
+      "source": "https://www.cardplayer.com/poker-tools/hand-matchups/1921",
+      "state": {
+        "big_blind": 24000,
+        "board": [
+          "Th",
+          "3s",
+          "2d",
+          "2h"
+        ],
+        "contestable_pot": 134000,
+        "current_bet": 0,
+        "history": [
+          {
+            "action": "fold",
+            "player": "UTG",
+            "position": "UTG",
+            "street": "preflop"
+          },
+          {
+            "action": "raise",
+            "added": 55000,
+            "amount": 55000,
+            "player": "Polk",
+            "position": "BTN",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "player": "SB",
+            "position": "SB",
+            "street": "preflop"
+          },
+          {
+            "action": "call",
+            "added": 31000,
+            "amount": 55000,
+            "player": "Ivey",
+            "position": "BB",
+            "street": "preflop"
+          },
+          {
+            "action": "check",
+            "added": 0,
+            "player": "Ivey",
+            "street": "flop"
+          },
+          {
+            "action": "check",
+            "added": 0,
+            "player": "Polk",
+            "street": "flop"
+          }
+        ],
+        "hole_cards": [
+          "Tc",
+          "9d"
+        ],
+        "legal_actions": [
+          "check",
+          "raise"
+        ],
+        "max_raise_to": 2851000,
+        "min_raise_to": 24000,
+        "player_id": "Ivey",
+        "players_active": 2,
+        "players_to_act": 1,
+        "position": "BB",
+        "pot": 134000,
+        "seed": 4502,
+        "stack": 2851000,
+        "street": "turn",
+        "table_size": 4,
+        "to_call": 0
+      }
+    },
+    {
+      "decision_id": "a66bd7d742f163dc9fb4582e0383c495035d0755363cac27c99a8fad42fe6786",
+      "derivation_notes": [
+        "Other seats' preflop folds are inferred from the reported heads-up continuation; no extra calls are reported.",
+        "The 3,000 ante is per player, as described by the report's pre-big-blind-ante tournament convention.",
+        "Raise bounds use the minimum full raise and hero's street bet plus remaining stack; excess is returnable.",
+        "Table-wide payouts and other starting stacks are unknown and are not provided to the policy."
+      ],
+      "evidence_tier": "reported_hand_with_disclosed_assumptions",
+      "expected": {
+        "action": "raise",
+        "amount": 200000
+      },
+      "format": "tournament_nlhe",
+      "group_id": "hand:cardplayer-1921-ivey-polk",
+      "hand_id": "cardplayer-1921-ivey-polk",
+      "partition": "development",
+      "record_hash": "0444f67d3013a0daa951b6d8851c18ac6f331e8c423067e00e1ed6155fd92b7d",
+      "source": "https://www.cardplayer.com/poker-tools/hand-matchups/1921",
+      "state": {
+        "big_blind": 24000,
+        "board": [
+          "Th",
+          "3s",
+          "2d",
+          "2h",
+          "6c"
+        ],
+        "contestable_pot": 284000,
+        "current_bet": 0,
+        "history": [
+          {
+            "action": "fold",
+            "player": "UTG",
+            "position": "UTG",
+            "street": "preflop"
+          },
+          {
+            "action": "raise",
+            "added": 55000,
+            "amount": 55000,
+            "player": "Polk",
+            "position": "BTN",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "player": "SB",
+            "position": "SB",
+            "street": "preflop"
+          },
+          {
+            "action": "call",
+            "added": 31000,
+            "amount": 55000,
+            "player": "Ivey",
+            "position": "BB",
+            "street": "preflop"
+          },
+          {
+            "action": "check",
+            "added": 0,
+            "player": "Ivey",
+            "street": "flop"
+          },
+          {
+            "action": "check",
+            "added": 0,
+            "player": "Polk",
+            "street": "flop"
+          },
+          {
+            "action": "raise",
+            "added": 75000,
+            "amount": 75000,
+            "player": "Ivey",
+            "street": "turn"
+          },
+          {
+            "action": "call",
+            "added": 75000,
+            "amount": 75000,
+            "player": "Polk",
+            "street": "turn"
+          }
+        ],
+        "hole_cards": [
+          "Tc",
+          "9d"
+        ],
+        "legal_actions": [
+          "check",
+          "raise"
+        ],
+        "max_raise_to": 2776000,
+        "min_raise_to": 24000,
+        "player_id": "Ivey",
+        "players_active": 2,
+        "players_to_act": 1,
+        "position": "BB",
+        "pot": 284000,
+        "seed": 4503,
+        "stack": 2776000,
+        "street": "river",
+        "table_size": 4,
+        "to_call": 0
+      }
+    },
+    {
+      "decision_id": "2eee44538f3225fab3489ae3b26518bee784b5670fb714b14ad4c199a478737e",
+      "derivation_notes": [
+        "Other seats' preflop folds are inferred from the reported heads-up continuation; no extra calls are reported.",
+        "The 3,000 ante is per player, as described by the report's pre-big-blind-ante tournament convention.",
+        "Raise bounds use the minimum full raise and hero's street bet plus remaining stack; excess is returnable.",
+        "Table-wide payouts and other starting stacks are unknown and are not provided to the policy."
+      ],
+      "evidence_tier": "reported_hand_with_disclosed_assumptions",
+      "expected": {
+        "action": "call"
+      },
+      "format": "tournament_nlhe",
+      "group_id": "hand:cardplayer-1921-ivey-polk",
+      "hand_id": "cardplayer-1921-ivey-polk",
+      "partition": "development",
+      "record_hash": "ecde313fcb8a406272105de345ed7ca46c6f93fb8c37ea214b74975b3f231bf5",
+      "source": "https://www.cardplayer.com/poker-tools/hand-matchups/1921",
+      "state": {
+        "big_blind": 24000,
+        "board": [
+          "Th",
+          "3s",
+          "2d",
+          "2h",
+          "6c"
+        ],
+        "contestable_pot": 1064000,
+        "current_bet": 200000,
+        "history": [
+          {
+            "action": "fold",
+            "player": "UTG",
+            "position": "UTG",
+            "street": "preflop"
+          },
+          {
+            "action": "raise",
+            "added": 55000,
+            "amount": 55000,
+            "player": "Polk",
+            "position": "BTN",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "player": "SB",
+            "position": "SB",
+            "street": "preflop"
+          },
+          {
+            "action": "call",
+            "added": 31000,
+            "amount": 55000,
+            "player": "Ivey",
+            "position": "BB",
+            "street": "preflop"
+          },
+          {
+            "action": "check",
+            "added": 0,
+            "player": "Ivey",
+            "street": "flop"
+          },
+          {
+            "action": "check",
+            "added": 0,
+            "player": "Polk",
+            "street": "flop"
+          },
+          {
+            "action": "raise",
+            "added": 75000,
+            "amount": 75000,
+            "player": "Ivey",
+            "street": "turn"
+          },
+          {
+            "action": "call",
+            "added": 75000,
+            "amount": 75000,
+            "player": "Polk",
+            "street": "turn"
+          },
+          {
+            "action": "raise",
+            "added": 200000,
+            "amount": 200000,
+            "player": "Ivey",
+            "street": "river"
+          },
+          {
+            "action": "raise",
+            "added": 580000,
+            "amount": 580000,
+            "player": "Polk",
+            "street": "river"
+          }
+        ],
+        "hole_cards": [
+          "Tc",
+          "9d"
+        ],
+        "legal_actions": [
+          "call",
+          "fold",
+          "raise"
+        ],
+        "max_raise_to": 2776000,
+        "min_raise_to": 960000,
+        "player_id": "Ivey",
+        "players_active": 2,
+        "players_to_act": 0,
+        "position": "BB",
+        "pot": 1064000,
+        "seed": 4504,
+        "stack": 2576000,
+        "street": "river",
+        "table_size": 4,
+        "to_call": 380000
+      }
+    },
+    {
+      "chip_ticks_per_currency_unit": 1,
+      "decision_id": "c425e319a364901a90f7b415a76236851779b07c387e8abec6147c32bbb0002a",
+      "derivation_notes": [
+        "Exact starting stacks, blinds and BB ante read from the opening video header.",
+        "Unshown preflop folds derived from seat order and displayed pot; all later pots reconcile.",
+        "Payouts, live reads and earlier table history are unknown."
+      ],
+      "evidence_tier": "video_reconstructed_exact_header_and_pot_arithmetic",
+      "expected": {
+        "action": "call"
+      },
+      "format": "tournament_nlhe",
+      "group_id": "video:YfjDfPk7e1E",
+      "hand_id": "pokergo-YfjDfPk7e1E",
+      "partition": "development",
+      "record_hash": "1d5470fe7ec1a125199735eedeabda39a47d84f72536c0415c6d90e3c6c7b124",
+      "source": "https://www.youtube.com/watch?v=YfjDfPk7e1E",
+      "state": {
+        "big_blind": 100000,
+        "board": [],
+        "contestable_pot": 450000,
+        "current_bet": 100000,
+        "history": [
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p2",
+            "position": "UTG",
+            "street": "preflop"
+          },
+          {
+            "action": "raise",
+            "added": 200000,
+            "amount": 200000,
+            "player": "p3",
+            "position": "MP",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p4",
+            "position": "CO",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p5",
+            "position": "BTN",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 50000,
+            "player": "p0",
+            "position": "SB",
+            "street": "preflop"
+          }
+        ],
+        "hole_cards": [
+          "Ks",
+          "4d"
+        ],
+        "legal_actions": [
+          "call",
+          "fold",
+          "raise"
+        ],
+        "max_raise_to": 6610000,
+        "min_raise_to": 300000,
+        "player_id": "p1",
+        "players_active": 2,
+        "players_to_act": 0,
+        "position": "BB",
+        "pot": 450000,
+        "seed": 0,
+        "stack": 6510000,
+        "street": "preflop",
+        "table_size": 6,
+        "to_call": 100000
+      }
+    },
+    {
+      "chip_ticks_per_currency_unit": 1,
+      "decision_id": "fa5b741dbc980ddfa2bc4a8c36bad66c70d8577c92dfdf45f28e07de5df351b2",
+      "derivation_notes": [
+        "Exact starting stacks, blinds and BB ante read from the opening video header.",
+        "Unshown preflop folds derived from seat order and displayed pot; all later pots reconcile.",
+        "Payouts, live reads and earlier table history are unknown."
+      ],
+      "evidence_tier": "video_reconstructed_exact_header_and_pot_arithmetic",
+      "expected": {
+        "action": "check"
+      },
+      "format": "tournament_nlhe",
+      "group_id": "video:YfjDfPk7e1E",
+      "hand_id": "pokergo-YfjDfPk7e1E",
+      "partition": "development",
+      "record_hash": "22d2ad6369dba15c3790e4cb7951f425114e6be15d938d01071d012505f8d0e8",
+      "source": "https://www.youtube.com/watch?v=YfjDfPk7e1E",
+      "state": {
+        "big_blind": 100000,
+        "board": [
+          "Qd",
+          "4s",
+          "2c"
+        ],
+        "contestable_pot": 550000,
+        "current_bet": 0,
+        "history": [
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p2",
+            "position": "UTG",
+            "street": "preflop"
+          },
+          {
+            "action": "raise",
+            "added": 200000,
+            "amount": 200000,
+            "player": "p3",
+            "position": "MP",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p4",
+            "position": "CO",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p5",
+            "position": "BTN",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 50000,
+            "player": "p0",
+            "position": "SB",
+            "street": "preflop"
+          },
+          {
+            "action": "call",
+            "added": 100000,
+            "amount": 200000,
+            "player": "p1",
+            "position": "BB",
+            "street": "preflop"
+          }
+        ],
+        "hole_cards": [
+          "Ks",
+          "4d"
+        ],
+        "legal_actions": [
+          "check",
+          "raise"
+        ],
+        "max_raise_to": 6410000,
+        "min_raise_to": 100000,
+        "player_id": "p1",
+        "players_active": 2,
+        "players_to_act": 1,
+        "position": "BB",
+        "pot": 550000,
+        "seed": 0,
+        "stack": 6410000,
+        "street": "flop",
+        "table_size": 6,
+        "to_call": 0
+      }
+    },
+    {
+      "chip_ticks_per_currency_unit": 1,
+      "decision_id": "3a8d71f0040efb68e82779478cdea1231e2d37e8efa5d5fa80691f49e1fcbb16",
+      "derivation_notes": [
+        "Exact starting stacks, blinds and BB ante read from the opening video header.",
+        "Unshown preflop folds derived from seat order and displayed pot; all later pots reconcile.",
+        "Payouts, live reads and earlier table history are unknown."
+      ],
+      "evidence_tier": "video_reconstructed_exact_header_and_pot_arithmetic",
+      "expected": {
+        "action": "call"
+      },
+      "format": "tournament_nlhe",
+      "group_id": "video:YfjDfPk7e1E",
+      "hand_id": "pokergo-YfjDfPk7e1E",
+      "partition": "development",
+      "record_hash": "e8d367190c6c0b5f6514e54f2c032c3a1923245ca7af10a0cd42c553410d7bf3",
+      "source": "https://www.youtube.com/watch?v=YfjDfPk7e1E",
+      "state": {
+        "big_blind": 100000,
+        "board": [
+          "Qd",
+          "4s",
+          "2c"
+        ],
+        "contestable_pot": 680000,
+        "current_bet": 0,
+        "history": [
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p2",
+            "position": "UTG",
+            "street": "preflop"
+          },
+          {
+            "action": "raise",
+            "added": 200000,
+            "amount": 200000,
+            "player": "p3",
+            "position": "MP",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p4",
+            "position": "CO",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p5",
+            "position": "BTN",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 50000,
+            "player": "p0",
+            "position": "SB",
+            "street": "preflop"
+          },
+          {
+            "action": "call",
+            "added": 100000,
+            "amount": 200000,
+            "player": "p1",
+            "position": "BB",
+            "street": "preflop"
+          },
+          {
+            "action": "check",
+            "added": 0,
+            "amount": 0,
+            "player": "p1",
+            "position": "BB",
+            "street": "flop"
+          },
+          {
+            "action": "raise",
+            "added": 130000,
+            "amount": 130000,
+            "player": "p3",
+            "position": "MP",
+            "street": "flop"
+          }
+        ],
+        "hole_cards": [
+          "Ks",
+          "4d"
+        ],
+        "legal_actions": [
+          "call",
+          "fold",
+          "raise"
+        ],
+        "max_raise_to": 6410000,
+        "min_raise_to": 260000,
+        "player_id": "p1",
+        "players_active": 2,
+        "players_to_act": 0,
+        "position": "BB",
+        "pot": 680000,
+        "seed": 0,
+        "stack": 6410000,
+        "street": "flop",
+        "table_size": 6,
+        "to_call": 130000
+      }
+    },
+    {
+      "chip_ticks_per_currency_unit": 1,
+      "decision_id": "55e23d8ac9a671c9e992579c6abbd71e54f6bbdb30ee82e071fc034a8c28bb53",
+      "derivation_notes": [
+        "Exact starting stacks, blinds and BB ante read from the opening video header.",
+        "Unshown preflop folds derived from seat order and displayed pot; all later pots reconcile.",
+        "Payouts, live reads and earlier table history are unknown."
+      ],
+      "evidence_tier": "video_reconstructed_exact_header_and_pot_arithmetic",
+      "expected": {
+        "action": "raise",
+        "amount": 300000
+      },
+      "format": "tournament_nlhe",
+      "group_id": "video:YfjDfPk7e1E",
+      "hand_id": "pokergo-YfjDfPk7e1E",
+      "partition": "development",
+      "record_hash": "23fcaddfb402f689284f0fa672ebe99e55245fb727fda9ffdbc67b6e948ce4dd",
+      "source": "https://www.youtube.com/watch?v=YfjDfPk7e1E",
+      "state": {
+        "big_blind": 100000,
+        "board": [
+          "Qd",
+          "4s",
+          "2c",
+          "4c"
+        ],
+        "contestable_pot": 810000,
+        "current_bet": 0,
+        "history": [
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p2",
+            "position": "UTG",
+            "street": "preflop"
+          },
+          {
+            "action": "raise",
+            "added": 200000,
+            "amount": 200000,
+            "player": "p3",
+            "position": "MP",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p4",
+            "position": "CO",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p5",
+            "position": "BTN",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 50000,
+            "player": "p0",
+            "position": "SB",
+            "street": "preflop"
+          },
+          {
+            "action": "call",
+            "added": 100000,
+            "amount": 200000,
+            "player": "p1",
+            "position": "BB",
+            "street": "preflop"
+          },
+          {
+            "action": "check",
+            "added": 0,
+            "amount": 0,
+            "player": "p1",
+            "position": "BB",
+            "street": "flop"
+          },
+          {
+            "action": "raise",
+            "added": 130000,
+            "amount": 130000,
+            "player": "p3",
+            "position": "MP",
+            "street": "flop"
+          },
+          {
+            "action": "call",
+            "added": 130000,
+            "amount": 130000,
+            "player": "p1",
+            "position": "BB",
+            "street": "flop"
+          }
+        ],
+        "hole_cards": [
+          "Ks",
+          "4d"
+        ],
+        "legal_actions": [
+          "check",
+          "raise"
+        ],
+        "max_raise_to": 6280000,
+        "min_raise_to": 100000,
+        "player_id": "p1",
+        "players_active": 2,
+        "players_to_act": 1,
+        "position": "BB",
+        "pot": 810000,
+        "seed": 0,
+        "stack": 6280000,
+        "street": "turn",
+        "table_size": 6,
+        "to_call": 0
+      }
+    },
+    {
+      "chip_ticks_per_currency_unit": 1,
+      "decision_id": "cb92d6ed00d4af0e295a174a3c556b1aa3fb5e059423f2c045fb5d4c5f2dd509",
+      "derivation_notes": [
+        "Exact starting stacks, blinds and BB ante read from the opening video header.",
+        "Unshown preflop folds derived from seat order and displayed pot; all later pots reconcile.",
+        "Payouts, live reads and earlier table history are unknown."
+      ],
+      "evidence_tier": "video_reconstructed_exact_header_and_pot_arithmetic",
+      "expected": {
+        "action": "check"
+      },
+      "format": "tournament_nlhe",
+      "group_id": "video:YfjDfPk7e1E",
+      "hand_id": "pokergo-YfjDfPk7e1E",
+      "partition": "development",
+      "record_hash": "a171cc1235d8f39aa103a58be6d5e1d1363078ae333603604f8725054789aa81",
+      "source": "https://www.youtube.com/watch?v=YfjDfPk7e1E",
+      "state": {
+        "big_blind": 100000,
+        "board": [
+          "Qd",
+          "4s",
+          "2c",
+          "4c",
+          "3c"
+        ],
+        "contestable_pot": 1410000,
+        "current_bet": 0,
+        "history": [
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p2",
+            "position": "UTG",
+            "street": "preflop"
+          },
+          {
+            "action": "raise",
+            "added": 200000,
+            "amount": 200000,
+            "player": "p3",
+            "position": "MP",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p4",
+            "position": "CO",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p5",
+            "position": "BTN",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 50000,
+            "player": "p0",
+            "position": "SB",
+            "street": "preflop"
+          },
+          {
+            "action": "call",
+            "added": 100000,
+            "amount": 200000,
+            "player": "p1",
+            "position": "BB",
+            "street": "preflop"
+          },
+          {
+            "action": "check",
+            "added": 0,
+            "amount": 0,
+            "player": "p1",
+            "position": "BB",
+            "street": "flop"
+          },
+          {
+            "action": "raise",
+            "added": 130000,
+            "amount": 130000,
+            "player": "p3",
+            "position": "MP",
+            "street": "flop"
+          },
+          {
+            "action": "call",
+            "added": 130000,
+            "amount": 130000,
+            "player": "p1",
+            "position": "BB",
+            "street": "flop"
+          },
+          {
+            "action": "raise",
+            "added": 300000,
+            "amount": 300000,
+            "player": "p1",
+            "position": "BB",
+            "street": "turn"
+          },
+          {
+            "action": "call",
+            "added": 300000,
+            "amount": 300000,
+            "player": "p3",
+            "position": "MP",
+            "street": "turn"
+          }
+        ],
+        "hole_cards": [
+          "Ks",
+          "4d"
+        ],
+        "legal_actions": [
+          "check",
+          "raise"
+        ],
+        "max_raise_to": 5980000,
+        "min_raise_to": 100000,
+        "player_id": "p1",
+        "players_active": 2,
+        "players_to_act": 1,
+        "position": "BB",
+        "pot": 1410000,
+        "seed": 0,
+        "stack": 5980000,
+        "street": "river",
+        "table_size": 6,
+        "to_call": 0
+      }
+    },
+    {
+      "chip_ticks_per_currency_unit": 1,
+      "decision_id": "ded4654fa9ae313f5c5677945d4b6497b7beec023ce388050a34dfc3b98027b9",
+      "derivation_notes": [
+        "Exact starting stacks, blinds and BB ante read from the opening video header.",
+        "Unshown preflop folds derived from seat order and displayed pot; all later pots reconcile.",
+        "Payouts, live reads and earlier table history are unknown."
+      ],
+      "evidence_tier": "video_reconstructed_exact_header_and_pot_arithmetic",
+      "expected": {
+        "action": "fold"
+      },
+      "format": "tournament_nlhe",
+      "group_id": "video:YfjDfPk7e1E",
+      "hand_id": "pokergo-YfjDfPk7e1E",
+      "partition": "development",
+      "record_hash": "0c2ceb5337c42c75d5c8b6db469019a80304bce60227409f7f2af8278590dbcb",
+      "source": "https://www.youtube.com/watch?v=YfjDfPk7e1E",
+      "state": {
+        "big_blind": 100000,
+        "board": [
+          "Qd",
+          "4s",
+          "2c",
+          "4c",
+          "3c"
+        ],
+        "contestable_pot": 2620000,
+        "current_bet": 0,
+        "history": [
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p2",
+            "position": "UTG",
+            "street": "preflop"
+          },
+          {
+            "action": "raise",
+            "added": 200000,
+            "amount": 200000,
+            "player": "p3",
+            "position": "MP",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p4",
+            "position": "CO",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p5",
+            "position": "BTN",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 50000,
+            "player": "p0",
+            "position": "SB",
+            "street": "preflop"
+          },
+          {
+            "action": "call",
+            "added": 100000,
+            "amount": 200000,
+            "player": "p1",
+            "position": "BB",
+            "street": "preflop"
+          },
+          {
+            "action": "check",
+            "added": 0,
+            "amount": 0,
+            "player": "p1",
+            "position": "BB",
+            "street": "flop"
+          },
+          {
+            "action": "raise",
+            "added": 130000,
+            "amount": 130000,
+            "player": "p3",
+            "position": "MP",
+            "street": "flop"
+          },
+          {
+            "action": "call",
+            "added": 130000,
+            "amount": 130000,
+            "player": "p1",
+            "position": "BB",
+            "street": "flop"
+          },
+          {
+            "action": "raise",
+            "added": 300000,
+            "amount": 300000,
+            "player": "p1",
+            "position": "BB",
+            "street": "turn"
+          },
+          {
+            "action": "call",
+            "added": 300000,
+            "amount": 300000,
+            "player": "p3",
+            "position": "MP",
+            "street": "turn"
+          },
+          {
+            "action": "check",
+            "added": 0,
+            "amount": 0,
+            "player": "p1",
+            "position": "BB",
+            "street": "river"
+          },
+          {
+            "action": "raise",
+            "added": 1210000,
+            "amount": 1210000,
+            "player": "p3",
+            "position": "MP",
+            "street": "river"
+          }
+        ],
+        "hole_cards": [
+          "Ks",
+          "4d"
+        ],
+        "legal_actions": [
+          "call",
+          "fold"
+        ],
+        "max_raise_to": 0,
+        "min_raise_to": 0,
+        "player_id": "p1",
+        "players_active": 2,
+        "players_to_act": 0,
+        "position": "BB",
+        "pot": 2620000,
+        "seed": 0,
+        "stack": 5980000,
+        "street": "river",
+        "table_size": 6,
+        "to_call": 1210000
+      }
+    },
+    {
+      "corroborating_sources": [
+        "https://www.cardplayer.com/hand-matchups/1806",
+        "https://www.pokernews.com/tours/aussie-millions/2014-aussie-millions/250k-challenge/chips.77749.htm"
+      ],
+      "decision_id": "f986e9363cb217f40c00ab95275279aa8026265b13f5a926c8358f9edd46894d",
+      "derivation_notes": [],
+      "evidence_tier": "attributed_report_observed_and_derived_fields",
+      "expected": {
+        "action": "raise",
+        "amount": 530000
+      },
+      "field_quality": {
+        "big_blind": {
+          "basis": "Both sources report blinds 40,000/80,000.",
+          "status": "observed"
+        },
+        "board": {
+          "basis": "No community cards had been dealt.",
+          "status": "observed"
+        },
+        "current_bet": {
+          "basis": "Ivey is the 40,000 small blind.",
+          "status": "observed"
+        },
+        "history": {
+          "basis": "Quoss's raise to 175,000 is reported.",
+          "status": "observed"
+        },
+        "hole_cards": {
+          "basis": "CardPlayer matchup.",
+          "status": "observed"
+        },
+        "legal_actions": {
+          "basis": "Preflop facing a raise under the local decision protocol.",
+          "status": "derived"
+        },
+        "max_raise_to": {
+          "basis": "Current 40,000 bet plus 2,670,000 remaining stack.",
+          "status": "derived"
+        },
+        "min_raise_to": {
+          "basis": "Last raise increment is 95,000 (175,000 minus 80,000); next legal target is 175,000 + 95,000.",
+          "status": "derived"
+        },
+        "players_active": {
+          "basis": "Ivey, Quoss, and the pending big blind remain; the action is five-handed and Quoss is on the button.",
+          "status": "derived"
+        },
+        "players_to_act": {
+          "basis": "Only the big blind remains to act after Ivey.",
+          "status": "derived"
+        },
+        "position": {
+          "basis": "Both sources place Ivey in the small blind.",
+          "status": "observed"
+        },
+        "pot": {
+          "basis": "Five 10,000 antes + 40,000 SB + 80,000 BB + Quoss's 175,000 raise = 345,000.",
+          "status": "derived"
+        },
+        "stack": {
+          "basis": "Ivey's reported 2,720,000 hand-start stack less 10,000 ante and 40,000 SB.",
+          "status": "derived"
+        },
+        "street": {
+          "basis": "Preflop action is reported.",
+          "status": "observed"
+        },
+        "to_call": {
+          "basis": "175,000 current target less Ivey's 40,000 SB.",
+          "status": "derived"
+        }
+      },
+      "format": "tournament_nlhe",
+      "group_id": "session:2014-aussie-millions-250k",
+      "hand_id": "ivey_quoss_2014_aussie_millions_250k",
+      "partition": "train",
+      "record_hash": "9e9eb2898367d4e0227b7a25e61fc8a15f3f19d785194fdf09a823a7e2a1d318",
+      "session_id": "2014-aussie-millions-250k",
+      "source": "https://www.cardplayer.com/hand-matchups/1806",
+      "source_decision_id": "ivey_quoss_preflop_3bet",
+      "state": {
+        "big_blind": 80000,
+        "board": [],
+        "contestable_pot": 345000,
+        "current_bet": 40000,
+        "history": [
+          {
+            "action": "raise",
+            "added": 175000,
+            "amount": 175000,
+            "player": "Fabian Quoss",
+            "street": "preflop"
+          }
+        ],
+        "hole_cards": [
+          "Kd",
+          "Qh"
+        ],
+        "legal_actions": [
+          "call",
+          "fold",
+          "raise"
+        ],
+        "max_raise_to": 2710000,
+        "min_raise_to": 270000,
+        "player_id": "Phil Ivey",
+        "players_active": 3,
+        "players_to_act": 1,
+        "position": "SB",
+        "pot": 345000,
+        "seed": 0,
+        "stack": 2670000,
+        "street": "preflop",
+        "table_size": 5,
+        "to_call": 135000
+      }
+    },
+    {
+      "corroborating_sources": [
+        "https://www.cardplayer.com/hand-matchups/1806",
+        "https://www.pokernews.com/tours/aussie-millions/2014-aussie-millions/250k-challenge/chips.77749.htm"
+      ],
+      "decision_id": "a5f0f3be8938294563daf0484f51d836edc35caa7651f692830747f53cd8634c",
+      "derivation_notes": [
+        "Additional call recovered from the reported public line and exact street-total targets.",
+        "Call cost is the all-in target minus hero's current street target; earlier limps/calls are already paid.",
+        "The omitted big-blind fold in the Quoss hand is implied by action order and the reported heads-up all-in."
+      ],
+      "evidence_tier": "attributed_report_observed_and_derived_fields",
+      "expected": {
+        "action": "call"
+      },
+      "format": "tournament_nlhe",
+      "group_id": "session:2014-aussie-millions-250k",
+      "hand_id": "ivey_quoss_2014_aussie_millions_250k",
+      "partition": "train",
+      "record_hash": "c21413b63375ef7def4a8392dcb30fcc7bde49d8ed4b7b28d15ba535e43a1946",
+      "session_id": "2014-aussie-millions-250k",
+      "source": "https://www.cardplayer.com/hand-matchups/1806",
+      "source_decision_id": "ivey_quoss_2014_aussie_millions_250k-facing-all-in",
+      "state": {
+        "big_blind": 80000,
+        "board": [],
+        "contestable_pot": 2070000,
+        "current_bet": 530000,
+        "history": [
+          {
+            "action": "raise",
+            "added": 175000,
+            "amount": 175000,
+            "player": "Fabian Quoss",
+            "street": "preflop"
+          },
+          {
+            "action": "raise",
+            "added": 490000,
+            "amount": 530000,
+            "player": "Phil Ivey",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "player": "BB",
+            "street": "preflop"
+          },
+          {
+            "action": "raise",
+            "added": 1235000,
+            "amount": 1410000,
+            "player": "Fabian Quoss",
+            "street": "preflop"
+          }
+        ],
+        "hole_cards": [
+          "Kd",
+          "Qh"
+        ],
+        "legal_actions": [
+          "call",
+          "fold"
+        ],
+        "max_raise_to": 0,
+        "min_raise_to": 0,
+        "player_id": "Phil Ivey",
+        "players_active": 2,
+        "players_to_act": 0,
+        "position": "SB",
+        "pot": 2070000,
+        "seed": 0,
+        "stack": 2180000,
+        "street": "preflop",
+        "table_size": 5,
+        "to_call": 880000
+      }
+    },
+    {
+      "corroborating_sources": [
+        "https://www.cardplayer.com/hand-matchups/1808",
+        "https://www.pokernews.com/tours/aussie-millions/2014-aussie-millions/250k-challenge/post.225799.htm"
+      ],
+      "decision_id": "50d210033f56ba67807380a372cba9deee099dc1e55692fcfcf7cb0ed4cdbde9",
+      "derivation_notes": [],
+      "evidence_tier": "attributed_report_observed_and_derived_fields",
+      "expected": {
+        "action": "call"
+      },
+      "field_quality": {
+        "big_blind": {
+          "basis": "Both reports give blinds 80,000/160,000.",
+          "status": "observed"
+        },
+        "board": {
+          "basis": "No community cards had been dealt.",
+          "status": "observed"
+        },
+        "current_bet": {
+          "basis": "Heads-up button is the 80,000 small blind.",
+          "status": "observed"
+        },
+        "hole_cards": {
+          "basis": "CardPlayer matchup.",
+          "status": "observed"
+        },
+        "legal_actions": {
+          "basis": "Preflop facing the big blind under the local decision protocol.",
+          "status": "derived"
+        },
+        "max_raise_to": {
+          "basis": "Current 80,000 bet plus 9,200,000 remaining stack.",
+          "status": "derived"
+        },
+        "min_raise_to": {
+          "basis": "Big blind is 160,000; minimum raise target is 320,000.",
+          "status": "derived"
+        },
+        "players_active": {
+          "basis": "The source reports heads-up play.",
+          "status": "observed"
+        },
+        "players_to_act": {
+          "basis": "Haxton in the big blind remains to act after Ivey.",
+          "status": "derived"
+        },
+        "position": {
+          "basis": "Both reports identify Ivey as the button; heads-up button is the small blind.",
+          "status": "observed"
+        },
+        "pot": {
+          "basis": "20,000 ante each + 80,000 SB + 160,000 BB = 280,000.",
+          "status": "derived"
+        },
+        "stack": {
+          "basis": "Ivey's reported 9,300,000 starting stack less 20,000 ante and 80,000 SB.",
+          "status": "derived"
+        },
+        "street": {
+          "basis": "Reported preflop action.",
+          "status": "observed"
+        },
+        "to_call": {
+          "basis": "160,000 BB target less Ivey's 80,000 SB.",
+          "status": "derived"
+        }
+      },
+      "format": "tournament_nlhe",
+      "group_id": "session:2014-aussie-millions-250k",
+      "hand_id": "ivey_haxton_2014_aussie_millions_250k_final",
+      "partition": "train",
+      "record_hash": "1ac607431141494f0d3eff449a25766dcd14378bf50d9e8465165ecde1351955",
+      "session_id": "2014-aussie-millions-250k",
+      "source": "https://www.cardplayer.com/hand-matchups/1808",
+      "source_decision_id": "ivey_haxton_preflop_complete",
+      "state": {
+        "big_blind": 160000,
+        "board": [],
+        "contestable_pot": 280000,
+        "current_bet": 80000,
+        "history": [],
+        "hole_cards": [
+          "Ah",
+          "6c"
+        ],
+        "legal_actions": [
+          "call",
+          "fold",
+          "raise"
+        ],
+        "max_raise_to": 9280000,
+        "min_raise_to": 320000,
+        "player_id": "Phil Ivey",
+        "players_active": 2,
+        "players_to_act": 1,
+        "position": "BTN",
+        "pot": 280000,
+        "seed": 0,
+        "stack": 9200000,
+        "street": "preflop",
+        "table_size": 2,
+        "to_call": 80000
+      }
+    },
+    {
+      "corroborating_sources": [
+        "https://www.cardplayer.com/hand-matchups/1808",
+        "https://www.pokernews.com/tours/aussie-millions/2014-aussie-millions/250k-challenge/post.225799.htm"
+      ],
+      "decision_id": "c21d8a0f409d27989b0c2f14edb29256a955f60a18c89c7f2b06a71044ce3822",
+      "derivation_notes": [
+        "Additional call recovered from the reported public line and exact street-total targets.",
+        "Call cost is the all-in target minus hero's current street target; earlier limps/calls are already paid.",
+        "The omitted big-blind fold in the Quoss hand is implied by action order and the reported heads-up all-in."
+      ],
+      "evidence_tier": "attributed_report_observed_and_derived_fields",
+      "expected": {
+        "action": "call"
+      },
+      "format": "tournament_nlhe",
+      "group_id": "session:2014-aussie-millions-250k",
+      "hand_id": "ivey_haxton_2014_aussie_millions_250k_final",
+      "partition": "train",
+      "record_hash": "6530a92411cd63da40e7726aeab267a4c47a68e06bdd4185b9ff4d37f86d29fd",
+      "session_id": "2014-aussie-millions-250k",
+      "source": "https://www.cardplayer.com/hand-matchups/1808",
+      "source_decision_id": "ivey_haxton_2014_aussie_millions_250k_final-facing-all-in",
+      "state": {
+        "big_blind": 160000,
+        "board": [],
+        "contestable_pot": 2380000,
+        "current_bet": 160000,
+        "history": [
+          {
+            "action": "call",
+            "added": 80000,
+            "amount": 160000,
+            "player": "Phil Ivey",
+            "street": "preflop"
+          },
+          {
+            "action": "raise",
+            "added": 2020000,
+            "amount": 2180000,
+            "player": "Isaac Haxton",
+            "street": "preflop"
+          }
+        ],
+        "hole_cards": [
+          "Ah",
+          "6c"
+        ],
+        "legal_actions": [
+          "call",
+          "fold"
+        ],
+        "max_raise_to": 0,
+        "min_raise_to": 0,
+        "player_id": "Phil Ivey",
+        "players_active": 2,
+        "players_to_act": 0,
+        "position": "BTN",
+        "pot": 2380000,
+        "seed": 0,
+        "stack": 9120000,
+        "street": "preflop",
+        "table_size": 2,
+        "to_call": 2020000
+      }
+    },
+    {
+      "corroborating_sources": [
+        "https://www.cardplayer.com/poker-tools/hand-matchups/2441",
+        "https://www.pokernews.com/news/2020/03/sam-trickett-shrs-sochi-36762.htm"
+      ],
+      "decision_id": "060940096065895ed089be9725c21d5f5f2f3394d081e713ad7d1edbee9b674e",
+      "derivation_notes": [
+        "players_to_act counts pending action before a new bet, so prior checkers are not counted."
+      ],
+      "evidence_tier": "attributed_report_observed_and_derived_fields",
+      "expected": {
+        "action": "raise",
+        "amount": 15000
+      },
+      "field_quality": {
+        "big_blind": {
+          "basis": "CardPlayer reports blinds 3,000/6,000.",
+          "status": "observed"
+        },
+        "board": {
+          "basis": "Flop listed in CardPlayer matchup.",
+          "status": "observed"
+        },
+        "current_bet": {
+          "basis": "No flop wager is outstanding.",
+          "status": "derived"
+        },
+        "history": {
+          "basis": "Preflop calls and two checks precede Ivey's decision.",
+          "status": "observed"
+        },
+        "hole_cards": {
+          "basis": "CardPlayer matchup.",
+          "status": "observed"
+        },
+        "legal_actions": {
+          "basis": "No wager is outstanding; protocol encodes a bet as raise.",
+          "status": "derived"
+        },
+        "max_raise_to": {
+          "basis": "No current flop bet; maximum total wager equals Ivey's remaining 220,000 stack.",
+          "status": "derived"
+        },
+        "min_raise_to": {
+          "basis": "Minimum postflop wager is one big blind, 6,000.",
+          "status": "derived"
+        },
+        "players_active": {
+          "basis": "Ivey, Leow, and Heath saw the flop.",
+          "status": "observed"
+        },
+        "players_to_act": {
+          "basis": "Both Leow and Heath remain live and act after Ivey.",
+          "status": "derived"
+        },
+        "position": {
+          "basis": "Source says hijack; mapped to protocol position MP.",
+          "status": "derived"
+        },
+        "pot": {
+          "basis": "Preflop contributions total 13,000 each for three players plus the 6,000 big-blind ante = 45,000.",
+          "status": "derived"
+        },
+        "stack": {
+          "basis": "233,000 hand-start stack less Ivey's 13,000 preflop raise.",
+          "status": "derived"
+        },
+        "street": {
+          "basis": "Flop action is reported.",
+          "status": "observed"
+        },
+        "to_call": {
+          "basis": "No flop wager is outstanding.",
+          "status": "derived"
+        }
+      },
+      "format": "tournament_nlhe",
+      "group_id": "session:2020-millions-sochi-25k",
+      "hand_id": "ivey_leow_heath_2020_millions_sochi_25k",
+      "partition": "evaluation",
+      "record_hash": "8d27ee65dccdb70ca342ca631114c526bb5ccb483329969fa7c4d50d26300bc0",
+      "session_id": "2020-millions-sochi-25k",
+      "source": "https://www.cardplayer.com/poker-tools/hand-matchups/2441",
+      "source_decision_id": "ivey_leow_heath_flop_bet",
+      "state": {
+        "big_blind": 6000,
+        "board": [
+          "As",
+          "Ts",
+          "2s"
+        ],
+        "contestable_pot": 45000,
+        "current_bet": 0,
+        "history": [
+          {
+            "action": "raise",
+            "added": 13000,
+            "amount": 13000,
+            "player": "Phil Ivey",
+            "street": "preflop"
+          },
+          {
+            "action": "call",
+            "added": 10000,
+            "amount": 13000,
+            "player": "Ivan Leow",
+            "street": "preflop"
+          },
+          {
+            "action": "call",
+            "added": 7000,
+            "amount": 13000,
+            "player": "Ben Heath",
+            "street": "preflop"
+          },
+          {
+            "action": "check",
+            "added": 0,
+            "amount": 0,
+            "player": "Ivan Leow",
+            "street": "flop"
+          },
+          {
+            "action": "check",
+            "added": 0,
+            "amount": 0,
+            "player": "Ben Heath",
+            "street": "flop"
+          }
+        ],
+        "hole_cards": [
+          "Ks",
+          "Td"
+        ],
+        "legal_actions": [
+          "check",
+          "raise"
+        ],
+        "max_raise_to": 220000,
+        "min_raise_to": 6000,
+        "player_id": "Phil Ivey",
+        "players_active": 3,
+        "players_to_act": 0,
+        "position": "MP",
+        "pot": 45000,
+        "seed": 0,
+        "stack": 220000,
+        "street": "flop",
+        "table_size": 8,
+        "to_call": 0
+      }
+    },
+    {
+      "corroborating_sources": [
+        "https://www.cardplayer.com/poker-tools/hand-matchups/2441",
+        "https://www.pokernews.com/news/2020/03/sam-trickett-shrs-sochi-36762.htm"
+      ],
+      "decision_id": "4497064e96c3982696d0d0d683f6f9c424f9c3e0cdeabb18b65be666edbcefdd",
+      "derivation_notes": [
+        "players_to_act counts pending action before a new bet, so prior checkers are not counted."
+      ],
+      "evidence_tier": "attributed_report_observed_and_derived_fields",
+      "expected": {
+        "action": "raise",
+        "amount": 45000
+      },
+      "field_quality": {
+        "big_blind": {
+          "basis": "CardPlayer reports blinds 3,000/6,000.",
+          "status": "observed"
+        },
+        "board": {
+          "basis": "Flop and turn listed in CardPlayer matchup.",
+          "status": "observed"
+        },
+        "current_bet": {
+          "basis": "No turn wager is outstanding.",
+          "status": "derived"
+        },
+        "history": {
+          "basis": "Prior actions through Leow's turn check are reported.",
+          "status": "observed"
+        },
+        "hole_cards": {
+          "basis": "CardPlayer matchup.",
+          "status": "observed"
+        },
+        "legal_actions": {
+          "basis": "No wager is outstanding; protocol encodes a bet as raise.",
+          "status": "derived"
+        },
+        "max_raise_to": {
+          "basis": "No current turn bet; maximum total wager equals Ivey's remaining 205,000 stack.",
+          "status": "derived"
+        },
+        "min_raise_to": {
+          "basis": "Minimum postflop wager is one big blind, 6,000.",
+          "status": "derived"
+        },
+        "players_active": {
+          "basis": "Heath folded on the flop; Ivey and Leow remain.",
+          "status": "derived"
+        },
+        "players_to_act": {
+          "basis": "Leow is the only other active player and acts after Ivey.",
+          "status": "derived"
+        },
+        "position": {
+          "basis": "Source says hijack; mapped to protocol position MP.",
+          "status": "derived"
+        },
+        "pot": {
+          "basis": "45,000 flop pot + 15,000 Ivey bet + 15,000 Leow call = 75,000.",
+          "status": "derived"
+        },
+        "stack": {
+          "basis": "233,000 start stack less 13,000 preflop and 15,000 flop contributions.",
+          "status": "derived"
+        },
+        "street": {
+          "basis": "Turn action is reported.",
+          "status": "observed"
+        },
+        "to_call": {
+          "basis": "No turn wager is outstanding.",
+          "status": "derived"
+        }
+      },
+      "format": "tournament_nlhe",
+      "group_id": "session:2020-millions-sochi-25k",
+      "hand_id": "ivey_leow_heath_2020_millions_sochi_25k",
+      "partition": "evaluation",
+      "record_hash": "64ccf3f5dd50adf61853c6cb1c09e5061010d7eae2636251be5bb60e333aafa0",
+      "session_id": "2020-millions-sochi-25k",
+      "source": "https://www.cardplayer.com/poker-tools/hand-matchups/2441",
+      "source_decision_id": "ivey_leow_turn_bet",
+      "state": {
+        "big_blind": 6000,
+        "board": [
+          "As",
+          "Ts",
+          "2s",
+          "7s"
+        ],
+        "contestable_pot": 75000,
+        "current_bet": 0,
+        "history": [
+          {
+            "action": "raise",
+            "added": 13000,
+            "amount": 13000,
+            "player": "Phil Ivey",
+            "street": "preflop"
+          },
+          {
+            "action": "call",
+            "added": 10000,
+            "amount": 13000,
+            "player": "Ivan Leow",
+            "street": "preflop"
+          },
+          {
+            "action": "call",
+            "added": 7000,
+            "amount": 13000,
+            "player": "Ben Heath",
+            "street": "preflop"
+          },
+          {
+            "action": "check",
+            "added": 0,
+            "amount": 0,
+            "player": "Ivan Leow",
+            "street": "flop"
+          },
+          {
+            "action": "check",
+            "added": 0,
+            "amount": 0,
+            "player": "Ben Heath",
+            "street": "flop"
+          },
+          {
+            "action": "raise",
+            "added": 15000,
+            "amount": 15000,
+            "player": "Phil Ivey",
+            "street": "flop"
+          },
+          {
+            "action": "call",
+            "added": 15000,
+            "amount": 15000,
+            "player": "Ivan Leow",
+            "street": "flop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "Ben Heath",
+            "street": "flop"
+          },
+          {
+            "action": "check",
+            "added": 0,
+            "amount": 0,
+            "player": "Ivan Leow",
+            "street": "turn"
+          }
+        ],
+        "hole_cards": [
+          "Ks",
+          "Td"
+        ],
+        "legal_actions": [
+          "check",
+          "raise"
+        ],
+        "max_raise_to": 205000,
+        "min_raise_to": 6000,
+        "player_id": "Phil Ivey",
+        "players_active": 2,
+        "players_to_act": 0,
+        "position": "MP",
+        "pot": 75000,
+        "seed": 0,
+        "stack": 205000,
+        "street": "turn",
+        "table_size": 8,
+        "to_call": 0
+      }
+    },
+    {
+      "corroborating_sources": [
+        "https://www.cardplayer.com/poker-tools/hand-matchups/2441",
+        "https://www.pokernews.com/news/2020/03/sam-trickett-shrs-sochi-36762.htm"
+      ],
+      "decision_id": "1292e77d8444e5aead8f0cc112f6d8d1f6b0fa65d03040b983c8bd195c6cfb27",
+      "derivation_notes": [
+        "players_to_act counts pending action before a new bet, so prior checkers are not counted."
+      ],
+      "evidence_tier": "attributed_report_observed_and_derived_fields",
+      "expected": {
+        "action": "raise",
+        "amount": 160000
+      },
+      "field_quality": {
+        "big_blind": {
+          "basis": "CardPlayer reports blinds 3,000/6,000.",
+          "status": "observed"
+        },
+        "board": {
+          "basis": "Full board listed in CardPlayer matchup.",
+          "status": "observed"
+        },
+        "current_bet": {
+          "basis": "No river wager is outstanding.",
+          "status": "derived"
+        },
+        "history": {
+          "basis": "Prior actions through Leow's river check are reported.",
+          "status": "observed"
+        },
+        "hole_cards": {
+          "basis": "CardPlayer matchup.",
+          "status": "observed"
+        },
+        "legal_actions": {
+          "basis": "No wager is outstanding; protocol encodes a bet as raise.",
+          "status": "derived"
+        },
+        "max_raise_to": {
+          "basis": "No current river bet; maximum total wager equals Ivey's remaining 160,000 stack.",
+          "status": "derived"
+        },
+        "min_raise_to": {
+          "basis": "Minimum postflop wager is one big blind, 6,000.",
+          "status": "derived"
+        },
+        "players_active": {
+          "basis": "Heath folded on the flop; Ivey and Leow remain.",
+          "status": "derived"
+        },
+        "players_to_act": {
+          "basis": "Leow is the only other active player and acts after Ivey.",
+          "status": "derived"
+        },
+        "position": {
+          "basis": "Source says hijack; mapped to protocol position MP.",
+          "status": "derived"
+        },
+        "pot": {
+          "basis": "75,000 turn-start pot + 45,000 Ivey bet + 45,000 Leow call = 165,000.",
+          "status": "derived"
+        },
+        "stack": {
+          "basis": "233,000 start stack less 13,000 preflop, 15,000 flop, and 45,000 turn contributions.",
+          "status": "derived"
+        },
+        "street": {
+          "basis": "River action is reported.",
+          "status": "observed"
+        },
+        "to_call": {
+          "basis": "No river wager is outstanding.",
+          "status": "derived"
+        }
+      },
+      "format": "tournament_nlhe",
+      "group_id": "session:2020-millions-sochi-25k",
+      "hand_id": "ivey_leow_heath_2020_millions_sochi_25k",
+      "partition": "evaluation",
+      "record_hash": "0a77e1419e266fc9fe73ccfb9e4e274ae0eeb1c726c8b5cfb95e638a8afd5fc3",
+      "session_id": "2020-millions-sochi-25k",
+      "source": "https://www.cardplayer.com/poker-tools/hand-matchups/2441",
+      "source_decision_id": "ivey_leow_river_all_in",
+      "state": {
+        "big_blind": 6000,
+        "board": [
+          "As",
+          "Ts",
+          "2s",
+          "7s",
+          "2h"
+        ],
+        "contestable_pot": 165000,
+        "current_bet": 0,
+        "history": [
+          {
+            "action": "raise",
+            "added": 13000,
+            "amount": 13000,
+            "player": "Phil Ivey",
+            "street": "preflop"
+          },
+          {
+            "action": "call",
+            "added": 10000,
+            "amount": 13000,
+            "player": "Ivan Leow",
+            "street": "preflop"
+          },
+          {
+            "action": "call",
+            "added": 7000,
+            "amount": 13000,
+            "player": "Ben Heath",
+            "street": "preflop"
+          },
+          {
+            "action": "check",
+            "added": 0,
+            "amount": 0,
+            "player": "Ivan Leow",
+            "street": "flop"
+          },
+          {
+            "action": "check",
+            "added": 0,
+            "amount": 0,
+            "player": "Ben Heath",
+            "street": "flop"
+          },
+          {
+            "action": "raise",
+            "added": 15000,
+            "amount": 15000,
+            "player": "Phil Ivey",
+            "street": "flop"
+          },
+          {
+            "action": "call",
+            "added": 15000,
+            "amount": 15000,
+            "player": "Ivan Leow",
+            "street": "flop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "Ben Heath",
+            "street": "flop"
+          },
+          {
+            "action": "check",
+            "added": 0,
+            "amount": 0,
+            "player": "Ivan Leow",
+            "street": "turn"
+          },
+          {
+            "action": "raise",
+            "added": 45000,
+            "amount": 45000,
+            "player": "Phil Ivey",
+            "street": "turn"
+          },
+          {
+            "action": "call",
+            "added": 45000,
+            "amount": 45000,
+            "player": "Ivan Leow",
+            "street": "turn"
+          },
+          {
+            "action": "check",
+            "added": 0,
+            "amount": 0,
+            "player": "Ivan Leow",
+            "street": "river"
+          }
+        ],
+        "hole_cards": [
+          "Ks",
+          "Td"
+        ],
+        "legal_actions": [
+          "check",
+          "raise"
+        ],
+        "max_raise_to": 160000,
+        "min_raise_to": 6000,
+        "player_id": "Phil Ivey",
+        "players_active": 2,
+        "players_to_act": 0,
+        "position": "MP",
+        "pot": 165000,
+        "seed": 0,
+        "stack": 160000,
+        "street": "river",
+        "table_size": 8,
+        "to_call": 0
+      }
+    },
+    {
+      "corroborating_sources": [
+        "https://www.cardplayer.com/poker-tools/hand-matchups/2276",
+        "https://www.pokernews.com/tours/wsop/2018-wsop/news/top-five-hands-1-million-big-one-for-one-drop-30543.htm",
+        "https://www.pgt.com/news/phil-ivey-headlines-day-2-of-big-one-for-one-drop-on-pokergo"
+      ],
+      "decision_id": "162cf1318738a28acff99b701bc949a327fb4074e33918ad0bdb921d57a8bcde",
+      "derivation_notes": [
+        "Five players were dealt; the player before Ivey's cutoff folded, leaving four active."
+      ],
+      "evidence_tier": "attributed_report_observed_and_derived_fields",
+      "expected": {
+        "action": "raise",
+        "amount": 500000
+      },
+      "field_quality": {
+        "big_blind": {
+          "basis": "Both hand reports give blinds 100,000/200,000.",
+          "status": "observed"
+        },
+        "board": {
+          "basis": "No community cards had been dealt.",
+          "status": "observed"
+        },
+        "current_bet": {
+          "basis": "Ivey is cutoff and has no forced street contribution.",
+          "status": "derived"
+        },
+        "hole_cards": {
+          "basis": "CardPlayer and PokerNews report A-s A-h.",
+          "status": "observed"
+        },
+        "legal_actions": {
+          "basis": "Preflop before Ivey's first voluntary action under the local decision protocol.",
+          "status": "derived"
+        },
+        "max_raise_to": {
+          "basis": "Ivey's reported hand-start stack is 7,565,000 and current street contribution is zero.",
+          "status": "derived"
+        },
+        "min_raise_to": {
+          "basis": "With the 200,000 big blind already in, the minimum first raise target is 400,000.",
+          "status": "derived"
+        },
+        "players_active": {
+          "basis": "PokerNews reports five-handed action.",
+          "status": "observed"
+        },
+        "players_to_act": {
+          "basis": "In a five-handed hand, the button, small blind, and big blind act after the cutoff.",
+          "status": "derived"
+        },
+        "position": {
+          "basis": "Both hand reports place Ivey in the cutoff.",
+          "status": "observed"
+        },
+        "pot": {
+          "basis": "100,000 SB + 200,000 BB + 200,000 big-blind ante = 500,000.",
+          "status": "derived"
+        },
+        "stack": {
+          "basis": "CardPlayer reports Ivey's starting stack as 7,565,000; this value is used only at the hand-start decision.",
+          "status": "observed"
+        },
+        "street": {
+          "basis": "Preflop action is reported.",
+          "status": "observed"
+        },
+        "to_call": {
+          "basis": "The big blind is 200,000 and Ivey has not posted a blind.",
+          "status": "derived"
+        }
+      },
+      "format": "tournament_nlhe",
+      "group_id": "session:2018-wsop-big-one",
+      "hand_id": "ivey_bonomo_2018_big_one_doubleup",
+      "partition": "train",
+      "record_hash": "3548c1d5a49d7fcb944e617351335bec1a8118021de031f79b5d6efdcce15bfa",
+      "session_id": "2018-wsop-big-one",
+      "source": "https://www.cardplayer.com/poker-tools/hand-matchups/2276",
+      "source_decision_id": "ivey_bonomo_preflop_open",
+      "state": {
+        "big_blind": 200000,
+        "board": [],
+        "contestable_pot": 500000,
+        "current_bet": 0,
+        "history": [
+          {
+            "action": "fold",
+            "added": 0,
+            "player": "UTG",
+            "street": "preflop"
+          }
+        ],
+        "hole_cards": [
+          "As",
+          "Ah"
+        ],
+        "legal_actions": [
+          "call",
+          "fold",
+          "raise"
+        ],
+        "max_raise_to": 7565000,
+        "min_raise_to": 400000,
+        "player_id": "Phil Ivey",
+        "players_active": 4,
+        "players_to_act": 3,
+        "position": "CO",
+        "pot": 500000,
+        "seed": 0,
+        "stack": 7565000,
+        "street": "preflop",
+        "table_size": 5,
+        "to_call": 200000
+      }
+    }
+  ],
+  "schema_version": 1,
+  "seed": 20261031,
+  "split_hash": "8e2fc69aa0a6dcbdbcece7409391b04c9d94e02b7b5d35a7c06ed51e9d90c0fc"
+}

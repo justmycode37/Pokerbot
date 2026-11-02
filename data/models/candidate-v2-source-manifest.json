@@ -1,0 +1,32 @@
+{
+  "files": {
+    "data/corpus_splits/development-after-prospective-v1.json": "d172e7310677b051b8dea0163fb14b06b81ad9b5847c73d735f1e2ec66c1a483",
+    "data/corpus_splits/public-reports-v1.json": "782aea11d6301c1d906d19e4519905210ab1455e031c260a805723a504512e9e",
+    "data/models/candidate-lock-v2.json": "118c2d9b389096ef5027aab803fd0cd2eee343b897ee338f9e43a35b0a8c16b7",
+    "data/models/hybrid-v2.json": "a8650a0efacab9a28b8eb7aedef1d8b78c1e9a918f1c90b9e24dbe6bf07a61b6",
+    "data/models/ivey-imitation-v1.json": "dc850beb8c9afe80e4acef156a290a951cf509f80beacf418e3442e5cf774f23",
+    "data/preflop_equity.json": "44684582cbe9400741a7cf1a0857877f94aadb30de54db7d1d20b140ce2a7ef0",
+    "docs/hybrid-model.md": "8bbed8828ce084fdb6e5bb0a638901b6216bde6d77df9745c9308cbc929725ac",
+    "pokerbot/candidate_evaluation.py": "cfba713cac0ae0fe67f7c30f3b22caebed05daeb2c8d15012ffa148fb87ac1ad",
+    "pokerbot/cards.py": "89a27b217402dd3bccda1d75ac16be52d477484e7e4115896ea135e6ff0efc12",
+    "pokerbot/corpus.py": "03fa2acd3719937910edcdd3cb0e1297e6b45669c948f7b1e4bbc3cc92a8ca5c",
+    "pokerbot/evaluation_baselines.py": "61a15a2e3ec66b12ae1e700e71f32ca5afdaca5a6837c89981c9712d05e56067",
+    "pokerbot/fast.py": "7b2d960d0462090c7fa5fdaf8825cfa7d40a6dfe2360619725f4644f2c87e1e5",
+    "pokerbot/hybrid.py": "43453c98006c8ea0a9d03051dd920f9df4b162b89f3167a1d8b406335d82ec02",
+    "pokerbot/imitation.py": "f9e6688483f2c58323cfc91a4e0f0feb32a715dd3827f996526e3813526169d9",
+    "pokerbot/ivey.py": "e4b7d2c410477b295de955f59b28374fb125ab7434454648baa86dcecc7734c0",
+    "pokerbot/preflop.py": "44d30850911498b65a8b952a6d56ce8713fce408204b837e9c288b3fc81b6821",
+    "pokerbot/prospective.py": "07c906d18840548efc11ad6311316ffeaf3cd45ebb8352e96ab0f865067a6a49",
+    "pokerbot/sizing.py": "5b7a54ce36095e5d31818e921e7fc449bd516d18b63368919cc779091ad0b6bf",
+    "pokerbot/state.py": "ef9461ff2de04ddf402305c2a857a7c4849a8bb9d6d2e31fa2eb18c7d21d62d8",
+    "pokerbot/texture.py": "ec9cce35a3a0f94829cb543921eccb715ae18ad77b64dd009ccfc8c4f19981f8",
+    "pyproject.toml": "9d003f49bcc5df5a351f08cc2f1c8def6ddf38983b8ff231c7ab5f95efbdac96",
+    "reports/hybrid-development-v2.json": "913b128658997324eaab196b0bc9a6eaa1ec34cc79b84668b1b37b5359f46925",
+    "scripts/compare_candidates.py": "12fff25a7c30157552526ceec8af9745226c886ba98483923d5d646084678e0e",
+    "scripts/train_hybrid.py": "6b91c250d7f09115ea8f3e421e7441a05ce15101d6c40f6e02481e9d41e189c6",
+    "tests/test_hybrid.py": "065758531b49635894a42bec94e51964b891c9059923088fc0fa783b8a5d58bf"
+  },
+  "purpose": "Freeze reviewed v2 candidates before first comparison on newly admitted source groups.",
+  "known_partial_source_note": "The30short-video decisions and2009WSOPHand175 remain incomplete and are not new exact evaluation cases; prior source inspection must be disclosed if later reconstructed.",
+  "archive_sha256": "b13c425ac3c8164c4c799742b0b009876e4f301bb7c4d5cc2653c0dbf2715bfe"
+}

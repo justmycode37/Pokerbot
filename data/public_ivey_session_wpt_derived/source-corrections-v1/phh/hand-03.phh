@@ -1,0 +1,27 @@
+# Source-checked observed action prefix for WPT-FINAL1-H03.
+# Unknown opponent hole cards are represented as ????; no opponent cards are retained.
+# The stream ends at the last verified action in the reserved window.
+variant = "NT"
+antes = [0, 0]
+blinds_or_straddles = [400, 800]
+min_bet = 800
+starting_stacks = [110560, 89440]
+actions = [
+  "d dh p2 ????",
+  "d dh p1 4sJs",
+  "p2 cbr 2000",
+  "p1 cc",
+  "d db Ts9s5d",
+  "p1 cc",
+  "p2 cc",
+  "d db Tc",
+  "p1 cbr 2000",
+  "p2 cc",
+  "d db Qh",
+  "p1 cbr 5333",
+  "p2 f"
+]
+event = "WPT Heads Up Poker Championship finals, match 1"
+url = "https://www.youtube.com/watch?v=daR3q3KKQ0o&t=2728s"
+hand = "WPT-FINAL1-H03"
+players = ["Phil Ivey", "Patrik Antonius"]

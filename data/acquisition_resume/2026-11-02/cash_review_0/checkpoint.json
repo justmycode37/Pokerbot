@@ -1,0 +1,151 @@
+{
+  "candidate_records_revalidated": true,
+  "code_hash_drift": {
+    "conversion_output_mtime_local": "2026-11-02 10:20:37 Europe/Zurich",
+    "converter_sha256_at_end": "c50a17e08cb2d76848aace6b241a6f347bf1d4f272930a092cfb916991d88268",
+    "converter_sha256_at_start_and_conversion": "aeba51655c1927a47b2b9bd7f404a94a15a7299abde52f9ce9d8ba0cb483a7ca",
+    "detected": true,
+    "note": "Root converter and pot helper changed after this parity-zero conversion output was written. This review did not modify root code. The converter output remains tied to its captured start SHA; helper values used for row review were independently reconstructed and cross-checked against engine observations and direct source-prefix ledgers.",
+    "observed_file_mtime_local": "2026-11-02 10:25:24 Europe/Zurich",
+    "pot_helper_sha256_at_start": "3bf5bb521dfca1e4ed16871f19d50fef125cdded6c2ebd3ae253ab805dda6556",
+    "pot_helper_sha256_used_for_independent_rows": "fffa3df98fe5997d72d7f910c27d0a73536a06d5c82ea4426c7b2ecd28cc88cb"
+  },
+  "code_sha256_at_end": {
+    "scripts/acquisition_import.py": "553aafcaeb549d7ee06e245c6f2880d5df1fae3f7b9325d4f00ff9351dca19ea",
+    "scripts/acquisition_pot_eligibility.py": "fffa3df98fe5997d72d7f910c27d0a73536a06d5c82ea4426c7b2ecd28cc88cb",
+    "scripts/acquisition_triton_convert.py": "c50a17e08cb2d76848aace6b241a6f347bf1d4f272930a092cfb916991d88268"
+  },
+  "converted_decisions": 241,
+  "converter_sha256_at_end": "c50a17e08cb2d76848aace6b241a6f347bf1d4f272930a092cfb916991d88268",
+  "converter_sha256_at_start": "aeba51655c1927a47b2b9bd7f404a94a15a7299abde52f9ce9d8ba0cb483a7ca",
+  "corrected_contestable_pot_values": 82,
+  "final_counts": {
+    "2018_owned_hands_capacity_blocked": 41,
+    "admissions_created": 0,
+    "admitted_records_checked": 80,
+    "candidate_decisions": 241,
+    "corrected_contestable_pot": 82,
+    "exact_duplicates_with_admitted": 0,
+    "exact_duplicates_with_other_triton": 0,
+    "independent_review_passed": 241,
+    "owned_raw_hand_records": 275,
+    "raw_uuid_overlaps_with_other_triton": 0,
+    "unique_candidate_hands": 152
+  },
+  "global_dedup": {
+    "admitted_records": 80,
+    "exact_duplicates_with_admitted": 0,
+    "exact_duplicates_with_other_triton": 0,
+    "raw_uuid_overlaps_with_other_triton": 0,
+    "report_path": "global-dedup.json"
+  },
+  "independent_review_failed": 0,
+  "independent_review_passed": 241,
+  "next": "Parent may review and integrate; no admissions were created by this reviewer.",
+  "output_artifact_count": 14,
+  "output_artifacts": {
+    "candidates.json": {
+      "bytes": 2560274,
+      "sha256": "d4a21cb53381b0c4f6f7e2268e8d717ab337ab758ddf7ef952183616246a97ad"
+    },
+    "converter_outputs/2018_2c503059/converter-output.json": {
+      "bytes": 43909,
+      "sha256": "39659dc93aaf090903684c5698a91bcfb385510ffe92504757ecf4d0a3d73352"
+    },
+    "converter_outputs/2024_ba7bbc03/converter-output.json": {
+      "bytes": 2871094,
+      "sha256": "89f8f27771fee52f1c28f423d185e135b119c843c2d1119d3c72634fa67b744c"
+    },
+    "global-dedup.json": {
+      "bytes": 316096,
+      "sha256": "d0f92cd447541f2b2fea18421a5cf42900d96d891b19d2ae9e4d7acc6a66a622"
+    },
+    "global_dedup.py": {
+      "bytes": 10939,
+      "sha256": "0b901a0d978f5a0b29abd89377f85b547d722854ade671cad0615e6b538d4cac"
+    },
+    "independent_review.py": {
+      "bytes": 34680,
+      "sha256": "30081748306b3f672bd8f0a459be9e013d48cd9d01259fe20a238840ae369af8"
+    },
+    "per-row-review.json": {
+      "bytes": 2868860,
+      "sha256": "78b724aa66cbbe1e1615deb6a808ee4ec66edea83ed4788c36cd580c27195195"
+    },
+    "review.md": {
+      "bytes": 6051,
+      "sha256": "d646609fdd6320cb57eb36039b01edb1a1d33df8bf5efc92f8dc620bfa80c893"
+    },
+    "sidecases/2018-seat-capacity.json": {
+      "bytes": 45085,
+      "sha256": "1a3756ed213b99b87bc9799e1138cbc9e4220312746694cc9972f429098cfd5c"
+    },
+    "sidecases/contestable-top-excess.json": {
+      "bytes": 8339,
+      "sha256": "55ec0c5d54a0919a910302d80955e95f831efe8271999d42f71fcd460c37e410"
+    },
+    "sidecases/conversion-rejections.json": {
+      "bytes": 26379,
+      "sha256": "8a4c2345dee2124d08b2fd894af094535ebb5040942cda499c863c7af315f368"
+    },
+    "sidecases/sourceblockers.json": {
+      "bytes": 2523,
+      "sha256": "0581003b14d87d1f52ed2ef1e45ff1666e31bd1fbb24d985ab7c013124f6dcdf"
+    },
+    "sidecases/sourceblockers.md": {
+      "bytes": 2012,
+      "sha256": "3fb1e15ac197785b3485f971a35b4e421556e6b229ecd76e87e4db641ad8cc49"
+    },
+    "summary.json": {
+      "bytes": 6609,
+      "sha256": "b6de9df02d32bae6d5a9ec1bb2808b4d27bbacf918bef795f59342d918099ef6"
+    }
+  },
+  "output_byte_count": 8802850,
+  "pot_call_matches": 241,
+  "pot_helper_sha256_at_start": "3bf5bb521dfca1e4ed16871f19d50fef125cdded6c2ebd3ae253ab805dda6556",
+  "pot_helper_sha256_used_for_independent_rows": "fffa3df98fe5997d72d7f910c27d0a73536a06d5c82ea4426c7b2ecd28cc88cb",
+  "protected_input_paths_modified": [],
+  "protected_path_integrity": {
+    "data/corpus_splits": {
+      "added": [],
+      "all_hashes_match": true,
+      "baseline_bytes": 340457,
+      "baseline_files": 3,
+      "bytes": 340457,
+      "changed": [],
+      "files": 3,
+      "missing": []
+    },
+    "data/models": {
+      "added": [],
+      "all_hashes_match": true,
+      "baseline_bytes": 289238,
+      "baseline_files": 12,
+      "bytes": 289238,
+      "changed": [],
+      "files": 12,
+      "missing": []
+    },
+    "pokerbot": {
+      "added": [],
+      "all_hashes_match": true,
+      "baseline_bytes": 453670,
+      "baseline_files": 46,
+      "bytes": 453670,
+      "changed": [],
+      "files": 46,
+      "missing": []
+    }
+  },
+  "review": "triton_cash_review_0",
+  "scope": {
+    "admissions_created": 0,
+    "all_inspected_development_only": true,
+    "exclusive_write_root": "data/acquisition_resume/2026-11-02/cash_review_0",
+    "owned_hand_records": 275,
+    "owned_hand_uuid_formula": "int(handId.replace(\"-\", \"\"), 16) % 2 == 0"
+  },
+  "status": "complete",
+  "updated_at_utc": "2026-11-02T09:37:59.617417+00:00"
+}

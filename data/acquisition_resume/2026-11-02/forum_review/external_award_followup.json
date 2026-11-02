@@ -1,0 +1,150 @@
+{
+  "hands": [
+    {
+      "award_description": "tie, one equal payout to each player",
+      "award_plus_rake_reconciles_gross_pot": true,
+      "awards": [
+        "18999.75",
+        "18999.75"
+      ],
+      "candidate_decision_count": 4,
+      "candidate_decisions": [
+        {
+          "action_index": 2,
+          "decision_id": "9c0398ed70485596f0c82eb0b50da44d749f43ca58830e6cd5619ede23fd3bda",
+          "source_action_line": 8
+        },
+        {
+          "action_index": 6,
+          "decision_id": "c92d113eea3dc85425f578a632189da27c4b599c4db5b61cb9eeb8667a697659",
+          "source_action_line": 12
+        },
+        {
+          "action_index": 10,
+          "decision_id": "7b184bcc1b883e6fb8c149fdb95c6ddb1203c31b8ee80f0ba9c7e67c0d84bd48",
+          "source_action_line": 16
+        },
+        {
+          "action_index": 13,
+          "decision_id": "c381216d1edb4c4ef8e3d8e6e0ba6f0850ee2990114c370c28edbf2536a9b3e5",
+          "source_action_line": 19
+        }
+      ],
+      "fulltilt_hand_id": "5258419612",
+      "gross_pot": "38000",
+      "known_hero_cards": true,
+      "prefix_review_status": "all candidate decision prefixes independently supported",
+      "rake": "0.50",
+      "row_hold_recommendation": "no prefix-based hold; conditionally hold only if parent requires a machine-readable award in the saved intake record",
+      "saved_extract_machine_readable_award_count": 0,
+      "source_post": "#121",
+      "source_url": "https://forumserver.twoplustwo.com/29/news-views-gossip/2-14-high-stakes-action-thread-ivey-seda-durrr-ziigmund-etc-129937/index5.html"
+    },
+    {
+      "award_description": "single winner payout",
+      "award_plus_rake_reconciles_gross_pot": true,
+      "awards": [
+        "86597"
+      ],
+      "candidate_decision_count": 0,
+      "candidate_decisions": [],
+      "fulltilt_hand_id": "5228844526",
+      "gross_pot": "86598",
+      "known_hero_cards": false,
+      "prefix_review_status": "no decision rows to review",
+      "rake": "1",
+      "row_hold_recommendation": "no decision rows; hand remains ineligible because hero cards are unknown",
+      "saved_extract_machine_readable_award_count": 0,
+      "source_post": "#4",
+      "source_url": "https://forumserver.twoplustwo.com/29/news-views-gossip/2-12-high-stakes-railbirding-thread-durrrr-ivey-urin-etc-128476/"
+    },
+    {
+      "award_description": "single winner payout",
+      "award_plus_rake_reconciles_gross_pot": true,
+      "awards": [
+        "139797.50"
+      ],
+      "candidate_decision_count": 3,
+      "candidate_decisions": [
+        {
+          "action_index": 2,
+          "decision_id": "0f68a643d7e7e4d1cd3d86f5def4998f52e5a27274e22fce0978debd0f86fcaa",
+          "source_action_line": 8
+        },
+        {
+          "action_index": 4,
+          "decision_id": "8d0249961268d9e1b3b7569a9f6f69c3473aa4d548707933c59298aa5c584728",
+          "source_action_line": 10
+        },
+        {
+          "action_index": 7,
+          "decision_id": "769c64052601c494dccf08dd4c4cf2074c8590e6c1d1efc1511ce0ff37ef3d32",
+          "source_action_line": 13
+        }
+      ],
+      "fulltilt_hand_id": "5229856787",
+      "gross_pot": "139798",
+      "known_hero_cards": true,
+      "prefix_review_status": "all candidate decision prefixes independently supported",
+      "rake": "0.50",
+      "row_hold_recommendation": "no prefix-based hold; conditionally hold only if parent requires a machine-readable award in the saved intake record",
+      "saved_extract_machine_readable_award_count": 0,
+      "source_post": "#16",
+      "source_url": "https://forumserver.twoplustwo.com/29/news-views-gossip/2-12-high-stakes-railbirding-thread-durrrr-ivey-urin-etc-128476/"
+    },
+    {
+      "award_description": "single winner payout",
+      "award_plus_rake_reconciles_gross_pot": true,
+      "awards": [
+        "119999.50"
+      ],
+      "candidate_decision_count": 4,
+      "candidate_decisions": [
+        {
+          "action_index": 2,
+          "decision_id": "744f48ee813f1cbceafcc4b65a0fb0671c40ebdbaf486fa0a0b4ada91d88aa97",
+          "source_action_line": 8
+        },
+        {
+          "action_index": 4,
+          "decision_id": "a83bce20fe974cb8ccff0d1d745649768992583b239c1f2ebb799c57b59acc3c",
+          "source_action_line": 10
+        },
+        {
+          "action_index": 7,
+          "decision_id": "1347132f1d94c21c9d27198e852cdfd7c866f8f6aa118e31381654fc66b299c7",
+          "source_action_line": 13
+        },
+        {
+          "action_index": 9,
+          "decision_id": "0dabc315e85503542f72b12d84d0e322608c7c2471d7d6c6d50aa72f923057db",
+          "source_action_line": 15
+        }
+      ],
+      "fulltilt_hand_id": "5229878446",
+      "gross_pot": "120000",
+      "known_hero_cards": true,
+      "prefix_review_status": "all candidate decision prefixes independently supported",
+      "rake": "0.50",
+      "row_hold_recommendation": "no prefix-based hold; conditionally hold only if parent requires a machine-readable award in the saved intake record",
+      "saved_extract_machine_readable_award_count": 0,
+      "source_post": "#17",
+      "source_url": "https://forumserver.twoplustwo.com/29/news-views-gossip/2-12-high-stakes-railbirding-thread-durrrr-ivey-urin-etc-128476/"
+    }
+  ],
+  "method": "Manually checked the original indexed forum posts for award and rake facts only. Did not alter captured records or candidate observations. No verbatim source passages stored.",
+  "review_type": "manual follow-up against original public forum pages; separate from saved-extract parsing and engine validation",
+  "source_copy_alias_followup": {
+    "candidate_decision_count": 6,
+    "fulltilt_hand_id": "5260871551",
+    "page9_progress_note": "Nov 2 forum_2008 progress records page 9 post #201 as skipped for action/stack duplication of raw #5260871551; that exact page URL was inaccessible through the source fetch tool, so this remains progress-log evidence only.",
+    "page9_url": "https://forumserver.twoplustwo.com/29/news-views-gossip/2-14-high-stakes-action-thread-ivey-seda-durrr-ziigmund-etc-129937/index9.html",
+    "posts_checked": [
+      "#198 converted hand",
+      " #199 raw Full Tilt hand"
+    ],
+    "result": "The page shows the same two-player stakes, starting stacks, board, and betting sequence in adjacent converted and raw posts; #199 carries the canonical Full Tilt ID. Treat the converted copy as an alias of fulltilt:5260871551, not a new hand or decision.",
+    "verified_public_page": "https://forumserver.twoplustwo.com/29/news-views-gossip/2-14-high-stakes-action-thread-ivey-seda-durrr-ziigmund-etc-129937/index8.html"
+  },
+  "status": "all_four_public_page_award_records_checked_and_reconciled"
+}

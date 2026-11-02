@@ -1,0 +1,42 @@
+# Factual reconstruction of a public PokerGO hand, not an upstream PHH.
+# Source: https://www.youtube.com/watch?v=YfjDfPk7e1E
+# Exact starting stacks and 50K/100K + 100K BB ante appear in the opening header.
+# Preflop folds are derived from seat order and the displayed 450K/550K pots.
+# Every subsequent wager reconciles with the displayed pot and the 1.21M shove.
+# Opponent cards remain unknown and no later hand outcome is supplied.
+
+variant = "NT"
+ante_trimming_status = false
+antes = [0, 100000, 0, 0, 0, 0]
+blinds_or_straddles = [50000, 100000, 0, 0, 0, 0]
+min_bet = 100000
+starting_stacks = [4510000, 6710000, 1355000, 1840000, 8685000, 2120000]
+players = ["Andrew Lichtenberger", "Phil Ivey", "Adrian Mateos", "Joao Vieira", "Ben Heath", "Thomas Pitavy"]
+hand = "pokergo-YfjDfPk7e1E"
+event = "WSOP 2025 Event 38 $100K NLH Day 2"
+year = 2025
+actions = [
+  "d dh p1 ????",
+  "d dh p2 Ks4d",
+  "d dh p3 ????",
+  "d dh p4 ????",
+  "d dh p5 ????",
+  "d dh p6 ????",
+  "p3 f",
+  "p4 cbr 200000",
+  "p5 f",
+  "p6 f",
+  "p1 f",
+  "p2 cc",
+  "d db Qd4s2c",
+  "p2 cc",
+  "p4 cbr 130000",
+  "p2 cc",
+  "d db 4c",
+  "p2 cbr 300000",
+  "p4 cc",
+  "d db 3c",
+  "p2 cc",
+  "p4 cbr 1210000",
+  "p2 f",
+]

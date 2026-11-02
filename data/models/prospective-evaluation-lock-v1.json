@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "model_path": "data/models/ivey-imitation-v1.json",
+  "model_sha256": "dc850beb8c9afe80e4acef156a290a951cf509f80beacf418e3442e5cf774f23",
+  "fast_policy_sha256": "7b2d960d0462090c7fa5fdaf8825cfa7d40a6dfe2360619725f4644f2c87e1e5",
+  "purpose": "Freeze candidate policies before inspecting the independently collected video batch and subsequent report batches.",
+  "already_inspected_corpus_manifest": "data/corpus_splits/public-reports-v1.json",
+  "rule": "Do not tune these candidates using prospective evaluation labels; report source-group counts, class balance, exact sizing and majority baseline alongside action agreement."
+}

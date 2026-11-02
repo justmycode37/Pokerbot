@@ -1,0 +1,1 @@
+{"hole_cards":["As","Ah"],"board":[],"pot":150,"to_call":100,"stack":10000,"current_bet":0,"min_raise_to":200,"max_raise_to":10000,"big_blind":100,"position":"UTG","players_active":8,"players_to_act":7,"street":"preflop","legal_actions":["fold","call","raise"],"history":[],"seed":42}

@@ -1,0 +1,9 @@
+variant = "NT"
+ante_trimming_status = false
+antes = [0, 20000, 0, 0, 0]
+blinds_or_straddles = [10000, 20000, 0, 0, 0]
+min_bet = 20000
+starting_stacks = [1000000, 1000000, 510000, 1000000, 1160000]
+players = ["Unreported SB", "Unreported BB", "Brian Rast", "Unreported CO", "Phil Ivey"]
+hand = "cp35_14"
+actions = ["d dh p1 ????", "d dh p2 ????", "d dh p3 ????", "d dh p4 ????", "d dh p5 Qc9c", "p3 cbr 40000", "p4 f", "p5 cc", "p1 f", "p2 f", "d db Kc5d4h", "p3 cc", "p5 cc", "d db 5c", "p3 cbr 40000", "p5 cc", "d db 7c", "p3 cbr 65000", "p5 cbr 200000"]

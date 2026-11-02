@@ -1,0 +1,3155 @@
+{
+  "baseline_manifest": "data/corpus_splits/development-after-prospective-v1.json",
+  "baseline_manifest_sha256": "d172e7310677b051b8dea0163fb14b06b81ad9b5847c73d735f1e2ec66c1a483",
+  "counts": {
+    "baseline_decisions": 45,
+    "combined_groups": 10,
+    "combined_unique_hands": 41,
+    "combined_usable_decisions": 75,
+    "held_for_ante_eligibility_correction": 21,
+    "new_admitted_decisions": 30,
+    "new_unique_hands": 29
+  },
+  "created_at_utc": "2026-11-01T18:24:35.709939+00:00",
+  "dataset_hash": "0fb1783be6d45081a820a97ba1a1c4df98a5034c5422a956ce552cb191cb6c96",
+  "held_source_decision_ids": [
+    "triton:23899063-1648-48ae-ba75-e19736f62607:action:5",
+    "triton:238da98b-1804-492f-9518-64cb73388dfd:action:3",
+    "triton:26564730-167d-4edc-957d-884a19fa2fe3:action:3",
+    "triton:3202f078-1b51-4de2-9e20-72a58e05a8a4:action:6",
+    "triton:46b26eec-7ee5-494b-9dd5-885db8c5318b:action:3",
+    "triton:47e1dbd2-ebd2-484e-b15c-3a5d281b7260:action:4",
+    "triton:4b7834c2-7399-4f17-b608-f1a6ec2c0709:action:3",
+    "triton:5646b6a0-ac9f-4924-921d-23e57364de3f:action:6",
+    "triton:5ab29a77-01a3-474c-b142-55a44b1c9f86:action:8",
+    "triton:5b7014d8-d730-4290-83d2-f49ff318c4b9:action:4",
+    "triton:7233ae8e-33b6-4786-a574-8623b63c849b:action:4",
+    "triton:7e7c09d2-911c-40dc-a856-29e356881f98:action:4",
+    "triton:80813dde-3d2d-4000-bf4b-621775703e44:action:6",
+    "triton:9dd266da-35c6-4a6e-992e-7703b663951d:action:9",
+    "triton:9e27b1d3-fb94-4807-acf6-2f1b1f88e20c:action:3",
+    "triton:9e8f436e-7969-457d-8eb9-52c671018ada:action:3",
+    "triton:9eb09c11-8af6-4dad-a4a6-f81f373eb9ca:action:7",
+    "triton:a28ed451-3515-4197-bc58-04c89fce7197:action:3",
+    "triton:a3bf889c-bee5-4dbb-aa00-527b4114c7f6:action:4",
+    "triton:c3bb5083-4b04-47e2-ac6b-a146a3a9f704:action:9",
+    "triton:dc29202b-88a6-437d-9546-0968babfc2c7:action:4"
+  ],
+  "limitations": [
+    "All new examples are inspected development data, not fresh held-out evaluation data.",
+    "Episode and known-card selections do not establish representative Ivey decision coverage.",
+    "The original frozen strategy, model and split files remain unchanged.",
+    "Ante-affected candidates need corrected observations and new independent review."
+  ],
+  "records": [
+    {
+      "admission_status": "admitted_source_reviewed_development_only",
+      "canonical_hand_id": "triton:020feecc-0093-4fb8-a809-9be768f821b8",
+      "decision_id": "1d811e522d35c4d1b50aee65fc941ac1bb775e311f64912a9e1e4abc0deead23",
+      "evidence_tier": "official_structured_source_independently_reviewed",
+      "expected": {
+        "action": "fold"
+      },
+      "fresh_holdout": false,
+      "group_id": "session:triton:tournament:ae031be0-c964-4a4a-8e68-d7e177574f1a",
+      "hand_id": "triton:020feecc-0093-4fb8-a809-9be768f821b8",
+      "independent_review_path": "data/acquisition_resume/2026-11-01/triton_2026_review/per-row-review.json",
+      "independent_review_sha256": "9bfce95a2d66983f0cac4b7fda9d306cbb7d9bc17699b29ec78c83fd8e5554b9",
+      "inspection_status": "inspected",
+      "parent_ante_audit_path": "data/acquisition_resume/2026-11-01/ante-eligibility-diagnostic.json",
+      "policy_use": "development_only",
+      "record_hash": "3f501d98c2ac2591ee5bc999d9b00e7edf45e1d0c24487fc2e8428948a323f9b",
+      "session_id": "triton:tournament:ae031be0-c964-4a4a-8e68-d7e177574f1a",
+      "source": "https://prod-public-serverless.triton-poker.com/graphql?sourceHandId=020feecc-0093-4fb8-a809-9be768f821b8",
+      "source_action_count": 11,
+      "source_action_index": 5,
+      "source_actual_player_count": 8,
+      "source_capture_path": "data/acquisition_resume/2026-11-01/triton_2026/raw/hands/020feecc-0093-4fb8-a809-9be768f821b8.json",
+      "source_capture_sha256": "48699817963e65b2ec4e4ad8c4d4c8a06e5b0ecf087989af0460b4b997a53513",
+      "source_collector_manifest": "data/acquisition_resume/2026-11-01/triton_2026/manifest.json",
+      "source_decision_id": "triton:020feecc-0093-4fb8-a809-9be768f821b8:action:5",
+      "source_episode_ids": [
+        "f28c0720-f7b1-471f-be4f-0d4d558d060d"
+      ],
+      "source_payload_sha256": "fd9d3c61a4ffc4c437c20257df65c7a533038e9fe9fc021e4953d6edc94fed3f",
+      "source_physical_capacity": 9,
+      "source_query_sha256": "62ad7be7eda254e2f8a3e79e59c421482ac60156552fe4bf6c4622f4ed4f9a50",
+      "source_request_path": "data/acquisition_resume/2026-11-01/triton_2026/raw/hands/020feecc-0093-4fb8-a809-9be768f821b8.request.json",
+      "source_request_sha256": "134c771d4cde0e1dae372590fc868743df1107e0242d66a309ab0fa256519277",
+      "source_round_action_index": 5,
+      "source_round_index": 0,
+      "source_validation": "engine_replayed",
+      "stable_source_decision_key": "triton:020feecc-0093-4fb8-a809-9be768f821b8:round:0:action:5",
+      "state": {
+        "big_blind": 150000,
+        "board": [],
+        "contestable_pot": 675000,
+        "current_bet": 0,
+        "history": [
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p2",
+            "position": "UTG",
+            "street": "preflop"
+          },
+          {
+            "action": "raise",
+            "added": 300000,
+            "amount": 300000,
+            "player": "p3",
+            "position": "MP",
+            "street": "preflop"
+          }
+        ],
+        "hole_cards": [
+          "Qc",
+          "7c"
+        ],
+        "legal_actions": [
+          "call",
+          "fold",
+          "raise"
+        ],
+        "max_raise_to": 2950000,
+        "min_raise_to": 450000,
+        "player_id": "p4",
+        "players_active": 7,
+        "players_to_act": 5,
+        "position": "MP",
+        "pot": 675000,
+        "seed": 0,
+        "stack": 2950000,
+        "street": "preflop",
+        "table_size": 8,
+        "to_call": 300000
+      }
+    },
+    {
+      "admission_status": "admitted_source_reviewed_development_only",
+      "canonical_hand_id": "triton:0c7a6c41-d678-49a2-958b-8fdac0f40823",
+      "decision_id": "fab91912106abebaa52c4e5c6f98bcdefea06d850748172ea9c62b20a002cab8",
+      "evidence_tier": "official_structured_source_independently_reviewed",
+      "expected": {
+        "action": "fold"
+      },
+      "fresh_holdout": false,
+      "group_id": "session:triton:tournament:ae031be0-c964-4a4a-8e68-d7e177574f1a",
+      "hand_id": "triton:0c7a6c41-d678-49a2-958b-8fdac0f40823",
+      "independent_review_path": "data/acquisition_resume/2026-11-01/triton_2026_review/per-row-review.json",
+      "independent_review_sha256": "9bfce95a2d66983f0cac4b7fda9d306cbb7d9bc17699b29ec78c83fd8e5554b9",
+      "inspection_status": "inspected",
+      "parent_ante_audit_path": "data/acquisition_resume/2026-11-01/ante-eligibility-diagnostic.json",
+      "policy_use": "development_only",
+      "record_hash": "0f69844e9e39a4b49c39a949157fce98afbe80823a516dd27a313505feb43a10",
+      "session_id": "triton:tournament:ae031be0-c964-4a4a-8e68-d7e177574f1a",
+      "source": "https://prod-public-serverless.triton-poker.com/graphql?sourceHandId=0c7a6c41-d678-49a2-958b-8fdac0f40823",
+      "source_action_count": 11,
+      "source_action_index": 6,
+      "source_actual_player_count": 8,
+      "source_capture_path": "data/acquisition_resume/2026-11-01/triton_2026/raw/hands/0c7a6c41-d678-49a2-958b-8fdac0f40823.json",
+      "source_capture_sha256": "92e2f740c7b1f09ff51f6900306d1b20da7c48f5335a60f9bdd2b526390ce5f9",
+      "source_collector_manifest": "data/acquisition_resume/2026-11-01/triton_2026/manifest.json",
+      "source_decision_id": "triton:0c7a6c41-d678-49a2-958b-8fdac0f40823:action:6",
+      "source_episode_ids": [
+        "f28c0720-f7b1-471f-be4f-0d4d558d060d"
+      ],
+      "source_payload_sha256": "390ab98bd6ec05b2660672cf0a25775dbd1d03692d625c1cd8c99ff2f3ce5cd9",
+      "source_physical_capacity": 9,
+      "source_query_sha256": "62ad7be7eda254e2f8a3e79e59c421482ac60156552fe4bf6c4622f4ed4f9a50",
+      "source_request_path": "data/acquisition_resume/2026-11-01/triton_2026/raw/hands/0c7a6c41-d678-49a2-958b-8fdac0f40823.request.json",
+      "source_request_sha256": "107dbb51437dfbb5389873a1e578b0855d29c2d012e065bc96f4a824803b2a18",
+      "source_round_action_index": 6,
+      "source_round_index": 0,
+      "source_validation": "engine_replayed",
+      "stable_source_decision_key": "triton:0c7a6c41-d678-49a2-958b-8fdac0f40823:round:0:action:6",
+      "state": {
+        "big_blind": 150000,
+        "board": [],
+        "contestable_pot": 675000,
+        "current_bet": 0,
+        "history": [
+          {
+            "action": "raise",
+            "added": 300000,
+            "amount": 300000,
+            "player": "p2",
+            "position": "UTG",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p3",
+            "position": "MP",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p4",
+            "position": "MP",
+            "street": "preflop"
+          }
+        ],
+        "hole_cards": [
+          "Ts",
+          "4h"
+        ],
+        "legal_actions": [
+          "call",
+          "fold",
+          "raise"
+        ],
+        "max_raise_to": 2950000,
+        "min_raise_to": 450000,
+        "player_id": "p5",
+        "players_active": 6,
+        "players_to_act": 4,
+        "position": "MP",
+        "pot": 675000,
+        "seed": 0,
+        "stack": 2950000,
+        "street": "preflop",
+        "table_size": 8,
+        "to_call": 300000
+      }
+    },
+    {
+      "admission_status": "admitted_source_reviewed_development_only",
+      "canonical_hand_id": "triton:1888c825-a7f9-4619-b387-2c2c50cf154e",
+      "decision_id": "1882c9e01f26d4079c186547cbafa995f07a1727675e86e37be93766c0cf1f7c",
+      "evidence_tier": "official_structured_source_independently_reviewed",
+      "expected": {
+        "action": "fold"
+      },
+      "fresh_holdout": false,
+      "group_id": "session:triton:tournament:ae031be0-c964-4a4a-8e68-d7e177574f1a",
+      "hand_id": "triton:1888c825-a7f9-4619-b387-2c2c50cf154e",
+      "independent_review_path": "data/acquisition_resume/2026-11-01/triton_2026_review/per-row-review.json",
+      "independent_review_sha256": "9bfce95a2d66983f0cac4b7fda9d306cbb7d9bc17699b29ec78c83fd8e5554b9",
+      "inspection_status": "inspected",
+      "parent_ante_audit_path": "data/acquisition_resume/2026-11-01/ante-eligibility-diagnostic.json",
+      "policy_use": "development_only",
+      "record_hash": "3ef098de20e228b0513d06e611052196afc4b9f61830948ae0256884d1e47684",
+      "session_id": "triton:tournament:ae031be0-c964-4a4a-8e68-d7e177574f1a",
+      "source": "https://prod-public-serverless.triton-poker.com/graphql?sourceHandId=1888c825-a7f9-4619-b387-2c2c50cf154e",
+      "source_action_count": 10,
+      "source_action_index": 5,
+      "source_actual_player_count": 7,
+      "source_capture_path": "data/acquisition_resume/2026-11-01/triton_2026/raw/hands/1888c825-a7f9-4619-b387-2c2c50cf154e.json",
+      "source_capture_sha256": "f3d4b56469cf248c71cc1eeb688596df5af7d5f9ceeb012ca5d3f5f3ff36193b",
+      "source_collector_manifest": "data/acquisition_resume/2026-11-01/triton_2026/manifest.json",
+      "source_decision_id": "triton:1888c825-a7f9-4619-b387-2c2c50cf154e:action:5",
+      "source_episode_ids": [
+        "f28c0720-f7b1-471f-be4f-0d4d558d060d"
+      ],
+      "source_payload_sha256": "b5390183b13e7399627d6e8090d54185a3ebe5264b4f261dcfb104be8a3c5e34",
+      "source_physical_capacity": 9,
+      "source_query_sha256": "62ad7be7eda254e2f8a3e79e59c421482ac60156552fe4bf6c4622f4ed4f9a50",
+      "source_request_path": "data/acquisition_resume/2026-11-01/triton_2026/raw/hands/1888c825-a7f9-4619-b387-2c2c50cf154e.request.json",
+      "source_request_sha256": "c64b227af458f3f98bf7375773b4cd19f338ea67c086b61a35f8c6f2bdf99677",
+      "source_round_action_index": 5,
+      "source_round_index": 0,
+      "source_validation": "engine_replayed",
+      "stable_source_decision_key": "triton:1888c825-a7f9-4619-b387-2c2c50cf154e:round:0:action:5",
+      "state": {
+        "big_blind": 200000,
+        "board": [],
+        "contestable_pot": 900000,
+        "current_bet": 0,
+        "history": [
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p2",
+            "position": "UTG",
+            "street": "preflop"
+          },
+          {
+            "action": "raise",
+            "added": 400000,
+            "amount": 400000,
+            "player": "p3",
+            "position": "MP",
+            "street": "preflop"
+          }
+        ],
+        "hole_cards": [
+          "Ks",
+          "3d"
+        ],
+        "legal_actions": [
+          "call",
+          "fold",
+          "raise"
+        ],
+        "max_raise_to": 1775000,
+        "min_raise_to": 600000,
+        "player_id": "p4",
+        "players_active": 6,
+        "players_to_act": 4,
+        "position": "MP",
+        "pot": 900000,
+        "seed": 0,
+        "stack": 1775000,
+        "street": "preflop",
+        "table_size": 7,
+        "to_call": 400000
+      }
+    },
+    {
+      "admission_status": "admitted_source_reviewed_development_only",
+      "canonical_hand_id": "triton:194065fa-88a2-4af7-88f7-a6b42fd8d457",
+      "decision_id": "a18f2b4ea74e336a50ae8afcfb4a0431c38c15e0d97e3385905b1b8c769e9203",
+      "evidence_tier": "official_structured_source_independently_reviewed",
+      "expected": {
+        "action": "fold"
+      },
+      "fresh_holdout": false,
+      "group_id": "session:triton:tournament:ae031be0-c964-4a4a-8e68-d7e177574f1a",
+      "hand_id": "triton:194065fa-88a2-4af7-88f7-a6b42fd8d457",
+      "independent_review_path": "data/acquisition_resume/2026-11-01/triton_2026_review/per-row-review.json",
+      "independent_review_sha256": "9bfce95a2d66983f0cac4b7fda9d306cbb7d9bc17699b29ec78c83fd8e5554b9",
+      "inspection_status": "inspected",
+      "parent_ante_audit_path": "data/acquisition_resume/2026-11-01/ante-eligibility-diagnostic.json",
+      "policy_use": "development_only",
+      "record_hash": "f0d4564dd3eebf4b12a5f5a4f3a305f0282f1389072a9d87580aca695759aa54",
+      "session_id": "triton:tournament:ae031be0-c964-4a4a-8e68-d7e177574f1a",
+      "source": "https://prod-public-serverless.triton-poker.com/graphql?sourceHandId=194065fa-88a2-4af7-88f7-a6b42fd8d457",
+      "source_action_count": 11,
+      "source_action_index": 7,
+      "source_actual_player_count": 8,
+      "source_capture_path": "data/acquisition_resume/2026-11-01/triton_2026/raw/hands/194065fa-88a2-4af7-88f7-a6b42fd8d457.json",
+      "source_capture_sha256": "876ac1b2845d50799f2c0965eb1d0244fff6e524a0e52e7003ed5be71e513795",
+      "source_collector_manifest": "data/acquisition_resume/2026-11-01/triton_2026/manifest.json",
+      "source_decision_id": "triton:194065fa-88a2-4af7-88f7-a6b42fd8d457:action:7",
+      "source_episode_ids": [
+        "f28c0720-f7b1-471f-be4f-0d4d558d060d"
+      ],
+      "source_payload_sha256": "83c6b2271063fe7d91440a8f32b77d2a331c1451bfd4e198fd8c621476fde4d4",
+      "source_physical_capacity": 9,
+      "source_query_sha256": "62ad7be7eda254e2f8a3e79e59c421482ac60156552fe4bf6c4622f4ed4f9a50",
+      "source_request_path": "data/acquisition_resume/2026-11-01/triton_2026/raw/hands/194065fa-88a2-4af7-88f7-a6b42fd8d457.request.json",
+      "source_request_sha256": "ce0bbc253608bcfa2c39f2a5d3667ba8534d56e288eb2c005ab327b72b0f1ca9",
+      "source_round_action_index": 7,
+      "source_round_index": 0,
+      "source_validation": "engine_replayed",
+      "stable_source_decision_key": "triton:194065fa-88a2-4af7-88f7-a6b42fd8d457:round:0:action:7",
+      "state": {
+        "big_blind": 200000,
+        "board": [],
+        "contestable_pot": 2500000,
+        "current_bet": 0,
+        "history": [
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p2",
+            "position": "UTG",
+            "street": "preflop"
+          },
+          {
+            "action": "raise",
+            "added": 2000000,
+            "amount": 2000000,
+            "player": "p3",
+            "position": "MP",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p4",
+            "position": "MP",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p5",
+            "position": "MP",
+            "street": "preflop"
+          }
+        ],
+        "hole_cards": [
+          "Qs",
+          "5c"
+        ],
+        "legal_actions": [
+          "call",
+          "fold",
+          "raise"
+        ],
+        "max_raise_to": 2275000,
+        "min_raise_to": 2275000,
+        "player_id": "p6",
+        "players_active": 5,
+        "players_to_act": 3,
+        "position": "CO",
+        "pot": 2500000,
+        "seed": 0,
+        "stack": 2275000,
+        "street": "preflop",
+        "table_size": 8,
+        "to_call": 2000000
+      }
+    },
+    {
+      "admission_status": "admitted_source_reviewed_development_only",
+      "canonical_hand_id": "triton:19677185-f68d-4f6a-8fb5-e9d873c1982a",
+      "decision_id": "3d0e46bb1a2697cf91bab3c05370dd0fb2dc142c333b430193acb5482f8f1fd7",
+      "evidence_tier": "official_structured_source_independently_reviewed",
+      "expected": {
+        "action": "fold"
+      },
+      "fresh_holdout": false,
+      "group_id": "session:triton:tournament:ae031be0-c964-4a4a-8e68-d7e177574f1a",
+      "hand_id": "triton:19677185-f68d-4f6a-8fb5-e9d873c1982a",
+      "independent_review_path": "data/acquisition_resume/2026-11-01/triton_2026_review/per-row-review.json",
+      "independent_review_sha256": "9bfce95a2d66983f0cac4b7fda9d306cbb7d9bc17699b29ec78c83fd8e5554b9",
+      "inspection_status": "inspected",
+      "parent_ante_audit_path": "data/acquisition_resume/2026-11-01/ante-eligibility-diagnostic.json",
+      "policy_use": "development_only",
+      "record_hash": "824511b58db3b22c72b482b84ee6e61ba658106a07884e4282e8bb5f8c1f7d3e",
+      "session_id": "triton:tournament:ae031be0-c964-4a4a-8e68-d7e177574f1a",
+      "source": "https://prod-public-serverless.triton-poker.com/graphql?sourceHandId=19677185-f68d-4f6a-8fb5-e9d873c1982a",
+      "source_action_count": 11,
+      "source_action_index": 8,
+      "source_actual_player_count": 8,
+      "source_capture_path": "data/acquisition_resume/2026-11-01/triton_2026/raw/hands/19677185-f68d-4f6a-8fb5-e9d873c1982a.json",
+      "source_capture_sha256": "61565d70fb2894bd831851f34900849ac885569a0fae56aafdad2990db27975b",
+      "source_collector_manifest": "data/acquisition_resume/2026-11-01/triton_2026/manifest.json",
+      "source_decision_id": "triton:19677185-f68d-4f6a-8fb5-e9d873c1982a:action:8",
+      "source_episode_ids": [
+        "f28c0720-f7b1-471f-be4f-0d4d558d060d"
+      ],
+      "source_payload_sha256": "2ace52ef7c81077d10e89597da88f4bcd1d4547dbbc75c60741dd8e43228b51e",
+      "source_physical_capacity": 9,
+      "source_query_sha256": "62ad7be7eda254e2f8a3e79e59c421482ac60156552fe4bf6c4622f4ed4f9a50",
+      "source_request_path": "data/acquisition_resume/2026-11-01/triton_2026/raw/hands/19677185-f68d-4f6a-8fb5-e9d873c1982a.request.json",
+      "source_request_sha256": "831e2406e752253f40563e02ec5a050f7438abb13968038004392c3dc4cf603f",
+      "source_round_action_index": 8,
+      "source_round_index": 0,
+      "source_validation": "engine_replayed",
+      "stable_source_decision_key": "triton:19677185-f68d-4f6a-8fb5-e9d873c1982a:round:0:action:8",
+      "state": {
+        "big_blind": 150000,
+        "board": [],
+        "contestable_pot": 675000,
+        "current_bet": 0,
+        "history": [
+          {
+            "action": "raise",
+            "added": 300000,
+            "amount": 300000,
+            "player": "p2",
+            "position": "UTG",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p3",
+            "position": "MP",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p4",
+            "position": "MP",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p5",
+            "position": "MP",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p6",
+            "position": "CO",
+            "street": "preflop"
+          }
+        ],
+        "hole_cards": [
+          "Tc",
+          "8s"
+        ],
+        "legal_actions": [
+          "call",
+          "fold",
+          "raise"
+        ],
+        "max_raise_to": 2275000,
+        "min_raise_to": 450000,
+        "player_id": "p7",
+        "players_active": 4,
+        "players_to_act": 2,
+        "position": "BTN",
+        "pot": 675000,
+        "seed": 0,
+        "stack": 2275000,
+        "street": "preflop",
+        "table_size": 8,
+        "to_call": 300000
+      }
+    },
+    {
+      "admission_status": "admitted_source_reviewed_development_only",
+      "canonical_hand_id": "triton:2b3dd943-0396-4bd1-a9ff-a98c397f400d",
+      "decision_id": "85a681be314973abf04b780b55458edf7089fd5bf5dfbec66a89a6d8ef78ffab",
+      "evidence_tier": "official_structured_source_independently_reviewed",
+      "expected": {
+        "action": "fold"
+      },
+      "fresh_holdout": false,
+      "group_id": "session:triton:tournament:ae031be0-c964-4a4a-8e68-d7e177574f1a",
+      "hand_id": "triton:2b3dd943-0396-4bd1-a9ff-a98c397f400d",
+      "independent_review_path": "data/acquisition_resume/2026-11-01/triton_2026_review/per-row-review.json",
+      "independent_review_sha256": "9bfce95a2d66983f0cac4b7fda9d306cbb7d9bc17699b29ec78c83fd8e5554b9",
+      "inspection_status": "inspected",
+      "parent_ante_audit_path": "data/acquisition_resume/2026-11-01/ante-eligibility-diagnostic.json",
+      "policy_use": "development_only",
+      "record_hash": "54e5efad0a164fba66de5364f8b3895d66373ad181c9eee52075483d833237f9",
+      "session_id": "triton:tournament:ae031be0-c964-4a4a-8e68-d7e177574f1a",
+      "source": "https://prod-public-serverless.triton-poker.com/graphql?sourceHandId=2b3dd943-0396-4bd1-a9ff-a98c397f400d",
+      "source_action_count": 11,
+      "source_action_index": 5,
+      "source_actual_player_count": 7,
+      "source_capture_path": "data/acquisition_resume/2026-11-01/triton_2026/raw/hands/2b3dd943-0396-4bd1-a9ff-a98c397f400d.json",
+      "source_capture_sha256": "72cb11c6ec66e317ad419f9ad2cbbadace53cbf273b83fb2d9022081e41079a2",
+      "source_collector_manifest": "data/acquisition_resume/2026-11-01/triton_2026/manifest.json",
+      "source_decision_id": "triton:2b3dd943-0396-4bd1-a9ff-a98c397f400d:action:5",
+      "source_episode_ids": [
+        "f28c0720-f7b1-471f-be4f-0d4d558d060d"
+      ],
+      "source_payload_sha256": "6670c15e4e19aeff6961eb24992083ffb553a03309146392602e9ac94812c625",
+      "source_physical_capacity": 9,
+      "source_query_sha256": "62ad7be7eda254e2f8a3e79e59c421482ac60156552fe4bf6c4622f4ed4f9a50",
+      "source_request_path": "data/acquisition_resume/2026-11-01/triton_2026/raw/hands/2b3dd943-0396-4bd1-a9ff-a98c397f400d.request.json",
+      "source_request_sha256": "338a0dd338a1e7ccd5874322fdf73b9d471a2925e9e4c33761b9317070e878c4",
+      "source_round_action_index": 5,
+      "source_round_index": 0,
+      "source_validation": "engine_replayed",
+      "stable_source_decision_key": "triton:2b3dd943-0396-4bd1-a9ff-a98c397f400d:round:0:action:5",
+      "state": {
+        "big_blind": 250000,
+        "board": [],
+        "contestable_pot": 1125000,
+        "current_bet": 0,
+        "history": [
+          {
+            "action": "raise",
+            "added": 500000,
+            "amount": 500000,
+            "player": "p2",
+            "position": "UTG",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p3",
+            "position": "MP",
+            "street": "preflop"
+          }
+        ],
+        "hole_cards": [
+          "8c",
+          "2h"
+        ],
+        "legal_actions": [
+          "call",
+          "fold",
+          "raise"
+        ],
+        "max_raise_to": 2675000,
+        "min_raise_to": 750000,
+        "player_id": "p4",
+        "players_active": 6,
+        "players_to_act": 4,
+        "position": "MP",
+        "pot": 1125000,
+        "seed": 0,
+        "stack": 2675000,
+        "street": "preflop",
+        "table_size": 7,
+        "to_call": 500000
+      }
+    },
+    {
+      "admission_status": "admitted_source_reviewed_development_only",
+      "canonical_hand_id": "triton:2d41c50f-b038-4e92-8b2c-43ca82cec126",
+      "decision_id": "b85dc2cf31ce035859dc1eb0a9789175ea309ec8514f80fd58021f87f7d8c683",
+      "evidence_tier": "official_structured_source_independently_reviewed",
+      "expected": {
+        "action": "fold"
+      },
+      "fresh_holdout": false,
+      "group_id": "session:triton:tournament:ae031be0-c964-4a4a-8e68-d7e177574f1a",
+      "hand_id": "triton:2d41c50f-b038-4e92-8b2c-43ca82cec126",
+      "independent_review_path": "data/acquisition_resume/2026-11-01/triton_2026_review/per-row-review.json",
+      "independent_review_sha256": "9bfce95a2d66983f0cac4b7fda9d306cbb7d9bc17699b29ec78c83fd8e5554b9",
+      "inspection_status": "inspected",
+      "parent_ante_audit_path": "data/acquisition_resume/2026-11-01/ante-eligibility-diagnostic.json",
+      "policy_use": "development_only",
+      "record_hash": "7690f76bf6357be96e0bef5ff9c82fc818e5afc38932bdef5ff5df0818eb5fee",
+      "session_id": "triton:tournament:ae031be0-c964-4a4a-8e68-d7e177574f1a",
+      "source": "https://prod-public-serverless.triton-poker.com/graphql?sourceHandId=2d41c50f-b038-4e92-8b2c-43ca82cec126",
+      "source_action_count": 16,
+      "source_action_index": 8,
+      "source_actual_player_count": 8,
+      "source_capture_path": "data/acquisition_resume/2026-11-01/triton_2026/raw/hands/2d41c50f-b038-4e92-8b2c-43ca82cec126.json",
+      "source_capture_sha256": "0511f6937b5929c2634f427927b5f7bc38505b550d34346177507d4430d4a228",
+      "source_collector_manifest": "data/acquisition_resume/2026-11-01/triton_2026/manifest.json",
+      "source_decision_id": "triton:2d41c50f-b038-4e92-8b2c-43ca82cec126:action:8",
+      "source_episode_ids": [
+        "f28c0720-f7b1-471f-be4f-0d4d558d060d"
+      ],
+      "source_payload_sha256": "81d81582c7487d562b255eed2fc236a7600ca53d67328d98956757749eb01cf3",
+      "source_physical_capacity": 9,
+      "source_query_sha256": "62ad7be7eda254e2f8a3e79e59c421482ac60156552fe4bf6c4622f4ed4f9a50",
+      "source_request_path": "data/acquisition_resume/2026-11-01/triton_2026/raw/hands/2d41c50f-b038-4e92-8b2c-43ca82cec126.request.json",
+      "source_request_sha256": "e7bd1b9d31ecc60091627a1a504edd8b42e63a730c6f5b78ae194c1693c8a700",
+      "source_round_action_index": 8,
+      "source_round_index": 0,
+      "source_validation": "engine_replayed",
+      "stable_source_decision_key": "triton:2d41c50f-b038-4e92-8b2c-43ca82cec126:round:0:action:8",
+      "state": {
+        "big_blind": 150000,
+        "board": [],
+        "contestable_pot": 675000,
+        "current_bet": 0,
+        "history": [
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p2",
+            "position": "UTG",
+            "street": "preflop"
+          },
+          {
+            "action": "raise",
+            "added": 300000,
+            "amount": 300000,
+            "player": "p3",
+            "position": "MP",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p4",
+            "position": "MP",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p5",
+            "position": "MP",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p6",
+            "position": "CO",
+            "street": "preflop"
+          }
+        ],
+        "hole_cards": [
+          "9d",
+          "7d"
+        ],
+        "legal_actions": [
+          "call",
+          "fold",
+          "raise"
+        ],
+        "max_raise_to": 2275000,
+        "min_raise_to": 450000,
+        "player_id": "p7",
+        "players_active": 4,
+        "players_to_act": 2,
+        "position": "BTN",
+        "pot": 675000,
+        "seed": 0,
+        "stack": 2275000,
+        "street": "preflop",
+        "table_size": 8,
+        "to_call": 300000
+      }
+    },
+    {
+      "admission_status": "admitted_source_reviewed_development_only",
+      "canonical_hand_id": "triton:3202f078-1b51-4de2-9e20-72a58e05a8a4",
+      "decision_id": "39738a7f0ea04800afc9215e14f459ac1e18bf398ce7311f488be81a4f93f73c",
+      "evidence_tier": "official_structured_source_independently_reviewed",
+      "expected": {
+        "action": "fold"
+      },
+      "fresh_holdout": false,
+      "group_id": "session:triton:tournament:ae031be0-c964-4a4a-8e68-d7e177574f1a",
+      "hand_id": "triton:3202f078-1b51-4de2-9e20-72a58e05a8a4",
+      "independent_review_path": "data/acquisition_resume/2026-11-01/triton_2026_review/per-row-review.json",
+      "independent_review_sha256": "9bfce95a2d66983f0cac4b7fda9d306cbb7d9bc17699b29ec78c83fd8e5554b9",
+      "inspection_status": "inspected",
+      "parent_ante_audit_path": "data/acquisition_resume/2026-11-01/ante-eligibility-diagnostic.json",
+      "policy_use": "development_only",
+      "record_hash": "118e518e4cb9b0f28cc6f910a8543010db441441e11d21189c653ca57793e4b7",
+      "session_id": "triton:tournament:ae031be0-c964-4a4a-8e68-d7e177574f1a",
+      "source": "https://prod-public-serverless.triton-poker.com/graphql?sourceHandId=3202f078-1b51-4de2-9e20-72a58e05a8a4",
+      "source_action_count": 11,
+      "source_action_index": 10,
+      "source_actual_player_count": 7,
+      "source_capture_path": "data/acquisition_resume/2026-11-01/triton_2026/raw/hands/3202f078-1b51-4de2-9e20-72a58e05a8a4.json",
+      "source_capture_sha256": "1474a8e7a2ad4bcdca6c77874f4d2e78ab15deac25541d50efd86052ead1638d",
+      "source_collector_manifest": "data/acquisition_resume/2026-11-01/triton_2026/manifest.json",
+      "source_decision_id": "triton:3202f078-1b51-4de2-9e20-72a58e05a8a4:action:10",
+      "source_episode_ids": [
+        "f28c0720-f7b1-471f-be4f-0d4d558d060d"
+      ],
+      "source_payload_sha256": "610081ad4b076a77a51f80fbb13f93d12221e391d4ece705cd935c81307464e4",
+      "source_physical_capacity": 9,
+      "source_query_sha256": "62ad7be7eda254e2f8a3e79e59c421482ac60156552fe4bf6c4622f4ed4f9a50",
+      "source_request_path": "data/acquisition_resume/2026-11-01/triton_2026/raw/hands/3202f078-1b51-4de2-9e20-72a58e05a8a4.request.json",
+      "source_request_sha256": "a9a700e9a4503df248376b773f22b5ab82bf65f13b6294b2f8eef4af11ed9fae",
+      "source_round_action_index": 10,
+      "source_round_index": 0,
+      "source_validation": "engine_replayed",
+      "stable_source_decision_key": "triton:3202f078-1b51-4de2-9e20-72a58e05a8a4:round:0:action:10",
+      "state": {
+        "big_blind": 250000,
+        "board": [],
+        "contestable_pot": 2525000,
+        "current_bet": 500000,
+        "history": [
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p2",
+            "position": "UTG",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p3",
+            "position": "MP",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p4",
+            "position": "MP",
+            "street": "preflop"
+          },
+          {
+            "action": "raise",
+            "added": 500000,
+            "amount": 500000,
+            "player": "p5",
+            "position": "CO",
+            "street": "preflop"
+          },
+          {
+            "action": "raise",
+            "added": 1400000,
+            "amount": 1400000,
+            "player": "p6",
+            "position": "BTN",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 125000,
+            "player": "p0",
+            "position": "SB",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 250000,
+            "player": "p1",
+            "position": "BB",
+            "street": "preflop"
+          }
+        ],
+        "hole_cards": [
+          "Qs",
+          "Jd"
+        ],
+        "legal_actions": [
+          "call",
+          "fold",
+          "raise"
+        ],
+        "max_raise_to": 3175000,
+        "min_raise_to": 2300000,
+        "player_id": "p5",
+        "players_active": 2,
+        "players_to_act": 0,
+        "position": "CO",
+        "pot": 2525000,
+        "seed": 0,
+        "stack": 2675000,
+        "street": "preflop",
+        "table_size": 7,
+        "to_call": 900000
+      }
+    },
+    {
+      "admission_status": "admitted_source_reviewed_development_only",
+      "canonical_hand_id": "triton:38f21d2a-7d7b-4c51-90f1-09d60b7978bd",
+      "decision_id": "e13483bf0477ebf7e4d6043fcdc00766ac9e8db041809f99f8253d44e86da36a",
+      "evidence_tier": "official_structured_source_independently_reviewed",
+      "expected": {
+        "action": "fold"
+      },
+      "fresh_holdout": false,
+      "group_id": "session:triton:tournament:ae031be0-c964-4a4a-8e68-d7e177574f1a",
+      "hand_id": "triton:38f21d2a-7d7b-4c51-90f1-09d60b7978bd",
+      "independent_review_path": "data/acquisition_resume/2026-11-01/triton_2026_review/per-row-review.json",
+      "independent_review_sha256": "9bfce95a2d66983f0cac4b7fda9d306cbb7d9bc17699b29ec78c83fd8e5554b9",
+      "inspection_status": "inspected",
+      "parent_ante_audit_path": "data/acquisition_resume/2026-11-01/ante-eligibility-diagnostic.json",
+      "policy_use": "development_only",
+      "record_hash": "7cbc44fcb97b767afbcc66a56eda8b59f72a0a513097cd5f03e643a98abe8199",
+      "session_id": "triton:tournament:ae031be0-c964-4a4a-8e68-d7e177574f1a",
+      "source": "https://prod-public-serverless.triton-poker.com/graphql?sourceHandId=38f21d2a-7d7b-4c51-90f1-09d60b7978bd",
+      "source_action_count": 10,
+      "source_action_index": 8,
+      "source_actual_player_count": 7,
+      "source_capture_path": "data/acquisition_resume/2026-11-01/triton_2026/raw/hands/38f21d2a-7d7b-4c51-90f1-09d60b7978bd.json",
+      "source_capture_sha256": "0a9da216c2a3d469fe970ece2dd2cc3a239ea5cabe7bc987174519e244788f76",
+      "source_collector_manifest": "data/acquisition_resume/2026-11-01/triton_2026/manifest.json",
+      "source_decision_id": "triton:38f21d2a-7d7b-4c51-90f1-09d60b7978bd:action:8",
+      "source_episode_ids": [
+        "f28c0720-f7b1-471f-be4f-0d4d558d060d"
+      ],
+      "source_payload_sha256": "e808010361503142c4d5d16cd006cd5b6cb79ed5ae3c346bf3fe7f71334669a6",
+      "source_physical_capacity": 9,
+      "source_query_sha256": "62ad7be7eda254e2f8a3e79e59c421482ac60156552fe4bf6c4622f4ed4f9a50",
+      "source_request_path": "data/acquisition_resume/2026-11-01/triton_2026/raw/hands/38f21d2a-7d7b-4c51-90f1-09d60b7978bd.request.json",
+      "source_request_sha256": "e2694202afeaeaed7c6bf1e1346782d304b5891dc1794d0a1e5ffe6b0e760128",
+      "source_round_action_index": 8,
+      "source_round_index": 0,
+      "source_validation": "engine_replayed",
+      "stable_source_decision_key": "triton:38f21d2a-7d7b-4c51-90f1-09d60b7978bd:round:0:action:8",
+      "state": {
+        "big_blind": 200000,
+        "board": [],
+        "contestable_pot": 2875000,
+        "current_bet": 100000,
+        "history": [
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p2",
+            "position": "UTG",
+            "street": "preflop"
+          },
+          {
+            "action": "raise",
+            "added": 2500000,
+            "amount": 2500000,
+            "player": "p3",
+            "position": "MP",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p4",
+            "position": "MP",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p5",
+            "position": "CO",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p6",
+            "position": "BTN",
+            "street": "preflop"
+          }
+        ],
+        "hole_cards": [
+          "Qc",
+          "6s"
+        ],
+        "legal_actions": [
+          "call",
+          "fold"
+        ],
+        "max_raise_to": 0,
+        "min_raise_to": 0,
+        "player_id": "p0",
+        "players_active": 3,
+        "players_to_act": 1,
+        "position": "SB",
+        "pot": 3000000,
+        "seed": 0,
+        "stack": 2275000,
+        "street": "preflop",
+        "table_size": 7,
+        "to_call": 2275000
+      }
+    },
+    {
+      "admission_status": "admitted_source_reviewed_development_only",
+      "canonical_hand_id": "triton:3b25dfbe-68f9-4bb1-81a4-02eb39f1996c",
+      "decision_id": "7d3feed3e1e6bcc27e048ea8e355b2c9045e0200a8232b46ed83562e2342993c",
+      "evidence_tier": "official_structured_source_independently_reviewed",
+      "expected": {
+        "action": "fold"
+      },
+      "fresh_holdout": false,
+      "group_id": "session:triton:tournament:ae031be0-c964-4a4a-8e68-d7e177574f1a",
+      "hand_id": "triton:3b25dfbe-68f9-4bb1-81a4-02eb39f1996c",
+      "independent_review_path": "data/acquisition_resume/2026-11-01/triton_2026_review/per-row-review.json",
+      "independent_review_sha256": "9bfce95a2d66983f0cac4b7fda9d306cbb7d9bc17699b29ec78c83fd8e5554b9",
+      "inspection_status": "inspected",
+      "parent_ante_audit_path": "data/acquisition_resume/2026-11-01/ante-eligibility-diagnostic.json",
+      "policy_use": "development_only",
+      "record_hash": "2ebcf175219420347bd628ea065a2cd1161fd345a51d08a3636e0e1324834f72",
+      "session_id": "triton:tournament:ae031be0-c964-4a4a-8e68-d7e177574f1a",
+      "source": "https://prod-public-serverless.triton-poker.com/graphql?sourceHandId=3b25dfbe-68f9-4bb1-81a4-02eb39f1996c",
+      "source_action_count": 12,
+      "source_action_index": 9,
+      "source_actual_player_count": 8,
+      "source_capture_path": "data/acquisition_resume/2026-11-01/triton_2026/raw/hands/3b25dfbe-68f9-4bb1-81a4-02eb39f1996c.json",
+      "source_capture_sha256": "89c72b4c6e372d2c34a2e5a9be1199a2e308fd4faf89dbb5dac08d984563b3b2",
+      "source_collector_manifest": "data/acquisition_resume/2026-11-01/triton_2026/manifest.json",
+      "source_decision_id": "triton:3b25dfbe-68f9-4bb1-81a4-02eb39f1996c:action:9",
+      "source_episode_ids": [
+        "f28c0720-f7b1-471f-be4f-0d4d558d060d"
+      ],
+      "source_payload_sha256": "0adc5d84d01e560639bfee7cff98687f3b7c99ff29567e1aa21a9228a4f9c0ba",
+      "source_physical_capacity": 9,
+      "source_query_sha256": "62ad7be7eda254e2f8a3e79e59c421482ac60156552fe4bf6c4622f4ed4f9a50",
+      "source_request_path": "data/acquisition_resume/2026-11-01/triton_2026/raw/hands/3b25dfbe-68f9-4bb1-81a4-02eb39f1996c.request.json",
+      "source_request_sha256": "98ba5f030da086e52f706f847941d34e946ff36581fc1a9016c4c4363e8deafc",
+      "source_round_action_index": 9,
+      "source_round_index": 0,
+      "source_validation": "engine_replayed",
+      "stable_source_decision_key": "triton:3b25dfbe-68f9-4bb1-81a4-02eb39f1996c:round:0:action:9",
+      "state": {
+        "big_blind": 150000,
+        "board": [],
+        "contestable_pot": 1375000,
+        "current_bet": 75000,
+        "history": [
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p2",
+            "position": "UTG",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p3",
+            "position": "MP",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p4",
+            "position": "MP",
+            "street": "preflop"
+          },
+          {
+            "action": "raise",
+            "added": 300000,
+            "amount": 300000,
+            "player": "p5",
+            "position": "MP",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p6",
+            "position": "CO",
+            "street": "preflop"
+          },
+          {
+            "action": "raise",
+            "added": 700000,
+            "amount": 700000,
+            "player": "p7",
+            "position": "BTN",
+            "street": "preflop"
+          }
+        ],
+        "hole_cards": [
+          "8h",
+          "3d"
+        ],
+        "legal_actions": [
+          "call",
+          "fold",
+          "raise"
+        ],
+        "max_raise_to": 2350000,
+        "min_raise_to": 1100000,
+        "player_id": "p0",
+        "players_active": 4,
+        "players_to_act": 2,
+        "position": "SB",
+        "pot": 1375000,
+        "seed": 0,
+        "stack": 2275000,
+        "street": "preflop",
+        "table_size": 8,
+        "to_call": 625000
+      }
+    },
+    {
+      "admission_status": "admitted_source_reviewed_development_only",
+      "canonical_hand_id": "triton:3e6bda8b-d9fe-48f4-b8d7-2bd856ced62a",
+      "decision_id": "ebb194ce2fa6796d2a34250de6734b479078309fae26204a1cb5b6d57a43c962",
+      "evidence_tier": "official_structured_source_independently_reviewed",
+      "expected": {
+        "action": "raise",
+        "amount": 2275000
+      },
+      "fresh_holdout": false,
+      "group_id": "session:triton:tournament:ae031be0-c964-4a4a-8e68-d7e177574f1a",
+      "hand_id": "triton:3e6bda8b-d9fe-48f4-b8d7-2bd856ced62a",
+      "independent_review_path": "data/acquisition_resume/2026-11-01/triton_2026_review/per-row-review.json",
+      "independent_review_sha256": "9bfce95a2d66983f0cac4b7fda9d306cbb7d9bc17699b29ec78c83fd8e5554b9",
+      "inspection_status": "inspected",
+      "parent_ante_audit_path": "data/acquisition_resume/2026-11-01/ante-eligibility-diagnostic.json",
+      "policy_use": "development_only",
+      "record_hash": "1794b852fe835fbf607284e7d19950632efed57b7859cc9b6c3a964954b6b785",
+      "session_id": "triton:tournament:ae031be0-c964-4a4a-8e68-d7e177574f1a",
+      "source": "https://prod-public-serverless.triton-poker.com/graphql?sourceHandId=3e6bda8b-d9fe-48f4-b8d7-2bd856ced62a",
+      "source_action_count": 11,
+      "source_action_index": 7,
+      "source_actual_player_count": 7,
+      "source_capture_path": "data/acquisition_resume/2026-11-01/triton_2026/raw/hands/3e6bda8b-d9fe-48f4-b8d7-2bd856ced62a.json",
+      "source_capture_sha256": "e8c93a92032ee35440cd2177fa452083168f7bd36b7414f5966cea26c7732081",
+      "source_collector_manifest": "data/acquisition_resume/2026-11-01/triton_2026/manifest.json",
+      "source_decision_id": "triton:3e6bda8b-d9fe-48f4-b8d7-2bd856ced62a:action:7",
+      "source_episode_ids": [
+        "f28c0720-f7b1-471f-be4f-0d4d558d060d"
+      ],
+      "source_payload_sha256": "da6711ecd50fa6cd78fd1c0a326dafb7dd1b43100e626b79a69a13c35b742198",
+      "source_physical_capacity": 9,
+      "source_query_sha256": "62ad7be7eda254e2f8a3e79e59c421482ac60156552fe4bf6c4622f4ed4f9a50",
+      "source_request_path": "data/acquisition_resume/2026-11-01/triton_2026/raw/hands/3e6bda8b-d9fe-48f4-b8d7-2bd856ced62a.request.json",
+      "source_request_sha256": "20c31abc40f66512f1887392834c601da26a8fb34f83c62c5c1549c32e674da1",
+      "source_round_action_index": 7,
+      "source_round_index": 0,
+      "source_validation": "engine_replayed",
+      "stable_source_decision_key": "triton:3e6bda8b-d9fe-48f4-b8d7-2bd856ced62a:round:0:action:7",
+      "state": {
+        "big_blind": 200000,
+        "board": [],
+        "contestable_pot": 900000,
+        "current_bet": 0,
+        "history": [
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p2",
+            "position": "UTG",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p3",
+            "position": "MP",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p4",
+            "position": "MP",
+            "street": "preflop"
+          },
+          {
+            "action": "raise",
+            "added": 400000,
+            "amount": 400000,
+            "player": "p5",
+            "position": "CO",
+            "street": "preflop"
+          }
+        ],
+        "hole_cards": [
+          "6c",
+          "6d"
+        ],
+        "legal_actions": [
+          "call",
+          "fold",
+          "raise"
+        ],
+        "max_raise_to": 2275000,
+        "min_raise_to": 600000,
+        "player_id": "p6",
+        "players_active": 4,
+        "players_to_act": 2,
+        "position": "BTN",
+        "pot": 900000,
+        "seed": 0,
+        "stack": 2275000,
+        "street": "preflop",
+        "table_size": 7,
+        "to_call": 400000
+      }
+    },
+    {
+      "admission_status": "admitted_source_reviewed_development_only",
+      "canonical_hand_id": "triton:55b7ab72-8ca3-4e11-a8c9-5cfaa319da3b",
+      "decision_id": "6940ca5052b4e76ab1dc4a3694788db9b1935a5b633c7316c0d5a31edbf0c7d5",
+      "evidence_tier": "official_structured_source_independently_reviewed",
+      "expected": {
+        "action": "fold"
+      },
+      "fresh_holdout": false,
+      "group_id": "session:triton:tournament:ae031be0-c964-4a4a-8e68-d7e177574f1a",
+      "hand_id": "triton:55b7ab72-8ca3-4e11-a8c9-5cfaa319da3b",
+      "independent_review_path": "data/acquisition_resume/2026-11-01/triton_2026_review/per-row-review.json",
+      "independent_review_sha256": "9bfce95a2d66983f0cac4b7fda9d306cbb7d9bc17699b29ec78c83fd8e5554b9",
+      "inspection_status": "inspected",
+      "parent_ante_audit_path": "data/acquisition_resume/2026-11-01/ante-eligibility-diagnostic.json",
+      "policy_use": "development_only",
+      "record_hash": "492ea66cb71de5abdeb8ec1a5629dfb50e7c031e29a9ded66974d75a5ff6a881",
+      "session_id": "triton:tournament:ae031be0-c964-4a4a-8e68-d7e177574f1a",
+      "source": "https://prod-public-serverless.triton-poker.com/graphql?sourceHandId=55b7ab72-8ca3-4e11-a8c9-5cfaa319da3b",
+      "source_action_count": 12,
+      "source_action_index": 4,
+      "source_actual_player_count": 7,
+      "source_capture_path": "data/acquisition_resume/2026-11-01/triton_2026/raw/hands/55b7ab72-8ca3-4e11-a8c9-5cfaa319da3b.json",
+      "source_capture_sha256": "131cd119f61a1f6c505fd281f64e3318c452360103ece021196279dd74c96056",
+      "source_collector_manifest": "data/acquisition_resume/2026-11-01/triton_2026/manifest.json",
+      "source_decision_id": "triton:55b7ab72-8ca3-4e11-a8c9-5cfaa319da3b:action:4",
+      "source_episode_ids": [
+        "f28c0720-f7b1-471f-be4f-0d4d558d060d"
+      ],
+      "source_payload_sha256": "0b76ae3960e40c13ad95e39cac27cbf82c0ee26abc44badb56dcd19c1f6ce3a3",
+      "source_physical_capacity": 9,
+      "source_query_sha256": "62ad7be7eda254e2f8a3e79e59c421482ac60156552fe4bf6c4622f4ed4f9a50",
+      "source_request_path": "data/acquisition_resume/2026-11-01/triton_2026/raw/hands/55b7ab72-8ca3-4e11-a8c9-5cfaa319da3b.request.json",
+      "source_request_sha256": "b340d258725492734d536a8f402f2ce5fffacf15e5eb584e6b0f1f3e675dfff7",
+      "source_round_action_index": 4,
+      "source_round_index": 0,
+      "source_validation": "engine_replayed",
+      "stable_source_decision_key": "triton:55b7ab72-8ca3-4e11-a8c9-5cfaa319da3b:round:0:action:4",
+      "state": {
+        "big_blind": 200000,
+        "board": [],
+        "contestable_pot": 900000,
+        "current_bet": 0,
+        "history": [
+          {
+            "action": "raise",
+            "added": 400000,
+            "amount": 400000,
+            "player": "p2",
+            "position": "UTG",
+            "street": "preflop"
+          }
+        ],
+        "hole_cards": [
+          "Kc",
+          "6s"
+        ],
+        "legal_actions": [
+          "call",
+          "fold",
+          "raise"
+        ],
+        "max_raise_to": 2275000,
+        "min_raise_to": 600000,
+        "player_id": "p3",
+        "players_active": 7,
+        "players_to_act": 5,
+        "position": "MP",
+        "pot": 900000,
+        "seed": 0,
+        "stack": 2275000,
+        "street": "preflop",
+        "table_size": 7,
+        "to_call": 400000
+      }
+    },
+    {
+      "admission_status": "admitted_source_reviewed_development_only",
+      "canonical_hand_id": "triton:65a33886-e2fd-47a5-9a96-cb7081b909cb",
+      "decision_id": "882b2dbc0f6be52d6fb3fbff04ca7e147577cb1e442f53ed1f21a5ac43462108",
+      "evidence_tier": "official_structured_source_independently_reviewed",
+      "expected": {
+        "action": "call"
+      },
+      "fresh_holdout": false,
+      "group_id": "session:triton:tournament:ae031be0-c964-4a4a-8e68-d7e177574f1a",
+      "hand_id": "triton:65a33886-e2fd-47a5-9a96-cb7081b909cb",
+      "independent_review_path": "data/acquisition_resume/2026-11-01/triton_2026_review/per-row-review.json",
+      "independent_review_sha256": "9bfce95a2d66983f0cac4b7fda9d306cbb7d9bc17699b29ec78c83fd8e5554b9",
+      "inspection_status": "inspected",
+      "parent_ante_audit_path": "data/acquisition_resume/2026-11-01/ante-eligibility-diagnostic.json",
+      "policy_use": "development_only",
+      "record_hash": "f9619320cd42b75bed6ca3e6f426c770acc2dee2d6e7b0f0cf4cf51a33b991b1",
+      "session_id": "triton:tournament:ae031be0-c964-4a4a-8e68-d7e177574f1a",
+      "source": "https://prod-public-serverless.triton-poker.com/graphql?sourceHandId=65a33886-e2fd-47a5-9a96-cb7081b909cb",
+      "source_action_count": 13,
+      "source_action_index": 10,
+      "source_actual_player_count": 8,
+      "source_capture_path": "data/acquisition_resume/2026-11-01/triton_2026/raw/hands/65a33886-e2fd-47a5-9a96-cb7081b909cb.json",
+      "source_capture_sha256": "4f1583f28c78c5e4956c70b780fec5e7a20e8556b36399104c9f750ed460bf00",
+      "source_collector_manifest": "data/acquisition_resume/2026-11-01/triton_2026/manifest.json",
+      "source_decision_id": "triton:65a33886-e2fd-47a5-9a96-cb7081b909cb:action:10",
+      "source_episode_ids": [
+        "f28c0720-f7b1-471f-be4f-0d4d558d060d"
+      ],
+      "source_payload_sha256": "d05529605f7876c2b039828aa233ea3597d8f547e25874034984a25ff07705e9",
+      "source_physical_capacity": 9,
+      "source_query_sha256": "62ad7be7eda254e2f8a3e79e59c421482ac60156552fe4bf6c4622f4ed4f9a50",
+      "source_request_path": "data/acquisition_resume/2026-11-01/triton_2026/raw/hands/65a33886-e2fd-47a5-9a96-cb7081b909cb.request.json",
+      "source_request_sha256": "c80008785e0824cc420f3565d83cb3fa1494de57caa35b5f29b34f38c18dd1dc",
+      "source_round_action_index": 10,
+      "source_round_index": 0,
+      "source_validation": "engine_replayed",
+      "stable_source_decision_key": "triton:65a33886-e2fd-47a5-9a96-cb7081b909cb:round:0:action:10",
+      "state": {
+        "big_blind": 150000,
+        "board": [],
+        "contestable_pot": 750000,
+        "current_bet": 150000,
+        "history": [
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p2",
+            "position": "UTG",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p3",
+            "position": "MP",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p4",
+            "position": "MP",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p5",
+            "position": "MP",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p6",
+            "position": "CO",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p7",
+            "position": "BTN",
+            "street": "preflop"
+          },
+          {
+            "action": "raise",
+            "added": 375000,
+            "amount": 450000,
+            "player": "p0",
+            "position": "SB",
+            "street": "preflop"
+          }
+        ],
+        "hole_cards": [
+          "Ts",
+          "4s"
+        ],
+        "legal_actions": [
+          "call",
+          "fold",
+          "raise"
+        ],
+        "max_raise_to": 2800000,
+        "min_raise_to": 750000,
+        "player_id": "p1",
+        "players_active": 2,
+        "players_to_act": 0,
+        "position": "BB",
+        "pot": 750000,
+        "seed": 0,
+        "stack": 2650000,
+        "street": "preflop",
+        "table_size": 8,
+        "to_call": 300000
+      }
+    },
+    {
+      "admission_status": "admitted_source_reviewed_development_only",
+      "canonical_hand_id": "triton:65a33886-e2fd-47a5-9a96-cb7081b909cb",
+      "decision_id": "08e16796c00d022856e3a48e13bc2a017473da052efb475c4ba14ffad8c560c3",
+      "evidence_tier": "official_structured_source_independently_reviewed",
+      "expected": {
+        "action": "fold"
+      },
+      "fresh_holdout": false,
+      "group_id": "session:triton:tournament:ae031be0-c964-4a4a-8e68-d7e177574f1a",
+      "hand_id": "triton:65a33886-e2fd-47a5-9a96-cb7081b909cb",
+      "independent_review_path": "data/acquisition_resume/2026-11-01/triton_2026_review/per-row-review.json",
+      "independent_review_sha256": "9bfce95a2d66983f0cac4b7fda9d306cbb7d9bc17699b29ec78c83fd8e5554b9",
+      "inspection_status": "inspected",
+      "parent_ante_audit_path": "data/acquisition_resume/2026-11-01/ante-eligibility-diagnostic.json",
+      "policy_use": "development_only",
+      "record_hash": "85af195829cfb58a7539b09c8f8d08930bdef61b38ff270d1f8e6a6dea5d8220",
+      "session_id": "triton:tournament:ae031be0-c964-4a4a-8e68-d7e177574f1a",
+      "source": "https://prod-public-serverless.triton-poker.com/graphql?sourceHandId=65a33886-e2fd-47a5-9a96-cb7081b909cb",
+      "source_action_count": 13,
+      "source_action_index": 12,
+      "source_actual_player_count": 8,
+      "source_capture_path": "data/acquisition_resume/2026-11-01/triton_2026/raw/hands/65a33886-e2fd-47a5-9a96-cb7081b909cb.json",
+      "source_capture_sha256": "4f1583f28c78c5e4956c70b780fec5e7a20e8556b36399104c9f750ed460bf00",
+      "source_collector_manifest": "data/acquisition_resume/2026-11-01/triton_2026/manifest.json",
+      "source_decision_id": "triton:65a33886-e2fd-47a5-9a96-cb7081b909cb:action:12",
+      "source_episode_ids": [
+        "f28c0720-f7b1-471f-be4f-0d4d558d060d"
+      ],
+      "source_payload_sha256": "d05529605f7876c2b039828aa233ea3597d8f547e25874034984a25ff07705e9",
+      "source_physical_capacity": 9,
+      "source_query_sha256": "62ad7be7eda254e2f8a3e79e59c421482ac60156552fe4bf6c4622f4ed4f9a50",
+      "source_request_path": "data/acquisition_resume/2026-11-01/triton_2026/raw/hands/65a33886-e2fd-47a5-9a96-cb7081b909cb.request.json",
+      "source_request_sha256": "c80008785e0824cc420f3565d83cb3fa1494de57caa35b5f29b34f38c18dd1dc",
+      "source_round_action_index": 1,
+      "source_round_index": 1,
+      "source_validation": "engine_replayed",
+      "stable_source_decision_key": "triton:65a33886-e2fd-47a5-9a96-cb7081b909cb:round:1:action:1",
+      "state": {
+        "big_blind": 150000,
+        "board": [
+          "2s",
+          "Qh",
+          "2c"
+        ],
+        "contestable_pot": 1300000,
+        "current_bet": 0,
+        "history": [
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p2",
+            "position": "UTG",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p3",
+            "position": "MP",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p4",
+            "position": "MP",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p5",
+            "position": "MP",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p6",
+            "position": "CO",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p7",
+            "position": "BTN",
+            "street": "preflop"
+          },
+          {
+            "action": "raise",
+            "added": 375000,
+            "amount": 450000,
+            "player": "p0",
+            "position": "SB",
+            "street": "preflop"
+          },
+          {
+            "action": "call",
+            "added": 300000,
+            "amount": 450000,
+            "player": "p1",
+            "position": "BB",
+            "street": "preflop"
+          },
+          {
+            "action": "raise",
+            "added": 250000,
+            "amount": 250000,
+            "player": "p0",
+            "position": "SB",
+            "street": "flop"
+          }
+        ],
+        "hole_cards": [
+          "Ts",
+          "4s"
+        ],
+        "legal_actions": [
+          "call",
+          "fold",
+          "raise"
+        ],
+        "max_raise_to": 2350000,
+        "min_raise_to": 500000,
+        "player_id": "p1",
+        "players_active": 2,
+        "players_to_act": 0,
+        "position": "BB",
+        "pot": 1300000,
+        "seed": 0,
+        "stack": 2350000,
+        "street": "flop",
+        "table_size": 8,
+        "to_call": 250000
+      }
+    },
+    {
+      "admission_status": "admitted_source_reviewed_development_only",
+      "canonical_hand_id": "triton:6d4f5371-4ec3-4740-b8e9-ce85ec984568",
+      "decision_id": "015bcd0e16ecf1fbb57afd19381d4c68099006936fc2835195a6201233a6bf5e",
+      "evidence_tier": "official_structured_source_independently_reviewed",
+      "expected": {
+        "action": "fold"
+      },
+      "fresh_holdout": false,
+      "group_id": "session:triton:tournament:ae031be0-c964-4a4a-8e68-d7e177574f1a",
+      "hand_id": "triton:6d4f5371-4ec3-4740-b8e9-ce85ec984568",
+      "independent_review_path": "data/acquisition_resume/2026-11-01/triton_2026_review/per-row-review.json",
+      "independent_review_sha256": "9bfce95a2d66983f0cac4b7fda9d306cbb7d9bc17699b29ec78c83fd8e5554b9",
+      "inspection_status": "inspected",
+      "parent_ante_audit_path": "data/acquisition_resume/2026-11-01/ante-eligibility-diagnostic.json",
+      "policy_use": "development_only",
+      "record_hash": "7d26f02436e57b028c68db148f4e4f2b3bae65d0c76b6eb8daf619c9120fc151",
+      "session_id": "triton:tournament:ae031be0-c964-4a4a-8e68-d7e177574f1a",
+      "source": "https://prod-public-serverless.triton-poker.com/graphql?sourceHandId=6d4f5371-4ec3-4740-b8e9-ce85ec984568",
+      "source_action_count": 10,
+      "source_action_index": 7,
+      "source_actual_player_count": 7,
+      "source_capture_path": "data/acquisition_resume/2026-11-01/triton_2026/raw/hands/6d4f5371-4ec3-4740-b8e9-ce85ec984568.json",
+      "source_capture_sha256": "2c9341757ba4dd70643cc62119d9b0a92f71f55bdd0ce48710fb6ce046952a59",
+      "source_collector_manifest": "data/acquisition_resume/2026-11-01/triton_2026/manifest.json",
+      "source_decision_id": "triton:6d4f5371-4ec3-4740-b8e9-ce85ec984568:action:7",
+      "source_episode_ids": [
+        "f28c0720-f7b1-471f-be4f-0d4d558d060d"
+      ],
+      "source_payload_sha256": "66dde1f39fdf83bc79a7e86ef73fef4acb5adae899add816b5ea1054a43e01ed",
+      "source_physical_capacity": 9,
+      "source_query_sha256": "62ad7be7eda254e2f8a3e79e59c421482ac60156552fe4bf6c4622f4ed4f9a50",
+      "source_request_path": "data/acquisition_resume/2026-11-01/triton_2026/raw/hands/6d4f5371-4ec3-4740-b8e9-ce85ec984568.request.json",
+      "source_request_sha256": "2c774762a473603ae5587d6d3bde814b3b638705245e920ec22897c51aab0607",
+      "source_round_action_index": 7,
+      "source_round_index": 0,
+      "source_validation": "engine_replayed",
+      "stable_source_decision_key": "triton:6d4f5371-4ec3-4740-b8e9-ce85ec984568:round:0:action:7",
+      "state": {
+        "big_blind": 250000,
+        "board": [],
+        "contestable_pot": 2025000,
+        "current_bet": 0,
+        "history": [
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p2",
+            "position": "UTG",
+            "street": "preflop"
+          },
+          {
+            "action": "raise",
+            "added": 1400000,
+            "amount": 1400000,
+            "player": "p3",
+            "position": "MP",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p4",
+            "position": "MP",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p5",
+            "position": "CO",
+            "street": "preflop"
+          }
+        ],
+        "hole_cards": [
+          "9h",
+          "5h"
+        ],
+        "legal_actions": [
+          "call",
+          "fold",
+          "raise"
+        ],
+        "max_raise_to": 2675000,
+        "min_raise_to": 2550000,
+        "player_id": "p6",
+        "players_active": 4,
+        "players_to_act": 2,
+        "position": "BTN",
+        "pot": 2025000,
+        "seed": 0,
+        "stack": 2675000,
+        "street": "preflop",
+        "table_size": 7,
+        "to_call": 1400000
+      }
+    },
+    {
+      "admission_status": "admitted_source_reviewed_development_only",
+      "canonical_hand_id": "triton:6eee3266-3a22-46a2-9cc6-9e25562d6b41",
+      "decision_id": "353d44bb1710e7f136fd890f1333ec7cde2d77084bf092a0c0159b5477b4857b",
+      "evidence_tier": "official_structured_source_independently_reviewed",
+      "expected": {
+        "action": "fold"
+      },
+      "fresh_holdout": false,
+      "group_id": "session:triton:tournament:ae031be0-c964-4a4a-8e68-d7e177574f1a",
+      "hand_id": "triton:6eee3266-3a22-46a2-9cc6-9e25562d6b41",
+      "independent_review_path": "data/acquisition_resume/2026-11-01/triton_2026_review/per-row-review.json",
+      "independent_review_sha256": "9bfce95a2d66983f0cac4b7fda9d306cbb7d9bc17699b29ec78c83fd8e5554b9",
+      "inspection_status": "inspected",
+      "parent_ante_audit_path": "data/acquisition_resume/2026-11-01/ante-eligibility-diagnostic.json",
+      "policy_use": "development_only",
+      "record_hash": "7088c11080de464cf53f6a03b734b6206b195a7f2c03c6028555fe76ce3dcc49",
+      "session_id": "triton:tournament:ae031be0-c964-4a4a-8e68-d7e177574f1a",
+      "source": "https://prod-public-serverless.triton-poker.com/graphql?sourceHandId=6eee3266-3a22-46a2-9cc6-9e25562d6b41",
+      "source_action_count": 11,
+      "source_action_index": 7,
+      "source_actual_player_count": 7,
+      "source_capture_path": "data/acquisition_resume/2026-11-01/triton_2026/raw/hands/6eee3266-3a22-46a2-9cc6-9e25562d6b41.json",
+      "source_capture_sha256": "3dac458bf00770ddc024fc20ee1afe3d3300f53e16b0f0b24fac11a1acf3fa80",
+      "source_collector_manifest": "data/acquisition_resume/2026-11-01/triton_2026/manifest.json",
+      "source_decision_id": "triton:6eee3266-3a22-46a2-9cc6-9e25562d6b41:action:7",
+      "source_episode_ids": [
+        "f28c0720-f7b1-471f-be4f-0d4d558d060d"
+      ],
+      "source_payload_sha256": "35305a61a530c76a9418903f223f34b6e658c341dc0ee9d97b054d5a25b8b020",
+      "source_physical_capacity": 9,
+      "source_query_sha256": "62ad7be7eda254e2f8a3e79e59c421482ac60156552fe4bf6c4622f4ed4f9a50",
+      "source_request_path": "data/acquisition_resume/2026-11-01/triton_2026/raw/hands/6eee3266-3a22-46a2-9cc6-9e25562d6b41.request.json",
+      "source_request_sha256": "eca7ad82a515d6574e7cf543377ae5822a174f99127cfa24065d2171cfcec4a0",
+      "source_round_action_index": 7,
+      "source_round_index": 0,
+      "source_validation": "engine_replayed",
+      "stable_source_decision_key": "triton:6eee3266-3a22-46a2-9cc6-9e25562d6b41:round:0:action:7",
+      "state": {
+        "big_blind": 200000,
+        "board": [],
+        "contestable_pot": 900000,
+        "current_bet": 0,
+        "history": [
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p2",
+            "position": "UTG",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p3",
+            "position": "MP",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p4",
+            "position": "MP",
+            "street": "preflop"
+          },
+          {
+            "action": "raise",
+            "added": 400000,
+            "amount": 400000,
+            "player": "p5",
+            "position": "CO",
+            "street": "preflop"
+          }
+        ],
+        "hole_cards": [
+          "Js",
+          "8c"
+        ],
+        "legal_actions": [
+          "call",
+          "fold",
+          "raise"
+        ],
+        "max_raise_to": 1775000,
+        "min_raise_to": 600000,
+        "player_id": "p6",
+        "players_active": 4,
+        "players_to_act": 2,
+        "position": "BTN",
+        "pot": 900000,
+        "seed": 0,
+        "stack": 1775000,
+        "street": "preflop",
+        "table_size": 7,
+        "to_call": 400000
+      }
+    },
+    {
+      "admission_status": "admitted_source_reviewed_development_only",
+      "canonical_hand_id": "triton:7e16ed4d-bf85-4779-8897-8b6f7f16fd6c",
+      "decision_id": "2593e9528a999bd16da4bedc29281d28cb9d465c7539f2be3f8db6dee34ec0c2",
+      "evidence_tier": "official_structured_source_independently_reviewed",
+      "expected": {
+        "action": "fold"
+      },
+      "fresh_holdout": false,
+      "group_id": "session:triton:tournament:ae031be0-c964-4a4a-8e68-d7e177574f1a",
+      "hand_id": "triton:7e16ed4d-bf85-4779-8897-8b6f7f16fd6c",
+      "independent_review_path": "data/acquisition_resume/2026-11-01/triton_2026_review/per-row-review.json",
+      "independent_review_sha256": "9bfce95a2d66983f0cac4b7fda9d306cbb7d9bc17699b29ec78c83fd8e5554b9",
+      "inspection_status": "inspected",
+      "parent_ante_audit_path": "data/acquisition_resume/2026-11-01/ante-eligibility-diagnostic.json",
+      "policy_use": "development_only",
+      "record_hash": "178274289ca1c56caec8ad084442a6d50a2d718d9dc77ecfca4a4d14cde37aa1",
+      "session_id": "triton:tournament:ae031be0-c964-4a4a-8e68-d7e177574f1a",
+      "source": "https://prod-public-serverless.triton-poker.com/graphql?sourceHandId=7e16ed4d-bf85-4779-8897-8b6f7f16fd6c",
+      "source_action_count": 10,
+      "source_action_index": 9,
+      "source_actual_player_count": 7,
+      "source_capture_path": "data/acquisition_resume/2026-11-01/triton_2026/raw/hands/7e16ed4d-bf85-4779-8897-8b6f7f16fd6c.json",
+      "source_capture_sha256": "ff8d143ec964aaae135b751bdb5ba858e218014b0e637603f2eb7f11b9f843a4",
+      "source_collector_manifest": "data/acquisition_resume/2026-11-01/triton_2026/manifest.json",
+      "source_decision_id": "triton:7e16ed4d-bf85-4779-8897-8b6f7f16fd6c:action:9",
+      "source_episode_ids": [
+        "f28c0720-f7b1-471f-be4f-0d4d558d060d"
+      ],
+      "source_payload_sha256": "e044cfaf2aa53f48fef2cb9fe7bd70fff639436ba391a42910e35e9d3314b7b5",
+      "source_physical_capacity": 9,
+      "source_query_sha256": "62ad7be7eda254e2f8a3e79e59c421482ac60156552fe4bf6c4622f4ed4f9a50",
+      "source_request_path": "data/acquisition_resume/2026-11-01/triton_2026/raw/hands/7e16ed4d-bf85-4779-8897-8b6f7f16fd6c.request.json",
+      "source_request_sha256": "e197fa4e04f6a081396b06be26ee0e57060ab8757908497d9dedacb7634fcc14",
+      "source_round_action_index": 9,
+      "source_round_index": 0,
+      "source_validation": "engine_replayed",
+      "stable_source_decision_key": "triton:7e16ed4d-bf85-4779-8897-8b6f7f16fd6c:round:0:action:9",
+      "state": {
+        "big_blind": 200000,
+        "board": [],
+        "contestable_pot": 2500000,
+        "current_bet": 200000,
+        "history": [
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p2",
+            "position": "UTG",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p3",
+            "position": "MP",
+            "street": "preflop"
+          },
+          {
+            "action": "raise",
+            "added": 2000000,
+            "amount": 2000000,
+            "player": "p4",
+            "position": "MP",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p5",
+            "position": "CO",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p6",
+            "position": "BTN",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 100000,
+            "player": "p0",
+            "position": "SB",
+            "street": "preflop"
+          }
+        ],
+        "hole_cards": [
+          "Kc",
+          "2s"
+        ],
+        "legal_actions": [
+          "call",
+          "fold"
+        ],
+        "max_raise_to": 0,
+        "min_raise_to": 0,
+        "player_id": "p1",
+        "players_active": 2,
+        "players_to_act": 0,
+        "position": "BB",
+        "pot": 2500000,
+        "seed": 0,
+        "stack": 2375000,
+        "street": "preflop",
+        "table_size": 7,
+        "to_call": 1800000
+      }
+    },
+    {
+      "admission_status": "admitted_source_reviewed_development_only",
+      "canonical_hand_id": "triton:8937199d-3e30-47e4-8a17-fc68871765b2",
+      "decision_id": "b86e5ad813b5489bd57c7eb9133f96dc79356e8c112d47b0ade86864cc5f5a2e",
+      "evidence_tier": "official_structured_source_independently_reviewed",
+      "expected": {
+        "action": "fold"
+      },
+      "fresh_holdout": false,
+      "group_id": "session:triton:tournament:ae031be0-c964-4a4a-8e68-d7e177574f1a",
+      "hand_id": "triton:8937199d-3e30-47e4-8a17-fc68871765b2",
+      "independent_review_path": "data/acquisition_resume/2026-11-01/triton_2026_review/per-row-review.json",
+      "independent_review_sha256": "9bfce95a2d66983f0cac4b7fda9d306cbb7d9bc17699b29ec78c83fd8e5554b9",
+      "inspection_status": "inspected",
+      "parent_ante_audit_path": "data/acquisition_resume/2026-11-01/ante-eligibility-diagnostic.json",
+      "policy_use": "development_only",
+      "record_hash": "0313754230f007e8fb5c7356bf1cb8d718d37558177260572a6b00e2b7ad4605",
+      "session_id": "triton:tournament:ae031be0-c964-4a4a-8e68-d7e177574f1a",
+      "source": "https://prod-public-serverless.triton-poker.com/graphql?sourceHandId=8937199d-3e30-47e4-8a17-fc68871765b2",
+      "source_action_count": 10,
+      "source_action_index": 8,
+      "source_actual_player_count": 7,
+      "source_capture_path": "data/acquisition_resume/2026-11-01/triton_2026/raw/hands/8937199d-3e30-47e4-8a17-fc68871765b2.json",
+      "source_capture_sha256": "1a91c220b8a2899cf7948581820478fc58bcb4cb840af57839ef63bf5793e766",
+      "source_collector_manifest": "data/acquisition_resume/2026-11-01/triton_2026/manifest.json",
+      "source_decision_id": "triton:8937199d-3e30-47e4-8a17-fc68871765b2:action:8",
+      "source_episode_ids": [
+        "f28c0720-f7b1-471f-be4f-0d4d558d060d"
+      ],
+      "source_payload_sha256": "22f5bc9f0276381f7bb89d3e2dd80aa738a4f4e9eb50f30a96abb86df3bdb212",
+      "source_physical_capacity": 9,
+      "source_query_sha256": "62ad7be7eda254e2f8a3e79e59c421482ac60156552fe4bf6c4622f4ed4f9a50",
+      "source_request_path": "data/acquisition_resume/2026-11-01/triton_2026/raw/hands/8937199d-3e30-47e4-8a17-fc68871765b2.request.json",
+      "source_request_sha256": "41d714f0d5b4192efaef356089f944bdb24d6526357fdbed6a0795c42b61544b",
+      "source_round_action_index": 8,
+      "source_round_index": 0,
+      "source_validation": "engine_replayed",
+      "stable_source_decision_key": "triton:8937199d-3e30-47e4-8a17-fc68871765b2:round:0:action:8",
+      "state": {
+        "big_blind": 250000,
+        "board": [],
+        "contestable_pot": 1125000,
+        "current_bet": 125000,
+        "history": [
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p2",
+            "position": "UTG",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p3",
+            "position": "MP",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p4",
+            "position": "MP",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p5",
+            "position": "CO",
+            "street": "preflop"
+          },
+          {
+            "action": "raise",
+            "added": 500000,
+            "amount": 500000,
+            "player": "p6",
+            "position": "BTN",
+            "street": "preflop"
+          }
+        ],
+        "hole_cards": [
+          "9h",
+          "3d"
+        ],
+        "legal_actions": [
+          "call",
+          "fold",
+          "raise"
+        ],
+        "max_raise_to": 3425000,
+        "min_raise_to": 750000,
+        "player_id": "p0",
+        "players_active": 3,
+        "players_to_act": 1,
+        "position": "SB",
+        "pot": 1125000,
+        "seed": 0,
+        "stack": 3300000,
+        "street": "preflop",
+        "table_size": 7,
+        "to_call": 375000
+      }
+    },
+    {
+      "admission_status": "admitted_source_reviewed_development_only",
+      "canonical_hand_id": "triton:90b7a627-e97b-493a-b9af-9eef0d19cbed",
+      "decision_id": "432ad3438d17e370b24f331aca98836adc7dd137ca99bc2514141f8a133fa635",
+      "evidence_tier": "official_structured_source_independently_reviewed",
+      "expected": {
+        "action": "fold"
+      },
+      "fresh_holdout": false,
+      "group_id": "session:triton:tournament:ae031be0-c964-4a4a-8e68-d7e177574f1a",
+      "hand_id": "triton:90b7a627-e97b-493a-b9af-9eef0d19cbed",
+      "independent_review_path": "data/acquisition_resume/2026-11-01/triton_2026_review/per-row-review.json",
+      "independent_review_sha256": "9bfce95a2d66983f0cac4b7fda9d306cbb7d9bc17699b29ec78c83fd8e5554b9",
+      "inspection_status": "inspected",
+      "parent_ante_audit_path": "data/acquisition_resume/2026-11-01/ante-eligibility-diagnostic.json",
+      "policy_use": "development_only",
+      "record_hash": "6c5074728d9a78b32586a532b6ca1a6a04d608246f8e82d8d5ae5b7cd54a0f57",
+      "session_id": "triton:tournament:ae031be0-c964-4a4a-8e68-d7e177574f1a",
+      "source": "https://prod-public-serverless.triton-poker.com/graphql?sourceHandId=90b7a627-e97b-493a-b9af-9eef0d19cbed",
+      "source_action_count": 11,
+      "source_action_index": 6,
+      "source_actual_player_count": 8,
+      "source_capture_path": "data/acquisition_resume/2026-11-01/triton_2026/raw/hands/90b7a627-e97b-493a-b9af-9eef0d19cbed.json",
+      "source_capture_sha256": "2bc7524294d54283f3c06296286656bada8a4e7afb295b777bce2a694ef7cfb0",
+      "source_collector_manifest": "data/acquisition_resume/2026-11-01/triton_2026/manifest.json",
+      "source_decision_id": "triton:90b7a627-e97b-493a-b9af-9eef0d19cbed:action:6",
+      "source_episode_ids": [
+        "f28c0720-f7b1-471f-be4f-0d4d558d060d"
+      ],
+      "source_payload_sha256": "c30ead2373703b9dc33521127cf81ae0b86712481f505f58fd1dc198a25facd3",
+      "source_physical_capacity": 9,
+      "source_query_sha256": "62ad7be7eda254e2f8a3e79e59c421482ac60156552fe4bf6c4622f4ed4f9a50",
+      "source_request_path": "data/acquisition_resume/2026-11-01/triton_2026/raw/hands/90b7a627-e97b-493a-b9af-9eef0d19cbed.request.json",
+      "source_request_sha256": "f595c11e1f94ec601a8f94c1f187a8c07ca9c836c950bd6c84d783b3c219ceab",
+      "source_round_action_index": 6,
+      "source_round_index": 0,
+      "source_validation": "engine_replayed",
+      "stable_source_decision_key": "triton:90b7a627-e97b-493a-b9af-9eef0d19cbed:round:0:action:6",
+      "state": {
+        "big_blind": 200000,
+        "board": [],
+        "contestable_pot": 900000,
+        "current_bet": 0,
+        "history": [
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p2",
+            "position": "UTG",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p3",
+            "position": "MP",
+            "street": "preflop"
+          },
+          {
+            "action": "raise",
+            "added": 400000,
+            "amount": 400000,
+            "player": "p4",
+            "position": "MP",
+            "street": "preflop"
+          }
+        ],
+        "hole_cards": [
+          "7d",
+          "6d"
+        ],
+        "legal_actions": [
+          "call",
+          "fold",
+          "raise"
+        ],
+        "max_raise_to": 2275000,
+        "min_raise_to": 600000,
+        "player_id": "p5",
+        "players_active": 6,
+        "players_to_act": 4,
+        "position": "MP",
+        "pot": 900000,
+        "seed": 0,
+        "stack": 2275000,
+        "street": "preflop",
+        "table_size": 8,
+        "to_call": 400000
+      }
+    },
+    {
+      "admission_status": "admitted_source_reviewed_development_only",
+      "canonical_hand_id": "triton:aad946a3-d7ee-4da9-9fde-5b5f9081b6d6",
+      "decision_id": "8e6fc25efb938501e1ea73a28ebd04d679cd78c228a04ab0ea4e85f934feae83",
+      "evidence_tier": "official_structured_source_independently_reviewed",
+      "expected": {
+        "action": "raise",
+        "amount": 2350000
+      },
+      "fresh_holdout": false,
+      "group_id": "session:triton:tournament:ae031be0-c964-4a4a-8e68-d7e177574f1a",
+      "hand_id": "triton:aad946a3-d7ee-4da9-9fde-5b5f9081b6d6",
+      "independent_review_path": "data/acquisition_resume/2026-11-01/triton_2026_review/per-row-review.json",
+      "independent_review_sha256": "9bfce95a2d66983f0cac4b7fda9d306cbb7d9bc17699b29ec78c83fd8e5554b9",
+      "inspection_status": "inspected",
+      "parent_ante_audit_path": "data/acquisition_resume/2026-11-01/ante-eligibility-diagnostic.json",
+      "policy_use": "development_only",
+      "record_hash": "f207e8d03131e6cf2fb303187badbc8f0f892a967b48a74164d8a643c97a6a2a",
+      "session_id": "triton:tournament:ae031be0-c964-4a4a-8e68-d7e177574f1a",
+      "source": "https://prod-public-serverless.triton-poker.com/graphql?sourceHandId=aad946a3-d7ee-4da9-9fde-5b5f9081b6d6",
+      "source_action_count": 12,
+      "source_action_index": 8,
+      "source_actual_player_count": 8,
+      "source_capture_path": "data/acquisition_resume/2026-11-01/triton_2026/raw/hands/aad946a3-d7ee-4da9-9fde-5b5f9081b6d6.json",
+      "source_capture_sha256": "dbb62f25aefc820bed247c04d270907ee5906a80e60841619d0a41efb0889423",
+      "source_collector_manifest": "data/acquisition_resume/2026-11-01/triton_2026/manifest.json",
+      "source_decision_id": "triton:aad946a3-d7ee-4da9-9fde-5b5f9081b6d6:action:8",
+      "source_episode_ids": [
+        "f28c0720-f7b1-471f-be4f-0d4d558d060d"
+      ],
+      "source_payload_sha256": "a8b9d74238c35b2e4077d48a23a0168dbc35466229579f5f66da31d3742bdd4a",
+      "source_physical_capacity": 9,
+      "source_query_sha256": "62ad7be7eda254e2f8a3e79e59c421482ac60156552fe4bf6c4622f4ed4f9a50",
+      "source_request_path": "data/acquisition_resume/2026-11-01/triton_2026/raw/hands/aad946a3-d7ee-4da9-9fde-5b5f9081b6d6.request.json",
+      "source_request_sha256": "46376e42e4bb1b6b1d9202e927f47bbaf803b5e09d474e04d8cb4a6f5fb0d33d",
+      "source_round_action_index": 8,
+      "source_round_index": 0,
+      "source_validation": "engine_replayed",
+      "stable_source_decision_key": "triton:aad946a3-d7ee-4da9-9fde-5b5f9081b6d6:round:0:action:8",
+      "state": {
+        "big_blind": 125000,
+        "board": [],
+        "contestable_pot": 600000,
+        "current_bet": 0,
+        "history": [
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p2",
+            "position": "UTG",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p3",
+            "position": "MP",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p4",
+            "position": "MP",
+            "street": "preflop"
+          },
+          {
+            "action": "raise",
+            "added": 300000,
+            "amount": 300000,
+            "player": "p5",
+            "position": "MP",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p6",
+            "position": "CO",
+            "street": "preflop"
+          }
+        ],
+        "hole_cards": [
+          "Kd",
+          "Td"
+        ],
+        "legal_actions": [
+          "call",
+          "fold",
+          "raise"
+        ],
+        "max_raise_to": 2350000,
+        "min_raise_to": 475000,
+        "player_id": "p7",
+        "players_active": 4,
+        "players_to_act": 2,
+        "position": "BTN",
+        "pot": 600000,
+        "seed": 0,
+        "stack": 2350000,
+        "street": "preflop",
+        "table_size": 8,
+        "to_call": 300000
+      }
+    },
+    {
+      "admission_status": "admitted_source_reviewed_development_only",
+      "canonical_hand_id": "triton:b11de5bc-6a30-4107-925f-58554c0b5656",
+      "decision_id": "b5cc8411e4d653e8f889674ec38ee15c79dac4cafaf049fe67ae1b227285fd54",
+      "evidence_tier": "official_structured_source_independently_reviewed",
+      "expected": {
+        "action": "fold"
+      },
+      "fresh_holdout": false,
+      "group_id": "session:triton:tournament:ae031be0-c964-4a4a-8e68-d7e177574f1a",
+      "hand_id": "triton:b11de5bc-6a30-4107-925f-58554c0b5656",
+      "independent_review_path": "data/acquisition_resume/2026-11-01/triton_2026_review/per-row-review.json",
+      "independent_review_sha256": "9bfce95a2d66983f0cac4b7fda9d306cbb7d9bc17699b29ec78c83fd8e5554b9",
+      "inspection_status": "inspected",
+      "parent_ante_audit_path": "data/acquisition_resume/2026-11-01/ante-eligibility-diagnostic.json",
+      "policy_use": "development_only",
+      "record_hash": "0237e7ef5d33dde099a7cddcf35497dac00ccf11e57093ee0bedc00cc6c7e9ca",
+      "session_id": "triton:tournament:ae031be0-c964-4a4a-8e68-d7e177574f1a",
+      "source": "https://prod-public-serverless.triton-poker.com/graphql?sourceHandId=b11de5bc-6a30-4107-925f-58554c0b5656",
+      "source_action_count": 10,
+      "source_action_index": 6,
+      "source_actual_player_count": 7,
+      "source_capture_path": "data/acquisition_resume/2026-11-01/triton_2026/raw/hands/b11de5bc-6a30-4107-925f-58554c0b5656.json",
+      "source_capture_sha256": "c6d5d957b8dad7a53d347a753ba4387642ccbdc050a9a221d00f620a0b30d3f8",
+      "source_collector_manifest": "data/acquisition_resume/2026-11-01/triton_2026/manifest.json",
+      "source_decision_id": "triton:b11de5bc-6a30-4107-925f-58554c0b5656:action:6",
+      "source_episode_ids": [
+        "f28c0720-f7b1-471f-be4f-0d4d558d060d"
+      ],
+      "source_payload_sha256": "b759e93bc0ebb871f8fb6f57d94dba39c53529ebda032de29b7e0b7da997433d",
+      "source_physical_capacity": 9,
+      "source_query_sha256": "62ad7be7eda254e2f8a3e79e59c421482ac60156552fe4bf6c4622f4ed4f9a50",
+      "source_request_path": "data/acquisition_resume/2026-11-01/triton_2026/raw/hands/b11de5bc-6a30-4107-925f-58554c0b5656.request.json",
+      "source_request_sha256": "921348d728fc87868070f089e37699c6e08299a8ee815cc0989aee9cd8729c26",
+      "source_round_action_index": 6,
+      "source_round_index": 0,
+      "source_validation": "engine_replayed",
+      "stable_source_decision_key": "triton:b11de5bc-6a30-4107-925f-58554c0b5656:round:0:action:6",
+      "state": {
+        "big_blind": 250000,
+        "board": [],
+        "contestable_pot": 1800000,
+        "current_bet": 0,
+        "history": [
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p2",
+            "position": "UTG",
+            "street": "preflop"
+          },
+          {
+            "action": "raise",
+            "added": 1175000,
+            "amount": 1175000,
+            "player": "p3",
+            "position": "MP",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p4",
+            "position": "MP",
+            "street": "preflop"
+          }
+        ],
+        "hole_cards": [
+          "Tc",
+          "8s"
+        ],
+        "legal_actions": [
+          "call",
+          "fold",
+          "raise"
+        ],
+        "max_raise_to": 2675000,
+        "min_raise_to": 2100000,
+        "player_id": "p5",
+        "players_active": 5,
+        "players_to_act": 3,
+        "position": "CO",
+        "pot": 1800000,
+        "seed": 0,
+        "stack": 2675000,
+        "street": "preflop",
+        "table_size": 7,
+        "to_call": 1175000
+      }
+    },
+    {
+      "admission_status": "admitted_source_reviewed_development_only",
+      "canonical_hand_id": "triton:b89656ad-fc16-4af6-941b-7ecd0c08e150",
+      "decision_id": "ccc99b1ff702096c9521b333a8f16b5f55236489bceb00b9ba1061e860319cbb",
+      "evidence_tier": "official_structured_source_independently_reviewed",
+      "expected": {
+        "action": "fold"
+      },
+      "fresh_holdout": false,
+      "group_id": "session:triton:tournament:ae031be0-c964-4a4a-8e68-d7e177574f1a",
+      "hand_id": "triton:b89656ad-fc16-4af6-941b-7ecd0c08e150",
+      "independent_review_path": "data/acquisition_resume/2026-11-01/triton_2026_review/per-row-review.json",
+      "independent_review_sha256": "9bfce95a2d66983f0cac4b7fda9d306cbb7d9bc17699b29ec78c83fd8e5554b9",
+      "inspection_status": "inspected",
+      "parent_ante_audit_path": "data/acquisition_resume/2026-11-01/ante-eligibility-diagnostic.json",
+      "policy_use": "development_only",
+      "record_hash": "acbc4dd65cde7a161f88df881bb6a45a27984f14acb6f21aa3ad1accae7c2371",
+      "session_id": "triton:tournament:ae031be0-c964-4a4a-8e68-d7e177574f1a",
+      "source": "https://prod-public-serverless.triton-poker.com/graphql?sourceHandId=b89656ad-fc16-4af6-941b-7ecd0c08e150",
+      "source_action_count": 10,
+      "source_action_index": 9,
+      "source_actual_player_count": 7,
+      "source_capture_path": "data/acquisition_resume/2026-11-01/triton_2026/raw/hands/b89656ad-fc16-4af6-941b-7ecd0c08e150.json",
+      "source_capture_sha256": "c9d1b6acb2faf92cf4e4ff513d2e347dfa10f8734d7a4886ee165a6898d3b422",
+      "source_collector_manifest": "data/acquisition_resume/2026-11-01/triton_2026/manifest.json",
+      "source_decision_id": "triton:b89656ad-fc16-4af6-941b-7ecd0c08e150:action:9",
+      "source_episode_ids": [
+        "f28c0720-f7b1-471f-be4f-0d4d558d060d"
+      ],
+      "source_payload_sha256": "43870b9af1533357e6e59f3a31ee7a7e76b6243f92c9cc32f27e1676a45a583c",
+      "source_physical_capacity": 9,
+      "source_query_sha256": "62ad7be7eda254e2f8a3e79e59c421482ac60156552fe4bf6c4622f4ed4f9a50",
+      "source_request_path": "data/acquisition_resume/2026-11-01/triton_2026/raw/hands/b89656ad-fc16-4af6-941b-7ecd0c08e150.request.json",
+      "source_request_sha256": "431c154d70ccf5a1c7e56a74ee29f2674c2aa781e0a9ad283c11fe62730dc4a5",
+      "source_round_action_index": 9,
+      "source_round_index": 0,
+      "source_validation": "engine_replayed",
+      "stable_source_decision_key": "triton:b89656ad-fc16-4af6-941b-7ecd0c08e150:round:0:action:9",
+      "state": {
+        "big_blind": 250000,
+        "board": [],
+        "contestable_pot": 1625000,
+        "current_bet": 250000,
+        "history": [
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p2",
+            "position": "UTG",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p3",
+            "position": "MP",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p4",
+            "position": "MP",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p5",
+            "position": "CO",
+            "street": "preflop"
+          },
+          {
+            "action": "raise",
+            "added": 1000000,
+            "amount": 1000000,
+            "player": "p6",
+            "position": "BTN",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 125000,
+            "player": "p0",
+            "position": "SB",
+            "street": "preflop"
+          }
+        ],
+        "hole_cards": [
+          "8s",
+          "6c"
+        ],
+        "legal_actions": [
+          "call",
+          "fold",
+          "raise"
+        ],
+        "max_raise_to": 3675000,
+        "min_raise_to": 1750000,
+        "player_id": "p1",
+        "players_active": 2,
+        "players_to_act": 0,
+        "position": "BB",
+        "pot": 1625000,
+        "seed": 0,
+        "stack": 3425000,
+        "street": "preflop",
+        "table_size": 7,
+        "to_call": 750000
+      }
+    },
+    {
+      "admission_status": "admitted_source_reviewed_development_only",
+      "canonical_hand_id": "triton:cb750e7c-d4be-4e02-b2af-41fededa2223",
+      "decision_id": "1b4fbaf6eec7d517c2393e12c1283cdd26ea254f27eec74d48e29e59fed63faa",
+      "evidence_tier": "official_structured_source_independently_reviewed",
+      "expected": {
+        "action": "fold"
+      },
+      "fresh_holdout": false,
+      "group_id": "session:triton:tournament:ae031be0-c964-4a4a-8e68-d7e177574f1a",
+      "hand_id": "triton:cb750e7c-d4be-4e02-b2af-41fededa2223",
+      "independent_review_path": "data/acquisition_resume/2026-11-01/triton_2026_review/per-row-review.json",
+      "independent_review_sha256": "9bfce95a2d66983f0cac4b7fda9d306cbb7d9bc17699b29ec78c83fd8e5554b9",
+      "inspection_status": "inspected",
+      "parent_ante_audit_path": "data/acquisition_resume/2026-11-01/ante-eligibility-diagnostic.json",
+      "policy_use": "development_only",
+      "record_hash": "4a225961915ca2ffc67b991cf59e8f6d76fe9d687274a6cdaedad2efee7f11c5",
+      "session_id": "triton:tournament:ae031be0-c964-4a4a-8e68-d7e177574f1a",
+      "source": "https://prod-public-serverless.triton-poker.com/graphql?sourceHandId=cb750e7c-d4be-4e02-b2af-41fededa2223",
+      "source_action_count": 13,
+      "source_action_index": 5,
+      "source_actual_player_count": 8,
+      "source_capture_path": "data/acquisition_resume/2026-11-01/triton_2026/raw/hands/cb750e7c-d4be-4e02-b2af-41fededa2223.json",
+      "source_capture_sha256": "a94d1dd3b556f75f50b779a800488efb02accabda3b4bbe53e7cf996b0350f0a",
+      "source_collector_manifest": "data/acquisition_resume/2026-11-01/triton_2026/manifest.json",
+      "source_decision_id": "triton:cb750e7c-d4be-4e02-b2af-41fededa2223:action:5",
+      "source_episode_ids": [
+        "f28c0720-f7b1-471f-be4f-0d4d558d060d"
+      ],
+      "source_payload_sha256": "15d17e6d2d1954aea0d5608f94e85ae21a2765914a84dd2ef85d96798689d901",
+      "source_physical_capacity": 9,
+      "source_query_sha256": "62ad7be7eda254e2f8a3e79e59c421482ac60156552fe4bf6c4622f4ed4f9a50",
+      "source_request_path": "data/acquisition_resume/2026-11-01/triton_2026/raw/hands/cb750e7c-d4be-4e02-b2af-41fededa2223.request.json",
+      "source_request_sha256": "7a2d2f252819b2bdddaabbebcba40999fb185947adccda269ed1a31516a203ba",
+      "source_round_action_index": 5,
+      "source_round_index": 0,
+      "source_validation": "engine_replayed",
+      "stable_source_decision_key": "triton:cb750e7c-d4be-4e02-b2af-41fededa2223:round:0:action:5",
+      "state": {
+        "big_blind": 150000,
+        "board": [],
+        "contestable_pot": 1425000,
+        "current_bet": 0,
+        "history": [
+          {
+            "action": "raise",
+            "added": 300000,
+            "amount": 300000,
+            "player": "p2",
+            "position": "UTG",
+            "street": "preflop"
+          },
+          {
+            "action": "raise",
+            "added": 750000,
+            "amount": 750000,
+            "player": "p3",
+            "position": "MP",
+            "street": "preflop"
+          }
+        ],
+        "hole_cards": [
+          "4c",
+          "3c"
+        ],
+        "legal_actions": [
+          "call",
+          "fold",
+          "raise"
+        ],
+        "max_raise_to": 2275000,
+        "min_raise_to": 1200000,
+        "player_id": "p4",
+        "players_active": 8,
+        "players_to_act": 6,
+        "position": "MP",
+        "pot": 1425000,
+        "seed": 0,
+        "stack": 2275000,
+        "street": "preflop",
+        "table_size": 8,
+        "to_call": 750000
+      }
+    },
+    {
+      "admission_status": "admitted_source_reviewed_development_only",
+      "canonical_hand_id": "triton:d097dc51-edf7-4b4e-9eff-722e1e2fd107",
+      "decision_id": "eeb00c3529926a2a9d7ee7935edaa072eacc40be81fa9d0a49386d09c3c97a9d",
+      "evidence_tier": "official_structured_source_independently_reviewed",
+      "expected": {
+        "action": "raise",
+        "amount": 3300000
+      },
+      "fresh_holdout": false,
+      "group_id": "session:triton:tournament:ae031be0-c964-4a4a-8e68-d7e177574f1a",
+      "hand_id": "triton:d097dc51-edf7-4b4e-9eff-722e1e2fd107",
+      "independent_review_path": "data/acquisition_resume/2026-11-01/triton_2026_review/per-row-review.json",
+      "independent_review_sha256": "9bfce95a2d66983f0cac4b7fda9d306cbb7d9bc17699b29ec78c83fd8e5554b9",
+      "inspection_status": "inspected",
+      "parent_ante_audit_path": "data/acquisition_resume/2026-11-01/ante-eligibility-diagnostic.json",
+      "policy_use": "development_only",
+      "record_hash": "dc71c3d6b1f32ba74cae2a30e3d0fefa6b3bbcd379bfd42c401162d07fff5eb5",
+      "session_id": "triton:tournament:ae031be0-c964-4a4a-8e68-d7e177574f1a",
+      "source": "https://prod-public-serverless.triton-poker.com/graphql?sourceHandId=d097dc51-edf7-4b4e-9eff-722e1e2fd107",
+      "source_action_count": 11,
+      "source_action_index": 6,
+      "source_actual_player_count": 7,
+      "source_capture_path": "data/acquisition_resume/2026-11-01/triton_2026/raw/hands/d097dc51-edf7-4b4e-9eff-722e1e2fd107.json",
+      "source_capture_sha256": "91d1a6307d409028aa114829d228d2a7e3178d6e3830102886f7dbe02aedf83d",
+      "source_collector_manifest": "data/acquisition_resume/2026-11-01/triton_2026/manifest.json",
+      "source_decision_id": "triton:d097dc51-edf7-4b4e-9eff-722e1e2fd107:action:6",
+      "source_episode_ids": [
+        "68c65aa8-edb9-4dcb-99e0-479c02d117bf",
+        "f28c0720-f7b1-471f-be4f-0d4d558d060d"
+      ],
+      "source_payload_sha256": "c735fc8ba81bfc6bcc9e70f217ce81e918a0537bd90c931a8cdae7ea068399cc",
+      "source_physical_capacity": 9,
+      "source_query_sha256": "62ad7be7eda254e2f8a3e79e59c421482ac60156552fe4bf6c4622f4ed4f9a50",
+      "source_request_path": "data/acquisition_resume/2026-11-01/triton_2026/raw/hands/d097dc51-edf7-4b4e-9eff-722e1e2fd107.request.json",
+      "source_request_sha256": "2da7e2a41a1e1c485ef73460c865c855e58564ee2a6c116bd09759702e19f352",
+      "source_round_action_index": 6,
+      "source_round_index": 0,
+      "source_validation": "engine_replayed",
+      "stable_source_decision_key": "triton:d097dc51-edf7-4b4e-9eff-722e1e2fd107:round:0:action:6",
+      "state": {
+        "big_blind": 250000,
+        "board": [],
+        "contestable_pot": 1125000,
+        "current_bet": 0,
+        "history": [
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p2",
+            "position": "UTG",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p3",
+            "position": "MP",
+            "street": "preflop"
+          },
+          {
+            "action": "raise",
+            "added": 500000,
+            "amount": 500000,
+            "player": "p4",
+            "position": "MP",
+            "street": "preflop"
+          }
+        ],
+        "hole_cards": [
+          "9c",
+          "9h"
+        ],
+        "legal_actions": [
+          "call",
+          "fold",
+          "raise"
+        ],
+        "max_raise_to": 3300000,
+        "min_raise_to": 750000,
+        "player_id": "p5",
+        "players_active": 5,
+        "players_to_act": 3,
+        "position": "CO",
+        "pot": 1125000,
+        "seed": 0,
+        "stack": 3300000,
+        "street": "preflop",
+        "table_size": 7,
+        "to_call": 500000
+      }
+    },
+    {
+      "admission_status": "admitted_source_reviewed_development_only",
+      "canonical_hand_id": "triton:d4bcf748-a02a-48db-8dd4-106ff429f363",
+      "decision_id": "e296191063077cb1d6523ea0ee3dd7f0c757555c8bce25705e2de7a2c5f1d664",
+      "evidence_tier": "official_structured_source_independently_reviewed",
+      "expected": {
+        "action": "fold"
+      },
+      "fresh_holdout": false,
+      "group_id": "session:triton:tournament:ae031be0-c964-4a4a-8e68-d7e177574f1a",
+      "hand_id": "triton:d4bcf748-a02a-48db-8dd4-106ff429f363",
+      "independent_review_path": "data/acquisition_resume/2026-11-01/triton_2026_review/per-row-review.json",
+      "independent_review_sha256": "9bfce95a2d66983f0cac4b7fda9d306cbb7d9bc17699b29ec78c83fd8e5554b9",
+      "inspection_status": "inspected",
+      "parent_ante_audit_path": "data/acquisition_resume/2026-11-01/ante-eligibility-diagnostic.json",
+      "policy_use": "development_only",
+      "record_hash": "6b06f830436015e1afe7cce01d9e5b2da0223b8b854691d3d98a79ec229330fb",
+      "session_id": "triton:tournament:ae031be0-c964-4a4a-8e68-d7e177574f1a",
+      "source": "https://prod-public-serverless.triton-poker.com/graphql?sourceHandId=d4bcf748-a02a-48db-8dd4-106ff429f363",
+      "source_action_count": 12,
+      "source_action_index": 10,
+      "source_actual_player_count": 8,
+      "source_capture_path": "data/acquisition_resume/2026-11-01/triton_2026/raw/hands/d4bcf748-a02a-48db-8dd4-106ff429f363.json",
+      "source_capture_sha256": "e1bad64b82e9a495fd05b18357ce30c5327bbe122e49d670055c666fd986601b",
+      "source_collector_manifest": "data/acquisition_resume/2026-11-01/triton_2026/manifest.json",
+      "source_decision_id": "triton:d4bcf748-a02a-48db-8dd4-106ff429f363:action:10",
+      "source_episode_ids": [
+        "f28c0720-f7b1-471f-be4f-0d4d558d060d"
+      ],
+      "source_payload_sha256": "d7ad519cfb8d1a8e78f883426e71a657978279a9a7cf88f9f45e2bd710cbfcf0",
+      "source_physical_capacity": 9,
+      "source_query_sha256": "62ad7be7eda254e2f8a3e79e59c421482ac60156552fe4bf6c4622f4ed4f9a50",
+      "source_request_path": "data/acquisition_resume/2026-11-01/triton_2026/raw/hands/d4bcf748-a02a-48db-8dd4-106ff429f363.request.json",
+      "source_request_sha256": "3d64aa69a49b126d946e4102fcc0fb1ac3e7840bd643b7bbf848098a9469920a",
+      "source_round_action_index": 10,
+      "source_round_index": 0,
+      "source_validation": "engine_replayed",
+      "stable_source_decision_key": "triton:d4bcf748-a02a-48db-8dd4-106ff429f363:round:0:action:10",
+      "state": {
+        "big_blind": 150000,
+        "board": [],
+        "contestable_pot": 1400000,
+        "current_bet": 150000,
+        "history": [
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p2",
+            "position": "UTG",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p3",
+            "position": "MP",
+            "street": "preflop"
+          },
+          {
+            "action": "raise",
+            "added": 300000,
+            "amount": 300000,
+            "player": "p4",
+            "position": "MP",
+            "street": "preflop"
+          },
+          {
+            "action": "raise",
+            "added": 725000,
+            "amount": 725000,
+            "player": "p5",
+            "position": "MP",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p6",
+            "position": "CO",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p7",
+            "position": "BTN",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 75000,
+            "player": "p0",
+            "position": "SB",
+            "street": "preflop"
+          }
+        ],
+        "hole_cards": [
+          "3h",
+          "2c"
+        ],
+        "legal_actions": [
+          "call",
+          "fold",
+          "raise"
+        ],
+        "max_raise_to": 2500000,
+        "min_raise_to": 1150000,
+        "player_id": "p1",
+        "players_active": 3,
+        "players_to_act": 1,
+        "position": "BB",
+        "pot": 1400000,
+        "seed": 0,
+        "stack": 2350000,
+        "street": "preflop",
+        "table_size": 8,
+        "to_call": 575000
+      }
+    },
+    {
+      "admission_status": "admitted_source_reviewed_development_only",
+      "canonical_hand_id": "triton:d6052f03-208b-4483-a422-71ebb8ad413f",
+      "decision_id": "507dc681c849c81eb4bc30572b4c0eb2b0b2f5814bfa325e6b2b3faec4954598",
+      "evidence_tier": "official_structured_source_independently_reviewed",
+      "expected": {
+        "action": "fold"
+      },
+      "fresh_holdout": false,
+      "group_id": "session:triton:tournament:ae031be0-c964-4a4a-8e68-d7e177574f1a",
+      "hand_id": "triton:d6052f03-208b-4483-a422-71ebb8ad413f",
+      "independent_review_path": "data/acquisition_resume/2026-11-01/triton_2026_review/per-row-review.json",
+      "independent_review_sha256": "9bfce95a2d66983f0cac4b7fda9d306cbb7d9bc17699b29ec78c83fd8e5554b9",
+      "inspection_status": "inspected",
+      "parent_ante_audit_path": "data/acquisition_resume/2026-11-01/ante-eligibility-diagnostic.json",
+      "policy_use": "development_only",
+      "record_hash": "118a4fee1347b6623e21994b36d46b37d61558cfe343f2494e095754b66c5946",
+      "session_id": "triton:tournament:ae031be0-c964-4a4a-8e68-d7e177574f1a",
+      "source": "https://prod-public-serverless.triton-poker.com/graphql?sourceHandId=d6052f03-208b-4483-a422-71ebb8ad413f",
+      "source_action_count": 11,
+      "source_action_index": 9,
+      "source_actual_player_count": 8,
+      "source_capture_path": "data/acquisition_resume/2026-11-01/triton_2026/raw/hands/d6052f03-208b-4483-a422-71ebb8ad413f.json",
+      "source_capture_sha256": "1ff5b818e6f5fad93211967edaab2f928e2d142758190ec14e3087ccb0cb494f",
+      "source_collector_manifest": "data/acquisition_resume/2026-11-01/triton_2026/manifest.json",
+      "source_decision_id": "triton:d6052f03-208b-4483-a422-71ebb8ad413f:action:9",
+      "source_episode_ids": [
+        "f28c0720-f7b1-471f-be4f-0d4d558d060d"
+      ],
+      "source_payload_sha256": "70ac42dfcdfb2c54a3906ace4efd458c1d1f9d1497e9e20d5395e1b19aeb0d52",
+      "source_physical_capacity": 9,
+      "source_query_sha256": "62ad7be7eda254e2f8a3e79e59c421482ac60156552fe4bf6c4622f4ed4f9a50",
+      "source_request_path": "data/acquisition_resume/2026-11-01/triton_2026/raw/hands/d6052f03-208b-4483-a422-71ebb8ad413f.request.json",
+      "source_request_sha256": "a6db991befa8532c2775861090c0c7ded916b66edf3a9134f11b6ed7d72bf71a",
+      "source_round_action_index": 9,
+      "source_round_index": 0,
+      "source_validation": "engine_replayed",
+      "stable_source_decision_key": "triton:d6052f03-208b-4483-a422-71ebb8ad413f:round:0:action:9",
+      "state": {
+        "big_blind": 150000,
+        "board": [],
+        "contestable_pot": 700000,
+        "current_bet": 75000,
+        "history": [
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p2",
+            "position": "UTG",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p3",
+            "position": "MP",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p4",
+            "position": "MP",
+            "street": "preflop"
+          },
+          {
+            "action": "raise",
+            "added": 325000,
+            "amount": 325000,
+            "player": "p5",
+            "position": "MP",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p6",
+            "position": "CO",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p7",
+            "position": "BTN",
+            "street": "preflop"
+          }
+        ],
+        "hole_cards": [
+          "Qh",
+          "3d"
+        ],
+        "legal_actions": [
+          "call",
+          "fold",
+          "raise"
+        ],
+        "max_raise_to": 2350000,
+        "min_raise_to": 500000,
+        "player_id": "p0",
+        "players_active": 3,
+        "players_to_act": 1,
+        "position": "SB",
+        "pot": 700000,
+        "seed": 0,
+        "stack": 2275000,
+        "street": "preflop",
+        "table_size": 8,
+        "to_call": 250000
+      }
+    },
+    {
+      "admission_status": "admitted_source_reviewed_development_only",
+      "canonical_hand_id": "triton:e5ec5962-e892-4379-89e8-453be7197265",
+      "decision_id": "061c7b635f3a912224d725797472a454b81719cb0341d3b67333ebab315c603f",
+      "evidence_tier": "official_structured_source_independently_reviewed",
+      "expected": {
+        "action": "fold"
+      },
+      "fresh_holdout": false,
+      "group_id": "session:triton:tournament:ae031be0-c964-4a4a-8e68-d7e177574f1a",
+      "hand_id": "triton:e5ec5962-e892-4379-89e8-453be7197265",
+      "independent_review_path": "data/acquisition_resume/2026-11-01/triton_2026_review/per-row-review.json",
+      "independent_review_sha256": "9bfce95a2d66983f0cac4b7fda9d306cbb7d9bc17699b29ec78c83fd8e5554b9",
+      "inspection_status": "inspected",
+      "parent_ante_audit_path": "data/acquisition_resume/2026-11-01/ante-eligibility-diagnostic.json",
+      "policy_use": "development_only",
+      "record_hash": "f8d131a2275004947c1ac785ff5fbe0d0684936f3e250dd5828fbfab44f1d8d2",
+      "session_id": "triton:tournament:ae031be0-c964-4a4a-8e68-d7e177574f1a",
+      "source": "https://prod-public-serverless.triton-poker.com/graphql?sourceHandId=e5ec5962-e892-4379-89e8-453be7197265",
+      "source_action_count": 10,
+      "source_action_index": 7,
+      "source_actual_player_count": 7,
+      "source_capture_path": "data/acquisition_resume/2026-11-01/triton_2026/raw/hands/e5ec5962-e892-4379-89e8-453be7197265.json",
+      "source_capture_sha256": "5c9ebe1360c3d20ba4bc503c0a711e56a1c6d982f11b04dbf8c04024a9eecc9e",
+      "source_collector_manifest": "data/acquisition_resume/2026-11-01/triton_2026/manifest.json",
+      "source_decision_id": "triton:e5ec5962-e892-4379-89e8-453be7197265:action:7",
+      "source_episode_ids": [
+        "f28c0720-f7b1-471f-be4f-0d4d558d060d"
+      ],
+      "source_payload_sha256": "c74876f847db47d3bb804a76028aaa635799b336262a9944a4983c7823ee8863",
+      "source_physical_capacity": 9,
+      "source_query_sha256": "62ad7be7eda254e2f8a3e79e59c421482ac60156552fe4bf6c4622f4ed4f9a50",
+      "source_request_path": "data/acquisition_resume/2026-11-01/triton_2026/raw/hands/e5ec5962-e892-4379-89e8-453be7197265.request.json",
+      "source_request_sha256": "f901194e976185d390f2d008aca7fddc65485cdb185ffff6cf2c48417e7b2828",
+      "source_round_action_index": 7,
+      "source_round_index": 0,
+      "source_validation": "engine_replayed",
+      "stable_source_decision_key": "triton:e5ec5962-e892-4379-89e8-453be7197265:round:0:action:7",
+      "state": {
+        "big_blind": 250000,
+        "board": [],
+        "contestable_pot": 2025000,
+        "current_bet": 0,
+        "history": [
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p2",
+            "position": "UTG",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p3",
+            "position": "MP",
+            "street": "preflop"
+          },
+          {
+            "action": "raise",
+            "added": 1400000,
+            "amount": 1400000,
+            "player": "p4",
+            "position": "MP",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p5",
+            "position": "CO",
+            "street": "preflop"
+          }
+        ],
+        "hole_cards": [
+          "Kh",
+          "2h"
+        ],
+        "legal_actions": [
+          "call",
+          "fold",
+          "raise"
+        ],
+        "max_raise_to": 3300000,
+        "min_raise_to": 2550000,
+        "player_id": "p6",
+        "players_active": 4,
+        "players_to_act": 2,
+        "position": "BTN",
+        "pot": 2025000,
+        "seed": 0,
+        "stack": 3300000,
+        "street": "preflop",
+        "table_size": 7,
+        "to_call": 1400000
+      }
+    },
+    {
+      "admission_status": "admitted_source_reviewed_development_only",
+      "canonical_hand_id": "triton:e7d1ee74-a5cf-44e6-8c34-242e22b79ff1",
+      "decision_id": "4379f4eb5f2be21174f8e16dcea4b433dc3a2f50f8b788bfa63fd1b02b4a2e22",
+      "evidence_tier": "official_structured_source_independently_reviewed",
+      "expected": {
+        "action": "fold"
+      },
+      "fresh_holdout": false,
+      "group_id": "session:triton:tournament:ae031be0-c964-4a4a-8e68-d7e177574f1a",
+      "hand_id": "triton:e7d1ee74-a5cf-44e6-8c34-242e22b79ff1",
+      "independent_review_path": "data/acquisition_resume/2026-11-01/triton_2026_review/per-row-review.json",
+      "independent_review_sha256": "9bfce95a2d66983f0cac4b7fda9d306cbb7d9bc17699b29ec78c83fd8e5554b9",
+      "inspection_status": "inspected",
+      "parent_ante_audit_path": "data/acquisition_resume/2026-11-01/ante-eligibility-diagnostic.json",
+      "policy_use": "development_only",
+      "record_hash": "30d64626e5158fd96abfaaaa989de7ed9f774b1f8a04487f7b16ea55783def24",
+      "session_id": "triton:tournament:ae031be0-c964-4a4a-8e68-d7e177574f1a",
+      "source": "https://prod-public-serverless.triton-poker.com/graphql?sourceHandId=e7d1ee74-a5cf-44e6-8c34-242e22b79ff1",
+      "source_action_count": 10,
+      "source_action_index": 8,
+      "source_actual_player_count": 7,
+      "source_capture_path": "data/acquisition_resume/2026-11-01/triton_2026/raw/hands/e7d1ee74-a5cf-44e6-8c34-242e22b79ff1.json",
+      "source_capture_sha256": "fac530c3abc1aff15858a20da9fb2d2bd2d0eb9f2a0b7def3548366c666caa0c",
+      "source_collector_manifest": "data/acquisition_resume/2026-11-01/triton_2026/manifest.json",
+      "source_decision_id": "triton:e7d1ee74-a5cf-44e6-8c34-242e22b79ff1:action:8",
+      "source_episode_ids": [
+        "f28c0720-f7b1-471f-be4f-0d4d558d060d"
+      ],
+      "source_payload_sha256": "b16e6ddde76366735e8fe42f67b4dc819c57cbda3102b5df5c519c52c7169c9b",
+      "source_physical_capacity": 9,
+      "source_query_sha256": "62ad7be7eda254e2f8a3e79e59c421482ac60156552fe4bf6c4622f4ed4f9a50",
+      "source_request_path": "data/acquisition_resume/2026-11-01/triton_2026/raw/hands/e7d1ee74-a5cf-44e6-8c34-242e22b79ff1.request.json",
+      "source_request_sha256": "10fbe9108d0ea4f041047d8382a288f93608a7da18dd2f23aa45ee633ff68273",
+      "source_round_action_index": 8,
+      "source_round_index": 0,
+      "source_validation": "engine_replayed",
+      "stable_source_decision_key": "triton:e7d1ee74-a5cf-44e6-8c34-242e22b79ff1:round:0:action:8",
+      "state": {
+        "big_blind": 200000,
+        "board": [],
+        "contestable_pot": 1700000,
+        "current_bet": 100000,
+        "history": [
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p2",
+            "position": "UTG",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p3",
+            "position": "MP",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p4",
+            "position": "MP",
+            "street": "preflop"
+          },
+          {
+            "action": "raise",
+            "added": 1200000,
+            "amount": 1200000,
+            "player": "p5",
+            "position": "CO",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p6",
+            "position": "BTN",
+            "street": "preflop"
+          }
+        ],
+        "hole_cards": [
+          "Qd",
+          "9c"
+        ],
+        "legal_actions": [
+          "call",
+          "fold",
+          "raise"
+        ],
+        "max_raise_to": 1875000,
+        "min_raise_to": 1875000,
+        "player_id": "p0",
+        "players_active": 3,
+        "players_to_act": 1,
+        "position": "SB",
+        "pot": 1700000,
+        "seed": 0,
+        "stack": 1775000,
+        "street": "preflop",
+        "table_size": 7,
+        "to_call": 1100000
+      }
+    },
+    {
+      "admission_status": "admitted_source_reviewed_development_only",
+      "canonical_hand_id": "triton:0fe69d0d-c62f-4a47-baac-7770b44b9bdb",
+      "decision_id": "8ac8c3dbcd32c8a1f5f088cf64f5bb733acab2af7b231b58edb0b8f133e324eb",
+      "evidence_tier": "official_structured_source_independently_reviewed",
+      "expected": {
+        "action": "raise",
+        "amount": 670000
+      },
+      "fresh_holdout": false,
+      "group_id": "session:triton:tournament:3bc7093a-05a7-41d1-82b4-b76f7a84107e",
+      "hand_id": "triton:0fe69d0d-c62f-4a47-baac-7770b44b9bdb",
+      "independent_review_path": "data/acquisition_resume/2026-11-01/triton_2025_review/review.json",
+      "independent_review_sha256": "bcf04a9c0da84e786c098cd3def8914abe7736a629c7cf9f4a79807606aec0e9",
+      "inspection_status": "inspected",
+      "parent_ante_audit_path": "data/acquisition_resume/2026-11-01/ante-eligibility-diagnostic.json",
+      "policy_use": "development_only",
+      "record_hash": "f9d323df6c9e834bdabe8a66377fd4182335238568ea2db0f9622a1a58c0dd8d",
+      "session_id": "triton:tournament:3bc7093a-05a7-41d1-82b4-b76f7a84107e",
+      "source": "https://prod-public-serverless.triton-poker.com/graphql?sourceHandId=0fe69d0d-c62f-4a47-baac-7770b44b9bdb",
+      "source_action_count": 11,
+      "source_action_index": 7,
+      "source_actual_player_count": 7,
+      "source_capture_path": "/Users/benajaheger/Documents/museum of failures/Pokerbot/data/acquisition_resume/2026-11-01/triton_2025/raw/3bc7093a-05a7-41d1-82b4-b76f7a84107e/hands/0fe69d0d-c62f-4a47-baac-7770b44b9bdb.json",
+      "source_capture_sha256": "88798266657a2dc6c7238e5dfb8bdc5591f58fb51411c01aae62b0db833d82e1",
+      "source_decision_id": "triton:0fe69d0d-c62f-4a47-baac-7770b44b9bdb:action:7",
+      "source_episode_ids": [
+        "a6f4a4cc-d665-4268-8805-660d7e569da0",
+        "fbeb374a-3921-4d87-87ee-6371285c11ae"
+      ],
+      "source_payload_sha256": "2fb4042feaa711ceaab0aee1da536653d3b166484e514b1fb359f3430a884880",
+      "source_physical_capacity": 9,
+      "source_query_sha256": "62ad7be7eda254e2f8a3e79e59c421482ac60156552fe4bf6c4622f4ed4f9a50",
+      "source_request_path": "/Users/benajaheger/Documents/museum of failures/Pokerbot/data/acquisition_resume/2026-11-01/triton_2025/raw/3bc7093a-05a7-41d1-82b4-b76f7a84107e/hands/0fe69d0d-c62f-4a47-baac-7770b44b9bdb.request.json",
+      "source_request_sha256": "74a4435b9364e29410c833933fd691fad686270bdae4e9235b4fc27154d0e43c",
+      "source_request_variables": {
+        "episodeId": "a6f4a4cc-d665-4268-8805-660d7e569da0",
+        "handId": "0fe69d0d-c62f-4a47-baac-7770b44b9bdb"
+      },
+      "source_round_action_index": 7,
+      "source_round_index": 0,
+      "source_validation": "engine_replayed",
+      "stable_source_decision_key": "triton:0fe69d0d-c62f-4a47-baac-7770b44b9bdb:round:0:action:7",
+      "state": {
+        "big_blind": 100000,
+        "board": [],
+        "contestable_pot": 450000,
+        "current_bet": 0,
+        "history": [
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p2",
+            "position": "UTG",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p3",
+            "position": "MP",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p4",
+            "position": "MP",
+            "street": "preflop"
+          },
+          {
+            "action": "raise",
+            "added": 200000,
+            "amount": 200000,
+            "player": "p5",
+            "position": "CO",
+            "street": "preflop"
+          }
+        ],
+        "hole_cards": [
+          "Ah",
+          "Qs"
+        ],
+        "legal_actions": [
+          "call",
+          "fold",
+          "raise"
+        ],
+        "max_raise_to": 670000,
+        "min_raise_to": 300000,
+        "player_id": "p6",
+        "players_active": 4,
+        "players_to_act": 2,
+        "position": "BTN",
+        "pot": 450000,
+        "seed": 0,
+        "stack": 670000,
+        "street": "preflop",
+        "table_size": 7,
+        "to_call": 200000
+      }
+    },
+    {
+      "admission_status": "admitted_source_reviewed_development_only",
+      "canonical_hand_id": "triton:485c77c7-8ff8-4a55-922c-09b8883819dc",
+      "decision_id": "94c151c61d0b7a9f92c96c8bf54a434bc06aa307fe3aae2eea0bd81dfdce9099",
+      "evidence_tier": "official_structured_source_independently_reviewed",
+      "expected": {
+        "action": "raise",
+        "amount": 3300000
+      },
+      "fresh_holdout": false,
+      "group_id": "session:triton:tournament:ae031be0-c964-4a4a-8e68-d7e177574f1a",
+      "hand_id": "triton:485c77c7-8ff8-4a55-922c-09b8883819dc",
+      "independent_review_path": "data/acquisition_resume/2026-11-01/converter_review/row-review.json",
+      "independent_review_sha256": "d6084058146c0235bf41d4a7740a795f8f4f06b932e1bf701e75d2a1cd1c92e0",
+      "inspection_status": "inspected",
+      "policy_use": "development_only",
+      "record_hash": "454b836b939671ac0f2ea4f399e9d2fcb4e43138635e573339dc8e3d0a003574",
+      "session_id": "triton:tournament:ae031be0-c964-4a4a-8e68-d7e177574f1a",
+      "source": "https://prod-public-serverless.triton-poker.com/graphql?sourceHandId=485c77c7-8ff8-4a55-922c-09b8883819dc",
+      "source_action_count": 11,
+      "source_action_index": 6,
+      "source_actual_player_count": 7,
+      "source_capture_path": "data/acquisition_sprint_1h/triton_public/sample-final-table.json",
+      "source_capture_sha256": "a7c1565790c9ce6b61797644e7a8412644c6362a32a0c459c6dacba3285a6a5a",
+      "source_decision_id": "triton:485c77c7-8ff8-4a55-922c-09b8883819dc:action:6",
+      "source_payload_sha256": "b50ffa921e738f17d8e20c03f3d5d0fe1ad4db8a52472ba87ac9ab5b4e91b3c4",
+      "source_physical_capacity": 9,
+      "source_query_sha256": "c6348502c6e0995e605b803d461c57f6e8947d4596f8c96790f4f8f1ac98a7dc",
+      "source_request_path": "data/acquisition_sprint_1h/triton_public/sample-final-table-request.json",
+      "source_request_sha256": "60ea4a6a06ea5a8426ad7bedafb42243a62a6547fb2dcdd2abd7c7f47922d0e5",
+      "source_request_variables": {
+        "gameId": "e98edb12-2105-4a9f-abd7-2e0bab1056ed",
+        "handsSize": 100
+      },
+      "source_round_action_index": 6,
+      "source_round_index": 0,
+      "source_validation": "engine_replayed",
+      "stable_source_decision_key": "triton:485c77c7-8ff8-4a55-922c-09b8883819dc:round:0:action:6",
+      "state": {
+        "big_blind": 250000,
+        "board": [],
+        "contestable_pot": 1125000,
+        "current_bet": 0,
+        "history": [
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p2",
+            "position": "UTG",
+            "street": "preflop"
+          },
+          {
+            "action": "fold",
+            "added": 0,
+            "amount": 0,
+            "player": "p3",
+            "position": "MP",
+            "street": "preflop"
+          },
+          {
+            "action": "raise",
+            "added": 500000,
+            "amount": 500000,
+            "player": "p4",
+            "position": "MP",
+            "street": "preflop"
+          }
+        ],
+        "hole_cards": [
+          "9h",
+          "9c"
+        ],
+        "legal_actions": [
+          "call",
+          "fold",
+          "raise"
+        ],
+        "max_raise_to": 3300000,
+        "min_raise_to": 750000,
+        "player_id": "p5",
+        "players_active": 5,
+        "players_to_act": 3,
+        "position": "CO",
+        "pot": 1125000,
+        "seed": 0,
+        "stack": 3300000,
+        "street": "preflop",
+        "table_size": 7,
+        "to_call": 500000
+      }
+    }
+  ],
+  "schema_version": 1,
+  "status": "source_reviewed_development_only_no_policy_evaluation"
+}

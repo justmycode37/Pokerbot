@@ -1,0 +1,17 @@
+# Source-checked observed action prefix for WPT-FINAL1-H18.
+# Unknown opponent hole cards are represented as ????; no opponent cards are retained.
+# The stream ends at the last verified action in the reserved window.
+variant = "NT"
+antes = [0, 0]
+blinds_or_straddles = [500, 1000]
+min_bet = 1000
+starting_stacks = [77098, 122902]
+actions = [
+  "d dh p2 Ts5d",
+  "d dh p1 ????",
+  "p2 f"
+]
+event = "WPT Heads Up Poker Championship finals, match 1"
+url = "https://www.youtube.com/watch?v=daR3q3KKQ0o&t=3296s"
+hand = "WPT-FINAL1-H18"
+players = ["Patrik Antonius", "Phil Ivey"]
