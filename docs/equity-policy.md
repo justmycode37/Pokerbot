@@ -5,6 +5,10 @@ creates a stateless per-table policy. It is an optional phenotype constructor;
 it does not add a genome family, change family routing, load a model, or train
 an estimator.
 
+The module uses `pokerbot.evolution_strategies` for genome validation and the
+unchanged evolved preflop policy. Install the project package so this runtime
+dependency is included with `pokerbot.equity_policy`.
+
 The estimator contract is:
 
 ```python
