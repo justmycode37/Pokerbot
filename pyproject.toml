@@ -14,6 +14,10 @@ evaluation = ["pokerkit==0.7.7"]
 
 [project.scripts]
 pokerbot = "pokerbot.__main__:main"
+pokerbot-saved = "pokerbot.saved_bot:main"
 
 [tool.setuptools.packages.find]
 include = ["pokerbot*"]
+
+[tool.setuptools.package-data]
+pokerbot = ["models/*.json", "models/*.txt"]

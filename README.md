@@ -4,6 +4,14 @@ A Python poker strategy, local match harness, and leakage-free comparison with
 available Phil Ivey hand histories, prepared for the
 [Sequoia No Limit challenge](https://pokerbot.sequoiacap.com/).
 
+The saved working checkpoint is **`ivey-transfer-v1`**, with **478/606 (78.88%)**
+action agreement in the recorded whole-source-group comparison. Improvement
+work is paused at the user's request; the 90% target was not reached. Install
+with `python3 -m pip install .`, then run
+`pokerbot-saved decide < examples/decision.json`. Its model and equity table
+are bundled, so inference also works outside this checkout. See
+[the saved bot instructions](docs/saved-bot.md).
+
 **The requested greater-than-99% agreement with all of Phil Ivey's decisions
 has not been established.** The initial public benchmark contains four
 decisions from one televised hand. It cannot establish general imitation

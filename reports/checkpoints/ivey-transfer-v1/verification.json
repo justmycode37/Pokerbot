@@ -1,0 +1,12 @@
+{
+  "action_agreement": 0.7887788778877888,
+  "action_matches": 478,
+  "checkpoint": "ivey-transfer-v1",
+  "decisions": 606,
+  "fresh_holdout": false,
+  "illegal_predictions": 0,
+  "macro_source_group_action_agreement": 0.6916450243656126,
+  "scope": "inspected development groups held out from each fold's fitting",
+  "source_groups": 18,
+  "verified": true
+}
