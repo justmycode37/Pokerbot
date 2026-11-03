@@ -1,0 +1,3626 @@
+{
+  "candidate_order": [
+    "anchor-saved",
+    "r90-evo-02",
+    "r90-evo-06",
+    "r90-ada-14",
+    "r90-ada-12",
+    "r90-cal-19",
+    "r90-cal-22"
+  ],
+  "candidates": [
+    {
+      "bot_id": "anchor-saved",
+      "family": "saved",
+      "generation": 0,
+      "params": {},
+      "parents": [],
+      "policy_bot_id": "anchor-saved",
+      "provenance": [
+        {
+          "generation": 0,
+          "parents": [],
+          "pool": "training_opponents",
+          "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/v4-training.json",
+          "source_type": "checkpoint"
+        },
+        {
+          "generation": 0,
+          "parents": [],
+          "pool": "hall_of_fame",
+          "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/v4-training.json",
+          "source_type": "checkpoint"
+        },
+        {
+          "generation": 0,
+          "parents": [],
+          "pool": "training_opponents",
+          "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/next-training.json",
+          "source_type": "checkpoint"
+        },
+        {
+          "generation": 0,
+          "parents": [],
+          "pool": "hall_of_fame",
+          "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/next-training.json",
+          "source_type": "checkpoint"
+        },
+        {
+          "generation": 0,
+          "parents": [],
+          "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/candidates-final.json",
+          "source_type": "candidate_file"
+        }
+      ]
+    },
+    {
+      "bot_id": "r90-evo-02",
+      "family": "evolved",
+      "generation": 4,
+      "params": {
+        "bet_size": 0.18,
+        "bluff_frequency": 0.011771,
+        "call_frequency": 1.0,
+        "call_margin": -0.030182,
+        "multiway_penalty": 0.057113,
+        "opening_frequency": 0.822765,
+        "opening_shift": -0.09685,
+        "position_sensitivity": 0.028423,
+        "postflop_call_margin": 0.040286,
+        "raise_frequency": 0.829867,
+        "short_stack_bb": 9.39448,
+        "short_stack_cutoff": 0.7476,
+        "value_raise_threshold": 0.563187
+      },
+      "parents": [
+        "evo-g0003-0000",
+        "evo-g0002-0002-1"
+      ],
+      "policy_bot_id": "r90-evo-02",
+      "provenance": [
+        {
+          "generation": 4,
+          "parents": [
+            "evo-g0003-0000",
+            "evo-g0002-0002-1"
+          ],
+          "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/candidates-final.json",
+          "source_type": "candidate_file"
+        }
+      ]
+    },
+    {
+      "bot_id": "r90-evo-06",
+      "family": "evolved",
+      "generation": 4,
+      "params": {
+        "bet_size": 0.719808,
+        "bluff_frequency": 0.050522,
+        "call_frequency": 1.0,
+        "call_margin": 0.002881,
+        "multiway_penalty": 0.05305,
+        "opening_frequency": 0.91387,
+        "opening_shift": -0.071048,
+        "position_sensitivity": 0.023841,
+        "postflop_call_margin": 0.039515,
+        "raise_frequency": 1.0,
+        "short_stack_bb": 12.099221,
+        "short_stack_cutoff": 0.715807,
+        "value_raise_threshold": 0.603034
+      },
+      "parents": [
+        "evolution-next-g0000-variant-01-evolved",
+        "evo-g0003-0000"
+      ],
+      "policy_bot_id": "r90-evo-06",
+      "provenance": [
+        {
+          "generation": 4,
+          "parents": [
+            "evolution-next-g0000-variant-01-evolved",
+            "evo-g0003-0000"
+          ],
+          "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/candidates-final.json",
+          "source_type": "candidate_file"
+        }
+      ]
+    },
+    {
+      "bot_id": "r90-ada-14",
+      "family": "adaptive",
+      "generation": 4,
+      "params": {
+        "bet_size": 0.167277,
+        "bluff_frequency": 0.017033,
+        "call_frequency": 1.0,
+        "call_margin": -0.030182,
+        "multiway_penalty": 0.05305,
+        "opening_frequency": 0.91387,
+        "opening_shift": -0.09685,
+        "position_sensitivity": 0.0235,
+        "postflop_call_margin": 0.034554,
+        "raise_frequency": 1.0,
+        "short_stack_bb": 13.007457,
+        "short_stack_cutoff": 0.715807,
+        "value_raise_threshold": 0.603034
+      },
+      "parents": [
+        "evolution-next-g0000-variant-01-evolved",
+        "evo-g0003-0000"
+      ],
+      "policy_bot_id": "r90-ada-14",
+      "provenance": [
+        {
+          "generation": 4,
+          "parents": [
+            "evolution-next-g0000-variant-01-evolved",
+            "evo-g0003-0000"
+          ],
+          "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/candidates-final.json",
+          "source_type": "candidate_file"
+        }
+      ]
+    },
+    {
+      "bot_id": "r90-ada-12",
+      "family": "adaptive",
+      "generation": 5,
+      "params": {
+        "bet_size": 0.15,
+        "bluff_frequency": 0.0,
+        "call_frequency": 1.0,
+        "call_margin": -0.017295,
+        "multiway_penalty": 0.05305,
+        "opening_frequency": 0.902142,
+        "opening_shift": -0.107273,
+        "position_sensitivity": 0.025478,
+        "postflop_call_margin": 0.034554,
+        "raise_frequency": 0.665875,
+        "short_stack_bb": 9.870917,
+        "short_stack_cutoff": 0.7476,
+        "value_raise_threshold": 0.603034
+      },
+      "parents": [
+        "evo-g0004-0005@next",
+        "evo-g0003-0000"
+      ],
+      "policy_bot_id": "r90-ada-12",
+      "provenance": [
+        {
+          "generation": 5,
+          "parents": [
+            "evo-g0004-0005@next",
+            "evo-g0003-0000"
+          ],
+          "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/candidates-final.json",
+          "source_type": "candidate_file"
+        }
+      ]
+    },
+    {
+      "bot_id": "r90-cal-19",
+      "family": "calibrated",
+      "generation": 7,
+      "params": {
+        "bet_size": 0.15,
+        "bluff_frequency": 0.0,
+        "call_frequency": 0.978,
+        "call_margin": 0.031368,
+        "multiway_penalty": 0.09567,
+        "opening_frequency": 1.0,
+        "opening_shift": -0.09685,
+        "position_sensitivity": 0.030218,
+        "postflop_call_margin": 0.034554,
+        "raise_frequency": 0.753161,
+        "short_stack_bb": 9.39448,
+        "short_stack_cutoff": 0.621988,
+        "value_raise_threshold": 0.584105
+      },
+      "parents": [
+        "evo-g0006-0004",
+        "evo-g0005-0002"
+      ],
+      "policy_bot_id": "r90-cal-19",
+      "provenance": [
+        {
+          "generation": 7,
+          "parents": [
+            "evo-g0006-0004",
+            "evo-g0005-0002"
+          ],
+          "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/candidates-final.json",
+          "source_type": "candidate_file"
+        }
+      ]
+    },
+    {
+      "bot_id": "r90-cal-22",
+      "family": "calibrated",
+      "generation": 4,
+      "params": {
+        "bet_size": 0.167277,
+        "bluff_frequency": 0.0,
+        "call_frequency": 1.0,
+        "call_margin": 0.000381,
+        "multiway_penalty": 0.05305,
+        "opening_frequency": 0.91387,
+        "opening_shift": -0.09685,
+        "position_sensitivity": 0.026627,
+        "postflop_call_margin": 0.046953,
+        "raise_frequency": 1.0,
+        "short_stack_bb": 11.008681,
+        "short_stack_cutoff": 0.715807,
+        "value_raise_threshold": 0.56
+      },
+      "parents": [
+        "evolution-next-g0000-variant-01-evolved",
+        "evo-g0003-0000"
+      ],
+      "policy_bot_id": "r90-cal-22",
+      "provenance": [
+        {
+          "generation": 4,
+          "parents": [
+            "evolution-next-g0000-variant-01-evolved",
+            "evo-g0003-0000"
+          ],
+          "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/candidates-final.json",
+          "source_type": "candidate_file"
+        }
+      ]
+    }
+  ],
+  "inputs": {
+    "candidate_file_sha256": "60bf6df7b8dc92b59bbb7bad179f645fa61e473c691407b5b1a9db6e100e113b",
+    "candidate_pool_sha256": "ce5080b7a621fb6363adef0bee6558663e1195279b54338c4aabe5cfadb91fa5",
+    "checkpoint_projections": [
+      {
+        "path": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/v4-training.json",
+        "projected_sha256": "f39d63633cc54f0e67a7ed8f65b01ea68a082c5a7ad14ced7b521e463dbae724"
+      },
+      {
+        "path": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/next-training.json",
+        "projected_sha256": "6fa3e9b7058fff499436dae365436fb38de51082201893784ccf6fb71c1dd7eb"
+      }
+    ],
+    "policy_ids_file_sha256": "f79e02ec41a549eef1e71612d812055fd7877a85c400211bc4af5b5a11ecad70",
+    "seed_file_sha256": "70e926ecdf03eebd462c0c1a7e2f67c1afbaacc1c70792fcad847bb0715d7774"
+  },
+  "interpretation_limits": [
+    "Equal-sample rankings remain noisy.",
+    "Changing the source opponent pool changes the estimand.",
+    "Candidate IDs influence deployed policy randomness; paired effects do not isolate gene changes.",
+    "Held-out evaluation remains required."
+  ],
+  "namespace": "racer-evolution-90search-final-20261103-v1",
+  "opponent_pool": {
+    "complete_union_ids": [
+      "adaptive-evo-g0003-0004",
+      "adaptive-evo-g0005-0000",
+      "adaptive-evo-g0006-0000",
+      "adaptive-evo-initial-0005",
+      "anchor-fast",
+      "anchor-random",
+      "anchor-saved",
+      "anchor-station",
+      "anchor-tight",
+      "evo-fresh-0000",
+      "evo-fresh-0001",
+      "evo-fresh-0002",
+      "evo-g0001-0001@next",
+      "evo-g0001-0001@v4",
+      "evo-g0001-0002@next",
+      "evo-g0001-0002@v4",
+      "evo-g0001-0004@next",
+      "evo-g0001-0004@v4",
+      "evo-g0001-0005@next",
+      "evo-g0001-0005@v4",
+      "evo-g0002-0000",
+      "evo-g0002-0001@next",
+      "evo-g0002-0001@v4",
+      "evo-g0002-0002",
+      "evo-g0002-0002-1",
+      "evo-g0002-0004@next",
+      "evo-g0002-0004@v4",
+      "evo-g0002-0005",
+      "evo-g0003-0000",
+      "evo-g0003-0001@next",
+      "evo-g0003-0001@v4",
+      "evo-g0003-0002@next",
+      "evo-g0003-0002@v4",
+      "evo-g0003-0004",
+      "evo-g0003-0004-1",
+      "evo-g0003-0005@next",
+      "evo-g0003-0005@v4",
+      "evo-g0004-0000@v4",
+      "evo-g0004-0001@v4",
+      "evo-g0004-0004@v4",
+      "evo-g0004-0005@v4",
+      "evo-g0005-0000",
+      "evo-g0005-0000-1",
+      "evo-g0005-0001",
+      "evo-g0005-0002",
+      "evo-g0005-0004",
+      "evo-g0006-0000",
+      "evo-g0006-0000-1",
+      "evo-g0006-0001",
+      "evo-g0006-0002",
+      "evo-g0006-0004",
+      "evo-g0007-0000",
+      "evo-g0007-0002",
+      "evo-g0007-0004",
+      "evo-g0007-0005",
+      "evo-initial-0005",
+      "evolution-next-g0000-variant-01-evolved",
+      "evolution-next-g0000-variant-02-evolved",
+      "evolution-next-g0000-variant-03-adaptive",
+      "evolution-next-g0000-variant-04-adaptive",
+      "train-opponent-0000",
+      "train-opponent-0001",
+      "train-opponent-0002",
+      "train-opponent-0003",
+      "train-opponent-0004",
+      "train-opponent-0005",
+      "train-opponent-0006",
+      "train-opponent-0007",
+      "train-opponent-0008",
+      "train-opponent-0009",
+      "train-opponent-0010",
+      "train-opponent-0011",
+      "train-opponent-0012",
+      "train-opponent-0013",
+      "train-opponent-0014",
+      "train-opponent-0015"
+    ],
+    "genomes": [
+      {
+        "bot_id": "adaptive-evo-g0003-0004",
+        "family": "adaptive",
+        "generation": 0,
+        "params": {
+          "bet_size": 0.18,
+          "bluff_frequency": 0.066106,
+          "call_frequency": 0.983812,
+          "call_margin": 0.000743,
+          "multiway_penalty": 0.049291,
+          "opening_frequency": 0.822765,
+          "opening_shift": -0.039367,
+          "position_sensitivity": 0.032007,
+          "postflop_call_margin": 0.038536,
+          "raise_frequency": 0.919261,
+          "short_stack_bb": 9.39448,
+          "short_stack_cutoff": 0.685973,
+          "value_raise_threshold": 0.563187
+        },
+        "parents": [
+          "evo-g0003-0004"
+        ],
+        "policy_bot_id": "adaptive-evo-g0003-0004",
+        "provenance": [
+          {
+            "generation": 0,
+            "parents": [
+              "evo-g0003-0004"
+            ],
+            "pool": "hall_of_fame",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/v4-training.json",
+            "source_type": "checkpoint"
+          }
+        ]
+      },
+      {
+        "bot_id": "adaptive-evo-g0005-0000",
+        "family": "adaptive",
+        "generation": 0,
+        "params": {
+          "bet_size": 0.719808,
+          "bluff_frequency": 0.011771,
+          "call_frequency": 0.984689,
+          "call_margin": 0.000381,
+          "multiway_penalty": 0.096318,
+          "opening_frequency": 0.93233,
+          "opening_shift": -0.09685,
+          "position_sensitivity": 0.026473,
+          "postflop_call_margin": 0.034554,
+          "raise_frequency": 0.723978,
+          "short_stack_bb": 11.601011,
+          "short_stack_cutoff": 0.684702,
+          "value_raise_threshold": 0.584105
+        },
+        "parents": [
+          "evo-g0005-0000"
+        ],
+        "policy_bot_id": "adaptive-evo-g0005-0000",
+        "provenance": [
+          {
+            "generation": 0,
+            "parents": [
+              "evo-g0005-0000"
+            ],
+            "pool": "hall_of_fame",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/v4-training.json",
+            "source_type": "checkpoint"
+          },
+          {
+            "generation": 0,
+            "parents": [
+              "evo-g0005-0000"
+            ],
+            "pool": "hall_of_fame",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/next-training.json",
+            "source_type": "checkpoint"
+          }
+        ]
+      },
+      {
+        "bot_id": "adaptive-evo-g0006-0000",
+        "family": "adaptive",
+        "generation": 0,
+        "params": {
+          "bet_size": 0.749558,
+          "bluff_frequency": 0.042506,
+          "call_frequency": 0.661776,
+          "call_margin": 0.002968,
+          "multiway_penalty": 0.04716,
+          "opening_frequency": 0.944133,
+          "opening_shift": -0.09685,
+          "position_sensitivity": 0.024093,
+          "postflop_call_margin": 0.069354,
+          "raise_frequency": 0.679535,
+          "short_stack_bb": 5.976545,
+          "short_stack_cutoff": 0.662762,
+          "value_raise_threshold": 0.611141
+        },
+        "parents": [
+          "evo-g0006-0000"
+        ],
+        "policy_bot_id": "adaptive-evo-g0006-0000",
+        "provenance": [
+          {
+            "generation": 0,
+            "parents": [
+              "evo-g0006-0000"
+            ],
+            "pool": "hall_of_fame",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/v4-training.json",
+            "source_type": "checkpoint"
+          }
+        ]
+      },
+      {
+        "bot_id": "adaptive-evo-initial-0005",
+        "family": "adaptive",
+        "generation": 0,
+        "params": {
+          "bet_size": 0.167277,
+          "bluff_frequency": 0.052038,
+          "call_frequency": 0.637602,
+          "call_margin": 0.046774,
+          "multiway_penalty": 0.045934,
+          "opening_frequency": 0.958278,
+          "opening_shift": -0.09685,
+          "position_sensitivity": 0.023171,
+          "postflop_call_margin": 0.055648,
+          "raise_frequency": 0.63483,
+          "short_stack_bb": 5.976545,
+          "short_stack_cutoff": 0.662762,
+          "value_raise_threshold": 0.611141
+        },
+        "parents": [
+          "evo-initial-0005"
+        ],
+        "policy_bot_id": "adaptive-evo-initial-0005",
+        "provenance": [
+          {
+            "generation": 0,
+            "parents": [
+              "evo-initial-0005"
+            ],
+            "pool": "hall_of_fame",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/v4-training.json",
+            "source_type": "checkpoint"
+          },
+          {
+            "generation": 0,
+            "parents": [
+              "evo-initial-0005"
+            ],
+            "pool": "hall_of_fame",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/next-training.json",
+            "source_type": "checkpoint"
+          }
+        ]
+      },
+      {
+        "bot_id": "anchor-fast",
+        "family": "fast",
+        "generation": 0,
+        "params": {},
+        "parents": [],
+        "policy_bot_id": "anchor-fast",
+        "provenance": [
+          {
+            "generation": 0,
+            "parents": [],
+            "pool": "training_opponents",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/v4-training.json",
+            "source_type": "checkpoint"
+          },
+          {
+            "generation": 0,
+            "parents": [],
+            "pool": "hall_of_fame",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/v4-training.json",
+            "source_type": "checkpoint"
+          },
+          {
+            "generation": 0,
+            "parents": [],
+            "pool": "training_opponents",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/next-training.json",
+            "source_type": "checkpoint"
+          },
+          {
+            "generation": 0,
+            "parents": [],
+            "pool": "hall_of_fame",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/next-training.json",
+            "source_type": "checkpoint"
+          }
+        ]
+      },
+      {
+        "bot_id": "anchor-random",
+        "family": "random-legal",
+        "generation": 0,
+        "params": {},
+        "parents": [],
+        "policy_bot_id": "anchor-random",
+        "provenance": [
+          {
+            "generation": 0,
+            "parents": [],
+            "pool": "training_opponents",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/v4-training.json",
+            "source_type": "checkpoint"
+          },
+          {
+            "generation": 0,
+            "parents": [],
+            "pool": "hall_of_fame",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/v4-training.json",
+            "source_type": "checkpoint"
+          },
+          {
+            "generation": 0,
+            "parents": [],
+            "pool": "training_opponents",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/next-training.json",
+            "source_type": "checkpoint"
+          },
+          {
+            "generation": 0,
+            "parents": [],
+            "pool": "hall_of_fame",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/next-training.json",
+            "source_type": "checkpoint"
+          }
+        ]
+      },
+      {
+        "bot_id": "anchor-saved",
+        "family": "saved",
+        "generation": 0,
+        "params": {},
+        "parents": [],
+        "policy_bot_id": "anchor-saved",
+        "provenance": [
+          {
+            "generation": 0,
+            "parents": [],
+            "pool": "training_opponents",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/v4-training.json",
+            "source_type": "checkpoint"
+          },
+          {
+            "generation": 0,
+            "parents": [],
+            "pool": "hall_of_fame",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/v4-training.json",
+            "source_type": "checkpoint"
+          },
+          {
+            "generation": 0,
+            "parents": [],
+            "pool": "training_opponents",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/next-training.json",
+            "source_type": "checkpoint"
+          },
+          {
+            "generation": 0,
+            "parents": [],
+            "pool": "hall_of_fame",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/next-training.json",
+            "source_type": "checkpoint"
+          },
+          {
+            "generation": 0,
+            "parents": [],
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/candidates-final.json",
+            "source_type": "candidate_file"
+          }
+        ]
+      },
+      {
+        "bot_id": "anchor-station",
+        "family": "calling-station",
+        "generation": 0,
+        "params": {},
+        "parents": [],
+        "policy_bot_id": "anchor-station",
+        "provenance": [
+          {
+            "generation": 0,
+            "parents": [],
+            "pool": "training_opponents",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/v4-training.json",
+            "source_type": "checkpoint"
+          },
+          {
+            "generation": 0,
+            "parents": [],
+            "pool": "hall_of_fame",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/v4-training.json",
+            "source_type": "checkpoint"
+          },
+          {
+            "generation": 0,
+            "parents": [],
+            "pool": "training_opponents",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/next-training.json",
+            "source_type": "checkpoint"
+          },
+          {
+            "generation": 0,
+            "parents": [],
+            "pool": "hall_of_fame",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/next-training.json",
+            "source_type": "checkpoint"
+          }
+        ]
+      },
+      {
+        "bot_id": "anchor-tight",
+        "family": "tight-passive",
+        "generation": 0,
+        "params": {},
+        "parents": [],
+        "policy_bot_id": "anchor-tight",
+        "provenance": [
+          {
+            "generation": 0,
+            "parents": [],
+            "pool": "training_opponents",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/v4-training.json",
+            "source_type": "checkpoint"
+          },
+          {
+            "generation": 0,
+            "parents": [],
+            "pool": "hall_of_fame",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/v4-training.json",
+            "source_type": "checkpoint"
+          },
+          {
+            "generation": 0,
+            "parents": [],
+            "pool": "training_opponents",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/next-training.json",
+            "source_type": "checkpoint"
+          },
+          {
+            "generation": 0,
+            "parents": [],
+            "pool": "hall_of_fame",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/next-training.json",
+            "source_type": "checkpoint"
+          }
+        ]
+      },
+      {
+        "bot_id": "evo-fresh-0000",
+        "family": "evolved",
+        "generation": 0,
+        "params": {
+          "bet_size": 0.587065,
+          "bluff_frequency": 0.222642,
+          "call_frequency": 0.580359,
+          "call_margin": -0.074388,
+          "multiway_penalty": 0.092168,
+          "opening_frequency": 0.490499,
+          "opening_shift": -0.03363,
+          "position_sensitivity": 0.043719,
+          "postflop_call_margin": -0.005167,
+          "raise_frequency": 0.788401,
+          "short_stack_bb": 11.316359,
+          "short_stack_cutoff": 0.582181,
+          "value_raise_threshold": 0.602495
+        },
+        "parents": [],
+        "policy_bot_id": "evo-fresh-0000",
+        "provenance": [
+          {
+            "generation": 0,
+            "parents": [],
+            "pool": "hall_of_fame",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/v4-training.json",
+            "source_type": "checkpoint"
+          },
+          {
+            "generation": 0,
+            "parents": [],
+            "pool": "hall_of_fame",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/next-training.json",
+            "source_type": "checkpoint"
+          }
+        ]
+      },
+      {
+        "bot_id": "evo-fresh-0001",
+        "family": "adaptive",
+        "generation": 0,
+        "params": {
+          "bet_size": 0.501598,
+          "bluff_frequency": 0.126394,
+          "call_frequency": 0.473689,
+          "call_margin": 0.025147,
+          "multiway_penalty": 0.088291,
+          "opening_frequency": 0.553378,
+          "opening_shift": -0.113146,
+          "position_sensitivity": 0.03429,
+          "postflop_call_margin": 0.026945,
+          "raise_frequency": 0.773978,
+          "short_stack_bb": 12.496442,
+          "short_stack_cutoff": 0.631867,
+          "value_raise_threshold": 0.670473
+        },
+        "parents": [],
+        "policy_bot_id": "evo-fresh-0001",
+        "provenance": [
+          {
+            "generation": 0,
+            "parents": [],
+            "pool": "hall_of_fame",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/v4-training.json",
+            "source_type": "checkpoint"
+          },
+          {
+            "generation": 0,
+            "parents": [],
+            "pool": "hall_of_fame",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/next-training.json",
+            "source_type": "checkpoint"
+          }
+        ]
+      },
+      {
+        "bot_id": "evo-fresh-0002",
+        "family": "adaptive",
+        "generation": 0,
+        "params": {
+          "bet_size": 0.239302,
+          "bluff_frequency": 0.194985,
+          "call_frequency": 0.73507,
+          "call_margin": -0.034822,
+          "multiway_penalty": 0.052344,
+          "opening_frequency": 0.96244,
+          "opening_shift": 0.075643,
+          "position_sensitivity": 0.024737,
+          "postflop_call_margin": -0.002706,
+          "raise_frequency": 0.744815,
+          "short_stack_bb": 12.498806,
+          "short_stack_cutoff": 0.623455,
+          "value_raise_threshold": 0.793439
+        },
+        "parents": [],
+        "policy_bot_id": "evo-fresh-0002",
+        "provenance": [
+          {
+            "generation": 0,
+            "parents": [],
+            "pool": "hall_of_fame",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/v4-training.json",
+            "source_type": "checkpoint"
+          },
+          {
+            "generation": 0,
+            "parents": [],
+            "pool": "hall_of_fame",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/next-training.json",
+            "source_type": "checkpoint"
+          }
+        ]
+      },
+      {
+        "bot_id": "evo-g0001-0001@next",
+        "family": "evolved",
+        "generation": 1,
+        "params": {
+          "bet_size": 0.663095,
+          "bluff_frequency": 0.011771,
+          "call_frequency": 1.0,
+          "call_margin": 0.000381,
+          "multiway_penalty": 0.07811,
+          "opening_frequency": 0.996553,
+          "opening_shift": -0.09685,
+          "position_sensitivity": 0.026473,
+          "postflop_call_margin": 0.029931,
+          "raise_frequency": 1.0,
+          "short_stack_bb": 11.601011,
+          "short_stack_cutoff": 0.684702,
+          "value_raise_threshold": 0.611141
+        },
+        "parents": [
+          "adaptive-evo-g0005-0000",
+          "evolution-next-g0000-variant-01-evolved"
+        ],
+        "policy_bot_id": "evo-g0001-0001",
+        "provenance": [
+          {
+            "generation": 1,
+            "parents": [
+              "adaptive-evo-g0005-0000",
+              "evolution-next-g0000-variant-01-evolved"
+            ],
+            "pool": "hall_of_fame",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/next-training.json",
+            "source_type": "checkpoint"
+          }
+        ]
+      },
+      {
+        "bot_id": "evo-g0001-0001@v4",
+        "family": "evolved",
+        "generation": 1,
+        "params": {
+          "bet_size": 0.15,
+          "bluff_frequency": 0.052038,
+          "call_frequency": 0.95,
+          "call_margin": 0.046774,
+          "multiway_penalty": 0.027726,
+          "opening_frequency": 0.962683,
+          "opening_shift": 0.0,
+          "position_sensitivity": 0.023171,
+          "postflop_call_margin": 0.003377,
+          "raise_frequency": 0.62,
+          "short_stack_bb": 10.0,
+          "short_stack_cutoff": 0.662762,
+          "value_raise_threshold": 0.69
+        },
+        "parents": [
+          "evo-initial-0005",
+          "anchor-fast"
+        ],
+        "policy_bot_id": "evo-g0001-0001",
+        "provenance": [
+          {
+            "generation": 1,
+            "parents": [
+              "evo-initial-0005",
+              "anchor-fast"
+            ],
+            "pool": "hall_of_fame",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/v4-training.json",
+            "source_type": "checkpoint"
+          }
+        ]
+      },
+      {
+        "bot_id": "evo-g0001-0002@next",
+        "family": "adaptive",
+        "generation": 1,
+        "params": {
+          "bet_size": 0.167277,
+          "bluff_frequency": 0.052038,
+          "call_frequency": 0.985,
+          "call_margin": -0.022311,
+          "multiway_penalty": 0.057113,
+          "opening_frequency": 0.822765,
+          "opening_shift": -0.084227,
+          "position_sensitivity": 0.037746,
+          "postflop_call_margin": 0.055648,
+          "raise_frequency": 0.723978,
+          "short_stack_bb": 9.39448,
+          "short_stack_cutoff": 0.684702,
+          "value_raise_threshold": 0.563187
+        },
+        "parents": [
+          "adaptive-evo-initial-0005",
+          "evolution-next-g0000-variant-02-evolved"
+        ],
+        "policy_bot_id": "evo-g0001-0002",
+        "provenance": [
+          {
+            "generation": 1,
+            "parents": [
+              "adaptive-evo-initial-0005",
+              "evolution-next-g0000-variant-02-evolved"
+            ],
+            "pool": "hall_of_fame",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/next-training.json",
+            "source_type": "checkpoint"
+          }
+        ]
+      },
+      {
+        "bot_id": "evo-g0001-0002@v4",
+        "family": "adaptive",
+        "generation": 1,
+        "params": {
+          "bet_size": 0.167277,
+          "bluff_frequency": 0.052038,
+          "call_frequency": 0.972428,
+          "call_margin": -0.021949,
+          "multiway_penalty": 0.049291,
+          "opening_frequency": 0.822765,
+          "opening_shift": -0.026744,
+          "position_sensitivity": 0.033248,
+          "postflop_call_margin": 0.055648,
+          "raise_frequency": 0.919261,
+          "short_stack_bb": 9.39448,
+          "short_stack_cutoff": 0.685973,
+          "value_raise_threshold": 0.563187
+        },
+        "parents": [
+          "adaptive-evo-initial-0005",
+          "evo-g0003-0004"
+        ],
+        "policy_bot_id": "evo-g0001-0002",
+        "provenance": [
+          {
+            "generation": 1,
+            "parents": [
+              "adaptive-evo-initial-0005",
+              "evo-g0003-0004"
+            ],
+            "pool": "hall_of_fame",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/v4-training.json",
+            "source_type": "checkpoint"
+          }
+        ]
+      },
+      {
+        "bot_id": "evo-g0001-0004@next",
+        "family": "evolved",
+        "generation": 1,
+        "params": {
+          "bet_size": 0.167277,
+          "bluff_frequency": 0.0,
+          "call_frequency": 0.978,
+          "call_margin": -0.030182,
+          "multiway_penalty": 0.05305,
+          "opening_frequency": 0.91387,
+          "opening_shift": -0.110905,
+          "position_sensitivity": 0.023841,
+          "postflop_call_margin": 0.034554,
+          "raise_frequency": 0.829867,
+          "short_stack_bb": 13.007457,
+          "short_stack_cutoff": 0.76,
+          "value_raise_threshold": 0.611141
+        },
+        "parents": [
+          "evolution-next-g0000-variant-01-evolved",
+          "evo-g0005-0004"
+        ],
+        "policy_bot_id": "evo-g0001-0004",
+        "provenance": [
+          {
+            "generation": 1,
+            "parents": [
+              "evolution-next-g0000-variant-01-evolved",
+              "evo-g0005-0004"
+            ],
+            "pool": "hall_of_fame",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/next-training.json",
+            "source_type": "checkpoint"
+          }
+        ]
+      },
+      {
+        "bot_id": "evo-g0001-0004@v4",
+        "family": "evolved",
+        "generation": 1,
+        "params": {
+          "bet_size": 0.5,
+          "bluff_frequency": 0.042506,
+          "call_frequency": 0.661776,
+          "call_margin": 0.002968,
+          "multiway_penalty": 0.045,
+          "opening_frequency": 0.944133,
+          "opening_shift": -0.110905,
+          "position_sensitivity": 0.024093,
+          "postflop_call_margin": 0.0,
+          "raise_frequency": 0.592775,
+          "short_stack_bb": 8.502991,
+          "short_stack_cutoff": 0.756037,
+          "value_raise_threshold": 0.69
+        },
+        "parents": [
+          "anchor-fast",
+          "evo-g0006-0000"
+        ],
+        "policy_bot_id": "evo-g0001-0004",
+        "provenance": [
+          {
+            "generation": 1,
+            "parents": [
+              "anchor-fast",
+              "evo-g0006-0000"
+            ],
+            "pool": "hall_of_fame",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/v4-training.json",
+            "source_type": "checkpoint"
+          }
+        ]
+      },
+      {
+        "bot_id": "evo-g0001-0005@next",
+        "family": "evolved",
+        "generation": 1,
+        "params": {
+          "bet_size": 0.191109,
+          "bluff_frequency": 0.001462,
+          "call_frequency": 1.0,
+          "call_margin": -0.030182,
+          "multiway_penalty": 0.05305,
+          "opening_frequency": 1.0,
+          "opening_shift": -0.09685,
+          "position_sensitivity": 0.015157,
+          "postflop_call_margin": 0.040584,
+          "raise_frequency": 0.723978,
+          "short_stack_bb": 9.39448,
+          "short_stack_cutoff": 0.684702,
+          "value_raise_threshold": 0.611141
+        },
+        "parents": [
+          "evolution-next-g0000-variant-02-evolved",
+          "evolution-next-g0000-variant-01-evolved"
+        ],
+        "policy_bot_id": "evo-g0001-0005",
+        "provenance": [
+          {
+            "generation": 1,
+            "parents": [
+              "evolution-next-g0000-variant-02-evolved",
+              "evolution-next-g0000-variant-01-evolved"
+            ],
+            "pool": "hall_of_fame",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/next-training.json",
+            "source_type": "checkpoint"
+          }
+        ]
+      },
+      {
+        "bot_id": "evo-g0001-0005@v4",
+        "family": "evolved",
+        "generation": 1,
+        "params": {
+          "bet_size": 0.523832,
+          "bluff_frequency": 0.051462,
+          "call_frequency": 0.95,
+          "call_margin": 0.0,
+          "multiway_penalty": 0.045,
+          "opening_frequency": 0.979608,
+          "opening_shift": -0.039367,
+          "position_sensitivity": 0.009316,
+          "postflop_call_margin": 0.031153,
+          "raise_frequency": 0.919261,
+          "short_stack_bb": 9.39448,
+          "short_stack_cutoff": 0.685973,
+          "value_raise_threshold": 0.69
+        },
+        "parents": [
+          "evo-g0003-0004",
+          "anchor-fast"
+        ],
+        "policy_bot_id": "evo-g0001-0005",
+        "provenance": [
+          {
+            "generation": 1,
+            "parents": [
+              "evo-g0003-0004",
+              "anchor-fast"
+            ],
+            "pool": "hall_of_fame",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/v4-training.json",
+            "source_type": "checkpoint"
+          }
+        ]
+      },
+      {
+        "bot_id": "evo-g0002-0000",
+        "family": "evolved",
+        "generation": 2,
+        "params": {
+          "bet_size": 0.15,
+          "bluff_frequency": 0.011771,
+          "call_frequency": 1.0,
+          "call_margin": 0.000381,
+          "multiway_penalty": 0.057113,
+          "opening_frequency": 0.838757,
+          "opening_shift": -0.09685,
+          "position_sensitivity": 0.036505,
+          "postflop_call_margin": 0.029931,
+          "raise_frequency": 0.64401,
+          "short_stack_bb": 11.652085,
+          "short_stack_cutoff": 0.684702,
+          "value_raise_threshold": 0.56
+        },
+        "parents": [
+          "evolution-next-g0000-variant-02-evolved",
+          "evo-g0001-0001@next"
+        ],
+        "policy_bot_id": "evo-g0002-0000",
+        "provenance": [
+          {
+            "generation": 2,
+            "parents": [
+              "evolution-next-g0000-variant-02-evolved",
+              "evo-g0001-0001@next"
+            ],
+            "pool": "hall_of_fame",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/next-training.json",
+            "source_type": "checkpoint"
+          }
+        ]
+      },
+      {
+        "bot_id": "evo-g0002-0001@next",
+        "family": "evolved",
+        "generation": 2,
+        "params": {
+          "bet_size": 0.167277,
+          "bluff_frequency": 0.011771,
+          "call_frequency": 0.978,
+          "call_margin": -0.030182,
+          "multiway_penalty": 0.05305,
+          "opening_frequency": 0.91387,
+          "opening_shift": -0.09685,
+          "position_sensitivity": 0.023841,
+          "postflop_call_margin": 0.034554,
+          "raise_frequency": 0.811846,
+          "short_stack_bb": 11.601011,
+          "short_stack_cutoff": 0.684702,
+          "value_raise_threshold": 0.611141
+        },
+        "parents": [
+          "evolution-next-g0000-variant-01-evolved",
+          "adaptive-evo-g0005-0000"
+        ],
+        "policy_bot_id": "evo-g0002-0001",
+        "provenance": [
+          {
+            "generation": 2,
+            "parents": [
+              "evolution-next-g0000-variant-01-evolved",
+              "adaptive-evo-g0005-0000"
+            ],
+            "pool": "hall_of_fame",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/next-training.json",
+            "source_type": "checkpoint"
+          }
+        ]
+      },
+      {
+        "bot_id": "evo-g0002-0001@v4",
+        "family": "adaptive",
+        "generation": 2,
+        "params": {
+          "bet_size": 0.167277,
+          "bluff_frequency": 0.011771,
+          "call_frequency": 0.978,
+          "call_margin": 0.046774,
+          "multiway_penalty": 0.045934,
+          "opening_frequency": 0.958278,
+          "opening_shift": -0.09685,
+          "position_sensitivity": 0.023171,
+          "postflop_call_margin": 0.055648,
+          "raise_frequency": 0.811846,
+          "short_stack_bb": 11.601011,
+          "short_stack_cutoff": 0.684702,
+          "value_raise_threshold": 0.611141
+        },
+        "parents": [
+          "adaptive-evo-initial-0005",
+          "adaptive-evo-g0005-0000"
+        ],
+        "policy_bot_id": "evo-g0002-0001",
+        "provenance": [
+          {
+            "generation": 2,
+            "parents": [
+              "adaptive-evo-initial-0005",
+              "adaptive-evo-g0005-0000"
+            ],
+            "pool": "hall_of_fame",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/v4-training.json",
+            "source_type": "checkpoint"
+          }
+        ]
+      },
+      {
+        "bot_id": "evo-g0002-0002",
+        "family": "evolved",
+        "generation": 2,
+        "params": {
+          "bet_size": 0.15,
+          "bluff_frequency": 0.011771,
+          "call_frequency": 0.996384,
+          "call_margin": 0.000381,
+          "multiway_penalty": 0.049291,
+          "opening_frequency": 0.822765,
+          "opening_shift": -0.09685,
+          "position_sensitivity": 0.033248,
+          "postflop_call_margin": 0.047967,
+          "raise_frequency": 0.723978,
+          "short_stack_bb": 9.39448,
+          "short_stack_cutoff": 0.684702,
+          "value_raise_threshold": 0.563187
+        },
+        "parents": [
+          "evo-g0001-0002@v4",
+          "evo-g0005-0000"
+        ],
+        "policy_bot_id": "evo-g0002-0002",
+        "provenance": [
+          {
+            "generation": 2,
+            "parents": [
+              "evo-g0001-0002@v4",
+              "evo-g0005-0000"
+            ],
+            "pool": "hall_of_fame",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/v4-training.json",
+            "source_type": "checkpoint"
+          },
+          {
+            "generation": 2,
+            "parents": [
+              "evo-g0001-0002@v4",
+              "evo-g0005-0000"
+            ],
+            "pool": "hall_of_fame",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/next-training.json",
+            "source_type": "checkpoint"
+          }
+        ]
+      },
+      {
+        "bot_id": "evo-g0002-0002-1",
+        "family": "evolved",
+        "generation": 2,
+        "params": {
+          "bet_size": 0.15,
+          "bluff_frequency": 0.0,
+          "call_frequency": 1.0,
+          "call_margin": -0.030182,
+          "multiway_penalty": 0.057113,
+          "opening_frequency": 0.822765,
+          "opening_shift": -0.110905,
+          "position_sensitivity": 0.036505,
+          "postflop_call_margin": 0.040286,
+          "raise_frequency": 0.829867,
+          "short_stack_bb": 9.39448,
+          "short_stack_cutoff": 0.76,
+          "value_raise_threshold": 0.563187
+        },
+        "parents": [
+          "evolution-next-g0000-variant-02-evolved",
+          "evo-g0001-0004@next"
+        ],
+        "policy_bot_id": "evo-g0002-0002-1",
+        "provenance": [
+          {
+            "generation": 2,
+            "parents": [
+              "evolution-next-g0000-variant-02-evolved",
+              "evo-g0001-0004@next"
+            ],
+            "pool": "hall_of_fame",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/next-training.json",
+            "source_type": "checkpoint"
+          }
+        ]
+      },
+      {
+        "bot_id": "evo-g0002-0004@next",
+        "family": "evolved",
+        "generation": 2,
+        "params": {
+          "bet_size": 0.719808,
+          "bluff_frequency": 0.028264,
+          "call_frequency": 0.99137,
+          "call_margin": 0.000381,
+          "multiway_penalty": 0.093052,
+          "opening_frequency": 0.883715,
+          "opening_shift": -0.09685,
+          "position_sensitivity": 0.026473,
+          "postflop_call_margin": 0.047967,
+          "raise_frequency": 0.723978,
+          "short_stack_bb": 11.601011,
+          "short_stack_cutoff": 0.684702,
+          "value_raise_threshold": 0.586635
+        },
+        "parents": [
+          "evolution-next-g0000-variant-02-evolved",
+          "adaptive-evo-g0005-0000"
+        ],
+        "policy_bot_id": "evo-g0002-0004",
+        "provenance": [
+          {
+            "generation": 2,
+            "parents": [
+              "evolution-next-g0000-variant-02-evolved",
+              "adaptive-evo-g0005-0000"
+            ],
+            "pool": "hall_of_fame",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/next-training.json",
+            "source_type": "checkpoint"
+          }
+        ]
+      },
+      {
+        "bot_id": "evo-g0002-0004@v4",
+        "family": "adaptive",
+        "generation": 2,
+        "params": {
+          "bet_size": 0.719808,
+          "bluff_frequency": 0.052038,
+          "call_frequency": 0.967414,
+          "call_margin": -0.021949,
+          "multiway_penalty": 0.093052,
+          "opening_frequency": 0.883715,
+          "opening_shift": -0.026744,
+          "position_sensitivity": 0.026473,
+          "postflop_call_margin": 0.055648,
+          "raise_frequency": 0.919261,
+          "short_stack_bb": 11.601011,
+          "short_stack_cutoff": 0.685973,
+          "value_raise_threshold": 0.586635
+        },
+        "parents": [
+          "evo-g0001-0002@v4",
+          "adaptive-evo-g0005-0000"
+        ],
+        "policy_bot_id": "evo-g0002-0004",
+        "provenance": [
+          {
+            "generation": 2,
+            "parents": [
+              "evo-g0001-0002@v4",
+              "adaptive-evo-g0005-0000"
+            ],
+            "pool": "hall_of_fame",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/v4-training.json",
+            "source_type": "checkpoint"
+          }
+        ]
+      },
+      {
+        "bot_id": "evo-g0002-0005",
+        "family": "adaptive",
+        "generation": 2,
+        "params": {
+          "bet_size": 0.5,
+          "bluff_frequency": 0.05,
+          "call_frequency": 0.95,
+          "call_margin": -0.021949,
+          "multiway_penalty": 0.049291,
+          "opening_frequency": 0.822765,
+          "opening_shift": -0.006502,
+          "position_sensitivity": 0.018,
+          "postflop_call_margin": 0.055648,
+          "raise_frequency": 0.919261,
+          "short_stack_bb": 10.109771,
+          "short_stack_cutoff": 0.53547,
+          "value_raise_threshold": 0.563187
+        },
+        "parents": [
+          "evo-g0001-0002@v4",
+          "anchor-fast"
+        ],
+        "policy_bot_id": "evo-g0002-0005",
+        "provenance": [
+          {
+            "generation": 2,
+            "parents": [
+              "evo-g0001-0002@v4",
+              "anchor-fast"
+            ],
+            "pool": "hall_of_fame",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/v4-training.json",
+            "source_type": "checkpoint"
+          }
+        ]
+      },
+      {
+        "bot_id": "evo-g0003-0000",
+        "family": "adaptive",
+        "generation": 3,
+        "params": {
+          "bet_size": 0.719808,
+          "bluff_frequency": 0.011771,
+          "call_frequency": 1.0,
+          "call_margin": 0.000381,
+          "multiway_penalty": 0.05305,
+          "opening_frequency": 0.93233,
+          "opening_shift": -0.09685,
+          "position_sensitivity": 0.028423,
+          "postflop_call_margin": 0.034554,
+          "raise_frequency": 0.665875,
+          "short_stack_bb": 13.007457,
+          "short_stack_cutoff": 0.7476,
+          "value_raise_threshold": 0.603034
+        },
+        "parents": [
+          "adaptive-evo-g0005-0000",
+          "evo-g0001-0004@next"
+        ],
+        "policy_bot_id": "evo-g0003-0000",
+        "provenance": [
+          {
+            "generation": 3,
+            "parents": [
+              "adaptive-evo-g0005-0000",
+              "evo-g0001-0004@next"
+            ],
+            "pool": "hall_of_fame",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/next-training.json",
+            "source_type": "checkpoint"
+          }
+        ]
+      },
+      {
+        "bot_id": "evo-g0003-0001@next",
+        "family": "evolved",
+        "generation": 3,
+        "params": {
+          "bet_size": 0.157027,
+          "bluff_frequency": 0.0,
+          "call_frequency": 0.994882,
+          "call_margin": 0.000381,
+          "multiway_penalty": 0.057113,
+          "opening_frequency": 0.824447,
+          "opening_shift": -0.053416,
+          "position_sensitivity": 0.036505,
+          "postflop_call_margin": 0.029931,
+          "raise_frequency": 0.829867,
+          "short_stack_bb": 11.652085,
+          "short_stack_cutoff": 0.76,
+          "value_raise_threshold": 0.563187
+        },
+        "parents": [
+          "evo-g0002-0000",
+          "evo-g0002-0002-1"
+        ],
+        "policy_bot_id": "evo-g0003-0001",
+        "provenance": [
+          {
+            "generation": 3,
+            "parents": [
+              "evo-g0002-0000",
+              "evo-g0002-0002-1"
+            ],
+            "pool": "hall_of_fame",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/next-training.json",
+            "source_type": "checkpoint"
+          }
+        ]
+      },
+      {
+        "bot_id": "evo-g0003-0001@v4",
+        "family": "adaptive",
+        "generation": 3,
+        "params": {
+          "bet_size": 0.157027,
+          "bluff_frequency": 0.011771,
+          "call_frequency": 0.632484,
+          "call_margin": 0.046774,
+          "multiway_penalty": 0.045934,
+          "opening_frequency": 0.824447,
+          "opening_shift": -0.053416,
+          "position_sensitivity": 0.033248,
+          "postflop_call_margin": 0.055648,
+          "raise_frequency": 0.723978,
+          "short_stack_bb": 5.976545,
+          "short_stack_cutoff": 0.684702,
+          "value_raise_threshold": 0.563187
+        },
+        "parents": [
+          "adaptive-evo-initial-0005",
+          "evo-g0002-0002"
+        ],
+        "policy_bot_id": "evo-g0003-0001",
+        "provenance": [
+          {
+            "generation": 3,
+            "parents": [
+              "adaptive-evo-initial-0005",
+              "evo-g0002-0002"
+            ],
+            "pool": "hall_of_fame",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/v4-training.json",
+            "source_type": "checkpoint"
+          }
+        ]
+      },
+      {
+        "bot_id": "evo-g0003-0002@next",
+        "family": "evolved",
+        "generation": 3,
+        "params": {
+          "bet_size": 0.719808,
+          "bluff_frequency": 0.0,
+          "call_frequency": 1.0,
+          "call_margin": -0.056045,
+          "multiway_penalty": 0.093052,
+          "opening_frequency": 0.91387,
+          "opening_shift": -0.09685,
+          "position_sensitivity": 0.023841,
+          "postflop_call_margin": 0.034554,
+          "raise_frequency": 1.0,
+          "short_stack_bb": 11.601011,
+          "short_stack_cutoff": 0.684702,
+          "value_raise_threshold": 0.586635
+        },
+        "parents": [
+          "evo-g0002-0004@next",
+          "evolution-next-g0000-variant-01-evolved"
+        ],
+        "policy_bot_id": "evo-g0003-0002",
+        "provenance": [
+          {
+            "generation": 3,
+            "parents": [
+              "evo-g0002-0004@next",
+              "evolution-next-g0000-variant-01-evolved"
+            ],
+            "pool": "hall_of_fame",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/next-training.json",
+            "source_type": "checkpoint"
+          }
+        ]
+      },
+      {
+        "bot_id": "evo-g0003-0002@v4",
+        "family": "evolved",
+        "generation": 3,
+        "params": {
+          "bet_size": 0.167277,
+          "bluff_frequency": 0.011771,
+          "call_frequency": 0.984689,
+          "call_margin": -0.025482,
+          "multiway_penalty": 0.045934,
+          "opening_frequency": 0.93233,
+          "opening_shift": -0.09685,
+          "position_sensitivity": 0.026473,
+          "postflop_call_margin": 0.034554,
+          "raise_frequency": 0.723978,
+          "short_stack_bb": 11.601011,
+          "short_stack_cutoff": 0.662762,
+          "value_raise_threshold": 0.611141
+        },
+        "parents": [
+          "evo-initial-0005",
+          "evo-g0005-0000"
+        ],
+        "policy_bot_id": "evo-g0003-0002",
+        "provenance": [
+          {
+            "generation": 3,
+            "parents": [
+              "evo-initial-0005",
+              "evo-g0005-0000"
+            ],
+            "pool": "hall_of_fame",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/v4-training.json",
+            "source_type": "checkpoint"
+          }
+        ]
+      },
+      {
+        "bot_id": "evo-g0003-0004",
+        "family": "evolved",
+        "generation": 3,
+        "params": {
+          "bet_size": 0.18,
+          "bluff_frequency": 0.066106,
+          "call_frequency": 0.983812,
+          "call_margin": 0.000743,
+          "multiway_penalty": 0.049291,
+          "opening_frequency": 0.822765,
+          "opening_shift": -0.039367,
+          "position_sensitivity": 0.032007,
+          "postflop_call_margin": 0.038536,
+          "raise_frequency": 0.919261,
+          "short_stack_bb": 9.39448,
+          "short_stack_cutoff": 0.685973,
+          "value_raise_threshold": 0.563187
+        },
+        "parents": [
+          "evo-initial-0008",
+          "evo-g0002-0006"
+        ],
+        "policy_bot_id": "evo-g0003-0004",
+        "provenance": [
+          {
+            "generation": 3,
+            "parents": [
+              "evo-initial-0008",
+              "evo-g0002-0006"
+            ],
+            "pool": "hall_of_fame",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/v4-training.json",
+            "source_type": "checkpoint"
+          }
+        ]
+      },
+      {
+        "bot_id": "evo-g0003-0004-1",
+        "family": "adaptive",
+        "generation": 3,
+        "params": {
+          "bet_size": 0.222329,
+          "bluff_frequency": 0.022933,
+          "call_frequency": 0.934806,
+          "call_margin": 0.06926,
+          "multiway_penalty": 0.045934,
+          "opening_frequency": 0.958278,
+          "opening_shift": -0.09685,
+          "position_sensitivity": 0.026473,
+          "postflop_call_margin": 0.034554,
+          "raise_frequency": 0.386942,
+          "short_stack_bb": 11.601011,
+          "short_stack_cutoff": 0.550311,
+          "value_raise_threshold": 0.611141
+        },
+        "parents": [
+          "evo-g0005-0000",
+          "adaptive-evo-initial-0005"
+        ],
+        "policy_bot_id": "evo-g0003-0004-1",
+        "provenance": [
+          {
+            "generation": 3,
+            "parents": [
+              "evo-g0005-0000",
+              "adaptive-evo-initial-0005"
+            ],
+            "pool": "hall_of_fame",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/v4-training.json",
+            "source_type": "checkpoint"
+          }
+        ]
+      },
+      {
+        "bot_id": "evo-g0003-0005@next",
+        "family": "evolved",
+        "generation": 3,
+        "params": {
+          "bet_size": 0.719808,
+          "bluff_frequency": 0.0,
+          "call_frequency": 0.99137,
+          "call_margin": 0.000381,
+          "multiway_penalty": 0.056698,
+          "opening_frequency": 0.903139,
+          "opening_shift": -0.110905,
+          "position_sensitivity": 0.027339,
+          "postflop_call_margin": 0.047967,
+          "raise_frequency": 0.829867,
+          "short_stack_bb": 13.007457,
+          "short_stack_cutoff": 0.684702,
+          "value_raise_threshold": 0.586635
+        },
+        "parents": [
+          "evo-g0001-0004@next",
+          "evo-g0002-0004@next"
+        ],
+        "policy_bot_id": "evo-g0003-0005",
+        "provenance": [
+          {
+            "generation": 3,
+            "parents": [
+              "evo-g0001-0004@next",
+              "evo-g0002-0004@next"
+            ],
+            "pool": "hall_of_fame",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/next-training.json",
+            "source_type": "checkpoint"
+          }
+        ]
+      },
+      {
+        "bot_id": "evo-g0003-0005@v4",
+        "family": "adaptive",
+        "generation": 3,
+        "params": {
+          "bet_size": 0.167277,
+          "bluff_frequency": 0.011771,
+          "call_frequency": 0.637602,
+          "call_margin": 0.046774,
+          "multiway_penalty": 0.049582,
+          "opening_frequency": 0.947547,
+          "opening_shift": -0.09685,
+          "position_sensitivity": 0.026669,
+          "postflop_call_margin": 0.055648,
+          "raise_frequency": 0.811846,
+          "short_stack_bb": 11.601011,
+          "short_stack_cutoff": 0.662762,
+          "value_raise_threshold": 0.611141
+        },
+        "parents": [
+          "evo-g0002-0001@v4",
+          "evo-initial-0005"
+        ],
+        "policy_bot_id": "evo-g0003-0005",
+        "provenance": [
+          {
+            "generation": 3,
+            "parents": [
+              "evo-g0002-0001@v4",
+              "evo-initial-0005"
+            ],
+            "pool": "hall_of_fame",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/v4-training.json",
+            "source_type": "checkpoint"
+          }
+        ]
+      },
+      {
+        "bot_id": "evo-g0004-0000@v4",
+        "family": "evolved",
+        "generation": 4,
+        "params": {
+          "bet_size": 0.18,
+          "bluff_frequency": 0.066106,
+          "call_frequency": 0.983812,
+          "call_margin": 0.000381,
+          "multiway_penalty": 0.049291,
+          "opening_frequency": 0.822765,
+          "opening_shift": -0.039367,
+          "position_sensitivity": 0.033178,
+          "postflop_call_margin": 0.037445,
+          "raise_frequency": 0.723978,
+          "short_stack_bb": 10.992644,
+          "short_stack_cutoff": 0.684702,
+          "value_raise_threshold": 0.56
+        },
+        "parents": [
+          "evo-g0003-0004",
+          "evo-g0002-0002"
+        ],
+        "policy_bot_id": "evo-g0004-0000",
+        "provenance": [
+          {
+            "generation": 4,
+            "parents": [
+              "evo-g0003-0004",
+              "evo-g0002-0002"
+            ],
+            "pool": "hall_of_fame",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/v4-training.json",
+            "source_type": "checkpoint"
+          }
+        ]
+      },
+      {
+        "bot_id": "evo-g0004-0001@v4",
+        "family": "evolved",
+        "generation": 4,
+        "params": {
+          "bet_size": 0.18,
+          "bluff_frequency": 0.066106,
+          "call_frequency": 0.948728,
+          "call_margin": 0.000743,
+          "multiway_penalty": 0.045934,
+          "opening_frequency": 0.822765,
+          "opening_shift": -0.039367,
+          "position_sensitivity": 0.032007,
+          "postflop_call_margin": 0.039543,
+          "raise_frequency": 0.723978,
+          "short_stack_bb": 9.39448,
+          "short_stack_cutoff": 0.685973,
+          "value_raise_threshold": 0.563187
+        },
+        "parents": [
+          "evo-g0003-0002@v4",
+          "evo-g0003-0004"
+        ],
+        "policy_bot_id": "evo-g0004-0001",
+        "provenance": [
+          {
+            "generation": 4,
+            "parents": [
+              "evo-g0003-0002@v4",
+              "evo-g0003-0004"
+            ],
+            "pool": "hall_of_fame",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/v4-training.json",
+            "source_type": "checkpoint"
+          }
+        ]
+      },
+      {
+        "bot_id": "evo-g0004-0004@v4",
+        "family": "adaptive",
+        "generation": 4,
+        "params": {
+          "bet_size": 0.719808,
+          "bluff_frequency": 0.011771,
+          "call_frequency": 0.637602,
+          "call_margin": 0.000381,
+          "multiway_penalty": 0.096318,
+          "opening_frequency": 0.917375,
+          "opening_shift": -0.09685,
+          "position_sensitivity": 0.023171,
+          "postflop_call_margin": 0.055648,
+          "raise_frequency": 0.560695,
+          "short_stack_bb": 11.601011,
+          "short_stack_cutoff": 0.702129,
+          "value_raise_threshold": 0.591862
+        },
+        "parents": [
+          "adaptive-evo-initial-0005",
+          "evo-g0005-0000"
+        ],
+        "policy_bot_id": "evo-g0004-0004",
+        "provenance": [
+          {
+            "generation": 4,
+            "parents": [
+              "adaptive-evo-initial-0005",
+              "evo-g0005-0000"
+            ],
+            "pool": "hall_of_fame",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/v4-training.json",
+            "source_type": "checkpoint"
+          }
+        ]
+      },
+      {
+        "bot_id": "evo-g0004-0005@v4",
+        "family": "evolved",
+        "generation": 4,
+        "params": {
+          "bet_size": 0.15,
+          "bluff_frequency": 0.107167,
+          "call_frequency": 0.983812,
+          "call_margin": 0.000381,
+          "multiway_penalty": 0.096318,
+          "opening_frequency": 0.911799,
+          "opening_shift": -0.12,
+          "position_sensitivity": 0.02811,
+          "postflop_call_margin": 0.034554,
+          "raise_frequency": 0.723978,
+          "short_stack_bb": 10.491719,
+          "short_stack_cutoff": 0.685973,
+          "value_raise_threshold": 0.584105
+        },
+        "parents": [
+          "evo-g0003-0004",
+          "evo-g0005-0000"
+        ],
+        "policy_bot_id": "evo-g0004-0005",
+        "provenance": [
+          {
+            "generation": 4,
+            "parents": [
+              "evo-g0003-0004",
+              "evo-g0005-0000"
+            ],
+            "pool": "hall_of_fame",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/v4-training.json",
+            "source_type": "checkpoint"
+          }
+        ]
+      },
+      {
+        "bot_id": "evo-g0005-0000",
+        "family": "evolved",
+        "generation": 5,
+        "params": {
+          "bet_size": 0.719808,
+          "bluff_frequency": 0.011771,
+          "call_frequency": 0.984689,
+          "call_margin": 0.000381,
+          "multiway_penalty": 0.096318,
+          "opening_frequency": 0.93233,
+          "opening_shift": -0.09685,
+          "position_sensitivity": 0.026473,
+          "postflop_call_margin": 0.034554,
+          "raise_frequency": 0.723978,
+          "short_stack_bb": 11.601011,
+          "short_stack_cutoff": 0.684702,
+          "value_raise_threshold": 0.584105
+        },
+        "parents": [
+          "evo-g0004-0004@v4",
+          "evo-g0003-0001@v4"
+        ],
+        "policy_bot_id": "evo-g0005-0000",
+        "provenance": [
+          {
+            "generation": 5,
+            "parents": [
+              "evo-g0004-0004@v4",
+              "evo-g0003-0001@v4"
+            ],
+            "pool": "hall_of_fame",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/v4-training.json",
+            "source_type": "checkpoint"
+          }
+        ]
+      },
+      {
+        "bot_id": "evo-g0005-0000-1",
+        "family": "evolved",
+        "generation": 5,
+        "params": {
+          "bet_size": 0.167277,
+          "bluff_frequency": 0.0,
+          "call_frequency": 1.0,
+          "call_margin": -0.025482,
+          "multiway_penalty": 0.045934,
+          "opening_frequency": 0.978,
+          "opening_shift": -0.09685,
+          "position_sensitivity": 0.026473,
+          "postflop_call_margin": 0.055648,
+          "raise_frequency": 0.811846,
+          "short_stack_bb": 12.447975,
+          "short_stack_cutoff": 0.653604,
+          "value_raise_threshold": 0.611141
+        },
+        "parents": [
+          "evo-g0002-0001@v4",
+          "evo-g0003-0002@v4"
+        ],
+        "policy_bot_id": "evo-g0005-0000-1",
+        "provenance": [
+          {
+            "generation": 5,
+            "parents": [
+              "evo-g0002-0001@v4",
+              "evo-g0003-0002@v4"
+            ],
+            "pool": "hall_of_fame",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/v4-training.json",
+            "source_type": "checkpoint"
+          }
+        ]
+      },
+      {
+        "bot_id": "evo-g0005-0001",
+        "family": "adaptive",
+        "generation": 5,
+        "params": {
+          "bet_size": 0.150168,
+          "bluff_frequency": 0.009216,
+          "call_frequency": 0.978,
+          "call_margin": 0.046774,
+          "multiway_penalty": 0.045934,
+          "opening_frequency": 0.958278,
+          "opening_shift": -0.102035,
+          "position_sensitivity": 0.023171,
+          "postflop_call_margin": 0.055648,
+          "raise_frequency": 0.637767,
+          "short_stack_bb": 11.601011,
+          "short_stack_cutoff": 0.684702,
+          "value_raise_threshold": 0.611141
+        },
+        "parents": [
+          "evo-g0002-0001@v4",
+          "adaptive-evo-initial-0005"
+        ],
+        "policy_bot_id": "evo-g0005-0001",
+        "provenance": [
+          {
+            "generation": 5,
+            "parents": [
+              "evo-g0002-0001@v4",
+              "adaptive-evo-initial-0005"
+            ],
+            "pool": "hall_of_fame",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/v4-training.json",
+            "source_type": "checkpoint"
+          }
+        ]
+      },
+      {
+        "bot_id": "evo-g0005-0002",
+        "family": "evolved",
+        "generation": 5,
+        "params": {
+          "bet_size": 0.15,
+          "bluff_frequency": 0.011771,
+          "call_frequency": 0.984689,
+          "call_margin": 0.017634,
+          "multiway_penalty": 0.096318,
+          "opening_frequency": 0.93233,
+          "opening_shift": -0.09685,
+          "position_sensitivity": 0.035129,
+          "postflop_call_margin": 0.034554,
+          "raise_frequency": 0.723978,
+          "short_stack_bb": 9.39448,
+          "short_stack_cutoff": 0.621988,
+          "value_raise_threshold": 0.584105
+        },
+        "parents": [
+          "evo-g0002-0002",
+          "evo-g0005-0000"
+        ],
+        "policy_bot_id": "evo-g0005-0002",
+        "provenance": [
+          {
+            "generation": 5,
+            "parents": [
+              "evo-g0002-0002",
+              "evo-g0005-0000"
+            ],
+            "pool": "hall_of_fame",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/v4-training.json",
+            "source_type": "checkpoint"
+          }
+        ]
+      },
+      {
+        "bot_id": "evo-g0005-0004",
+        "family": "evolved",
+        "generation": 5,
+        "params": {
+          "bet_size": 0.167277,
+          "bluff_frequency": 0.0,
+          "call_frequency": 0.978,
+          "call_margin": -0.030182,
+          "multiway_penalty": 0.045934,
+          "opening_frequency": 0.91387,
+          "opening_shift": -0.09685,
+          "position_sensitivity": 0.023841,
+          "postflop_call_margin": 0.034554,
+          "raise_frequency": 0.916627,
+          "short_stack_bb": 11.601011,
+          "short_stack_cutoff": 0.715807,
+          "value_raise_threshold": 0.611141
+        },
+        "parents": [
+          "evo-g0003-0002@v4",
+          "evo-g0002-0001@v4"
+        ],
+        "policy_bot_id": "evo-g0005-0004",
+        "provenance": [
+          {
+            "generation": 5,
+            "parents": [
+              "evo-g0003-0002@v4",
+              "evo-g0002-0001@v4"
+            ],
+            "pool": "hall_of_fame",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/v4-training.json",
+            "source_type": "checkpoint"
+          },
+          {
+            "generation": 5,
+            "parents": [
+              "evo-g0003-0002@v4",
+              "evo-g0002-0001@v4"
+            ],
+            "pool": "hall_of_fame",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/next-training.json",
+            "source_type": "checkpoint"
+          }
+        ]
+      },
+      {
+        "bot_id": "evo-g0006-0000",
+        "family": "evolved",
+        "generation": 6,
+        "params": {
+          "bet_size": 0.749558,
+          "bluff_frequency": 0.042506,
+          "call_frequency": 0.661776,
+          "call_margin": 0.002968,
+          "multiway_penalty": 0.04716,
+          "opening_frequency": 0.944133,
+          "opening_shift": -0.09685,
+          "position_sensitivity": 0.024093,
+          "postflop_call_margin": 0.069354,
+          "raise_frequency": 0.679535,
+          "short_stack_bb": 5.976545,
+          "short_stack_cutoff": 0.662762,
+          "value_raise_threshold": 0.611141
+        },
+        "parents": [
+          "evo-initial-0005",
+          "evo-g0005-0002"
+        ],
+        "policy_bot_id": "evo-g0006-0000",
+        "provenance": [
+          {
+            "generation": 6,
+            "parents": [
+              "evo-initial-0005",
+              "evo-g0005-0002"
+            ],
+            "pool": "hall_of_fame",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/v4-training.json",
+            "source_type": "checkpoint"
+          }
+        ]
+      },
+      {
+        "bot_id": "evo-g0006-0000-1",
+        "family": "adaptive",
+        "generation": 6,
+        "params": {
+          "bet_size": 0.179918,
+          "bluff_frequency": 0.002239,
+          "call_frequency": 1.0,
+          "call_margin": 0.044526,
+          "multiway_penalty": 0.097544,
+          "opening_frequency": 0.958278,
+          "opening_shift": -0.09685,
+          "position_sensitivity": 0.023171,
+          "postflop_call_margin": 0.04826,
+          "raise_frequency": 0.637767,
+          "short_stack_bb": 11.601011,
+          "short_stack_cutoff": 0.684702,
+          "value_raise_threshold": 0.584105
+        },
+        "parents": [
+          "adaptive-evo-g0005-0000",
+          "evo-g0005-0001"
+        ],
+        "policy_bot_id": "evo-g0006-0000-1",
+        "provenance": [
+          {
+            "generation": 6,
+            "parents": [
+              "adaptive-evo-g0005-0000",
+              "evo-g0005-0001"
+            ],
+            "pool": "hall_of_fame",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/v4-training.json",
+            "source_type": "checkpoint"
+          }
+        ]
+      },
+      {
+        "bot_id": "evo-g0006-0001",
+        "family": "evolved",
+        "generation": 6,
+        "params": {
+          "bet_size": 0.150168,
+          "bluff_frequency": 0.011771,
+          "call_frequency": 0.978,
+          "call_margin": 0.033396,
+          "multiway_penalty": 0.045934,
+          "opening_frequency": 0.93233,
+          "opening_shift": -0.077014,
+          "position_sensitivity": 0.023171,
+          "postflop_call_margin": 0.055648,
+          "raise_frequency": 0.50754,
+          "short_stack_bb": 11.601011,
+          "short_stack_cutoff": 0.684702,
+          "value_raise_threshold": 0.598833
+        },
+        "parents": [
+          "evo-g0005-0001",
+          "evo-g0005-0002"
+        ],
+        "policy_bot_id": "evo-g0006-0001",
+        "provenance": [
+          {
+            "generation": 6,
+            "parents": [
+              "evo-g0005-0001",
+              "evo-g0005-0002"
+            ],
+            "pool": "hall_of_fame",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/v4-training.json",
+            "source_type": "checkpoint"
+          }
+        ]
+      },
+      {
+        "bot_id": "evo-g0006-0002",
+        "family": "adaptive",
+        "generation": 6,
+        "params": {
+          "bet_size": 0.731208,
+          "bluff_frequency": 0.011771,
+          "call_frequency": 0.978,
+          "call_margin": 0.000381,
+          "multiway_penalty": 0.045934,
+          "opening_frequency": 0.93233,
+          "opening_shift": -0.09685,
+          "position_sensitivity": 0.023171,
+          "postflop_call_margin": 0.055648,
+          "raise_frequency": 0.723978,
+          "short_stack_bb": 11.601011,
+          "short_stack_cutoff": 0.684702,
+          "value_raise_threshold": 0.584105
+        },
+        "parents": [
+          "evo-g0002-0001@v4",
+          "adaptive-evo-g0005-0000"
+        ],
+        "policy_bot_id": "evo-g0006-0002",
+        "provenance": [
+          {
+            "generation": 6,
+            "parents": [
+              "evo-g0002-0001@v4",
+              "adaptive-evo-g0005-0000"
+            ],
+            "pool": "hall_of_fame",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/v4-training.json",
+            "source_type": "checkpoint"
+          }
+        ]
+      },
+      {
+        "bot_id": "evo-g0006-0004",
+        "family": "adaptive",
+        "generation": 6,
+        "params": {
+          "bet_size": 0.6423,
+          "bluff_frequency": 0.0,
+          "call_frequency": 0.978,
+          "call_margin": 0.000381,
+          "multiway_penalty": 0.096318,
+          "opening_frequency": 0.93233,
+          "opening_shift": -0.103479,
+          "position_sensitivity": 0.028856,
+          "postflop_call_margin": 0.039648,
+          "raise_frequency": 0.59701,
+          "short_stack_bb": 9.39448,
+          "short_stack_cutoff": 0.677736,
+          "value_raise_threshold": 0.584105
+        },
+        "parents": [
+          "evo-g0005-0002",
+          "adaptive-evo-g0005-0000"
+        ],
+        "policy_bot_id": "evo-g0006-0004",
+        "provenance": [
+          {
+            "generation": 6,
+            "parents": [
+              "evo-g0005-0002",
+              "adaptive-evo-g0005-0000"
+            ],
+            "pool": "hall_of_fame",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/v4-training.json",
+            "source_type": "checkpoint"
+          }
+        ]
+      },
+      {
+        "bot_id": "evo-g0007-0000",
+        "family": "adaptive",
+        "generation": 7,
+        "params": {
+          "bet_size": 0.719808,
+          "bluff_frequency": 0.011771,
+          "call_frequency": 0.978,
+          "call_margin": 0.046774,
+          "multiway_penalty": 0.096318,
+          "opening_frequency": 0.978,
+          "opening_shift": -0.09685,
+          "position_sensitivity": 0.026473,
+          "postflop_call_margin": 0.045341,
+          "raise_frequency": 0.811846,
+          "short_stack_bb": 11.601011,
+          "short_stack_cutoff": 0.684702,
+          "value_raise_threshold": 0.611141
+        },
+        "parents": [
+          "adaptive-evo-g0005-0000",
+          "evo-g0002-0001@v4"
+        ],
+        "policy_bot_id": "evo-g0007-0000",
+        "provenance": [
+          {
+            "generation": 7,
+            "parents": [
+              "adaptive-evo-g0005-0000",
+              "evo-g0002-0001@v4"
+            ],
+            "pool": "hall_of_fame",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/v4-training.json",
+            "source_type": "checkpoint"
+          }
+        ]
+      },
+      {
+        "bot_id": "evo-g0007-0002",
+        "family": "evolved",
+        "generation": 7,
+        "params": {
+          "bet_size": 0.18,
+          "bluff_frequency": 0.011771,
+          "call_frequency": 0.984689,
+          "call_margin": 0.000381,
+          "multiway_penalty": 0.045934,
+          "opening_frequency": 0.953176,
+          "opening_shift": -0.09685,
+          "position_sensitivity": 0.023171,
+          "postflop_call_margin": 0.030791,
+          "raise_frequency": 0.723978,
+          "short_stack_bb": 11.601011,
+          "short_stack_cutoff": 0.684702,
+          "value_raise_threshold": 0.611141
+        },
+        "parents": [
+          "evo-g0003-0002@v4",
+          "evo-g0006-0002"
+        ],
+        "policy_bot_id": "evo-g0007-0002",
+        "provenance": [
+          {
+            "generation": 7,
+            "parents": [
+              "evo-g0003-0002@v4",
+              "evo-g0006-0002"
+            ],
+            "pool": "hall_of_fame",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/v4-training.json",
+            "source_type": "checkpoint"
+          }
+        ]
+      },
+      {
+        "bot_id": "evo-g0007-0004",
+        "family": "adaptive",
+        "generation": 7,
+        "params": {
+          "bet_size": 0.15,
+          "bluff_frequency": 0.011771,
+          "call_frequency": 0.984689,
+          "call_margin": 0.000381,
+          "multiway_penalty": 0.096318,
+          "opening_frequency": 0.931486,
+          "opening_shift": -0.110684,
+          "position_sensitivity": 0.027733,
+          "postflop_call_margin": 0.052464,
+          "raise_frequency": 0.723978,
+          "short_stack_bb": 11.601011,
+          "short_stack_cutoff": 0.684702,
+          "value_raise_threshold": 0.56
+        },
+        "parents": [
+          "evo-g0005-0002",
+          "adaptive-evo-g0005-0000"
+        ],
+        "policy_bot_id": "evo-g0007-0004",
+        "provenance": [
+          {
+            "generation": 7,
+            "parents": [
+              "evo-g0005-0002",
+              "adaptive-evo-g0005-0000"
+            ],
+            "pool": "hall_of_fame",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/v4-training.json",
+            "source_type": "checkpoint"
+          }
+        ]
+      },
+      {
+        "bot_id": "evo-g0007-0005",
+        "family": "adaptive",
+        "generation": 7,
+        "params": {
+          "bet_size": 0.61633,
+          "bluff_frequency": 0.0127,
+          "call_frequency": 0.978,
+          "call_margin": 0.000381,
+          "multiway_penalty": 0.1,
+          "opening_frequency": 0.93233,
+          "opening_shift": -0.09685,
+          "position_sensitivity": 0.035129,
+          "postflop_call_margin": 0.047775,
+          "raise_frequency": 0.59701,
+          "short_stack_bb": 9.39448,
+          "short_stack_cutoff": 0.677736,
+          "value_raise_threshold": 0.584105
+        },
+        "parents": [
+          "evo-g0005-0002",
+          "evo-g0006-0004"
+        ],
+        "policy_bot_id": "evo-g0007-0005",
+        "provenance": [
+          {
+            "generation": 7,
+            "parents": [
+              "evo-g0005-0002",
+              "evo-g0006-0004"
+            ],
+            "pool": "hall_of_fame",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/v4-training.json",
+            "source_type": "checkpoint"
+          }
+        ]
+      },
+      {
+        "bot_id": "evo-initial-0005",
+        "family": "evolved",
+        "generation": 0,
+        "params": {
+          "bet_size": 0.167277,
+          "bluff_frequency": 0.052038,
+          "call_frequency": 0.637602,
+          "call_margin": 0.046774,
+          "multiway_penalty": 0.045934,
+          "opening_frequency": 0.958278,
+          "opening_shift": -0.09685,
+          "position_sensitivity": 0.023171,
+          "postflop_call_margin": 0.055648,
+          "raise_frequency": 0.63483,
+          "short_stack_bb": 5.976545,
+          "short_stack_cutoff": 0.662762,
+          "value_raise_threshold": 0.611141
+        },
+        "parents": [],
+        "policy_bot_id": "evo-initial-0005",
+        "provenance": [
+          {
+            "generation": 0,
+            "parents": [],
+            "pool": "hall_of_fame",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/v4-training.json",
+            "source_type": "checkpoint"
+          }
+        ]
+      },
+      {
+        "bot_id": "evolution-next-g0000-variant-01-evolved",
+        "family": "evolved",
+        "generation": 0,
+        "params": {
+          "bet_size": 0.167277,
+          "bluff_frequency": 0.0,
+          "call_frequency": 1.0,
+          "call_margin": -0.030182,
+          "multiway_penalty": 0.05305,
+          "opening_frequency": 0.91387,
+          "opening_shift": -0.09685,
+          "position_sensitivity": 0.023841,
+          "postflop_call_margin": 0.034554,
+          "raise_frequency": 1.0,
+          "short_stack_bb": 11.601011,
+          "short_stack_cutoff": 0.715807,
+          "value_raise_threshold": 0.611141
+        },
+        "parents": [
+          "evo-g0005-0004"
+        ],
+        "policy_bot_id": "evolution-next-g0000-variant-01-evolved",
+        "provenance": [
+          {
+            "generation": 0,
+            "parents": [
+              "evo-g0005-0004"
+            ],
+            "pool": "hall_of_fame",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/next-training.json",
+            "source_type": "checkpoint"
+          }
+        ]
+      },
+      {
+        "bot_id": "evolution-next-g0000-variant-02-evolved",
+        "family": "evolved",
+        "generation": 0,
+        "params": {
+          "bet_size": 0.15,
+          "bluff_frequency": 0.028264,
+          "call_frequency": 0.996384,
+          "call_margin": 0.000381,
+          "multiway_penalty": 0.057113,
+          "opening_frequency": 0.822765,
+          "opening_shift": -0.09685,
+          "position_sensitivity": 0.036505,
+          "postflop_call_margin": 0.047967,
+          "raise_frequency": 0.723978,
+          "short_stack_bb": 9.39448,
+          "short_stack_cutoff": 0.684702,
+          "value_raise_threshold": 0.563187
+        },
+        "parents": [
+          "evo-g0002-0002"
+        ],
+        "policy_bot_id": "evolution-next-g0000-variant-02-evolved",
+        "provenance": [
+          {
+            "generation": 0,
+            "parents": [
+              "evo-g0002-0002"
+            ],
+            "pool": "hall_of_fame",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/next-training.json",
+            "source_type": "checkpoint"
+          }
+        ]
+      },
+      {
+        "bot_id": "evolution-next-g0000-variant-03-adaptive",
+        "family": "adaptive",
+        "generation": 0,
+        "params": {
+          "bet_size": 0.167277,
+          "bluff_frequency": 0.031426,
+          "call_frequency": 0.577261,
+          "call_margin": 0.046774,
+          "multiway_penalty": 0.045934,
+          "opening_frequency": 0.958278,
+          "opening_shift": -0.09685,
+          "position_sensitivity": 0.023171,
+          "postflop_call_margin": 0.055648,
+          "raise_frequency": 0.681749,
+          "short_stack_bb": 5.976545,
+          "short_stack_cutoff": 0.662762,
+          "value_raise_threshold": 0.611141
+        },
+        "parents": [
+          "adaptive-evo-initial-0005"
+        ],
+        "policy_bot_id": "evolution-next-g0000-variant-03-adaptive",
+        "provenance": [
+          {
+            "generation": 0,
+            "parents": [
+              "adaptive-evo-initial-0005"
+            ],
+            "pool": "hall_of_fame",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/next-training.json",
+            "source_type": "checkpoint"
+          }
+        ]
+      },
+      {
+        "bot_id": "evolution-next-g0000-variant-04-adaptive",
+        "family": "adaptive",
+        "generation": 0,
+        "params": {
+          "bet_size": 0.719808,
+          "bluff_frequency": 0.037963,
+          "call_frequency": 0.984689,
+          "call_margin": 0.000381,
+          "multiway_penalty": 0.1,
+          "opening_frequency": 0.869144,
+          "opening_shift": -0.09685,
+          "position_sensitivity": 0.026473,
+          "postflop_call_margin": 0.034554,
+          "raise_frequency": 0.723978,
+          "short_stack_bb": 11.601011,
+          "short_stack_cutoff": 0.684702,
+          "value_raise_threshold": 0.584105
+        },
+        "parents": [
+          "adaptive-evo-g0005-0000"
+        ],
+        "policy_bot_id": "evolution-next-g0000-variant-04-adaptive",
+        "provenance": [
+          {
+            "generation": 0,
+            "parents": [
+              "adaptive-evo-g0005-0000"
+            ],
+            "pool": "hall_of_fame",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/next-training.json",
+            "source_type": "checkpoint"
+          }
+        ]
+      },
+      {
+        "bot_id": "train-opponent-0000",
+        "family": "evolved",
+        "generation": 0,
+        "params": {
+          "bet_size": 0.446783,
+          "bluff_frequency": 0.150368,
+          "call_frequency": 0.823867,
+          "call_margin": 0.019129,
+          "multiway_penalty": 0.016981,
+          "opening_frequency": 0.61715,
+          "opening_shift": -0.073182,
+          "position_sensitivity": 0.026612,
+          "postflop_call_margin": -9e-06,
+          "raise_frequency": 0.298871,
+          "short_stack_bb": 4.796456,
+          "short_stack_cutoff": 0.644366,
+          "value_raise_threshold": 0.773169
+        },
+        "parents": [],
+        "policy_bot_id": "train-opponent-0000",
+        "provenance": [
+          {
+            "generation": 0,
+            "parents": [],
+            "pool": "training_opponents",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/v4-training.json",
+            "source_type": "checkpoint"
+          },
+          {
+            "generation": 0,
+            "parents": [],
+            "pool": "training_opponents",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/next-training.json",
+            "source_type": "checkpoint"
+          }
+        ]
+      },
+      {
+        "bot_id": "train-opponent-0001",
+        "family": "evolved",
+        "generation": 0,
+        "params": {
+          "bet_size": 0.437634,
+          "bluff_frequency": 0.095817,
+          "call_frequency": 0.485667,
+          "call_margin": -0.053356,
+          "multiway_penalty": 0.088451,
+          "opening_frequency": 0.616132,
+          "opening_shift": 0.114191,
+          "position_sensitivity": 0.03093,
+          "postflop_call_margin": 0.048481,
+          "raise_frequency": 0.540033,
+          "short_stack_bb": 10.542244,
+          "short_stack_cutoff": 0.52031,
+          "value_raise_threshold": 0.822648
+        },
+        "parents": [],
+        "policy_bot_id": "train-opponent-0001",
+        "provenance": [
+          {
+            "generation": 0,
+            "parents": [],
+            "pool": "training_opponents",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/v4-training.json",
+            "source_type": "checkpoint"
+          },
+          {
+            "generation": 0,
+            "parents": [],
+            "pool": "training_opponents",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/next-training.json",
+            "source_type": "checkpoint"
+          }
+        ]
+      },
+      {
+        "bot_id": "train-opponent-0002",
+        "family": "evolved",
+        "generation": 0,
+        "params": {
+          "bet_size": 0.429275,
+          "bluff_frequency": 0.060757,
+          "call_frequency": 0.461908,
+          "call_margin": 0.037818,
+          "multiway_penalty": 0.064781,
+          "opening_frequency": 0.914236,
+          "opening_shift": 0.021855,
+          "position_sensitivity": 0.000871,
+          "postflop_call_margin": 0.01872,
+          "raise_frequency": 0.954445,
+          "short_stack_bb": 6.776257,
+          "short_stack_cutoff": 0.664063,
+          "value_raise_threshold": 0.837684
+        },
+        "parents": [],
+        "policy_bot_id": "train-opponent-0002",
+        "provenance": [
+          {
+            "generation": 0,
+            "parents": [],
+            "pool": "training_opponents",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/v4-training.json",
+            "source_type": "checkpoint"
+          },
+          {
+            "generation": 0,
+            "parents": [],
+            "pool": "training_opponents",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/next-training.json",
+            "source_type": "checkpoint"
+          }
+        ]
+      },
+      {
+        "bot_id": "train-opponent-0003",
+        "family": "evolved",
+        "generation": 0,
+        "params": {
+          "bet_size": 0.213237,
+          "bluff_frequency": 0.069443,
+          "call_frequency": 0.48308,
+          "call_margin": 0.053042,
+          "multiway_penalty": 0.074779,
+          "opening_frequency": 0.698802,
+          "opening_shift": 0.024047,
+          "position_sensitivity": 0.036722,
+          "postflop_call_margin": 0.010119,
+          "raise_frequency": 0.813252,
+          "short_stack_bb": 13.445429,
+          "short_stack_cutoff": 0.493589,
+          "value_raise_threshold": 0.809484
+        },
+        "parents": [],
+        "policy_bot_id": "train-opponent-0003",
+        "provenance": [
+          {
+            "generation": 0,
+            "parents": [],
+            "pool": "training_opponents",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/v4-training.json",
+            "source_type": "checkpoint"
+          },
+          {
+            "generation": 0,
+            "parents": [],
+            "pool": "training_opponents",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/next-training.json",
+            "source_type": "checkpoint"
+          }
+        ]
+      },
+      {
+        "bot_id": "train-opponent-0004",
+        "family": "evolved",
+        "generation": 0,
+        "params": {
+          "bet_size": 0.163426,
+          "bluff_frequency": 0.147791,
+          "call_frequency": 0.959019,
+          "call_margin": -0.057342,
+          "multiway_penalty": 0.029556,
+          "opening_frequency": 0.840555,
+          "opening_shift": -0.08815,
+          "position_sensitivity": 0.01111,
+          "postflop_call_margin": -0.010195,
+          "raise_frequency": 0.619968,
+          "short_stack_bb": 10.786761,
+          "short_stack_cutoff": 0.730247,
+          "value_raise_threshold": 0.58962
+        },
+        "parents": [],
+        "policy_bot_id": "train-opponent-0004",
+        "provenance": [
+          {
+            "generation": 0,
+            "parents": [],
+            "pool": "training_opponents",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/v4-training.json",
+            "source_type": "checkpoint"
+          },
+          {
+            "generation": 0,
+            "parents": [],
+            "pool": "training_opponents",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/next-training.json",
+            "source_type": "checkpoint"
+          }
+        ]
+      },
+      {
+        "bot_id": "train-opponent-0005",
+        "family": "evolved",
+        "generation": 0,
+        "params": {
+          "bet_size": 0.272098,
+          "bluff_frequency": 0.212273,
+          "call_frequency": 0.954717,
+          "call_margin": -0.029997,
+          "multiway_penalty": 0.049743,
+          "opening_frequency": 0.842123,
+          "opening_shift": 0.016277,
+          "position_sensitivity": 0.029463,
+          "postflop_call_margin": 0.050197,
+          "raise_frequency": 0.876585,
+          "short_stack_bb": 10.761949,
+          "short_stack_cutoff": 0.587664,
+          "value_raise_threshold": 0.638256
+        },
+        "parents": [],
+        "policy_bot_id": "train-opponent-0005",
+        "provenance": [
+          {
+            "generation": 0,
+            "parents": [],
+            "pool": "training_opponents",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/v4-training.json",
+            "source_type": "checkpoint"
+          },
+          {
+            "generation": 0,
+            "parents": [],
+            "pool": "training_opponents",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/next-training.json",
+            "source_type": "checkpoint"
+          }
+        ]
+      },
+      {
+        "bot_id": "train-opponent-0006",
+        "family": "evolved",
+        "generation": 0,
+        "params": {
+          "bet_size": 0.472294,
+          "bluff_frequency": 0.103821,
+          "call_frequency": 0.48508,
+          "call_margin": -0.015047,
+          "multiway_penalty": 0.085209,
+          "opening_frequency": 0.542644,
+          "opening_shift": 0.052796,
+          "position_sensitivity": 0.039297,
+          "postflop_call_margin": -0.005779,
+          "raise_frequency": 0.689034,
+          "short_stack_bb": 10.139378,
+          "short_stack_cutoff": 0.634805,
+          "value_raise_threshold": 0.779093
+        },
+        "parents": [],
+        "policy_bot_id": "train-opponent-0006",
+        "provenance": [
+          {
+            "generation": 0,
+            "parents": [],
+            "pool": "training_opponents",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/v4-training.json",
+            "source_type": "checkpoint"
+          },
+          {
+            "generation": 0,
+            "parents": [],
+            "pool": "training_opponents",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/next-training.json",
+            "source_type": "checkpoint"
+          }
+        ]
+      },
+      {
+        "bot_id": "train-opponent-0007",
+        "family": "evolved",
+        "generation": 0,
+        "params": {
+          "bet_size": 0.592509,
+          "bluff_frequency": 0.055799,
+          "call_frequency": 0.592194,
+          "call_margin": -0.015708,
+          "multiway_penalty": 0.047084,
+          "opening_frequency": 0.776441,
+          "opening_shift": 0.114079,
+          "position_sensitivity": 0.042156,
+          "postflop_call_margin": -0.016952,
+          "raise_frequency": 0.385452,
+          "short_stack_bb": 14.227913,
+          "short_stack_cutoff": 0.704571,
+          "value_raise_threshold": 0.804232
+        },
+        "parents": [],
+        "policy_bot_id": "train-opponent-0007",
+        "provenance": [
+          {
+            "generation": 0,
+            "parents": [],
+            "pool": "training_opponents",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/v4-training.json",
+            "source_type": "checkpoint"
+          },
+          {
+            "generation": 0,
+            "parents": [],
+            "pool": "training_opponents",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/next-training.json",
+            "source_type": "checkpoint"
+          }
+        ]
+      },
+      {
+        "bot_id": "train-opponent-0008",
+        "family": "evolved",
+        "generation": 0,
+        "params": {
+          "bet_size": 0.557454,
+          "bluff_frequency": 0.150378,
+          "call_frequency": 0.946054,
+          "call_margin": -0.04449,
+          "multiway_penalty": 0.049488,
+          "opening_frequency": 0.894101,
+          "opening_shift": -0.036609,
+          "position_sensitivity": 0.020102,
+          "postflop_call_margin": 0.049749,
+          "raise_frequency": 0.716899,
+          "short_stack_bb": 10.831341,
+          "short_stack_cutoff": 0.668083,
+          "value_raise_threshold": 0.822834
+        },
+        "parents": [],
+        "policy_bot_id": "train-opponent-0008",
+        "provenance": [
+          {
+            "generation": 0,
+            "parents": [],
+            "pool": "training_opponents",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/v4-training.json",
+            "source_type": "checkpoint"
+          },
+          {
+            "generation": 0,
+            "parents": [],
+            "pool": "training_opponents",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/next-training.json",
+            "source_type": "checkpoint"
+          }
+        ]
+      },
+      {
+        "bot_id": "train-opponent-0009",
+        "family": "evolved",
+        "generation": 0,
+        "params": {
+          "bet_size": 0.408547,
+          "bluff_frequency": 0.215884,
+          "call_frequency": 0.454413,
+          "call_margin": 0.041466,
+          "multiway_penalty": 0.095261,
+          "opening_frequency": 0.937185,
+          "opening_shift": -0.104863,
+          "position_sensitivity": 0.033632,
+          "postflop_call_margin": 0.071667,
+          "raise_frequency": 0.676375,
+          "short_stack_bb": 12.977643,
+          "short_stack_cutoff": 0.47876,
+          "value_raise_threshold": 0.83822
+        },
+        "parents": [],
+        "policy_bot_id": "train-opponent-0009",
+        "provenance": [
+          {
+            "generation": 0,
+            "parents": [],
+            "pool": "training_opponents",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/v4-training.json",
+            "source_type": "checkpoint"
+          },
+          {
+            "generation": 0,
+            "parents": [],
+            "pool": "training_opponents",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/next-training.json",
+            "source_type": "checkpoint"
+          }
+        ]
+      },
+      {
+        "bot_id": "train-opponent-0010",
+        "family": "evolved",
+        "generation": 0,
+        "params": {
+          "bet_size": 0.671556,
+          "bluff_frequency": 0.046488,
+          "call_frequency": 0.803925,
+          "call_margin": -0.031142,
+          "multiway_penalty": 0.041184,
+          "opening_frequency": 0.455188,
+          "opening_shift": -0.116381,
+          "position_sensitivity": 0.014419,
+          "postflop_call_margin": 0.019495,
+          "raise_frequency": 0.264161,
+          "short_stack_bb": 14.723918,
+          "short_stack_cutoff": 0.547758,
+          "value_raise_threshold": 0.706782
+        },
+        "parents": [],
+        "policy_bot_id": "train-opponent-0010",
+        "provenance": [
+          {
+            "generation": 0,
+            "parents": [],
+            "pool": "training_opponents",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/v4-training.json",
+            "source_type": "checkpoint"
+          },
+          {
+            "generation": 0,
+            "parents": [],
+            "pool": "training_opponents",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/next-training.json",
+            "source_type": "checkpoint"
+          }
+        ]
+      },
+      {
+        "bot_id": "train-opponent-0011",
+        "family": "evolved",
+        "generation": 0,
+        "params": {
+          "bet_size": 0.853556,
+          "bluff_frequency": 0.065213,
+          "call_frequency": 0.8437,
+          "call_margin": 0.038872,
+          "multiway_penalty": 0.097004,
+          "opening_frequency": 0.790035,
+          "opening_shift": 0.001424,
+          "position_sensitivity": 0.008519,
+          "postflop_call_margin": 0.001979,
+          "raise_frequency": 0.585116,
+          "short_stack_bb": 7.613574,
+          "short_stack_cutoff": 0.62969,
+          "value_raise_threshold": 0.801772
+        },
+        "parents": [],
+        "policy_bot_id": "train-opponent-0011",
+        "provenance": [
+          {
+            "generation": 0,
+            "parents": [],
+            "pool": "training_opponents",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/v4-training.json",
+            "source_type": "checkpoint"
+          },
+          {
+            "generation": 0,
+            "parents": [],
+            "pool": "training_opponents",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/next-training.json",
+            "source_type": "checkpoint"
+          }
+        ]
+      },
+      {
+        "bot_id": "train-opponent-0012",
+        "family": "evolved",
+        "generation": 0,
+        "params": {
+          "bet_size": 0.763824,
+          "bluff_frequency": 0.10535,
+          "call_frequency": 0.885728,
+          "call_margin": 0.005713,
+          "multiway_penalty": 0.090402,
+          "opening_frequency": 0.500448,
+          "opening_shift": -0.052904,
+          "position_sensitivity": 0.036707,
+          "postflop_call_margin": 0.057201,
+          "raise_frequency": 0.666801,
+          "short_stack_bb": 7.807134,
+          "short_stack_cutoff": 0.640686,
+          "value_raise_threshold": 0.760224
+        },
+        "parents": [],
+        "policy_bot_id": "train-opponent-0012",
+        "provenance": [
+          {
+            "generation": 0,
+            "parents": [],
+            "pool": "training_opponents",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/v4-training.json",
+            "source_type": "checkpoint"
+          },
+          {
+            "generation": 0,
+            "parents": [],
+            "pool": "training_opponents",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/next-training.json",
+            "source_type": "checkpoint"
+          }
+        ]
+      },
+      {
+        "bot_id": "train-opponent-0013",
+        "family": "evolved",
+        "generation": 0,
+        "params": {
+          "bet_size": 0.34018,
+          "bluff_frequency": 0.147655,
+          "call_frequency": 0.479721,
+          "call_margin": -0.023396,
+          "multiway_penalty": 0.051163,
+          "opening_frequency": 0.887567,
+          "opening_shift": -0.024294,
+          "position_sensitivity": 0.00564,
+          "postflop_call_margin": -0.017183,
+          "raise_frequency": 0.52929,
+          "short_stack_bb": 9.796033,
+          "short_stack_cutoff": 0.483429,
+          "value_raise_threshold": 0.660657
+        },
+        "parents": [],
+        "policy_bot_id": "train-opponent-0013",
+        "provenance": [
+          {
+            "generation": 0,
+            "parents": [],
+            "pool": "training_opponents",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/v4-training.json",
+            "source_type": "checkpoint"
+          },
+          {
+            "generation": 0,
+            "parents": [],
+            "pool": "training_opponents",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/next-training.json",
+            "source_type": "checkpoint"
+          }
+        ]
+      },
+      {
+        "bot_id": "train-opponent-0014",
+        "family": "evolved",
+        "generation": 0,
+        "params": {
+          "bet_size": 0.709953,
+          "bluff_frequency": 0.10442,
+          "call_frequency": 0.825332,
+          "call_margin": -0.033427,
+          "multiway_penalty": 0.097013,
+          "opening_frequency": 0.713797,
+          "opening_shift": -0.119296,
+          "position_sensitivity": 0.011182,
+          "postflop_call_margin": 0.001735,
+          "raise_frequency": 0.763491,
+          "short_stack_bb": 16.367207,
+          "short_stack_cutoff": 0.550279,
+          "value_raise_threshold": 0.581806
+        },
+        "parents": [],
+        "policy_bot_id": "train-opponent-0014",
+        "provenance": [
+          {
+            "generation": 0,
+            "parents": [],
+            "pool": "training_opponents",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/v4-training.json",
+            "source_type": "checkpoint"
+          },
+          {
+            "generation": 0,
+            "parents": [],
+            "pool": "training_opponents",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/next-training.json",
+            "source_type": "checkpoint"
+          }
+        ]
+      },
+      {
+        "bot_id": "train-opponent-0015",
+        "family": "evolved",
+        "generation": 0,
+        "params": {
+          "bet_size": 0.360445,
+          "bluff_frequency": 0.02332,
+          "call_frequency": 0.939991,
+          "call_margin": -0.045084,
+          "multiway_penalty": 0.07859,
+          "opening_frequency": 0.846145,
+          "opening_shift": -0.105586,
+          "position_sensitivity": 0.035946,
+          "postflop_call_margin": 0.002084,
+          "raise_frequency": 0.531877,
+          "short_stack_bb": 9.783386,
+          "short_stack_cutoff": 0.588994,
+          "value_raise_threshold": 0.729271
+        },
+        "parents": [],
+        "policy_bot_id": "train-opponent-0015",
+        "provenance": [
+          {
+            "generation": 0,
+            "parents": [],
+            "pool": "training_opponents",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/v4-training.json",
+            "source_type": "checkpoint"
+          },
+          {
+            "generation": 0,
+            "parents": [],
+            "pool": "training_opponents",
+            "source": "/Users/benajaheger/Documents/museum of failures/Pokerbot/reports/evolution-90-search-20261103/inputs/next-training.json",
+            "source_type": "checkpoint"
+          }
+        ]
+      }
+    ],
+    "hall_of_fame_ids": [
+      "adaptive-evo-g0003-0004",
+      "adaptive-evo-g0005-0000",
+      "adaptive-evo-g0006-0000",
+      "adaptive-evo-initial-0005",
+      "anchor-fast",
+      "anchor-random",
+      "anchor-saved",
+      "anchor-station",
+      "anchor-tight",
+      "evo-fresh-0000",
+      "evo-fresh-0001",
+      "evo-fresh-0002",
+      "evo-g0001-0001@next",
+      "evo-g0001-0001@v4",
+      "evo-g0001-0002@next",
+      "evo-g0001-0002@v4",
+      "evo-g0001-0004@next",
+      "evo-g0001-0004@v4",
+      "evo-g0001-0005@next",
+      "evo-g0001-0005@v4",
+      "evo-g0002-0000",
+      "evo-g0002-0001@next",
+      "evo-g0002-0001@v4",
+      "evo-g0002-0002",
+      "evo-g0002-0002-1",
+      "evo-g0002-0004@next",
+      "evo-g0002-0004@v4",
+      "evo-g0002-0005",
+      "evo-g0003-0000",
+      "evo-g0003-0001@next",
+      "evo-g0003-0001@v4",
+      "evo-g0003-0002@next",
+      "evo-g0003-0002@v4",
+      "evo-g0003-0004",
+      "evo-g0003-0004-1",
+      "evo-g0003-0005@next",
+      "evo-g0003-0005@v4",
+      "evo-g0004-0000@v4",
+      "evo-g0004-0001@v4",
+      "evo-g0004-0004@v4",
+      "evo-g0004-0005@v4",
+      "evo-g0005-0000",
+      "evo-g0005-0000-1",
+      "evo-g0005-0001",
+      "evo-g0005-0002",
+      "evo-g0005-0004",
+      "evo-g0006-0000",
+      "evo-g0006-0000-1",
+      "evo-g0006-0001",
+      "evo-g0006-0002",
+      "evo-g0006-0004",
+      "evo-g0007-0000",
+      "evo-g0007-0002",
+      "evo-g0007-0004",
+      "evo-g0007-0005",
+      "evo-initial-0005",
+      "evolution-next-g0000-variant-01-evolved",
+      "evolution-next-g0000-variant-02-evolved",
+      "evolution-next-g0000-variant-03-adaptive",
+      "evolution-next-g0000-variant-04-adaptive"
+    ],
+    "hashes": {
+      "complete_training_plus_hall_of_fame_sha256": "8b53e5a9bcc1c9140fdbe3114f8e7b5e20f9143e52a195b2d79f8aebaf22faaa",
+      "hall_of_fame_sha256": "21b47afd89bdec46af83665ac4be27d977fbc3cfa2dbf665552e224068b75fc4",
+      "training_opponents_sha256": "da38d54763b696dc4fdaebef274d54993a8cd8c0bcee02892b5e80c604336e1f"
+    },
+    "training_opponent_ids": [
+      "anchor-fast",
+      "anchor-random",
+      "anchor-saved",
+      "anchor-station",
+      "anchor-tight",
+      "train-opponent-0000",
+      "train-opponent-0001",
+      "train-opponent-0002",
+      "train-opponent-0003",
+      "train-opponent-0004",
+      "train-opponent-0005",
+      "train-opponent-0006",
+      "train-opponent-0007",
+      "train-opponent-0008",
+      "train-opponent-0009",
+      "train-opponent-0010",
+      "train-opponent-0011",
+      "train-opponent-0012",
+      "train-opponent-0013",
+      "train-opponent-0014",
+      "train-opponent-0015"
+    ],
+    "unique_ids": 76
+  },
+  "policy_id_note": "Report aliases identify archived records; canonical policies use the recorded original policy IDs, preserving action sampling.",
+  "policy_ids": {
+    "adaptive-evo-g0003-0004": "adaptive-evo-g0003-0004",
+    "adaptive-evo-g0005-0000": "adaptive-evo-g0005-0000",
+    "adaptive-evo-g0006-0000": "adaptive-evo-g0006-0000",
+    "adaptive-evo-initial-0005": "adaptive-evo-initial-0005",
+    "anchor-fast": "anchor-fast",
+    "anchor-random": "anchor-random",
+    "anchor-saved": "anchor-saved",
+    "anchor-station": "anchor-station",
+    "anchor-tight": "anchor-tight",
+    "evo-fresh-0000": "evo-fresh-0000",
+    "evo-fresh-0001": "evo-fresh-0001",
+    "evo-fresh-0002": "evo-fresh-0002",
+    "evo-g0001-0001@next": "evo-g0001-0001",
+    "evo-g0001-0001@v4": "evo-g0001-0001",
+    "evo-g0001-0002@next": "evo-g0001-0002",
+    "evo-g0001-0002@v4": "evo-g0001-0002",
+    "evo-g0001-0004@next": "evo-g0001-0004",
+    "evo-g0001-0004@v4": "evo-g0001-0004",
+    "evo-g0001-0005@next": "evo-g0001-0005",
+    "evo-g0001-0005@v4": "evo-g0001-0005",
+    "evo-g0002-0000": "evo-g0002-0000",
+    "evo-g0002-0001@next": "evo-g0002-0001",
+    "evo-g0002-0001@v4": "evo-g0002-0001",
+    "evo-g0002-0002": "evo-g0002-0002",
+    "evo-g0002-0002-1": "evo-g0002-0002-1",
+    "evo-g0002-0004@next": "evo-g0002-0004",
+    "evo-g0002-0004@v4": "evo-g0002-0004",
+    "evo-g0002-0005": "evo-g0002-0005",
+    "evo-g0003-0000": "evo-g0003-0000",
+    "evo-g0003-0001@next": "evo-g0003-0001",
+    "evo-g0003-0001@v4": "evo-g0003-0001",
+    "evo-g0003-0002@next": "evo-g0003-0002",
+    "evo-g0003-0002@v4": "evo-g0003-0002",
+    "evo-g0003-0004": "evo-g0003-0004",
+    "evo-g0003-0004-1": "evo-g0003-0004-1",
+    "evo-g0003-0005@next": "evo-g0003-0005",
+    "evo-g0003-0005@v4": "evo-g0003-0005",
+    "evo-g0004-0000@v4": "evo-g0004-0000",
+    "evo-g0004-0001@v4": "evo-g0004-0001",
+    "evo-g0004-0004@v4": "evo-g0004-0004",
+    "evo-g0004-0005@v4": "evo-g0004-0005",
+    "evo-g0005-0000": "evo-g0005-0000",
+    "evo-g0005-0000-1": "evo-g0005-0000-1",
+    "evo-g0005-0001": "evo-g0005-0001",
+    "evo-g0005-0002": "evo-g0005-0002",
+    "evo-g0005-0004": "evo-g0005-0004",
+    "evo-g0006-0000": "evo-g0006-0000",
+    "evo-g0006-0000-1": "evo-g0006-0000-1",
+    "evo-g0006-0001": "evo-g0006-0001",
+    "evo-g0006-0002": "evo-g0006-0002",
+    "evo-g0006-0004": "evo-g0006-0004",
+    "evo-g0007-0000": "evo-g0007-0000",
+    "evo-g0007-0002": "evo-g0007-0002",
+    "evo-g0007-0004": "evo-g0007-0004",
+    "evo-g0007-0005": "evo-g0007-0005",
+    "evo-initial-0005": "evo-initial-0005",
+    "evolution-next-g0000-variant-01-evolved": "evolution-next-g0000-variant-01-evolved",
+    "evolution-next-g0000-variant-02-evolved": "evolution-next-g0000-variant-02-evolved",
+    "evolution-next-g0000-variant-03-adaptive": "evolution-next-g0000-variant-03-adaptive",
+    "evolution-next-g0000-variant-04-adaptive": "evolution-next-g0000-variant-04-adaptive",
+    "train-opponent-0000": "train-opponent-0000",
+    "train-opponent-0001": "train-opponent-0001",
+    "train-opponent-0002": "train-opponent-0002",
+    "train-opponent-0003": "train-opponent-0003",
+    "train-opponent-0004": "train-opponent-0004",
+    "train-opponent-0005": "train-opponent-0005",
+    "train-opponent-0006": "train-opponent-0006",
+    "train-opponent-0007": "train-opponent-0007",
+    "train-opponent-0008": "train-opponent-0008",
+    "train-opponent-0009": "train-opponent-0009",
+    "train-opponent-0010": "train-opponent-0010",
+    "train-opponent-0011": "train-opponent-0011",
+    "train-opponent-0012": "train-opponent-0012",
+    "train-opponent-0013": "train-opponent-0013",
+    "train-opponent-0014": "train-opponent-0014",
+    "train-opponent-0015": "train-opponent-0015"
+  },
+  "purpose": "training-only equal-sample candidate comparison; not a promotion gate",
+  "reference_candidate_id": "anchor-saved",
+  "sample_size": 128,
+  "schema": "pokerbot-evolution-racer-v1",
+  "seed_domain_note": "Fresh racer namespace supplied by the operator; seeds are used exactly as supplied and are not drawn from engine training/validation/confirmation counters.",
+  "seeds": [
+    8067352511971932940,
+    4798244607065096663,
+    8764693235042226647,
+    7482192371839531673,
+    6879090962140244494,
+    4155801538852883078,
+    1632207466996644500,
+    8204583895421382009,
+    616720780852487502,
+    2195948685846322612,
+    2456040377579522706,
+    1689932705849296729,
+    3828509993942784807,
+    9135420740174306988,
+    2178805672112118955,
+    2675559490733870603,
+    51948671683288353,
+    1802690013834599290,
+    8598584659622928330,
+    1640696480160726700,
+    7635722847937196660,
+    5613297879804564098,
+    7924573758815024024,
+    7920906554692229333,
+    2300168078914971355,
+    8245195148769009250,
+    7976780657360995245,
+    7516464268543288575,
+    2473746302807434817,
+    3224282854841322874,
+    7101964759502234476,
+    1042355836599678070,
+    7924267954185922992,
+    4116798870037875595,
+    63061650940179830,
+    470488791595004934,
+    7049353731120635672,
+    1978819775965047628,
+    6917564917944298062,
+    1934796087604530550,
+    419430172746088209,
+    1689222166080210231,
+    3333903863061655004,
+    1226929761433201123,
+    8950249640346564176,
+    7956120869056123982,
+    2659297274414861228,
+    8153160136552074515,
+    6618069925284005632,
+    8882927581112403342,
+    7726299410413259679,
+    8203516857085471631,
+    480094300550750564,
+    6745886183790967090,
+    5091059721834325320,
+    2569496132450449936,
+    8131183236026316366,
+    6346154563514299015,
+    2215626856110631211,
+    3900723805653244282,
+    6056933979639386065,
+    7550343596666456770,
+    797796084819565148,
+    6205188544736721965,
+    3100919495777748355,
+    3599058809513710443,
+    7818307124000301234,
+    1335138169647052174,
+    4105127272051168022,
+    3203293780507359020,
+    5765039535287346254,
+    8667867506384125347,
+    2426370442596565751,
+    8054080310207848816,
+    5868835695162900837,
+    4723454593504513469,
+    141751152334347416,
+    4983252442657635243,
+    8899132985683297192,
+    62848545455907726,
+    3614420801300071853,
+    6237830285002361197,
+    6821350876656526410,
+    2553130706996535955,
+    3630065315258407474,
+    7073275268245714059,
+    6545428683038403742,
+    4683394212709868063,
+    2603297134220608264,
+    3491686016414773150,
+    1328024874957789874,
+    5744508657848412751,
+    5964996307110166119,
+    2629439133919325246,
+    8121286459436314789,
+    6575955795209625250,
+    7388994368238526267,
+    2894981257680313025,
+    4787691761459127404,
+    5727203762961013178,
+    5803843675378311794,
+    228966471824656616,
+    7343068532268074579,
+    336746737285881290,
+    7542514165923943335,
+    8949552447336524787,
+    8195448908119359864,
+    6872724492345125717,
+    6118544674537935012,
+    4722180857172760192,
+    1425826698445053087,
+    7610901467382477607,
+    3051259387298949246,
+    9077842694085846146,
+    7997653929451393718,
+    5453098221129606048,
+    1455010916167537420,
+    616718851333064766,
+    2482491574305719946,
+    1571396042377895800,
+    962337319718698893,
+    2540461187934453343,
+    6523172856072436516,
+    3932341245486287376,
+    4943120867764958094,
+    2841827246407243400,
+    8144881971893646752,
+    5920332875931992136
+  ],
+  "simulation_config": {
+    "big_blinds": [
+      20,
+      40,
+      80,
+      160,
+      320,
+      640,
+      1280,
+      2560
+    ],
+    "hands_per_level": 25,
+    "max_hands": 200,
+    "payouts": null,
+    "players": 8,
+    "stacks": 2000,
+    "strict": true
+  },
+  "source_fingerprint": {
+    "canonical_evolution_code_fingerprint": "10f54dcc8f1d2026f9c9cadc6ef8bc73604c646a5b61bc4f9cedc6eb5b3a9831",
+    "dependencies": {
+      "pokerkit": "0.7.7"
+    },
+    "pokerbot_files": {
+      "data/preflop_equity.json": "44684582cbe9400741a7cf1a0857877f94aadb30de54db7d1d20b140ce2a7ef0",
+      "pokerbot/__init__.py": "c8ea42864e04f67b0c47c7056843be108982f39b75b4d57aa22d663307d0e827",
+      "pokerbot/__main__.py": "81350a26c216f08156d696579061bceb30d9c0fb7e5ac0828510954b0cc06217",
+      "pokerbot/benchmarks.py": "e2c4a80ad802a56eaaec4b65035512ee0409aff53d3f2c4ec64f6469d73bf299",
+      "pokerbot/boosted.py": "fdbba43d8febcca8b209d777e0062657cde7aacf1e023d1e69b4cc3b39c0f98d",
+      "pokerbot/calibrated_bot.py": "232ba2641152d26f6506c6f2417ece67d8fc9515ceab634c8f4bddedb100ec1b",
+      "pokerbot/candidate_evaluation.py": "cfba713cac0ae0fe67f7c30f3b22caebed05daeb2c8d15012ffa148fb87ac1ad",
+      "pokerbot/cards.py": "89a27b217402dd3bccda1d75ac16be52d477484e7e4115896ea135e6ff0efc12",
+      "pokerbot/combined_policy.py": "bce3157fc86504900ed807a490234d38ee80cb75bcdef0dcfc03ebfff0056110",
+      "pokerbot/contextual.py": "0f660ccb7ae5fa8b74506d017e6706a29f1961e11fbfad42c3acbd8693f8a84e",
+      "pokerbot/corpus.py": "03fa2acd3719937910edcdd3cb0e1297e6b45669c948f7b1e4bbc3cc92a8ca5c",
+      "pokerbot/equity.py": "58f088d74ade4805d85b675c58fa9d8078d038a3304f342c7554415cbc701f60",
+      "pokerbot/equity_policy.py": "304271f82d85e0db73ba9971aa241c7f796aea93c1984d8a36bfc8d5e245c8e9",
+      "pokerbot/equity_runtime.py": "33067c7c301bae35a77ff3d7b81f2a9b26a532cc23081506b742c18bd8645392",
+      "pokerbot/evaluation_baselines.py": "61a15a2e3ec66b12ae1e700e71f32ca5afdaca5a6837c89981c9712d05e56067",
+      "pokerbot/evolution.py": "1482081cd7d7ac0967d6441bde9231e63f26774b8e0ba44cea6faef579df5b1c",
+      "pokerbot/evolution_adaptive.py": "d24d6cc01798d73ff6c3e0ad55fa64b75154a9fd42ea2568a476923a92f46100",
+      "pokerbot/evolution_strategies.py": "d19f531d5afddb91527c2d497cd068c77136431a671f5a2f7016c933f63fb7c6",
+      "pokerbot/expert_policy.py": "28d74f2147894fc1f912a304b90df5d80d43beaacdec530bb53a31e38920689c",
+      "pokerbot/expert_ranges.py": "ecd41e2cc93599c54182bc9bf0ae0037f7804545a3eb99e22eb731e45d023054",
+      "pokerbot/fast.py": "7b2d960d0462090c7fa5fdaf8825cfa7d40a6dfe2360619725f4644f2c87e1e5",
+      "pokerbot/grid_policy.py": "fd9d1557db55060110e43528f44307e1e5c1bbc61056d4fbf693e1320c521a44",
+      "pokerbot/hybrid.py": "43453c98006c8ea0a9d03051dd920f9df4b162b89f3167a1d8b406335d82ec02",
+      "pokerbot/imitation.py": "f9e6688483f2c58323cfc91a4e0f0feb32a715dd3827f996526e3813526169d9",
+      "pokerbot/ivey.py": "e4b7d2c410477b295de955f59b28374fb125ab7434454648baa86dcecc7734c0",
+      "pokerbot/learned_policy.py": "d5e3ab979e7181223033d5c9324f037b53e7b0cb1a59ed0b8ea0ffef9bcc064a",
+      "pokerbot/map_policy.py": "576f3ada3c3b64f78083243fe04f715299623a583a22362aadd7d90bdd5c9fb7",
+      "pokerbot/models/PLURIBUS_LICENSE.txt": "fd8a94019f50ff8cd84e674acd790427882a99b32435c85e43b8e1d5b37626d1",
+      "pokerbot/models/ivey-transfer-v1-manifest.json": "2d7997361c72e742a635bb773f78550be4fb70cc5e35ffa7591959275cc63be1",
+      "pokerbot/models/ivey-transfer-v1.json": "f481865825b0954da13e074511e8b37e4abef0593ff2629063f79a3c0bb15e5e",
+      "pokerbot/models/postflop-equity-v1.json": "7dd0457e02c5bf5d3e3d1c9f06b4f3d043c7343a068092b23c3c3bb6ad6e48fd",
+      "pokerbot/models/preflop-equity-v1.json": "44684582cbe9400741a7cf1a0857877f94aadb30de54db7d1d20b140ce2a7ef0",
+      "pokerbot/postflop_policy.py": "044c1e4df8013fce2821cd39f139478e94f1ca64d0e9480480b5745611b9410f",
+      "pokerbot/preflop.py": "44d30850911498b65a8b952a6d56ce8713fce408204b837e9c288b3fc81b6821",
+      "pokerbot/price_context.py": "790080b66a1a98275505ac9b01bd63fc93e7cd07f6a829c65badc8d81445fcdf",
+      "pokerbot/prospective.py": "07c906d18840548efc11ad6311316ffeaf3cd45ebb8352e96ab0f865067a6a49",
+      "pokerbot/public_reports.py": "d6b01e4b4dbba36488796a45de4cd95bd646f91a11b33a0ec9aed6c7c5956d68",
+      "pokerbot/range_policy.py": "3889a487f7d56638a1868a9fd1ab7dfdc107bdf44494ea08bdc2edef1b066090",
+      "pokerbot/review.py": "a59fbb3827825f2b65e844f86087a0b6a3c8df35dbea45d141f3f6d5fbafac6f",
+      "pokerbot/saved_bot.py": "9f0ef1ed88c9c3344aaab3090ffc72808b82001e0b97d31e6a1d7b5b1450a312",
+      "pokerbot/scenarios.py": "bbae06f78b221a32274ea705be76a5c25c241dcd0afab1a76dda124ffc1c1ee9",
+      "pokerbot/simulation.py": "80f0ea85dade54141ce814af76a7a271875389615e00793fa7202e51a4cf7b97",
+      "pokerbot/sizing.py": "5b7a54ce36095e5d31818e921e7fc449bd516d18b63368919cc779091ad0b6bf",
+      "pokerbot/state.py": "ef9461ff2de04ddf402305c2a857a7c4849a8bb9d6d2e31fa2eb18c7d21d62d8",
+      "pokerbot/strategy.py": "ec87e0ebf9a9f8a0a446f9c2fd49065f350ff8456bde73956cc07fb757e35730",
+      "pokerbot/texture.py": "ec9cce35a3a0f94829cb543921eccb715ae18ad77b64dd009ccfc8c4f19981f8",
+      "pokerbot/tournament.py": "59697db796383da64d049da9013ea2e98ba5c27bd524b58e4e4f27a748320035",
+      "pokerbot/transfer_policy.py": "ae0151672d6585fc5a20388323e6cd78d96e5ab448b5e1e8d2c03b10d0066ed6"
+    },
+    "python_version": "3.12.10",
+    "racer_script_sha256": "d9b3d7c35c1735c955dda0c0da6f0285a518be011284deb982962388b74193d8",
+    "sha256": "65a62efc94bf60db53770c6cdd34048f72fa558a31cf978de645775b5fc33c01"
+  },
+  "statistics": {
+    "multiple_testing": "none; intervals are descriptive, with no superiority or target claim",
+    "paired_bootstrap_confidence": 0.95,
+    "paired_bootstrap_replicates": 2000,
+    "win_rate_interval": "two-sided Wilson 95%; every played table including capped tables is in the denominator"
+  },
+  "status": "comparison_only",
+  "workers": 2
+}

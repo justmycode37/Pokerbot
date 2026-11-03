@@ -1,0 +1,704 @@
+[
+  {
+    "bot_id": "anchor-saved",
+    "family": "saved",
+    "generation": 0,
+    "params": {},
+    "parents": []
+  },
+  {
+    "bot_id": "evolution-next-g0000-variant-01-evolved",
+    "family": "evolved",
+    "generation": 0,
+    "params": {
+      "bet_size": 0.167277,
+      "bluff_frequency": 0.0,
+      "call_frequency": 1.0,
+      "call_margin": -0.030182,
+      "multiway_penalty": 0.05305,
+      "opening_frequency": 0.91387,
+      "opening_shift": -0.09685,
+      "position_sensitivity": 0.023841,
+      "postflop_call_margin": 0.034554,
+      "raise_frequency": 1.0,
+      "short_stack_bb": 11.601011,
+      "short_stack_cutoff": 0.715807,
+      "value_raise_threshold": 0.611141
+    },
+    "parents": [
+      "evo-g0005-0004"
+    ]
+  },
+  {
+    "bot_id": "evo-g0004-0005@next",
+    "family": "evolved",
+    "generation": 4,
+    "params": {
+      "bet_size": 0.15,
+      "bluff_frequency": 0.041061,
+      "call_frequency": 1.0,
+      "call_margin": -0.030182,
+      "multiway_penalty": 0.05305,
+      "opening_frequency": 0.893339,
+      "opening_shift": -0.12,
+      "position_sensitivity": 0.025478,
+      "postflop_call_margin": 0.034554,
+      "raise_frequency": 0.829867,
+      "short_stack_bb": 10.491719,
+      "short_stack_cutoff": 0.76,
+      "value_raise_threshold": 0.611141
+    },
+    "parents": [
+      "evo-g0002-0002-1",
+      "evo-g0001-0004@next"
+    ]
+  },
+  {
+    "bot_id": "evo-g0003-0000",
+    "family": "adaptive",
+    "generation": 3,
+    "params": {
+      "bet_size": 0.719808,
+      "bluff_frequency": 0.011771,
+      "call_frequency": 1.0,
+      "call_margin": 0.000381,
+      "multiway_penalty": 0.05305,
+      "opening_frequency": 0.93233,
+      "opening_shift": -0.09685,
+      "position_sensitivity": 0.028423,
+      "postflop_call_margin": 0.034554,
+      "raise_frequency": 0.665875,
+      "short_stack_bb": 13.007457,
+      "short_stack_cutoff": 0.7476,
+      "value_raise_threshold": 0.603034
+    },
+    "parents": [
+      "adaptive-evo-g0005-0000",
+      "evo-g0001-0004@next"
+    ]
+  },
+  {
+    "bot_id": "evo-g0006-0004",
+    "family": "adaptive",
+    "generation": 6,
+    "params": {
+      "bet_size": 0.6423,
+      "bluff_frequency": 0.0,
+      "call_frequency": 0.978,
+      "call_margin": 0.000381,
+      "multiway_penalty": 0.096318,
+      "opening_frequency": 0.93233,
+      "opening_shift": -0.103479,
+      "position_sensitivity": 0.028856,
+      "postflop_call_margin": 0.039648,
+      "raise_frequency": 0.59701,
+      "short_stack_bb": 9.39448,
+      "short_stack_cutoff": 0.677736,
+      "value_raise_threshold": 0.584105
+    },
+    "parents": [
+      "evo-g0005-0002",
+      "adaptive-evo-g0005-0000"
+    ]
+  },
+  {
+    "bot_id": "evo-g0002-0002-1",
+    "family": "evolved",
+    "generation": 2,
+    "params": {
+      "bet_size": 0.15,
+      "bluff_frequency": 0.0,
+      "call_frequency": 1.0,
+      "call_margin": -0.030182,
+      "multiway_penalty": 0.057113,
+      "opening_frequency": 0.822765,
+      "opening_shift": -0.110905,
+      "position_sensitivity": 0.036505,
+      "postflop_call_margin": 0.040286,
+      "raise_frequency": 0.829867,
+      "short_stack_bb": 9.39448,
+      "short_stack_cutoff": 0.76,
+      "value_raise_threshold": 0.563187
+    },
+    "parents": [
+      "evolution-next-g0000-variant-02-evolved",
+      "evo-g0001-0004@next"
+    ]
+  },
+  {
+    "bot_id": "r90-evo-01",
+    "family": "evolved",
+    "generation": 5,
+    "params": {
+      "bet_size": 0.167277,
+      "bluff_frequency": 0.0,
+      "call_frequency": 1.0,
+      "call_margin": -0.030182,
+      "multiway_penalty": 0.05305,
+      "opening_frequency": 0.91387,
+      "opening_shift": -0.09685,
+      "position_sensitivity": 0.025478,
+      "postflop_call_margin": 0.004467,
+      "raise_frequency": 0.829867,
+      "short_stack_bb": 10.491719,
+      "short_stack_cutoff": 0.715807,
+      "value_raise_threshold": 0.637199
+    },
+    "parents": [
+      "evolution-next-g0000-variant-01-evolved",
+      "evo-g0004-0005@next"
+    ]
+  },
+  {
+    "bot_id": "r90-evo-02",
+    "family": "evolved",
+    "generation": 4,
+    "params": {
+      "bet_size": 0.18,
+      "bluff_frequency": 0.011771,
+      "call_frequency": 1.0,
+      "call_margin": -0.030182,
+      "multiway_penalty": 0.057113,
+      "opening_frequency": 0.822765,
+      "opening_shift": -0.09685,
+      "position_sensitivity": 0.028423,
+      "postflop_call_margin": 0.040286,
+      "raise_frequency": 0.829867,
+      "short_stack_bb": 9.39448,
+      "short_stack_cutoff": 0.7476,
+      "value_raise_threshold": 0.563187
+    },
+    "parents": [
+      "evo-g0003-0000",
+      "evo-g0002-0002-1"
+    ]
+  },
+  {
+    "bot_id": "r90-evo-03",
+    "family": "evolved",
+    "generation": 7,
+    "params": {
+      "bet_size": 0.15,
+      "bluff_frequency": 0.0,
+      "call_frequency": 0.984689,
+      "call_margin": -0.031099,
+      "multiway_penalty": 0.096318,
+      "opening_frequency": 0.93233,
+      "opening_shift": -0.07568,
+      "position_sensitivity": 0.030746,
+      "postflop_call_margin": 0.022029,
+      "raise_frequency": 0.723978,
+      "short_stack_bb": 9.206771,
+      "short_stack_cutoff": 0.621988,
+      "value_raise_threshold": 0.584105
+    },
+    "parents": [
+      "evo-g0006-0004",
+      "evo-g0005-0002"
+    ]
+  },
+  {
+    "bot_id": "r90-evo-04",
+    "family": "evolved",
+    "generation": 5,
+    "params": {
+      "bet_size": 0.15,
+      "bluff_frequency": 0.011771,
+      "call_frequency": 1.0,
+      "call_margin": 0.000381,
+      "multiway_penalty": 0.05305,
+      "opening_frequency": 0.808469,
+      "opening_shift": -0.12,
+      "position_sensitivity": 0.03341,
+      "postflop_call_margin": 0.034554,
+      "raise_frequency": 0.665875,
+      "short_stack_bb": 13.007457,
+      "short_stack_cutoff": 0.7476,
+      "value_raise_threshold": 0.603034
+    },
+    "parents": [
+      "evo-g0004-0005@next",
+      "evo-g0003-0000"
+    ]
+  },
+  {
+    "bot_id": "r90-evo-05",
+    "family": "evolved",
+    "generation": 7,
+    "params": {
+      "bet_size": 0.659548,
+      "bluff_frequency": 0.052598,
+      "call_frequency": 1.0,
+      "call_margin": 0.000381,
+      "multiway_penalty": 0.058681,
+      "opening_frequency": 0.822765,
+      "opening_shift": -0.110905,
+      "position_sensitivity": 0.028856,
+      "postflop_call_margin": 0.040286,
+      "raise_frequency": 0.65266,
+      "short_stack_bb": 9.39448,
+      "short_stack_cutoff": 0.677736,
+      "value_raise_threshold": 0.563187
+    },
+    "parents": [
+      "evo-g0002-0002-1",
+      "evo-g0006-0004"
+    ]
+  },
+  {
+    "bot_id": "r90-evo-06",
+    "family": "evolved",
+    "generation": 4,
+    "params": {
+      "bet_size": 0.719808,
+      "bluff_frequency": 0.050522,
+      "call_frequency": 1.0,
+      "call_margin": 0.002881,
+      "multiway_penalty": 0.05305,
+      "opening_frequency": 0.91387,
+      "opening_shift": -0.071048,
+      "position_sensitivity": 0.023841,
+      "postflop_call_margin": 0.039515,
+      "raise_frequency": 1.0,
+      "short_stack_bb": 12.099221,
+      "short_stack_cutoff": 0.715807,
+      "value_raise_threshold": 0.603034
+    },
+    "parents": [
+      "evolution-next-g0000-variant-01-evolved",
+      "evo-g0003-0000"
+    ]
+  },
+  {
+    "bot_id": "r90-evo-07",
+    "family": "evolved",
+    "generation": 6,
+    "params": {
+      "bet_size": 0.15,
+      "bluff_frequency": 0.011771,
+      "call_frequency": 0.984689,
+      "call_margin": 0.017634,
+      "multiway_penalty": 0.097071,
+      "opening_frequency": 0.866238,
+      "opening_shift": -0.12,
+      "position_sensitivity": 0.025933,
+      "postflop_call_margin": 0.034554,
+      "raise_frequency": 0.639472,
+      "short_stack_bb": 9.282287,
+      "short_stack_cutoff": 0.621988,
+      "value_raise_threshold": 0.584105
+    },
+    "parents": [
+      "evo-g0005-0002",
+      "evo-g0004-0005@next"
+    ]
+  },
+  {
+    "bot_id": "r90-evo-08",
+    "family": "evolved",
+    "generation": 7,
+    "params": {
+      "bet_size": 0.495205,
+      "bluff_frequency": 0.030823,
+      "call_frequency": 0.978,
+      "call_margin": -0.00434,
+      "multiway_penalty": 0.057113,
+      "opening_frequency": 0.822765,
+      "opening_shift": -0.07779,
+      "position_sensitivity": 0.038346,
+      "postflop_call_margin": 0.039648,
+      "raise_frequency": 0.829867,
+      "short_stack_bb": 9.39448,
+      "short_stack_cutoff": 0.677736,
+      "value_raise_threshold": 0.584105
+    },
+    "parents": [
+      "evo-g0006-0004",
+      "evo-g0002-0002-1"
+    ]
+  },
+  {
+    "bot_id": "r90-ada-09",
+    "family": "adaptive",
+    "generation": 5,
+    "params": {
+      "bet_size": 0.15,
+      "bluff_frequency": 0.0,
+      "call_frequency": 1.0,
+      "call_margin": -0.030182,
+      "multiway_penalty": 0.05305,
+      "opening_frequency": 0.91387,
+      "opening_shift": -0.1104,
+      "position_sensitivity": 0.023841,
+      "postflop_call_margin": 0.034554,
+      "raise_frequency": 1.0,
+      "short_stack_bb": 10.491719,
+      "short_stack_cutoff": 0.737923,
+      "value_raise_threshold": 0.579226
+    },
+    "parents": [
+      "evolution-next-g0000-variant-01-evolved",
+      "evo-g0004-0005@next"
+    ]
+  },
+  {
+    "bot_id": "r90-ada-10",
+    "family": "adaptive",
+    "generation": 4,
+    "params": {
+      "bet_size": 0.15,
+      "bluff_frequency": 0.0,
+      "call_frequency": 1.0,
+      "call_margin": -0.007535,
+      "multiway_penalty": 0.057113,
+      "opening_frequency": 0.891472,
+      "opening_shift": -0.110905,
+      "position_sensitivity": 0.036505,
+      "postflop_call_margin": 0.046331,
+      "raise_frequency": 0.874442,
+      "short_stack_bb": 9.39448,
+      "short_stack_cutoff": 0.704176,
+      "value_raise_threshold": 0.563187
+    },
+    "parents": [
+      "evo-g0003-0000",
+      "evo-g0002-0002-1"
+    ]
+  },
+  {
+    "bot_id": "r90-ada-11",
+    "family": "adaptive",
+    "generation": 7,
+    "params": {
+      "bet_size": 0.671736,
+      "bluff_frequency": 0.011771,
+      "call_frequency": 0.984689,
+      "call_margin": 0.000381,
+      "multiway_penalty": 0.096318,
+      "opening_frequency": 0.93233,
+      "opening_shift": -0.103479,
+      "position_sensitivity": 0.035129,
+      "postflop_call_margin": 0.046403,
+      "raise_frequency": 0.641726,
+      "short_stack_bb": 9.39448,
+      "short_stack_cutoff": 0.621988,
+      "value_raise_threshold": 0.584105
+    },
+    "parents": [
+      "evo-g0006-0004",
+      "evo-g0005-0002"
+    ]
+  },
+  {
+    "bot_id": "r90-ada-12",
+    "family": "adaptive",
+    "generation": 5,
+    "params": {
+      "bet_size": 0.15,
+      "bluff_frequency": 0.0,
+      "call_frequency": 1.0,
+      "call_margin": -0.017295,
+      "multiway_penalty": 0.05305,
+      "opening_frequency": 0.902142,
+      "opening_shift": -0.107273,
+      "position_sensitivity": 0.025478,
+      "postflop_call_margin": 0.034554,
+      "raise_frequency": 0.665875,
+      "short_stack_bb": 9.870917,
+      "short_stack_cutoff": 0.7476,
+      "value_raise_threshold": 0.603034
+    },
+    "parents": [
+      "evo-g0004-0005@next",
+      "evo-g0003-0000"
+    ]
+  },
+  {
+    "bot_id": "r90-ada-13",
+    "family": "adaptive",
+    "generation": 7,
+    "params": {
+      "bet_size": 0.15,
+      "bluff_frequency": 0.0,
+      "call_frequency": 1.0,
+      "call_margin": -0.006914,
+      "multiway_penalty": 0.057113,
+      "opening_frequency": 0.93233,
+      "opening_shift": -0.052481,
+      "position_sensitivity": 0.036505,
+      "postflop_call_margin": 0.040286,
+      "raise_frequency": 0.829867,
+      "short_stack_bb": 7.89084,
+      "short_stack_cutoff": 0.730164,
+      "value_raise_threshold": 0.563187
+    },
+    "parents": [
+      "evo-g0002-0002-1",
+      "evo-g0006-0004"
+    ]
+  },
+  {
+    "bot_id": "r90-ada-14",
+    "family": "adaptive",
+    "generation": 4,
+    "params": {
+      "bet_size": 0.167277,
+      "bluff_frequency": 0.017033,
+      "call_frequency": 1.0,
+      "call_margin": -0.030182,
+      "multiway_penalty": 0.05305,
+      "opening_frequency": 0.91387,
+      "opening_shift": -0.09685,
+      "position_sensitivity": 0.0235,
+      "postflop_call_margin": 0.034554,
+      "raise_frequency": 1.0,
+      "short_stack_bb": 13.007457,
+      "short_stack_cutoff": 0.715807,
+      "value_raise_threshold": 0.603034
+    },
+    "parents": [
+      "evolution-next-g0000-variant-01-evolved",
+      "evo-g0003-0000"
+    ]
+  },
+  {
+    "bot_id": "r90-ada-15",
+    "family": "adaptive",
+    "generation": 6,
+    "params": {
+      "bet_size": 0.15,
+      "bluff_frequency": 0.0,
+      "call_frequency": 1.0,
+      "call_margin": 0.017634,
+      "multiway_penalty": 0.05305,
+      "opening_frequency": 0.893339,
+      "opening_shift": -0.09685,
+      "position_sensitivity": 0.025478,
+      "postflop_call_margin": 0.034554,
+      "raise_frequency": 0.618249,
+      "short_stack_bb": 10.491719,
+      "short_stack_cutoff": 0.7476,
+      "value_raise_threshold": 0.584105
+    },
+    "parents": [
+      "evo-g0005-0002",
+      "evo-g0004-0005@next"
+    ]
+  },
+  {
+    "bot_id": "r90-ada-16",
+    "family": "adaptive",
+    "generation": 7,
+    "params": {
+      "bet_size": 0.15,
+      "bluff_frequency": 0.0,
+      "call_frequency": 0.810157,
+      "call_margin": 0.007174,
+      "multiway_penalty": 0.069321,
+      "opening_frequency": 0.822765,
+      "opening_shift": -0.103479,
+      "position_sensitivity": 0.028856,
+      "postflop_call_margin": 0.040286,
+      "raise_frequency": 0.59701,
+      "short_stack_bb": 9.39448,
+      "short_stack_cutoff": 0.677736,
+      "value_raise_threshold": 0.584105
+    },
+    "parents": [
+      "evo-g0006-0004",
+      "evo-g0002-0002-1"
+    ]
+  },
+  {
+    "bot_id": "r90-cal-17",
+    "family": "calibrated",
+    "generation": 5,
+    "params": {
+      "bet_size": 0.167277,
+      "bluff_frequency": 0.044638,
+      "call_frequency": 1.0,
+      "call_margin": -0.033433,
+      "multiway_penalty": 0.05305,
+      "opening_frequency": 0.893339,
+      "opening_shift": -0.09685,
+      "position_sensitivity": 0.019178,
+      "postflop_call_margin": 0.034554,
+      "raise_frequency": 1.0,
+      "short_stack_bb": 11.601011,
+      "short_stack_cutoff": 0.76,
+      "value_raise_threshold": 0.5712
+    },
+    "parents": [
+      "evolution-next-g0000-variant-01-evolved",
+      "evo-g0004-0005@next"
+    ]
+  },
+  {
+    "bot_id": "r90-cal-18",
+    "family": "calibrated",
+    "generation": 4,
+    "params": {
+      "bet_size": 0.177652,
+      "bluff_frequency": 0.0,
+      "call_frequency": 1.0,
+      "call_margin": 0.000381,
+      "multiway_penalty": 0.057113,
+      "opening_frequency": 0.932227,
+      "opening_shift": -0.09685,
+      "position_sensitivity": 0.031986,
+      "postflop_call_margin": 0.040286,
+      "raise_frequency": 0.829867,
+      "short_stack_bb": 13.007457,
+      "short_stack_cutoff": 0.7476,
+      "value_raise_threshold": 0.563187
+    },
+    "parents": [
+      "evo-g0003-0000",
+      "evo-g0002-0002-1"
+    ]
+  },
+  {
+    "bot_id": "r90-cal-19",
+    "family": "calibrated",
+    "generation": 7,
+    "params": {
+      "bet_size": 0.15,
+      "bluff_frequency": 0.0,
+      "call_frequency": 0.978,
+      "call_margin": 0.031368,
+      "multiway_penalty": 0.09567,
+      "opening_frequency": 1.0,
+      "opening_shift": -0.09685,
+      "position_sensitivity": 0.030218,
+      "postflop_call_margin": 0.034554,
+      "raise_frequency": 0.753161,
+      "short_stack_bb": 9.39448,
+      "short_stack_cutoff": 0.621988,
+      "value_raise_threshold": 0.584105
+    },
+    "parents": [
+      "evo-g0006-0004",
+      "evo-g0005-0002"
+    ]
+  },
+  {
+    "bot_id": "r90-cal-20",
+    "family": "calibrated",
+    "generation": 5,
+    "params": {
+      "bet_size": 0.719808,
+      "bluff_frequency": 0.011771,
+      "call_frequency": 1.0,
+      "call_margin": 0.000381,
+      "multiway_penalty": 0.048355,
+      "opening_frequency": 0.93233,
+      "opening_shift": -0.12,
+      "position_sensitivity": 0.024565,
+      "postflop_call_margin": 0.034554,
+      "raise_frequency": 0.665875,
+      "short_stack_bb": 12.467903,
+      "short_stack_cutoff": 0.76,
+      "value_raise_threshold": 0.611141
+    },
+    "parents": [
+      "evo-g0004-0005@next",
+      "evo-g0003-0000"
+    ]
+  },
+  {
+    "bot_id": "r90-cal-21",
+    "family": "calibrated",
+    "generation": 7,
+    "params": {
+      "bet_size": 0.6423,
+      "bluff_frequency": 0.0,
+      "call_frequency": 0.978,
+      "call_margin": 0.015788,
+      "multiway_penalty": 0.057113,
+      "opening_frequency": 0.93233,
+      "opening_shift": -0.103479,
+      "position_sensitivity": 0.036505,
+      "postflop_call_margin": 0.040286,
+      "raise_frequency": 0.59701,
+      "short_stack_bb": 9.39448,
+      "short_stack_cutoff": 0.677736,
+      "value_raise_threshold": 0.580031
+    },
+    "parents": [
+      "evo-g0002-0002-1",
+      "evo-g0006-0004"
+    ]
+  },
+  {
+    "bot_id": "r90-cal-22",
+    "family": "calibrated",
+    "generation": 4,
+    "params": {
+      "bet_size": 0.167277,
+      "bluff_frequency": 0.0,
+      "call_frequency": 1.0,
+      "call_margin": 0.000381,
+      "multiway_penalty": 0.05305,
+      "opening_frequency": 0.91387,
+      "opening_shift": -0.09685,
+      "position_sensitivity": 0.026627,
+      "postflop_call_margin": 0.046953,
+      "raise_frequency": 1.0,
+      "short_stack_bb": 11.008681,
+      "short_stack_cutoff": 0.715807,
+      "value_raise_threshold": 0.56
+    },
+    "parents": [
+      "evolution-next-g0000-variant-01-evolved",
+      "evo-g0003-0000"
+    ]
+  },
+  {
+    "bot_id": "r90-cal-23",
+    "family": "calibrated",
+    "generation": 6,
+    "params": {
+      "bet_size": 0.15,
+      "bluff_frequency": 0.041061,
+      "call_frequency": 0.937836,
+      "call_margin": 0.017634,
+      "multiway_penalty": 0.096318,
+      "opening_frequency": 0.946185,
+      "opening_shift": -0.092834,
+      "position_sensitivity": 0.035129,
+      "postflop_call_margin": 0.034554,
+      "raise_frequency": 0.600423,
+      "short_stack_bb": 9.39448,
+      "short_stack_cutoff": 0.621988,
+      "value_raise_threshold": 0.611141
+    },
+    "parents": [
+      "evo-g0005-0002",
+      "evo-g0004-0005@next"
+    ]
+  },
+  {
+    "bot_id": "r90-cal-24",
+    "family": "calibrated",
+    "generation": 7,
+    "params": {
+      "bet_size": 0.769239,
+      "bluff_frequency": 0.0,
+      "call_frequency": 0.978,
+      "call_margin": 0.000381,
+      "multiway_penalty": 0.057113,
+      "opening_frequency": 0.850506,
+      "opening_shift": -0.110905,
+      "position_sensitivity": 0.028856,
+      "postflop_call_margin": 0.040286,
+      "raise_frequency": 0.829867,
+      "short_stack_bb": 9.39448,
+      "short_stack_cutoff": 0.76,
+      "value_raise_threshold": 0.584105
+    },
+    "parents": [
+      "evo-g0006-0004",
+      "evo-g0002-0002-1"
+    ]
+  }
+]

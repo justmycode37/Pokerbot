@@ -1,0 +1,141 @@
+{
+  "candidate_identity_note": "Variant IDs salt policy randomness; final comparison uses exactly the recorded candidate IDs, while archived opponents retain original policy IDs.",
+  "family_shortlist": {
+    "adaptive": [
+      {
+        "bot_id": "r90-ada-14",
+        "cap_survivors": 0,
+        "decisions": 5159,
+        "invalid_actions": 0,
+        "invalid_rate": 0.0,
+        "lost": 25,
+        "mean_final_stack": 3500.0,
+        "mean_points": 4.09375,
+        "played": 32,
+        "table_caps": 0,
+        "wilson_95": [
+          0.11023836252604188,
+          0.3875499364924353
+        ],
+        "win_rate": 0.21875,
+        "won": 7
+      },
+      {
+        "bot_id": "r90-ada-12",
+        "cap_survivors": 0,
+        "decisions": 5278,
+        "invalid_actions": 0,
+        "invalid_rate": 0.0,
+        "lost": 25,
+        "mean_final_stack": 3500.0,
+        "mean_points": 3.84375,
+        "played": 32,
+        "table_caps": 0,
+        "wilson_95": [
+          0.11023836252604188,
+          0.3875499364924353
+        ],
+        "win_rate": 0.21875,
+        "won": 7
+      }
+    ],
+    "calibrated": [
+      {
+        "bot_id": "r90-cal-19",
+        "cap_survivors": 0,
+        "decisions": 5732,
+        "invalid_actions": 0,
+        "invalid_rate": 0.0,
+        "lost": 25,
+        "mean_final_stack": 3500.0,
+        "mean_points": 4.6875,
+        "played": 32,
+        "table_caps": 0,
+        "wilson_95": [
+          0.11023836252604188,
+          0.3875499364924353
+        ],
+        "win_rate": 0.21875,
+        "won": 7
+      },
+      {
+        "bot_id": "r90-cal-22",
+        "cap_survivors": 0,
+        "decisions": 5516,
+        "invalid_actions": 0,
+        "invalid_rate": 0.0,
+        "lost": 26,
+        "mean_final_stack": 3000.0,
+        "mean_points": 4.53125,
+        "played": 32,
+        "table_caps": 0,
+        "wilson_95": [
+          0.08889544689565956,
+          0.3530915520137595
+        ],
+        "win_rate": 0.1875,
+        "won": 6
+      }
+    ],
+    "evolved": [
+      {
+        "bot_id": "r90-evo-02",
+        "cap_survivors": 0,
+        "decisions": 5708,
+        "invalid_actions": 0,
+        "invalid_rate": 0.0,
+        "lost": 24,
+        "mean_final_stack": 4000.0,
+        "mean_points": 4.84375,
+        "played": 32,
+        "table_caps": 0,
+        "wilson_95": [
+          0.1325240091850904,
+          0.4210655899424448
+        ],
+        "win_rate": 0.25,
+        "won": 8
+      },
+      {
+        "bot_id": "r90-evo-06",
+        "cap_survivors": 0,
+        "decisions": 4857,
+        "invalid_actions": 0,
+        "invalid_rate": 0.0,
+        "lost": 26,
+        "mean_final_stack": 3000.0,
+        "mean_points": 4.21875,
+        "played": 32,
+        "table_caps": 0,
+        "wilson_95": [
+          0.08889544689565956,
+          0.3530915520137595
+        ],
+        "win_rate": 0.1875,
+        "won": 6
+      }
+    ]
+  },
+  "final_candidate_ids": [
+    "anchor-saved",
+    "r90-evo-02",
+    "r90-evo-06",
+    "r90-ada-14",
+    "r90-ada-12",
+    "r90-cal-19",
+    "r90-cal-22"
+  ],
+  "final_namespace": "racer-evolution-90search-final-20261103-v1",
+  "final_seed_count": 128,
+  "retained_baseline": {
+    "bot_id": "anchor-saved",
+    "played": 32,
+    "won": 3
+  },
+  "schema": "pokerbot-evolution-90search-final-selection-v1",
+  "screen_protocol_sha256": "14c450e5b6efea666858f8f255b70a99b8412ba05e53f7f081fadfedc97ec90a",
+  "screen_results_sha256": "bc0d89e0a81755a7ab8675cc0760afd49d4da916a6561437227b914eeeec608e",
+  "screen_seed_file_sha256": "7564c7e8b25ccc1138909069918002fac37d4cbdd85e62e9e83203d50e2d3e9d",
+  "selection_rule": "Keep anchor-saved; in each of evolved/adaptive/calibrated select the top two by win rate, then mean points, mean final stack, lower invalid rate, and bot ID. All intervals descriptive; selection is for training seed proposal only.",
+  "source_status": "training-only screening; no validation or confirmation fields used"
+}
