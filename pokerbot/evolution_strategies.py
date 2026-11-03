@@ -20,7 +20,9 @@ from .state import Observation
 
 
 FAMILIES = frozenset({
-    "evolved", "adaptive", "calibrated", "corrected-calibrated", "exploit", "saved", "fast", "calling-station", "tight-passive", "random-legal",
+    "evolved", "adaptive", "calibrated", "corrected-calibrated", "exploit",
+    "exploit-endgame", "saved", "fast", "calling-station", "tight-passive",
+    "random-legal",
 })
 
 # Bounds are deliberately broad enough for distinct playing styles, while
@@ -90,8 +92,23 @@ EXPLOIT_DEFAULT_PARAMS: dict[str, float] = {
     "maniac_call_bonus": 0.07,
 }
 
+EXPLOIT_ENDGAME_PARAMETER_BOUNDS: dict[str, tuple[float, float]] = {
+    **EXPLOIT_PARAMETER_BOUNDS,
+    "endgame_short_stack_bb": (8.0, 22.0),
+    "endgame_heads_up_aggression": (0.75, 1.25),
+    "endgame_call_shove_margin": (0.04, 0.18),
+}
+
+EXPLOIT_ENDGAME_DEFAULT_PARAMS: dict[str, float] = {
+    **EXPLOIT_DEFAULT_PARAMS,
+    "endgame_short_stack_bb": 16.0,
+    "endgame_heads_up_aggression": 1.0,
+    "endgame_call_shove_margin": 0.095,
+}
+
 _PARAMETER_FAMILIES = frozenset({
     "evolved", "adaptive", "calibrated", "corrected-calibrated", "exploit",
+    "exploit-endgame",
 })
 
 _ACTION_ORDER = ("raise", "call", "check", "fold")
@@ -124,7 +141,9 @@ def _validate_generation(generation: Any) -> int:
 def _clean_params(params: Any, family: str) -> _FrozenParams:
     if not isinstance(params, Mapping):
         raise ValueError("params must be an object")
-    bounds = EXPLOIT_PARAMETER_BOUNDS if family == "exploit" else PARAMETER_BOUNDS
+    bounds = (EXPLOIT_ENDGAME_PARAMETER_BOUNDS if family == "exploit-endgame"
+              else EXPLOIT_PARAMETER_BOUNDS if family == "exploit"
+              else PARAMETER_BOUNDS)
     unknown = set(params) - set(bounds)
     if unknown:
         raise ValueError(f"unknown genome parameter(s): {', '.join(sorted(map(str, unknown)))}")
@@ -196,6 +215,10 @@ class Genome:
 
 
 def _genes(genome: Genome) -> dict[str, float]:
+    if genome.family == "exploit-endgame":
+        values = dict(EXPLOIT_ENDGAME_DEFAULT_PARAMS)
+        values.update(genome.params)
+        return values
     if genome.family == "exploit":
         values = dict(EXPLOIT_DEFAULT_PARAMS)
         values.update(genome.params)
@@ -213,7 +236,9 @@ def new_random(
     if not hasattr(rng, "uniform"):
         raise TypeError("rng must provide random.Random's uniform method")
     _validate_generation(generation)
-    bounds = EXPLOIT_PARAMETER_BOUNDS if family == "exploit" else PARAMETER_BOUNDS
+    bounds = (EXPLOIT_ENDGAME_PARAMETER_BOUNDS if family == "exploit-endgame"
+              else EXPLOIT_PARAMETER_BOUNDS if family == "exploit"
+              else PARAMETER_BOUNDS)
     params = {name: round(rng.uniform(low, high), 6) for name, (low, high) in bounds.items()}
     return Genome(bot_id=bot_id, family=family, params=params, generation=generation)
 
@@ -225,7 +250,10 @@ def _breed_exploit_family(
     families = [item.family for item in (parent, other)
                 if item is not None and item.family in _PARAMETER_FAMILIES]
     family = rng.choice(families) if families else "evolved"
-    if family == "exploit":
+    if family == "exploit-endgame":
+        bounds = EXPLOIT_ENDGAME_PARAMETER_BOUNDS
+        defaults = EXPLOIT_ENDGAME_DEFAULT_PARAMS
+    elif family == "exploit":
         bounds = EXPLOIT_PARAMETER_BOUNDS
         defaults = EXPLOIT_DEFAULT_PARAMS
     else:
@@ -283,7 +311,9 @@ def breed(
     if not hasattr(rng, "random") or not hasattr(rng, "gauss"):
         raise TypeError("rng must provide random.Random methods")
     _validate_generation(generation)
-    if parent.family == "exploit" or (other is not None and other.family == "exploit"):
+    if parent.family in {"exploit", "exploit-endgame"} or (
+        other is not None and other.family in {"exploit", "exploit-endgame"}
+    ):
         return _breed_exploit_family(parent, other, rng, bot_id, generation)
     first = _genes(parent)
     second = _genes(other) if other is not None else first
@@ -821,6 +851,9 @@ def policy_for(genome: Genome):
     if genome.family == "exploit":
         from .exploit_policy import make_exploit_policy
         return make_exploit_policy(genome)
+    if genome.family == "exploit-endgame":
+        from .exploit_policy import make_exploit_endgame_policy
+        return make_exploit_endgame_policy(genome)
     if genome.family == "saved":
         saved = _load_saved_callable()
 

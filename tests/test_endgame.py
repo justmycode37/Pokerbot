@@ -73,6 +73,30 @@ class EndgameDecisionTests(unittest.TestCase):
         ))
         self.assertEqual(endgame_decision(heads_up_flop), endgame_decision(heads_up_flop))
 
+    def test_endgame_tuning_parameters_preserve_defaults_and_change_cutoffs(self):
+        heads_up = raw_observation(players_active=2, stack_bb=100, position="BTN")
+        heads_up["hole_cards"] = ["As", "Kd"]
+        obs = Observation.from_dict(heads_up)
+        self.assertEqual(
+            endgame_decision(obs),
+            endgame_decision(obs, {"heads_up_aggression": 1.0, "call_shove_margin": 0.095}),
+        )
+        default_hu = endgame_decision(obs)
+        aggressive_hu = endgame_decision(obs, {"heads_up_aggression": 1.25})
+        self.assertLess(aggressive_hu["diagnostics"]["open_cutoff"],
+                        default_hu["diagnostics"]["open_cutoff"])
+
+        shove = raw_observation(stack_bb=10, players_active=8, to_call_bb=8,
+                                history=[{"street": "preflop", "player": "p1",
+                                          "action": "raise", "amount": 200, "added": 180}])
+        shove["hole_cards"] = ["As", "Ah"]
+        shove["contestable_pot"] = 80
+        shove_obs = Observation.from_dict(shove)
+        cautious = endgame_decision(shove_obs, {"call_shove_margin": 0.18})
+        loose = endgame_decision(shove_obs, {"call_shove_margin": 0.04})
+        self.assertGreater(cautious["diagnostics"]["equity_cutoff"],
+                           loose["diagnostics"]["equity_cutoff"])
+
     def test_heads_up_button_folds_bottom_of_range_when_fold_is_legal(self):
         raw = raw_observation(players_active=2, stack_bb=100, position="BTN", to_call_bb=1)
         raw["hole_cards"] = ["2c", "3d"]

@@ -189,7 +189,8 @@ def _call_shove(obs: Observation, depth_bb: float, params: Mapping[str, float] |
     range_discount = (0.080 + 0.020 * max(0, raise_count - 1) + 0.015 * caller_count
                       + position_adjustment + future_caller_adjustment)
     depth_credit = 0.025 if depth_bb <= 4 else 0.0
-    cutoff = max(pot_odds + 0.095, 0.60 + range_discount - depth_credit)
+    call_shove_margin = _value(params, "call_shove_margin", 0.095)
+    cutoff = max(pot_odds + call_shove_margin, 0.60 + range_discount - depth_credit)
     cutoff = _clamp(cutoff, 0.48, 0.84)
     details = {"module": "short_stack_call_shove", "hand_equity_vs_random": round(equity, 4),
                "equity_cutoff": round(cutoff, 4), "pot_odds": round(pot_odds, 4),
@@ -246,12 +247,15 @@ def _hu_preflop(obs: Observation, params: Mapping[str, float] | None,
     raise_count = _raise_count(obs)
     opp_raise_count = _raise_count(obs, exclude_hero=True)
     caller_frequency = _call_frequency(opponent_stats)
-    adjusted_open = 0.455 + 0.006 * min(5.0, max(0.0, depth_bb - 20.0))
+    aggression = _clamp(_value(params, "heads_up_aggression", 1.0), 0.5, 1.5)
+    adjusted_open = (0.455 + 0.006 * min(5.0, max(0.0, depth_bb - 20.0))
+                     - 0.03 * (aggression - 1.0))
     if caller_frequency is not None:
         adjusted_open += 0.035 * (caller_frequency - 0.40)
     details = {"module": "heads_up_preflop", "hand_equity_vs_random": round(equity, 4),
                "stack_bb": round(depth_bb, 2), "raise_count": raise_count,
-               "opponent_raises": opp_raise_count, "open_cutoff": round(adjusted_open, 4)}
+               "opponent_raises": opp_raise_count, "open_cutoff": round(adjusted_open, 4),
+               "aggression": aggression}
 
     # Button is the small blind and acts first preflop. It may limp for half a
     # blind, open to a compact 2.2–2.5 BB size, or shove at very short depth.
@@ -278,8 +282,8 @@ def _hu_preflop(obs: Observation, params: Mapping[str, float] | None,
         return _decision(obs, _safe_passive(obs), diagnostics={**details, "reason": "big blind checks option"})
 
     pot_odds = obs.pot_odds
-    call_cutoff = max(0.33, pot_odds + 0.045)
-    jam_cutoff = 0.66 if depth_bb <= 15 else 0.76
+    call_cutoff = max(0.33, pot_odds + 0.045 / aggression)
+    jam_cutoff = (0.66 if depth_bb <= 15 else 0.76) - 0.08 * (aggression - 1.0)
     if obs.position == "BB" and opp_raise_count > 0:
         if depth_bb <= 15 and equity >= jam_cutoff and "raise" in obs.legal_actions:
             return _decision(obs, "raise", amount=obs.max_raise_to,

@@ -54,12 +54,16 @@ decision = endgame_decision(obs, params={"short_stack_bb": 14, "ante_bb": 0.1})
 policy = wrap_policy(base_policy, params={"short_stack_bb": 14})
 ```
 
-Supported overlay parameters are `short_stack_bb` (default 16) and `ante_bb`
-(default 0). `opponent_stats` may map public player IDs to a call frequency in
-`[0, 1]` or to a mapping containing `call_frequency`. The standalone function
-returns `None` outside the overlay's range. The wrapper returns the base
-policy's result in that case. Raise amounts use the protocol's total street
-bet convention and are clamped to the observation's legal raise bounds.
+Supported overlay parameters are `short_stack_bb` (default 16), `ante_bb`
+(default 0), `heads_up_aggression` (default 1.0), and `call_shove_margin`
+(default 0.095). Heads-up aggression scales preflop opening, calling, and
+jamming cutoffs; a larger value widens those ranges. The call-shove margin sets
+the minimum equity above pot odds, alongside the range-adjusted chart floor.
+`opponent_stats` may map public player IDs to a call frequency in `[0, 1]` or
+to a mapping containing `call_frequency`. The standalone function returns
+`None` outside the overlay's range. The wrapper returns the base policy's
+result in that case. Raise amounts use the protocol's total street bet
+convention and are clamped to the observation's legal raise bounds.
 
 ## Paired proxy evaluation
 
