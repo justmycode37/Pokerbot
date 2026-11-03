@@ -20,7 +20,7 @@ from .state import Observation
 
 
 FAMILIES = frozenset({
-    "evolved", "adaptive", "calibrated", "corrected-calibrated", "saved", "fast", "calling-station", "tight-passive", "random-legal",
+    "evolved", "adaptive", "calibrated", "corrected-calibrated", "exploit", "saved", "fast", "calling-station", "tight-passive", "random-legal",
 })
 
 # Bounds are deliberately broad enough for distinct playing styles, while
@@ -57,6 +57,43 @@ DEFAULT_PARAMS: dict[str, float] = {
     "position_sensitivity": 0.018,
 }
 
+# The exploit family has a deliberately separate gene vector. Existing
+# parametric families continue to use PARAMETER_BOUNDS/DEFAULT_PARAMS exactly
+# as before; their serialized genomes and breeding path are unchanged.
+EXPLOIT_PARAMETER_BOUNDS: dict[str, tuple[float, float]] = {
+    "open_tightness": (0.42, 0.70),
+    "station_value_cutoff": (0.48, 0.68),
+    "station_size": (0.65, 1.35),
+    "bluff_frequency": (0.0, 0.20),
+    "exploit_weight": (0.30, 1.0),
+    "call_margin": (-0.08, 0.08),
+    "multiway_penalty": (0.025, 0.12),
+    "short_stack_bb": (6.0, 18.0),
+    "short_stack_cutoff": (0.46, 0.68),
+    "open_size_bb": (2.0, 4.0),
+    "value_size": (0.35, 1.20),
+    "maniac_call_bonus": (0.0, 0.12),
+}
+
+EXPLOIT_DEFAULT_PARAMS: dict[str, float] = {
+    "open_tightness": 0.54,
+    "station_value_cutoff": 0.55,
+    "station_size": 1.05,
+    "bluff_frequency": 0.035,
+    "exploit_weight": 0.82,
+    "call_margin": -0.015,
+    "multiway_penalty": 0.065,
+    "short_stack_bb": 11.0,
+    "short_stack_cutoff": 0.55,
+    "open_size_bb": 2.65,
+    "value_size": 0.72,
+    "maniac_call_bonus": 0.07,
+}
+
+_PARAMETER_FAMILIES = frozenset({
+    "evolved", "adaptive", "calibrated", "corrected-calibrated", "exploit",
+})
+
 _ACTION_ORDER = ("raise", "call", "check", "fold")
 _EARLY_POSITIONS = frozenset({"UTG", "MP"})
 _LATE_POSITIONS = frozenset({"CO", "BTN"})
@@ -87,10 +124,11 @@ def _validate_generation(generation: Any) -> int:
 def _clean_params(params: Any, family: str) -> _FrozenParams:
     if not isinstance(params, Mapping):
         raise ValueError("params must be an object")
-    unknown = set(params) - set(PARAMETER_BOUNDS)
+    bounds = EXPLOIT_PARAMETER_BOUNDS if family == "exploit" else PARAMETER_BOUNDS
+    unknown = set(params) - set(bounds)
     if unknown:
         raise ValueError(f"unknown genome parameter(s): {', '.join(sorted(map(str, unknown)))}")
-    if family not in {"evolved", "adaptive", "calibrated", "corrected-calibrated"} and params:
+    if family not in _PARAMETER_FAMILIES and params:
         raise ValueError(f"family {family!r} does not accept strategy parameters")
     values: dict[str, float] = {}
     for name, raw_value in params.items():
@@ -99,7 +137,7 @@ def _clean_params(params: Any, family: str) -> _FrozenParams:
         if isinstance(raw_value, bool) or not isinstance(raw_value, (int, float)):
             raise ValueError(f"parameter {name!r} must be a finite number")
         value = float(raw_value)
-        low, high = PARAMETER_BOUNDS[name]
+        low, high = bounds[name]
         if not math.isfinite(value) or not low <= value <= high:
             raise ValueError(f"parameter {name!r} must be finite and within [{low}, {high}]")
         values[name] = value
@@ -158,22 +196,78 @@ class Genome:
 
 
 def _genes(genome: Genome) -> dict[str, float]:
+    if genome.family == "exploit":
+        values = dict(EXPLOIT_DEFAULT_PARAMS)
+        values.update(genome.params)
+        return values
     values = dict(DEFAULT_PARAMS)
     if genome.family in {"evolved", "adaptive", "calibrated", "corrected-calibrated"}:
         values.update(genome.params)
     return values
 
 
-def new_random(rng: random.Random, bot_id: str, generation: int = 0) -> Genome:
+def new_random(
+    rng: random.Random, bot_id: str, generation: int = 0, *, family: str = "evolved",
+) -> Genome:
     """Create a diverse, bounded genome using only the caller's RNG."""
     if not hasattr(rng, "uniform"):
         raise TypeError("rng must provide random.Random's uniform method")
     _validate_generation(generation)
-    params = {
-        name: round(rng.uniform(low, high), 6)
-        for name, (low, high) in PARAMETER_BOUNDS.items()
+    bounds = EXPLOIT_PARAMETER_BOUNDS if family == "exploit" else PARAMETER_BOUNDS
+    params = {name: round(rng.uniform(low, high), 6) for name, (low, high) in bounds.items()}
+    return Genome(bot_id=bot_id, family=family, params=params, generation=generation)
+
+
+def _breed_exploit_family(
+    parent: Genome, other: Genome | None, rng: random.Random, bot_id: str, generation: int,
+) -> Genome:
+    """Breed an exploit lineage using its independent bounded gene vector."""
+    families = [item.family for item in (parent, other)
+                if item is not None and item.family in _PARAMETER_FAMILIES]
+    family = rng.choice(families) if families else "evolved"
+    if family == "exploit":
+        bounds = EXPLOIT_PARAMETER_BOUNDS
+        defaults = EXPLOIT_DEFAULT_PARAMS
+    else:
+        bounds = PARAMETER_BOUNDS
+        defaults = DEFAULT_PARAMS
+
+    def source(item: Genome) -> dict[str, float]:
+        # Genes shared by both vectors can have different bounds, so values
+        # inherited across families are clamped into the child's bounds.
+        values = dict(defaults)
+        if item.family in _PARAMETER_FAMILIES:
+            for name, value in item.params.items():
+                if name in bounds:
+                    low, high = bounds[name]
+                    values[name] = min(high, max(low, float(value)))
+        return values
+
+    first = source(parent)
+    second = source(other) if other is not None else first
+    child = {
+        name: (second[name] if other is not None and rng.random() < 0.5 else first[name])
+        for name in bounds
     }
-    return Genome(bot_id=bot_id, params=params, generation=generation)
+    mutated: set[str] = set()
+    for name, (low, high) in bounds.items():
+        if rng.random() < 0.30:
+            child[name] = min(high, max(low, child[name] + rng.gauss(0.0, (high - low) * 0.12)))
+            mutated.add(name)
+    if not mutated:
+        mutated.add(rng.choice(tuple(bounds)))
+    mutation_name = rng.choice(tuple(sorted(mutated)))
+    low, high = bounds[mutation_name]
+    old = child[mutation_name]
+    step = (high - low) * 0.04
+    direction = 1.0 if old <= (low + high) / 2 else -1.0
+    nudged = min(high, max(low, old + direction * step))
+    if abs(nudged - old) < (high - low) * 0.01:
+        nudged = high if old < high else low
+    child[mutation_name] = nudged
+    child = {name: round(value, 6) for name, value in child.items()}
+    parents = (parent.bot_id,) if other is None else (parent.bot_id, other.bot_id)
+    return Genome(bot_id=bot_id, family=family, params=child, parents=parents, generation=generation)
 
 
 def breed(
@@ -189,6 +283,8 @@ def breed(
     if not hasattr(rng, "random") or not hasattr(rng, "gauss"):
         raise TypeError("rng must provide random.Random methods")
     _validate_generation(generation)
+    if parent.family == "exploit" or (other is not None and other.family == "exploit"):
+        return _breed_exploit_family(parent, other, rng, bot_id, generation)
     first = _genes(parent)
     second = _genes(other) if other is not None else first
     child = {
@@ -229,7 +325,7 @@ def breed(
 
     parents = (parent.bot_id,) if other is None else (parent.bot_id, other.bot_id)
     families = [item.family for item in (parent, other)
-                if item is not None and item.family in {"evolved", "adaptive", "calibrated", "corrected-calibrated"}]
+                if item is not None and item.family in {"evolved", "adaptive", "calibrated", "corrected-calibrated", "exploit"}]
     family = rng.choice(families) if families else "evolved"
     return Genome(bot_id=bot_id, family=family, params=child, parents=parents, generation=generation)
 
@@ -722,6 +818,9 @@ def policy_for(genome: Genome):
     if genome.family == "corrected-calibrated":
         from .corrected_calibrated_bot import make_corrected_calibrated_policy
         return make_corrected_calibrated_policy(genome)
+    if genome.family == "exploit":
+        from .exploit_policy import make_exploit_policy
+        return make_exploit_policy(genome)
     if genome.family == "saved":
         saved = _load_saved_callable()
 
@@ -739,4 +838,3 @@ def policy_for(genome: Genome):
     if genome.family == "tight-passive":
         return _tight_passive_policy(genome.bot_id)
     return _random_legal_policy(genome.bot_id)
-
