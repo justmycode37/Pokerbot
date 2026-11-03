@@ -15,6 +15,16 @@ It still won only 62.5–74.2% per pool, and its best Wilson upper bound was
 policy that sees only public information in this tournament structure. It is
 not a proof (see [Why 90% looks infeasible](#why-90-looks-infeasible)).
 
+**Late update (stopped run, not a full report).** A stronger oracle sees
+opponents' cards and every stack, and also simulates opponents' actual policy
+code to predict their responses. Its "no-steals" mode won 86/96 on proxy v1
+(89.6%, Wilson 95% 81.9–94.2%) and 39/49 on v2 (79.6%, 66.4–88.5%). Its main
+"response-icm" mode won 104/192 on each pool (54.2%). The run was stopped
+before completion. The rows are not in the repository, so treat these as
+provisional. They suggest 90% is not structurally impossible with perfect
+information, so the oracle bound above understates what a privileged policy
+can do. Legitimate policies remain at about 30–38%.
+
 ## Rules that apply to every number
 
 - 8-player tables, 2,000-chip stacks, blinds 20/40/80/160/320/640/1,280/2,560
@@ -189,14 +199,17 @@ future board cards. Its results:
 ## Pending work (not reflected above)
 
 - **Stronger response-simulating oracle**
-  (`reports/evolution-90-oracle2-20261103/`): only the harness script exists
-  so far, and there are no results yet.
+  (`reports/evolution-90-oracle2-20261103/`): stopped part-way. Its partial
+  results are in the bottom line; the ablation runs are incomplete.
 - **Public-information inference policy**
-  (`reports/inference-policy-20261103/`): the v1 run was partial when I read
-  it, and v2 had not started. Its final status is still unknown.
+  (`reports/inference-policy-20261103/`): stopped part-way through pool v1.
+  At the stop it had won 137/449 (30.5%), against 160/449 (35.6%) for
+  exploit-best and 141/449 (31.4%) for saved on the same tables. It is not
+  merged.
 - **Exploit-seeded evolution without the archive**
-  (`reports/evolution-exploit-run-20261103/`): only generation 1 is complete.
-  Its gate is effectively 0.95, not 0.90 (see inconsistencies).
+  (`reports/evolution-exploit-run-20261103/`): stopped after generation 2.
+  Its best validation result was `seed-exploit-random-02` with 49/128
+  (38.3%). The gate is effectively 0.95, not 0.90 (see inconsistencies).
 - **Early-phase chip accumulation for exploit:** the diagnostics found a
   hand-75 chip-lead rate of only 24.6–34.8%. No report exists in the
   repository yet.
