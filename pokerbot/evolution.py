@@ -202,12 +202,19 @@ def _archive_projection(raw: Any, source: str) -> dict[str, Any]:
     }
 
 
-def _archive_from_checkpoints(paths_raw: Any, policy_ids_path_raw: Any = None) -> dict[str, Any]:
+def _archive_from_checkpoints(
+    paths_raw: Any,
+    policy_ids_path_raw: Any = None,
+    reserved_phenotypes: dict[str, str] | None = None,
+) -> dict[str, Any]:
     """Freeze a source-scoped, deduplicated union of training/HOF policies.
 
     Only membership and referenced Genome.to_dict records are projected from
     each checkpoint. Fitness, validation, confirmation, and history fields are
-    never copied into the archive snapshot.
+    never copied into the archive snapshot. ``reserved_phenotypes`` maps this
+    run's fixed genome IDs to their phenotypes; an archived policy that reuses
+    such an ID for a different policy gets a source-scoped alias, and its
+    original ID is restored before the policy is constructed.
     """
     if paths_raw is None:
         paths_raw = []
@@ -272,6 +279,15 @@ def _archive_from_checkpoints(paths_raw: Any, policy_ids_path_raw: Any = None) -
         for bot_id, genome in projection["genomes"].items():
             phenotypes_by_id.setdefault(bot_id, set()).add(_archive_phenotype(genome))
     conflicts = {bot_id for bot_id, phenotypes in phenotypes_by_id.items() if len(phenotypes) > 1}
+    # Earlier runs may reuse generated IDs (for example ``train-opponent-0000``)
+    # for policies that differ from this run's fixed genomes of the same ID.
+    # If every source agrees on that policy, it gets one shared alias so it is
+    # not duplicated in the training pool.
+    reserved_conflicts = set()
+    for bot_id, phenotypes in phenotypes_by_id.items():
+        reserved = (reserved_phenotypes or {}).get(bot_id)
+        if reserved is not None and phenotypes != {reserved} and bot_id not in conflicts:
+            reserved_conflicts.add(bot_id)
 
     # Build a stable per-source mapping. Conflicting IDs are namespaced by
     # source index; identical policies retain their original archive ID.
@@ -279,7 +295,12 @@ def _archive_from_checkpoints(paths_raw: Any, policy_ids_path_raw: Any = None) -
     for source_index, projection in enumerate(projections):
         aliases = {}
         for bot_id in projection["genomes"]:
-            aliases[bot_id] = f"{bot_id}@archive-{source_index}" if bot_id in conflicts else bot_id
+            if bot_id in conflicts:
+                aliases[bot_id] = f"{bot_id}@archive-{source_index}"
+            elif bot_id in reserved_conflicts:
+                aliases[bot_id] = f"{bot_id}@archive"
+            else:
+                aliases[bot_id] = bot_id
         source_aliases.append(aliases)
 
     registry: dict[str, dict[str, Any]] = {}
@@ -412,7 +433,13 @@ def _validate_config(raw: dict[str, Any]) -> dict[str, Any]:
     if not math.isfinite(target_win_rate) or not 0.0 < target_win_rate < 1.0:
         raise ValueError("target_win_rate must be a finite probability strictly between 0 and 1")
     archive = _archive_from_checkpoints(
-        raw.get("archive_checkpoints", []), raw.get("archive_policy_ids_path")
+        raw.get("archive_checkpoints", []),
+        raw.get("archive_policy_ids_path"),
+        _fixed_genome_phenotypes(
+            int(raw.get("seed", 20261102)),
+            int(raw.get("fixed_random_opponents", FIXED_RANDOM_OPPONENTS)),
+            int(raw.get("players", 8)),
+        ) if raw.get("archive_checkpoints") else None,
     )
 
     config = {
@@ -462,6 +489,16 @@ def _validate_config(raw: dict[str, Any]) -> dict[str, Any]:
     if config["archive_checkpoints"] and not archive["training_opponents"] and not archive["hall_of_fame"]:
         raise ValueError("archive checkpoints must contain at least one training or hall-of-fame genome")
     return config
+
+
+def _fixed_genome_phenotypes(seed: int, fixed_random_opponents: int, players: int) -> dict[str, str]:
+    """Return phenotypes of the fixed anchors and generated pools for one run."""
+    anchors = _deduplicated_genomes(anchor_genomes())
+    training_count = max(fixed_random_opponents, players - 1, 0)
+    fixed = anchors + _make_random_genomes(seed, "training-opponents", training_count, "train-opponent")
+    fixed += _make_random_genomes(seed, "validation-pool", max(fixed_random_opponents, 0), "validation-opponent")
+    fixed += _make_random_genomes(seed, "confirmation-pool", max(fixed_random_opponents, 0), "confirmation-opponent")
+    return {_id(genome): _archive_phenotype(_to_dict(genome)) for genome in fixed}
 
 
 def _validate_seed_genomes(raw_genomes: Any) -> list[dict[str, Any]]:

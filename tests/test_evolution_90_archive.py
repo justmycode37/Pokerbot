@@ -68,6 +68,67 @@ class EvolutionTargetAndArchiveTests(unittest.TestCase):
         )
         return first_path, second_path, first, second
 
+    def test_archive_id_reused_by_this_runs_fixed_genome_gets_alias(self):
+        config_raw = self._config()
+        fixed = evolution._fixed_genome_phenotypes(
+            config_raw["seed"], config_raw["fixed_random_opponents"], config_raw["players"]
+        )
+        self.assertIn("train-opponent-0000", fixed)
+        # A prior run with another seed stored a different policy under the
+        # same generated ID; the same policy under a shared ID keeps its ID.
+        reused = self._genome("train-opponent-0000", 99)
+        same = evolution._to_dict(evolution._make_random_genomes(
+            config_raw["seed"], "training-opponents", 1, "train-opponent"
+        )[0])
+        self.assertNotEqual(evolution._archive_phenotype(reused), fixed["train-opponent-0000"])
+        with tempfile.TemporaryDirectory() as temp_dir:
+            root = Path(temp_dir)
+            source = self._write_checkpoint(
+                root / "prior.json", ["train-opponent-0000"], ["train-opponent-0000"],
+                {"train-opponent-0000": reused},
+            )
+            config = evolution._validate_config(self._config(archive_checkpoints=[str(source)]))
+            archive = config["training_archive"]
+            alias = "train-opponent-0000@archive"
+            self.assertEqual(archive["training_opponents"], [alias])
+            self.assertEqual(archive["policy_ids"][alias], "train-opponent-0000")
+            runner = evolution.EvolutionRunner(root / "run", config)
+            state = runner.state
+            self.assertIn(alias, state["training_opponents"])
+            self.assertIn("train-opponent-0000", state["training_opponents"])
+            self.assertEqual(
+                evolution._archive_phenotype(state["genomes"]["train-opponent-0000"]),
+                fixed["train-opponent-0000"],
+            )
+            pool = evolution._opponent_pool(state, "training")
+            archived = next(genome for genome in pool if genome.bot_id == alias)
+            job = evolution._build_tournament_job(
+                anchor_genomes()[0], [archived] * 7, 1, "training", config
+            )
+            self.assertEqual(job["policy_ids"][alias], "train-opponent-0000")
+            self.assertEqual(state["validation_population"], evolution.EvolutionRunner(
+                root / "baseline", evolution._validate_config(self._config())
+            ).state["validation_population"])
+
+            identical = self._write_checkpoint(
+                root / "identical.json", ["train-opponent-0000"], [], {"train-opponent-0000": same},
+            )
+            config = evolution._validate_config(self._config(archive_checkpoints=[str(identical)]))
+            self.assertEqual(config["training_archive"]["training_opponents"], ["train-opponent-0000"])
+
+            # Two sources that agree on the reused-ID policy share one alias;
+            # sources that disagree keep source-scoped aliases.
+            again = self._write_checkpoint(
+                root / "again.json", ["train-opponent-0000"], [], {"train-opponent-0000": dict(reused)},
+            )
+            config = evolution._validate_config(self._config(archive_checkpoints=[str(source), str(again)]))
+            self.assertEqual(config["training_archive"]["training_opponents"], [alias])
+            config = evolution._validate_config(self._config(archive_checkpoints=[str(source), str(identical)]))
+            self.assertEqual(
+                sorted(config["training_archive"]["training_opponents"]),
+                ["train-opponent-0000@archive-0", "train-opponent-0000@archive-1"],
+            )
+
     def test_target_config_cli_and_finite_sample_minimum(self):
         self.assertEqual(evolution._validate_config({})["target_win_rate"], 0.95)
         self.assertEqual(evolution._validate_config({"target_win_rate": 0.90})["target_win_rate"], 0.90)

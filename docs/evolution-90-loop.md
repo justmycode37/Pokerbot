@@ -23,7 +23,10 @@ runner assigns source-scoped aliases such as `policy-x@archive-0` and
 `policy-x@archive-1`. Before constructing policies, it restores each alias to
 the original source policy ID, preserving ID-dependent action randomness. An
 optional `--archive-policy-ids PATH` JSON object maps already-aliased records
-to their original IDs. Conflicting aliases, missing genomes, duplicate IDs
+to their original IDs. An archived policy that reuses one of this run's fixed
+genome IDs (for example `train-opponent-0000` from a run with another seed)
+for a different policy gets the alias `train-opponent-0000@archive` when all
+sources agree on it, or source-scoped aliases when they disagree. Conflicting aliases, missing genomes, duplicate IDs
 within a source pool, and invalid policy-ID mappings fail closed.
 
 The config and checkpoint freeze the archive union, source projection hashes,
