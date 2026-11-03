@@ -59,11 +59,17 @@ promotion or matchplay benefit is claimed.
 ## Frozen parity and safety checks
 
 The runtime tests use a checked-in, test-only 5-tree mock model and 224 frozen
-public states. Their exact feature and prediction vectors were exported from
+public states. Their feature and prediction vectors were exported from
 the v3 trainer identified in the fixture by SHA-256. The tests do not import or
 ship the trainer. Separate golden edge cases cover pocket-pair suit ties, a
 spade blocker, a gutshot, and a river with no future draw outs. All 24 global
 suit maps are checked for each case.
+
+Feature vectors and predictions under suit permutations must match exactly.
+Frozen predictions allow at most one ULP (one representable floating-point
+step), accounting for the float-summation change between Python 3.11 and 3.12.
+The fixture test also exercises Python 3.11's sequential summation on newer
+Python versions.
 
 The focused suite also checks invalid and private-input boundaries, digest
 mismatch before parsing, byte limits, tampering, duplicate JSON keys,

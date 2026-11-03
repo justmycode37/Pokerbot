@@ -20,6 +20,9 @@ guarantee. This PR carries a test-only 5-tree mock model and 224 golden
 feature/prediction vectors exported from trainer SHA-256
 `0ec6cdabd27518187b61ee77fadb076fed4beefe2d1937c28add01375f8ce96e`. Tests
 use these frozen fixtures without importing or shipping the trainer.
+Features and suit-invariance predictions remain exact; frozen predictions
+allow one ULP for Python 3.11/3.12 summation rounding. The tests exercise both
+native and sequential summation.
 
 The full calibration and runtime review reports, training scripts, raw run
 logs, recalibration artifacts, and experimental evolution patches remain in

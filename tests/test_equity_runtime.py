@@ -4,6 +4,7 @@ import copy
 import hashlib
 import itertools
 import json
+import math
 import sys
 import tempfile
 import unittest
@@ -69,6 +70,14 @@ class EquityRuntimeTests(unittest.TestCase):
         return path, digest
 
     def test_runtime_matches_frozen_trainer_outputs_on_224_public_states(self) -> None:
+        def python_311_sum(values, start=0):
+            # Python 3.12 changed float summation. Exercise the earlier order
+            # even when this test runs on the fixture's Python 3.12 version.
+            result = start
+            for value in values:
+                result += value
+            return result
+
         observed_streets: set[int] = set()
         observed_players: set[int] = set()
         for index, vector in enumerate(self.fixture["states"]):
@@ -82,10 +91,15 @@ class EquityRuntimeTests(unittest.TestCase):
                     tuple(vector["features"]),
                     runtime.extract_features(hole, board, active),
                 )
-                self.assertEqual(
-                    vector["prediction"],
-                    self.runtime_model.predict(hole, board, active),
-                )
+                for name, summation in (("native", sum), ("python_311", python_311_sum)):
+                    with self.subTest(summation=name), mock.patch.object(
+                        runtime, "sum", summation, create=True
+                    ):
+                        self.assertAlmostEqual(
+                            vector["prediction"],
+                            self.runtime_model.predict(hole, board, active),
+                            delta=math.ulp(vector["prediction"]),
+                        )
                 self.assertEqual(
                     runtime.extract_features(tuple(reversed(hole)), tuple(reversed(board)), active),
                     runtime.extract_features(hole, board, active),
@@ -101,7 +115,10 @@ class EquityRuntimeTests(unittest.TestCase):
             board = case["board"]
             active = case["players_active"]
             expected_features = tuple(case["features"])
-            expected_prediction = case["prediction"]
+            expected_prediction = self.runtime_model.predict(hole, board, active)
+            self.assertAlmostEqual(
+                case["prediction"], expected_prediction, delta=math.ulp(case["prediction"])
+            )
             for permutation in suit_permutations:
                 suit_map = dict(zip("cdhs", permutation))
                 mapped_hole = [card[0] + suit_map[card[1]] for card in reversed(hole)]
