@@ -188,6 +188,20 @@ class EndgameDecisionTests(unittest.TestCase):
         self.assertEqual(wrapped._history_cursor, 0)
         self.assertEqual(wrapped._counts, {})
 
+    def test_wrapper_counts_first_actions_of_a_new_hand(self):
+        wrapped = wrap_policy(lambda raw: {"action": "check" if raw["to_call"] == 0 else "fold"})
+        first = raw_observation(stack_bb=60, history=[
+            {"street": "preflop", "player": "p1", "action": "call", "amount": 20}])
+        first["hand_index"] = 0
+        wrapped(first)
+        # The next hand's first observed history is as long as the old cursor.
+        second = raw_observation(stack_bb=60, history=[
+            {"street": "preflop", "player": "p2", "action": "fold"},
+            {"street": "preflop", "player": "p1", "action": "call", "amount": 20}])
+        second["hand_index"] = 1
+        wrapped(second)
+        self.assertEqual(wrapped._counts, {"p1": [2, 2], "p2": [0, 1]})
+
 
 if __name__ == "__main__":
     unittest.main()

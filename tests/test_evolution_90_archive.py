@@ -80,7 +80,7 @@ class EvolutionTargetAndArchiveTests(unittest.TestCase):
         same = evolution._to_dict(evolution._make_random_genomes(
             config_raw["seed"], "training-opponents", 1, "train-opponent"
         )[0])
-        self.assertNotEqual(evolution._archive_phenotype(reused), fixed["train-opponent-0000"])
+        self.assertNotEqual(evolution._effective_archive_phenotype(reused), fixed["train-opponent-0000"])
         with tempfile.TemporaryDirectory() as temp_dir:
             root = Path(temp_dir)
             source = self._write_checkpoint(
@@ -97,7 +97,7 @@ class EvolutionTargetAndArchiveTests(unittest.TestCase):
             self.assertIn(alias, state["training_opponents"])
             self.assertIn("train-opponent-0000", state["training_opponents"])
             self.assertEqual(
-                evolution._archive_phenotype(state["genomes"]["train-opponent-0000"]),
+                evolution._effective_archive_phenotype(state["genomes"]["train-opponent-0000"]),
                 fixed["train-opponent-0000"],
             )
             pool = evolution._opponent_pool(state, "training")
@@ -128,6 +128,20 @@ class EvolutionTargetAndArchiveTests(unittest.TestCase):
                 sorted(config["training_archive"]["training_opponents"]),
                 ["train-opponent-0000@archive-0", "train-opponent-0000@archive-1"],
             )
+
+    def test_sparse_and_explicit_default_params_share_one_archive_entry(self):
+        from pokerbot.evolution_strategies import DEFAULT_PARAMS, Genome
+
+        sparse = Genome(bot_id="shared-policy", family="evolved", params={}).to_dict()
+        explicit = Genome(bot_id="shared-policy", family="evolved", params=dict(DEFAULT_PARAMS)).to_dict()
+        with tempfile.TemporaryDirectory() as temp_dir:
+            root = Path(temp_dir)
+            paths = [
+                self._write_checkpoint(root / "sparse.json", ["shared-policy"], [], {"shared-policy": sparse}),
+                self._write_checkpoint(root / "explicit.json", ["shared-policy"], [], {"shared-policy": explicit}),
+            ]
+            archive = evolution._archive_from_checkpoints([str(path) for path in paths])
+        self.assertEqual(archive["training_opponents"], ["shared-policy"])
 
     def test_target_config_cli_and_finite_sample_minimum(self):
         self.assertEqual(evolution._validate_config({})["target_win_rate"], 0.95)

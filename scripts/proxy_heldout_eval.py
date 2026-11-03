@@ -32,12 +32,22 @@ from pokerbot.evolution_strategies import anchor_genomes  # noqa: E402
 PROXY_MASTER_SEED = 20261103
 PROXY_POOL_DOMAIN = "proxy-heldout-pool-v1"
 PROXY_EVAL_DOMAIN = "proxy-heldout-eval-v1"
+# Seed domains the evolution engine uses for its own pools and match seeds.
+CANONICAL_DOMAINS = frozenset({
+    "training", "validation", "confirmation",
+    "training-opponents", "validation-pool", "confirmation-pool",
+})
+
+
+def _reject_canonical(domain: str, label: str) -> None:
+    # Canonical match seeds may carry an ``evaluation_namespace:`` prefix.
+    if domain in CANONICAL_DOMAINS or domain.rsplit(":", 1)[-1] in CANONICAL_DOMAINS:
+        raise ValueError(f"proxy {label} must not reuse a canonical evolution seed domain: {domain}")
 
 
 def proxy_pool(config: dict, pool_domain: str = PROXY_POOL_DOMAIN) -> list:
     anchors = evolution._deduplicated_genomes(anchor_genomes())
-    if pool_domain in {"validation-pool", "confirmation-pool"}:
-        raise ValueError("proxy pools must not reuse the canonical heldout seed domains")
+    _reject_canonical(pool_domain, "pool domain")
     randoms = evolution._make_random_genomes(
         PROXY_MASTER_SEED, pool_domain, config["fixed_random_opponents"], "proxy-opponent"
     )
@@ -56,10 +66,16 @@ def wilson(wins: int, n: int, z: float = 1.959963984540054) -> tuple[float, floa
 
 def evaluate(candidates: list[dict], matches: int, workers: int, eval_domain: str = PROXY_EVAL_DOMAIN,
              seed_offset: int = 0, pool_domain: str = PROXY_POOL_DOMAIN) -> dict:
+    _reject_canonical(eval_domain, "eval domain")
     config = evolution._validate_config({})
     pool = proxy_pool(config, pool_domain)
     pool_ids = {evolution._id(g) for g in pool}
     genomes = [evolution._from_dict(raw) for raw in candidates]
+    ids = [evolution._id(genome) for genome in genomes]
+    duplicates = sorted({bot_id for bot_id in ids if ids.count(bot_id) > 1})
+    if duplicates:
+        # Rows are grouped by bot_id, so duplicates would merge results.
+        raise ValueError(f"duplicate candidate id(s): {', '.join(duplicates)}")
     for genome in genomes:
         if evolution._id(genome) in pool_ids:
             raise ValueError(f"candidate id collides with proxy pool: {evolution._id(genome)}")

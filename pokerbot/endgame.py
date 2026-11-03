@@ -337,10 +337,12 @@ class _WrappedPolicy:
         self.base_policy = base_policy
         self.params = None if params is None else dict(params)
         self._history_cursor = 0
+        self._hand_index: Any = None
         self._counts: dict[str, list[int]] = {}
 
     def reset(self) -> None:
         self._history_cursor = 0
+        self._hand_index = None
         self._counts.clear()
         reset = getattr(self.base_policy, "reset", None)
         if callable(reset):
@@ -349,7 +351,14 @@ class _WrappedPolicy:
     def _observe_history(self, raw: Mapping[str, Any]) -> dict[str, float]:
         history = raw.get("history", [])
         if isinstance(history, (list, tuple)):
-            if len(history) < self._history_cursor:
+            hand_index = raw.get("hand_index")
+            # A new hand restarts the public history. Detect it by the wrapper's
+            # public hand counter when present, else by a shorter history.
+            new_hand = (type(hand_index) is int and hand_index != self._hand_index
+                        and self._hand_index is not None)
+            if type(hand_index) is int:
+                self._hand_index = hand_index
+            if new_hand or len(history) < self._history_cursor:
                 self._history_cursor = 0
             hero_id = raw.get("player_id")
             for item in history[self._history_cursor:]:

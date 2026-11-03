@@ -166,6 +166,18 @@ def _archive_phenotype(genome: dict[str, Any]) -> str:
     return _canonical_json({"family": genome["family"], "params": genome["params"]})
 
 
+def _effective_archive_phenotype(genome: dict[str, Any]) -> str:
+    """Phenotype after family defaults, so sparse and explicit-default params match.
+
+    Used only to decide archive aliasing. Resume integrity checks keep the
+    stricter byte-level ``_archive_phenotype`` comparison.
+    """
+    from .evolution_strategies import _genes
+
+    parsed = _from_dict(genome)
+    return _canonical_json({"family": parsed.family, "params": _genes(parsed)})
+
+
 def _archive_projection(raw: Any, source: str) -> dict[str, Any]:
     """Read only training/HOF membership and referenced genomes from a checkpoint."""
     if not isinstance(raw, dict):
@@ -277,7 +289,7 @@ def _archive_from_checkpoints(
     phenotypes_by_id: dict[str, set[str]] = {}
     for projection in projections:
         for bot_id, genome in projection["genomes"].items():
-            phenotypes_by_id.setdefault(bot_id, set()).add(_archive_phenotype(genome))
+            phenotypes_by_id.setdefault(bot_id, set()).add(_effective_archive_phenotype(genome))
     conflicts = {bot_id for bot_id, phenotypes in phenotypes_by_id.items() if len(phenotypes) > 1}
     # Earlier runs may reuse generated IDs (for example ``train-opponent-0000``)
     # for policies that differ from this run's fixed genomes of the same ID.
@@ -327,7 +339,7 @@ def _archive_from_checkpoints(
             aliased["bot_id"] = alias
             aliased["parents"] = [aliases.get(parent, parent) for parent in source_genome["parents"]]
             current = registry.get(alias)
-            if current is not None and _archive_phenotype(current) != _archive_phenotype(aliased):
+            if current is not None and _effective_archive_phenotype(current) != _effective_archive_phenotype(aliased):
                 raise ValueError(f"conflicting archive policies remain under alias {alias}")
             if current is None:
                 registry[alias] = aliased
@@ -498,7 +510,7 @@ def _fixed_genome_phenotypes(seed: int, fixed_random_opponents: int, players: in
     fixed = anchors + _make_random_genomes(seed, "training-opponents", training_count, "train-opponent")
     fixed += _make_random_genomes(seed, "validation-pool", max(fixed_random_opponents, 0), "validation-opponent")
     fixed += _make_random_genomes(seed, "confirmation-pool", max(fixed_random_opponents, 0), "confirmation-opponent")
-    return {_id(genome): _archive_phenotype(_to_dict(genome)) for genome in fixed}
+    return {_id(genome): _effective_archive_phenotype(_to_dict(genome)) for genome in fixed}
 
 
 def _validate_seed_genomes(raw_genomes: Any) -> list[dict[str, Any]]:
