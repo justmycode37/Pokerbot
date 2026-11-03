@@ -1,0 +1,44 @@
+{
+  "artifact": {
+    "path": "pokerbot/models/postflop-equity-v1.json",
+    "bytes": 176343,
+    "sha256": "7dd0457e02c5bf5d3e3d1c9f06b4f3d043c7343a068092b23c3c3bb6ad6e48fd",
+    "format": "pokerbot-postflop-equity-regressor",
+    "format_version": 1,
+    "schema_version": "postflop-equity-jsonl-v1",
+    "feature_version": "public-postflop-features-v3",
+    "feature_count": 32,
+    "target_semantics": "uniform-random-opponent-showdown-share",
+    "tree_count": 63,
+    "max_depth": 6
+  },
+  "provenance": {
+    "source_artifact": ".work/equity-lookup-tool-reference-v1.model.json",
+    "input_sha256": "b2259261a9be67ae20619f4aac860a63f7b0e9356a6656522cf97fb6adc4a9cb",
+    "freeze_sha256": "9639caeedfcce7f4742687011fca489ccbb9a190cdeb6f2ac4f39c91943d889a",
+    "source_sha256": {
+      "scripts/train_equity_lookup.py": "0ec6cdabd27518187b61ee77fadb076fed4beefe2d1937c28add01375f8ce96e",
+      "pokerbot/cards.py": "89a27b217402dd3bccda1d75ac16be52d477484e7e4115896ea135e6ff0efc12"
+    },
+    "training_rows": 33592,
+    "training_groups": 16783,
+    "hyperparameters": {
+      "trees": 63,
+      "max_depth": 6,
+      "min_leaf": 8,
+      "feature_candidates": 10,
+      "threshold_candidates": 4,
+      "split_sample_size": 1024,
+      "seed": 20261102
+    }
+  },
+  "calibration_evidence": {
+    "source_audit": "reports/evolution-audits/equity-calibration-model-v1.md and .json",
+    "reference_labels": 42000,
+    "calibration_rows": 8408,
+    "calibration_groups": 4196,
+    "model_mae": 0.07809,
+    "prior_raw_estimate_mae": 0.10833,
+    "interpretation": "Calibration error only; not win rate or matchplay evidence."
+  }
+}
