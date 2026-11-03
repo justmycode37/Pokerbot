@@ -20,7 +20,7 @@ from .state import Observation
 
 
 FAMILIES = frozenset({
-    "evolved", "adaptive", "saved", "fast", "calling-station", "tight-passive", "random-legal",
+    "evolved", "adaptive", "calibrated", "corrected-calibrated", "saved", "fast", "calling-station", "tight-passive", "random-legal",
 })
 
 # Bounds are deliberately broad enough for distinct playing styles, while
@@ -90,7 +90,7 @@ def _clean_params(params: Any, family: str) -> _FrozenParams:
     unknown = set(params) - set(PARAMETER_BOUNDS)
     if unknown:
         raise ValueError(f"unknown genome parameter(s): {', '.join(sorted(map(str, unknown)))}")
-    if family not in {"evolved", "adaptive"} and params:
+    if family not in {"evolved", "adaptive", "calibrated", "corrected-calibrated"} and params:
         raise ValueError(f"family {family!r} does not accept strategy parameters")
     values: dict[str, float] = {}
     for name, raw_value in params.items():
@@ -159,7 +159,7 @@ class Genome:
 
 def _genes(genome: Genome) -> dict[str, float]:
     values = dict(DEFAULT_PARAMS)
-    if genome.family in {"evolved", "adaptive"}:
+    if genome.family in {"evolved", "adaptive", "calibrated", "corrected-calibrated"}:
         values.update(genome.params)
     return values
 
@@ -229,7 +229,7 @@ def breed(
 
     parents = (parent.bot_id,) if other is None else (parent.bot_id, other.bot_id)
     families = [item.family for item in (parent, other)
-                if item is not None and item.family in {"evolved", "adaptive"}]
+                if item is not None and item.family in {"evolved", "adaptive", "calibrated", "corrected-calibrated"}]
     family = rng.choice(families) if families else "evolved"
     return Genome(bot_id=bot_id, family=family, params=child, parents=parents, generation=generation)
 
@@ -716,6 +716,12 @@ def policy_for(genome: Genome):
         return make_adaptive_policy(genome)
     if genome.family == "evolved":
         return _evolved_policy(genome)
+    if genome.family == "calibrated":
+        from .calibrated_bot import make_calibrated_policy
+        return make_calibrated_policy(genome)
+    if genome.family == "corrected-calibrated":
+        from .corrected_calibrated_bot import make_corrected_calibrated_policy
+        return make_corrected_calibrated_policy(genome)
     if genome.family == "saved":
         saved = _load_saved_callable()
 
@@ -733,3 +739,4 @@ def policy_for(genome: Genome):
     if genome.family == "tight-passive":
         return _tight_passive_policy(genome.bot_id)
     return _random_legal_policy(genome.bot_id)
+
