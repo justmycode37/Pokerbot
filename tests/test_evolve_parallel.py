@@ -45,6 +45,30 @@ class ParallelEvolutionTests(unittest.TestCase):
             for candidate, seed in zip(candidates * 2, (2101, 2102, 2103, 2104))
         ]
 
+    def test_cli_passes_target_and_archive_options_like_the_canonical_cli(self):
+        argv = ["run", "--target-win-rate", "0.9", "--archive-checkpoint", "a.json",
+                "--archive-checkpoint", "b.json", "--archive-policy-ids", "ids.json"]
+        parallel = evolution.config_from_args(evolve_parallel.build_parser().parse_args(argv))
+        canonical = evolution.config_from_args(evolution.build_parser().parse_args(argv))
+        self.assertEqual(parallel, canonical)
+        self.assertEqual(parallel["target_win_rate"], 0.9)
+        self.assertEqual(parallel["archive_checkpoints"], ["a.json", "b.json"])
+        captured = {}
+
+        class Runner:
+            def __init__(self, output_dir, config, **kwargs):
+                captured.update(config)
+
+            def run(self, generations):
+                raise SystemExit(0)
+
+        with mock.patch.object(evolve_parallel, "PersistentPoolRunner", Runner):
+            with self.assertRaises(SystemExit):
+                evolve_parallel.main(argv)
+        self.assertEqual(captured["target_win_rate"], 0.9)
+        self.assertEqual(captured["archive_checkpoints"], ["a.json", "b.json"])
+        self.assertEqual(captured["archive_policy_ids_path"], "ids.json")
+
     def test_fixed_training_jobs_match_serial_canonical_parallel_and_accelerated(self):
         with tempfile.TemporaryDirectory() as temp_dir:
             runner = evolve_parallel.PersistentPoolRunner(

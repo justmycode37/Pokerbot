@@ -1697,9 +1697,13 @@ def build_parser() -> argparse.ArgumentParser:
     return parser
 
 
-def main(argv: list[str] | None = None) -> int:
-    args = build_parser().parse_args(argv)
-    config = {
+def config_from_args(args: argparse.Namespace) -> dict[str, Any]:
+    """Build the raw run config from parsed ``run`` arguments.
+
+    Shared by every CLI driver so options such as ``--target-win-rate`` and
+    ``--archive-checkpoint`` cannot be silently dropped by one of them.
+    """
+    return {
         "players": args.players, "population": args.population, "matches": args.matches,
         "validation_matches": args.validation_matches, "confirmation_matches": args.confirmation_matches,
         "seed": args.seed, "stacks": args.stacks, "big_blinds": args.big_blinds,
@@ -1711,6 +1715,11 @@ def main(argv: list[str] | None = None) -> int:
         "archive_checkpoints": args.archive_checkpoint,
         "archive_policy_ids_path": args.archive_policy_ids,
     }
+
+
+def main(argv: list[str] | None = None) -> int:
+    args = build_parser().parse_args(argv)
+    config = config_from_args(args)
     runner = EvolutionRunner(args.output_dir, config, resume=args.resume, workers=args.workers)
     state = runner.run(args.generations)
     print(json.dumps({

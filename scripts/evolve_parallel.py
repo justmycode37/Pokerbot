@@ -217,15 +217,9 @@ def build_parser() -> argparse.ArgumentParser:
 
 def main(argv: list[str] | None = None) -> int:
     args = build_parser().parse_args(argv)
-    config = {
-        "players": args.players, "population": args.population, "matches": args.matches,
-        "validation_matches": args.validation_matches, "confirmation_matches": args.confirmation_matches,
-        "seed": args.seed, "stacks": args.stacks, "big_blinds": args.big_blinds,
-        "hands_per_level": args.hands_per_level, "max_hands": args.max_hands,
-        "payouts": args.payouts, "strict": True,
-        "adaptive_fraction": args.adaptive_fraction, "seed_genomes_path": args.seed_genomes,
-        "evaluation_namespace": args.evaluation_namespace,
-    }
+    # Earlier versions built this dict by hand and dropped --target-win-rate
+    # and --archive-checkpoint; share the canonical builder instead.
+    config = evolution.config_from_args(args)
     runner = PersistentPoolRunner(
         args.output_dir, config, resume=args.resume,
         workers=args.workers, chunksize=args.chunksize,
