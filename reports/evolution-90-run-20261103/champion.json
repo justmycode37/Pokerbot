@@ -1,0 +1,38 @@
+{
+  "bot_id": "evo-g0011-0001",
+  "confirmation": null,
+  "dependency_versions": {
+    "pokerkit": "0.7.7"
+  },
+  "genome": {
+    "bot_id": "evo-g0011-0001",
+    "family": "calibrated",
+    "generation": 11,
+    "params": {
+      "bet_size": 0.719808,
+      "bluff_frequency": 0.0096,
+      "call_frequency": 1.0,
+      "call_margin": 0.000381,
+      "multiway_penalty": 0.05305,
+      "opening_frequency": 0.91387,
+      "opening_shift": -0.093465,
+      "position_sensitivity": 0.021213,
+      "postflop_call_margin": 0.043454,
+      "raise_frequency": 1.0,
+      "short_stack_bb": 13.77797,
+      "short_stack_cutoff": 0.7476,
+      "value_raise_threshold": 0.56
+    },
+    "parents": [
+      "evo-g0008-0005",
+      "evo-g0009-0001"
+    ]
+  },
+  "goal_eligible": true,
+  "players": 8,
+  "policy_load_hint": "from pokerbot.evolution_strategies import Genome, policy_for; policy = policy_for(Genome.from_dict(champion['genome']))",
+  "schema": "pokerbot-evolution-champion-v1",
+  "status": "provisional",
+  "target_win_rate": 0.9,
+  "variant": "no-limit-texas-holdem"
+}

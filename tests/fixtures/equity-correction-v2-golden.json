@@ -1,0 +1,42 @@
+{
+  "source": "reports/evolution-audits/equity-recalibration-v2.csv",
+  "source_sha256": "0dd6b7f8cbecaec037d7e7782bafc157bec55507973701239d1f6821861a71e4",
+  "selection": "first recorded row for each active-player count, in source order",
+  "rows": [
+    {
+      "players_active": 2,
+      "raw_share": 0.3123885884,
+      "corrected_share": 0.430822035846
+    },
+    {
+      "players_active": 3,
+      "raw_share": 0.398630202708,
+      "corrected_share": 0.406572506752
+    },
+    {
+      "players_active": 4,
+      "raw_share": 0.114098278903,
+      "corrected_share": 0.111929434317
+    },
+    {
+      "players_active": 5,
+      "raw_share": 0.0876914390174,
+      "corrected_share": 0.0644985439541
+    },
+    {
+      "players_active": 6,
+      "raw_share": 0.0867189108833,
+      "corrected_share": 0.0498207374855
+    },
+    {
+      "players_active": 7,
+      "raw_share": 0.114635461795,
+      "corrected_share": 0.0852461315337
+    },
+    {
+      "players_active": 8,
+      "raw_share": 0.0869280285736,
+      "corrected_share": 0.0304616292318
+    }
+  ]
+}

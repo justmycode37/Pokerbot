@@ -1,0 +1,11 @@
+{
+  "classification": "comparison_only",
+  "csv_sha256": "3de0a8127acff70c10aa62e6c457755fbec039d168c5e53bd248074eb561acec",
+  "jobs_sha256": "b8385f8d04051f008db8033fb7f8e6bff5ee4dc87e1f43b953569ffa6a14092d",
+  "markdown_sha256": "5a6024b5a68256b9c7eb2d4642166e64454f61ee5fb0726d0d79a04a028fdc3e",
+  "paired_comparisons_sha256": "49282837df5d50b3fde017a93098805cb1caee3339b683f065b0dca1416e4695",
+  "protocol_sha256": "89075efe05fec9880c3d7cbc30ecac4435df1cd40cd7e51dafe89ae449397346",
+  "results_sha256": "87db63cc67be67d63c6b9614834e93413555f72da9df263e8a5b3dde257b6c09",
+  "seed_file_sha256": "70e926ecdf03eebd462c0c1a7e2f67c1afbaacc1c70792fcad847bb0715d7774",
+  "status": "complete"
+}

@@ -1,0 +1,1832 @@
+{
+  "anchors": [
+    {
+      "bot_id": "anchor-saved",
+      "family": "saved",
+      "params": {}
+    },
+    {
+      "bot_id": "evolution-next-g0000-variant-01-evolved",
+      "family": "evolved",
+      "params": {
+        "bet_size": 0.167277,
+        "bluff_frequency": 0.0,
+        "call_frequency": 1.0,
+        "call_margin": -0.030182,
+        "multiway_penalty": 0.05305,
+        "opening_frequency": 0.91387,
+        "opening_shift": -0.09685,
+        "position_sensitivity": 0.023841,
+        "postflop_call_margin": 0.034554,
+        "raise_frequency": 1.0,
+        "short_stack_bb": 11.601011,
+        "short_stack_cutoff": 0.715807,
+        "value_raise_threshold": 0.611141
+      }
+    },
+    {
+      "bot_id": "evo-g0004-0005@next",
+      "family": "evolved",
+      "params": {
+        "bet_size": 0.15,
+        "bluff_frequency": 0.041061,
+        "call_frequency": 1.0,
+        "call_margin": -0.030182,
+        "multiway_penalty": 0.05305,
+        "opening_frequency": 0.893339,
+        "opening_shift": -0.12,
+        "position_sensitivity": 0.025478,
+        "postflop_call_margin": 0.034554,
+        "raise_frequency": 0.829867,
+        "short_stack_bb": 10.491719,
+        "short_stack_cutoff": 0.76,
+        "value_raise_threshold": 0.611141
+      }
+    },
+    {
+      "bot_id": "evo-g0003-0000",
+      "family": "adaptive",
+      "params": {
+        "bet_size": 0.719808,
+        "bluff_frequency": 0.011771,
+        "call_frequency": 1.0,
+        "call_margin": 0.000381,
+        "multiway_penalty": 0.05305,
+        "opening_frequency": 0.93233,
+        "opening_shift": -0.09685,
+        "position_sensitivity": 0.028423,
+        "postflop_call_margin": 0.034554,
+        "raise_frequency": 0.665875,
+        "short_stack_bb": 13.007457,
+        "short_stack_cutoff": 0.7476,
+        "value_raise_threshold": 0.603034
+      }
+    },
+    {
+      "bot_id": "evo-g0006-0004",
+      "family": "adaptive",
+      "params": {
+        "bet_size": 0.6423,
+        "bluff_frequency": 0.0,
+        "call_frequency": 0.978,
+        "call_margin": 0.000381,
+        "multiway_penalty": 0.096318,
+        "opening_frequency": 0.93233,
+        "opening_shift": -0.103479,
+        "position_sensitivity": 0.028856,
+        "postflop_call_margin": 0.039648,
+        "raise_frequency": 0.59701,
+        "short_stack_bb": 9.39448,
+        "short_stack_cutoff": 0.677736,
+        "value_raise_threshold": 0.584105
+      }
+    },
+    {
+      "bot_id": "evo-g0002-0002-1",
+      "family": "evolved",
+      "params": {
+        "bet_size": 0.15,
+        "bluff_frequency": 0.0,
+        "call_frequency": 1.0,
+        "call_margin": -0.030182,
+        "multiway_penalty": 0.057113,
+        "opening_frequency": 0.822765,
+        "opening_shift": -0.110905,
+        "position_sensitivity": 0.036505,
+        "postflop_call_margin": 0.040286,
+        "raise_frequency": 0.829867,
+        "short_stack_bb": 9.39448,
+        "short_stack_cutoff": 0.76,
+        "value_raise_threshold": 0.563187
+      }
+    }
+  ],
+  "archive_training_leader_metrics": [
+    {
+      "bot_id": "evolution-next-g0000-variant-01-evolved",
+      "cap_survivors": 0,
+      "family": "evolved",
+      "lost": 92,
+      "played": 128,
+      "win_rate": 0.28125,
+      "won": 36
+    },
+    {
+      "bot_id": "evo-g0004-0005@next",
+      "cap_survivors": 0,
+      "family": "evolved",
+      "lost": 99,
+      "played": 128,
+      "win_rate": 0.2265625,
+      "won": 29
+    },
+    {
+      "bot_id": "evo-g0006-0004",
+      "cap_survivors": 0,
+      "family": "adaptive",
+      "lost": 100,
+      "played": 128,
+      "win_rate": 0.21875,
+      "won": 28
+    },
+    {
+      "bot_id": "evo-g0001-0004@next",
+      "cap_survivors": 0,
+      "family": "evolved",
+      "lost": 102,
+      "played": 128,
+      "win_rate": 0.203125,
+      "won": 26
+    },
+    {
+      "bot_id": "anchor-saved",
+      "cap_survivors": 0,
+      "family": "saved",
+      "lost": 103,
+      "played": 128,
+      "win_rate": 0.1953125,
+      "won": 25
+    },
+    {
+      "bot_id": "evo-g0002-0002-1",
+      "cap_survivors": 0,
+      "family": "evolved",
+      "lost": 104,
+      "played": 128,
+      "win_rate": 0.1875,
+      "won": 24
+    },
+    {
+      "bot_id": "evo-g0003-0002@next",
+      "cap_survivors": 0,
+      "family": "evolved",
+      "lost": 105,
+      "played": 128,
+      "win_rate": 0.1796875,
+      "won": 23
+    },
+    {
+      "bot_id": "evo-g0003-0005@next",
+      "cap_survivors": 0,
+      "family": "evolved",
+      "lost": 107,
+      "played": 128,
+      "win_rate": 0.1640625,
+      "won": 21
+    }
+  ],
+  "candidate_count": 30,
+  "families": {
+    "adaptive": 8,
+    "calibrated": 8,
+    "evolved": 8
+  },
+  "final_namespace": "racer-evolution-90search-final-20261103-v1",
+  "final_seed_count": 128,
+  "heldout_results_read_for_selection": false,
+  "latest_next_training_top": [
+    {
+      "bot_id": "evo-g0003-0000",
+      "cap_survivors": 0,
+      "decisions": 22161,
+      "invalid_actions": 0,
+      "lost": 96,
+      "played": 128,
+      "points": 4.5625,
+      "table_caps": 1,
+      "win_rate": 0.25,
+      "won": 32
+    },
+    {
+      "bot_id": "evo-g0002-0002-1",
+      "cap_survivors": 1,
+      "decisions": 21691,
+      "invalid_actions": 0,
+      "lost": 99,
+      "played": 128,
+      "points": 4.56121875,
+      "table_caps": 1,
+      "win_rate": 0.21875,
+      "won": 28
+    },
+    {
+      "bot_id": "evo-g0001-0004",
+      "cap_survivors": 0,
+      "decisions": 23109,
+      "invalid_actions": 0,
+      "lost": 101,
+      "played": 128,
+      "points": 4.71875,
+      "table_caps": 1,
+      "win_rate": 0.2109375,
+      "won": 27
+    },
+    {
+      "bot_id": "evo-g0004-0005",
+      "cap_survivors": 0,
+      "decisions": 22974,
+      "invalid_actions": 0,
+      "lost": 103,
+      "played": 128,
+      "points": 4.59375,
+      "table_caps": 0,
+      "win_rate": 0.1953125,
+      "won": 25
+    }
+  ],
+  "latest_v4_training_top": [
+    {
+      "bot_id": "evo-g0006-0004",
+      "cap_survivors": 1,
+      "decisions": 23991,
+      "invalid_actions": 0,
+      "lost": 97,
+      "played": 128,
+      "points": 4.997,
+      "table_caps": 1,
+      "win_rate": 0.234375,
+      "won": 30
+    },
+    {
+      "bot_id": "evo-g0005-0002",
+      "cap_survivors": 0,
+      "decisions": 22710,
+      "invalid_actions": 0,
+      "lost": 100,
+      "played": 128,
+      "points": 4.703125,
+      "table_caps": 0,
+      "win_rate": 0.21875,
+      "won": 28
+    },
+    {
+      "bot_id": "evo-g0007-0002",
+      "cap_survivors": 0,
+      "decisions": 22319,
+      "invalid_actions": 0,
+      "lost": 100,
+      "played": 128,
+      "points": 4.5625,
+      "table_caps": 0,
+      "win_rate": 0.21875,
+      "won": 28
+    },
+    {
+      "bot_id": "evo-g0007-0005",
+      "cap_survivors": 0,
+      "decisions": 22133,
+      "invalid_actions": 0,
+      "lost": 102,
+      "played": 128,
+      "points": 4.59375,
+      "table_caps": 1,
+      "win_rate": 0.203125,
+      "won": 26
+    }
+  ],
+  "leaders": [
+    "evolution-next-g0000-variant-01-evolved",
+    "evo-g0004-0005@next",
+    "evo-g0003-0000",
+    "evo-g0002-0002-1",
+    "evo-g0006-0004",
+    "evo-g0005-0002"
+  ],
+  "method": "canonical bounded breed() from training leaders",
+  "screen_namespace": "racer-evolution-90search-screen-20261103-v1",
+  "screen_seed_count": 32,
+  "source_policy_ids_preserved_for_opponents": true,
+  "variant_count": 24,
+  "variants": [
+    {
+      "breed_algorithm": "frozen pokerbot.evolution_strategies.breed",
+      "candidate_id": "r90-evo-01",
+      "family": "evolved",
+      "mutation_rng_seed": 692060039555864848,
+      "parent_genomes": [
+        {
+          "bot_id": "evolution-next-g0000-variant-01-evolved",
+          "family": "evolved",
+          "generation": 0,
+          "params": {
+            "bet_size": 0.167277,
+            "bluff_frequency": 0.0,
+            "call_frequency": 1.0,
+            "call_margin": -0.030182,
+            "multiway_penalty": 0.05305,
+            "opening_frequency": 0.91387,
+            "opening_shift": -0.09685,
+            "position_sensitivity": 0.023841,
+            "postflop_call_margin": 0.034554,
+            "raise_frequency": 1.0,
+            "short_stack_bb": 11.601011,
+            "short_stack_cutoff": 0.715807,
+            "value_raise_threshold": 0.611141
+          },
+          "parents": [
+            "evo-g0005-0004"
+          ]
+        },
+        {
+          "bot_id": "evo-g0004-0005@next",
+          "family": "evolved",
+          "generation": 4,
+          "params": {
+            "bet_size": 0.15,
+            "bluff_frequency": 0.041061,
+            "call_frequency": 1.0,
+            "call_margin": -0.030182,
+            "multiway_penalty": 0.05305,
+            "opening_frequency": 0.893339,
+            "opening_shift": -0.12,
+            "position_sensitivity": 0.025478,
+            "postflop_call_margin": 0.034554,
+            "raise_frequency": 0.829867,
+            "short_stack_bb": 10.491719,
+            "short_stack_cutoff": 0.76,
+            "value_raise_threshold": 0.611141
+          },
+          "parents": [
+            "evo-g0002-0002-1",
+            "evo-g0001-0004@next"
+          ]
+        }
+      ],
+      "parent_original_policy_ids": [
+        "evolution-next-g0000-variant-01-evolved",
+        "evo-g0004-0005"
+      ],
+      "parents": [
+        "evolution-next-g0000-variant-01-evolved",
+        "evo-g0004-0005@next"
+      ]
+    },
+    {
+      "breed_algorithm": "frozen pokerbot.evolution_strategies.breed",
+      "candidate_id": "r90-evo-02",
+      "family": "evolved",
+      "mutation_rng_seed": 16607639735214019212,
+      "parent_genomes": [
+        {
+          "bot_id": "evo-g0003-0000",
+          "family": "adaptive",
+          "generation": 3,
+          "params": {
+            "bet_size": 0.719808,
+            "bluff_frequency": 0.011771,
+            "call_frequency": 1.0,
+            "call_margin": 0.000381,
+            "multiway_penalty": 0.05305,
+            "opening_frequency": 0.93233,
+            "opening_shift": -0.09685,
+            "position_sensitivity": 0.028423,
+            "postflop_call_margin": 0.034554,
+            "raise_frequency": 0.665875,
+            "short_stack_bb": 13.007457,
+            "short_stack_cutoff": 0.7476,
+            "value_raise_threshold": 0.603034
+          },
+          "parents": [
+            "adaptive-evo-g0005-0000",
+            "evo-g0001-0004@next"
+          ]
+        },
+        {
+          "bot_id": "evo-g0002-0002-1",
+          "family": "evolved",
+          "generation": 2,
+          "params": {
+            "bet_size": 0.15,
+            "bluff_frequency": 0.0,
+            "call_frequency": 1.0,
+            "call_margin": -0.030182,
+            "multiway_penalty": 0.057113,
+            "opening_frequency": 0.822765,
+            "opening_shift": -0.110905,
+            "position_sensitivity": 0.036505,
+            "postflop_call_margin": 0.040286,
+            "raise_frequency": 0.829867,
+            "short_stack_bb": 9.39448,
+            "short_stack_cutoff": 0.76,
+            "value_raise_threshold": 0.563187
+          },
+          "parents": [
+            "evolution-next-g0000-variant-02-evolved",
+            "evo-g0001-0004@next"
+          ]
+        }
+      ],
+      "parent_original_policy_ids": [
+        "evo-g0003-0000",
+        "evo-g0002-0002-1"
+      ],
+      "parents": [
+        "evo-g0003-0000",
+        "evo-g0002-0002-1"
+      ]
+    },
+    {
+      "breed_algorithm": "frozen pokerbot.evolution_strategies.breed",
+      "candidate_id": "r90-evo-03",
+      "family": "evolved",
+      "mutation_rng_seed": 17434149172109286651,
+      "parent_genomes": [
+        {
+          "bot_id": "evo-g0006-0004",
+          "family": "adaptive",
+          "generation": 6,
+          "params": {
+            "bet_size": 0.6423,
+            "bluff_frequency": 0.0,
+            "call_frequency": 0.978,
+            "call_margin": 0.000381,
+            "multiway_penalty": 0.096318,
+            "opening_frequency": 0.93233,
+            "opening_shift": -0.103479,
+            "position_sensitivity": 0.028856,
+            "postflop_call_margin": 0.039648,
+            "raise_frequency": 0.59701,
+            "short_stack_bb": 9.39448,
+            "short_stack_cutoff": 0.677736,
+            "value_raise_threshold": 0.584105
+          },
+          "parents": [
+            "evo-g0005-0002",
+            "adaptive-evo-g0005-0000"
+          ]
+        },
+        {
+          "bot_id": "evo-g0005-0002",
+          "family": "evolved",
+          "generation": 5,
+          "params": {
+            "bet_size": 0.15,
+            "bluff_frequency": 0.011771,
+            "call_frequency": 0.984689,
+            "call_margin": 0.017634,
+            "multiway_penalty": 0.096318,
+            "opening_frequency": 0.93233,
+            "opening_shift": -0.09685,
+            "position_sensitivity": 0.035129,
+            "postflop_call_margin": 0.034554,
+            "raise_frequency": 0.723978,
+            "short_stack_bb": 9.39448,
+            "short_stack_cutoff": 0.621988,
+            "value_raise_threshold": 0.584105
+          },
+          "parents": [
+            "evo-g0002-0002",
+            "evo-g0005-0000"
+          ]
+        }
+      ],
+      "parent_original_policy_ids": [
+        "evo-g0006-0004",
+        "evo-g0005-0002"
+      ],
+      "parents": [
+        "evo-g0006-0004",
+        "evo-g0005-0002"
+      ]
+    },
+    {
+      "breed_algorithm": "frozen pokerbot.evolution_strategies.breed",
+      "candidate_id": "r90-evo-04",
+      "family": "evolved",
+      "mutation_rng_seed": 822709470557415085,
+      "parent_genomes": [
+        {
+          "bot_id": "evo-g0004-0005@next",
+          "family": "evolved",
+          "generation": 4,
+          "params": {
+            "bet_size": 0.15,
+            "bluff_frequency": 0.041061,
+            "call_frequency": 1.0,
+            "call_margin": -0.030182,
+            "multiway_penalty": 0.05305,
+            "opening_frequency": 0.893339,
+            "opening_shift": -0.12,
+            "position_sensitivity": 0.025478,
+            "postflop_call_margin": 0.034554,
+            "raise_frequency": 0.829867,
+            "short_stack_bb": 10.491719,
+            "short_stack_cutoff": 0.76,
+            "value_raise_threshold": 0.611141
+          },
+          "parents": [
+            "evo-g0002-0002-1",
+            "evo-g0001-0004@next"
+          ]
+        },
+        {
+          "bot_id": "evo-g0003-0000",
+          "family": "adaptive",
+          "generation": 3,
+          "params": {
+            "bet_size": 0.719808,
+            "bluff_frequency": 0.011771,
+            "call_frequency": 1.0,
+            "call_margin": 0.000381,
+            "multiway_penalty": 0.05305,
+            "opening_frequency": 0.93233,
+            "opening_shift": -0.09685,
+            "position_sensitivity": 0.028423,
+            "postflop_call_margin": 0.034554,
+            "raise_frequency": 0.665875,
+            "short_stack_bb": 13.007457,
+            "short_stack_cutoff": 0.7476,
+            "value_raise_threshold": 0.603034
+          },
+          "parents": [
+            "adaptive-evo-g0005-0000",
+            "evo-g0001-0004@next"
+          ]
+        }
+      ],
+      "parent_original_policy_ids": [
+        "evo-g0004-0005",
+        "evo-g0003-0000"
+      ],
+      "parents": [
+        "evo-g0004-0005@next",
+        "evo-g0003-0000"
+      ]
+    },
+    {
+      "breed_algorithm": "frozen pokerbot.evolution_strategies.breed",
+      "candidate_id": "r90-evo-05",
+      "family": "evolved",
+      "mutation_rng_seed": 11145053581287804262,
+      "parent_genomes": [
+        {
+          "bot_id": "evo-g0002-0002-1",
+          "family": "evolved",
+          "generation": 2,
+          "params": {
+            "bet_size": 0.15,
+            "bluff_frequency": 0.0,
+            "call_frequency": 1.0,
+            "call_margin": -0.030182,
+            "multiway_penalty": 0.057113,
+            "opening_frequency": 0.822765,
+            "opening_shift": -0.110905,
+            "position_sensitivity": 0.036505,
+            "postflop_call_margin": 0.040286,
+            "raise_frequency": 0.829867,
+            "short_stack_bb": 9.39448,
+            "short_stack_cutoff": 0.76,
+            "value_raise_threshold": 0.563187
+          },
+          "parents": [
+            "evolution-next-g0000-variant-02-evolved",
+            "evo-g0001-0004@next"
+          ]
+        },
+        {
+          "bot_id": "evo-g0006-0004",
+          "family": "adaptive",
+          "generation": 6,
+          "params": {
+            "bet_size": 0.6423,
+            "bluff_frequency": 0.0,
+            "call_frequency": 0.978,
+            "call_margin": 0.000381,
+            "multiway_penalty": 0.096318,
+            "opening_frequency": 0.93233,
+            "opening_shift": -0.103479,
+            "position_sensitivity": 0.028856,
+            "postflop_call_margin": 0.039648,
+            "raise_frequency": 0.59701,
+            "short_stack_bb": 9.39448,
+            "short_stack_cutoff": 0.677736,
+            "value_raise_threshold": 0.584105
+          },
+          "parents": [
+            "evo-g0005-0002",
+            "adaptive-evo-g0005-0000"
+          ]
+        }
+      ],
+      "parent_original_policy_ids": [
+        "evo-g0002-0002-1",
+        "evo-g0006-0004"
+      ],
+      "parents": [
+        "evo-g0002-0002-1",
+        "evo-g0006-0004"
+      ]
+    },
+    {
+      "breed_algorithm": "frozen pokerbot.evolution_strategies.breed",
+      "candidate_id": "r90-evo-06",
+      "family": "evolved",
+      "mutation_rng_seed": 7915033585212938591,
+      "parent_genomes": [
+        {
+          "bot_id": "evolution-next-g0000-variant-01-evolved",
+          "family": "evolved",
+          "generation": 0,
+          "params": {
+            "bet_size": 0.167277,
+            "bluff_frequency": 0.0,
+            "call_frequency": 1.0,
+            "call_margin": -0.030182,
+            "multiway_penalty": 0.05305,
+            "opening_frequency": 0.91387,
+            "opening_shift": -0.09685,
+            "position_sensitivity": 0.023841,
+            "postflop_call_margin": 0.034554,
+            "raise_frequency": 1.0,
+            "short_stack_bb": 11.601011,
+            "short_stack_cutoff": 0.715807,
+            "value_raise_threshold": 0.611141
+          },
+          "parents": [
+            "evo-g0005-0004"
+          ]
+        },
+        {
+          "bot_id": "evo-g0003-0000",
+          "family": "adaptive",
+          "generation": 3,
+          "params": {
+            "bet_size": 0.719808,
+            "bluff_frequency": 0.011771,
+            "call_frequency": 1.0,
+            "call_margin": 0.000381,
+            "multiway_penalty": 0.05305,
+            "opening_frequency": 0.93233,
+            "opening_shift": -0.09685,
+            "position_sensitivity": 0.028423,
+            "postflop_call_margin": 0.034554,
+            "raise_frequency": 0.665875,
+            "short_stack_bb": 13.007457,
+            "short_stack_cutoff": 0.7476,
+            "value_raise_threshold": 0.603034
+          },
+          "parents": [
+            "adaptive-evo-g0005-0000",
+            "evo-g0001-0004@next"
+          ]
+        }
+      ],
+      "parent_original_policy_ids": [
+        "evolution-next-g0000-variant-01-evolved",
+        "evo-g0003-0000"
+      ],
+      "parents": [
+        "evolution-next-g0000-variant-01-evolved",
+        "evo-g0003-0000"
+      ]
+    },
+    {
+      "breed_algorithm": "frozen pokerbot.evolution_strategies.breed",
+      "candidate_id": "r90-evo-07",
+      "family": "evolved",
+      "mutation_rng_seed": 17557206994304316416,
+      "parent_genomes": [
+        {
+          "bot_id": "evo-g0005-0002",
+          "family": "evolved",
+          "generation": 5,
+          "params": {
+            "bet_size": 0.15,
+            "bluff_frequency": 0.011771,
+            "call_frequency": 0.984689,
+            "call_margin": 0.017634,
+            "multiway_penalty": 0.096318,
+            "opening_frequency": 0.93233,
+            "opening_shift": -0.09685,
+            "position_sensitivity": 0.035129,
+            "postflop_call_margin": 0.034554,
+            "raise_frequency": 0.723978,
+            "short_stack_bb": 9.39448,
+            "short_stack_cutoff": 0.621988,
+            "value_raise_threshold": 0.584105
+          },
+          "parents": [
+            "evo-g0002-0002",
+            "evo-g0005-0000"
+          ]
+        },
+        {
+          "bot_id": "evo-g0004-0005@next",
+          "family": "evolved",
+          "generation": 4,
+          "params": {
+            "bet_size": 0.15,
+            "bluff_frequency": 0.041061,
+            "call_frequency": 1.0,
+            "call_margin": -0.030182,
+            "multiway_penalty": 0.05305,
+            "opening_frequency": 0.893339,
+            "opening_shift": -0.12,
+            "position_sensitivity": 0.025478,
+            "postflop_call_margin": 0.034554,
+            "raise_frequency": 0.829867,
+            "short_stack_bb": 10.491719,
+            "short_stack_cutoff": 0.76,
+            "value_raise_threshold": 0.611141
+          },
+          "parents": [
+            "evo-g0002-0002-1",
+            "evo-g0001-0004@next"
+          ]
+        }
+      ],
+      "parent_original_policy_ids": [
+        "evo-g0005-0002",
+        "evo-g0004-0005"
+      ],
+      "parents": [
+        "evo-g0005-0002",
+        "evo-g0004-0005@next"
+      ]
+    },
+    {
+      "breed_algorithm": "frozen pokerbot.evolution_strategies.breed",
+      "candidate_id": "r90-evo-08",
+      "family": "evolved",
+      "mutation_rng_seed": 1651722048101002806,
+      "parent_genomes": [
+        {
+          "bot_id": "evo-g0006-0004",
+          "family": "adaptive",
+          "generation": 6,
+          "params": {
+            "bet_size": 0.6423,
+            "bluff_frequency": 0.0,
+            "call_frequency": 0.978,
+            "call_margin": 0.000381,
+            "multiway_penalty": 0.096318,
+            "opening_frequency": 0.93233,
+            "opening_shift": -0.103479,
+            "position_sensitivity": 0.028856,
+            "postflop_call_margin": 0.039648,
+            "raise_frequency": 0.59701,
+            "short_stack_bb": 9.39448,
+            "short_stack_cutoff": 0.677736,
+            "value_raise_threshold": 0.584105
+          },
+          "parents": [
+            "evo-g0005-0002",
+            "adaptive-evo-g0005-0000"
+          ]
+        },
+        {
+          "bot_id": "evo-g0002-0002-1",
+          "family": "evolved",
+          "generation": 2,
+          "params": {
+            "bet_size": 0.15,
+            "bluff_frequency": 0.0,
+            "call_frequency": 1.0,
+            "call_margin": -0.030182,
+            "multiway_penalty": 0.057113,
+            "opening_frequency": 0.822765,
+            "opening_shift": -0.110905,
+            "position_sensitivity": 0.036505,
+            "postflop_call_margin": 0.040286,
+            "raise_frequency": 0.829867,
+            "short_stack_bb": 9.39448,
+            "short_stack_cutoff": 0.76,
+            "value_raise_threshold": 0.563187
+          },
+          "parents": [
+            "evolution-next-g0000-variant-02-evolved",
+            "evo-g0001-0004@next"
+          ]
+        }
+      ],
+      "parent_original_policy_ids": [
+        "evo-g0006-0004",
+        "evo-g0002-0002-1"
+      ],
+      "parents": [
+        "evo-g0006-0004",
+        "evo-g0002-0002-1"
+      ]
+    },
+    {
+      "breed_algorithm": "frozen pokerbot.evolution_strategies.breed",
+      "candidate_id": "r90-ada-09",
+      "family": "adaptive",
+      "mutation_rng_seed": 1268146003019430810,
+      "parent_genomes": [
+        {
+          "bot_id": "evolution-next-g0000-variant-01-evolved",
+          "family": "evolved",
+          "generation": 0,
+          "params": {
+            "bet_size": 0.167277,
+            "bluff_frequency": 0.0,
+            "call_frequency": 1.0,
+            "call_margin": -0.030182,
+            "multiway_penalty": 0.05305,
+            "opening_frequency": 0.91387,
+            "opening_shift": -0.09685,
+            "position_sensitivity": 0.023841,
+            "postflop_call_margin": 0.034554,
+            "raise_frequency": 1.0,
+            "short_stack_bb": 11.601011,
+            "short_stack_cutoff": 0.715807,
+            "value_raise_threshold": 0.611141
+          },
+          "parents": [
+            "evo-g0005-0004"
+          ]
+        },
+        {
+          "bot_id": "evo-g0004-0005@next",
+          "family": "evolved",
+          "generation": 4,
+          "params": {
+            "bet_size": 0.15,
+            "bluff_frequency": 0.041061,
+            "call_frequency": 1.0,
+            "call_margin": -0.030182,
+            "multiway_penalty": 0.05305,
+            "opening_frequency": 0.893339,
+            "opening_shift": -0.12,
+            "position_sensitivity": 0.025478,
+            "postflop_call_margin": 0.034554,
+            "raise_frequency": 0.829867,
+            "short_stack_bb": 10.491719,
+            "short_stack_cutoff": 0.76,
+            "value_raise_threshold": 0.611141
+          },
+          "parents": [
+            "evo-g0002-0002-1",
+            "evo-g0001-0004@next"
+          ]
+        }
+      ],
+      "parent_original_policy_ids": [
+        "evolution-next-g0000-variant-01-evolved",
+        "evo-g0004-0005"
+      ],
+      "parents": [
+        "evolution-next-g0000-variant-01-evolved",
+        "evo-g0004-0005@next"
+      ]
+    },
+    {
+      "breed_algorithm": "frozen pokerbot.evolution_strategies.breed",
+      "candidate_id": "r90-ada-10",
+      "family": "adaptive",
+      "mutation_rng_seed": 7835565883903952172,
+      "parent_genomes": [
+        {
+          "bot_id": "evo-g0003-0000",
+          "family": "adaptive",
+          "generation": 3,
+          "params": {
+            "bet_size": 0.719808,
+            "bluff_frequency": 0.011771,
+            "call_frequency": 1.0,
+            "call_margin": 0.000381,
+            "multiway_penalty": 0.05305,
+            "opening_frequency": 0.93233,
+            "opening_shift": -0.09685,
+            "position_sensitivity": 0.028423,
+            "postflop_call_margin": 0.034554,
+            "raise_frequency": 0.665875,
+            "short_stack_bb": 13.007457,
+            "short_stack_cutoff": 0.7476,
+            "value_raise_threshold": 0.603034
+          },
+          "parents": [
+            "adaptive-evo-g0005-0000",
+            "evo-g0001-0004@next"
+          ]
+        },
+        {
+          "bot_id": "evo-g0002-0002-1",
+          "family": "evolved",
+          "generation": 2,
+          "params": {
+            "bet_size": 0.15,
+            "bluff_frequency": 0.0,
+            "call_frequency": 1.0,
+            "call_margin": -0.030182,
+            "multiway_penalty": 0.057113,
+            "opening_frequency": 0.822765,
+            "opening_shift": -0.110905,
+            "position_sensitivity": 0.036505,
+            "postflop_call_margin": 0.040286,
+            "raise_frequency": 0.829867,
+            "short_stack_bb": 9.39448,
+            "short_stack_cutoff": 0.76,
+            "value_raise_threshold": 0.563187
+          },
+          "parents": [
+            "evolution-next-g0000-variant-02-evolved",
+            "evo-g0001-0004@next"
+          ]
+        }
+      ],
+      "parent_original_policy_ids": [
+        "evo-g0003-0000",
+        "evo-g0002-0002-1"
+      ],
+      "parents": [
+        "evo-g0003-0000",
+        "evo-g0002-0002-1"
+      ]
+    },
+    {
+      "breed_algorithm": "frozen pokerbot.evolution_strategies.breed",
+      "candidate_id": "r90-ada-11",
+      "family": "adaptive",
+      "mutation_rng_seed": 17194834347740288543,
+      "parent_genomes": [
+        {
+          "bot_id": "evo-g0006-0004",
+          "family": "adaptive",
+          "generation": 6,
+          "params": {
+            "bet_size": 0.6423,
+            "bluff_frequency": 0.0,
+            "call_frequency": 0.978,
+            "call_margin": 0.000381,
+            "multiway_penalty": 0.096318,
+            "opening_frequency": 0.93233,
+            "opening_shift": -0.103479,
+            "position_sensitivity": 0.028856,
+            "postflop_call_margin": 0.039648,
+            "raise_frequency": 0.59701,
+            "short_stack_bb": 9.39448,
+            "short_stack_cutoff": 0.677736,
+            "value_raise_threshold": 0.584105
+          },
+          "parents": [
+            "evo-g0005-0002",
+            "adaptive-evo-g0005-0000"
+          ]
+        },
+        {
+          "bot_id": "evo-g0005-0002",
+          "family": "evolved",
+          "generation": 5,
+          "params": {
+            "bet_size": 0.15,
+            "bluff_frequency": 0.011771,
+            "call_frequency": 0.984689,
+            "call_margin": 0.017634,
+            "multiway_penalty": 0.096318,
+            "opening_frequency": 0.93233,
+            "opening_shift": -0.09685,
+            "position_sensitivity": 0.035129,
+            "postflop_call_margin": 0.034554,
+            "raise_frequency": 0.723978,
+            "short_stack_bb": 9.39448,
+            "short_stack_cutoff": 0.621988,
+            "value_raise_threshold": 0.584105
+          },
+          "parents": [
+            "evo-g0002-0002",
+            "evo-g0005-0000"
+          ]
+        }
+      ],
+      "parent_original_policy_ids": [
+        "evo-g0006-0004",
+        "evo-g0005-0002"
+      ],
+      "parents": [
+        "evo-g0006-0004",
+        "evo-g0005-0002"
+      ]
+    },
+    {
+      "breed_algorithm": "frozen pokerbot.evolution_strategies.breed",
+      "candidate_id": "r90-ada-12",
+      "family": "adaptive",
+      "mutation_rng_seed": 1364522461710453849,
+      "parent_genomes": [
+        {
+          "bot_id": "evo-g0004-0005@next",
+          "family": "evolved",
+          "generation": 4,
+          "params": {
+            "bet_size": 0.15,
+            "bluff_frequency": 0.041061,
+            "call_frequency": 1.0,
+            "call_margin": -0.030182,
+            "multiway_penalty": 0.05305,
+            "opening_frequency": 0.893339,
+            "opening_shift": -0.12,
+            "position_sensitivity": 0.025478,
+            "postflop_call_margin": 0.034554,
+            "raise_frequency": 0.829867,
+            "short_stack_bb": 10.491719,
+            "short_stack_cutoff": 0.76,
+            "value_raise_threshold": 0.611141
+          },
+          "parents": [
+            "evo-g0002-0002-1",
+            "evo-g0001-0004@next"
+          ]
+        },
+        {
+          "bot_id": "evo-g0003-0000",
+          "family": "adaptive",
+          "generation": 3,
+          "params": {
+            "bet_size": 0.719808,
+            "bluff_frequency": 0.011771,
+            "call_frequency": 1.0,
+            "call_margin": 0.000381,
+            "multiway_penalty": 0.05305,
+            "opening_frequency": 0.93233,
+            "opening_shift": -0.09685,
+            "position_sensitivity": 0.028423,
+            "postflop_call_margin": 0.034554,
+            "raise_frequency": 0.665875,
+            "short_stack_bb": 13.007457,
+            "short_stack_cutoff": 0.7476,
+            "value_raise_threshold": 0.603034
+          },
+          "parents": [
+            "adaptive-evo-g0005-0000",
+            "evo-g0001-0004@next"
+          ]
+        }
+      ],
+      "parent_original_policy_ids": [
+        "evo-g0004-0005",
+        "evo-g0003-0000"
+      ],
+      "parents": [
+        "evo-g0004-0005@next",
+        "evo-g0003-0000"
+      ]
+    },
+    {
+      "breed_algorithm": "frozen pokerbot.evolution_strategies.breed",
+      "candidate_id": "r90-ada-13",
+      "family": "adaptive",
+      "mutation_rng_seed": 8057834200886715841,
+      "parent_genomes": [
+        {
+          "bot_id": "evo-g0002-0002-1",
+          "family": "evolved",
+          "generation": 2,
+          "params": {
+            "bet_size": 0.15,
+            "bluff_frequency": 0.0,
+            "call_frequency": 1.0,
+            "call_margin": -0.030182,
+            "multiway_penalty": 0.057113,
+            "opening_frequency": 0.822765,
+            "opening_shift": -0.110905,
+            "position_sensitivity": 0.036505,
+            "postflop_call_margin": 0.040286,
+            "raise_frequency": 0.829867,
+            "short_stack_bb": 9.39448,
+            "short_stack_cutoff": 0.76,
+            "value_raise_threshold": 0.563187
+          },
+          "parents": [
+            "evolution-next-g0000-variant-02-evolved",
+            "evo-g0001-0004@next"
+          ]
+        },
+        {
+          "bot_id": "evo-g0006-0004",
+          "family": "adaptive",
+          "generation": 6,
+          "params": {
+            "bet_size": 0.6423,
+            "bluff_frequency": 0.0,
+            "call_frequency": 0.978,
+            "call_margin": 0.000381,
+            "multiway_penalty": 0.096318,
+            "opening_frequency": 0.93233,
+            "opening_shift": -0.103479,
+            "position_sensitivity": 0.028856,
+            "postflop_call_margin": 0.039648,
+            "raise_frequency": 0.59701,
+            "short_stack_bb": 9.39448,
+            "short_stack_cutoff": 0.677736,
+            "value_raise_threshold": 0.584105
+          },
+          "parents": [
+            "evo-g0005-0002",
+            "adaptive-evo-g0005-0000"
+          ]
+        }
+      ],
+      "parent_original_policy_ids": [
+        "evo-g0002-0002-1",
+        "evo-g0006-0004"
+      ],
+      "parents": [
+        "evo-g0002-0002-1",
+        "evo-g0006-0004"
+      ]
+    },
+    {
+      "breed_algorithm": "frozen pokerbot.evolution_strategies.breed",
+      "candidate_id": "r90-ada-14",
+      "family": "adaptive",
+      "mutation_rng_seed": 6195058439496273761,
+      "parent_genomes": [
+        {
+          "bot_id": "evolution-next-g0000-variant-01-evolved",
+          "family": "evolved",
+          "generation": 0,
+          "params": {
+            "bet_size": 0.167277,
+            "bluff_frequency": 0.0,
+            "call_frequency": 1.0,
+            "call_margin": -0.030182,
+            "multiway_penalty": 0.05305,
+            "opening_frequency": 0.91387,
+            "opening_shift": -0.09685,
+            "position_sensitivity": 0.023841,
+            "postflop_call_margin": 0.034554,
+            "raise_frequency": 1.0,
+            "short_stack_bb": 11.601011,
+            "short_stack_cutoff": 0.715807,
+            "value_raise_threshold": 0.611141
+          },
+          "parents": [
+            "evo-g0005-0004"
+          ]
+        },
+        {
+          "bot_id": "evo-g0003-0000",
+          "family": "adaptive",
+          "generation": 3,
+          "params": {
+            "bet_size": 0.719808,
+            "bluff_frequency": 0.011771,
+            "call_frequency": 1.0,
+            "call_margin": 0.000381,
+            "multiway_penalty": 0.05305,
+            "opening_frequency": 0.93233,
+            "opening_shift": -0.09685,
+            "position_sensitivity": 0.028423,
+            "postflop_call_margin": 0.034554,
+            "raise_frequency": 0.665875,
+            "short_stack_bb": 13.007457,
+            "short_stack_cutoff": 0.7476,
+            "value_raise_threshold": 0.603034
+          },
+          "parents": [
+            "adaptive-evo-g0005-0000",
+            "evo-g0001-0004@next"
+          ]
+        }
+      ],
+      "parent_original_policy_ids": [
+        "evolution-next-g0000-variant-01-evolved",
+        "evo-g0003-0000"
+      ],
+      "parents": [
+        "evolution-next-g0000-variant-01-evolved",
+        "evo-g0003-0000"
+      ]
+    },
+    {
+      "breed_algorithm": "frozen pokerbot.evolution_strategies.breed",
+      "candidate_id": "r90-ada-15",
+      "family": "adaptive",
+      "mutation_rng_seed": 11973828366702328425,
+      "parent_genomes": [
+        {
+          "bot_id": "evo-g0005-0002",
+          "family": "evolved",
+          "generation": 5,
+          "params": {
+            "bet_size": 0.15,
+            "bluff_frequency": 0.011771,
+            "call_frequency": 0.984689,
+            "call_margin": 0.017634,
+            "multiway_penalty": 0.096318,
+            "opening_frequency": 0.93233,
+            "opening_shift": -0.09685,
+            "position_sensitivity": 0.035129,
+            "postflop_call_margin": 0.034554,
+            "raise_frequency": 0.723978,
+            "short_stack_bb": 9.39448,
+            "short_stack_cutoff": 0.621988,
+            "value_raise_threshold": 0.584105
+          },
+          "parents": [
+            "evo-g0002-0002",
+            "evo-g0005-0000"
+          ]
+        },
+        {
+          "bot_id": "evo-g0004-0005@next",
+          "family": "evolved",
+          "generation": 4,
+          "params": {
+            "bet_size": 0.15,
+            "bluff_frequency": 0.041061,
+            "call_frequency": 1.0,
+            "call_margin": -0.030182,
+            "multiway_penalty": 0.05305,
+            "opening_frequency": 0.893339,
+            "opening_shift": -0.12,
+            "position_sensitivity": 0.025478,
+            "postflop_call_margin": 0.034554,
+            "raise_frequency": 0.829867,
+            "short_stack_bb": 10.491719,
+            "short_stack_cutoff": 0.76,
+            "value_raise_threshold": 0.611141
+          },
+          "parents": [
+            "evo-g0002-0002-1",
+            "evo-g0001-0004@next"
+          ]
+        }
+      ],
+      "parent_original_policy_ids": [
+        "evo-g0005-0002",
+        "evo-g0004-0005"
+      ],
+      "parents": [
+        "evo-g0005-0002",
+        "evo-g0004-0005@next"
+      ]
+    },
+    {
+      "breed_algorithm": "frozen pokerbot.evolution_strategies.breed",
+      "candidate_id": "r90-ada-16",
+      "family": "adaptive",
+      "mutation_rng_seed": 9401965976278420083,
+      "parent_genomes": [
+        {
+          "bot_id": "evo-g0006-0004",
+          "family": "adaptive",
+          "generation": 6,
+          "params": {
+            "bet_size": 0.6423,
+            "bluff_frequency": 0.0,
+            "call_frequency": 0.978,
+            "call_margin": 0.000381,
+            "multiway_penalty": 0.096318,
+            "opening_frequency": 0.93233,
+            "opening_shift": -0.103479,
+            "position_sensitivity": 0.028856,
+            "postflop_call_margin": 0.039648,
+            "raise_frequency": 0.59701,
+            "short_stack_bb": 9.39448,
+            "short_stack_cutoff": 0.677736,
+            "value_raise_threshold": 0.584105
+          },
+          "parents": [
+            "evo-g0005-0002",
+            "adaptive-evo-g0005-0000"
+          ]
+        },
+        {
+          "bot_id": "evo-g0002-0002-1",
+          "family": "evolved",
+          "generation": 2,
+          "params": {
+            "bet_size": 0.15,
+            "bluff_frequency": 0.0,
+            "call_frequency": 1.0,
+            "call_margin": -0.030182,
+            "multiway_penalty": 0.057113,
+            "opening_frequency": 0.822765,
+            "opening_shift": -0.110905,
+            "position_sensitivity": 0.036505,
+            "postflop_call_margin": 0.040286,
+            "raise_frequency": 0.829867,
+            "short_stack_bb": 9.39448,
+            "short_stack_cutoff": 0.76,
+            "value_raise_threshold": 0.563187
+          },
+          "parents": [
+            "evolution-next-g0000-variant-02-evolved",
+            "evo-g0001-0004@next"
+          ]
+        }
+      ],
+      "parent_original_policy_ids": [
+        "evo-g0006-0004",
+        "evo-g0002-0002-1"
+      ],
+      "parents": [
+        "evo-g0006-0004",
+        "evo-g0002-0002-1"
+      ]
+    },
+    {
+      "breed_algorithm": "frozen pokerbot.evolution_strategies.breed",
+      "candidate_id": "r90-cal-17",
+      "family": "calibrated",
+      "mutation_rng_seed": 16711442688146489983,
+      "parent_genomes": [
+        {
+          "bot_id": "evolution-next-g0000-variant-01-evolved",
+          "family": "evolved",
+          "generation": 0,
+          "params": {
+            "bet_size": 0.167277,
+            "bluff_frequency": 0.0,
+            "call_frequency": 1.0,
+            "call_margin": -0.030182,
+            "multiway_penalty": 0.05305,
+            "opening_frequency": 0.91387,
+            "opening_shift": -0.09685,
+            "position_sensitivity": 0.023841,
+            "postflop_call_margin": 0.034554,
+            "raise_frequency": 1.0,
+            "short_stack_bb": 11.601011,
+            "short_stack_cutoff": 0.715807,
+            "value_raise_threshold": 0.611141
+          },
+          "parents": [
+            "evo-g0005-0004"
+          ]
+        },
+        {
+          "bot_id": "evo-g0004-0005@next",
+          "family": "evolved",
+          "generation": 4,
+          "params": {
+            "bet_size": 0.15,
+            "bluff_frequency": 0.041061,
+            "call_frequency": 1.0,
+            "call_margin": -0.030182,
+            "multiway_penalty": 0.05305,
+            "opening_frequency": 0.893339,
+            "opening_shift": -0.12,
+            "position_sensitivity": 0.025478,
+            "postflop_call_margin": 0.034554,
+            "raise_frequency": 0.829867,
+            "short_stack_bb": 10.491719,
+            "short_stack_cutoff": 0.76,
+            "value_raise_threshold": 0.611141
+          },
+          "parents": [
+            "evo-g0002-0002-1",
+            "evo-g0001-0004@next"
+          ]
+        }
+      ],
+      "parent_original_policy_ids": [
+        "evolution-next-g0000-variant-01-evolved",
+        "evo-g0004-0005"
+      ],
+      "parents": [
+        "evolution-next-g0000-variant-01-evolved",
+        "evo-g0004-0005@next"
+      ]
+    },
+    {
+      "breed_algorithm": "frozen pokerbot.evolution_strategies.breed",
+      "candidate_id": "r90-cal-18",
+      "family": "calibrated",
+      "mutation_rng_seed": 15007722499247649326,
+      "parent_genomes": [
+        {
+          "bot_id": "evo-g0003-0000",
+          "family": "adaptive",
+          "generation": 3,
+          "params": {
+            "bet_size": 0.719808,
+            "bluff_frequency": 0.011771,
+            "call_frequency": 1.0,
+            "call_margin": 0.000381,
+            "multiway_penalty": 0.05305,
+            "opening_frequency": 0.93233,
+            "opening_shift": -0.09685,
+            "position_sensitivity": 0.028423,
+            "postflop_call_margin": 0.034554,
+            "raise_frequency": 0.665875,
+            "short_stack_bb": 13.007457,
+            "short_stack_cutoff": 0.7476,
+            "value_raise_threshold": 0.603034
+          },
+          "parents": [
+            "adaptive-evo-g0005-0000",
+            "evo-g0001-0004@next"
+          ]
+        },
+        {
+          "bot_id": "evo-g0002-0002-1",
+          "family": "evolved",
+          "generation": 2,
+          "params": {
+            "bet_size": 0.15,
+            "bluff_frequency": 0.0,
+            "call_frequency": 1.0,
+            "call_margin": -0.030182,
+            "multiway_penalty": 0.057113,
+            "opening_frequency": 0.822765,
+            "opening_shift": -0.110905,
+            "position_sensitivity": 0.036505,
+            "postflop_call_margin": 0.040286,
+            "raise_frequency": 0.829867,
+            "short_stack_bb": 9.39448,
+            "short_stack_cutoff": 0.76,
+            "value_raise_threshold": 0.563187
+          },
+          "parents": [
+            "evolution-next-g0000-variant-02-evolved",
+            "evo-g0001-0004@next"
+          ]
+        }
+      ],
+      "parent_original_policy_ids": [
+        "evo-g0003-0000",
+        "evo-g0002-0002-1"
+      ],
+      "parents": [
+        "evo-g0003-0000",
+        "evo-g0002-0002-1"
+      ]
+    },
+    {
+      "breed_algorithm": "frozen pokerbot.evolution_strategies.breed",
+      "candidate_id": "r90-cal-19",
+      "family": "calibrated",
+      "mutation_rng_seed": 621777069537689210,
+      "parent_genomes": [
+        {
+          "bot_id": "evo-g0006-0004",
+          "family": "adaptive",
+          "generation": 6,
+          "params": {
+            "bet_size": 0.6423,
+            "bluff_frequency": 0.0,
+            "call_frequency": 0.978,
+            "call_margin": 0.000381,
+            "multiway_penalty": 0.096318,
+            "opening_frequency": 0.93233,
+            "opening_shift": -0.103479,
+            "position_sensitivity": 0.028856,
+            "postflop_call_margin": 0.039648,
+            "raise_frequency": 0.59701,
+            "short_stack_bb": 9.39448,
+            "short_stack_cutoff": 0.677736,
+            "value_raise_threshold": 0.584105
+          },
+          "parents": [
+            "evo-g0005-0002",
+            "adaptive-evo-g0005-0000"
+          ]
+        },
+        {
+          "bot_id": "evo-g0005-0002",
+          "family": "evolved",
+          "generation": 5,
+          "params": {
+            "bet_size": 0.15,
+            "bluff_frequency": 0.011771,
+            "call_frequency": 0.984689,
+            "call_margin": 0.017634,
+            "multiway_penalty": 0.096318,
+            "opening_frequency": 0.93233,
+            "opening_shift": -0.09685,
+            "position_sensitivity": 0.035129,
+            "postflop_call_margin": 0.034554,
+            "raise_frequency": 0.723978,
+            "short_stack_bb": 9.39448,
+            "short_stack_cutoff": 0.621988,
+            "value_raise_threshold": 0.584105
+          },
+          "parents": [
+            "evo-g0002-0002",
+            "evo-g0005-0000"
+          ]
+        }
+      ],
+      "parent_original_policy_ids": [
+        "evo-g0006-0004",
+        "evo-g0005-0002"
+      ],
+      "parents": [
+        "evo-g0006-0004",
+        "evo-g0005-0002"
+      ]
+    },
+    {
+      "breed_algorithm": "frozen pokerbot.evolution_strategies.breed",
+      "candidate_id": "r90-cal-20",
+      "family": "calibrated",
+      "mutation_rng_seed": 7866460162025491932,
+      "parent_genomes": [
+        {
+          "bot_id": "evo-g0004-0005@next",
+          "family": "evolved",
+          "generation": 4,
+          "params": {
+            "bet_size": 0.15,
+            "bluff_frequency": 0.041061,
+            "call_frequency": 1.0,
+            "call_margin": -0.030182,
+            "multiway_penalty": 0.05305,
+            "opening_frequency": 0.893339,
+            "opening_shift": -0.12,
+            "position_sensitivity": 0.025478,
+            "postflop_call_margin": 0.034554,
+            "raise_frequency": 0.829867,
+            "short_stack_bb": 10.491719,
+            "short_stack_cutoff": 0.76,
+            "value_raise_threshold": 0.611141
+          },
+          "parents": [
+            "evo-g0002-0002-1",
+            "evo-g0001-0004@next"
+          ]
+        },
+        {
+          "bot_id": "evo-g0003-0000",
+          "family": "adaptive",
+          "generation": 3,
+          "params": {
+            "bet_size": 0.719808,
+            "bluff_frequency": 0.011771,
+            "call_frequency": 1.0,
+            "call_margin": 0.000381,
+            "multiway_penalty": 0.05305,
+            "opening_frequency": 0.93233,
+            "opening_shift": -0.09685,
+            "position_sensitivity": 0.028423,
+            "postflop_call_margin": 0.034554,
+            "raise_frequency": 0.665875,
+            "short_stack_bb": 13.007457,
+            "short_stack_cutoff": 0.7476,
+            "value_raise_threshold": 0.603034
+          },
+          "parents": [
+            "adaptive-evo-g0005-0000",
+            "evo-g0001-0004@next"
+          ]
+        }
+      ],
+      "parent_original_policy_ids": [
+        "evo-g0004-0005",
+        "evo-g0003-0000"
+      ],
+      "parents": [
+        "evo-g0004-0005@next",
+        "evo-g0003-0000"
+      ]
+    },
+    {
+      "breed_algorithm": "frozen pokerbot.evolution_strategies.breed",
+      "candidate_id": "r90-cal-21",
+      "family": "calibrated",
+      "mutation_rng_seed": 3560838069479584088,
+      "parent_genomes": [
+        {
+          "bot_id": "evo-g0002-0002-1",
+          "family": "evolved",
+          "generation": 2,
+          "params": {
+            "bet_size": 0.15,
+            "bluff_frequency": 0.0,
+            "call_frequency": 1.0,
+            "call_margin": -0.030182,
+            "multiway_penalty": 0.057113,
+            "opening_frequency": 0.822765,
+            "opening_shift": -0.110905,
+            "position_sensitivity": 0.036505,
+            "postflop_call_margin": 0.040286,
+            "raise_frequency": 0.829867,
+            "short_stack_bb": 9.39448,
+            "short_stack_cutoff": 0.76,
+            "value_raise_threshold": 0.563187
+          },
+          "parents": [
+            "evolution-next-g0000-variant-02-evolved",
+            "evo-g0001-0004@next"
+          ]
+        },
+        {
+          "bot_id": "evo-g0006-0004",
+          "family": "adaptive",
+          "generation": 6,
+          "params": {
+            "bet_size": 0.6423,
+            "bluff_frequency": 0.0,
+            "call_frequency": 0.978,
+            "call_margin": 0.000381,
+            "multiway_penalty": 0.096318,
+            "opening_frequency": 0.93233,
+            "opening_shift": -0.103479,
+            "position_sensitivity": 0.028856,
+            "postflop_call_margin": 0.039648,
+            "raise_frequency": 0.59701,
+            "short_stack_bb": 9.39448,
+            "short_stack_cutoff": 0.677736,
+            "value_raise_threshold": 0.584105
+          },
+          "parents": [
+            "evo-g0005-0002",
+            "adaptive-evo-g0005-0000"
+          ]
+        }
+      ],
+      "parent_original_policy_ids": [
+        "evo-g0002-0002-1",
+        "evo-g0006-0004"
+      ],
+      "parents": [
+        "evo-g0002-0002-1",
+        "evo-g0006-0004"
+      ]
+    },
+    {
+      "breed_algorithm": "frozen pokerbot.evolution_strategies.breed",
+      "candidate_id": "r90-cal-22",
+      "family": "calibrated",
+      "mutation_rng_seed": 2923856572241420336,
+      "parent_genomes": [
+        {
+          "bot_id": "evolution-next-g0000-variant-01-evolved",
+          "family": "evolved",
+          "generation": 0,
+          "params": {
+            "bet_size": 0.167277,
+            "bluff_frequency": 0.0,
+            "call_frequency": 1.0,
+            "call_margin": -0.030182,
+            "multiway_penalty": 0.05305,
+            "opening_frequency": 0.91387,
+            "opening_shift": -0.09685,
+            "position_sensitivity": 0.023841,
+            "postflop_call_margin": 0.034554,
+            "raise_frequency": 1.0,
+            "short_stack_bb": 11.601011,
+            "short_stack_cutoff": 0.715807,
+            "value_raise_threshold": 0.611141
+          },
+          "parents": [
+            "evo-g0005-0004"
+          ]
+        },
+        {
+          "bot_id": "evo-g0003-0000",
+          "family": "adaptive",
+          "generation": 3,
+          "params": {
+            "bet_size": 0.719808,
+            "bluff_frequency": 0.011771,
+            "call_frequency": 1.0,
+            "call_margin": 0.000381,
+            "multiway_penalty": 0.05305,
+            "opening_frequency": 0.93233,
+            "opening_shift": -0.09685,
+            "position_sensitivity": 0.028423,
+            "postflop_call_margin": 0.034554,
+            "raise_frequency": 0.665875,
+            "short_stack_bb": 13.007457,
+            "short_stack_cutoff": 0.7476,
+            "value_raise_threshold": 0.603034
+          },
+          "parents": [
+            "adaptive-evo-g0005-0000",
+            "evo-g0001-0004@next"
+          ]
+        }
+      ],
+      "parent_original_policy_ids": [
+        "evolution-next-g0000-variant-01-evolved",
+        "evo-g0003-0000"
+      ],
+      "parents": [
+        "evolution-next-g0000-variant-01-evolved",
+        "evo-g0003-0000"
+      ]
+    },
+    {
+      "breed_algorithm": "frozen pokerbot.evolution_strategies.breed",
+      "candidate_id": "r90-cal-23",
+      "family": "calibrated",
+      "mutation_rng_seed": 3011276326838600974,
+      "parent_genomes": [
+        {
+          "bot_id": "evo-g0005-0002",
+          "family": "evolved",
+          "generation": 5,
+          "params": {
+            "bet_size": 0.15,
+            "bluff_frequency": 0.011771,
+            "call_frequency": 0.984689,
+            "call_margin": 0.017634,
+            "multiway_penalty": 0.096318,
+            "opening_frequency": 0.93233,
+            "opening_shift": -0.09685,
+            "position_sensitivity": 0.035129,
+            "postflop_call_margin": 0.034554,
+            "raise_frequency": 0.723978,
+            "short_stack_bb": 9.39448,
+            "short_stack_cutoff": 0.621988,
+            "value_raise_threshold": 0.584105
+          },
+          "parents": [
+            "evo-g0002-0002",
+            "evo-g0005-0000"
+          ]
+        },
+        {
+          "bot_id": "evo-g0004-0005@next",
+          "family": "evolved",
+          "generation": 4,
+          "params": {
+            "bet_size": 0.15,
+            "bluff_frequency": 0.041061,
+            "call_frequency": 1.0,
+            "call_margin": -0.030182,
+            "multiway_penalty": 0.05305,
+            "opening_frequency": 0.893339,
+            "opening_shift": -0.12,
+            "position_sensitivity": 0.025478,
+            "postflop_call_margin": 0.034554,
+            "raise_frequency": 0.829867,
+            "short_stack_bb": 10.491719,
+            "short_stack_cutoff": 0.76,
+            "value_raise_threshold": 0.611141
+          },
+          "parents": [
+            "evo-g0002-0002-1",
+            "evo-g0001-0004@next"
+          ]
+        }
+      ],
+      "parent_original_policy_ids": [
+        "evo-g0005-0002",
+        "evo-g0004-0005"
+      ],
+      "parents": [
+        "evo-g0005-0002",
+        "evo-g0004-0005@next"
+      ]
+    },
+    {
+      "breed_algorithm": "frozen pokerbot.evolution_strategies.breed",
+      "candidate_id": "r90-cal-24",
+      "family": "calibrated",
+      "mutation_rng_seed": 15310610064076921839,
+      "parent_genomes": [
+        {
+          "bot_id": "evo-g0006-0004",
+          "family": "adaptive",
+          "generation": 6,
+          "params": {
+            "bet_size": 0.6423,
+            "bluff_frequency": 0.0,
+            "call_frequency": 0.978,
+            "call_margin": 0.000381,
+            "multiway_penalty": 0.096318,
+            "opening_frequency": 0.93233,
+            "opening_shift": -0.103479,
+            "position_sensitivity": 0.028856,
+            "postflop_call_margin": 0.039648,
+            "raise_frequency": 0.59701,
+            "short_stack_bb": 9.39448,
+            "short_stack_cutoff": 0.677736,
+            "value_raise_threshold": 0.584105
+          },
+          "parents": [
+            "evo-g0005-0002",
+            "adaptive-evo-g0005-0000"
+          ]
+        },
+        {
+          "bot_id": "evo-g0002-0002-1",
+          "family": "evolved",
+          "generation": 2,
+          "params": {
+            "bet_size": 0.15,
+            "bluff_frequency": 0.0,
+            "call_frequency": 1.0,
+            "call_margin": -0.030182,
+            "multiway_penalty": 0.057113,
+            "opening_frequency": 0.822765,
+            "opening_shift": -0.110905,
+            "position_sensitivity": 0.036505,
+            "postflop_call_margin": 0.040286,
+            "raise_frequency": 0.829867,
+            "short_stack_bb": 9.39448,
+            "short_stack_cutoff": 0.76,
+            "value_raise_threshold": 0.563187
+          },
+          "parents": [
+            "evolution-next-g0000-variant-02-evolved",
+            "evo-g0001-0004@next"
+          ]
+        }
+      ],
+      "parent_original_policy_ids": [
+        "evo-g0006-0004",
+        "evo-g0002-0002-1"
+      ],
+      "parents": [
+        "evo-g0006-0004",
+        "evo-g0002-0002-1"
+      ]
+    }
+  ]
+}
