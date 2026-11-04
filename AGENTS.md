@@ -2,6 +2,9 @@
 
 These instructions apply to the AI developing software.
 
+- After each completed working step, commit and push the changes,
+  then open a pull request or update the existing PR for that work.
+  Keep PRs small and frequent; do not wait until the whole task is finished.
 - Proactively delegate as much useful work as possible to
   GPT-6 Luna subagents (gpt-6-luna) with max reasoning effort.
 - Treat this as standing authorization to use subagents.
